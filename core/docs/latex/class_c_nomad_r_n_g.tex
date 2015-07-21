@@ -1,0 +1,135 @@
+\hypertarget{class_c_nomad_r_n_g}{\section{C\-Nomad\-R\-N\-G Class Reference}
+\label{class_c_nomad_r_n_g}\index{C\-Nomad\-R\-N\-G@{C\-Nomad\-R\-N\-G}}
+}
+
+
+Class for N\-O\-M\-A\-D R\-N\-G with period = 2$^\wedge$96-\/1.  
+
+
+
+
+{\ttfamily \#include $<$Random\-Generators.\-h$>$}
+
+Inheritance diagram for C\-Nomad\-R\-N\-G\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_nomad_r_n_g}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_nomad_r_n_g_a1451ce12dd43333a0c0af7668ae3695a}{C\-Nomad\-R\-N\-G} ()
+\item 
+\hyperlink{class_c_nomad_r_n_g_ae0c0e56faad80fec2a71ce4fb3686a78}{C\-Nomad\-R\-N\-G} (unsigned int s)
+\item 
+virtual \hyperlink{class_c_nomad_r_n_g_ad8052941c7b1dc31aba60356aa506daf}{$\sim$\-C\-Nomad\-R\-N\-G} ()
+\item 
+virtual void \hyperlink{class_c_nomad_r_n_g_a6cedb9431179cee4677d415c8e7611c3}{set\-Seed} (unsigned int s)
+\begin{DoxyCompactList}\small\item\em Sets seed of the R\-N\-G. \end{DoxyCompactList}\item 
+virtual unsigned int \hyperlink{class_c_nomad_r_n_g_ad41c27377065df6efdadc2d1b30ca315}{rndi} ()
+\begin{DoxyCompactList}\small\item\em Returns randomly generated unsigned int. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_c_nomad_r_n_g_a80ec634087f50ef6753f1c5fe24c7ad4}{rnd} ()
+\begin{DoxyCompactList}\small\item\em Returns randomly generated double between 0 and 1. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static unsigned int \hyperlink{class_c_nomad_r_n_g_ac5867625fe6608450421de3166e38fd8}{x} = 123456789
+\item 
+static unsigned int \hyperlink{class_c_nomad_r_n_g_ae5ab3fef08b3818ae0b72d7f705cbb07}{y} = 362436069
+\item 
+static unsigned int \hyperlink{class_c_nomad_r_n_g_ad566dc723566cf9c6ec324b3ef1cc008}{z} = 521288629
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for N\-O\-M\-A\-D R\-N\-G with period = 2$^\wedge$96-\/1. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_nomad_r_n_g_a1451ce12dd43333a0c0af7668ae3695a}{\index{C\-Nomad\-R\-N\-G@{C\-Nomad\-R\-N\-G}!C\-Nomad\-R\-N\-G@{C\-Nomad\-R\-N\-G}}
+\index{C\-Nomad\-R\-N\-G@{C\-Nomad\-R\-N\-G}!CNomadRNG@{C\-Nomad\-R\-N\-G}}
+\subsubsection[{C\-Nomad\-R\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}C\-Nomad\-R\-N\-G\-::\-C\-Nomad\-R\-N\-G (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_nomad_r_n_g_a1451ce12dd43333a0c0af7668ae3695a}
+\hypertarget{class_c_nomad_r_n_g_ae0c0e56faad80fec2a71ce4fb3686a78}{\index{C\-Nomad\-R\-N\-G@{C\-Nomad\-R\-N\-G}!C\-Nomad\-R\-N\-G@{C\-Nomad\-R\-N\-G}}
+\index{C\-Nomad\-R\-N\-G@{C\-Nomad\-R\-N\-G}!CNomadRNG@{C\-Nomad\-R\-N\-G}}
+\subsubsection[{C\-Nomad\-R\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}C\-Nomad\-R\-N\-G\-::\-C\-Nomad\-R\-N\-G (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_nomad_r_n_g_ae0c0e56faad80fec2a71ce4fb3686a78}
+\hypertarget{class_c_nomad_r_n_g_ad8052941c7b1dc31aba60356aa506daf}{\index{C\-Nomad\-R\-N\-G@{C\-Nomad\-R\-N\-G}!$\sim$\-C\-Nomad\-R\-N\-G@{$\sim$\-C\-Nomad\-R\-N\-G}}
+\index{$\sim$\-C\-Nomad\-R\-N\-G@{$\sim$\-C\-Nomad\-R\-N\-G}!CNomadRNG@{C\-Nomad\-R\-N\-G}}
+\subsubsection[{$\sim$\-C\-Nomad\-R\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}virtual C\-Nomad\-R\-N\-G\-::$\sim$\-C\-Nomad\-R\-N\-G (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_nomad_r_n_g_ad8052941c7b1dc31aba60356aa506daf}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_nomad_r_n_g_a80ec634087f50ef6753f1c5fe24c7ad4}{\index{C\-Nomad\-R\-N\-G@{C\-Nomad\-R\-N\-G}!rnd@{rnd}}
+\index{rnd@{rnd}!CNomadRNG@{C\-Nomad\-R\-N\-G}}
+\subsubsection[{rnd}]{\setlength{\rightskip}{0pt plus 5cm}virtual double C\-Nomad\-R\-N\-G\-::rnd (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_nomad_r_n_g_a80ec634087f50ef6753f1c5fe24c7ad4}
+
+
+Returns randomly generated double between 0 and 1. 
+
+
+
+Implements \hyperlink{class_c_base_r_n_g_abbd60a5ecdc9502dd646434224ab5d6b}{C\-Base\-R\-N\-G}.
+
+\hypertarget{class_c_nomad_r_n_g_ad41c27377065df6efdadc2d1b30ca315}{\index{C\-Nomad\-R\-N\-G@{C\-Nomad\-R\-N\-G}!rndi@{rndi}}
+\index{rndi@{rndi}!CNomadRNG@{C\-Nomad\-R\-N\-G}}
+\subsubsection[{rndi}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-Nomad\-R\-N\-G\-::rndi (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_nomad_r_n_g_ad41c27377065df6efdadc2d1b30ca315}
+
+
+Returns randomly generated unsigned int. 
+
+
+
+Implements \hyperlink{class_c_base_r_n_g_a2db96fbf06a2f11b3613d422043fb7b8}{C\-Base\-R\-N\-G}.
+
+\hypertarget{class_c_nomad_r_n_g_a6cedb9431179cee4677d415c8e7611c3}{\index{C\-Nomad\-R\-N\-G@{C\-Nomad\-R\-N\-G}!set\-Seed@{set\-Seed}}
+\index{set\-Seed@{set\-Seed}!CNomadRNG@{C\-Nomad\-R\-N\-G}}
+\subsubsection[{set\-Seed}]{\setlength{\rightskip}{0pt plus 5cm}virtual void C\-Nomad\-R\-N\-G\-::set\-Seed (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_nomad_r_n_g_a6cedb9431179cee4677d415c8e7611c3}
+
+
+Sets seed of the R\-N\-G. 
+
+
+
+Implements \hyperlink{class_c_base_r_n_g_a56fbf75ca07b73954596ee04820e0b07}{C\-Base\-R\-N\-G}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_nomad_r_n_g_ac5867625fe6608450421de3166e38fd8}{\index{C\-Nomad\-R\-N\-G@{C\-Nomad\-R\-N\-G}!x@{x}}
+\index{x@{x}!CNomadRNG@{C\-Nomad\-R\-N\-G}}
+\subsubsection[{x}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-Nomad\-R\-N\-G\-::x = 123456789\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{class_c_nomad_r_n_g_ac5867625fe6608450421de3166e38fd8}
+\hypertarget{class_c_nomad_r_n_g_ae5ab3fef08b3818ae0b72d7f705cbb07}{\index{C\-Nomad\-R\-N\-G@{C\-Nomad\-R\-N\-G}!y@{y}}
+\index{y@{y}!CNomadRNG@{C\-Nomad\-R\-N\-G}}
+\subsubsection[{y}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-Nomad\-R\-N\-G\-::y = 362436069\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{class_c_nomad_r_n_g_ae5ab3fef08b3818ae0b72d7f705cbb07}
+\hypertarget{class_c_nomad_r_n_g_ad566dc723566cf9c6ec324b3ef1cc008}{\index{C\-Nomad\-R\-N\-G@{C\-Nomad\-R\-N\-G}!z@{z}}
+\index{z@{z}!CNomadRNG@{C\-Nomad\-R\-N\-G}}
+\subsubsection[{z}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-Nomad\-R\-N\-G\-::z = 521288629\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{class_c_nomad_r_n_g_ad566dc723566cf9c6ec324b3ef1cc008}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Development/core/\hyperlink{_random_generators_8h}{Random\-Generators.\-h}\item 
+C\-:/\-Development/core/\hyperlink{_random_generators_8cpp}{Random\-Generators.\-cpp}\end{DoxyCompactItemize}

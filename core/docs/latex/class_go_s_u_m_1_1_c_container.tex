@@ -1,0 +1,2250 @@
+\hypertarget{class_go_s_u_m_1_1_c_container}{\section{Go\-S\-U\-M\-:\-:C\-Container Class Reference}
+\label{class_go_s_u_m_1_1_c_container}\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}}
+}
+
+
+Class for the \hyperlink{struct_go_s_u_m}{Go\-S\-U\-M} main project.  
+
+
+
+
+{\ttfamily \#include $<$Container.\-h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_go_s_u_m_1_1_c_container_ab98aa1c7c84b62772c0f107a997b5076}{projecttype} \{ \\*
+\hyperlink{class_go_s_u_m_1_1_c_container_ab98aa1c7c84b62772c0f107a997b5076a553c22b054bed75575138ef807149725}{samplegeneration}, 
+\hyperlink{class_go_s_u_m_1_1_c_container_ab98aa1c7c84b62772c0f107a997b5076a856b1d975b7d652aabf185b14dbc7349}{modelanalysis}, 
+\hyperlink{class_go_s_u_m_1_1_c_container_ab98aa1c7c84b62772c0f107a997b5076a7e6eb61ed0be28bdb7360e57bd12a4a6}{dataanalysis}, 
+\hyperlink{class_go_s_u_m_1_1_c_container_ab98aa1c7c84b62772c0f107a997b5076a6bd715b658b71fd8840f34b80cf2f359}{simpleoptimization}, 
+\\*
+\hyperlink{class_go_s_u_m_1_1_c_container_ab98aa1c7c84b62772c0f107a997b5076a7c6463760279900e28106a461587c84d}{modeloptimization}, 
+\hyperlink{class_go_s_u_m_1_1_c_container_ab98aa1c7c84b62772c0f107a997b5076a5c15fd06dbc47d2027fe5bb24399b3df}{learnedmodeloptimization}, 
+\hyperlink{class_go_s_u_m_1_1_c_container_ab98aa1c7c84b62772c0f107a997b5076ad48581dcb217d884472e19be506dc8b3}{learneddataoptimization}
+ \}
+\item 
+enum \hyperlink{class_go_s_u_m_1_1_c_container_a1bcf4ef46bf23d5c838e8a5c20953e82}{optimizationmethodtype} \{ \hyperlink{class_go_s_u_m_1_1_c_container_a1bcf4ef46bf23d5c838e8a5c20953e82a850013e22edc31b4ca212a377036eda5}{mads}, 
+\hyperlink{class_go_s_u_m_1_1_c_container_a1bcf4ef46bf23d5c838e8a5c20953e82a165e1070fd11356595906b7fa59dee2b}{ga}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_go_s_u_m_1_1_c_container_a468b52f3fd0333d3b4b484520c0cac02}{C\-Container} ()
+\item 
+virtual \hyperlink{class_go_s_u_m_1_1_c_container_a64b52b2eb80232456bd8de9070d0523c}{$\sim$\-C\-Container} ()
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_ab6667c4814c0366f485fc3a2ff4ff337}{add\-Default\-Variable} (\hyperlink{class_go_s_u_m_1_1_c_model_variables}{C\-Model\-Variables} $\ast$p\-M\-Vs, \hyperlink{class_c_random_variable_a80d2a87c43847274138b51f7d713d7f1}{C\-Random\-Variable\-::distributiontype} \-\_\-dtype)
+\begin{DoxyCompactList}\small\item\em Adds one model variable, input and output, with default distribution parameter values. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_afc7d8bd3667f7d93e03a38342ba2ea6f}{add\-Variable} (\hyperlink{class_go_s_u_m_1_1_c_model_variables}{C\-Model\-Variables} $\ast$p\-M\-Vs, \hyperlink{class_c_random_variable_a80d2a87c43847274138b51f7d713d7f1}{C\-Random\-Variable\-::distributiontype} \-\_\-dtype, double \-\_\-a=0., double \-\_\-b=0.)
+\begin{DoxyCompactList}\small\item\em Adds one model variable, input and output. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a431adbe221d0de0361b41ff35d26893f}{add\-Variable} (\hyperlink{class_go_s_u_m_1_1_c_model_variables}{C\-Model\-Variables} $\ast$p\-M\-Vs, const std\-::string \&\-\_\-name, \hyperlink{class_c_random_variable_a80d2a87c43847274138b51f7d713d7f1}{C\-Random\-Variable\-::distributiontype} \-\_\-dtype, double \-\_\-a=0., double \-\_\-b=0.)
+\begin{DoxyCompactList}\small\item\em Adds one model variable, input and output. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a9058b0abf5548874d0adb58178077f6a}{erase\-Variable} (\hyperlink{class_go_s_u_m_1_1_c_model_variables}{C\-Model\-Variables} $\ast$p\-M\-Vs, std\-::string \-\_\-name)
+\begin{DoxyCompactList}\small\item\em Erases model variable with \-\_\-name. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a1831138d146cd61401aa87fc59c1c30a}{clone\-Variable} (\hyperlink{class_go_s_u_m_1_1_c_model_variables}{C\-Model\-Variables} $\ast$p\-M\-Vs, int \-\_\-at)
+\begin{DoxyCompactList}\small\item\em Clones particular model variable. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_aa25f1986d7da9947e06d511cc9f33aff}{add\-Variables} (\hyperlink{class_go_s_u_m_1_1_c_model_variables}{C\-Model\-Variables} $\ast$p\-M\-Vs, int \-\_\-\-N, \hyperlink{class_c_random_variable_a80d2a87c43847274138b51f7d713d7f1}{C\-Random\-Variable\-::distributiontype} \-\_\-dtype, double \-\_\-a=0., double \-\_\-b=0.)
+\begin{DoxyCompactList}\small\item\em Adds multiple model variables, input and output. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a2d75ed7759d54780bbde34338bd67cfa}{add\-Variables} (\hyperlink{class_go_s_u_m_1_1_c_model_variables}{C\-Model\-Variables} $\ast$p\-M\-Vs, const std\-::string \&\-\_\-name, int \-\_\-\-N, \hyperlink{class_c_random_variable_a80d2a87c43847274138b51f7d713d7f1}{C\-Random\-Variable\-::distributiontype} \-\_\-dtype, double \-\_\-a=0., double \-\_\-b=0.)
+\begin{DoxyCompactList}\small\item\em Adds multiple model variables, input and output. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a081dddd9a16be180450b0e5609411d93}{add\-Input} (const std\-::string \&\-\_\-name, \hyperlink{class_c_random_variable_a80d2a87c43847274138b51f7d713d7f1}{C\-Random\-Variable\-::distributiontype} \-\_\-type, double \-\_\-a=0., double \-\_\-b=0.)
+\begin{DoxyCompactList}\small\item\em Adds one input parameter. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a44fcff3b27b16a00e9da88f0e9d3c147}{add\-Output} (const std\-::string \&\-\_\-name, \hyperlink{class_c_random_variable_a80d2a87c43847274138b51f7d713d7f1}{C\-Random\-Variable\-::distributiontype} \-\_\-type, double \-\_\-a=0., double \-\_\-b=0.)
+\begin{DoxyCompactList}\small\item\em Adds one output state. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a5f4587ff5791f6d4d768b8e106f4532f}{add\-Inputs} (int \-\_\-\-N, const std\-::string \&\-\_\-name, \hyperlink{class_c_random_variable_a80d2a87c43847274138b51f7d713d7f1}{C\-Random\-Variable\-::distributiontype} \-\_\-type, double \-\_\-a=0., double \-\_\-b=0.)
+\begin{DoxyCompactList}\small\item\em Adds multiple input parameters. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a07ff088fd625a281e5c2f3056b5ab30b}{add\-Outputs} (int \-\_\-\-N, const std\-::string \&\-\_\-name, \hyperlink{class_c_random_variable_a80d2a87c43847274138b51f7d713d7f1}{C\-Random\-Variable\-::distributiontype} \-\_\-type, double \-\_\-a=0., double \-\_\-b=0.)
+\begin{DoxyCompactList}\small\item\em Adds multiple output states. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a323bfd6245970284c56d498135757358}{save} ()
+\begin{DoxyCompactList}\small\item\em Saves project to binary format. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a7e375679590b3e37935f2fb4ab632bb0}{load} ()
+\begin{DoxyCompactList}\small\item\em Loads project from binary format. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_ad89e627b8c19bd1f65e102a81bcea993}{save\-Xml} ()
+\begin{DoxyCompactList}\small\item\em Saves project to xml format. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a594e74ec12b59375a61256c851b44529}{load\-Xml} ()
+\begin{DoxyCompactList}\small\item\em Loads project from xml format. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_ac3bf0b71180d660aa5595839801ba6d2}{save\-Txt} ()
+\begin{DoxyCompactList}\small\item\em Saves project to txt format. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a74d77db2e9759c572e77559d2d3140e2}{load\-Txt} ()
+\begin{DoxyCompactList}\small\item\em Loads project from txt format. \end{DoxyCompactList}\item 
+bool \hyperlink{class_go_s_u_m_1_1_c_container_abe0ee6f577828f361df4db93d7fd1424}{contains\-Theoretical\-Viarables} (const std\-::string \&\-\_\-fname)
+\begin{DoxyCompactList}\small\item\em Returns true if file \-\_\-fname contains theoretical variables, false otherwise. \end{DoxyCompactList}\item 
+bool \hyperlink{class_go_s_u_m_1_1_c_container_a3a732e1369789b610f82b388b09d452e}{contains\-Named\-Theoretical\-Viarables} (const std\-::string \&\-\_\-fname)
+\begin{DoxyCompactList}\small\item\em Returns true if file \-\_\-fname contains named theoretical variables, false otherwise. \end{DoxyCompactList}\item 
+bool \hyperlink{class_go_s_u_m_1_1_c_container_a14f14de868517eeb457601f98ffd0fc5}{contains\-Empirical\-Viarables} (const std\-::string \&\-\_\-fname, int \&S\-Size, std\-::vector$<$ \hyperlink{class_c_random_variable_a80d2a87c43847274138b51f7d713d7f1}{C\-Random\-Variable\-::distributiontype} $>$ \&dtypes)
+\begin{DoxyCompactList}\small\item\em Returns true if file \-\_\-fname contains empirical variables, false otherwise. \end{DoxyCompactList}\item 
+bool \hyperlink{class_go_s_u_m_1_1_c_container_a445cedd0b8f00ccb5520eb726dcff53d}{contains\-Named\-Empirical\-Viarables} (const std\-::string \&\-\_\-fname, int \&S\-Size, std\-::vector$<$ \hyperlink{class_c_random_variable_a80d2a87c43847274138b51f7d713d7f1}{C\-Random\-Variable\-::distributiontype} $>$ \&dtypes)
+\begin{DoxyCompactList}\small\item\em Returns true if file \-\_\-fname contains named empirical variables, false otherwise. \end{DoxyCompactList}\item 
+bool \hyperlink{class_go_s_u_m_1_1_c_container_a5f12502d4287c8030c4c8d84de8772a6}{contains\-Declared\-Empirical\-Viarables} (const std\-::string \&\-\_\-fname, int \&S\-Size, std\-::vector$<$ \hyperlink{class_c_random_variable_a80d2a87c43847274138b51f7d713d7f1}{C\-Random\-Variable\-::distributiontype} $>$ \&dtypes)
+\begin{DoxyCompactList}\small\item\em Returns true if file \-\_\-fname contains explicitly typed empirical variables, false otherwise. \end{DoxyCompactList}\item 
+bool \hyperlink{class_go_s_u_m_1_1_c_container_a1a42243bc774adfa6de4490b759698ae}{contains\-Named\-Declared\-Empirical\-Viarables} (const std\-::string \&\-\_\-fname, int \&S\-Size, std\-::vector$<$ \hyperlink{class_c_random_variable_a80d2a87c43847274138b51f7d713d7f1}{C\-Random\-Variable\-::distributiontype} $>$ \&dtypes)
+\begin{DoxyCompactList}\small\item\em Returns true if file \-\_\-fname contains named explicitly typed empirical variables, false otherwise. \end{DoxyCompactList}\item 
+bool \hyperlink{class_go_s_u_m_1_1_c_container_ae49c3980250b89f49b98a4475368ddf1}{contains\-Prediction\-Samples} (const std\-::string \&\-\_\-fname, int \&Ncols, int \&Nrows)
+\begin{DoxyCompactList}\small\item\em Returns true if file \-\_\-fname contains predicition samples, false otherwise. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a828fcd476fd8a4e981e33f799111d85f}{import\-Theoretical\-Variables} (\hyperlink{class_go_s_u_m_1_1_c_model_variables}{Go\-S\-U\-M\-::\-C\-Model\-Variables} $\ast$p\-M\-Vs, const std\-::string \&\-\_\-fname)
+\begin{DoxyCompactList}\small\item\em Imports multiple theoretical model variables from a file. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_aae9d5c9892de4672832aff32412611af}{import\-Named\-Theoretical\-Variables} (\hyperlink{class_go_s_u_m_1_1_c_model_variables}{Go\-S\-U\-M\-::\-C\-Model\-Variables} $\ast$p\-M\-Vs, const std\-::string \&\-\_\-fname)
+\begin{DoxyCompactList}\small\item\em Imports multiple theoretical model variables from a file. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_ae5c4eeb98b818af39fd6956f0cc52757}{import\-Empirical\-Variables} (\hyperlink{class_go_s_u_m_1_1_c_model_variables}{Go\-S\-U\-M\-::\-C\-Model\-Variables} $\ast$p\-M\-Vs, const std\-::string \&\-\_\-fname, int \&S\-Size, std\-::vector$<$ \hyperlink{class_c_random_variable_a80d2a87c43847274138b51f7d713d7f1}{C\-Random\-Variable\-::distributiontype} $>$ \&dtypes)
+\begin{DoxyCompactList}\small\item\em Imports multiple empirical model variables from a file. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a39d523fa0fc1af3a061f02223fab2b54}{import\-Named\-Empirical\-Variables} (\hyperlink{class_go_s_u_m_1_1_c_model_variables}{Go\-S\-U\-M\-::\-C\-Model\-Variables} $\ast$p\-M\-Vs, const std\-::string \&\-\_\-fname, int \&S\-Size, std\-::vector$<$ \hyperlink{class_c_random_variable_a80d2a87c43847274138b51f7d713d7f1}{C\-Random\-Variable\-::distributiontype} $>$ \&dtypes)
+\begin{DoxyCompactList}\small\item\em Imports multiple empirical model variables from a file. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a9ed00d0e2231dfd10699de96247e60dc}{import\-Declared\-Empirical\-Variables} (\hyperlink{class_go_s_u_m_1_1_c_model_variables}{Go\-S\-U\-M\-::\-C\-Model\-Variables} $\ast$p\-M\-Vs, const std\-::string \&\-\_\-fname, int \&S\-Size, std\-::vector$<$ \hyperlink{class_c_random_variable_a80d2a87c43847274138b51f7d713d7f1}{C\-Random\-Variable\-::distributiontype} $>$ \&dtypes)
+\begin{DoxyCompactList}\small\item\em Imports multiple empirical model variables from a file. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a235cad8c3165604a08024d9248d037a2}{import\-Named\-Declared\-Empirical\-Variables} (\hyperlink{class_go_s_u_m_1_1_c_model_variables}{Go\-S\-U\-M\-::\-C\-Model\-Variables} $\ast$p\-M\-Vs, const std\-::string \&\-\_\-fname, int \&S\-Size, std\-::vector$<$ \hyperlink{class_c_random_variable_a80d2a87c43847274138b51f7d713d7f1}{C\-Random\-Variable\-::distributiontype} $>$ \&dtypes)
+\begin{DoxyCompactList}\small\item\em Imports multiple empirical model variables from a file. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a2d46b9ba16bacb25c69859354dec3a0f}{import\-Variables} (\hyperlink{class_go_s_u_m_1_1_c_model_variables}{Go\-S\-U\-M\-::\-C\-Model\-Variables} $\ast$p\-M\-Vs, const std\-::string \&\-\_\-fname)
+\begin{DoxyCompactList}\small\item\em Imports multiple model variables from a file, input and output. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a8c0086eb9ba429669d42ddcfffc5f207}{export\-Samples} (\hyperlink{class_go_s_u_m_1_1_c_model_variables}{C\-Model\-Variables} $\ast$p\-M\-Vs, const std\-::string \&\-\_\-fname)
+\begin{DoxyCompactList}\small\item\em Exports samples for model variables, input and output. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a2f34109ab3a927dde8973956c7dfc71c}{import\-Inputs} (const std\-::string \&\-\_\-fname)
+\begin{DoxyCompactList}\small\item\em Imports multiple input parameters. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a735339d9635295f7d05f5ceaad6a530e}{import\-Outputs} (const std\-::string \&\-\_\-fname)
+\begin{DoxyCompactList}\small\item\em Imports multiple output states. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a3ef90731268021db18187f907c65a281}{export\-Input\-Samples} (const std\-::string \&\-\_\-fname)
+\begin{DoxyCompactList}\small\item\em Imports input samples from file. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_aaf22f286b7da9d51204be1d16574b767}{export\-Output\-Samples} (const std\-::string \&\-\_\-fname)
+\begin{DoxyCompactList}\small\item\em Imports output samples from file. \end{DoxyCompactList}\item 
+bool \hyperlink{class_go_s_u_m_1_1_c_container_a16c0009b13b5254c490d6fb2d44bcf5f}{import\-Prediction\-Input\-Samples} (const std\-::string \&\-\_\-fname)
+\begin{DoxyCompactList}\small\item\em Imports prediction input samples. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a8fb751f43be001ae0ca8225d7e1ee3fc}{export\-Prediction\-Output\-Samples} (const std\-::string \&\-\_\-fname)
+\begin{DoxyCompactList}\small\item\em Exports prediction output samples. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a00edafdcfc7924119e45b42d6373fb6c}{export\-Derivative\-Sensitivity} (const std\-::string \&\-\_\-fname)
+\begin{DoxyCompactList}\small\item\em Exports derivative sensitivity. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_ae73c0dff9ed97b6a9a8bddd93b3d7cb4}{export\-Average\-Derivative} (const std\-::string \&\-\_\-fname)
+\begin{DoxyCompactList}\small\item\em Exports average derivative sensitivity. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a6280676048025d0a46d5d5d145661329}{export\-Absolute\-Average\-Derivative} (const std\-::string \&\-\_\-fname)
+\begin{DoxyCompactList}\small\item\em Exports absolute average derivative sensitivity. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_ae5621e54df5c608f284aa9abff6f7df3}{export\-Variance\-Sensitivity} (const std\-::string \&\-\_\-fname)
+\begin{DoxyCompactList}\small\item\em Exports variance sensitivity. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a2235f551c8a677cd031934a91bd9813f}{export\-First\-Order\-A\-N\-O\-V\-A} (const std\-::string \&\-\_\-fname)
+\begin{DoxyCompactList}\small\item\em Exports first order A\-N\-O\-V\-A sensitivity. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_ad8c30745006224e5c7e1187633b5c5c1}{export\-Optimization\-Method} (const std\-::string \&\-\_\-fname)
+\begin{DoxyCompactList}\small\item\em Exports optimization method. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a3672d46d968ffcd2b944f22e90155759}{export\-Optimization\-History} (const std\-::string \&\-\_\-fname)
+\begin{DoxyCompactList}\small\item\em Exports optimization history. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_ad1505a7068e2f1e588c1819eabda451b}{import\-Model\-Constraints} (const std\-::string \&\-\_\-fname)
+\begin{DoxyCompactList}\small\item\em Imports model constraint expressions. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a34fc441645bae3ad13057a2eac8f802d}{import\-Optimization\-Constraints} (const std\-::string \&\-\_\-fname)
+\begin{DoxyCompactList}\small\item\em Imports optimization constraint expressions. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a21c8853e82347f8421ab6e80fed4618b}{import\-Lower\-Bound} (const std\-::string \&\-\_\-fname)
+\begin{DoxyCompactList}\small\item\em Imports lower bounds for optimization variables. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a1dffaadac10b82a94cac8e12bbc4dd92}{import\-Upper\-Bound} (const std\-::string \&\-\_\-fname)
+\begin{DoxyCompactList}\small\item\em Imports upper bounds for optimization variables. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_ade21d5810c661e695dfcc15e801a3282}{import\-Initial\-Value} (const std\-::string \&\-\_\-fname)
+\begin{DoxyCompactList}\small\item\em Imports inital values for optimization variables. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_acc0b74915eadfc081735860c2611b818}{resample\-Inputs} ()
+\begin{DoxyCompactList}\small\item\em Resamples input parameters. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_ae1811c5957b8dda68a7aacb507b39d16}{evaluate\-Outputs} ()
+\begin{DoxyCompactList}\small\item\em Evaluates output states using external executable. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_af9ad216aef4fa11d5a3bfaf388e37608}{learn\-Model} ()
+\begin{DoxyCompactList}\small\item\em Learns model. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a2f3c28757a614f4f51c059965fe5d874}{predict} ()
+\begin{DoxyCompactList}\small\item\em Predicts (using analytical model). \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a3e52f16e061cdb5475c2815ea790013f}{predict\-Mean} (Array\-Xd \&ymu, Array\-Xd \&yvar)
+\begin{DoxyCompactList}\small\item\em Predicts mean and variance using learned model. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_ae0a6897c8af924d015b2517e78e86a15}{compute\-Sensitivities} ()
+\begin{DoxyCompactList}\small\item\em Computes sensitivities. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a8c9a21e3e048da67a4d1e0950877ac3c}{optimize} ()
+\begin{DoxyCompactList}\small\item\em Optimizes. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_aea6baeca7db258ebef1143e7fefb4e2a}{reduce} ()
+\begin{DoxyCompactList}\small\item\em Reduces model. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a42773631ab73d17ac47673d17d27ef5a}{minimize} ()
+\begin{DoxyCompactList}\small\item\em Minimizes. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_accd74ef02f6e8dca6b0bc7418242cd8f}{maximize} ()
+\begin{DoxyCompactList}\small\item\em Maximizes. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a9e4d2236683349d7923ae0a1b5575e67}{clear} ()
+\begin{DoxyCompactList}\small\item\em Clears all project content. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a930dff672b2635bb8fcb56a3f2c9b3cd}{clear\-Results} ()
+\begin{DoxyCompactList}\small\item\em Clears all project results. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a834bc751235dd105bfc3622a40adab9c}{clear\-For\-Reducing} ()
+\begin{DoxyCompactList}\small\item\em Clears all results except reducer. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a743cc91c2a279bac44cd5ecda5d47b5e}{clear\-Sampling\-Results} (\hyperlink{class_go_s_u_m_1_1_c_model_variables}{C\-Model\-Variables} $\ast$\-\_\-p\-M\-Vs)
+\begin{DoxyCompactList}\small\item\em Clears project results starting from particular sampling. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a1754c019da5d002894dc19824edb1137}{clear\-Learning\-Results} ()
+\begin{DoxyCompactList}\small\item\em Clears project results, starting from learning. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a9be3f3f67a48964c4f92b754b72719bf}{clear\-Sensitivity\-Results} ()
+\begin{DoxyCompactList}\small\item\em Clears project results, starting from senstivity. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a2bca712ba776fbd4a9149c489fe522fc}{clear\-Optimization\-Results} ()
+\begin{DoxyCompactList}\small\item\em Clears optimization results. \end{DoxyCompactList}\item 
+bool \hyperlink{class_go_s_u_m_1_1_c_container_ad46f5c3477a65e6ecaab12b29b66630a}{empty\-Results} () const 
+\begin{DoxyCompactList}\small\item\em Returns true if results are empty, false otherwise. \end{DoxyCompactList}\item 
+bool \hyperlink{class_go_s_u_m_1_1_c_container_a931b4dec67d7370b5c862a12339b14df}{empty\-Sampling\-Results} (\hyperlink{class_go_s_u_m_1_1_c_model_variables}{C\-Model\-Variables} $\ast$\-\_\-p\-M\-Vs) const 
+\begin{DoxyCompactList}\small\item\em Returns true if results starting from the \-\_\-p\-M\-Vs sampling are empty, false otherwise. \end{DoxyCompactList}\item 
+bool \hyperlink{class_go_s_u_m_1_1_c_container_a2df1d404b0fb5583dfbdcf26d51c6d5f}{empty\-Learning\-Results} () const 
+\begin{DoxyCompactList}\small\item\em Returns true if learning results are empty, false otherwise. \end{DoxyCompactList}\item 
+bool \hyperlink{class_go_s_u_m_1_1_c_container_a56f4fd6eefa38f92032c3a166e8a052c}{empty\-Sensitivity\-Results} () const 
+\begin{DoxyCompactList}\small\item\em Returns true if sensitivity results are empty, false otherwise. \end{DoxyCompactList}\item 
+bool \hyperlink{class_go_s_u_m_1_1_c_container_a29e43ab71e35275c88f6a6db2a82d00d}{empty\-Optimization\-Results} () const 
+\begin{DoxyCompactList}\small\item\em Returns true if optimization results are empty, false otherwise. \end{DoxyCompactList}\item 
+bool \hyperlink{class_go_s_u_m_1_1_c_container_a531b0b177ff8910f5745055a930d72a2}{empty\-Selected\-Samples} () const 
+\begin{DoxyCompactList}\small\item\em Returns true if selected samples are empty, false otherwise. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a1400de60bc73d3dc4016c727d7f4e1e7}{set\-Project\-Path} (const std\-::string \&\-\_\-prj\-Path)
+\begin{DoxyCompactList}\small\item\em Sets project path. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{class_go_s_u_m_1_1_c_container_a1e1139b32d1bf7f30af45f5d0cbbf33e}{project\-Path} ()
+\begin{DoxyCompactList}\small\item\em Returns project path. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a4f1576a5668f0a06927afc80a107c6f5}{set\-Project\-Name} (const std\-::string \&\-\_\-prj\-Name)
+\begin{DoxyCompactList}\small\item\em Sets project name. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{class_go_s_u_m_1_1_c_container_aaa8d02f418180b2cbfd5de01868b4c1f}{project\-Name} ()
+\begin{DoxyCompactList}\small\item\em Returns project name. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{class_go_s_u_m_1_1_c_container_a38869a1ee99c6a19a64a71ce56e5b88f}{long\-Project\-Name} ()
+\begin{DoxyCompactList}\small\item\em Returns long project name. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a5cb4d71e51d6ef0ad7b4b08b2c9c648d}{set\-Project\-Type} (\hyperlink{class_go_s_u_m_1_1_c_container_ab98aa1c7c84b62772c0f107a997b5076}{projecttype} \-\_\-prj\-Type)
+\begin{DoxyCompactList}\small\item\em Sets chosen project type. \end{DoxyCompactList}\item 
+\hyperlink{class_go_s_u_m_1_1_c_container_ab98aa1c7c84b62772c0f107a997b5076}{projecttype} \hyperlink{class_go_s_u_m_1_1_c_container_a3929863006e25f9b15ab705ccc3a6d2b}{project\-Type} ()
+\begin{DoxyCompactList}\small\item\em Returns chosen project type. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a00f2a1e85a2fc61a39154664ae2aa5f1}{set\-Optimization\-Method} (\hyperlink{class_go_s_u_m_1_1_c_container_a1bcf4ef46bf23d5c838e8a5c20953e82}{optimizationmethodtype} \-\_\-om\-Type)
+\begin{DoxyCompactList}\small\item\em Sets chosen optimization method type. \end{DoxyCompactList}\item 
+\hyperlink{class_go_s_u_m_1_1_c_container_a1bcf4ef46bf23d5c838e8a5c20953e82}{optimizationmethodtype} \hyperlink{class_go_s_u_m_1_1_c_container_a4f6b1e71a9909e1fb37fc9f73b5689ee}{optimization\-Method} ()
+\begin{DoxyCompactList}\small\item\em Returns chosen optimization method type. \end{DoxyCompactList}\item 
+int \hyperlink{class_go_s_u_m_1_1_c_container_adfb19bf17ae159250216d53780ae3134}{learn\-Evaluation\-Size} ()
+\begin{DoxyCompactList}\small\item\em Returns maximal number of learn optimization evaluations. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_acb1a50c65ffa0795537f8a1dae672895}{set\-Thread\-Size} (int \-\_\-trd\-N)
+\begin{DoxyCompactList}\small\item\em Sets chosen thread size. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_af4c2c7dbe9944ba9170bf82031563454}{set\-Mat\-Lab\-Path} (const std\-::string \&\-\_\-matlab\-Path)
+\begin{DoxyCompactList}\small\item\em Sets Mat\-Lab path. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a5d6da068fda02b4ac8f8450fb48491c1}{set\-R\-N\-G} (\hyperlink{class_c_random_generator_a50566d64b5ada7e335fc3acd52d958f6}{C\-Random\-Generator\-::rngtype} \-\_\-type)
+\begin{DoxyCompactList}\small\item\em Sets chosen rng type. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a962569d63184d2cb64bd7eb51548ce01}{set\-Resample\-Type} (\hyperlink{class_go_s_u_m_1_1_c_hypercube_a9113655515864c06ea6d4f08d5195c90}{C\-Hypercube\-::hctype} \-\_\-type)
+\begin{DoxyCompactList}\small\item\em Sets resample type. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a01cb4d41a56adc911be804645441ee8b}{set\-Resample\-Size} (int \-\_\-\-N)
+\begin{DoxyCompactList}\small\item\em Sets resample size. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a4e7337e114f42f613967c9022f203c19}{set\-Voronoi\-Options} (int \-\_\-maxiter, int \-\_\-q, double \-\_\-alpha2, double \-\_\-beta2)
+\begin{DoxyCompactList}\small\item\em Sets Voronoi options. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a7ff3f16ae1bce4e14b4ed8376cdaac20}{set\-Model\-Evaluator} (\hyperlink{class_go_s_u_m_1_1_c_evaluator_a50058cbf6a2c5b94677045ee02b67db2}{Go\-S\-U\-M\-::\-C\-Model\-Evaluator\-::evaluatortype} \-\_\-me, const std\-::string \&\-\_\-filename)
+\begin{DoxyCompactList}\small\item\em Sets model evaluator. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a0c083464ff260a31ceaec12840e758ed}{set\-Sensitivity\-Options} (int \-\_\-\-N, double \-\_\-eps1=0.\-005, double \-\_\-eps2=0.\-01, double \-\_\-eps3=0.\-01)
+\begin{DoxyCompactList}\small\item\em Sets sensitivity parameters. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_acaa0e30b7ebca1b8aa7711a4447593fe}{set\-Reduction\-Type} (\hyperlink{class_go_s_u_m_1_1_c_reduction_a191434138cff8df283fa2c2e2a8e653a}{Go\-S\-U\-M\-::\-C\-Reduction\-::reductiontype} \-\_\-rtype)
+\begin{DoxyCompactList}\small\item\em Sets model reduction type. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a243099f192a3277110fc910b72c33125}{set\-Reduction\-Outputs} (const std\-::vector$<$ std\-::string $>$ \&\-\_\-sel\-O\-S)
+\begin{DoxyCompactList}\small\item\em Sets reduction outputs. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a52ac2833ad91b1a105440417648a744d}{set\-Reduction\-Cutoff\-Size} (int \-\_\-cutip)
+\begin{DoxyCompactList}\small\item\em Sets reduction inputs cutoff size. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a154f187d9c52dc8465ce18546e4bde1e}{set\-Reduction\-Cutoff\-Value} (double \-\_\-cutval)
+\begin{DoxyCompactList}\small\item\em Sets reduction inputs cut value. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_ade328666a89997831a90ed068ad38bfc}{reset\-Optimization\-Variable} (\hyperlink{class_go_s_u_m_1_1_c_model_variables}{C\-Model\-Variables} $\ast$p\-M\-Vs, int \-\_\-at)
+\begin{DoxyCompactList}\small\item\em Resets values in the particular optimization variable. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a8880693579c129adb040e375bd4647eb}{set\-Objective} (const std\-::string \&\-\_\-fexpr)
+\begin{DoxyCompactList}\small\item\em Sets objective of the optimization problem. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a1bf466069ef62a5d773f0371c4b63734}{add\-Optimization\-Constraint} (const std\-::string \&\-\_\-gexpr)
+\begin{DoxyCompactList}\small\item\em Adds constraint of the optimization problem. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a2757000e2f4510f6bf25d4599521585b}{set\-Lower\-Bound} (const Array\-Xd \&\-\_\-x\-L)
+\begin{DoxyCompactList}\small\item\em Sets lower bound of the optimization variables. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_afa0bc2b75c81b6c590e0212180c273b3}{set\-Upper\-Bound} (const Array\-Xd \&\-\_\-x\-U)
+\begin{DoxyCompactList}\small\item\em Sets upper bound of the optimization variables. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_abb53ea6876c4369ac26d6cb3e21fc1c2}{set\-Initial\-Value} (const Array\-Xd \&\-\_\-x0)
+\begin{DoxyCompactList}\small\item\em Sets initial value of the optimization variables. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_ab63c8de284df2a92d36a1dff63f7aa9a}{set\-Mads\-Max\-Evaluation} (int \-\_\-maxeval)
+\begin{DoxyCompactList}\small\item\em Sets M\-A\-D\-S maximal number of evaluations. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a22a71fd1808b4e9bd0d4fb3a5b4ef0a7}{set\-Mads\-L\-H\-Search} (int \-\_\-lh0, int \-\_\-lhi)
+\begin{DoxyCompactList}\small\item\em Sets M\-A\-D\-S lh search paraemters. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_ad552e7ea343fd95a5a0384ce3e8d18c3}{set\-Mads\-Init\-Mesh\-Size} (double \-\_\-ims)
+\begin{DoxyCompactList}\small\item\em Sets M\-A\-D\-S initial mesh size. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a80c18156be69abfea5ceabbda9a83260}{set\-Mads\-Min\-Poll\-Size} (double \-\_\-mps)
+\begin{DoxyCompactList}\small\item\em Sets M\-A\-D\-S final poll size. \end{DoxyCompactList}\item 
+bool \hyperlink{class_go_s_u_m_1_1_c_container_a49b85eedc6fd533dbf408befc649bd5e}{is\-Sample\-Selected} (int \-\_\-i) const 
+\begin{DoxyCompactList}\small\item\em Returns true if particular sample value is selected, false otherwise. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a39db61d98e387e4b70f0ed9321790690}{select\-Samples} (\hyperlink{class_go_s_u_m_1_1_c_model_variable}{C\-Model\-Variable} $\ast$pmv, double \-\_\-left, double \-\_\-right)
+\begin{DoxyCompactList}\small\item\em Selects sample values of variable pmv that are contained in \mbox{[}\-\_\-left,\-\_\-right\mbox{]} interval. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a14740007a92dcea3a3523216555356e4}{separate\-By\-Selection} (const Array\-Xd \&X, std\-::vector$<$ double $>$ \&x, std\-::vector$<$ double $>$ \&selx) const 
+\begin{DoxyCompactList}\small\item\em Separates array X into two vectors based on the index (not contained/contained in selected samples). \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_ac5c3c5a7bafbfd4aec64bd43cca45480}{erase\-Selected\-Samples} ()
+\begin{DoxyCompactList}\small\item\em Erases selected sample values in all model variables. \end{DoxyCompactList}\item 
+int \hyperlink{class_go_s_u_m_1_1_c_container_aa1370576faa1ddf1488d491c8a998574}{inputs\-Size} ()
+\begin{DoxyCompactList}\small\item\em Returns input parameters size. \end{DoxyCompactList}\item 
+int \hyperlink{class_go_s_u_m_1_1_c_container_ac19c60a80c0394dccb130fffe2411abc}{outputs\-Size} ()
+\begin{DoxyCompactList}\small\item\em Returns output states size. \end{DoxyCompactList}\item 
+\hyperlink{class_go_s_u_m_1_1_c_input_parameters}{C\-Input\-Parameters} \& \hyperlink{class_go_s_u_m_1_1_c_container_a7d7755e585f783b99d6e16d4381c5c4d}{input\-Parameters} ()
+\begin{DoxyCompactList}\small\item\em Returns input parameters. \end{DoxyCompactList}\item 
+\hyperlink{class_go_s_u_m_1_1_c_model_constraints}{C\-Model\-Constraints} \& \hyperlink{class_go_s_u_m_1_1_c_container_a4579e65d7ae46d352a56078360c5666d}{model\-Constraints} ()
+\begin{DoxyCompactList}\small\item\em Returns model constraints. \end{DoxyCompactList}\item 
+\hyperlink{class_go_s_u_m_1_1_c_hypercube}{C\-Hypercube} \& \hyperlink{class_go_s_u_m_1_1_c_container_a68aa9f1467ca1b17c216caed7ca590bf}{hyper\-Cube} ()
+\begin{DoxyCompactList}\small\item\em Returns hypercube. \end{DoxyCompactList}\item 
+\hyperlink{class_go_s_u_m_1_1_c_model_variable}{C\-Model\-Variable} \& \hyperlink{class_go_s_u_m_1_1_c_container_a0eac125fff705243cbd0e4da2f588535}{input\-Parameter} (int \-\_\-at)
+\begin{DoxyCompactList}\small\item\em Returns particular input parameter. \end{DoxyCompactList}\item 
+\hyperlink{class_go_s_u_m_1_1_c_model_variable}{C\-Model\-Variable} \& \hyperlink{class_go_s_u_m_1_1_c_container_a53f245e7a0e82a445b282c18289c16b7}{output\-State} (int \-\_\-at)
+\begin{DoxyCompactList}\small\item\em Returns particular output state. \end{DoxyCompactList}\item 
+\hyperlink{class_go_s_u_m_1_1_c_output_states}{C\-Output\-States} \& \hyperlink{class_go_s_u_m_1_1_c_container_a63309726c2f7ff3b3bc1f19fee0a7aa5}{output\-States} ()
+\begin{DoxyCompactList}\small\item\em Returns output states. \end{DoxyCompactList}\item 
+\hyperlink{class_go_s_u_m_1_1_c_evaluator}{C\-Evaluator} \& \hyperlink{class_go_s_u_m_1_1_c_container_abfcaff8dac0f87d13ee010acc1127dd5}{model\-Evaluator} ()
+\begin{DoxyCompactList}\small\item\em Returns evaluator. \end{DoxyCompactList}\item 
+\hyperlink{class_go_s_u_m_1_1_c_analytical_model}{C\-Analytical\-Model} \& \hyperlink{class_go_s_u_m_1_1_c_container_afbf4b9d666f45853c817f623a356390e}{analytical\-Model} ()
+\begin{DoxyCompactList}\small\item\em Returns analytical model. \end{DoxyCompactList}\item 
+\hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis}{C\-Sensitivity\-Analysis} \& \hyperlink{class_go_s_u_m_1_1_c_container_a9f5cbdedea1f310554d3fc75c5139fd8}{sensitivity\-Analysis} ()
+\begin{DoxyCompactList}\small\item\em Returns sensitivity analysis. \end{DoxyCompactList}\item 
+\hyperlink{class_go_s_u_m_1_1_c_reduction}{C\-Reduction} \& \hyperlink{class_go_s_u_m_1_1_c_container_a75766ed932584c790cf0693091ba1933}{reducer} ()
+\begin{DoxyCompactList}\small\item\em Returns reduction tool. \end{DoxyCompactList}\item 
+\hyperlink{class_go_s_u_m_1_1_c_simple_optimization_problem}{C\-Simple\-Optimization\-Problem} $\ast$ \hyperlink{class_go_s_u_m_1_1_c_container_a2abf77f71b45ada3e038cfce7ad77b4b}{optimization\-Problem} ()
+\begin{DoxyCompactList}\small\item\em Returns optimization problem. \end{DoxyCompactList}\item 
+\hyperlink{class_c_m_a_d_s}{C\-M\-A\-D\-S} \& \hyperlink{class_go_s_u_m_1_1_c_container_a58efe49433f7ca1358b62bb14a3e0674}{mads\-Optimizer} ()
+\begin{DoxyCompactList}\small\item\em Returns M\-A\-D\-S. \end{DoxyCompactList}\item 
+\hyperlink{class_c_g_a_model_optimization}{C\-G\-A\-Model\-Optimization} \& \hyperlink{class_go_s_u_m_1_1_c_container_a42e6d9cc6a2c47b1fb16beaa72fcac26}{ga\-Optimizer} ()
+\begin{DoxyCompactList}\small\item\em Returns M\-A\-D\-S. \end{DoxyCompactList}\item 
+std\-::vector$<$ int $>$ \& \hyperlink{class_go_s_u_m_1_1_c_container_a8f9cc0a02d2cfebccd2a01f9115be170}{selected\-Samples} ()
+\item 
+bool \hyperlink{class_go_s_u_m_1_1_c_container_a55f90d3ae5a1bef2e7c4686b5abc5321}{ready\-To\-Sample\-Inputs} ()
+\begin{DoxyCompactList}\small\item\em Returns true if project is ready to sample inputs, false otherwise. \end{DoxyCompactList}\item 
+bool \hyperlink{class_go_s_u_m_1_1_c_container_ad9ef8b5a02e6a9dda354361ffe6b2ddf}{ready\-To\-Evaluate\-Outputs} ()
+\begin{DoxyCompactList}\small\item\em Returns true if project is ready to evaluate outputs, false otherwise. \end{DoxyCompactList}\item 
+bool \hyperlink{class_go_s_u_m_1_1_c_container_a0890310299b413991d15e7c5da39f2a5}{ready\-To\-Learn\-Model} ()
+\begin{DoxyCompactList}\small\item\em Returns true if project is ready to learn model, false otherwise. \end{DoxyCompactList}\item 
+bool \hyperlink{class_go_s_u_m_1_1_c_container_a7f6b3fc22312e911e617b03fdc4a2656}{ready\-To\-Compute\-Sensitivities} ()
+\begin{DoxyCompactList}\small\item\em Returns true if project is ready to compute sensitivities, false otherwise. \end{DoxyCompactList}\item 
+bool \hyperlink{class_go_s_u_m_1_1_c_container_a4edc8dbed2d0c4cadb1993138b2cb190}{ready\-To\-Reduce\-Model} ()
+\begin{DoxyCompactList}\small\item\em Returns true if project is ready to reduce model, false otherwise. \end{DoxyCompactList}\item 
+bool \hyperlink{class_go_s_u_m_1_1_c_container_aeec60b71785278d9418283d68a59e6b1}{ready\-To\-Set\-Optimization} ()
+\begin{DoxyCompactList}\small\item\em Returns true if project is ready to set optimization, false otherwise. \end{DoxyCompactList}\item 
+bool \hyperlink{class_go_s_u_m_1_1_c_container_a195e79fdea4b67d519c5436a22eb31f2}{ready\-To\-Optimize} ()
+\begin{DoxyCompactList}\small\item\em Returns true if project is ready to optimize, false otherwise. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_af28a3e032bb395353a6df1d40ee7a109}{start\-Resampling} ()
+\begin{DoxyCompactList}\small\item\em Starts sampling inputs. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a99a6e723340daeece6ba3d2cb98cfb93}{start\-Evaluating} ()
+\begin{DoxyCompactList}\small\item\em Starts evaluating outputs. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a788f9bc7fb6b5dddf230046d03bd6152}{start\-Learning} ()
+\begin{DoxyCompactList}\small\item\em Starts learning model. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a434f9d0a1e255330c975a8142829a4a7}{start\-Sensitivity\-Computing} ()
+\begin{DoxyCompactList}\small\item\em Starts sensitivity computing. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_a0818f57ef8ad54a4576d0fcd0d7da87a}{start\-Optimizing} ()
+\begin{DoxyCompactList}\small\item\em Starts optimizing. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_container_afffd27d15c55079ec35bfb1e3757ff46}{join} ()
+\begin{DoxyCompactList}\small\item\em Joins thread for computation. \end{DoxyCompactList}\item 
+int \hyperlink{class_go_s_u_m_1_1_c_container_a109d7994013e7fe0b1efda5853b2b8fd}{optimization\-Steps\-Size} () const 
+\begin{DoxyCompactList}\small\item\em Returns maximal number of optimization evaluations. \end{DoxyCompactList}\item 
+int \hyperlink{class_go_s_u_m_1_1_c_container_a31d2be2e6e0c6c21e8c66e4bc869da0e}{learning\-Steps\-Size} () const 
+\begin{DoxyCompactList}\small\item\em Returns learning steps size. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_go_s_u_m_1_1_c_container_ab98aa1c7c84b62772c0f107a997b5076}{projecttype} \hyperlink{class_go_s_u_m_1_1_c_container_a45a678c04942f1db7a166b54a8f3568c}{Project\-Type} (const std\-::string \&\-\_\-stype)
+\begin{DoxyCompactList}\small\item\em Converts project type name (string) to projecttype enumerator-\/. \end{DoxyCompactList}\item 
+static \hyperlink{class_go_s_u_m_1_1_c_container_a1bcf4ef46bf23d5c838e8a5c20953e82}{optimizationmethodtype} \hyperlink{class_go_s_u_m_1_1_c_container_a04ec3828254a1619fe9a4009ab769244}{Optimization\-Method\-Type} (const std\-::string \&\-\_\-stype)
+\begin{DoxyCompactList}\small\item\em Converts optimization method name (string) to optimizationmethodtype enumerator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boost\-::thread \hyperlink{class_go_s_u_m_1_1_c_container_ac682522f6ba4e2a19e78a7f603b8c52c}{thrd}
+\begin{DoxyCompactList}\small\item\em Thread for computations. \end{DoxyCompactList}\item 
+boost\-::signal$<$ void()$>$ \hyperlink{class_go_s_u_m_1_1_c_container_a8ffc8d8267d0e21fd4129e9edaaf2e95}{resampling\-Finished}
+\begin{DoxyCompactList}\small\item\em Signal for sampling inputs finshed. \end{DoxyCompactList}\item 
+boost\-::signal$<$ void()$>$ \hyperlink{class_go_s_u_m_1_1_c_container_a261e36612f2614a6fd79c87b0d432fab}{evaluating\-Finished}
+\begin{DoxyCompactList}\small\item\em Signal for evaluating outputs finshed. \end{DoxyCompactList}\item 
+boost\-::signal$<$ void()$>$ \hyperlink{class_go_s_u_m_1_1_c_container_a9068a47de6aaaf67765f9e0ebd407e8a}{learning\-Finished}
+\begin{DoxyCompactList}\small\item\em Signal for learning model finshed. \end{DoxyCompactList}\item 
+boost\-::signal$<$ void()$>$ \hyperlink{class_go_s_u_m_1_1_c_container_a5d2ebab5941a91bb36e6c5bad4764d88}{sensitivity\-Computing\-Finished}
+\begin{DoxyCompactList}\small\item\em Signal for sensitivity computing finshed. \end{DoxyCompactList}\item 
+boost\-::signal$<$ void()$>$ \hyperlink{class_go_s_u_m_1_1_c_container_a13d00751fa7d80b99cba527e8d57327c}{optimizing\-Finished}
+\begin{DoxyCompactList}\small\item\em Signal for optimizing finshed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \hyperlink{class_go_s_u_m_1_1_c_container_adf9cfa4d07d21eafbd8f3c04c90b7f1f}{serialize} (Archive \&ar, const unsigned int version)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string \hyperlink{class_go_s_u_m_1_1_c_container_a6aa9dc492a21cf8966df5d90817c93b6}{prj\-Path}
+\item 
+std\-::string \hyperlink{class_go_s_u_m_1_1_c_container_a14823f77454a7bcbba182c30f6ae0735}{prj\-Name}
+\begin{DoxyCompactList}\small\item\em Project path and name. \end{DoxyCompactList}\item 
+\hyperlink{class_go_s_u_m_1_1_c_container_ab98aa1c7c84b62772c0f107a997b5076}{projecttype} \hyperlink{class_go_s_u_m_1_1_c_container_a35c156d40a3deb898fec8b4fe0d7639a}{prj\-Type}
+\begin{DoxyCompactList}\small\item\em Project type. \end{DoxyCompactList}\item 
+\hyperlink{class_go_s_u_m_1_1_c_container_a1bcf4ef46bf23d5c838e8a5c20953e82}{optimizationmethodtype} \hyperlink{class_go_s_u_m_1_1_c_container_a1e9582618d0ba3ef25fda4359092ee4d}{om\-Type}
+\begin{DoxyCompactList}\small\item\em Optimization method type. \end{DoxyCompactList}\item 
+\hyperlink{class_go_s_u_m_1_1_c_hypercube}{C\-Hypercube} \hyperlink{class_go_s_u_m_1_1_c_container_a14f86f3146dee751a86ec07a2979790d}{hycube}
+\begin{DoxyCompactList}\small\item\em Basic hypercube, used for resampling. \end{DoxyCompactList}\item 
+\hyperlink{class_go_s_u_m_1_1_c_model_constraints}{C\-Model\-Constraints} \hyperlink{class_go_s_u_m_1_1_c_container_a73819357a0ef4d28c921ae3562a21246}{inconsts}
+\begin{DoxyCompactList}\small\item\em Model constraints, i.\-e. constraints on input paramters. \end{DoxyCompactList}\item 
+\hyperlink{class_go_s_u_m_1_1_c_input_parameters}{C\-Input\-Parameters} \hyperlink{class_go_s_u_m_1_1_c_container_a0ca8dbcc826a7c66fb42a11b5b22e7b8}{inputs}
+\begin{DoxyCompactList}\small\item\em Input parameters of the project. \end{DoxyCompactList}\item 
+\hyperlink{class_go_s_u_m_1_1_c_output_states}{C\-Output\-States} \hyperlink{class_go_s_u_m_1_1_c_container_a3312afd03c8b6cfd72d46961a9afa136}{outputs}
+\begin{DoxyCompactList}\small\item\em Output states of the project. \end{DoxyCompactList}\item 
+\hyperlink{class_go_s_u_m_1_1_c_evaluator}{C\-Evaluator} \hyperlink{class_go_s_u_m_1_1_c_container_a230d7ca9d852616927abc46264a4c5e3}{evaluator}
+\begin{DoxyCompactList}\small\item\em Basic evalautor of the project, used only for model based projects. \end{DoxyCompactList}\item 
+\hyperlink{class_go_s_u_m_1_1_c_analytical_model}{C\-Analytical\-Model} \hyperlink{class_go_s_u_m_1_1_c_container_a9c745a3812f9974c0038a8e22769963c}{analytical}
+\begin{DoxyCompactList}\small\item\em Analytic model of the project. \end{DoxyCompactList}\item 
+\hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis}{C\-Sensitivity\-Analysis} \hyperlink{class_go_s_u_m_1_1_c_container_a8c0bf21d8d7f30490a79e63ac9a342e1}{sensitivity}
+\begin{DoxyCompactList}\small\item\em Sensistivity analysis of the analytical model. \end{DoxyCompactList}\item 
+\hyperlink{class_go_s_u_m_1_1_c_reduction}{C\-Reduction} \hyperlink{class_go_s_u_m_1_1_c_container_a6df9da86ba89c203d7a4b8aacaabf45c}{reduced}
+\begin{DoxyCompactList}\small\item\em Reduction operator. \end{DoxyCompactList}\item 
+\hyperlink{class_go_s_u_m_1_1_c_simple_optimization_problem}{C\-Simple\-Optimization\-Problem} $\ast$ \hyperlink{class_go_s_u_m_1_1_c_container_adeb8fce52629b3f9172a4ff0187ec040}{p\-O\-P}
+\begin{DoxyCompactList}\small\item\em Defined optimization problem. \end{DoxyCompactList}\item 
+\hyperlink{class_c_m_a_d_s}{C\-M\-A\-D\-S} \hyperlink{class_go_s_u_m_1_1_c_container_a7b9a7fe1992a3483366952a19b1ee484}{M\-A\-D\-S}
+\begin{DoxyCompactList}\small\item\em Mesh Adaptive Direct Search optimization method. \end{DoxyCompactList}\item 
+\hyperlink{class_c_g_a_model_optimization}{C\-G\-A\-Model\-Optimization} \hyperlink{class_go_s_u_m_1_1_c_container_aea0201dad816660f2ee30bfa1b95093e}{G\-A\-M\-O}
+\begin{DoxyCompactList}\small\item\em Genetic Algorithms optimization method. \end{DoxyCompactList}\item 
+std\-::vector$<$ int $>$ \hyperlink{class_go_s_u_m_1_1_c_container_a9a189048aeeaecf4aead1b0b62ff0814}{selectedsamples}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_go_s_u_m_1_1_c_container_ac98d07dd8f7b70e16ccb9a01abf56b9c}{boost\-::serialization\-::access}
+\begin{DoxyCompactList}\small\item\em Boost serialization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for the \hyperlink{struct_go_s_u_m}{Go\-S\-U\-M} main project. 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_container_a1bcf4ef46bf23d5c838e8a5c20953e82}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!optimizationmethodtype@{optimizationmethodtype}}
+\index{optimizationmethodtype@{optimizationmethodtype}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{optimizationmethodtype}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Go\-S\-U\-M\-::\-C\-Container\-::optimizationmethodtype}}}\label{class_go_s_u_m_1_1_c_container_a1bcf4ef46bf23d5c838e8a5c20953e82}
+\begin{Desc}
+\item[Enumerator\-: ]\par
+\begin{description}
+\index{mads@{mads}!Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}}\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!mads@{mads}}\item[{\em 
+\hypertarget{class_go_s_u_m_1_1_c_container_a1bcf4ef46bf23d5c838e8a5c20953e82a850013e22edc31b4ca212a377036eda5}{mads}\label{class_go_s_u_m_1_1_c_container_a1bcf4ef46bf23d5c838e8a5c20953e82a850013e22edc31b4ca212a377036eda5}
+}]\index{ga@{ga}!Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}}\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!ga@{ga}}\item[{\em 
+\hypertarget{class_go_s_u_m_1_1_c_container_a1bcf4ef46bf23d5c838e8a5c20953e82a165e1070fd11356595906b7fa59dee2b}{ga}\label{class_go_s_u_m_1_1_c_container_a1bcf4ef46bf23d5c838e8a5c20953e82a165e1070fd11356595906b7fa59dee2b}
+}]\end{description}
+\end{Desc}
+
+\hypertarget{class_go_s_u_m_1_1_c_container_ab98aa1c7c84b62772c0f107a997b5076}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!projecttype@{projecttype}}
+\index{projecttype@{projecttype}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{projecttype}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Go\-S\-U\-M\-::\-C\-Container\-::projecttype}}}\label{class_go_s_u_m_1_1_c_container_ab98aa1c7c84b62772c0f107a997b5076}
+\begin{Desc}
+\item[Enumerator\-: ]\par
+\begin{description}
+\index{samplegeneration@{samplegeneration}!Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}}\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!samplegeneration@{samplegeneration}}\item[{\em 
+\hypertarget{class_go_s_u_m_1_1_c_container_ab98aa1c7c84b62772c0f107a997b5076a553c22b054bed75575138ef807149725}{samplegeneration}\label{class_go_s_u_m_1_1_c_container_ab98aa1c7c84b62772c0f107a997b5076a553c22b054bed75575138ef807149725}
+}]\index{modelanalysis@{modelanalysis}!Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}}\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!modelanalysis@{modelanalysis}}\item[{\em 
+\hypertarget{class_go_s_u_m_1_1_c_container_ab98aa1c7c84b62772c0f107a997b5076a856b1d975b7d652aabf185b14dbc7349}{modelanalysis}\label{class_go_s_u_m_1_1_c_container_ab98aa1c7c84b62772c0f107a997b5076a856b1d975b7d652aabf185b14dbc7349}
+}]\index{dataanalysis@{dataanalysis}!Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}}\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!dataanalysis@{dataanalysis}}\item[{\em 
+\hypertarget{class_go_s_u_m_1_1_c_container_ab98aa1c7c84b62772c0f107a997b5076a7e6eb61ed0be28bdb7360e57bd12a4a6}{dataanalysis}\label{class_go_s_u_m_1_1_c_container_ab98aa1c7c84b62772c0f107a997b5076a7e6eb61ed0be28bdb7360e57bd12a4a6}
+}]\index{simpleoptimization@{simpleoptimization}!Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}}\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!simpleoptimization@{simpleoptimization}}\item[{\em 
+\hypertarget{class_go_s_u_m_1_1_c_container_ab98aa1c7c84b62772c0f107a997b5076a6bd715b658b71fd8840f34b80cf2f359}{simpleoptimization}\label{class_go_s_u_m_1_1_c_container_ab98aa1c7c84b62772c0f107a997b5076a6bd715b658b71fd8840f34b80cf2f359}
+}]\index{modeloptimization@{modeloptimization}!Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}}\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!modeloptimization@{modeloptimization}}\item[{\em 
+\hypertarget{class_go_s_u_m_1_1_c_container_ab98aa1c7c84b62772c0f107a997b5076a7c6463760279900e28106a461587c84d}{modeloptimization}\label{class_go_s_u_m_1_1_c_container_ab98aa1c7c84b62772c0f107a997b5076a7c6463760279900e28106a461587c84d}
+}]\index{learnedmodeloptimization@{learnedmodeloptimization}!Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}}\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!learnedmodeloptimization@{learnedmodeloptimization}}\item[{\em 
+\hypertarget{class_go_s_u_m_1_1_c_container_ab98aa1c7c84b62772c0f107a997b5076a5c15fd06dbc47d2027fe5bb24399b3df}{learnedmodeloptimization}\label{class_go_s_u_m_1_1_c_container_ab98aa1c7c84b62772c0f107a997b5076a5c15fd06dbc47d2027fe5bb24399b3df}
+}]\index{learneddataoptimization@{learneddataoptimization}!Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}}\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!learneddataoptimization@{learneddataoptimization}}\item[{\em 
+\hypertarget{class_go_s_u_m_1_1_c_container_ab98aa1c7c84b62772c0f107a997b5076ad48581dcb217d884472e19be506dc8b3}{learneddataoptimization}\label{class_go_s_u_m_1_1_c_container_ab98aa1c7c84b62772c0f107a997b5076ad48581dcb217d884472e19be506dc8b3}
+}]\end{description}
+\end{Desc}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_container_a468b52f3fd0333d3b4b484520c0cac02}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!C\-Container@{C\-Container}}
+\index{C\-Container@{C\-Container}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{C\-Container}]{\setlength{\rightskip}{0pt plus 5cm}Go\-S\-U\-M\-::\-C\-Container\-::\-C\-Container (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a468b52f3fd0333d3b4b484520c0cac02}
+\hypertarget{class_go_s_u_m_1_1_c_container_a64b52b2eb80232456bd8de9070d0523c}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!$\sim$\-C\-Container@{$\sim$\-C\-Container}}
+\index{$\sim$\-C\-Container@{$\sim$\-C\-Container}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{$\sim$\-C\-Container}]{\setlength{\rightskip}{0pt plus 5cm}Go\-S\-U\-M\-::\-C\-Container\-::$\sim$\-C\-Container (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_container_a64b52b2eb80232456bd8de9070d0523c}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_container_ab6667c4814c0366f485fc3a2ff4ff337}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!add\-Default\-Variable@{add\-Default\-Variable}}
+\index{add\-Default\-Variable@{add\-Default\-Variable}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{add\-Default\-Variable}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::add\-Default\-Variable (
+\begin{DoxyParamCaption}
+\item[{{\bf Go\-S\-U\-M\-::\-C\-Model\-Variables} $\ast$}]{p\-M\-Vs, }
+\item[{{\bf C\-Random\-Variable\-::distributiontype}}]{\-\_\-dtype}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_ab6667c4814c0366f485fc3a2ff4ff337}
+
+
+Adds one model variable, input and output, with default distribution parameter values. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a081dddd9a16be180450b0e5609411d93}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!add\-Input@{add\-Input}}
+\index{add\-Input@{add\-Input}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{add\-Input}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::add\-Input (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{\-\_\-name, }
+\item[{{\bf C\-Random\-Variable\-::distributiontype}}]{\-\_\-type, }
+\item[{double}]{\-\_\-a = {\ttfamily 0.}, }
+\item[{double}]{\-\_\-b = {\ttfamily 0.}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_container_a081dddd9a16be180450b0e5609411d93}
+
+
+Adds one input parameter. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a5f4587ff5791f6d4d768b8e106f4532f}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!add\-Inputs@{add\-Inputs}}
+\index{add\-Inputs@{add\-Inputs}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{add\-Inputs}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::add\-Inputs (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-\-N, }
+\item[{const std\-::string \&}]{\-\_\-name, }
+\item[{{\bf C\-Random\-Variable\-::distributiontype}}]{\-\_\-type, }
+\item[{double}]{\-\_\-a = {\ttfamily 0.}, }
+\item[{double}]{\-\_\-b = {\ttfamily 0.}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_container_a5f4587ff5791f6d4d768b8e106f4532f}
+
+
+Adds multiple input parameters. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a1bf466069ef62a5d773f0371c4b63734}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!add\-Optimization\-Constraint@{add\-Optimization\-Constraint}}
+\index{add\-Optimization\-Constraint@{add\-Optimization\-Constraint}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{add\-Optimization\-Constraint}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::add\-Optimization\-Constraint (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{\-\_\-gexpr}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a1bf466069ef62a5d773f0371c4b63734}
+
+
+Adds constraint of the optimization problem. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a44fcff3b27b16a00e9da88f0e9d3c147}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!add\-Output@{add\-Output}}
+\index{add\-Output@{add\-Output}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{add\-Output}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::add\-Output (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{\-\_\-name, }
+\item[{{\bf C\-Random\-Variable\-::distributiontype}}]{\-\_\-type, }
+\item[{double}]{\-\_\-a = {\ttfamily 0.}, }
+\item[{double}]{\-\_\-b = {\ttfamily 0.}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_container_a44fcff3b27b16a00e9da88f0e9d3c147}
+
+
+Adds one output state. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a07ff088fd625a281e5c2f3056b5ab30b}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!add\-Outputs@{add\-Outputs}}
+\index{add\-Outputs@{add\-Outputs}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{add\-Outputs}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::add\-Outputs (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-\-N, }
+\item[{const std\-::string \&}]{\-\_\-name, }
+\item[{{\bf C\-Random\-Variable\-::distributiontype}}]{\-\_\-type, }
+\item[{double}]{\-\_\-a = {\ttfamily 0.}, }
+\item[{double}]{\-\_\-b = {\ttfamily 0.}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_container_a07ff088fd625a281e5c2f3056b5ab30b}
+
+
+Adds multiple output states. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_afc7d8bd3667f7d93e03a38342ba2ea6f}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!add\-Variable@{add\-Variable}}
+\index{add\-Variable@{add\-Variable}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{add\-Variable}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::add\-Variable (
+\begin{DoxyParamCaption}
+\item[{{\bf Go\-S\-U\-M\-::\-C\-Model\-Variables} $\ast$}]{p\-M\-Vs, }
+\item[{{\bf C\-Random\-Variable\-::distributiontype}}]{\-\_\-dtype, }
+\item[{double}]{\-\_\-a = {\ttfamily 0.}, }
+\item[{double}]{\-\_\-b = {\ttfamily 0.}}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_afc7d8bd3667f7d93e03a38342ba2ea6f}
+
+
+Adds one model variable, input and output. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a431adbe221d0de0361b41ff35d26893f}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!add\-Variable@{add\-Variable}}
+\index{add\-Variable@{add\-Variable}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{add\-Variable}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::add\-Variable (
+\begin{DoxyParamCaption}
+\item[{{\bf Go\-S\-U\-M\-::\-C\-Model\-Variables} $\ast$}]{p\-M\-Vs, }
+\item[{const std\-::string \&}]{\-\_\-name, }
+\item[{{\bf C\-Random\-Variable\-::distributiontype}}]{\-\_\-dtype, }
+\item[{double}]{\-\_\-a = {\ttfamily 0.}, }
+\item[{double}]{\-\_\-b = {\ttfamily 0.}}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a431adbe221d0de0361b41ff35d26893f}
+
+
+Adds one model variable, input and output. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_aa25f1986d7da9947e06d511cc9f33aff}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!add\-Variables@{add\-Variables}}
+\index{add\-Variables@{add\-Variables}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{add\-Variables}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::add\-Variables (
+\begin{DoxyParamCaption}
+\item[{{\bf Go\-S\-U\-M\-::\-C\-Model\-Variables} $\ast$}]{p\-M\-Vs, }
+\item[{int}]{\-\_\-\-N, }
+\item[{{\bf C\-Random\-Variable\-::distributiontype}}]{\-\_\-dtype, }
+\item[{double}]{\-\_\-a = {\ttfamily 0.}, }
+\item[{double}]{\-\_\-b = {\ttfamily 0.}}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_aa25f1986d7da9947e06d511cc9f33aff}
+
+
+Adds multiple model variables, input and output. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a2d75ed7759d54780bbde34338bd67cfa}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!add\-Variables@{add\-Variables}}
+\index{add\-Variables@{add\-Variables}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{add\-Variables}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::add\-Variables (
+\begin{DoxyParamCaption}
+\item[{{\bf Go\-S\-U\-M\-::\-C\-Model\-Variables} $\ast$}]{p\-M\-Vs, }
+\item[{const std\-::string \&}]{\-\_\-name, }
+\item[{int}]{\-\_\-\-N, }
+\item[{{\bf C\-Random\-Variable\-::distributiontype}}]{\-\_\-dtype, }
+\item[{double}]{\-\_\-a = {\ttfamily 0.}, }
+\item[{double}]{\-\_\-b = {\ttfamily 0.}}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a2d75ed7759d54780bbde34338bd67cfa}
+
+
+Adds multiple model variables, input and output. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_afbf4b9d666f45853c817f623a356390e}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!analytical\-Model@{analytical\-Model}}
+\index{analytical\-Model@{analytical\-Model}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{analytical\-Model}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Analytical\-Model}\& Go\-S\-U\-M\-::\-C\-Container\-::analytical\-Model (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_container_afbf4b9d666f45853c817f623a356390e}
+
+
+Returns analytical model. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a9e4d2236683349d7923ae0a1b5575e67}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!clear@{clear}}
+\index{clear@{clear}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a9e4d2236683349d7923ae0a1b5575e67}
+
+
+Clears all project content. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a834bc751235dd105bfc3622a40adab9c}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!clear\-For\-Reducing@{clear\-For\-Reducing}}
+\index{clear\-For\-Reducing@{clear\-For\-Reducing}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{clear\-For\-Reducing}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::clear\-For\-Reducing (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a834bc751235dd105bfc3622a40adab9c}
+
+
+Clears all results except reducer. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a1754c019da5d002894dc19824edb1137}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!clear\-Learning\-Results@{clear\-Learning\-Results}}
+\index{clear\-Learning\-Results@{clear\-Learning\-Results}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{clear\-Learning\-Results}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::clear\-Learning\-Results (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a1754c019da5d002894dc19824edb1137}
+
+
+Clears project results, starting from learning. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a2bca712ba776fbd4a9149c489fe522fc}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!clear\-Optimization\-Results@{clear\-Optimization\-Results}}
+\index{clear\-Optimization\-Results@{clear\-Optimization\-Results}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{clear\-Optimization\-Results}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::clear\-Optimization\-Results (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a2bca712ba776fbd4a9149c489fe522fc}
+
+
+Clears optimization results. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a930dff672b2635bb8fcb56a3f2c9b3cd}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!clear\-Results@{clear\-Results}}
+\index{clear\-Results@{clear\-Results}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{clear\-Results}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::clear\-Results (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a930dff672b2635bb8fcb56a3f2c9b3cd}
+
+
+Clears all project results. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a743cc91c2a279bac44cd5ecda5d47b5e}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!clear\-Sampling\-Results@{clear\-Sampling\-Results}}
+\index{clear\-Sampling\-Results@{clear\-Sampling\-Results}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{clear\-Sampling\-Results}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::clear\-Sampling\-Results (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Model\-Variables} $\ast$}]{\-\_\-p\-M\-Vs}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a743cc91c2a279bac44cd5ecda5d47b5e}
+
+
+Clears project results starting from particular sampling. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a9be3f3f67a48964c4f92b754b72719bf}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!clear\-Sensitivity\-Results@{clear\-Sensitivity\-Results}}
+\index{clear\-Sensitivity\-Results@{clear\-Sensitivity\-Results}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{clear\-Sensitivity\-Results}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::clear\-Sensitivity\-Results (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a9be3f3f67a48964c4f92b754b72719bf}
+
+
+Clears project results, starting from senstivity. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a1831138d146cd61401aa87fc59c1c30a}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!clone\-Variable@{clone\-Variable}}
+\index{clone\-Variable@{clone\-Variable}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{clone\-Variable}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::clone\-Variable (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Model\-Variables} $\ast$}]{p\-M\-Vs, }
+\item[{int}]{\-\_\-at}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a1831138d146cd61401aa87fc59c1c30a}
+
+
+Clones particular model variable. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_ae0a6897c8af924d015b2517e78e86a15}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!compute\-Sensitivities@{compute\-Sensitivities}}
+\index{compute\-Sensitivities@{compute\-Sensitivities}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{compute\-Sensitivities}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::compute\-Sensitivities (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_ae0a6897c8af924d015b2517e78e86a15}
+
+
+Computes sensitivities. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a5f12502d4287c8030c4c8d84de8772a6}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!contains\-Declared\-Empirical\-Viarables@{contains\-Declared\-Empirical\-Viarables}}
+\index{contains\-Declared\-Empirical\-Viarables@{contains\-Declared\-Empirical\-Viarables}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{contains\-Declared\-Empirical\-Viarables}]{\setlength{\rightskip}{0pt plus 5cm}bool Go\-S\-U\-M\-::\-C\-Container\-::contains\-Declared\-Empirical\-Viarables (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{\-\_\-fname, }
+\item[{int \&}]{S\-Size, }
+\item[{std\-::vector$<$ {\bf C\-Random\-Variable\-::distributiontype} $>$ \&}]{dtypes}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a5f12502d4287c8030c4c8d84de8772a6}
+
+
+Returns true if file \-\_\-fname contains explicitly typed empirical variables, false otherwise. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a14f14de868517eeb457601f98ffd0fc5}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!contains\-Empirical\-Viarables@{contains\-Empirical\-Viarables}}
+\index{contains\-Empirical\-Viarables@{contains\-Empirical\-Viarables}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{contains\-Empirical\-Viarables}]{\setlength{\rightskip}{0pt plus 5cm}bool Go\-S\-U\-M\-::\-C\-Container\-::contains\-Empirical\-Viarables (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{\-\_\-fname, }
+\item[{int \&}]{S\-Size, }
+\item[{std\-::vector$<$ {\bf C\-Random\-Variable\-::distributiontype} $>$ \&}]{dtypes}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a14f14de868517eeb457601f98ffd0fc5}
+
+
+Returns true if file \-\_\-fname contains empirical variables, false otherwise. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a1a42243bc774adfa6de4490b759698ae}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!contains\-Named\-Declared\-Empirical\-Viarables@{contains\-Named\-Declared\-Empirical\-Viarables}}
+\index{contains\-Named\-Declared\-Empirical\-Viarables@{contains\-Named\-Declared\-Empirical\-Viarables}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{contains\-Named\-Declared\-Empirical\-Viarables}]{\setlength{\rightskip}{0pt plus 5cm}bool Go\-S\-U\-M\-::\-C\-Container\-::contains\-Named\-Declared\-Empirical\-Viarables (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{\-\_\-fname, }
+\item[{int \&}]{S\-Size, }
+\item[{std\-::vector$<$ {\bf C\-Random\-Variable\-::distributiontype} $>$ \&}]{dtypes}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a1a42243bc774adfa6de4490b759698ae}
+
+
+Returns true if file \-\_\-fname contains named explicitly typed empirical variables, false otherwise. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a445cedd0b8f00ccb5520eb726dcff53d}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!contains\-Named\-Empirical\-Viarables@{contains\-Named\-Empirical\-Viarables}}
+\index{contains\-Named\-Empirical\-Viarables@{contains\-Named\-Empirical\-Viarables}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{contains\-Named\-Empirical\-Viarables}]{\setlength{\rightskip}{0pt plus 5cm}bool Go\-S\-U\-M\-::\-C\-Container\-::contains\-Named\-Empirical\-Viarables (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{\-\_\-fname, }
+\item[{int \&}]{S\-Size, }
+\item[{std\-::vector$<$ {\bf C\-Random\-Variable\-::distributiontype} $>$ \&}]{dtypes}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a445cedd0b8f00ccb5520eb726dcff53d}
+
+
+Returns true if file \-\_\-fname contains named empirical variables, false otherwise. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a3a732e1369789b610f82b388b09d452e}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!contains\-Named\-Theoretical\-Viarables@{contains\-Named\-Theoretical\-Viarables}}
+\index{contains\-Named\-Theoretical\-Viarables@{contains\-Named\-Theoretical\-Viarables}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{contains\-Named\-Theoretical\-Viarables}]{\setlength{\rightskip}{0pt plus 5cm}bool Go\-S\-U\-M\-::\-C\-Container\-::contains\-Named\-Theoretical\-Viarables (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{\-\_\-fname}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a3a732e1369789b610f82b388b09d452e}
+
+
+Returns true if file \-\_\-fname contains named theoretical variables, false otherwise. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_ae49c3980250b89f49b98a4475368ddf1}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!contains\-Prediction\-Samples@{contains\-Prediction\-Samples}}
+\index{contains\-Prediction\-Samples@{contains\-Prediction\-Samples}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{contains\-Prediction\-Samples}]{\setlength{\rightskip}{0pt plus 5cm}bool Go\-S\-U\-M\-::\-C\-Container\-::contains\-Prediction\-Samples (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{\-\_\-fname, }
+\item[{int \&}]{Ncols, }
+\item[{int \&}]{Nrows}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_ae49c3980250b89f49b98a4475368ddf1}
+
+
+Returns true if file \-\_\-fname contains predicition samples, false otherwise. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_abe0ee6f577828f361df4db93d7fd1424}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!contains\-Theoretical\-Viarables@{contains\-Theoretical\-Viarables}}
+\index{contains\-Theoretical\-Viarables@{contains\-Theoretical\-Viarables}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{contains\-Theoretical\-Viarables}]{\setlength{\rightskip}{0pt plus 5cm}bool Go\-S\-U\-M\-::\-C\-Container\-::contains\-Theoretical\-Viarables (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{\-\_\-fname}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_abe0ee6f577828f361df4db93d7fd1424}
+
+
+Returns true if file \-\_\-fname contains theoretical variables, false otherwise. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a2df1d404b0fb5583dfbdcf26d51c6d5f}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!empty\-Learning\-Results@{empty\-Learning\-Results}}
+\index{empty\-Learning\-Results@{empty\-Learning\-Results}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{empty\-Learning\-Results}]{\setlength{\rightskip}{0pt plus 5cm}bool Go\-S\-U\-M\-::\-C\-Container\-::empty\-Learning\-Results (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_go_s_u_m_1_1_c_container_a2df1d404b0fb5583dfbdcf26d51c6d5f}
+
+
+Returns true if learning results are empty, false otherwise. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a29e43ab71e35275c88f6a6db2a82d00d}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!empty\-Optimization\-Results@{empty\-Optimization\-Results}}
+\index{empty\-Optimization\-Results@{empty\-Optimization\-Results}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{empty\-Optimization\-Results}]{\setlength{\rightskip}{0pt plus 5cm}bool Go\-S\-U\-M\-::\-C\-Container\-::empty\-Optimization\-Results (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_go_s_u_m_1_1_c_container_a29e43ab71e35275c88f6a6db2a82d00d}
+
+
+Returns true if optimization results are empty, false otherwise. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_ad46f5c3477a65e6ecaab12b29b66630a}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!empty\-Results@{empty\-Results}}
+\index{empty\-Results@{empty\-Results}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{empty\-Results}]{\setlength{\rightskip}{0pt plus 5cm}bool Go\-S\-U\-M\-::\-C\-Container\-::empty\-Results (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_go_s_u_m_1_1_c_container_ad46f5c3477a65e6ecaab12b29b66630a}
+
+
+Returns true if results are empty, false otherwise. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a931b4dec67d7370b5c862a12339b14df}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!empty\-Sampling\-Results@{empty\-Sampling\-Results}}
+\index{empty\-Sampling\-Results@{empty\-Sampling\-Results}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{empty\-Sampling\-Results}]{\setlength{\rightskip}{0pt plus 5cm}bool Go\-S\-U\-M\-::\-C\-Container\-::empty\-Sampling\-Results (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Model\-Variables} $\ast$}]{\-\_\-p\-M\-Vs}
+\end{DoxyParamCaption}
+) const}}\label{class_go_s_u_m_1_1_c_container_a931b4dec67d7370b5c862a12339b14df}
+
+
+Returns true if results starting from the \-\_\-p\-M\-Vs sampling are empty, false otherwise. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a531b0b177ff8910f5745055a930d72a2}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!empty\-Selected\-Samples@{empty\-Selected\-Samples}}
+\index{empty\-Selected\-Samples@{empty\-Selected\-Samples}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{empty\-Selected\-Samples}]{\setlength{\rightskip}{0pt plus 5cm}bool Go\-S\-U\-M\-::\-C\-Container\-::empty\-Selected\-Samples (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_container_a531b0b177ff8910f5745055a930d72a2}
+
+
+Returns true if selected samples are empty, false otherwise. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a56f4fd6eefa38f92032c3a166e8a052c}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!empty\-Sensitivity\-Results@{empty\-Sensitivity\-Results}}
+\index{empty\-Sensitivity\-Results@{empty\-Sensitivity\-Results}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{empty\-Sensitivity\-Results}]{\setlength{\rightskip}{0pt plus 5cm}bool Go\-S\-U\-M\-::\-C\-Container\-::empty\-Sensitivity\-Results (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_go_s_u_m_1_1_c_container_a56f4fd6eefa38f92032c3a166e8a052c}
+
+
+Returns true if sensitivity results are empty, false otherwise. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_ac5c3c5a7bafbfd4aec64bd43cca45480}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!erase\-Selected\-Samples@{erase\-Selected\-Samples}}
+\index{erase\-Selected\-Samples@{erase\-Selected\-Samples}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{erase\-Selected\-Samples}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::erase\-Selected\-Samples (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_ac5c3c5a7bafbfd4aec64bd43cca45480}
+
+
+Erases selected sample values in all model variables. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a9058b0abf5548874d0adb58178077f6a}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!erase\-Variable@{erase\-Variable}}
+\index{erase\-Variable@{erase\-Variable}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{erase\-Variable}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::erase\-Variable (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Model\-Variables} $\ast$}]{p\-M\-Vs, }
+\item[{std\-::string}]{\-\_\-name}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a9058b0abf5548874d0adb58178077f6a}
+
+
+Erases model variable with \-\_\-name. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_ae1811c5957b8dda68a7aacb507b39d16}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!evaluate\-Outputs@{evaluate\-Outputs}}
+\index{evaluate\-Outputs@{evaluate\-Outputs}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{evaluate\-Outputs}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::evaluate\-Outputs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_ae1811c5957b8dda68a7aacb507b39d16}
+
+
+Evaluates output states using external executable. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a6280676048025d0a46d5d5d145661329}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!export\-Absolute\-Average\-Derivative@{export\-Absolute\-Average\-Derivative}}
+\index{export\-Absolute\-Average\-Derivative@{export\-Absolute\-Average\-Derivative}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{export\-Absolute\-Average\-Derivative}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::export\-Absolute\-Average\-Derivative (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{\-\_\-fname}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a6280676048025d0a46d5d5d145661329}
+
+
+Exports absolute average derivative sensitivity. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_ae73c0dff9ed97b6a9a8bddd93b3d7cb4}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!export\-Average\-Derivative@{export\-Average\-Derivative}}
+\index{export\-Average\-Derivative@{export\-Average\-Derivative}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{export\-Average\-Derivative}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::export\-Average\-Derivative (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{\-\_\-fname}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_ae73c0dff9ed97b6a9a8bddd93b3d7cb4}
+
+
+Exports average derivative sensitivity. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a00edafdcfc7924119e45b42d6373fb6c}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!export\-Derivative\-Sensitivity@{export\-Derivative\-Sensitivity}}
+\index{export\-Derivative\-Sensitivity@{export\-Derivative\-Sensitivity}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{export\-Derivative\-Sensitivity}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::export\-Derivative\-Sensitivity (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{\-\_\-fname}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a00edafdcfc7924119e45b42d6373fb6c}
+
+
+Exports derivative sensitivity. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a2235f551c8a677cd031934a91bd9813f}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!export\-First\-Order\-A\-N\-O\-V\-A@{export\-First\-Order\-A\-N\-O\-V\-A}}
+\index{export\-First\-Order\-A\-N\-O\-V\-A@{export\-First\-Order\-A\-N\-O\-V\-A}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{export\-First\-Order\-A\-N\-O\-V\-A}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::export\-First\-Order\-A\-N\-O\-V\-A (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{\-\_\-fname}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a2235f551c8a677cd031934a91bd9813f}
+
+
+Exports first order A\-N\-O\-V\-A sensitivity. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a3ef90731268021db18187f907c65a281}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!export\-Input\-Samples@{export\-Input\-Samples}}
+\index{export\-Input\-Samples@{export\-Input\-Samples}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{export\-Input\-Samples}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::export\-Input\-Samples (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{\-\_\-fname}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_container_a3ef90731268021db18187f907c65a281}
+
+
+Imports input samples from file. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a3672d46d968ffcd2b944f22e90155759}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!export\-Optimization\-History@{export\-Optimization\-History}}
+\index{export\-Optimization\-History@{export\-Optimization\-History}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{export\-Optimization\-History}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::export\-Optimization\-History (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{\-\_\-fname}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a3672d46d968ffcd2b944f22e90155759}
+
+
+Exports optimization history. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_ad8c30745006224e5c7e1187633b5c5c1}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!export\-Optimization\-Method@{export\-Optimization\-Method}}
+\index{export\-Optimization\-Method@{export\-Optimization\-Method}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{export\-Optimization\-Method}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::export\-Optimization\-Method (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{\-\_\-fname}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_ad8c30745006224e5c7e1187633b5c5c1}
+
+
+Exports optimization method. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_aaf22f286b7da9d51204be1d16574b767}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!export\-Output\-Samples@{export\-Output\-Samples}}
+\index{export\-Output\-Samples@{export\-Output\-Samples}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{export\-Output\-Samples}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::export\-Output\-Samples (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{\-\_\-fname}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_container_aaf22f286b7da9d51204be1d16574b767}
+
+
+Imports output samples from file. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a8fb751f43be001ae0ca8225d7e1ee3fc}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!export\-Prediction\-Output\-Samples@{export\-Prediction\-Output\-Samples}}
+\index{export\-Prediction\-Output\-Samples@{export\-Prediction\-Output\-Samples}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{export\-Prediction\-Output\-Samples}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::export\-Prediction\-Output\-Samples (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{\-\_\-fname}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a8fb751f43be001ae0ca8225d7e1ee3fc}
+
+
+Exports prediction output samples. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a8c0086eb9ba429669d42ddcfffc5f207}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!export\-Samples@{export\-Samples}}
+\index{export\-Samples@{export\-Samples}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{export\-Samples}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::export\-Samples (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Model\-Variables} $\ast$}]{p\-M\-Vs, }
+\item[{const std\-::string \&}]{\-\_\-fname}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a8c0086eb9ba429669d42ddcfffc5f207}
+
+
+Exports samples for model variables, input and output. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_ae5621e54df5c608f284aa9abff6f7df3}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!export\-Variance\-Sensitivity@{export\-Variance\-Sensitivity}}
+\index{export\-Variance\-Sensitivity@{export\-Variance\-Sensitivity}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{export\-Variance\-Sensitivity}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::export\-Variance\-Sensitivity (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{\-\_\-fname}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_ae5621e54df5c608f284aa9abff6f7df3}
+
+
+Exports variance sensitivity. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a42e6d9cc6a2c47b1fb16beaa72fcac26}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!ga\-Optimizer@{ga\-Optimizer}}
+\index{ga\-Optimizer@{ga\-Optimizer}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{ga\-Optimizer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-G\-A\-Model\-Optimization}\& Go\-S\-U\-M\-::\-C\-Container\-::ga\-Optimizer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_container_a42e6d9cc6a2c47b1fb16beaa72fcac26}
+
+
+Returns M\-A\-D\-S. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a68aa9f1467ca1b17c216caed7ca590bf}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!hyper\-Cube@{hyper\-Cube}}
+\index{hyper\-Cube@{hyper\-Cube}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{hyper\-Cube}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Hypercube}\& Go\-S\-U\-M\-::\-C\-Container\-::hyper\-Cube (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_container_a68aa9f1467ca1b17c216caed7ca590bf}
+
+
+Returns hypercube. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a9ed00d0e2231dfd10699de96247e60dc}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!import\-Declared\-Empirical\-Variables@{import\-Declared\-Empirical\-Variables}}
+\index{import\-Declared\-Empirical\-Variables@{import\-Declared\-Empirical\-Variables}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{import\-Declared\-Empirical\-Variables}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::import\-Declared\-Empirical\-Variables (
+\begin{DoxyParamCaption}
+\item[{{\bf Go\-S\-U\-M\-::\-C\-Model\-Variables} $\ast$}]{p\-M\-Vs, }
+\item[{const std\-::string \&}]{\-\_\-fname, }
+\item[{int \&}]{S\-Size, }
+\item[{std\-::vector$<$ {\bf C\-Random\-Variable\-::distributiontype} $>$ \&}]{dtypes}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a9ed00d0e2231dfd10699de96247e60dc}
+
+
+Imports multiple empirical model variables from a file. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_ae5c4eeb98b818af39fd6956f0cc52757}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!import\-Empirical\-Variables@{import\-Empirical\-Variables}}
+\index{import\-Empirical\-Variables@{import\-Empirical\-Variables}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{import\-Empirical\-Variables}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::import\-Empirical\-Variables (
+\begin{DoxyParamCaption}
+\item[{{\bf Go\-S\-U\-M\-::\-C\-Model\-Variables} $\ast$}]{p\-M\-Vs, }
+\item[{const std\-::string \&}]{\-\_\-fname, }
+\item[{int \&}]{S\-Size, }
+\item[{std\-::vector$<$ {\bf C\-Random\-Variable\-::distributiontype} $>$ \&}]{dtypes}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_ae5c4eeb98b818af39fd6956f0cc52757}
+
+
+Imports multiple empirical model variables from a file. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_ade21d5810c661e695dfcc15e801a3282}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!import\-Initial\-Value@{import\-Initial\-Value}}
+\index{import\-Initial\-Value@{import\-Initial\-Value}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{import\-Initial\-Value}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::import\-Initial\-Value (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{\-\_\-fname}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_ade21d5810c661e695dfcc15e801a3282}
+
+
+Imports inital values for optimization variables. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a2f34109ab3a927dde8973956c7dfc71c}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!import\-Inputs@{import\-Inputs}}
+\index{import\-Inputs@{import\-Inputs}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{import\-Inputs}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::import\-Inputs (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{\-\_\-fname}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_container_a2f34109ab3a927dde8973956c7dfc71c}
+
+
+Imports multiple input parameters. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a21c8853e82347f8421ab6e80fed4618b}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!import\-Lower\-Bound@{import\-Lower\-Bound}}
+\index{import\-Lower\-Bound@{import\-Lower\-Bound}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{import\-Lower\-Bound}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::import\-Lower\-Bound (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{\-\_\-fname}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a21c8853e82347f8421ab6e80fed4618b}
+
+
+Imports lower bounds for optimization variables. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_ad1505a7068e2f1e588c1819eabda451b}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!import\-Model\-Constraints@{import\-Model\-Constraints}}
+\index{import\-Model\-Constraints@{import\-Model\-Constraints}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{import\-Model\-Constraints}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::import\-Model\-Constraints (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{\-\_\-fname}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_ad1505a7068e2f1e588c1819eabda451b}
+
+
+Imports model constraint expressions. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a235cad8c3165604a08024d9248d037a2}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!import\-Named\-Declared\-Empirical\-Variables@{import\-Named\-Declared\-Empirical\-Variables}}
+\index{import\-Named\-Declared\-Empirical\-Variables@{import\-Named\-Declared\-Empirical\-Variables}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{import\-Named\-Declared\-Empirical\-Variables}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::import\-Named\-Declared\-Empirical\-Variables (
+\begin{DoxyParamCaption}
+\item[{{\bf Go\-S\-U\-M\-::\-C\-Model\-Variables} $\ast$}]{p\-M\-Vs, }
+\item[{const std\-::string \&}]{\-\_\-fname, }
+\item[{int \&}]{S\-Size, }
+\item[{std\-::vector$<$ {\bf C\-Random\-Variable\-::distributiontype} $>$ \&}]{dtypes}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a235cad8c3165604a08024d9248d037a2}
+
+
+Imports multiple empirical model variables from a file. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a39d523fa0fc1af3a061f02223fab2b54}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!import\-Named\-Empirical\-Variables@{import\-Named\-Empirical\-Variables}}
+\index{import\-Named\-Empirical\-Variables@{import\-Named\-Empirical\-Variables}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{import\-Named\-Empirical\-Variables}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::import\-Named\-Empirical\-Variables (
+\begin{DoxyParamCaption}
+\item[{{\bf Go\-S\-U\-M\-::\-C\-Model\-Variables} $\ast$}]{p\-M\-Vs, }
+\item[{const std\-::string \&}]{\-\_\-fname, }
+\item[{int \&}]{S\-Size, }
+\item[{std\-::vector$<$ {\bf C\-Random\-Variable\-::distributiontype} $>$ \&}]{dtypes}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a39d523fa0fc1af3a061f02223fab2b54}
+
+
+Imports multiple empirical model variables from a file. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_aae9d5c9892de4672832aff32412611af}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!import\-Named\-Theoretical\-Variables@{import\-Named\-Theoretical\-Variables}}
+\index{import\-Named\-Theoretical\-Variables@{import\-Named\-Theoretical\-Variables}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{import\-Named\-Theoretical\-Variables}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::import\-Named\-Theoretical\-Variables (
+\begin{DoxyParamCaption}
+\item[{{\bf Go\-S\-U\-M\-::\-C\-Model\-Variables} $\ast$}]{p\-M\-Vs, }
+\item[{const std\-::string \&}]{\-\_\-fname}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_aae9d5c9892de4672832aff32412611af}
+
+
+Imports multiple theoretical model variables from a file. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a34fc441645bae3ad13057a2eac8f802d}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!import\-Optimization\-Constraints@{import\-Optimization\-Constraints}}
+\index{import\-Optimization\-Constraints@{import\-Optimization\-Constraints}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{import\-Optimization\-Constraints}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::import\-Optimization\-Constraints (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{\-\_\-fname}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a34fc441645bae3ad13057a2eac8f802d}
+
+
+Imports optimization constraint expressions. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a735339d9635295f7d05f5ceaad6a530e}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!import\-Outputs@{import\-Outputs}}
+\index{import\-Outputs@{import\-Outputs}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{import\-Outputs}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::import\-Outputs (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{\-\_\-fname}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_container_a735339d9635295f7d05f5ceaad6a530e}
+
+
+Imports multiple output states. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a16c0009b13b5254c490d6fb2d44bcf5f}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!import\-Prediction\-Input\-Samples@{import\-Prediction\-Input\-Samples}}
+\index{import\-Prediction\-Input\-Samples@{import\-Prediction\-Input\-Samples}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{import\-Prediction\-Input\-Samples}]{\setlength{\rightskip}{0pt plus 5cm}bool Go\-S\-U\-M\-::\-C\-Container\-::import\-Prediction\-Input\-Samples (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{\-\_\-fname}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a16c0009b13b5254c490d6fb2d44bcf5f}
+
+
+Imports prediction input samples. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a828fcd476fd8a4e981e33f799111d85f}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!import\-Theoretical\-Variables@{import\-Theoretical\-Variables}}
+\index{import\-Theoretical\-Variables@{import\-Theoretical\-Variables}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{import\-Theoretical\-Variables}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::import\-Theoretical\-Variables (
+\begin{DoxyParamCaption}
+\item[{{\bf Go\-S\-U\-M\-::\-C\-Model\-Variables} $\ast$}]{p\-M\-Vs, }
+\item[{const std\-::string \&}]{\-\_\-fname}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a828fcd476fd8a4e981e33f799111d85f}
+
+
+Imports multiple theoretical model variables from a file. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a1dffaadac10b82a94cac8e12bbc4dd92}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!import\-Upper\-Bound@{import\-Upper\-Bound}}
+\index{import\-Upper\-Bound@{import\-Upper\-Bound}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{import\-Upper\-Bound}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::import\-Upper\-Bound (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{\-\_\-fname}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a1dffaadac10b82a94cac8e12bbc4dd92}
+
+
+Imports upper bounds for optimization variables. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a2d46b9ba16bacb25c69859354dec3a0f}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!import\-Variables@{import\-Variables}}
+\index{import\-Variables@{import\-Variables}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{import\-Variables}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::import\-Variables (
+\begin{DoxyParamCaption}
+\item[{{\bf Go\-S\-U\-M\-::\-C\-Model\-Variables} $\ast$}]{p\-M\-Vs, }
+\item[{const std\-::string \&}]{\-\_\-fname}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a2d46b9ba16bacb25c69859354dec3a0f}
+
+
+Imports multiple model variables from a file, input and output. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a0eac125fff705243cbd0e4da2f588535}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!input\-Parameter@{input\-Parameter}}
+\index{input\-Parameter@{input\-Parameter}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{input\-Parameter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Model\-Variable}\& Go\-S\-U\-M\-::\-C\-Container\-::input\-Parameter (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-at}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_container_a0eac125fff705243cbd0e4da2f588535}
+
+
+Returns particular input parameter. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a7d7755e585f783b99d6e16d4381c5c4d}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!input\-Parameters@{input\-Parameters}}
+\index{input\-Parameters@{input\-Parameters}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{input\-Parameters}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Input\-Parameters}\& Go\-S\-U\-M\-::\-C\-Container\-::input\-Parameters (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_container_a7d7755e585f783b99d6e16d4381c5c4d}
+
+
+Returns input parameters. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_aa1370576faa1ddf1488d491c8a998574}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!inputs\-Size@{inputs\-Size}}
+\index{inputs\-Size@{inputs\-Size}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{inputs\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int Go\-S\-U\-M\-::\-C\-Container\-::inputs\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_container_aa1370576faa1ddf1488d491c8a998574}
+
+
+Returns input parameters size. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a49b85eedc6fd533dbf408befc649bd5e}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!is\-Sample\-Selected@{is\-Sample\-Selected}}
+\index{is\-Sample\-Selected@{is\-Sample\-Selected}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{is\-Sample\-Selected}]{\setlength{\rightskip}{0pt plus 5cm}bool Go\-S\-U\-M\-::\-C\-Container\-::is\-Sample\-Selected (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-i}
+\end{DoxyParamCaption}
+) const}}\label{class_go_s_u_m_1_1_c_container_a49b85eedc6fd533dbf408befc649bd5e}
+
+
+Returns true if particular sample value is selected, false otherwise. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_afffd27d15c55079ec35bfb1e3757ff46}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!join@{join}}
+\index{join@{join}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{join}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::join (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_afffd27d15c55079ec35bfb1e3757ff46}
+
+
+Joins thread for computation. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_adfb19bf17ae159250216d53780ae3134}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!learn\-Evaluation\-Size@{learn\-Evaluation\-Size}}
+\index{learn\-Evaluation\-Size@{learn\-Evaluation\-Size}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{learn\-Evaluation\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int Go\-S\-U\-M\-::\-C\-Container\-::learn\-Evaluation\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_container_adfb19bf17ae159250216d53780ae3134}
+
+
+Returns maximal number of learn optimization evaluations. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a31d2be2e6e0c6c21e8c66e4bc869da0e}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!learning\-Steps\-Size@{learning\-Steps\-Size}}
+\index{learning\-Steps\-Size@{learning\-Steps\-Size}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{learning\-Steps\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int Go\-S\-U\-M\-::\-C\-Container\-::learning\-Steps\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_container_a31d2be2e6e0c6c21e8c66e4bc869da0e}
+
+
+Returns learning steps size. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_af9ad216aef4fa11d5a3bfaf388e37608}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!learn\-Model@{learn\-Model}}
+\index{learn\-Model@{learn\-Model}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{learn\-Model}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::learn\-Model (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_af9ad216aef4fa11d5a3bfaf388e37608}
+
+
+Learns model. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a7e375679590b3e37935f2fb4ab632bb0}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!load@{load}}
+\index{load@{load}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::load (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a7e375679590b3e37935f2fb4ab632bb0}
+
+
+Loads project from binary format. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a74d77db2e9759c572e77559d2d3140e2}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!load\-Txt@{load\-Txt}}
+\index{load\-Txt@{load\-Txt}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{load\-Txt}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::load\-Txt (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a74d77db2e9759c572e77559d2d3140e2}
+
+
+Loads project from txt format. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a594e74ec12b59375a61256c851b44529}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!load\-Xml@{load\-Xml}}
+\index{load\-Xml@{load\-Xml}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{load\-Xml}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::load\-Xml (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a594e74ec12b59375a61256c851b44529}
+
+
+Loads project from xml format. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a38869a1ee99c6a19a64a71ce56e5b88f}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!long\-Project\-Name@{long\-Project\-Name}}
+\index{long\-Project\-Name@{long\-Project\-Name}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{long\-Project\-Name}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Go\-S\-U\-M\-::\-C\-Container\-::long\-Project\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a38869a1ee99c6a19a64a71ce56e5b88f}
+
+
+Returns long project name. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a58efe49433f7ca1358b62bb14a3e0674}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!mads\-Optimizer@{mads\-Optimizer}}
+\index{mads\-Optimizer@{mads\-Optimizer}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{mads\-Optimizer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-M\-A\-D\-S}\& Go\-S\-U\-M\-::\-C\-Container\-::mads\-Optimizer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_container_a58efe49433f7ca1358b62bb14a3e0674}
+
+
+Returns M\-A\-D\-S. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_accd74ef02f6e8dca6b0bc7418242cd8f}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!maximize@{maximize}}
+\index{maximize@{maximize}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{maximize}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::maximize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_accd74ef02f6e8dca6b0bc7418242cd8f}
+
+
+Maximizes. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a42773631ab73d17ac47673d17d27ef5a}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!minimize@{minimize}}
+\index{minimize@{minimize}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{minimize}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::minimize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a42773631ab73d17ac47673d17d27ef5a}
+
+
+Minimizes. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a4579e65d7ae46d352a56078360c5666d}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!model\-Constraints@{model\-Constraints}}
+\index{model\-Constraints@{model\-Constraints}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{model\-Constraints}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Model\-Constraints}\& Go\-S\-U\-M\-::\-C\-Container\-::model\-Constraints (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_container_a4579e65d7ae46d352a56078360c5666d}
+
+
+Returns model constraints. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_abfcaff8dac0f87d13ee010acc1127dd5}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!model\-Evaluator@{model\-Evaluator}}
+\index{model\-Evaluator@{model\-Evaluator}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{model\-Evaluator}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Evaluator}\& Go\-S\-U\-M\-::\-C\-Container\-::model\-Evaluator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_container_abfcaff8dac0f87d13ee010acc1127dd5}
+
+
+Returns evaluator. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a4f6b1e71a9909e1fb37fc9f73b5689ee}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!optimization\-Method@{optimization\-Method}}
+\index{optimization\-Method@{optimization\-Method}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{optimization\-Method}]{\setlength{\rightskip}{0pt plus 5cm}{\bf optimizationmethodtype} Go\-S\-U\-M\-::\-C\-Container\-::optimization\-Method (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_container_a4f6b1e71a9909e1fb37fc9f73b5689ee}
+
+
+Returns chosen optimization method type. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a04ec3828254a1619fe9a4009ab769244}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!Optimization\-Method\-Type@{Optimization\-Method\-Type}}
+\index{Optimization\-Method\-Type@{Optimization\-Method\-Type}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{Optimization\-Method\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Go\-S\-U\-M\-::\-C\-Container\-::optimizationmethodtype} Go\-S\-U\-M\-::\-C\-Container\-::\-Optimization\-Method\-Type (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{\-\_\-stype}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_go_s_u_m_1_1_c_container_a04ec3828254a1619fe9a4009ab769244}
+
+
+Converts optimization method name (string) to optimizationmethodtype enumerator. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a2abf77f71b45ada3e038cfce7ad77b4b}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!optimization\-Problem@{optimization\-Problem}}
+\index{optimization\-Problem@{optimization\-Problem}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{optimization\-Problem}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Simple\-Optimization\-Problem}$\ast$ Go\-S\-U\-M\-::\-C\-Container\-::optimization\-Problem (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_container_a2abf77f71b45ada3e038cfce7ad77b4b}
+
+
+Returns optimization problem. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a109d7994013e7fe0b1efda5853b2b8fd}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!optimization\-Steps\-Size@{optimization\-Steps\-Size}}
+\index{optimization\-Steps\-Size@{optimization\-Steps\-Size}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{optimization\-Steps\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int Go\-S\-U\-M\-::\-C\-Container\-::optimization\-Steps\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_container_a109d7994013e7fe0b1efda5853b2b8fd}
+
+
+Returns maximal number of optimization evaluations. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a8c9a21e3e048da67a4d1e0950877ac3c}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!optimize@{optimize}}
+\index{optimize@{optimize}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{optimize}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::optimize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a8c9a21e3e048da67a4d1e0950877ac3c}
+
+
+Optimizes. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_ac19c60a80c0394dccb130fffe2411abc}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!outputs\-Size@{outputs\-Size}}
+\index{outputs\-Size@{outputs\-Size}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{outputs\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int Go\-S\-U\-M\-::\-C\-Container\-::outputs\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_container_ac19c60a80c0394dccb130fffe2411abc}
+
+
+Returns output states size. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a53f245e7a0e82a445b282c18289c16b7}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!output\-State@{output\-State}}
+\index{output\-State@{output\-State}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{output\-State}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Model\-Variable}\& Go\-S\-U\-M\-::\-C\-Container\-::output\-State (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-at}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_container_a53f245e7a0e82a445b282c18289c16b7}
+
+
+Returns particular output state. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a63309726c2f7ff3b3bc1f19fee0a7aa5}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!output\-States@{output\-States}}
+\index{output\-States@{output\-States}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{output\-States}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Output\-States}\& Go\-S\-U\-M\-::\-C\-Container\-::output\-States (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_container_a63309726c2f7ff3b3bc1f19fee0a7aa5}
+
+
+Returns output states. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a2f3c28757a614f4f51c059965fe5d874}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!predict@{predict}}
+\index{predict@{predict}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{predict}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::predict (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_container_a2f3c28757a614f4f51c059965fe5d874}
+
+
+Predicts (using analytical model). 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a3e52f16e061cdb5475c2815ea790013f}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!predict\-Mean@{predict\-Mean}}
+\index{predict\-Mean@{predict\-Mean}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{predict\-Mean}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::predict\-Mean (
+\begin{DoxyParamCaption}
+\item[{Array\-Xd \&}]{ymu, }
+\item[{Array\-Xd \&}]{yvar}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a3e52f16e061cdb5475c2815ea790013f}
+
+
+Predicts mean and variance using learned model. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_aaa8d02f418180b2cbfd5de01868b4c1f}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!project\-Name@{project\-Name}}
+\index{project\-Name@{project\-Name}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{project\-Name}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Go\-S\-U\-M\-::\-C\-Container\-::project\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_container_aaa8d02f418180b2cbfd5de01868b4c1f}
+
+
+Returns project name. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a1e1139b32d1bf7f30af45f5d0cbbf33e}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!project\-Path@{project\-Path}}
+\index{project\-Path@{project\-Path}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{project\-Path}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Go\-S\-U\-M\-::\-C\-Container\-::project\-Path (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_container_a1e1139b32d1bf7f30af45f5d0cbbf33e}
+
+
+Returns project path. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a45a678c04942f1db7a166b54a8f3568c}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!Project\-Type@{Project\-Type}}
+\index{Project\-Type@{Project\-Type}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{Project\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Go\-S\-U\-M\-::\-C\-Container\-::projecttype} Go\-S\-U\-M\-::\-C\-Container\-::\-Project\-Type (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{\-\_\-stype}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_go_s_u_m_1_1_c_container_a45a678c04942f1db7a166b54a8f3568c}
+
+
+Converts project type name (string) to projecttype enumerator-\/. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a3929863006e25f9b15ab705ccc3a6d2b}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!project\-Type@{project\-Type}}
+\index{project\-Type@{project\-Type}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{project\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf projecttype} Go\-S\-U\-M\-::\-C\-Container\-::project\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_container_a3929863006e25f9b15ab705ccc3a6d2b}
+
+
+Returns chosen project type. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a7f6b3fc22312e911e617b03fdc4a2656}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!ready\-To\-Compute\-Sensitivities@{ready\-To\-Compute\-Sensitivities}}
+\index{ready\-To\-Compute\-Sensitivities@{ready\-To\-Compute\-Sensitivities}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{ready\-To\-Compute\-Sensitivities}]{\setlength{\rightskip}{0pt plus 5cm}bool Go\-S\-U\-M\-::\-C\-Container\-::ready\-To\-Compute\-Sensitivities (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a7f6b3fc22312e911e617b03fdc4a2656}
+
+
+Returns true if project is ready to compute sensitivities, false otherwise. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_ad9ef8b5a02e6a9dda354361ffe6b2ddf}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!ready\-To\-Evaluate\-Outputs@{ready\-To\-Evaluate\-Outputs}}
+\index{ready\-To\-Evaluate\-Outputs@{ready\-To\-Evaluate\-Outputs}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{ready\-To\-Evaluate\-Outputs}]{\setlength{\rightskip}{0pt plus 5cm}bool Go\-S\-U\-M\-::\-C\-Container\-::ready\-To\-Evaluate\-Outputs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_ad9ef8b5a02e6a9dda354361ffe6b2ddf}
+
+
+Returns true if project is ready to evaluate outputs, false otherwise. 
+
+outputs.\-empty() \&\& \hypertarget{class_go_s_u_m_1_1_c_container_a0890310299b413991d15e7c5da39f2a5}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!ready\-To\-Learn\-Model@{ready\-To\-Learn\-Model}}
+\index{ready\-To\-Learn\-Model@{ready\-To\-Learn\-Model}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{ready\-To\-Learn\-Model}]{\setlength{\rightskip}{0pt plus 5cm}bool Go\-S\-U\-M\-::\-C\-Container\-::ready\-To\-Learn\-Model (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a0890310299b413991d15e7c5da39f2a5}
+
+
+Returns true if project is ready to learn model, false otherwise. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a195e79fdea4b67d519c5436a22eb31f2}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!ready\-To\-Optimize@{ready\-To\-Optimize}}
+\index{ready\-To\-Optimize@{ready\-To\-Optimize}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{ready\-To\-Optimize}]{\setlength{\rightskip}{0pt plus 5cm}bool Go\-S\-U\-M\-::\-C\-Container\-::ready\-To\-Optimize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a195e79fdea4b67d519c5436a22eb31f2}
+
+
+Returns true if project is ready to optimize, false otherwise. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a4edc8dbed2d0c4cadb1993138b2cb190}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!ready\-To\-Reduce\-Model@{ready\-To\-Reduce\-Model}}
+\index{ready\-To\-Reduce\-Model@{ready\-To\-Reduce\-Model}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{ready\-To\-Reduce\-Model}]{\setlength{\rightskip}{0pt plus 5cm}bool Go\-S\-U\-M\-::\-C\-Container\-::ready\-To\-Reduce\-Model (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a4edc8dbed2d0c4cadb1993138b2cb190}
+
+
+Returns true if project is ready to reduce model, false otherwise. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a55f90d3ae5a1bef2e7c4686b5abc5321}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!ready\-To\-Sample\-Inputs@{ready\-To\-Sample\-Inputs}}
+\index{ready\-To\-Sample\-Inputs@{ready\-To\-Sample\-Inputs}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{ready\-To\-Sample\-Inputs}]{\setlength{\rightskip}{0pt plus 5cm}bool Go\-S\-U\-M\-::\-C\-Container\-::ready\-To\-Sample\-Inputs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a55f90d3ae5a1bef2e7c4686b5abc5321}
+
+
+Returns true if project is ready to sample inputs, false otherwise. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_aeec60b71785278d9418283d68a59e6b1}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!ready\-To\-Set\-Optimization@{ready\-To\-Set\-Optimization}}
+\index{ready\-To\-Set\-Optimization@{ready\-To\-Set\-Optimization}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{ready\-To\-Set\-Optimization}]{\setlength{\rightskip}{0pt plus 5cm}bool Go\-S\-U\-M\-::\-C\-Container\-::ready\-To\-Set\-Optimization (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_aeec60b71785278d9418283d68a59e6b1}
+
+
+Returns true if project is ready to set optimization, false otherwise. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_aea6baeca7db258ebef1143e7fefb4e2a}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!reduce@{reduce}}
+\index{reduce@{reduce}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{reduce}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::reduce (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_aea6baeca7db258ebef1143e7fefb4e2a}
+
+
+Reduces model. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a75766ed932584c790cf0693091ba1933}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!reducer@{reducer}}
+\index{reducer@{reducer}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{reducer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Reduction}\& Go\-S\-U\-M\-::\-C\-Container\-::reducer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_container_a75766ed932584c790cf0693091ba1933}
+
+
+Returns reduction tool. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_acc0b74915eadfc081735860c2611b818}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!resample\-Inputs@{resample\-Inputs}}
+\index{resample\-Inputs@{resample\-Inputs}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{resample\-Inputs}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::resample\-Inputs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_acc0b74915eadfc081735860c2611b818}
+
+
+Resamples input parameters. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_ade328666a89997831a90ed068ad38bfc}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!reset\-Optimization\-Variable@{reset\-Optimization\-Variable}}
+\index{reset\-Optimization\-Variable@{reset\-Optimization\-Variable}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{reset\-Optimization\-Variable}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::reset\-Optimization\-Variable (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Model\-Variables} $\ast$}]{p\-M\-Vs, }
+\item[{int}]{\-\_\-at}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_ade328666a89997831a90ed068ad38bfc}
+
+
+Resets values in the particular optimization variable. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a323bfd6245970284c56d498135757358}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!save@{save}}
+\index{save@{save}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::save (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a323bfd6245970284c56d498135757358}
+
+
+Saves project to binary format. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_ac3bf0b71180d660aa5595839801ba6d2}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!save\-Txt@{save\-Txt}}
+\index{save\-Txt@{save\-Txt}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{save\-Txt}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::save\-Txt (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_ac3bf0b71180d660aa5595839801ba6d2}
+
+
+Saves project to txt format. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_ad89e627b8c19bd1f65e102a81bcea993}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!save\-Xml@{save\-Xml}}
+\index{save\-Xml@{save\-Xml}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{save\-Xml}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::save\-Xml (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_ad89e627b8c19bd1f65e102a81bcea993}
+
+
+Saves project to xml format. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a8f9cc0a02d2cfebccd2a01f9115be170}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!selected\-Samples@{selected\-Samples}}
+\index{selected\-Samples@{selected\-Samples}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{selected\-Samples}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$int$>$\& Go\-S\-U\-M\-::\-C\-Container\-::selected\-Samples (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_container_a8f9cc0a02d2cfebccd2a01f9115be170}
+\hypertarget{class_go_s_u_m_1_1_c_container_a39db61d98e387e4b70f0ed9321790690}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!select\-Samples@{select\-Samples}}
+\index{select\-Samples@{select\-Samples}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{select\-Samples}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::select\-Samples (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Model\-Variable} $\ast$}]{pmv, }
+\item[{double}]{\-\_\-left, }
+\item[{double}]{\-\_\-right}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a39db61d98e387e4b70f0ed9321790690}
+
+
+Selects sample values of variable pmv that are contained in \mbox{[}\-\_\-left,\-\_\-right\mbox{]} interval. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a9f5cbdedea1f310554d3fc75c5139fd8}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!sensitivity\-Analysis@{sensitivity\-Analysis}}
+\index{sensitivity\-Analysis@{sensitivity\-Analysis}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{sensitivity\-Analysis}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Sensitivity\-Analysis}\& Go\-S\-U\-M\-::\-C\-Container\-::sensitivity\-Analysis (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_container_a9f5cbdedea1f310554d3fc75c5139fd8}
+
+
+Returns sensitivity analysis. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a14740007a92dcea3a3523216555356e4}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!separate\-By\-Selection@{separate\-By\-Selection}}
+\index{separate\-By\-Selection@{separate\-By\-Selection}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{separate\-By\-Selection}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::separate\-By\-Selection (
+\begin{DoxyParamCaption}
+\item[{const Array\-Xd \&}]{X, }
+\item[{std\-::vector$<$ double $>$ \&}]{x, }
+\item[{std\-::vector$<$ double $>$ \&}]{selx}
+\end{DoxyParamCaption}
+) const}}\label{class_go_s_u_m_1_1_c_container_a14740007a92dcea3a3523216555356e4}
+
+
+Separates array X into two vectors based on the index (not contained/contained in selected samples). 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_adf9cfa4d07d21eafbd8f3c04c90b7f1f}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!serialize@{serialize}}
+\index{serialize@{serialize}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Archive $>$ void Go\-S\-U\-M\-::\-C\-Container\-::serialize (
+\begin{DoxyParamCaption}
+\item[{Archive \&}]{ar, }
+\item[{const unsigned int}]{version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_container_adf9cfa4d07d21eafbd8f3c04c90b7f1f}
+\hypertarget{class_go_s_u_m_1_1_c_container_abb53ea6876c4369ac26d6cb3e21fc1c2}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!set\-Initial\-Value@{set\-Initial\-Value}}
+\index{set\-Initial\-Value@{set\-Initial\-Value}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{set\-Initial\-Value}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::set\-Initial\-Value (
+\begin{DoxyParamCaption}
+\item[{const Array\-Xd \&}]{\-\_\-x0}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_abb53ea6876c4369ac26d6cb3e21fc1c2}
+
+
+Sets initial value of the optimization variables. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a2757000e2f4510f6bf25d4599521585b}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!set\-Lower\-Bound@{set\-Lower\-Bound}}
+\index{set\-Lower\-Bound@{set\-Lower\-Bound}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{set\-Lower\-Bound}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::set\-Lower\-Bound (
+\begin{DoxyParamCaption}
+\item[{const Array\-Xd \&}]{\-\_\-x\-L}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a2757000e2f4510f6bf25d4599521585b}
+
+
+Sets lower bound of the optimization variables. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_ad552e7ea343fd95a5a0384ce3e8d18c3}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!set\-Mads\-Init\-Mesh\-Size@{set\-Mads\-Init\-Mesh\-Size}}
+\index{set\-Mads\-Init\-Mesh\-Size@{set\-Mads\-Init\-Mesh\-Size}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{set\-Mads\-Init\-Mesh\-Size}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::set\-Mads\-Init\-Mesh\-Size (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-ims}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_container_ad552e7ea343fd95a5a0384ce3e8d18c3}
+
+
+Sets M\-A\-D\-S initial mesh size. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a22a71fd1808b4e9bd0d4fb3a5b4ef0a7}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!set\-Mads\-L\-H\-Search@{set\-Mads\-L\-H\-Search}}
+\index{set\-Mads\-L\-H\-Search@{set\-Mads\-L\-H\-Search}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{set\-Mads\-L\-H\-Search}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::set\-Mads\-L\-H\-Search (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-lh0, }
+\item[{int}]{\-\_\-lhi}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_container_a22a71fd1808b4e9bd0d4fb3a5b4ef0a7}
+
+
+Sets M\-A\-D\-S lh search paraemters. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_ab63c8de284df2a92d36a1dff63f7aa9a}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!set\-Mads\-Max\-Evaluation@{set\-Mads\-Max\-Evaluation}}
+\index{set\-Mads\-Max\-Evaluation@{set\-Mads\-Max\-Evaluation}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{set\-Mads\-Max\-Evaluation}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::set\-Mads\-Max\-Evaluation (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-maxeval}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_container_ab63c8de284df2a92d36a1dff63f7aa9a}
+
+
+Sets M\-A\-D\-S maximal number of evaluations. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a80c18156be69abfea5ceabbda9a83260}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!set\-Mads\-Min\-Poll\-Size@{set\-Mads\-Min\-Poll\-Size}}
+\index{set\-Mads\-Min\-Poll\-Size@{set\-Mads\-Min\-Poll\-Size}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{set\-Mads\-Min\-Poll\-Size}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::set\-Mads\-Min\-Poll\-Size (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-mps}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_container_a80c18156be69abfea5ceabbda9a83260}
+
+
+Sets M\-A\-D\-S final poll size. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_af4c2c7dbe9944ba9170bf82031563454}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!set\-Mat\-Lab\-Path@{set\-Mat\-Lab\-Path}}
+\index{set\-Mat\-Lab\-Path@{set\-Mat\-Lab\-Path}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{set\-Mat\-Lab\-Path}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::set\-Mat\-Lab\-Path (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{\-\_\-matlab\-Path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_container_af4c2c7dbe9944ba9170bf82031563454}
+
+
+Sets Mat\-Lab path. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a7ff3f16ae1bce4e14b4ed8376cdaac20}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!set\-Model\-Evaluator@{set\-Model\-Evaluator}}
+\index{set\-Model\-Evaluator@{set\-Model\-Evaluator}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{set\-Model\-Evaluator}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::set\-Model\-Evaluator (
+\begin{DoxyParamCaption}
+\item[{{\bf Go\-S\-U\-M\-::\-C\-Model\-Evaluator\-::evaluatortype}}]{\-\_\-me, }
+\item[{const std\-::string \&}]{\-\_\-filename}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a7ff3f16ae1bce4e14b4ed8376cdaac20}
+
+
+Sets model evaluator. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a8880693579c129adb040e375bd4647eb}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!set\-Objective@{set\-Objective}}
+\index{set\-Objective@{set\-Objective}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{set\-Objective}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::set\-Objective (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{\-\_\-fexpr}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a8880693579c129adb040e375bd4647eb}
+
+
+Sets objective of the optimization problem. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a00f2a1e85a2fc61a39154664ae2aa5f1}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!set\-Optimization\-Method@{set\-Optimization\-Method}}
+\index{set\-Optimization\-Method@{set\-Optimization\-Method}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{set\-Optimization\-Method}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::set\-Optimization\-Method (
+\begin{DoxyParamCaption}
+\item[{{\bf optimizationmethodtype}}]{\-\_\-om\-Type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_container_a00f2a1e85a2fc61a39154664ae2aa5f1}
+
+
+Sets chosen optimization method type. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a4f1576a5668f0a06927afc80a107c6f5}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!set\-Project\-Name@{set\-Project\-Name}}
+\index{set\-Project\-Name@{set\-Project\-Name}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{set\-Project\-Name}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::set\-Project\-Name (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{\-\_\-prj\-Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_container_a4f1576a5668f0a06927afc80a107c6f5}
+
+
+Sets project name. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a1400de60bc73d3dc4016c727d7f4e1e7}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!set\-Project\-Path@{set\-Project\-Path}}
+\index{set\-Project\-Path@{set\-Project\-Path}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{set\-Project\-Path}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::set\-Project\-Path (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{\-\_\-prj\-Path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_container_a1400de60bc73d3dc4016c727d7f4e1e7}
+
+
+Sets project path. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a5cb4d71e51d6ef0ad7b4b08b2c9c648d}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!set\-Project\-Type@{set\-Project\-Type}}
+\index{set\-Project\-Type@{set\-Project\-Type}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{set\-Project\-Type}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::set\-Project\-Type (
+\begin{DoxyParamCaption}
+\item[{{\bf projecttype}}]{\-\_\-prj\-Type}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a5cb4d71e51d6ef0ad7b4b08b2c9c648d}
+
+
+Sets chosen project type. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a52ac2833ad91b1a105440417648a744d}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!set\-Reduction\-Cutoff\-Size@{set\-Reduction\-Cutoff\-Size}}
+\index{set\-Reduction\-Cutoff\-Size@{set\-Reduction\-Cutoff\-Size}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{set\-Reduction\-Cutoff\-Size}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::set\-Reduction\-Cutoff\-Size (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-cutip}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_container_a52ac2833ad91b1a105440417648a744d}
+
+
+Sets reduction inputs cutoff size. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a154f187d9c52dc8465ce18546e4bde1e}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!set\-Reduction\-Cutoff\-Value@{set\-Reduction\-Cutoff\-Value}}
+\index{set\-Reduction\-Cutoff\-Value@{set\-Reduction\-Cutoff\-Value}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{set\-Reduction\-Cutoff\-Value}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::set\-Reduction\-Cutoff\-Value (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-cutval}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_container_a154f187d9c52dc8465ce18546e4bde1e}
+
+
+Sets reduction inputs cut value. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a243099f192a3277110fc910b72c33125}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!set\-Reduction\-Outputs@{set\-Reduction\-Outputs}}
+\index{set\-Reduction\-Outputs@{set\-Reduction\-Outputs}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{set\-Reduction\-Outputs}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::set\-Reduction\-Outputs (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ std\-::string $>$ \&}]{\-\_\-sel\-O\-S}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_container_a243099f192a3277110fc910b72c33125}
+
+
+Sets reduction outputs. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_acaa0e30b7ebca1b8aa7711a4447593fe}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!set\-Reduction\-Type@{set\-Reduction\-Type}}
+\index{set\-Reduction\-Type@{set\-Reduction\-Type}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{set\-Reduction\-Type}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::set\-Reduction\-Type (
+\begin{DoxyParamCaption}
+\item[{{\bf Go\-S\-U\-M\-::\-C\-Reduction\-::reductiontype}}]{\-\_\-rtype}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_container_acaa0e30b7ebca1b8aa7711a4447593fe}
+
+
+Sets model reduction type. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a01cb4d41a56adc911be804645441ee8b}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!set\-Resample\-Size@{set\-Resample\-Size}}
+\index{set\-Resample\-Size@{set\-Resample\-Size}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{set\-Resample\-Size}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::set\-Resample\-Size (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-\-N}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_container_a01cb4d41a56adc911be804645441ee8b}
+
+
+Sets resample size. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a962569d63184d2cb64bd7eb51548ce01}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!set\-Resample\-Type@{set\-Resample\-Type}}
+\index{set\-Resample\-Type@{set\-Resample\-Type}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{set\-Resample\-Type}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::set\-Resample\-Type (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Hypercube\-::hctype}}]{\-\_\-type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_container_a962569d63184d2cb64bd7eb51548ce01}
+
+
+Sets resample type. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a5d6da068fda02b4ac8f8450fb48491c1}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!set\-R\-N\-G@{set\-R\-N\-G}}
+\index{set\-R\-N\-G@{set\-R\-N\-G}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{set\-R\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::set\-R\-N\-G (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Random\-Generator\-::rngtype}}]{\-\_\-type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_container_a5d6da068fda02b4ac8f8450fb48491c1}
+
+
+Sets chosen rng type. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a0c083464ff260a31ceaec12840e758ed}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!set\-Sensitivity\-Options@{set\-Sensitivity\-Options}}
+\index{set\-Sensitivity\-Options@{set\-Sensitivity\-Options}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{set\-Sensitivity\-Options}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::set\-Sensitivity\-Options (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-\-N, }
+\item[{double}]{\-\_\-eps1 = {\ttfamily 0.005}, }
+\item[{double}]{\-\_\-eps2 = {\ttfamily 0.01}, }
+\item[{double}]{\-\_\-eps3 = {\ttfamily 0.01}}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a0c083464ff260a31ceaec12840e758ed}
+
+
+Sets sensitivity parameters. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_acb1a50c65ffa0795537f8a1dae672895}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!set\-Thread\-Size@{set\-Thread\-Size}}
+\index{set\-Thread\-Size@{set\-Thread\-Size}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{set\-Thread\-Size}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::set\-Thread\-Size (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-trd\-N}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_container_acb1a50c65ffa0795537f8a1dae672895}
+
+
+Sets chosen thread size. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_afa0bc2b75c81b6c590e0212180c273b3}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!set\-Upper\-Bound@{set\-Upper\-Bound}}
+\index{set\-Upper\-Bound@{set\-Upper\-Bound}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{set\-Upper\-Bound}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::set\-Upper\-Bound (
+\begin{DoxyParamCaption}
+\item[{const Array\-Xd \&}]{\-\_\-x\-U}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_afa0bc2b75c81b6c590e0212180c273b3}
+
+
+Sets upper bound of the optimization variables. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a4e7337e114f42f613967c9022f203c19}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!set\-Voronoi\-Options@{set\-Voronoi\-Options}}
+\index{set\-Voronoi\-Options@{set\-Voronoi\-Options}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{set\-Voronoi\-Options}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::set\-Voronoi\-Options (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-maxiter, }
+\item[{int}]{\-\_\-q, }
+\item[{double}]{\-\_\-alpha2, }
+\item[{double}]{\-\_\-beta2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_container_a4e7337e114f42f613967c9022f203c19}
+
+
+Sets Voronoi options. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a99a6e723340daeece6ba3d2cb98cfb93}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!start\-Evaluating@{start\-Evaluating}}
+\index{start\-Evaluating@{start\-Evaluating}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{start\-Evaluating}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::start\-Evaluating (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a99a6e723340daeece6ba3d2cb98cfb93}
+
+
+Starts evaluating outputs. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a788f9bc7fb6b5dddf230046d03bd6152}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!start\-Learning@{start\-Learning}}
+\index{start\-Learning@{start\-Learning}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{start\-Learning}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::start\-Learning (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a788f9bc7fb6b5dddf230046d03bd6152}
+
+
+Starts learning model. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a0818f57ef8ad54a4576d0fcd0d7da87a}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!start\-Optimizing@{start\-Optimizing}}
+\index{start\-Optimizing@{start\-Optimizing}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{start\-Optimizing}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::start\-Optimizing (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a0818f57ef8ad54a4576d0fcd0d7da87a}
+
+
+Starts optimizing. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_af28a3e032bb395353a6df1d40ee7a109}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!start\-Resampling@{start\-Resampling}}
+\index{start\-Resampling@{start\-Resampling}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{start\-Resampling}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::start\-Resampling (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_af28a3e032bb395353a6df1d40ee7a109}
+
+
+Starts sampling inputs. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a434f9d0a1e255330c975a8142829a4a7}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!start\-Sensitivity\-Computing@{start\-Sensitivity\-Computing}}
+\index{start\-Sensitivity\-Computing@{start\-Sensitivity\-Computing}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{start\-Sensitivity\-Computing}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Container\-::start\-Sensitivity\-Computing (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_container_a434f9d0a1e255330c975a8142829a4a7}
+
+
+Starts sensitivity computing. 
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_container_ac98d07dd8f7b70e16ccb9a01abf56b9c}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!boost\-::serialization\-::access@{boost\-::serialization\-::access}}
+\index{boost\-::serialization\-::access@{boost\-::serialization\-::access}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{boost\-::serialization\-::access}]{\setlength{\rightskip}{0pt plus 5cm}friend class boost\-::serialization\-::access\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_go_s_u_m_1_1_c_container_ac98d07dd8f7b70e16ccb9a01abf56b9c}
+
+
+Boost serialization. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_container_a9c745a3812f9974c0038a8e22769963c}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!analytical@{analytical}}
+\index{analytical@{analytical}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{analytical}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Analytical\-Model} Go\-S\-U\-M\-::\-C\-Container\-::analytical\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_container_a9c745a3812f9974c0038a8e22769963c}
+
+
+Analytic model of the project. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a261e36612f2614a6fd79c87b0d432fab}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!evaluating\-Finished@{evaluating\-Finished}}
+\index{evaluating\-Finished@{evaluating\-Finished}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{evaluating\-Finished}]{\setlength{\rightskip}{0pt plus 5cm}boost\-::signal$<$void()$>$ Go\-S\-U\-M\-::\-C\-Container\-::evaluating\-Finished}}\label{class_go_s_u_m_1_1_c_container_a261e36612f2614a6fd79c87b0d432fab}
+
+
+Signal for evaluating outputs finshed. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a230d7ca9d852616927abc46264a4c5e3}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!evaluator@{evaluator}}
+\index{evaluator@{evaluator}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{evaluator}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Evaluator} Go\-S\-U\-M\-::\-C\-Container\-::evaluator\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_container_a230d7ca9d852616927abc46264a4c5e3}
+
+
+Basic evalautor of the project, used only for model based projects. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_aea0201dad816660f2ee30bfa1b95093e}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!G\-A\-M\-O@{G\-A\-M\-O}}
+\index{G\-A\-M\-O@{G\-A\-M\-O}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{G\-A\-M\-O}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-G\-A\-Model\-Optimization} Go\-S\-U\-M\-::\-C\-Container\-::\-G\-A\-M\-O\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_container_aea0201dad816660f2ee30bfa1b95093e}
+
+
+Genetic Algorithms optimization method. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a14f86f3146dee751a86ec07a2979790d}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!hycube@{hycube}}
+\index{hycube@{hycube}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{hycube}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Hypercube} Go\-S\-U\-M\-::\-C\-Container\-::hycube\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_container_a14f86f3146dee751a86ec07a2979790d}
+
+
+Basic hypercube, used for resampling. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a73819357a0ef4d28c921ae3562a21246}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!inconsts@{inconsts}}
+\index{inconsts@{inconsts}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{inconsts}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Model\-Constraints} Go\-S\-U\-M\-::\-C\-Container\-::inconsts\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_container_a73819357a0ef4d28c921ae3562a21246}
+
+
+Model constraints, i.\-e. constraints on input paramters. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a0ca8dbcc826a7c66fb42a11b5b22e7b8}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!inputs@{inputs}}
+\index{inputs@{inputs}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{inputs}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Input\-Parameters} Go\-S\-U\-M\-::\-C\-Container\-::inputs\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_container_a0ca8dbcc826a7c66fb42a11b5b22e7b8}
+
+
+Input parameters of the project. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a9068a47de6aaaf67765f9e0ebd407e8a}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!learning\-Finished@{learning\-Finished}}
+\index{learning\-Finished@{learning\-Finished}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{learning\-Finished}]{\setlength{\rightskip}{0pt plus 5cm}boost\-::signal$<$void()$>$ Go\-S\-U\-M\-::\-C\-Container\-::learning\-Finished}}\label{class_go_s_u_m_1_1_c_container_a9068a47de6aaaf67765f9e0ebd407e8a}
+
+
+Signal for learning model finshed. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a7b9a7fe1992a3483366952a19b1ee484}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!M\-A\-D\-S@{M\-A\-D\-S}}
+\index{M\-A\-D\-S@{M\-A\-D\-S}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{M\-A\-D\-S}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-M\-A\-D\-S} Go\-S\-U\-M\-::\-C\-Container\-::\-M\-A\-D\-S\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_container_a7b9a7fe1992a3483366952a19b1ee484}
+
+
+Mesh Adaptive Direct Search optimization method. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a1e9582618d0ba3ef25fda4359092ee4d}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!om\-Type@{om\-Type}}
+\index{om\-Type@{om\-Type}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{om\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf optimizationmethodtype} Go\-S\-U\-M\-::\-C\-Container\-::om\-Type\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_container_a1e9582618d0ba3ef25fda4359092ee4d}
+
+
+Optimization method type. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a13d00751fa7d80b99cba527e8d57327c}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!optimizing\-Finished@{optimizing\-Finished}}
+\index{optimizing\-Finished@{optimizing\-Finished}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{optimizing\-Finished}]{\setlength{\rightskip}{0pt plus 5cm}boost\-::signal$<$void()$>$ Go\-S\-U\-M\-::\-C\-Container\-::optimizing\-Finished}}\label{class_go_s_u_m_1_1_c_container_a13d00751fa7d80b99cba527e8d57327c}
+
+
+Signal for optimizing finshed. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a3312afd03c8b6cfd72d46961a9afa136}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!outputs@{outputs}}
+\index{outputs@{outputs}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{outputs}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Output\-States} Go\-S\-U\-M\-::\-C\-Container\-::outputs\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_container_a3312afd03c8b6cfd72d46961a9afa136}
+
+
+Output states of the project. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_adeb8fce52629b3f9172a4ff0187ec040}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!p\-O\-P@{p\-O\-P}}
+\index{p\-O\-P@{p\-O\-P}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{p\-O\-P}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Simple\-Optimization\-Problem}$\ast$ Go\-S\-U\-M\-::\-C\-Container\-::p\-O\-P\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_container_adeb8fce52629b3f9172a4ff0187ec040}
+
+
+Defined optimization problem. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a14823f77454a7bcbba182c30f6ae0735}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!prj\-Name@{prj\-Name}}
+\index{prj\-Name@{prj\-Name}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{prj\-Name}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Go\-S\-U\-M\-::\-C\-Container\-::prj\-Name\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_container_a14823f77454a7bcbba182c30f6ae0735}
+
+
+Project path and name. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a6aa9dc492a21cf8966df5d90817c93b6}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!prj\-Path@{prj\-Path}}
+\index{prj\-Path@{prj\-Path}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{prj\-Path}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Go\-S\-U\-M\-::\-C\-Container\-::prj\-Path\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_container_a6aa9dc492a21cf8966df5d90817c93b6}
+\hypertarget{class_go_s_u_m_1_1_c_container_a35c156d40a3deb898fec8b4fe0d7639a}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!prj\-Type@{prj\-Type}}
+\index{prj\-Type@{prj\-Type}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{prj\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf projecttype} Go\-S\-U\-M\-::\-C\-Container\-::prj\-Type\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_container_a35c156d40a3deb898fec8b4fe0d7639a}
+
+
+Project type. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a6df9da86ba89c203d7a4b8aacaabf45c}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!reduced@{reduced}}
+\index{reduced@{reduced}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{reduced}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Reduction} Go\-S\-U\-M\-::\-C\-Container\-::reduced\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_container_a6df9da86ba89c203d7a4b8aacaabf45c}
+
+
+Reduction operator. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a8ffc8d8267d0e21fd4129e9edaaf2e95}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!resampling\-Finished@{resampling\-Finished}}
+\index{resampling\-Finished@{resampling\-Finished}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{resampling\-Finished}]{\setlength{\rightskip}{0pt plus 5cm}boost\-::signal$<$void()$>$ Go\-S\-U\-M\-::\-C\-Container\-::resampling\-Finished}}\label{class_go_s_u_m_1_1_c_container_a8ffc8d8267d0e21fd4129e9edaaf2e95}
+
+
+Signal for sampling inputs finshed. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a9a189048aeeaecf4aead1b0b62ff0814}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!selectedsamples@{selectedsamples}}
+\index{selectedsamples@{selectedsamples}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{selectedsamples}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$int$>$ Go\-S\-U\-M\-::\-C\-Container\-::selectedsamples\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_container_a9a189048aeeaecf4aead1b0b62ff0814}
+Vector of selected sample values indices. \hypertarget{class_go_s_u_m_1_1_c_container_a8c0bf21d8d7f30490a79e63ac9a342e1}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!sensitivity@{sensitivity}}
+\index{sensitivity@{sensitivity}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{sensitivity}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Sensitivity\-Analysis} Go\-S\-U\-M\-::\-C\-Container\-::sensitivity\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_container_a8c0bf21d8d7f30490a79e63ac9a342e1}
+
+
+Sensistivity analysis of the analytical model. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_a5d2ebab5941a91bb36e6c5bad4764d88}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!sensitivity\-Computing\-Finished@{sensitivity\-Computing\-Finished}}
+\index{sensitivity\-Computing\-Finished@{sensitivity\-Computing\-Finished}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{sensitivity\-Computing\-Finished}]{\setlength{\rightskip}{0pt plus 5cm}boost\-::signal$<$void()$>$ Go\-S\-U\-M\-::\-C\-Container\-::sensitivity\-Computing\-Finished}}\label{class_go_s_u_m_1_1_c_container_a5d2ebab5941a91bb36e6c5bad4764d88}
+
+
+Signal for sensitivity computing finshed. 
+
+\hypertarget{class_go_s_u_m_1_1_c_container_ac682522f6ba4e2a19e78a7f603b8c52c}{\index{Go\-S\-U\-M\-::\-C\-Container@{Go\-S\-U\-M\-::\-C\-Container}!thrd@{thrd}}
+\index{thrd@{thrd}!GoSUM::CContainer@{Go\-S\-U\-M\-::\-C\-Container}}
+\subsubsection[{thrd}]{\setlength{\rightskip}{0pt plus 5cm}boost\-::thread Go\-S\-U\-M\-::\-C\-Container\-::thrd}}\label{class_go_s_u_m_1_1_c_container_ac682522f6ba4e2a19e78a7f603b8c52c}
+
+
+Thread for computations. 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Development/core/\hyperlink{_container_8h}{Container.\-h}\item 
+C\-:/\-Development/core/\hyperlink{_container_8cpp}{Container.\-cpp}\end{DoxyCompactItemize}

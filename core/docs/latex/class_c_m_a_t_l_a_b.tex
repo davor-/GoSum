@@ -1,0 +1,548 @@
+\hypertarget{class_c_m_a_t_l_a_b}{\section{C\-M\-A\-T\-L\-A\-B Class Reference}
+\label{class_c_m_a_t_l_a_b}\index{C\-M\-A\-T\-L\-A\-B@{C\-M\-A\-T\-L\-A\-B}}
+}
+
+
+Class interface for Matlab's libmat and libmx dynamic libraries.  
+
+
+
+
+{\ttfamily \#include $<$Matlab\-Library.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_m_a_t_l_a_b_a51c832deadf847331f9899fe2461e273}{C\-M\-A\-T\-L\-A\-B} ()
+\item 
+virtual \hyperlink{class_c_m_a_t_l_a_b_a82542c3ead7ba91c54fe71984ca6eff6}{$\sim$\-C\-M\-A\-T\-L\-A\-B} ()
+\item 
+M\-A\-T\-File $\ast$ \hyperlink{class_c_m_a_t_l_a_b_a44960abdb1f8e8e9b54d383d25b1db74}{mat\-Open} (const string \&filename, const string \&mode)
+\begin{DoxyCompactList}\small\item\em Opens mat file using libmat. \end{DoxyCompactList}\item 
+bool \hyperlink{class_c_m_a_t_l_a_b_ab81328a4285d9c2ce96a4da6332ad5ac}{mat\-Close} (M\-A\-T\-File $\ast$pmat)
+\begin{DoxyCompactList}\small\item\em Closes mat file using libmat. \end{DoxyCompactList}\item 
+bool \hyperlink{class_c_m_a_t_l_a_b_a4adc09552978aa43dd03fcdbdf44b08a}{mat\-Put\-Variable} (M\-A\-T\-File $\ast$pmat, const string \&name, const mx\-Array $\ast$pa)
+\begin{DoxyCompactList}\small\item\em Puts variable in mat file using libmat. \end{DoxyCompactList}\item 
+mx\-Array $\ast$ \hyperlink{class_c_m_a_t_l_a_b_a5e00c5de6806303393696db2153926dd}{mat\-Get\-Variable} (M\-A\-T\-File $\ast$pmat, const string \&name)
+\begin{DoxyCompactList}\small\item\em Gets variable from mat file using libmat. \end{DoxyCompactList}\item 
+mx\-Array $\ast$ \hyperlink{class_c_m_a_t_l_a_b_ae408d55b19b8f44d766a59958cea73e2}{mx\-Create\-Double\-Matrix} (int N, int M)
+\begin{DoxyCompactList}\small\item\em Creats double matrix using libmx. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_m_a_t_l_a_b_a86a22fb54ea27d07cf617c544bd47e2c}{mx\-Destroy\-Array} (mx\-Array $\ast$pa)
+\begin{DoxyCompactList}\small\item\em Destroys array using libmx. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_m_a_t_l_a_b_a9b3c4de338f1db76c505ae86c50f1023}{mx\-Get\-Number\-Of\-Elements} (mx\-Array $\ast$pa)
+\begin{DoxyCompactList}\small\item\em Returns number of ements in mx\-Array using libmx. \end{DoxyCompactList}\item 
+double $\ast$ \hyperlink{class_c_m_a_t_l_a_b_acdc8c6598199d6d5df97b36cd1864383}{mx\-Get\-Pr} (mx\-Array $\ast$pa)
+\begin{DoxyCompactList}\small\item\em Sets data in double matrix using libmx. \end{DoxyCompactList}\item 
+Engine $\ast$ \hyperlink{class_c_m_a_t_l_a_b_a15e0b9066c9103355a8223c2922a4a6d}{eng\-Open\-Single\-Use} (const char $\ast$startcmd)
+\begin{DoxyCompactList}\small\item\em Opens engine for single use. \end{DoxyCompactList}\item 
+Engine $\ast$ \hyperlink{class_c_m_a_t_l_a_b_ac6d7a9542ecc6119dfb7e00024517143}{eng\-Open} (const string \&startcmd)
+\begin{DoxyCompactList}\small\item\em Opens engine. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_m_a_t_l_a_b_ae68aee94c253c02f5d7318fe1148b889}{eng\-Close} (Engine $\ast$ep)
+\begin{DoxyCompactList}\small\item\em Closes engine. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_m_a_t_l_a_b_afcedcfb4e40f611ea84da905c40d5906}{eng\-Get\-Visible} (Engine $\ast$ep, bool $\ast$b\-Val)
+\begin{DoxyCompactList}\small\item\em Gets if engine is (in)visible. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_m_a_t_l_a_b_ab49201f79e5e7ef10e0db6af0a1abdcb}{eng\-Set\-Visible} (Engine $\ast$ep, bool new\-Val)
+\begin{DoxyCompactList}\small\item\em Sets engine to (in)visible. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_m_a_t_l_a_b_adc555e9306ea2d2c4945661b0af5cd34}{eng\-Eval\-String} (Engine $\ast$ep, const string \&str)
+\begin{DoxyCompactList}\small\item\em Gives to engine a string to evaluate. \end{DoxyCompactList}\item 
+mx\-Array $\ast$ \hyperlink{class_c_m_a_t_l_a_b_a57bbc476315ce8e01a65167dc971b02f}{eng\-Get\-Variable} (Engine $\ast$ep, const string \&name)
+\begin{DoxyCompactList}\small\item\em Gets variable from engine. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_m_a_t_l_a_b_aadcd76bf7c7f98e9e08a5e44b93e2e4f}{eng\-Put\-Variable} (Engine $\ast$ep, const string \&var\-\_\-name, const mx\-Array $\ast$ap)
+\begin{DoxyCompactList}\small\item\em Puts variable into engine. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_m_a_t_l_a_b_a184b784ab8afe19c1003f27a1238b013}{eng\-Output\-Buffer} (Engine $\ast$ep, char $\ast$buffer, int buflen)
+\begin{DoxyCompactList}\small\item\em Sets engines output buffer. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_m_a_t_l_a_b_ada82733d0bc4be6967e2c7f487abc041}{mat\-Put} (string filename, const Array\-Xd \&X, string Xname)
+\begin{DoxyCompactList}\small\item\em Puts 1 array to .mat file. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_m_a_t_l_a_b_a22e4a6d97466ecfdc611a9e2970e3fde}{mat\-Get} (string filename, Array\-Xd \&X, string Xname)
+\begin{DoxyCompactList}\small\item\em gets 1 array from .mat file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_c_m_a_t_l_a_b_a614b714e664e465bd541da7b26a26e59}{Set\-Path} (const std\-::string \&\-\_\-path)
+\begin{DoxyCompactList}\small\item\em Sets path to the matlab lib. \end{DoxyCompactList}\item 
+static std\-::string \& \hyperlink{class_c_m_a_t_l_a_b_ad72372f5293f1f2cb6bab38229313378}{Path} ()
+\begin{DoxyCompactList}\small\item\em Returns path to the matlab lib. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static std\-::string \hyperlink{class_c_m_a_t_l_a_b_a3faf4011fa6f7bdd7281e0c5ad10a970}{path} = \char`\"{}C\-:\textbackslash{}\textbackslash{}\-Program Files\textbackslash{}\textbackslash{}\-M\-A\-T\-L\-A\-B\textbackslash{}\textbackslash{}\-R2010b\textbackslash{}\textbackslash{}bin\textbackslash{}\textbackslash{}win64\char`\"{}
+\begin{DoxyCompactList}\small\item\em Path to the matlab lib. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\-Library \hyperlink{class_c_m_a_t_l_a_b_ad7734632bcf702958838856f46d50f03}{libmat}
+\begin{DoxyCompactList}\small\item\em Q\-Library for libmat. \end{DoxyCompactList}\item 
+Q\-Library \hyperlink{class_c_m_a_t_l_a_b_ab2aeeea5ac3415555fd88eedaa38b193}{libmx}
+\begin{DoxyCompactList}\small\item\em Q\-Library for libmx. \end{DoxyCompactList}\item 
+Q\-Library \hyperlink{class_c_m_a_t_l_a_b_af0d1bd46b05565533d973749f5bb9ca3}{libeng}
+\begin{DoxyCompactList}\small\item\em Q\-Library for libeng. \end{DoxyCompactList}\item 
+\hyperlink{_matlab_library_8h_aca268297c120351425e9c3f63baf7513}{matftype1} \hyperlink{class_c_m_a_t_l_a_b_a6c18b950cb8dbfbba72589e44db1f69e}{p\-Mat\-Open}
+\begin{DoxyCompactList}\small\item\em Reference to mat\-Open function from libmat. \end{DoxyCompactList}\item 
+\hyperlink{_matlab_library_8h_a13c95ec00742c85c5995ee73f65aa04b}{matftype2} \hyperlink{class_c_m_a_t_l_a_b_a7ec5b3aaa23c3aeac50d7e5e3d0a9dc2}{p\-Mat\-Close}
+\begin{DoxyCompactList}\small\item\em Reference to mat\-Close function from libmat. \end{DoxyCompactList}\item 
+\hyperlink{_matlab_library_8h_a7160a09ad0d8f7cdf8ddee355882db75}{matftype3} \hyperlink{class_c_m_a_t_l_a_b_ac8ce0e267d00131b74994e825f1bdaa7}{p\-Mat\-Put\-Variable}
+\begin{DoxyCompactList}\small\item\em Reference to mat\-Put\-Variable function from libmat. \end{DoxyCompactList}\item 
+\hyperlink{_matlab_library_8h_a19aaafe0b8eebabce596da80414ebe6e}{matftype4} \hyperlink{class_c_m_a_t_l_a_b_a67cb7321930f1e73b6b75a461c93316e}{p\-Mat\-Get\-Variable}
+\begin{DoxyCompactList}\small\item\em Reference to mat\-Get\-Variable function from libmat. \end{DoxyCompactList}\item 
+\hyperlink{_matlab_library_8h_a55b81c948c47f9bfd82db6232884abdd}{mxftype1} \hyperlink{class_c_m_a_t_l_a_b_a39b2341b32007df69682062513aeb208}{p\-Mx\-Create\-Double\-Matrix}
+\begin{DoxyCompactList}\small\item\em Reference to mx\-Create\-Double\-Matrix function from libmx. \end{DoxyCompactList}\item 
+\hyperlink{_matlab_library_8h_a7022359525610a30ebe4504fff8e3134}{mxftype2} \hyperlink{class_c_m_a_t_l_a_b_ac882abd9bca8e3568632f97f54ac419e}{p\-Mx\-Destroy\-Array}
+\begin{DoxyCompactList}\small\item\em Reference to mx\-Destroy\-Array function from libmx. \end{DoxyCompactList}\item 
+\hyperlink{_matlab_library_8h_a5c09a212f0d14401cca990067c9f1dbc}{mxftype3} \hyperlink{class_c_m_a_t_l_a_b_ab2647b823dd8a165c7109d0a927d457a}{p\-Mx\-Get\-Pr}
+\begin{DoxyCompactList}\small\item\em Reference to mx\-Get\-Pr function from libmx. \end{DoxyCompactList}\item 
+\hyperlink{_matlab_library_8h_af4399c0ac6b0e40881ea310c79348f66}{mxftype4} \hyperlink{class_c_m_a_t_l_a_b_a3da6fa87a95db825e0785f4abd761351}{p\-Mx\-Set\-Pr}
+\begin{DoxyCompactList}\small\item\em Reference to mx\-Set\-Pr function from libmx. \end{DoxyCompactList}\item 
+\hyperlink{_matlab_library_8h_a2b30bc63e1127ad09ffdcb6f160bd48f}{mxftype5} \hyperlink{class_c_m_a_t_l_a_b_ad4e70fa3e8a70bd9ca7bcf6c52b6e9c1}{p\-Mx\-Get\-Number\-Of\-Elements}
+\begin{DoxyCompactList}\small\item\em Reference to mx\-Set\-Pr function from libmx. \end{DoxyCompactList}\item 
+\hyperlink{_matlab_library_8h_ac4da6e2ee1808b7028f262b520994543}{engftype1} \hyperlink{class_c_m_a_t_l_a_b_a7b65b3c713cf0ace9fe135b94f2ee007}{p\-Eng\-Open\-Single\-Use}
+\begin{DoxyCompactList}\small\item\em Reference to eng\-Open\-Single\-Use function from libeng. \end{DoxyCompactList}\item 
+\hyperlink{_matlab_library_8h_a8a03b820f78fb36ce5f8f54c883eafbd}{engftype2} \hyperlink{class_c_m_a_t_l_a_b_a22bf0f3a6218ea5ccbff85e603c12455}{p\-Eng\-Open}
+\begin{DoxyCompactList}\small\item\em Reference to eng\-Open function from libeng. \end{DoxyCompactList}\item 
+\hyperlink{_matlab_library_8h_a3a87349e792acc67028be136d5704897}{engftype3} \hyperlink{class_c_m_a_t_l_a_b_a2afb20fbe0cb6886567c8ef7e024d4bf}{p\-Eng\-Close}
+\begin{DoxyCompactList}\small\item\em Reference to eng\-Close function from libeng. \end{DoxyCompactList}\item 
+\hyperlink{_matlab_library_8h_af3f2bab0b2bc988ebc51c2eec3eeb121}{engftype4} \hyperlink{class_c_m_a_t_l_a_b_a0e75bb62637fc4c4a4338ad0ca65e193}{p\-Eng\-Get\-Visible}
+\begin{DoxyCompactList}\small\item\em Reference to eng\-Get\-Visible function from libeng. \end{DoxyCompactList}\item 
+\hyperlink{_matlab_library_8h_ac134537e723ad0d3c52a9a2119ad37cc}{engftype5} \hyperlink{class_c_m_a_t_l_a_b_aacae3122e2253226427bf5ea2d773a7e}{p\-Eng\-Set\-Visible}
+\begin{DoxyCompactList}\small\item\em Reference to eng\-Set\-Visible function from libeng. \end{DoxyCompactList}\item 
+\hyperlink{_matlab_library_8h_a4746cb1b1e7fec4353d4519d19b8490e}{engftype6} \hyperlink{class_c_m_a_t_l_a_b_aa244761097ed2374d427ad452e693c4e}{p\-Eng\-Eval\-String}
+\begin{DoxyCompactList}\small\item\em Reference to eng\-Eval\-String function from libeng. \end{DoxyCompactList}\item 
+\hyperlink{_matlab_library_8h_a1764197cbd1c4dbb4a7dc14405d0eaa8}{engftype7} \hyperlink{class_c_m_a_t_l_a_b_a73c962dcd9c9ad01cf0db9fff3346adb}{p\-Eng\-Get\-Variable}
+\begin{DoxyCompactList}\small\item\em Reference to eng\-Get\-Variable function from libeng. \end{DoxyCompactList}\item 
+\hyperlink{_matlab_library_8h_acc6e68fe4c87fc8b28417a49f7bbf040}{engftype8} \hyperlink{class_c_m_a_t_l_a_b_a2f377cb3dad070f45b0fe6f971f0a8c5}{p\-Eng\-Put\-Variable}
+\begin{DoxyCompactList}\small\item\em Reference to eng\-Put\-Variable function from libeng. \end{DoxyCompactList}\item 
+\hyperlink{_matlab_library_8h_a49ce13d36241af0257a6b66c29a65131}{engftype9} \hyperlink{class_c_m_a_t_l_a_b_a41eefdf98cf7dca3f766c3378b022746}{p\-Eng\-Output\-Buffer}
+\begin{DoxyCompactList}\small\item\em Reference to eng\-Output\-Buffer function from libeng. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class interface for Matlab's libmat and libmx dynamic libraries. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_m_a_t_l_a_b_a51c832deadf847331f9899fe2461e273}{\index{C\-M\-A\-T\-L\-A\-B@{C\-M\-A\-T\-L\-A\-B}!C\-M\-A\-T\-L\-A\-B@{C\-M\-A\-T\-L\-A\-B}}
+\index{C\-M\-A\-T\-L\-A\-B@{C\-M\-A\-T\-L\-A\-B}!CMATLAB@{C\-M\-A\-T\-L\-A\-B}}
+\subsubsection[{C\-M\-A\-T\-L\-A\-B}]{\setlength{\rightskip}{0pt plus 5cm}C\-M\-A\-T\-L\-A\-B\-::\-C\-M\-A\-T\-L\-A\-B (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_m_a_t_l_a_b_a51c832deadf847331f9899fe2461e273}
+\hypertarget{class_c_m_a_t_l_a_b_a82542c3ead7ba91c54fe71984ca6eff6}{\index{C\-M\-A\-T\-L\-A\-B@{C\-M\-A\-T\-L\-A\-B}!$\sim$\-C\-M\-A\-T\-L\-A\-B@{$\sim$\-C\-M\-A\-T\-L\-A\-B}}
+\index{$\sim$\-C\-M\-A\-T\-L\-A\-B@{$\sim$\-C\-M\-A\-T\-L\-A\-B}!CMATLAB@{C\-M\-A\-T\-L\-A\-B}}
+\subsubsection[{$\sim$\-C\-M\-A\-T\-L\-A\-B}]{\setlength{\rightskip}{0pt plus 5cm}virtual C\-M\-A\-T\-L\-A\-B\-::$\sim$\-C\-M\-A\-T\-L\-A\-B (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_m_a_t_l_a_b_a82542c3ead7ba91c54fe71984ca6eff6}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_m_a_t_l_a_b_ae68aee94c253c02f5d7318fe1148b889}{\index{C\-M\-A\-T\-L\-A\-B@{C\-M\-A\-T\-L\-A\-B}!eng\-Close@{eng\-Close}}
+\index{eng\-Close@{eng\-Close}!CMATLAB@{C\-M\-A\-T\-L\-A\-B}}
+\subsubsection[{eng\-Close}]{\setlength{\rightskip}{0pt plus 5cm}int C\-M\-A\-T\-L\-A\-B\-::eng\-Close (
+\begin{DoxyParamCaption}
+\item[{Engine $\ast$}]{ep}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_m_a_t_l_a_b_ae68aee94c253c02f5d7318fe1148b889}
+
+
+Closes engine. 
+
+\hypertarget{class_c_m_a_t_l_a_b_adc555e9306ea2d2c4945661b0af5cd34}{\index{C\-M\-A\-T\-L\-A\-B@{C\-M\-A\-T\-L\-A\-B}!eng\-Eval\-String@{eng\-Eval\-String}}
+\index{eng\-Eval\-String@{eng\-Eval\-String}!CMATLAB@{C\-M\-A\-T\-L\-A\-B}}
+\subsubsection[{eng\-Eval\-String}]{\setlength{\rightskip}{0pt plus 5cm}int C\-M\-A\-T\-L\-A\-B\-::eng\-Eval\-String (
+\begin{DoxyParamCaption}
+\item[{Engine $\ast$}]{ep, }
+\item[{const string \&}]{str}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_m_a_t_l_a_b_adc555e9306ea2d2c4945661b0af5cd34}
+
+
+Gives to engine a string to evaluate. 
+
+\hypertarget{class_c_m_a_t_l_a_b_a57bbc476315ce8e01a65167dc971b02f}{\index{C\-M\-A\-T\-L\-A\-B@{C\-M\-A\-T\-L\-A\-B}!eng\-Get\-Variable@{eng\-Get\-Variable}}
+\index{eng\-Get\-Variable@{eng\-Get\-Variable}!CMATLAB@{C\-M\-A\-T\-L\-A\-B}}
+\subsubsection[{eng\-Get\-Variable}]{\setlength{\rightskip}{0pt plus 5cm}mx\-Array$\ast$ C\-M\-A\-T\-L\-A\-B\-::eng\-Get\-Variable (
+\begin{DoxyParamCaption}
+\item[{Engine $\ast$}]{ep, }
+\item[{const string \&}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_m_a_t_l_a_b_a57bbc476315ce8e01a65167dc971b02f}
+
+
+Gets variable from engine. 
+
+\hypertarget{class_c_m_a_t_l_a_b_afcedcfb4e40f611ea84da905c40d5906}{\index{C\-M\-A\-T\-L\-A\-B@{C\-M\-A\-T\-L\-A\-B}!eng\-Get\-Visible@{eng\-Get\-Visible}}
+\index{eng\-Get\-Visible@{eng\-Get\-Visible}!CMATLAB@{C\-M\-A\-T\-L\-A\-B}}
+\subsubsection[{eng\-Get\-Visible}]{\setlength{\rightskip}{0pt plus 5cm}int C\-M\-A\-T\-L\-A\-B\-::eng\-Get\-Visible (
+\begin{DoxyParamCaption}
+\item[{Engine $\ast$}]{ep, }
+\item[{bool $\ast$}]{b\-Val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_m_a_t_l_a_b_afcedcfb4e40f611ea84da905c40d5906}
+
+
+Gets if engine is (in)visible. 
+
+\hypertarget{class_c_m_a_t_l_a_b_ac6d7a9542ecc6119dfb7e00024517143}{\index{C\-M\-A\-T\-L\-A\-B@{C\-M\-A\-T\-L\-A\-B}!eng\-Open@{eng\-Open}}
+\index{eng\-Open@{eng\-Open}!CMATLAB@{C\-M\-A\-T\-L\-A\-B}}
+\subsubsection[{eng\-Open}]{\setlength{\rightskip}{0pt plus 5cm}Engine$\ast$ C\-M\-A\-T\-L\-A\-B\-::eng\-Open (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{startcmd}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_m_a_t_l_a_b_ac6d7a9542ecc6119dfb7e00024517143}
+
+
+Opens engine. 
+
+\hypertarget{class_c_m_a_t_l_a_b_a15e0b9066c9103355a8223c2922a4a6d}{\index{C\-M\-A\-T\-L\-A\-B@{C\-M\-A\-T\-L\-A\-B}!eng\-Open\-Single\-Use@{eng\-Open\-Single\-Use}}
+\index{eng\-Open\-Single\-Use@{eng\-Open\-Single\-Use}!CMATLAB@{C\-M\-A\-T\-L\-A\-B}}
+\subsubsection[{eng\-Open\-Single\-Use}]{\setlength{\rightskip}{0pt plus 5cm}Engine$\ast$ C\-M\-A\-T\-L\-A\-B\-::eng\-Open\-Single\-Use (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{startcmd}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_m_a_t_l_a_b_a15e0b9066c9103355a8223c2922a4a6d}
+
+
+Opens engine for single use. 
+
+\hypertarget{class_c_m_a_t_l_a_b_a184b784ab8afe19c1003f27a1238b013}{\index{C\-M\-A\-T\-L\-A\-B@{C\-M\-A\-T\-L\-A\-B}!eng\-Output\-Buffer@{eng\-Output\-Buffer}}
+\index{eng\-Output\-Buffer@{eng\-Output\-Buffer}!CMATLAB@{C\-M\-A\-T\-L\-A\-B}}
+\subsubsection[{eng\-Output\-Buffer}]{\setlength{\rightskip}{0pt plus 5cm}int C\-M\-A\-T\-L\-A\-B\-::eng\-Output\-Buffer (
+\begin{DoxyParamCaption}
+\item[{Engine $\ast$}]{ep, }
+\item[{char $\ast$}]{buffer, }
+\item[{int}]{buflen}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_m_a_t_l_a_b_a184b784ab8afe19c1003f27a1238b013}
+
+
+Sets engines output buffer. 
+
+\hypertarget{class_c_m_a_t_l_a_b_aadcd76bf7c7f98e9e08a5e44b93e2e4f}{\index{C\-M\-A\-T\-L\-A\-B@{C\-M\-A\-T\-L\-A\-B}!eng\-Put\-Variable@{eng\-Put\-Variable}}
+\index{eng\-Put\-Variable@{eng\-Put\-Variable}!CMATLAB@{C\-M\-A\-T\-L\-A\-B}}
+\subsubsection[{eng\-Put\-Variable}]{\setlength{\rightskip}{0pt plus 5cm}int C\-M\-A\-T\-L\-A\-B\-::eng\-Put\-Variable (
+\begin{DoxyParamCaption}
+\item[{Engine $\ast$}]{ep, }
+\item[{const string \&}]{var\-\_\-name, }
+\item[{const mx\-Array $\ast$}]{ap}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_m_a_t_l_a_b_aadcd76bf7c7f98e9e08a5e44b93e2e4f}
+
+
+Puts variable into engine. 
+
+\hypertarget{class_c_m_a_t_l_a_b_ab49201f79e5e7ef10e0db6af0a1abdcb}{\index{C\-M\-A\-T\-L\-A\-B@{C\-M\-A\-T\-L\-A\-B}!eng\-Set\-Visible@{eng\-Set\-Visible}}
+\index{eng\-Set\-Visible@{eng\-Set\-Visible}!CMATLAB@{C\-M\-A\-T\-L\-A\-B}}
+\subsubsection[{eng\-Set\-Visible}]{\setlength{\rightskip}{0pt plus 5cm}int C\-M\-A\-T\-L\-A\-B\-::eng\-Set\-Visible (
+\begin{DoxyParamCaption}
+\item[{Engine $\ast$}]{ep, }
+\item[{bool}]{new\-Val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_m_a_t_l_a_b_ab49201f79e5e7ef10e0db6af0a1abdcb}
+
+
+Sets engine to (in)visible. 
+
+\hypertarget{class_c_m_a_t_l_a_b_ab81328a4285d9c2ce96a4da6332ad5ac}{\index{C\-M\-A\-T\-L\-A\-B@{C\-M\-A\-T\-L\-A\-B}!mat\-Close@{mat\-Close}}
+\index{mat\-Close@{mat\-Close}!CMATLAB@{C\-M\-A\-T\-L\-A\-B}}
+\subsubsection[{mat\-Close}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-M\-A\-T\-L\-A\-B\-::mat\-Close (
+\begin{DoxyParamCaption}
+\item[{M\-A\-T\-File $\ast$}]{pmat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_m_a_t_l_a_b_ab81328a4285d9c2ce96a4da6332ad5ac}
+
+
+Closes mat file using libmat. 
+
+\hypertarget{class_c_m_a_t_l_a_b_a22e4a6d97466ecfdc611a9e2970e3fde}{\index{C\-M\-A\-T\-L\-A\-B@{C\-M\-A\-T\-L\-A\-B}!mat\-Get@{mat\-Get}}
+\index{mat\-Get@{mat\-Get}!CMATLAB@{C\-M\-A\-T\-L\-A\-B}}
+\subsubsection[{mat\-Get}]{\setlength{\rightskip}{0pt plus 5cm}void C\-M\-A\-T\-L\-A\-B\-::mat\-Get (
+\begin{DoxyParamCaption}
+\item[{string}]{filename, }
+\item[{Array\-Xd \&}]{X, }
+\item[{string}]{Xname}
+\end{DoxyParamCaption}
+)}}\label{class_c_m_a_t_l_a_b_a22e4a6d97466ecfdc611a9e2970e3fde}
+
+
+gets 1 array from .mat file. 
+
+\hypertarget{class_c_m_a_t_l_a_b_a5e00c5de6806303393696db2153926dd}{\index{C\-M\-A\-T\-L\-A\-B@{C\-M\-A\-T\-L\-A\-B}!mat\-Get\-Variable@{mat\-Get\-Variable}}
+\index{mat\-Get\-Variable@{mat\-Get\-Variable}!CMATLAB@{C\-M\-A\-T\-L\-A\-B}}
+\subsubsection[{mat\-Get\-Variable}]{\setlength{\rightskip}{0pt plus 5cm}mx\-Array$\ast$ C\-M\-A\-T\-L\-A\-B\-::mat\-Get\-Variable (
+\begin{DoxyParamCaption}
+\item[{M\-A\-T\-File $\ast$}]{pmat, }
+\item[{const string \&}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_m_a_t_l_a_b_a5e00c5de6806303393696db2153926dd}
+
+
+Gets variable from mat file using libmat. 
+
+\hypertarget{class_c_m_a_t_l_a_b_a44960abdb1f8e8e9b54d383d25b1db74}{\index{C\-M\-A\-T\-L\-A\-B@{C\-M\-A\-T\-L\-A\-B}!mat\-Open@{mat\-Open}}
+\index{mat\-Open@{mat\-Open}!CMATLAB@{C\-M\-A\-T\-L\-A\-B}}
+\subsubsection[{mat\-Open}]{\setlength{\rightskip}{0pt plus 5cm}M\-A\-T\-File$\ast$ C\-M\-A\-T\-L\-A\-B\-::mat\-Open (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{filename, }
+\item[{const string \&}]{mode}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_m_a_t_l_a_b_a44960abdb1f8e8e9b54d383d25b1db74}
+
+
+Opens mat file using libmat. 
+
+\hypertarget{class_c_m_a_t_l_a_b_ada82733d0bc4be6967e2c7f487abc041}{\index{C\-M\-A\-T\-L\-A\-B@{C\-M\-A\-T\-L\-A\-B}!mat\-Put@{mat\-Put}}
+\index{mat\-Put@{mat\-Put}!CMATLAB@{C\-M\-A\-T\-L\-A\-B}}
+\subsubsection[{mat\-Put}]{\setlength{\rightskip}{0pt plus 5cm}void C\-M\-A\-T\-L\-A\-B\-::mat\-Put (
+\begin{DoxyParamCaption}
+\item[{string}]{filename, }
+\item[{const Array\-Xd \&}]{X, }
+\item[{string}]{Xname}
+\end{DoxyParamCaption}
+)}}\label{class_c_m_a_t_l_a_b_ada82733d0bc4be6967e2c7f487abc041}
+
+
+Puts 1 array to .mat file. 
+
+\hypertarget{class_c_m_a_t_l_a_b_a4adc09552978aa43dd03fcdbdf44b08a}{\index{C\-M\-A\-T\-L\-A\-B@{C\-M\-A\-T\-L\-A\-B}!mat\-Put\-Variable@{mat\-Put\-Variable}}
+\index{mat\-Put\-Variable@{mat\-Put\-Variable}!CMATLAB@{C\-M\-A\-T\-L\-A\-B}}
+\subsubsection[{mat\-Put\-Variable}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-M\-A\-T\-L\-A\-B\-::mat\-Put\-Variable (
+\begin{DoxyParamCaption}
+\item[{M\-A\-T\-File $\ast$}]{pmat, }
+\item[{const string \&}]{name, }
+\item[{const mx\-Array $\ast$}]{pa}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_m_a_t_l_a_b_a4adc09552978aa43dd03fcdbdf44b08a}
+
+
+Puts variable in mat file using libmat. 
+
+\hypertarget{class_c_m_a_t_l_a_b_ae408d55b19b8f44d766a59958cea73e2}{\index{C\-M\-A\-T\-L\-A\-B@{C\-M\-A\-T\-L\-A\-B}!mx\-Create\-Double\-Matrix@{mx\-Create\-Double\-Matrix}}
+\index{mx\-Create\-Double\-Matrix@{mx\-Create\-Double\-Matrix}!CMATLAB@{C\-M\-A\-T\-L\-A\-B}}
+\subsubsection[{mx\-Create\-Double\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}mx\-Array$\ast$ C\-M\-A\-T\-L\-A\-B\-::mx\-Create\-Double\-Matrix (
+\begin{DoxyParamCaption}
+\item[{int}]{N, }
+\item[{int}]{M}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_m_a_t_l_a_b_ae408d55b19b8f44d766a59958cea73e2}
+
+
+Creats double matrix using libmx. 
+
+\hypertarget{class_c_m_a_t_l_a_b_a86a22fb54ea27d07cf617c544bd47e2c}{\index{C\-M\-A\-T\-L\-A\-B@{C\-M\-A\-T\-L\-A\-B}!mx\-Destroy\-Array@{mx\-Destroy\-Array}}
+\index{mx\-Destroy\-Array@{mx\-Destroy\-Array}!CMATLAB@{C\-M\-A\-T\-L\-A\-B}}
+\subsubsection[{mx\-Destroy\-Array}]{\setlength{\rightskip}{0pt plus 5cm}void C\-M\-A\-T\-L\-A\-B\-::mx\-Destroy\-Array (
+\begin{DoxyParamCaption}
+\item[{mx\-Array $\ast$}]{pa}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_m_a_t_l_a_b_a86a22fb54ea27d07cf617c544bd47e2c}
+
+
+Destroys array using libmx. 
+
+\hypertarget{class_c_m_a_t_l_a_b_a9b3c4de338f1db76c505ae86c50f1023}{\index{C\-M\-A\-T\-L\-A\-B@{C\-M\-A\-T\-L\-A\-B}!mx\-Get\-Number\-Of\-Elements@{mx\-Get\-Number\-Of\-Elements}}
+\index{mx\-Get\-Number\-Of\-Elements@{mx\-Get\-Number\-Of\-Elements}!CMATLAB@{C\-M\-A\-T\-L\-A\-B}}
+\subsubsection[{mx\-Get\-Number\-Of\-Elements}]{\setlength{\rightskip}{0pt plus 5cm}int C\-M\-A\-T\-L\-A\-B\-::mx\-Get\-Number\-Of\-Elements (
+\begin{DoxyParamCaption}
+\item[{mx\-Array $\ast$}]{pa}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_m_a_t_l_a_b_a9b3c4de338f1db76c505ae86c50f1023}
+
+
+Returns number of ements in mx\-Array using libmx. 
+
+\hypertarget{class_c_m_a_t_l_a_b_acdc8c6598199d6d5df97b36cd1864383}{\index{C\-M\-A\-T\-L\-A\-B@{C\-M\-A\-T\-L\-A\-B}!mx\-Get\-Pr@{mx\-Get\-Pr}}
+\index{mx\-Get\-Pr@{mx\-Get\-Pr}!CMATLAB@{C\-M\-A\-T\-L\-A\-B}}
+\subsubsection[{mx\-Get\-Pr}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ C\-M\-A\-T\-L\-A\-B\-::mx\-Get\-Pr (
+\begin{DoxyParamCaption}
+\item[{mx\-Array $\ast$}]{pa}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_m_a_t_l_a_b_acdc8c6598199d6d5df97b36cd1864383}
+
+
+Sets data in double matrix using libmx. 
+
+\hypertarget{class_c_m_a_t_l_a_b_ad72372f5293f1f2cb6bab38229313378}{\index{C\-M\-A\-T\-L\-A\-B@{C\-M\-A\-T\-L\-A\-B}!Path@{Path}}
+\index{Path@{Path}!CMATLAB@{C\-M\-A\-T\-L\-A\-B}}
+\subsubsection[{Path}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string \& C\-M\-A\-T\-L\-A\-B\-::\-Path (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_c_m_a_t_l_a_b_ad72372f5293f1f2cb6bab38229313378}
+
+
+Returns path to the matlab lib. 
+
+\hypertarget{class_c_m_a_t_l_a_b_a614b714e664e465bd541da7b26a26e59}{\index{C\-M\-A\-T\-L\-A\-B@{C\-M\-A\-T\-L\-A\-B}!Set\-Path@{Set\-Path}}
+\index{Set\-Path@{Set\-Path}!CMATLAB@{C\-M\-A\-T\-L\-A\-B}}
+\subsubsection[{Set\-Path}]{\setlength{\rightskip}{0pt plus 5cm}void C\-M\-A\-T\-L\-A\-B\-::\-Set\-Path (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{\-\_\-path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_c_m_a_t_l_a_b_a614b714e664e465bd541da7b26a26e59}
+
+
+Sets path to the matlab lib. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_m_a_t_l_a_b_af0d1bd46b05565533d973749f5bb9ca3}{\index{C\-M\-A\-T\-L\-A\-B@{C\-M\-A\-T\-L\-A\-B}!libeng@{libeng}}
+\index{libeng@{libeng}!CMATLAB@{C\-M\-A\-T\-L\-A\-B}}
+\subsubsection[{libeng}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Library C\-M\-A\-T\-L\-A\-B\-::libeng\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_m_a_t_l_a_b_af0d1bd46b05565533d973749f5bb9ca3}
+
+
+Q\-Library for libeng. 
+
+\hypertarget{class_c_m_a_t_l_a_b_ad7734632bcf702958838856f46d50f03}{\index{C\-M\-A\-T\-L\-A\-B@{C\-M\-A\-T\-L\-A\-B}!libmat@{libmat}}
+\index{libmat@{libmat}!CMATLAB@{C\-M\-A\-T\-L\-A\-B}}
+\subsubsection[{libmat}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Library C\-M\-A\-T\-L\-A\-B\-::libmat\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_m_a_t_l_a_b_ad7734632bcf702958838856f46d50f03}
+
+
+Q\-Library for libmat. 
+
+\hypertarget{class_c_m_a_t_l_a_b_ab2aeeea5ac3415555fd88eedaa38b193}{\index{C\-M\-A\-T\-L\-A\-B@{C\-M\-A\-T\-L\-A\-B}!libmx@{libmx}}
+\index{libmx@{libmx}!CMATLAB@{C\-M\-A\-T\-L\-A\-B}}
+\subsubsection[{libmx}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Library C\-M\-A\-T\-L\-A\-B\-::libmx\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_m_a_t_l_a_b_ab2aeeea5ac3415555fd88eedaa38b193}
+
+
+Q\-Library for libmx. 
+
+\hypertarget{class_c_m_a_t_l_a_b_a3faf4011fa6f7bdd7281e0c5ad10a970}{\index{C\-M\-A\-T\-L\-A\-B@{C\-M\-A\-T\-L\-A\-B}!path@{path}}
+\index{path@{path}!CMATLAB@{C\-M\-A\-T\-L\-A\-B}}
+\subsubsection[{path}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string C\-M\-A\-T\-L\-A\-B\-::path = \char`\"{}C\-:\textbackslash{}\textbackslash{}\-Program Files\textbackslash{}\textbackslash{}\-M\-A\-T\-L\-A\-B\textbackslash{}\textbackslash{}\-R2010b\textbackslash{}\textbackslash{}bin\textbackslash{}\textbackslash{}win64\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}}\label{class_c_m_a_t_l_a_b_a3faf4011fa6f7bdd7281e0c5ad10a970}
+
+
+Path to the matlab lib. 
+
+\hypertarget{class_c_m_a_t_l_a_b_a2afb20fbe0cb6886567c8ef7e024d4bf}{\index{C\-M\-A\-T\-L\-A\-B@{C\-M\-A\-T\-L\-A\-B}!p\-Eng\-Close@{p\-Eng\-Close}}
+\index{p\-Eng\-Close@{p\-Eng\-Close}!CMATLAB@{C\-M\-A\-T\-L\-A\-B}}
+\subsubsection[{p\-Eng\-Close}]{\setlength{\rightskip}{0pt plus 5cm}{\bf engftype3} C\-M\-A\-T\-L\-A\-B\-::p\-Eng\-Close\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_m_a_t_l_a_b_a2afb20fbe0cb6886567c8ef7e024d4bf}
+
+
+Reference to eng\-Close function from libeng. 
+
+\hypertarget{class_c_m_a_t_l_a_b_aa244761097ed2374d427ad452e693c4e}{\index{C\-M\-A\-T\-L\-A\-B@{C\-M\-A\-T\-L\-A\-B}!p\-Eng\-Eval\-String@{p\-Eng\-Eval\-String}}
+\index{p\-Eng\-Eval\-String@{p\-Eng\-Eval\-String}!CMATLAB@{C\-M\-A\-T\-L\-A\-B}}
+\subsubsection[{p\-Eng\-Eval\-String}]{\setlength{\rightskip}{0pt plus 5cm}{\bf engftype6} C\-M\-A\-T\-L\-A\-B\-::p\-Eng\-Eval\-String\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_m_a_t_l_a_b_aa244761097ed2374d427ad452e693c4e}
+
+
+Reference to eng\-Eval\-String function from libeng. 
+
+\hypertarget{class_c_m_a_t_l_a_b_a73c962dcd9c9ad01cf0db9fff3346adb}{\index{C\-M\-A\-T\-L\-A\-B@{C\-M\-A\-T\-L\-A\-B}!p\-Eng\-Get\-Variable@{p\-Eng\-Get\-Variable}}
+\index{p\-Eng\-Get\-Variable@{p\-Eng\-Get\-Variable}!CMATLAB@{C\-M\-A\-T\-L\-A\-B}}
+\subsubsection[{p\-Eng\-Get\-Variable}]{\setlength{\rightskip}{0pt plus 5cm}{\bf engftype7} C\-M\-A\-T\-L\-A\-B\-::p\-Eng\-Get\-Variable\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_m_a_t_l_a_b_a73c962dcd9c9ad01cf0db9fff3346adb}
+
+
+Reference to eng\-Get\-Variable function from libeng. 
+
+\hypertarget{class_c_m_a_t_l_a_b_a0e75bb62637fc4c4a4338ad0ca65e193}{\index{C\-M\-A\-T\-L\-A\-B@{C\-M\-A\-T\-L\-A\-B}!p\-Eng\-Get\-Visible@{p\-Eng\-Get\-Visible}}
+\index{p\-Eng\-Get\-Visible@{p\-Eng\-Get\-Visible}!CMATLAB@{C\-M\-A\-T\-L\-A\-B}}
+\subsubsection[{p\-Eng\-Get\-Visible}]{\setlength{\rightskip}{0pt plus 5cm}{\bf engftype4} C\-M\-A\-T\-L\-A\-B\-::p\-Eng\-Get\-Visible\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_m_a_t_l_a_b_a0e75bb62637fc4c4a4338ad0ca65e193}
+
+
+Reference to eng\-Get\-Visible function from libeng. 
+
+\hypertarget{class_c_m_a_t_l_a_b_a22bf0f3a6218ea5ccbff85e603c12455}{\index{C\-M\-A\-T\-L\-A\-B@{C\-M\-A\-T\-L\-A\-B}!p\-Eng\-Open@{p\-Eng\-Open}}
+\index{p\-Eng\-Open@{p\-Eng\-Open}!CMATLAB@{C\-M\-A\-T\-L\-A\-B}}
+\subsubsection[{p\-Eng\-Open}]{\setlength{\rightskip}{0pt plus 5cm}{\bf engftype2} C\-M\-A\-T\-L\-A\-B\-::p\-Eng\-Open\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_m_a_t_l_a_b_a22bf0f3a6218ea5ccbff85e603c12455}
+
+
+Reference to eng\-Open function from libeng. 
+
+\hypertarget{class_c_m_a_t_l_a_b_a7b65b3c713cf0ace9fe135b94f2ee007}{\index{C\-M\-A\-T\-L\-A\-B@{C\-M\-A\-T\-L\-A\-B}!p\-Eng\-Open\-Single\-Use@{p\-Eng\-Open\-Single\-Use}}
+\index{p\-Eng\-Open\-Single\-Use@{p\-Eng\-Open\-Single\-Use}!CMATLAB@{C\-M\-A\-T\-L\-A\-B}}
+\subsubsection[{p\-Eng\-Open\-Single\-Use}]{\setlength{\rightskip}{0pt plus 5cm}{\bf engftype1} C\-M\-A\-T\-L\-A\-B\-::p\-Eng\-Open\-Single\-Use\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_m_a_t_l_a_b_a7b65b3c713cf0ace9fe135b94f2ee007}
+
+
+Reference to eng\-Open\-Single\-Use function from libeng. 
+
+\hypertarget{class_c_m_a_t_l_a_b_a41eefdf98cf7dca3f766c3378b022746}{\index{C\-M\-A\-T\-L\-A\-B@{C\-M\-A\-T\-L\-A\-B}!p\-Eng\-Output\-Buffer@{p\-Eng\-Output\-Buffer}}
+\index{p\-Eng\-Output\-Buffer@{p\-Eng\-Output\-Buffer}!CMATLAB@{C\-M\-A\-T\-L\-A\-B}}
+\subsubsection[{p\-Eng\-Output\-Buffer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf engftype9} C\-M\-A\-T\-L\-A\-B\-::p\-Eng\-Output\-Buffer\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_m_a_t_l_a_b_a41eefdf98cf7dca3f766c3378b022746}
+
+
+Reference to eng\-Output\-Buffer function from libeng. 
+
+\hypertarget{class_c_m_a_t_l_a_b_a2f377cb3dad070f45b0fe6f971f0a8c5}{\index{C\-M\-A\-T\-L\-A\-B@{C\-M\-A\-T\-L\-A\-B}!p\-Eng\-Put\-Variable@{p\-Eng\-Put\-Variable}}
+\index{p\-Eng\-Put\-Variable@{p\-Eng\-Put\-Variable}!CMATLAB@{C\-M\-A\-T\-L\-A\-B}}
+\subsubsection[{p\-Eng\-Put\-Variable}]{\setlength{\rightskip}{0pt plus 5cm}{\bf engftype8} C\-M\-A\-T\-L\-A\-B\-::p\-Eng\-Put\-Variable\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_m_a_t_l_a_b_a2f377cb3dad070f45b0fe6f971f0a8c5}
+
+
+Reference to eng\-Put\-Variable function from libeng. 
+
+\hypertarget{class_c_m_a_t_l_a_b_aacae3122e2253226427bf5ea2d773a7e}{\index{C\-M\-A\-T\-L\-A\-B@{C\-M\-A\-T\-L\-A\-B}!p\-Eng\-Set\-Visible@{p\-Eng\-Set\-Visible}}
+\index{p\-Eng\-Set\-Visible@{p\-Eng\-Set\-Visible}!CMATLAB@{C\-M\-A\-T\-L\-A\-B}}
+\subsubsection[{p\-Eng\-Set\-Visible}]{\setlength{\rightskip}{0pt plus 5cm}{\bf engftype5} C\-M\-A\-T\-L\-A\-B\-::p\-Eng\-Set\-Visible\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_m_a_t_l_a_b_aacae3122e2253226427bf5ea2d773a7e}
+
+
+Reference to eng\-Set\-Visible function from libeng. 
+
+\hypertarget{class_c_m_a_t_l_a_b_a7ec5b3aaa23c3aeac50d7e5e3d0a9dc2}{\index{C\-M\-A\-T\-L\-A\-B@{C\-M\-A\-T\-L\-A\-B}!p\-Mat\-Close@{p\-Mat\-Close}}
+\index{p\-Mat\-Close@{p\-Mat\-Close}!CMATLAB@{C\-M\-A\-T\-L\-A\-B}}
+\subsubsection[{p\-Mat\-Close}]{\setlength{\rightskip}{0pt plus 5cm}{\bf matftype2} C\-M\-A\-T\-L\-A\-B\-::p\-Mat\-Close\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_m_a_t_l_a_b_a7ec5b3aaa23c3aeac50d7e5e3d0a9dc2}
+
+
+Reference to mat\-Close function from libmat. 
+
+\hypertarget{class_c_m_a_t_l_a_b_a67cb7321930f1e73b6b75a461c93316e}{\index{C\-M\-A\-T\-L\-A\-B@{C\-M\-A\-T\-L\-A\-B}!p\-Mat\-Get\-Variable@{p\-Mat\-Get\-Variable}}
+\index{p\-Mat\-Get\-Variable@{p\-Mat\-Get\-Variable}!CMATLAB@{C\-M\-A\-T\-L\-A\-B}}
+\subsubsection[{p\-Mat\-Get\-Variable}]{\setlength{\rightskip}{0pt plus 5cm}{\bf matftype4} C\-M\-A\-T\-L\-A\-B\-::p\-Mat\-Get\-Variable\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_m_a_t_l_a_b_a67cb7321930f1e73b6b75a461c93316e}
+
+
+Reference to mat\-Get\-Variable function from libmat. 
+
+\hypertarget{class_c_m_a_t_l_a_b_a6c18b950cb8dbfbba72589e44db1f69e}{\index{C\-M\-A\-T\-L\-A\-B@{C\-M\-A\-T\-L\-A\-B}!p\-Mat\-Open@{p\-Mat\-Open}}
+\index{p\-Mat\-Open@{p\-Mat\-Open}!CMATLAB@{C\-M\-A\-T\-L\-A\-B}}
+\subsubsection[{p\-Mat\-Open}]{\setlength{\rightskip}{0pt plus 5cm}{\bf matftype1} C\-M\-A\-T\-L\-A\-B\-::p\-Mat\-Open\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_m_a_t_l_a_b_a6c18b950cb8dbfbba72589e44db1f69e}
+
+
+Reference to mat\-Open function from libmat. 
+
+\hypertarget{class_c_m_a_t_l_a_b_ac8ce0e267d00131b74994e825f1bdaa7}{\index{C\-M\-A\-T\-L\-A\-B@{C\-M\-A\-T\-L\-A\-B}!p\-Mat\-Put\-Variable@{p\-Mat\-Put\-Variable}}
+\index{p\-Mat\-Put\-Variable@{p\-Mat\-Put\-Variable}!CMATLAB@{C\-M\-A\-T\-L\-A\-B}}
+\subsubsection[{p\-Mat\-Put\-Variable}]{\setlength{\rightskip}{0pt plus 5cm}{\bf matftype3} C\-M\-A\-T\-L\-A\-B\-::p\-Mat\-Put\-Variable\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_m_a_t_l_a_b_ac8ce0e267d00131b74994e825f1bdaa7}
+
+
+Reference to mat\-Put\-Variable function from libmat. 
+
+\hypertarget{class_c_m_a_t_l_a_b_a39b2341b32007df69682062513aeb208}{\index{C\-M\-A\-T\-L\-A\-B@{C\-M\-A\-T\-L\-A\-B}!p\-Mx\-Create\-Double\-Matrix@{p\-Mx\-Create\-Double\-Matrix}}
+\index{p\-Mx\-Create\-Double\-Matrix@{p\-Mx\-Create\-Double\-Matrix}!CMATLAB@{C\-M\-A\-T\-L\-A\-B}}
+\subsubsection[{p\-Mx\-Create\-Double\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mxftype1} C\-M\-A\-T\-L\-A\-B\-::p\-Mx\-Create\-Double\-Matrix\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_m_a_t_l_a_b_a39b2341b32007df69682062513aeb208}
+
+
+Reference to mx\-Create\-Double\-Matrix function from libmx. 
+
+\hypertarget{class_c_m_a_t_l_a_b_ac882abd9bca8e3568632f97f54ac419e}{\index{C\-M\-A\-T\-L\-A\-B@{C\-M\-A\-T\-L\-A\-B}!p\-Mx\-Destroy\-Array@{p\-Mx\-Destroy\-Array}}
+\index{p\-Mx\-Destroy\-Array@{p\-Mx\-Destroy\-Array}!CMATLAB@{C\-M\-A\-T\-L\-A\-B}}
+\subsubsection[{p\-Mx\-Destroy\-Array}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mxftype2} C\-M\-A\-T\-L\-A\-B\-::p\-Mx\-Destroy\-Array\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_m_a_t_l_a_b_ac882abd9bca8e3568632f97f54ac419e}
+
+
+Reference to mx\-Destroy\-Array function from libmx. 
+
+\hypertarget{class_c_m_a_t_l_a_b_ad4e70fa3e8a70bd9ca7bcf6c52b6e9c1}{\index{C\-M\-A\-T\-L\-A\-B@{C\-M\-A\-T\-L\-A\-B}!p\-Mx\-Get\-Number\-Of\-Elements@{p\-Mx\-Get\-Number\-Of\-Elements}}
+\index{p\-Mx\-Get\-Number\-Of\-Elements@{p\-Mx\-Get\-Number\-Of\-Elements}!CMATLAB@{C\-M\-A\-T\-L\-A\-B}}
+\subsubsection[{p\-Mx\-Get\-Number\-Of\-Elements}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mxftype5} C\-M\-A\-T\-L\-A\-B\-::p\-Mx\-Get\-Number\-Of\-Elements\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_m_a_t_l_a_b_ad4e70fa3e8a70bd9ca7bcf6c52b6e9c1}
+
+
+Reference to mx\-Set\-Pr function from libmx. 
+
+\hypertarget{class_c_m_a_t_l_a_b_ab2647b823dd8a165c7109d0a927d457a}{\index{C\-M\-A\-T\-L\-A\-B@{C\-M\-A\-T\-L\-A\-B}!p\-Mx\-Get\-Pr@{p\-Mx\-Get\-Pr}}
+\index{p\-Mx\-Get\-Pr@{p\-Mx\-Get\-Pr}!CMATLAB@{C\-M\-A\-T\-L\-A\-B}}
+\subsubsection[{p\-Mx\-Get\-Pr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mxftype3} C\-M\-A\-T\-L\-A\-B\-::p\-Mx\-Get\-Pr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_m_a_t_l_a_b_ab2647b823dd8a165c7109d0a927d457a}
+
+
+Reference to mx\-Get\-Pr function from libmx. 
+
+\hypertarget{class_c_m_a_t_l_a_b_a3da6fa87a95db825e0785f4abd761351}{\index{C\-M\-A\-T\-L\-A\-B@{C\-M\-A\-T\-L\-A\-B}!p\-Mx\-Set\-Pr@{p\-Mx\-Set\-Pr}}
+\index{p\-Mx\-Set\-Pr@{p\-Mx\-Set\-Pr}!CMATLAB@{C\-M\-A\-T\-L\-A\-B}}
+\subsubsection[{p\-Mx\-Set\-Pr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mxftype4} C\-M\-A\-T\-L\-A\-B\-::p\-Mx\-Set\-Pr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_m_a_t_l_a_b_a3da6fa87a95db825e0785f4abd761351}
+
+
+Reference to mx\-Set\-Pr function from libmx. 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Development/core/\hyperlink{_matlab_library_8h}{Matlab\-Library.\-h}\item 
+C\-:/\-Development/core/\hyperlink{_matlab_library_8cpp}{Matlab\-Library.\-cpp}\end{DoxyCompactItemize}

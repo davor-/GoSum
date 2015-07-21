@@ -1,0 +1,128 @@
+\hypertarget{class_go_s_u_m_1_1_c_c_voronoi_h_c}{\section{Go\-S\-U\-M\-:\-:C\-C\-Voronoi\-H\-C Class Reference}
+\label{class_go_s_u_m_1_1_c_c_voronoi_h_c}\index{Go\-S\-U\-M\-::\-C\-C\-Voronoi\-H\-C@{Go\-S\-U\-M\-::\-C\-C\-Voronoi\-H\-C}}
+}
+
+
+{\ttfamily \#include $<$Hypercube.\-h$>$}
+
+Inheritance diagram for Go\-S\-U\-M\-:\-:C\-C\-Voronoi\-H\-C\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_go_s_u_m_1_1_c_c_voronoi_h_c}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_go_s_u_m_1_1_c_c_voronoi_h_c_ad3998fef79b2c64980c03fc2e3010c93}{C\-C\-Voronoi\-H\-C} (\hyperlink{class_go_s_u_m_1_1_c_input_parameters}{C\-Input\-Parameters} $\ast$\-\_\-p\-I\-P)
+\item 
+virtual \hyperlink{class_go_s_u_m_1_1_c_c_voronoi_h_c_afdcece721246023141339525c58256b6}{$\sim$\-C\-C\-Voronoi\-H\-C} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \hyperlink{class_go_s_u_m_1_1_c_c_voronoi_h_c_abbeaabd93028069b81be4dfc078e3d02}{serialize} (Archive \&ar, const unsigned int version)
+\item 
+virtual void \hyperlink{class_go_s_u_m_1_1_c_c_voronoi_h_c_ae3ecc9c8e8c09e42c13b77d0bfa8c020}{do\-Generate} (int \-\_\-rssize, int \-\_\-dim, std\-::vector$<$ Array\-Xd $>$ \&\-\_\-samples)
+\begin{DoxyCompactList}\small\item\em Core of the generation. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_c_voronoi_h_c_a3988f3bc82cb71904e358ef13e9a68d4}{centralize} (std\-::vector$<$ Array\-Xd $>$ \&\-\_\-samples)
+\begin{DoxyCompactList}\small\item\em Centralizes model points \-\_\-samples. \end{DoxyCompactList}\item 
+\hyperlink{class_go_s_u_m_1_1_c_c_voronoi_h_c_a8c59858fea9d4e605b6207d8982b6931}{C\-C\-Voronoi\-H\-C} ()
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_go_s_u_m_1_1_c_c_voronoi_h_c_ac98d07dd8f7b70e16ccb9a01abf56b9c}{boost\-::serialization\-::access}
+\begin{DoxyCompactList}\small\item\em Boost serialization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_c_voronoi_h_c_a8c59858fea9d4e605b6207d8982b6931}{\index{Go\-S\-U\-M\-::\-C\-C\-Voronoi\-H\-C@{Go\-S\-U\-M\-::\-C\-C\-Voronoi\-H\-C}!C\-C\-Voronoi\-H\-C@{C\-C\-Voronoi\-H\-C}}
+\index{C\-C\-Voronoi\-H\-C@{C\-C\-Voronoi\-H\-C}!GoSUM::CCVoronoiHC@{Go\-S\-U\-M\-::\-C\-C\-Voronoi\-H\-C}}
+\subsubsection[{C\-C\-Voronoi\-H\-C}]{\setlength{\rightskip}{0pt plus 5cm}Go\-S\-U\-M\-::\-C\-C\-Voronoi\-H\-C\-::\-C\-C\-Voronoi\-H\-C (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_c_voronoi_h_c_a8c59858fea9d4e605b6207d8982b6931}
+\hypertarget{class_go_s_u_m_1_1_c_c_voronoi_h_c_ad3998fef79b2c64980c03fc2e3010c93}{\index{Go\-S\-U\-M\-::\-C\-C\-Voronoi\-H\-C@{Go\-S\-U\-M\-::\-C\-C\-Voronoi\-H\-C}!C\-C\-Voronoi\-H\-C@{C\-C\-Voronoi\-H\-C}}
+\index{C\-C\-Voronoi\-H\-C@{C\-C\-Voronoi\-H\-C}!GoSUM::CCVoronoiHC@{Go\-S\-U\-M\-::\-C\-C\-Voronoi\-H\-C}}
+\subsubsection[{C\-C\-Voronoi\-H\-C}]{\setlength{\rightskip}{0pt plus 5cm}Go\-S\-U\-M\-::\-C\-C\-Voronoi\-H\-C\-::\-C\-C\-Voronoi\-H\-C (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Input\-Parameters} $\ast$}]{\-\_\-p\-I\-P}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_c_voronoi_h_c_ad3998fef79b2c64980c03fc2e3010c93}
+\hypertarget{class_go_s_u_m_1_1_c_c_voronoi_h_c_afdcece721246023141339525c58256b6}{\index{Go\-S\-U\-M\-::\-C\-C\-Voronoi\-H\-C@{Go\-S\-U\-M\-::\-C\-C\-Voronoi\-H\-C}!$\sim$\-C\-C\-Voronoi\-H\-C@{$\sim$\-C\-C\-Voronoi\-H\-C}}
+\index{$\sim$\-C\-C\-Voronoi\-H\-C@{$\sim$\-C\-C\-Voronoi\-H\-C}!GoSUM::CCVoronoiHC@{Go\-S\-U\-M\-::\-C\-C\-Voronoi\-H\-C}}
+\subsubsection[{$\sim$\-C\-C\-Voronoi\-H\-C}]{\setlength{\rightskip}{0pt plus 5cm}virtual Go\-S\-U\-M\-::\-C\-C\-Voronoi\-H\-C\-::$\sim$\-C\-C\-Voronoi\-H\-C (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_c_voronoi_h_c_afdcece721246023141339525c58256b6}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_c_voronoi_h_c_a3988f3bc82cb71904e358ef13e9a68d4}{\index{Go\-S\-U\-M\-::\-C\-C\-Voronoi\-H\-C@{Go\-S\-U\-M\-::\-C\-C\-Voronoi\-H\-C}!centralize@{centralize}}
+\index{centralize@{centralize}!GoSUM::CCVoronoiHC@{Go\-S\-U\-M\-::\-C\-C\-Voronoi\-H\-C}}
+\subsubsection[{centralize}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-C\-Voronoi\-H\-C\-::centralize (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ Array\-Xd $>$ \&}]{\-\_\-samples}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_c_voronoi_h_c_a3988f3bc82cb71904e358ef13e9a68d4}
+
+
+Centralizes model points \-\_\-samples. 
+
+\hypertarget{class_go_s_u_m_1_1_c_c_voronoi_h_c_ae3ecc9c8e8c09e42c13b77d0bfa8c020}{\index{Go\-S\-U\-M\-::\-C\-C\-Voronoi\-H\-C@{Go\-S\-U\-M\-::\-C\-C\-Voronoi\-H\-C}!do\-Generate@{do\-Generate}}
+\index{do\-Generate@{do\-Generate}!GoSUM::CCVoronoiHC@{Go\-S\-U\-M\-::\-C\-C\-Voronoi\-H\-C}}
+\subsubsection[{do\-Generate}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-C\-Voronoi\-H\-C\-::do\-Generate (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-rssize, }
+\item[{int}]{\-\_\-dim, }
+\item[{std\-::vector$<$ Array\-Xd $>$ \&}]{\-\_\-samples}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_c_voronoi_h_c_ae3ecc9c8e8c09e42c13b77d0bfa8c020}
+
+
+Core of the generation. 
+
+
+
+Implements \hyperlink{class_go_s_u_m_1_1_c_model_hypercube_a1e92dd784f1c20b604fecd1a48bea2f4}{Go\-S\-U\-M\-::\-C\-Model\-Hypercube}.
+
+
+
+Reimplemented in \hyperlink{class_go_s_u_m_1_1_c_l_c_voronoi_h_c_a02e90ea8deecafc3b398709f748fa9af}{Go\-S\-U\-M\-::\-C\-L\-C\-Voronoi\-H\-C}.
+
+\hypertarget{class_go_s_u_m_1_1_c_c_voronoi_h_c_abbeaabd93028069b81be4dfc078e3d02}{\index{Go\-S\-U\-M\-::\-C\-C\-Voronoi\-H\-C@{Go\-S\-U\-M\-::\-C\-C\-Voronoi\-H\-C}!serialize@{serialize}}
+\index{serialize@{serialize}!GoSUM::CCVoronoiHC@{Go\-S\-U\-M\-::\-C\-C\-Voronoi\-H\-C}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Archive $>$ void Go\-S\-U\-M\-::\-C\-C\-Voronoi\-H\-C\-::serialize (
+\begin{DoxyParamCaption}
+\item[{Archive \&}]{ar, }
+\item[{const unsigned int}]{version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_c_voronoi_h_c_abbeaabd93028069b81be4dfc078e3d02}
+
+
+Reimplemented from \hyperlink{class_go_s_u_m_1_1_c_model_hypercube_a67de6632c6f6ca3685d2a750599974c6}{Go\-S\-U\-M\-::\-C\-Model\-Hypercube}.
+
+
+
+Reimplemented in \hyperlink{class_go_s_u_m_1_1_c_l_c_voronoi_h_c_a98f588c33a8f2e2f4b681b48d63f2109}{Go\-S\-U\-M\-::\-C\-L\-C\-Voronoi\-H\-C}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_c_voronoi_h_c_ac98d07dd8f7b70e16ccb9a01abf56b9c}{\index{Go\-S\-U\-M\-::\-C\-C\-Voronoi\-H\-C@{Go\-S\-U\-M\-::\-C\-C\-Voronoi\-H\-C}!boost\-::serialization\-::access@{boost\-::serialization\-::access}}
+\index{boost\-::serialization\-::access@{boost\-::serialization\-::access}!GoSUM::CCVoronoiHC@{Go\-S\-U\-M\-::\-C\-C\-Voronoi\-H\-C}}
+\subsubsection[{boost\-::serialization\-::access}]{\setlength{\rightskip}{0pt plus 5cm}friend class boost\-::serialization\-::access\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_go_s_u_m_1_1_c_c_voronoi_h_c_ac98d07dd8f7b70e16ccb9a01abf56b9c}
+
+
+Boost serialization. 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Development/core/\hyperlink{_hypercube_8h}{Hypercube.\-h}\item 
+C\-:/\-Development/core/\hyperlink{_hypercube_8cpp}{Hypercube.\-cpp}\end{DoxyCompactItemize}

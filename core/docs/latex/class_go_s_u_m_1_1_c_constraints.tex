@@ -1,0 +1,303 @@
+\hypertarget{class_go_s_u_m_1_1_c_constraints}{\section{Go\-S\-U\-M\-:\-:C\-Constraints Class Reference}
+\label{class_go_s_u_m_1_1_c_constraints}\index{Go\-S\-U\-M\-::\-C\-Constraints@{Go\-S\-U\-M\-::\-C\-Constraints}}
+}
+
+
+Class for the constraints with parser functions.  
+
+
+
+
+{\ttfamily \#include $<$Constraints.\-h$>$}
+
+Inheritance diagram for Go\-S\-U\-M\-:\-:C\-Constraints\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_go_s_u_m_1_1_c_constraints}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_go_s_u_m_1_1_c_constraints_ad4a1d290fbe6e1932b08f4fb1695b0a6}{C\-Constraints} ()
+\item 
+virtual \hyperlink{class_go_s_u_m_1_1_c_constraints_a79a84d644f7e8022ce16487b4707bc33}{$\sim$\-C\-Constraints} ()
+\item 
+virtual void \hyperlink{class_go_s_u_m_1_1_c_constraints_a45acde7b103ba957a718031b6ecebf69}{clear} ()
+\begin{DoxyCompactList}\small\item\em Clears object. \end{DoxyCompactList}\item 
+int \hyperlink{class_go_s_u_m_1_1_c_constraints_a9979ee367d1f0592e0ddea874307527c}{size} () const 
+\begin{DoxyCompactList}\small\item\em Returns size of the constraints. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_constraints_ab50ae4d923f0a67ed6bf468b2e7b3b8b}{add\-Expression} (const std\-::string \&\-\_\-gexpr)
+\begin{DoxyCompactList}\small\item\em Adds contraint expression. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_constraints_a8c242c266df5f843807e3f000e724929}{erase\-Expression} (int \-\_\-at)
+\begin{DoxyCompactList}\small\item\em Erases particular constraint expression. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_constraints_a75b0405e1cb0c978c5eccc5df2fdbd8a}{set\-Expression} (const std\-::string \&\-\_\-gexpr, int \-\_\-at)
+\begin{DoxyCompactList}\small\item\em Sets particular cosntraint expression. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{class_go_s_u_m_1_1_c_constraints_af1e75f5d326a3466c2c778ccca1d82fe}{expression} (int \-\_\-at) const 
+\begin{DoxyCompactList}\small\item\em Returns particular constraint expression. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{class_go_s_u_m_1_1_c_constraints_ae1263ac8c72174dddef6496492c9d7ad}{roundoff\-Equality} (std\-::string \-\_\-expr)
+\begin{DoxyCompactList}\small\item\em If \-\_\-expr is an equality expression left=right it returns expression abs(left-\/right)$<$=T\-I\-N\-Y. \end{DoxyCompactList}\item 
+bool \hyperlink{class_go_s_u_m_1_1_c_constraints_ab27d71bea1ae044f44b172100b9dfbe7}{validate\-Expressions} ()
+\begin{DoxyCompactList}\small\item\em Validates all expressions. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_constraints_af25eeb4dba5c0322be3fe4f0cdfbfdcd}{parse\-Expressions} ()
+\begin{DoxyCompactList}\small\item\em Parses all expressions. \end{DoxyCompactList}\item 
+double \hyperlink{class_go_s_u_m_1_1_c_constraints_ac1fe75127e58521d895cdc4d33396aa6}{evaluate} (const Array\-Xd \&\-\_\-x, int \-\_\-at)
+\begin{DoxyCompactList}\small\item\em Evalautes particular constraint value from variables values. \end{DoxyCompactList}\item 
+bool \hyperlink{class_go_s_u_m_1_1_c_constraints_a263ec572454111f605e6de9fad8348f0}{constraints\-Satisfied} (const Array\-Xd \&\-\_\-x)
+\begin{DoxyCompactList}\small\item\em Returns true if \-\_\-x satisfies constraints, false otherwise. \end{DoxyCompactList}\item 
+bool \hyperlink{class_go_s_u_m_1_1_c_constraints_ac58b8ce474e2651f3b64280efdb698fb}{find\-In\-Expressions} (const std\-::string \&\-\_\-name) const 
+\begin{DoxyCompactList}\small\item\em Returns true if \-\_\-name is found in constraint expressions, false otherwise. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \hyperlink{class_go_s_u_m_1_1_c_constraints_af98bbd20b50e8db2b88630d865fbf10f}{serialize} (Archive \&ar, const unsigned int version)
+\item 
+virtual void \hyperlink{class_go_s_u_m_1_1_c_constraints_a68a322c212879db65e3ebc1c1f201432}{set\-Variable\-Names} ()=0
+\begin{DoxyCompactList}\small\item\em Sets variable names for the parser. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string \hyperlink{class_go_s_u_m_1_1_c_constraints_a94ad221dd1376199a48858e01fc6e19e}{names}
+\begin{DoxyCompactList}\small\item\em Holds all names that are permited in objective and constraint expressions. \end{DoxyCompactList}\item 
+std\-::vector$<$ std\-::string $>$ \hyperlink{class_go_s_u_m_1_1_c_constraints_a9a560b064cc42cd4c9447d3891cf2f65}{gexpr}
+\begin{DoxyCompactList}\small\item\em Holds expressions for constraints. \end{DoxyCompactList}\item 
+Function\-Parser \hyperlink{class_go_s_u_m_1_1_c_constraints_a9205ec417c8870e9f4b5001db082d782}{f}
+\begin{DoxyCompactList}\small\item\em Holds base function parser. \end{DoxyCompactList}\item 
+std\-::vector$<$ Function\-Parser $>$ \hyperlink{class_go_s_u_m_1_1_c_constraints_ac862006b869d239f27b466a6e0cfabb2}{g}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_go_s_u_m_1_1_c_constraints_ac98d07dd8f7b70e16ccb9a01abf56b9c}{boost\-::serialization\-::access}
+\begin{DoxyCompactList}\small\item\em Boost serialization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for the constraints with parser functions. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_constraints_ad4a1d290fbe6e1932b08f4fb1695b0a6}{\index{Go\-S\-U\-M\-::\-C\-Constraints@{Go\-S\-U\-M\-::\-C\-Constraints}!C\-Constraints@{C\-Constraints}}
+\index{C\-Constraints@{C\-Constraints}!GoSUM::CConstraints@{Go\-S\-U\-M\-::\-C\-Constraints}}
+\subsubsection[{C\-Constraints}]{\setlength{\rightskip}{0pt plus 5cm}Go\-S\-U\-M\-::\-C\-Constraints\-::\-C\-Constraints (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_constraints_ad4a1d290fbe6e1932b08f4fb1695b0a6}
+\hypertarget{class_go_s_u_m_1_1_c_constraints_a79a84d644f7e8022ce16487b4707bc33}{\index{Go\-S\-U\-M\-::\-C\-Constraints@{Go\-S\-U\-M\-::\-C\-Constraints}!$\sim$\-C\-Constraints@{$\sim$\-C\-Constraints}}
+\index{$\sim$\-C\-Constraints@{$\sim$\-C\-Constraints}!GoSUM::CConstraints@{Go\-S\-U\-M\-::\-C\-Constraints}}
+\subsubsection[{$\sim$\-C\-Constraints}]{\setlength{\rightskip}{0pt plus 5cm}virtual Go\-S\-U\-M\-::\-C\-Constraints\-::$\sim$\-C\-Constraints (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_constraints_a79a84d644f7e8022ce16487b4707bc33}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_constraints_ab50ae4d923f0a67ed6bf468b2e7b3b8b}{\index{Go\-S\-U\-M\-::\-C\-Constraints@{Go\-S\-U\-M\-::\-C\-Constraints}!add\-Expression@{add\-Expression}}
+\index{add\-Expression@{add\-Expression}!GoSUM::CConstraints@{Go\-S\-U\-M\-::\-C\-Constraints}}
+\subsubsection[{add\-Expression}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Constraints\-::add\-Expression (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{\-\_\-gexpr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_constraints_ab50ae4d923f0a67ed6bf468b2e7b3b8b}
+
+
+Adds contraint expression. 
+
+\hypertarget{class_go_s_u_m_1_1_c_constraints_a45acde7b103ba957a718031b6ecebf69}{\index{Go\-S\-U\-M\-::\-C\-Constraints@{Go\-S\-U\-M\-::\-C\-Constraints}!clear@{clear}}
+\index{clear@{clear}!GoSUM::CConstraints@{Go\-S\-U\-M\-::\-C\-Constraints}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Go\-S\-U\-M\-::\-C\-Constraints\-::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_constraints_a45acde7b103ba957a718031b6ecebf69}
+
+
+Clears object. 
+
+
+
+Reimplemented in \hyperlink{class_go_s_u_m_1_1_c_model_constraints_ab547fb9c0109eb85715d65caf04eed84}{Go\-S\-U\-M\-::\-C\-Model\-Constraints}.
+
+\hypertarget{class_go_s_u_m_1_1_c_constraints_a263ec572454111f605e6de9fad8348f0}{\index{Go\-S\-U\-M\-::\-C\-Constraints@{Go\-S\-U\-M\-::\-C\-Constraints}!constraints\-Satisfied@{constraints\-Satisfied}}
+\index{constraints\-Satisfied@{constraints\-Satisfied}!GoSUM::CConstraints@{Go\-S\-U\-M\-::\-C\-Constraints}}
+\subsubsection[{constraints\-Satisfied}]{\setlength{\rightskip}{0pt plus 5cm}bool Go\-S\-U\-M\-::\-C\-Constraints\-::constraints\-Satisfied (
+\begin{DoxyParamCaption}
+\item[{const Array\-Xd \&}]{\-\_\-x}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_constraints_a263ec572454111f605e6de9fad8348f0}
+
+
+Returns true if \-\_\-x satisfies constraints, false otherwise. 
+
+\hypertarget{class_go_s_u_m_1_1_c_constraints_a8c242c266df5f843807e3f000e724929}{\index{Go\-S\-U\-M\-::\-C\-Constraints@{Go\-S\-U\-M\-::\-C\-Constraints}!erase\-Expression@{erase\-Expression}}
+\index{erase\-Expression@{erase\-Expression}!GoSUM::CConstraints@{Go\-S\-U\-M\-::\-C\-Constraints}}
+\subsubsection[{erase\-Expression}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Constraints\-::erase\-Expression (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-at}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_constraints_a8c242c266df5f843807e3f000e724929}
+
+
+Erases particular constraint expression. 
+
+\hypertarget{class_go_s_u_m_1_1_c_constraints_ac1fe75127e58521d895cdc4d33396aa6}{\index{Go\-S\-U\-M\-::\-C\-Constraints@{Go\-S\-U\-M\-::\-C\-Constraints}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!GoSUM::CConstraints@{Go\-S\-U\-M\-::\-C\-Constraints}}
+\subsubsection[{evaluate}]{\setlength{\rightskip}{0pt plus 5cm}double Go\-S\-U\-M\-::\-C\-Constraints\-::evaluate (
+\begin{DoxyParamCaption}
+\item[{const Array\-Xd \&}]{\-\_\-x, }
+\item[{int}]{\-\_\-at}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_constraints_ac1fe75127e58521d895cdc4d33396aa6}
+
+
+Evalautes particular constraint value from variables values. 
+
+\hypertarget{class_go_s_u_m_1_1_c_constraints_af1e75f5d326a3466c2c778ccca1d82fe}{\index{Go\-S\-U\-M\-::\-C\-Constraints@{Go\-S\-U\-M\-::\-C\-Constraints}!expression@{expression}}
+\index{expression@{expression}!GoSUM::CConstraints@{Go\-S\-U\-M\-::\-C\-Constraints}}
+\subsubsection[{expression}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Go\-S\-U\-M\-::\-C\-Constraints\-::expression (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-at}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_constraints_af1e75f5d326a3466c2c778ccca1d82fe}
+
+
+Returns particular constraint expression. 
+
+\hypertarget{class_go_s_u_m_1_1_c_constraints_ac58b8ce474e2651f3b64280efdb698fb}{\index{Go\-S\-U\-M\-::\-C\-Constraints@{Go\-S\-U\-M\-::\-C\-Constraints}!find\-In\-Expressions@{find\-In\-Expressions}}
+\index{find\-In\-Expressions@{find\-In\-Expressions}!GoSUM::CConstraints@{Go\-S\-U\-M\-::\-C\-Constraints}}
+\subsubsection[{find\-In\-Expressions}]{\setlength{\rightskip}{0pt plus 5cm}bool Go\-S\-U\-M\-::\-C\-Constraints\-::find\-In\-Expressions (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{\-\_\-name}
+\end{DoxyParamCaption}
+) const}}\label{class_go_s_u_m_1_1_c_constraints_ac58b8ce474e2651f3b64280efdb698fb}
+
+
+Returns true if \-\_\-name is found in constraint expressions, false otherwise. 
+
+\hypertarget{class_go_s_u_m_1_1_c_constraints_af25eeb4dba5c0322be3fe4f0cdfbfdcd}{\index{Go\-S\-U\-M\-::\-C\-Constraints@{Go\-S\-U\-M\-::\-C\-Constraints}!parse\-Expressions@{parse\-Expressions}}
+\index{parse\-Expressions@{parse\-Expressions}!GoSUM::CConstraints@{Go\-S\-U\-M\-::\-C\-Constraints}}
+\subsubsection[{parse\-Expressions}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Constraints\-::parse\-Expressions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_constraints_af25eeb4dba5c0322be3fe4f0cdfbfdcd}
+
+
+Parses all expressions. 
+
+\hypertarget{class_go_s_u_m_1_1_c_constraints_ae1263ac8c72174dddef6496492c9d7ad}{\index{Go\-S\-U\-M\-::\-C\-Constraints@{Go\-S\-U\-M\-::\-C\-Constraints}!roundoff\-Equality@{roundoff\-Equality}}
+\index{roundoff\-Equality@{roundoff\-Equality}!GoSUM::CConstraints@{Go\-S\-U\-M\-::\-C\-Constraints}}
+\subsubsection[{roundoff\-Equality}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Go\-S\-U\-M\-::\-C\-Constraints\-::roundoff\-Equality (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{\-\_\-expr}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_constraints_ae1263ac8c72174dddef6496492c9d7ad}
+
+
+If \-\_\-expr is an equality expression left=right it returns expression abs(left-\/right)$<$=T\-I\-N\-Y. 
+
+\hypertarget{class_go_s_u_m_1_1_c_constraints_af98bbd20b50e8db2b88630d865fbf10f}{\index{Go\-S\-U\-M\-::\-C\-Constraints@{Go\-S\-U\-M\-::\-C\-Constraints}!serialize@{serialize}}
+\index{serialize@{serialize}!GoSUM::CConstraints@{Go\-S\-U\-M\-::\-C\-Constraints}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Archive $>$ void Go\-S\-U\-M\-::\-C\-Constraints\-::serialize (
+\begin{DoxyParamCaption}
+\item[{Archive \&}]{ar, }
+\item[{const unsigned int}]{version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_constraints_af98bbd20b50e8db2b88630d865fbf10f}
+
+
+Reimplemented in \hyperlink{class_go_s_u_m_1_1_c_model_constraints_a7e4ec6b59419b56907b7cfedec230ca7}{Go\-S\-U\-M\-::\-C\-Model\-Constraints}.
+
+\hypertarget{class_go_s_u_m_1_1_c_constraints_a75b0405e1cb0c978c5eccc5df2fdbd8a}{\index{Go\-S\-U\-M\-::\-C\-Constraints@{Go\-S\-U\-M\-::\-C\-Constraints}!set\-Expression@{set\-Expression}}
+\index{set\-Expression@{set\-Expression}!GoSUM::CConstraints@{Go\-S\-U\-M\-::\-C\-Constraints}}
+\subsubsection[{set\-Expression}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Constraints\-::set\-Expression (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{\-\_\-gexpr, }
+\item[{int}]{\-\_\-at}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_constraints_a75b0405e1cb0c978c5eccc5df2fdbd8a}
+
+
+Sets particular cosntraint expression. 
+
+\hypertarget{class_go_s_u_m_1_1_c_constraints_a68a322c212879db65e3ebc1c1f201432}{\index{Go\-S\-U\-M\-::\-C\-Constraints@{Go\-S\-U\-M\-::\-C\-Constraints}!set\-Variable\-Names@{set\-Variable\-Names}}
+\index{set\-Variable\-Names@{set\-Variable\-Names}!GoSUM::CConstraints@{Go\-S\-U\-M\-::\-C\-Constraints}}
+\subsubsection[{set\-Variable\-Names}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Go\-S\-U\-M\-::\-C\-Constraints\-::set\-Variable\-Names (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{class_go_s_u_m_1_1_c_constraints_a68a322c212879db65e3ebc1c1f201432}
+
+
+Sets variable names for the parser. 
+
+
+
+Implemented in \hyperlink{class_go_s_u_m_1_1_c_model_constraints_afe8e8cbf1fc08ae1f2ee494146da01fa}{Go\-S\-U\-M\-::\-C\-Model\-Constraints}.
+
+\hypertarget{class_go_s_u_m_1_1_c_constraints_a9979ee367d1f0592e0ddea874307527c}{\index{Go\-S\-U\-M\-::\-C\-Constraints@{Go\-S\-U\-M\-::\-C\-Constraints}!size@{size}}
+\index{size@{size}!GoSUM::CConstraints@{Go\-S\-U\-M\-::\-C\-Constraints}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}int Go\-S\-U\-M\-::\-C\-Constraints\-::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_constraints_a9979ee367d1f0592e0ddea874307527c}
+
+
+Returns size of the constraints. 
+
+\hypertarget{class_go_s_u_m_1_1_c_constraints_ab27d71bea1ae044f44b172100b9dfbe7}{\index{Go\-S\-U\-M\-::\-C\-Constraints@{Go\-S\-U\-M\-::\-C\-Constraints}!validate\-Expressions@{validate\-Expressions}}
+\index{validate\-Expressions@{validate\-Expressions}!GoSUM::CConstraints@{Go\-S\-U\-M\-::\-C\-Constraints}}
+\subsubsection[{validate\-Expressions}]{\setlength{\rightskip}{0pt plus 5cm}bool Go\-S\-U\-M\-::\-C\-Constraints\-::validate\-Expressions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_constraints_ab27d71bea1ae044f44b172100b9dfbe7}
+
+
+Validates all expressions. 
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_constraints_ac98d07dd8f7b70e16ccb9a01abf56b9c}{\index{Go\-S\-U\-M\-::\-C\-Constraints@{Go\-S\-U\-M\-::\-C\-Constraints}!boost\-::serialization\-::access@{boost\-::serialization\-::access}}
+\index{boost\-::serialization\-::access@{boost\-::serialization\-::access}!GoSUM::CConstraints@{Go\-S\-U\-M\-::\-C\-Constraints}}
+\subsubsection[{boost\-::serialization\-::access}]{\setlength{\rightskip}{0pt plus 5cm}friend class boost\-::serialization\-::access\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_go_s_u_m_1_1_c_constraints_ac98d07dd8f7b70e16ccb9a01abf56b9c}
+
+
+Boost serialization. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_constraints_a9205ec417c8870e9f4b5001db082d782}{\index{Go\-S\-U\-M\-::\-C\-Constraints@{Go\-S\-U\-M\-::\-C\-Constraints}!f@{f}}
+\index{f@{f}!GoSUM::CConstraints@{Go\-S\-U\-M\-::\-C\-Constraints}}
+\subsubsection[{f}]{\setlength{\rightskip}{0pt plus 5cm}Function\-Parser Go\-S\-U\-M\-::\-C\-Constraints\-::f\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_constraints_a9205ec417c8870e9f4b5001db082d782}
+
+
+Holds base function parser. 
+
+\hypertarget{class_go_s_u_m_1_1_c_constraints_ac862006b869d239f27b466a6e0cfabb2}{\index{Go\-S\-U\-M\-::\-C\-Constraints@{Go\-S\-U\-M\-::\-C\-Constraints}!g@{g}}
+\index{g@{g}!GoSUM::CConstraints@{Go\-S\-U\-M\-::\-C\-Constraints}}
+\subsubsection[{g}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$Function\-Parser$>$ Go\-S\-U\-M\-::\-C\-Constraints\-::g\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_constraints_ac862006b869d239f27b466a6e0cfabb2}
+Holds function parsers for constraints. \hypertarget{class_go_s_u_m_1_1_c_constraints_a9a560b064cc42cd4c9447d3891cf2f65}{\index{Go\-S\-U\-M\-::\-C\-Constraints@{Go\-S\-U\-M\-::\-C\-Constraints}!gexpr@{gexpr}}
+\index{gexpr@{gexpr}!GoSUM::CConstraints@{Go\-S\-U\-M\-::\-C\-Constraints}}
+\subsubsection[{gexpr}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$std\-::string$>$ Go\-S\-U\-M\-::\-C\-Constraints\-::gexpr\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_constraints_a9a560b064cc42cd4c9447d3891cf2f65}
+
+
+Holds expressions for constraints. 
+
+\hypertarget{class_go_s_u_m_1_1_c_constraints_a94ad221dd1376199a48858e01fc6e19e}{\index{Go\-S\-U\-M\-::\-C\-Constraints@{Go\-S\-U\-M\-::\-C\-Constraints}!names@{names}}
+\index{names@{names}!GoSUM::CConstraints@{Go\-S\-U\-M\-::\-C\-Constraints}}
+\subsubsection[{names}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Go\-S\-U\-M\-::\-C\-Constraints\-::names\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_constraints_a94ad221dd1376199a48858e01fc6e19e}
+
+
+Holds all names that are permited in objective and constraint expressions. 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Development/core/\hyperlink{_constraints_8h}{Constraints.\-h}\item 
+C\-:/\-Development/core/\hyperlink{_constraints_8cpp}{Constraints.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,202 @@
+\hypertarget{class_c_dynamic_system_r_n_g}{\section{C\-Dynamic\-System\-R\-N\-G Class Reference}
+\label{class_c_dynamic_system_r_n_g}\index{C\-Dynamic\-System\-R\-N\-G@{C\-Dynamic\-System\-R\-N\-G}}
+}
+
+
+Class for dynamic system uniform R\-N\-G.  
+
+
+
+
+{\ttfamily \#include $<$Random\-Generators.\-h$>$}
+
+Inheritance diagram for C\-Dynamic\-System\-R\-N\-G\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_dynamic_system_r_n_g}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_dynamic_system_r_n_g_af741112362509e7b12847b2d64d91d00}{C\-Dynamic\-System\-R\-N\-G} ()
+\item 
+\hyperlink{class_c_dynamic_system_r_n_g_a65373945f8ff6500313a43f866e60cd4}{C\-Dynamic\-System\-R\-N\-G} (unsigned int s)
+\item 
+virtual \hyperlink{class_c_dynamic_system_r_n_g_aa52982d8508d10e94de71e2f3c3f2ad5}{$\sim$\-C\-Dynamic\-System\-R\-N\-G} ()
+\item 
+virtual void \hyperlink{class_c_dynamic_system_r_n_g_a2ed468a45094e3c0591e0029b1359df1}{set\-Seed} (unsigned int s)
+\begin{DoxyCompactList}\small\item\em Sets seed of the R\-N\-G. \end{DoxyCompactList}\item 
+virtual unsigned int \hyperlink{class_c_dynamic_system_r_n_g_a703c33a722eb6808771245955e19b3e1}{rndi} ()
+\begin{DoxyCompactList}\small\item\em Returns randomly generated unsigned int. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_c_dynamic_system_r_n_g_af22e28ce058d489e0b73b08033db87b8}{rnd} ()
+\begin{DoxyCompactList}\small\item\em Returns randomly generated double between 0 and 1. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef long long int \hyperlink{class_c_dynamic_system_r_n_g_ab5df6da5f9eaeb3d9cddc97405a09995}{Long}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Array$<$ long double, Dynamic, 1 $>$ \hyperlink{class_c_dynamic_system_r_n_g_abeca12f69df980c9bf34786d3acc850c}{prepare} (unsigned int M)
+\begin{DoxyCompactList}\small\item\em Private function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \hyperlink{class_c_dynamic_system_r_n_g_ae8946db15d06d35b9080109bab84001c}{k}
+\begin{DoxyCompactList}\small\item\em Paramters of the D\-S R\-N\-G. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_c_dynamic_system_r_n_g_a37d2707ee07015679697a2d9f1a2d4cd}{i}
+\item 
+unsigned int \hyperlink{class_c_dynamic_system_r_n_g_aec60b65b9e76642d7a36198e888d7e39}{j}
+\begin{DoxyCompactList}\small\item\em Paramters of the D\-S R\-N\-G. \end{DoxyCompactList}\item 
+\hyperlink{class_c_dynamic_system_r_n_g_ab5df6da5f9eaeb3d9cddc97405a09995}{Long} \hyperlink{class_c_dynamic_system_r_n_g_a8cdc452f933711c4146f9b6f8e9b53f2}{n}
+\begin{DoxyCompactList}\small\item\em Paramters of the D\-S R\-N\-G. \end{DoxyCompactList}\item 
+Array$<$ long double, Dynamic, 1 $>$ \hyperlink{class_c_dynamic_system_r_n_g_a41e389e017d88e1955ad45d237533560}{x}
+\begin{DoxyCompactList}\small\item\em Paramters of the D\-S R\-N\-G. \end{DoxyCompactList}\item 
+Array$<$ long double, Dynamic, 1 $>$ \hyperlink{class_c_dynamic_system_r_n_g_ad6d910566305fbb490cf785da19976e4}{w}
+\begin{DoxyCompactList}\small\item\em Paramters of the D\-S R\-N\-G. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for dynamic system uniform R\-N\-G. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{class_c_dynamic_system_r_n_g_ab5df6da5f9eaeb3d9cddc97405a09995}{\index{C\-Dynamic\-System\-R\-N\-G@{C\-Dynamic\-System\-R\-N\-G}!Long@{Long}}
+\index{Long@{Long}!CDynamicSystemRNG@{C\-Dynamic\-System\-R\-N\-G}}
+\subsubsection[{Long}]{\setlength{\rightskip}{0pt plus 5cm}typedef long long int {\bf C\-Dynamic\-System\-R\-N\-G\-::\-Long}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_dynamic_system_r_n_g_ab5df6da5f9eaeb3d9cddc97405a09995}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_dynamic_system_r_n_g_af741112362509e7b12847b2d64d91d00}{\index{C\-Dynamic\-System\-R\-N\-G@{C\-Dynamic\-System\-R\-N\-G}!C\-Dynamic\-System\-R\-N\-G@{C\-Dynamic\-System\-R\-N\-G}}
+\index{C\-Dynamic\-System\-R\-N\-G@{C\-Dynamic\-System\-R\-N\-G}!CDynamicSystemRNG@{C\-Dynamic\-System\-R\-N\-G}}
+\subsubsection[{C\-Dynamic\-System\-R\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}C\-Dynamic\-System\-R\-N\-G\-::\-C\-Dynamic\-System\-R\-N\-G (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_dynamic_system_r_n_g_af741112362509e7b12847b2d64d91d00}
+\hypertarget{class_c_dynamic_system_r_n_g_a65373945f8ff6500313a43f866e60cd4}{\index{C\-Dynamic\-System\-R\-N\-G@{C\-Dynamic\-System\-R\-N\-G}!C\-Dynamic\-System\-R\-N\-G@{C\-Dynamic\-System\-R\-N\-G}}
+\index{C\-Dynamic\-System\-R\-N\-G@{C\-Dynamic\-System\-R\-N\-G}!CDynamicSystemRNG@{C\-Dynamic\-System\-R\-N\-G}}
+\subsubsection[{C\-Dynamic\-System\-R\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}C\-Dynamic\-System\-R\-N\-G\-::\-C\-Dynamic\-System\-R\-N\-G (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_dynamic_system_r_n_g_a65373945f8ff6500313a43f866e60cd4}
+\hypertarget{class_c_dynamic_system_r_n_g_aa52982d8508d10e94de71e2f3c3f2ad5}{\index{C\-Dynamic\-System\-R\-N\-G@{C\-Dynamic\-System\-R\-N\-G}!$\sim$\-C\-Dynamic\-System\-R\-N\-G@{$\sim$\-C\-Dynamic\-System\-R\-N\-G}}
+\index{$\sim$\-C\-Dynamic\-System\-R\-N\-G@{$\sim$\-C\-Dynamic\-System\-R\-N\-G}!CDynamicSystemRNG@{C\-Dynamic\-System\-R\-N\-G}}
+\subsubsection[{$\sim$\-C\-Dynamic\-System\-R\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}virtual C\-Dynamic\-System\-R\-N\-G\-::$\sim$\-C\-Dynamic\-System\-R\-N\-G (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_dynamic_system_r_n_g_aa52982d8508d10e94de71e2f3c3f2ad5}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_dynamic_system_r_n_g_abeca12f69df980c9bf34786d3acc850c}{\index{C\-Dynamic\-System\-R\-N\-G@{C\-Dynamic\-System\-R\-N\-G}!prepare@{prepare}}
+\index{prepare@{prepare}!CDynamicSystemRNG@{C\-Dynamic\-System\-R\-N\-G}}
+\subsubsection[{prepare}]{\setlength{\rightskip}{0pt plus 5cm}Array$<$ long double, Dynamic, 1 $>$ C\-Dynamic\-System\-R\-N\-G\-::prepare (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{M}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_dynamic_system_r_n_g_abeca12f69df980c9bf34786d3acc850c}
+
+
+Private function. 
+
+\hypertarget{class_c_dynamic_system_r_n_g_af22e28ce058d489e0b73b08033db87b8}{\index{C\-Dynamic\-System\-R\-N\-G@{C\-Dynamic\-System\-R\-N\-G}!rnd@{rnd}}
+\index{rnd@{rnd}!CDynamicSystemRNG@{C\-Dynamic\-System\-R\-N\-G}}
+\subsubsection[{rnd}]{\setlength{\rightskip}{0pt plus 5cm}virtual double C\-Dynamic\-System\-R\-N\-G\-::rnd (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_dynamic_system_r_n_g_af22e28ce058d489e0b73b08033db87b8}
+
+
+Returns randomly generated double between 0 and 1. 
+
+
+
+Implements \hyperlink{class_c_base_r_n_g_abbd60a5ecdc9502dd646434224ab5d6b}{C\-Base\-R\-N\-G}.
+
+\hypertarget{class_c_dynamic_system_r_n_g_a703c33a722eb6808771245955e19b3e1}{\index{C\-Dynamic\-System\-R\-N\-G@{C\-Dynamic\-System\-R\-N\-G}!rndi@{rndi}}
+\index{rndi@{rndi}!CDynamicSystemRNG@{C\-Dynamic\-System\-R\-N\-G}}
+\subsubsection[{rndi}]{\setlength{\rightskip}{0pt plus 5cm}virtual unsigned int C\-Dynamic\-System\-R\-N\-G\-::rndi (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_dynamic_system_r_n_g_a703c33a722eb6808771245955e19b3e1}
+
+
+Returns randomly generated unsigned int. 
+
+
+
+Implements \hyperlink{class_c_base_r_n_g_a2db96fbf06a2f11b3613d422043fb7b8}{C\-Base\-R\-N\-G}.
+
+\hypertarget{class_c_dynamic_system_r_n_g_a2ed468a45094e3c0591e0029b1359df1}{\index{C\-Dynamic\-System\-R\-N\-G@{C\-Dynamic\-System\-R\-N\-G}!set\-Seed@{set\-Seed}}
+\index{set\-Seed@{set\-Seed}!CDynamicSystemRNG@{C\-Dynamic\-System\-R\-N\-G}}
+\subsubsection[{set\-Seed}]{\setlength{\rightskip}{0pt plus 5cm}virtual void C\-Dynamic\-System\-R\-N\-G\-::set\-Seed (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_dynamic_system_r_n_g_a2ed468a45094e3c0591e0029b1359df1}
+
+
+Sets seed of the R\-N\-G. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Sets seed of the R\-N\-G. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_c_base_r_n_g_a56fbf75ca07b73954596ee04820e0b07}{C\-Base\-R\-N\-G}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_dynamic_system_r_n_g_a37d2707ee07015679697a2d9f1a2d4cd}{\index{C\-Dynamic\-System\-R\-N\-G@{C\-Dynamic\-System\-R\-N\-G}!i@{i}}
+\index{i@{i}!CDynamicSystemRNG@{C\-Dynamic\-System\-R\-N\-G}}
+\subsubsection[{i}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-Dynamic\-System\-R\-N\-G\-::i\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_dynamic_system_r_n_g_a37d2707ee07015679697a2d9f1a2d4cd}
+\hypertarget{class_c_dynamic_system_r_n_g_aec60b65b9e76642d7a36198e888d7e39}{\index{C\-Dynamic\-System\-R\-N\-G@{C\-Dynamic\-System\-R\-N\-G}!j@{j}}
+\index{j@{j}!CDynamicSystemRNG@{C\-Dynamic\-System\-R\-N\-G}}
+\subsubsection[{j}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-Dynamic\-System\-R\-N\-G\-::j\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_dynamic_system_r_n_g_aec60b65b9e76642d7a36198e888d7e39}
+
+
+Paramters of the D\-S R\-N\-G. 
+
+\hypertarget{class_c_dynamic_system_r_n_g_ae8946db15d06d35b9080109bab84001c}{\index{C\-Dynamic\-System\-R\-N\-G@{C\-Dynamic\-System\-R\-N\-G}!k@{k}}
+\index{k@{k}!CDynamicSystemRNG@{C\-Dynamic\-System\-R\-N\-G}}
+\subsubsection[{k}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-Dynamic\-System\-R\-N\-G\-::k\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_dynamic_system_r_n_g_ae8946db15d06d35b9080109bab84001c}
+
+
+Paramters of the D\-S R\-N\-G. 
+
+\hypertarget{class_c_dynamic_system_r_n_g_a8cdc452f933711c4146f9b6f8e9b53f2}{\index{C\-Dynamic\-System\-R\-N\-G@{C\-Dynamic\-System\-R\-N\-G}!n@{n}}
+\index{n@{n}!CDynamicSystemRNG@{C\-Dynamic\-System\-R\-N\-G}}
+\subsubsection[{n}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Long} C\-Dynamic\-System\-R\-N\-G\-::n\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_dynamic_system_r_n_g_a8cdc452f933711c4146f9b6f8e9b53f2}
+
+
+Paramters of the D\-S R\-N\-G. 
+
+\hypertarget{class_c_dynamic_system_r_n_g_ad6d910566305fbb490cf785da19976e4}{\index{C\-Dynamic\-System\-R\-N\-G@{C\-Dynamic\-System\-R\-N\-G}!w@{w}}
+\index{w@{w}!CDynamicSystemRNG@{C\-Dynamic\-System\-R\-N\-G}}
+\subsubsection[{w}]{\setlength{\rightskip}{0pt plus 5cm}Array$<$long double,Dynamic,1$>$ C\-Dynamic\-System\-R\-N\-G\-::w\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_dynamic_system_r_n_g_ad6d910566305fbb490cf785da19976e4}
+
+
+Paramters of the D\-S R\-N\-G. 
+
+\hypertarget{class_c_dynamic_system_r_n_g_a41e389e017d88e1955ad45d237533560}{\index{C\-Dynamic\-System\-R\-N\-G@{C\-Dynamic\-System\-R\-N\-G}!x@{x}}
+\index{x@{x}!CDynamicSystemRNG@{C\-Dynamic\-System\-R\-N\-G}}
+\subsubsection[{x}]{\setlength{\rightskip}{0pt plus 5cm}Array$<$long double,Dynamic,1$>$ C\-Dynamic\-System\-R\-N\-G\-::x\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_dynamic_system_r_n_g_a41e389e017d88e1955ad45d237533560}
+
+
+Paramters of the D\-S R\-N\-G. 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Development/core/\hyperlink{_random_generators_8h}{Random\-Generators.\-h}\item 
+C\-:/\-Development/core/\hyperlink{_random_generators_8cpp}{Random\-Generators.\-cpp}\end{DoxyCompactItemize}

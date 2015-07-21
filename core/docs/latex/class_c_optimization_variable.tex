@@ -1,0 +1,212 @@
+\hypertarget{class_c_optimization_variable}{\section{C\-Optimization\-Variable Class Reference}
+\label{class_c_optimization_variable}\index{C\-Optimization\-Variable@{C\-Optimization\-Variable}}
+}
+
+
+{\ttfamily \#include $<$Optimization\-Problem.\-h$>$}
+
+Inheritance diagram for C\-Optimization\-Variable\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_optimization_variable}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_optimization_variable_a2af34948cc83069d6dd74a64397d85e0}{C\-Optimization\-Variable} ()
+\item 
+\hyperlink{class_c_optimization_variable_a349e830200ea6f76c47022e8aa6fd598}{C\-Optimization\-Variable} (double \-\_\-x\-L, double \-\_\-x\-U, double \-\_\-x0)
+\item 
+\hyperlink{class_c_optimization_variable_a410d3b78689566c940f3abd93bbfe0e4}{C\-Optimization\-Variable} (\hyperlink{class_c_optimization_variable}{C\-Optimization\-Variable} \&\-\_\-\-O)
+\item 
+virtual \hyperlink{class_c_optimization_variable_ab31271eb7663a4a48f4bed228bf54682}{$\sim$\-C\-Optimization\-Variable} ()
+\item 
+double \hyperlink{class_c_optimization_variable_af1b1ad75d642bf0455964e9357586bc2}{lower\-Bound} () const 
+\begin{DoxyCompactList}\small\item\em Returns lower bound. \end{DoxyCompactList}\item 
+double \hyperlink{class_c_optimization_variable_a9affc19ff1cfc507ab7e1df812d85bcb}{upper\-Bound} () const 
+\begin{DoxyCompactList}\small\item\em Returns upper bound. \end{DoxyCompactList}\item 
+double \hyperlink{class_c_optimization_variable_a2b61e79e0f74bb88afdcc788fabe1c6e}{initial\-Value} () const 
+\begin{DoxyCompactList}\small\item\em Returns initial value. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_optimization_variable_ae92d781a0e9e38bc368ba69c996bb19a}{set\-Lower\-Bound} (double \-\_\-x\-L)
+\begin{DoxyCompactList}\small\item\em Sets lower bound. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_optimization_variable_a6baed0144cd86d9032a2effa770a49f5}{set\-Upper\-Bound} (double \-\_\-x\-U)
+\begin{DoxyCompactList}\small\item\em Sets upper bound. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_optimization_variable_a9b63133ea00f6aeed300c5ffd8ddabc8}{set\-Initial\-Value} (double \-\_\-x0)
+\begin{DoxyCompactList}\small\item\em Sets inital value. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_optimization_variable_aaa2c98237b7a25ec3e111485fc631309}{set} (double \-\_\-x\-L, double \-\_\-x\-U, double \-\_\-x0)
+\begin{DoxyCompactList}\small\item\em Sets lower bound, upper bound, initial value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \hyperlink{class_c_optimization_variable_ac7773d84cb5dcaf32b7f130fe60cbb8a}{serialize} (Archive \&ar, const unsigned int version)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{class_c_optimization_variable_a64d40e05e5a9832e0e2aaebdbd105365}{x\-L}
+\item 
+double \hyperlink{class_c_optimization_variable_a549a16352636f3ec68729d197823716d}{x\-U}
+\item 
+double \hyperlink{class_c_optimization_variable_af67ef7c2faf37cb193309c7a540aee31}{x0}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_c_optimization_variable_ac98d07dd8f7b70e16ccb9a01abf56b9c}{boost\-::serialization\-::access}
+\begin{DoxyCompactList}\small\item\em Boost serialization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_optimization_variable_a2af34948cc83069d6dd74a64397d85e0}{\index{C\-Optimization\-Variable@{C\-Optimization\-Variable}!C\-Optimization\-Variable@{C\-Optimization\-Variable}}
+\index{C\-Optimization\-Variable@{C\-Optimization\-Variable}!COptimizationVariable@{C\-Optimization\-Variable}}
+\subsubsection[{C\-Optimization\-Variable}]{\setlength{\rightskip}{0pt plus 5cm}C\-Optimization\-Variable\-::\-C\-Optimization\-Variable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_optimization_variable_a2af34948cc83069d6dd74a64397d85e0}
+\hypertarget{class_c_optimization_variable_a349e830200ea6f76c47022e8aa6fd598}{\index{C\-Optimization\-Variable@{C\-Optimization\-Variable}!C\-Optimization\-Variable@{C\-Optimization\-Variable}}
+\index{C\-Optimization\-Variable@{C\-Optimization\-Variable}!COptimizationVariable@{C\-Optimization\-Variable}}
+\subsubsection[{C\-Optimization\-Variable}]{\setlength{\rightskip}{0pt plus 5cm}C\-Optimization\-Variable\-::\-C\-Optimization\-Variable (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-x\-L, }
+\item[{double}]{\-\_\-x\-U, }
+\item[{double}]{\-\_\-x0}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_optimization_variable_a349e830200ea6f76c47022e8aa6fd598}
+\hypertarget{class_c_optimization_variable_a410d3b78689566c940f3abd93bbfe0e4}{\index{C\-Optimization\-Variable@{C\-Optimization\-Variable}!C\-Optimization\-Variable@{C\-Optimization\-Variable}}
+\index{C\-Optimization\-Variable@{C\-Optimization\-Variable}!COptimizationVariable@{C\-Optimization\-Variable}}
+\subsubsection[{C\-Optimization\-Variable}]{\setlength{\rightskip}{0pt plus 5cm}C\-Optimization\-Variable\-::\-C\-Optimization\-Variable (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Optimization\-Variable} \&}]{\-\_\-\-O}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_optimization_variable_a410d3b78689566c940f3abd93bbfe0e4}
+\hypertarget{class_c_optimization_variable_ab31271eb7663a4a48f4bed228bf54682}{\index{C\-Optimization\-Variable@{C\-Optimization\-Variable}!$\sim$\-C\-Optimization\-Variable@{$\sim$\-C\-Optimization\-Variable}}
+\index{$\sim$\-C\-Optimization\-Variable@{$\sim$\-C\-Optimization\-Variable}!COptimizationVariable@{C\-Optimization\-Variable}}
+\subsubsection[{$\sim$\-C\-Optimization\-Variable}]{\setlength{\rightskip}{0pt plus 5cm}virtual C\-Optimization\-Variable\-::$\sim$\-C\-Optimization\-Variable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_optimization_variable_ab31271eb7663a4a48f4bed228bf54682}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_optimization_variable_a2b61e79e0f74bb88afdcc788fabe1c6e}{\index{C\-Optimization\-Variable@{C\-Optimization\-Variable}!initial\-Value@{initial\-Value}}
+\index{initial\-Value@{initial\-Value}!COptimizationVariable@{C\-Optimization\-Variable}}
+\subsubsection[{initial\-Value}]{\setlength{\rightskip}{0pt plus 5cm}double C\-Optimization\-Variable\-::initial\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_optimization_variable_a2b61e79e0f74bb88afdcc788fabe1c6e}
+
+
+Returns initial value. 
+
+\hypertarget{class_c_optimization_variable_af1b1ad75d642bf0455964e9357586bc2}{\index{C\-Optimization\-Variable@{C\-Optimization\-Variable}!lower\-Bound@{lower\-Bound}}
+\index{lower\-Bound@{lower\-Bound}!COptimizationVariable@{C\-Optimization\-Variable}}
+\subsubsection[{lower\-Bound}]{\setlength{\rightskip}{0pt plus 5cm}double C\-Optimization\-Variable\-::lower\-Bound (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_optimization_variable_af1b1ad75d642bf0455964e9357586bc2}
+
+
+Returns lower bound. 
+
+\hypertarget{class_c_optimization_variable_ac7773d84cb5dcaf32b7f130fe60cbb8a}{\index{C\-Optimization\-Variable@{C\-Optimization\-Variable}!serialize@{serialize}}
+\index{serialize@{serialize}!COptimizationVariable@{C\-Optimization\-Variable}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Archive $>$ void C\-Optimization\-Variable\-::serialize (
+\begin{DoxyParamCaption}
+\item[{Archive \&}]{ar, }
+\item[{const unsigned int}]{version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{class_c_optimization_variable_ac7773d84cb5dcaf32b7f130fe60cbb8a}
+
+
+Reimplemented in \hyperlink{class_go_s_u_m_1_1_c_model_optimization_variable_ac2e916e3523fec4487a8f567bb0a1af9}{Go\-S\-U\-M\-::\-C\-Model\-Optimization\-Variable}.
+
+\hypertarget{class_c_optimization_variable_aaa2c98237b7a25ec3e111485fc631309}{\index{C\-Optimization\-Variable@{C\-Optimization\-Variable}!set@{set}}
+\index{set@{set}!COptimizationVariable@{C\-Optimization\-Variable}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Optimization\-Variable\-::set (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-x\-L, }
+\item[{double}]{\-\_\-x\-U, }
+\item[{double}]{\-\_\-x0}
+\end{DoxyParamCaption}
+)}}\label{class_c_optimization_variable_aaa2c98237b7a25ec3e111485fc631309}
+
+
+Sets lower bound, upper bound, initial value. 
+
+\hypertarget{class_c_optimization_variable_a9b63133ea00f6aeed300c5ffd8ddabc8}{\index{C\-Optimization\-Variable@{C\-Optimization\-Variable}!set\-Initial\-Value@{set\-Initial\-Value}}
+\index{set\-Initial\-Value@{set\-Initial\-Value}!COptimizationVariable@{C\-Optimization\-Variable}}
+\subsubsection[{set\-Initial\-Value}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Optimization\-Variable\-::set\-Initial\-Value (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-x0}
+\end{DoxyParamCaption}
+)}}\label{class_c_optimization_variable_a9b63133ea00f6aeed300c5ffd8ddabc8}
+
+
+Sets inital value. 
+
+\hypertarget{class_c_optimization_variable_ae92d781a0e9e38bc368ba69c996bb19a}{\index{C\-Optimization\-Variable@{C\-Optimization\-Variable}!set\-Lower\-Bound@{set\-Lower\-Bound}}
+\index{set\-Lower\-Bound@{set\-Lower\-Bound}!COptimizationVariable@{C\-Optimization\-Variable}}
+\subsubsection[{set\-Lower\-Bound}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Optimization\-Variable\-::set\-Lower\-Bound (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-x\-L}
+\end{DoxyParamCaption}
+)}}\label{class_c_optimization_variable_ae92d781a0e9e38bc368ba69c996bb19a}
+
+
+Sets lower bound. 
+
+\hypertarget{class_c_optimization_variable_a6baed0144cd86d9032a2effa770a49f5}{\index{C\-Optimization\-Variable@{C\-Optimization\-Variable}!set\-Upper\-Bound@{set\-Upper\-Bound}}
+\index{set\-Upper\-Bound@{set\-Upper\-Bound}!COptimizationVariable@{C\-Optimization\-Variable}}
+\subsubsection[{set\-Upper\-Bound}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Optimization\-Variable\-::set\-Upper\-Bound (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-x\-U}
+\end{DoxyParamCaption}
+)}}\label{class_c_optimization_variable_a6baed0144cd86d9032a2effa770a49f5}
+
+
+Sets upper bound. 
+
+\hypertarget{class_c_optimization_variable_a9affc19ff1cfc507ab7e1df812d85bcb}{\index{C\-Optimization\-Variable@{C\-Optimization\-Variable}!upper\-Bound@{upper\-Bound}}
+\index{upper\-Bound@{upper\-Bound}!COptimizationVariable@{C\-Optimization\-Variable}}
+\subsubsection[{upper\-Bound}]{\setlength{\rightskip}{0pt plus 5cm}double C\-Optimization\-Variable\-::upper\-Bound (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_optimization_variable_a9affc19ff1cfc507ab7e1df812d85bcb}
+
+
+Returns upper bound. 
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_c_optimization_variable_ac98d07dd8f7b70e16ccb9a01abf56b9c}{\index{C\-Optimization\-Variable@{C\-Optimization\-Variable}!boost\-::serialization\-::access@{boost\-::serialization\-::access}}
+\index{boost\-::serialization\-::access@{boost\-::serialization\-::access}!COptimizationVariable@{C\-Optimization\-Variable}}
+\subsubsection[{boost\-::serialization\-::access}]{\setlength{\rightskip}{0pt plus 5cm}friend class boost\-::serialization\-::access\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_c_optimization_variable_ac98d07dd8f7b70e16ccb9a01abf56b9c}
+
+
+Boost serialization. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_optimization_variable_af67ef7c2faf37cb193309c7a540aee31}{\index{C\-Optimization\-Variable@{C\-Optimization\-Variable}!x0@{x0}}
+\index{x0@{x0}!COptimizationVariable@{C\-Optimization\-Variable}}
+\subsubsection[{x0}]{\setlength{\rightskip}{0pt plus 5cm}double C\-Optimization\-Variable\-::x0\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_c_optimization_variable_af67ef7c2faf37cb193309c7a540aee31}
+Holds lower bound, upper bound and initial value of a optimization variable. \hypertarget{class_c_optimization_variable_a64d40e05e5a9832e0e2aaebdbd105365}{\index{C\-Optimization\-Variable@{C\-Optimization\-Variable}!x\-L@{x\-L}}
+\index{x\-L@{x\-L}!COptimizationVariable@{C\-Optimization\-Variable}}
+\subsubsection[{x\-L}]{\setlength{\rightskip}{0pt plus 5cm}double C\-Optimization\-Variable\-::x\-L\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_c_optimization_variable_a64d40e05e5a9832e0e2aaebdbd105365}
+\hypertarget{class_c_optimization_variable_a549a16352636f3ec68729d197823716d}{\index{C\-Optimization\-Variable@{C\-Optimization\-Variable}!x\-U@{x\-U}}
+\index{x\-U@{x\-U}!COptimizationVariable@{C\-Optimization\-Variable}}
+\subsubsection[{x\-U}]{\setlength{\rightskip}{0pt plus 5cm}double C\-Optimization\-Variable\-::x\-U\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_c_optimization_variable_a549a16352636f3ec68729d197823716d}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Development/core/\hyperlink{_optimization_problem_8h}{Optimization\-Problem.\-h}\item 
+C\-:/\-Development/core/\hyperlink{_optimization_problem_8cpp}{Optimization\-Problem.\-cpp}\end{DoxyCompactItemize}

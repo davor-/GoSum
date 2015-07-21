@@ -1,0 +1,326 @@
+\hypertarget{class_c_exponential_c_r_v}{\section{C\-Exponential\-C\-R\-V Class Reference}
+\label{class_c_exponential_c_r_v}\index{C\-Exponential\-C\-R\-V@{C\-Exponential\-C\-R\-V}}
+}
+
+
+Class for exponential continuous random variables derived from continuous random variables.  
+
+
+
+
+{\ttfamily \#include $<$Random\-Variable.\-h$>$}
+
+Inheritance diagram for C\-Exponential\-C\-R\-V\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_c_exponential_c_r_v}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_exponential_c_r_v_ad31de50d93048a267d9de9dd9c765420}{C\-Exponential\-C\-R\-V} ()
+\item 
+virtual \hyperlink{class_c_exponential_c_r_v_ac04305397299cc8ff2ac25569af53d7e}{$\sim$\-C\-Exponential\-C\-R\-V} ()
+\item 
+\hyperlink{class_c_exponential_c_r_v_a33b8b0ca18ae84971af2e3aa1d0e8adf}{C\-Exponential\-C\-R\-V} (const \hyperlink{class_c_exponential_c_r_v}{C\-Exponential\-C\-R\-V} \&O)
+\item 
+virtual void \hyperlink{class_c_exponential_c_r_v_aeb20b2f186539ebb81dbacfae6ae5547}{set\-Distribution} (double \-\_\-lambda, double \-\_\-dp2=0)
+\begin{DoxyCompactList}\small\item\em Set distribution parameters. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_exponential_c_r_v_aae94d39cf10bce746cfa3d9541c87fc2}{set\-Distribution} (const \hyperlink{class_c_continuous_sample}{C\-Continuous\-Sample} \&\-\_\-a\-S)
+\begin{DoxyCompactList}\small\item\em Set distribution parameters from sample empirical parameters. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_c_exponential_c_r_v_ae4560afbed461589cfcef9bfbd9f28ee}{probability} (double \-\_\-x) const 
+\begin{DoxyCompactList}\small\item\em Function that returns P\-D\-F. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_c_exponential_c_r_v_acc162a5d08bb9a89bb01a0ed06558073}{cumulative} (double \-\_\-x) const 
+\begin{DoxyCompactList}\small\item\em Function that returns C\-D\-F. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_c_exponential_c_r_v_a6b77e823ae4b0f183edf3400fe0d799d}{min\-Value} () const 
+\begin{DoxyCompactList}\small\item\em Returns minimal value of the random variable. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_c_exponential_c_r_v_a61b1bfbcfcdc924c906dee4813c82b7a}{max\-Value} () const 
+\begin{DoxyCompactList}\small\item\em Returns maximal value of the random variable. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_c_exponential_c_r_v_a5ddbb30be4118a0795c3b56b2daee5da}{expected\-Value} () const 
+\begin{DoxyCompactList}\small\item\em Returns expected value of the random variable. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_c_random_variable_a80d2a87c43847274138b51f7d713d7f1}{distributiontype} \hyperlink{class_c_exponential_c_r_v_adc5a1bf708580ac1ac2c35a3bb927373}{distribution\-Type} () const 
+\begin{DoxyCompactList}\small\item\em Returns enum type of the random variable distribution. \end{DoxyCompactList}\item 
+virtual std\-::string \hyperlink{class_c_exponential_c_r_v_a871b1ca0531fd6599d6415bfdae5bb98}{distribution\-Name} () const 
+\begin{DoxyCompactList}\small\item\em Returns name of the random variable distribution. \end{DoxyCompactList}\item 
+virtual Array\-Xd \hyperlink{class_c_exponential_c_r_v_ad346c5b30597b2a2a5ae3315ba8e35a4}{export\-Domain} () const 
+\begin{DoxyCompactList}\small\item\em Exports domain of the random variable. \end{DoxyCompactList}\item 
+double \hyperlink{class_c_exponential_c_r_v_a19c6cea6f5899279fc8a59b0c056f462}{rate\-Parameter} () const 
+\begin{DoxyCompactList}\small\item\em Returns rate parameter of exponential random variable. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_exponential_c_r_v_a3433bb5b8060066c31c81790a252e4fe}{set\-Rate\-Parameter} (double \-\_\-lambda)
+\begin{DoxyCompactList}\small\item\em Sets rate parameter of exponential random variable. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_c_exponential_c_r_v_a8f0e52d384a6256289f528b1b94aaedc}{variance} () const 
+\begin{DoxyCompactList}\small\item\em Returns variance of the random variable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual double \hyperlink{class_c_exponential_c_r_v_a8e3834ea830000f7a7e76e3a7014fbad}{do\-Quantile} (double \-\_\-p) const 
+\begin{DoxyCompactList}\small\item\em Quantile, formula implementation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \hyperlink{class_c_exponential_c_r_v_abcfcc36fab68eefb9c52f64d55fc472f}{serialize} (Archive \&ar, const unsigned int version)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{class_c_exponential_c_r_v_a4bae65d53141f778e4a324f70c4658b1}{lambda}
+\item 
+double \hyperlink{class_c_exponential_c_r_v_a29435872622b1a114b3c5c3717239fd2}{beta}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_c_exponential_c_r_v_ac98d07dd8f7b70e16ccb9a01abf56b9c}{boost\-::serialization\-::access}
+\begin{DoxyCompactList}\small\item\em Boost serialization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class for exponential continuous random variables derived from continuous random variables. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_exponential_c_r_v_ad31de50d93048a267d9de9dd9c765420}{\index{C\-Exponential\-C\-R\-V@{C\-Exponential\-C\-R\-V}!C\-Exponential\-C\-R\-V@{C\-Exponential\-C\-R\-V}}
+\index{C\-Exponential\-C\-R\-V@{C\-Exponential\-C\-R\-V}!CExponentialCRV@{C\-Exponential\-C\-R\-V}}
+\subsubsection[{C\-Exponential\-C\-R\-V}]{\setlength{\rightskip}{0pt plus 5cm}C\-Exponential\-C\-R\-V\-::\-C\-Exponential\-C\-R\-V (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_exponential_c_r_v_ad31de50d93048a267d9de9dd9c765420}
+\hypertarget{class_c_exponential_c_r_v_ac04305397299cc8ff2ac25569af53d7e}{\index{C\-Exponential\-C\-R\-V@{C\-Exponential\-C\-R\-V}!$\sim$\-C\-Exponential\-C\-R\-V@{$\sim$\-C\-Exponential\-C\-R\-V}}
+\index{$\sim$\-C\-Exponential\-C\-R\-V@{$\sim$\-C\-Exponential\-C\-R\-V}!CExponentialCRV@{C\-Exponential\-C\-R\-V}}
+\subsubsection[{$\sim$\-C\-Exponential\-C\-R\-V}]{\setlength{\rightskip}{0pt plus 5cm}virtual C\-Exponential\-C\-R\-V\-::$\sim$\-C\-Exponential\-C\-R\-V (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_exponential_c_r_v_ac04305397299cc8ff2ac25569af53d7e}
+\hypertarget{class_c_exponential_c_r_v_a33b8b0ca18ae84971af2e3aa1d0e8adf}{\index{C\-Exponential\-C\-R\-V@{C\-Exponential\-C\-R\-V}!C\-Exponential\-C\-R\-V@{C\-Exponential\-C\-R\-V}}
+\index{C\-Exponential\-C\-R\-V@{C\-Exponential\-C\-R\-V}!CExponentialCRV@{C\-Exponential\-C\-R\-V}}
+\subsubsection[{C\-Exponential\-C\-R\-V}]{\setlength{\rightskip}{0pt plus 5cm}C\-Exponential\-C\-R\-V\-::\-C\-Exponential\-C\-R\-V (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Exponential\-C\-R\-V} \&}]{O}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_exponential_c_r_v_a33b8b0ca18ae84971af2e3aa1d0e8adf}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_exponential_c_r_v_acc162a5d08bb9a89bb01a0ed06558073}{\index{C\-Exponential\-C\-R\-V@{C\-Exponential\-C\-R\-V}!cumulative@{cumulative}}
+\index{cumulative@{cumulative}!CExponentialCRV@{C\-Exponential\-C\-R\-V}}
+\subsubsection[{cumulative}]{\setlength{\rightskip}{0pt plus 5cm}virtual double C\-Exponential\-C\-R\-V\-::cumulative (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-x}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_exponential_c_r_v_acc162a5d08bb9a89bb01a0ed06558073}
+
+
+Function that returns C\-D\-F. 
+
+\hypertarget{class_c_exponential_c_r_v_a871b1ca0531fd6599d6415bfdae5bb98}{\index{C\-Exponential\-C\-R\-V@{C\-Exponential\-C\-R\-V}!distribution\-Name@{distribution\-Name}}
+\index{distribution\-Name@{distribution\-Name}!CExponentialCRV@{C\-Exponential\-C\-R\-V}}
+\subsubsection[{distribution\-Name}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\-::string C\-Exponential\-C\-R\-V\-::distribution\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_exponential_c_r_v_a871b1ca0531fd6599d6415bfdae5bb98}
+
+
+Returns name of the random variable distribution. 
+
+
+
+Implements \hyperlink{class_c_random_variable_a4b33eef7c56f9f1a83af01fa8ef2502b}{C\-Random\-Variable}.
+
+\hypertarget{class_c_exponential_c_r_v_adc5a1bf708580ac1ac2c35a3bb927373}{\index{C\-Exponential\-C\-R\-V@{C\-Exponential\-C\-R\-V}!distribution\-Type@{distribution\-Type}}
+\index{distribution\-Type@{distribution\-Type}!CExponentialCRV@{C\-Exponential\-C\-R\-V}}
+\subsubsection[{distribution\-Type}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf distributiontype} C\-Exponential\-C\-R\-V\-::distribution\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_exponential_c_r_v_adc5a1bf708580ac1ac2c35a3bb927373}
+
+
+Returns enum type of the random variable distribution. 
+
+
+
+Implements \hyperlink{class_c_random_variable_a3b30589d41f4dd200bd40c8273cac2cd}{C\-Random\-Variable}.
+
+\hypertarget{class_c_exponential_c_r_v_a8e3834ea830000f7a7e76e3a7014fbad}{\index{C\-Exponential\-C\-R\-V@{C\-Exponential\-C\-R\-V}!do\-Quantile@{do\-Quantile}}
+\index{do\-Quantile@{do\-Quantile}!CExponentialCRV@{C\-Exponential\-C\-R\-V}}
+\subsubsection[{do\-Quantile}]{\setlength{\rightskip}{0pt plus 5cm}virtual double C\-Exponential\-C\-R\-V\-::do\-Quantile (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-p}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_c_exponential_c_r_v_a8e3834ea830000f7a7e76e3a7014fbad}
+
+
+Quantile, formula implementation. 
+
+
+
+Implements \hyperlink{class_c_random_variable_a552ab36c8144d7154cbe3cd363eee65b}{C\-Random\-Variable}.
+
+\hypertarget{class_c_exponential_c_r_v_a5ddbb30be4118a0795c3b56b2daee5da}{\index{C\-Exponential\-C\-R\-V@{C\-Exponential\-C\-R\-V}!expected\-Value@{expected\-Value}}
+\index{expected\-Value@{expected\-Value}!CExponentialCRV@{C\-Exponential\-C\-R\-V}}
+\subsubsection[{expected\-Value}]{\setlength{\rightskip}{0pt plus 5cm}virtual double C\-Exponential\-C\-R\-V\-::expected\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_exponential_c_r_v_a5ddbb30be4118a0795c3b56b2daee5da}
+
+
+Returns expected value of the random variable. 
+
+
+
+Implements \hyperlink{class_c_random_variable_a6e5490d17f2b6abcf9922c8b1bd6d4ed}{C\-Random\-Variable}.
+
+\hypertarget{class_c_exponential_c_r_v_ad346c5b30597b2a2a5ae3315ba8e35a4}{\index{C\-Exponential\-C\-R\-V@{C\-Exponential\-C\-R\-V}!export\-Domain@{export\-Domain}}
+\index{export\-Domain@{export\-Domain}!CExponentialCRV@{C\-Exponential\-C\-R\-V}}
+\subsubsection[{export\-Domain}]{\setlength{\rightskip}{0pt plus 5cm}Array\-Xd C\-Exponential\-C\-R\-V\-::export\-Domain (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_exponential_c_r_v_ad346c5b30597b2a2a5ae3315ba8e35a4}
+
+
+Exports domain of the random variable. 
+
+
+
+Implements \hyperlink{class_t_random_variable_a37fc52d5fa37493a353887242d279a27}{T\-Random\-Variable$<$ t, T $>$}.
+
+\hypertarget{class_c_exponential_c_r_v_a61b1bfbcfcdc924c906dee4813c82b7a}{\index{C\-Exponential\-C\-R\-V@{C\-Exponential\-C\-R\-V}!max\-Value@{max\-Value}}
+\index{max\-Value@{max\-Value}!CExponentialCRV@{C\-Exponential\-C\-R\-V}}
+\subsubsection[{max\-Value}]{\setlength{\rightskip}{0pt plus 5cm}virtual double C\-Exponential\-C\-R\-V\-::max\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_exponential_c_r_v_a61b1bfbcfcdc924c906dee4813c82b7a}
+
+
+Returns maximal value of the random variable. 
+
+
+
+Implements \hyperlink{class_c_random_variable_a48a5e98363d866f1f46568ed658479ad}{C\-Random\-Variable}.
+
+\hypertarget{class_c_exponential_c_r_v_a6b77e823ae4b0f183edf3400fe0d799d}{\index{C\-Exponential\-C\-R\-V@{C\-Exponential\-C\-R\-V}!min\-Value@{min\-Value}}
+\index{min\-Value@{min\-Value}!CExponentialCRV@{C\-Exponential\-C\-R\-V}}
+\subsubsection[{min\-Value}]{\setlength{\rightskip}{0pt plus 5cm}virtual double C\-Exponential\-C\-R\-V\-::min\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_exponential_c_r_v_a6b77e823ae4b0f183edf3400fe0d799d}
+
+
+Returns minimal value of the random variable. 
+
+
+
+Implements \hyperlink{class_c_random_variable_a233ddd2eedb51b09a04a8c330646f356}{C\-Random\-Variable}.
+
+\hypertarget{class_c_exponential_c_r_v_ae4560afbed461589cfcef9bfbd9f28ee}{\index{C\-Exponential\-C\-R\-V@{C\-Exponential\-C\-R\-V}!probability@{probability}}
+\index{probability@{probability}!CExponentialCRV@{C\-Exponential\-C\-R\-V}}
+\subsubsection[{probability}]{\setlength{\rightskip}{0pt plus 5cm}virtual double C\-Exponential\-C\-R\-V\-::probability (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-x}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_exponential_c_r_v_ae4560afbed461589cfcef9bfbd9f28ee}
+
+
+Function that returns P\-D\-F. 
+
+\hypertarget{class_c_exponential_c_r_v_a19c6cea6f5899279fc8a59b0c056f462}{\index{C\-Exponential\-C\-R\-V@{C\-Exponential\-C\-R\-V}!rate\-Parameter@{rate\-Parameter}}
+\index{rate\-Parameter@{rate\-Parameter}!CExponentialCRV@{C\-Exponential\-C\-R\-V}}
+\subsubsection[{rate\-Parameter}]{\setlength{\rightskip}{0pt plus 5cm}double C\-Exponential\-C\-R\-V\-::rate\-Parameter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_exponential_c_r_v_a19c6cea6f5899279fc8a59b0c056f462}
+
+
+Returns rate parameter of exponential random variable. 
+
+\hypertarget{class_c_exponential_c_r_v_abcfcc36fab68eefb9c52f64d55fc472f}{\index{C\-Exponential\-C\-R\-V@{C\-Exponential\-C\-R\-V}!serialize@{serialize}}
+\index{serialize@{serialize}!CExponentialCRV@{C\-Exponential\-C\-R\-V}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Archive $>$ void C\-Exponential\-C\-R\-V\-::serialize (
+\begin{DoxyParamCaption}
+\item[{Archive \&}]{ar, }
+\item[{const unsigned int}]{version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_exponential_c_r_v_abcfcc36fab68eefb9c52f64d55fc472f}
+\hypertarget{class_c_exponential_c_r_v_aeb20b2f186539ebb81dbacfae6ae5547}{\index{C\-Exponential\-C\-R\-V@{C\-Exponential\-C\-R\-V}!set\-Distribution@{set\-Distribution}}
+\index{set\-Distribution@{set\-Distribution}!CExponentialCRV@{C\-Exponential\-C\-R\-V}}
+\subsubsection[{set\-Distribution}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Exponential\-C\-R\-V\-::set\-Distribution (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-lambda, }
+\item[{double}]{\-\_\-dp2 = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_exponential_c_r_v_aeb20b2f186539ebb81dbacfae6ae5547}
+
+
+Set distribution parameters. 
+
+\hypertarget{class_c_exponential_c_r_v_aae94d39cf10bce746cfa3d9541c87fc2}{\index{C\-Exponential\-C\-R\-V@{C\-Exponential\-C\-R\-V}!set\-Distribution@{set\-Distribution}}
+\index{set\-Distribution@{set\-Distribution}!CExponentialCRV@{C\-Exponential\-C\-R\-V}}
+\subsubsection[{set\-Distribution}]{\setlength{\rightskip}{0pt plus 5cm}virtual void C\-Exponential\-C\-R\-V\-::set\-Distribution (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Continuous\-Sample} \&}]{\-\_\-a\-S}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_exponential_c_r_v_aae94d39cf10bce746cfa3d9541c87fc2}
+
+
+Set distribution parameters from sample empirical parameters. 
+
+\hypertarget{class_c_exponential_c_r_v_a3433bb5b8060066c31c81790a252e4fe}{\index{C\-Exponential\-C\-R\-V@{C\-Exponential\-C\-R\-V}!set\-Rate\-Parameter@{set\-Rate\-Parameter}}
+\index{set\-Rate\-Parameter@{set\-Rate\-Parameter}!CExponentialCRV@{C\-Exponential\-C\-R\-V}}
+\subsubsection[{set\-Rate\-Parameter}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Exponential\-C\-R\-V\-::set\-Rate\-Parameter (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-lambda}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_exponential_c_r_v_a3433bb5b8060066c31c81790a252e4fe}
+
+
+Sets rate parameter of exponential random variable. 
+
+\hypertarget{class_c_exponential_c_r_v_a8f0e52d384a6256289f528b1b94aaedc}{\index{C\-Exponential\-C\-R\-V@{C\-Exponential\-C\-R\-V}!variance@{variance}}
+\index{variance@{variance}!CExponentialCRV@{C\-Exponential\-C\-R\-V}}
+\subsubsection[{variance}]{\setlength{\rightskip}{0pt plus 5cm}virtual double C\-Exponential\-C\-R\-V\-::variance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_exponential_c_r_v_a8f0e52d384a6256289f528b1b94aaedc}
+
+
+Returns variance of the random variable. 
+
+
+
+Implements \hyperlink{class_c_random_variable_a3b0b87c4aab74c0406cd8321b8b96747}{C\-Random\-Variable}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_c_exponential_c_r_v_ac98d07dd8f7b70e16ccb9a01abf56b9c}{\index{C\-Exponential\-C\-R\-V@{C\-Exponential\-C\-R\-V}!boost\-::serialization\-::access@{boost\-::serialization\-::access}}
+\index{boost\-::serialization\-::access@{boost\-::serialization\-::access}!CExponentialCRV@{C\-Exponential\-C\-R\-V}}
+\subsubsection[{boost\-::serialization\-::access}]{\setlength{\rightskip}{0pt plus 5cm}friend class boost\-::serialization\-::access\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_c_exponential_c_r_v_ac98d07dd8f7b70e16ccb9a01abf56b9c}
+
+
+Boost serialization. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_exponential_c_r_v_a29435872622b1a114b3c5c3717239fd2}{\index{C\-Exponential\-C\-R\-V@{C\-Exponential\-C\-R\-V}!beta@{beta}}
+\index{beta@{beta}!CExponentialCRV@{C\-Exponential\-C\-R\-V}}
+\subsubsection[{beta}]{\setlength{\rightskip}{0pt plus 5cm}double C\-Exponential\-C\-R\-V\-::beta\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_exponential_c_r_v_a29435872622b1a114b3c5c3717239fd2}
+Distribution parameters\-: rate parameter beta=1/lambda. \hypertarget{class_c_exponential_c_r_v_a4bae65d53141f778e4a324f70c4658b1}{\index{C\-Exponential\-C\-R\-V@{C\-Exponential\-C\-R\-V}!lambda@{lambda}}
+\index{lambda@{lambda}!CExponentialCRV@{C\-Exponential\-C\-R\-V}}
+\subsubsection[{lambda}]{\setlength{\rightskip}{0pt plus 5cm}double C\-Exponential\-C\-R\-V\-::lambda\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_exponential_c_r_v_a4bae65d53141f778e4a324f70c4658b1}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Development/core/\hyperlink{_random_variable_8h}{Random\-Variable.\-h}\item 
+C\-:/\-Development/core/\hyperlink{_random_variable_8cpp}{Random\-Variable.\-cpp}\end{DoxyCompactItemize}

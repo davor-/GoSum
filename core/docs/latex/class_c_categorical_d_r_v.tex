@@ -1,0 +1,316 @@
+\hypertarget{class_c_categorical_d_r_v}{\section{C\-Categorical\-D\-R\-V Class Reference}
+\label{class_c_categorical_d_r_v}\index{C\-Categorical\-D\-R\-V@{C\-Categorical\-D\-R\-V}}
+}
+
+
+Class for categorical discrete random variables derived from discrete random variables.  
+
+
+
+
+{\ttfamily \#include $<$Random\-Variable.\-h$>$}
+
+Inheritance diagram for C\-Categorical\-D\-R\-V\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_c_categorical_d_r_v}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_categorical_d_r_v_a4fec729c76cfbfb22e19ed4a47b3d8f6}{C\-Categorical\-D\-R\-V} ()
+\item 
+virtual \hyperlink{class_c_categorical_d_r_v_a3e3e653c5b11c99ab6c9ad352cd1a5ee}{$\sim$\-C\-Categorical\-D\-R\-V} ()
+\item 
+\hyperlink{class_c_categorical_d_r_v_afec3ee33d70f726e48c2cfeff9644196}{C\-Categorical\-D\-R\-V} (const \hyperlink{class_c_categorical_d_r_v}{C\-Categorical\-D\-R\-V} \&O)
+\item 
+virtual void \hyperlink{class_c_categorical_d_r_v_aba3393786eddeb6a235cd1e58d88c280}{set\-Distribution} (const \hyperlink{class_c_discrete_sample}{C\-Discrete\-Sample} \&\-\_\-a\-S)
+\begin{DoxyCompactList}\small\item\em Computes P\-M\-F and C\-D\-F from sample histogram. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_c_categorical_d_r_v_a7bbfb60b24d3aa7ef4aaa42212eeb638}{probability} (int \-\_\-k) const 
+\begin{DoxyCompactList}\small\item\em Function that returns P\-M\-F. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_c_categorical_d_r_v_a65d62077439f102b8e68a98e32a71df5}{cumulative} (int \-\_\-k) const 
+\begin{DoxyCompactList}\small\item\em Function that returns C\-D\-F. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_c_categorical_d_r_v_a385ff0c56ffc1c32b57f6b73ec4e1b79}{expanded\-Size} () const 
+\item 
+virtual double \hyperlink{class_c_categorical_d_r_v_a2b4cfded808f058c38d931ac4c74ad31}{min\-Value} () const 
+\begin{DoxyCompactList}\small\item\em After expansion, number of new variables is equal to the number of categories. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_c_categorical_d_r_v_aa5d047a29e2ff173134e60a04f24eb1c}{max\-Value} () const 
+\begin{DoxyCompactList}\small\item\em Returns maximal value of the random variable. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_c_categorical_d_r_v_ad771cb6295a706cf14e666ab097d4751}{expected\-Value} () const 
+\begin{DoxyCompactList}\small\item\em Returns expected value of the random variable. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_c_random_variable_a80d2a87c43847274138b51f7d713d7f1}{distributiontype} \hyperlink{class_c_categorical_d_r_v_affe36486c2cc2b8b35018bd0557cf4d4}{distribution\-Type} () const 
+\begin{DoxyCompactList}\small\item\em Returns enum type of the random variable distribution. \end{DoxyCompactList}\item 
+virtual std\-::string \hyperlink{class_c_categorical_d_r_v_adbecb8ad887cdbe9c1f39858c415e70a}{distribution\-Name} () const 
+\begin{DoxyCompactList}\small\item\em Returns name of the random variable distribution. \end{DoxyCompactList}\item 
+virtual Array\-Xi \hyperlink{class_c_categorical_d_r_v_a67bb1a1664827e7221af1178b78c7850}{export\-Domain} () const 
+\begin{DoxyCompactList}\small\item\em Exports domain of the random variable. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_c_categorical_d_r_v_a43881a5705bc5c0de35488ca13fb31e6}{is\-Distribution\-Defined} () const 
+\begin{DoxyCompactList}\small\item\em Returns true if distribution is defined, false otherwise. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_c_categorical_d_r_v_a78e27950e4b4e248abd75305b55d0519}{variance} () const 
+\begin{DoxyCompactList}\small\item\em Returns variance of the random variable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual double \hyperlink{class_c_categorical_d_r_v_ad13850307d82f7d771a8e658305f2083}{do\-Quantile} (double \-\_\-p) const 
+\begin{DoxyCompactList}\small\item\em Quantile, formula implementation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \hyperlink{class_c_categorical_d_r_v_a7d834148a34cfdabdb71040858032fcf}{serialize} (Archive \&ar, const unsigned int version)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Array\-Xd \hyperlink{class_c_categorical_d_r_v_ae7de998dd49975a1be0de37cbc4f23b5}{p}
+\item 
+Array\-Xd \hyperlink{class_c_categorical_d_r_v_a78c2837dfae368a3ecdbb416b0e9d094}{cdf}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_c_categorical_d_r_v_ac98d07dd8f7b70e16ccb9a01abf56b9c}{boost\-::serialization\-::access}
+\begin{DoxyCompactList}\small\item\em Boost serialization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class for categorical discrete random variables derived from discrete random variables. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_categorical_d_r_v_a4fec729c76cfbfb22e19ed4a47b3d8f6}{\index{C\-Categorical\-D\-R\-V@{C\-Categorical\-D\-R\-V}!C\-Categorical\-D\-R\-V@{C\-Categorical\-D\-R\-V}}
+\index{C\-Categorical\-D\-R\-V@{C\-Categorical\-D\-R\-V}!CCategoricalDRV@{C\-Categorical\-D\-R\-V}}
+\subsubsection[{C\-Categorical\-D\-R\-V}]{\setlength{\rightskip}{0pt plus 5cm}C\-Categorical\-D\-R\-V\-::\-C\-Categorical\-D\-R\-V (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_categorical_d_r_v_a4fec729c76cfbfb22e19ed4a47b3d8f6}
+\hypertarget{class_c_categorical_d_r_v_a3e3e653c5b11c99ab6c9ad352cd1a5ee}{\index{C\-Categorical\-D\-R\-V@{C\-Categorical\-D\-R\-V}!$\sim$\-C\-Categorical\-D\-R\-V@{$\sim$\-C\-Categorical\-D\-R\-V}}
+\index{$\sim$\-C\-Categorical\-D\-R\-V@{$\sim$\-C\-Categorical\-D\-R\-V}!CCategoricalDRV@{C\-Categorical\-D\-R\-V}}
+\subsubsection[{$\sim$\-C\-Categorical\-D\-R\-V}]{\setlength{\rightskip}{0pt plus 5cm}virtual C\-Categorical\-D\-R\-V\-::$\sim$\-C\-Categorical\-D\-R\-V (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_categorical_d_r_v_a3e3e653c5b11c99ab6c9ad352cd1a5ee}
+\hypertarget{class_c_categorical_d_r_v_afec3ee33d70f726e48c2cfeff9644196}{\index{C\-Categorical\-D\-R\-V@{C\-Categorical\-D\-R\-V}!C\-Categorical\-D\-R\-V@{C\-Categorical\-D\-R\-V}}
+\index{C\-Categorical\-D\-R\-V@{C\-Categorical\-D\-R\-V}!CCategoricalDRV@{C\-Categorical\-D\-R\-V}}
+\subsubsection[{C\-Categorical\-D\-R\-V}]{\setlength{\rightskip}{0pt plus 5cm}C\-Categorical\-D\-R\-V\-::\-C\-Categorical\-D\-R\-V (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Categorical\-D\-R\-V} \&}]{O}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_categorical_d_r_v_afec3ee33d70f726e48c2cfeff9644196}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_categorical_d_r_v_a65d62077439f102b8e68a98e32a71df5}{\index{C\-Categorical\-D\-R\-V@{C\-Categorical\-D\-R\-V}!cumulative@{cumulative}}
+\index{cumulative@{cumulative}!CCategoricalDRV@{C\-Categorical\-D\-R\-V}}
+\subsubsection[{cumulative}]{\setlength{\rightskip}{0pt plus 5cm}virtual double C\-Categorical\-D\-R\-V\-::cumulative (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-k}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_categorical_d_r_v_a65d62077439f102b8e68a98e32a71df5}
+
+
+Function that returns C\-D\-F. 
+
+\hypertarget{class_c_categorical_d_r_v_adbecb8ad887cdbe9c1f39858c415e70a}{\index{C\-Categorical\-D\-R\-V@{C\-Categorical\-D\-R\-V}!distribution\-Name@{distribution\-Name}}
+\index{distribution\-Name@{distribution\-Name}!CCategoricalDRV@{C\-Categorical\-D\-R\-V}}
+\subsubsection[{distribution\-Name}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\-::string C\-Categorical\-D\-R\-V\-::distribution\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_categorical_d_r_v_adbecb8ad887cdbe9c1f39858c415e70a}
+
+
+Returns name of the random variable distribution. 
+
+
+
+Implements \hyperlink{class_c_random_variable_a4b33eef7c56f9f1a83af01fa8ef2502b}{C\-Random\-Variable}.
+
+\hypertarget{class_c_categorical_d_r_v_affe36486c2cc2b8b35018bd0557cf4d4}{\index{C\-Categorical\-D\-R\-V@{C\-Categorical\-D\-R\-V}!distribution\-Type@{distribution\-Type}}
+\index{distribution\-Type@{distribution\-Type}!CCategoricalDRV@{C\-Categorical\-D\-R\-V}}
+\subsubsection[{distribution\-Type}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf distributiontype} C\-Categorical\-D\-R\-V\-::distribution\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_categorical_d_r_v_affe36486c2cc2b8b35018bd0557cf4d4}
+
+
+Returns enum type of the random variable distribution. 
+
+
+
+Implements \hyperlink{class_c_random_variable_a3b30589d41f4dd200bd40c8273cac2cd}{C\-Random\-Variable}.
+
+\hypertarget{class_c_categorical_d_r_v_ad13850307d82f7d771a8e658305f2083}{\index{C\-Categorical\-D\-R\-V@{C\-Categorical\-D\-R\-V}!do\-Quantile@{do\-Quantile}}
+\index{do\-Quantile@{do\-Quantile}!CCategoricalDRV@{C\-Categorical\-D\-R\-V}}
+\subsubsection[{do\-Quantile}]{\setlength{\rightskip}{0pt plus 5cm}double C\-Categorical\-D\-R\-V\-::do\-Quantile (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-p}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_c_categorical_d_r_v_ad13850307d82f7d771a8e658305f2083}
+
+
+Quantile, formula implementation. 
+
+
+
+Implements \hyperlink{class_c_random_variable_a552ab36c8144d7154cbe3cd363eee65b}{C\-Random\-Variable}.
+
+\hypertarget{class_c_categorical_d_r_v_a385ff0c56ffc1c32b57f6b73ec4e1b79}{\index{C\-Categorical\-D\-R\-V@{C\-Categorical\-D\-R\-V}!expanded\-Size@{expanded\-Size}}
+\index{expanded\-Size@{expanded\-Size}!CCategoricalDRV@{C\-Categorical\-D\-R\-V}}
+\subsubsection[{expanded\-Size}]{\setlength{\rightskip}{0pt plus 5cm}virtual int C\-Categorical\-D\-R\-V\-::expanded\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_categorical_d_r_v_a385ff0c56ffc1c32b57f6b73ec4e1b79}
+
+
+Reimplemented from \hyperlink{class_c_random_variable_ada091c2895cf25a75ac8aacecb5da47f}{C\-Random\-Variable}.
+
+\hypertarget{class_c_categorical_d_r_v_ad771cb6295a706cf14e666ab097d4751}{\index{C\-Categorical\-D\-R\-V@{C\-Categorical\-D\-R\-V}!expected\-Value@{expected\-Value}}
+\index{expected\-Value@{expected\-Value}!CCategoricalDRV@{C\-Categorical\-D\-R\-V}}
+\subsubsection[{expected\-Value}]{\setlength{\rightskip}{0pt plus 5cm}virtual double C\-Categorical\-D\-R\-V\-::expected\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_categorical_d_r_v_ad771cb6295a706cf14e666ab097d4751}
+
+
+Returns expected value of the random variable. 
+
+
+
+Implements \hyperlink{class_c_random_variable_a6e5490d17f2b6abcf9922c8b1bd6d4ed}{C\-Random\-Variable}.
+
+\hypertarget{class_c_categorical_d_r_v_a67bb1a1664827e7221af1178b78c7850}{\index{C\-Categorical\-D\-R\-V@{C\-Categorical\-D\-R\-V}!export\-Domain@{export\-Domain}}
+\index{export\-Domain@{export\-Domain}!CCategoricalDRV@{C\-Categorical\-D\-R\-V}}
+\subsubsection[{export\-Domain}]{\setlength{\rightskip}{0pt plus 5cm}Array\-Xi C\-Categorical\-D\-R\-V\-::export\-Domain (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_categorical_d_r_v_a67bb1a1664827e7221af1178b78c7850}
+
+
+Exports domain of the random variable. 
+
+
+
+Implements \hyperlink{class_t_random_variable_a37fc52d5fa37493a353887242d279a27}{T\-Random\-Variable$<$ t, T $>$}.
+
+\hypertarget{class_c_categorical_d_r_v_a43881a5705bc5c0de35488ca13fb31e6}{\index{C\-Categorical\-D\-R\-V@{C\-Categorical\-D\-R\-V}!is\-Distribution\-Defined@{is\-Distribution\-Defined}}
+\index{is\-Distribution\-Defined@{is\-Distribution\-Defined}!CCategoricalDRV@{C\-Categorical\-D\-R\-V}}
+\subsubsection[{is\-Distribution\-Defined}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool C\-Categorical\-D\-R\-V\-::is\-Distribution\-Defined (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_categorical_d_r_v_a43881a5705bc5c0de35488ca13fb31e6}
+
+
+Returns true if distribution is defined, false otherwise. 
+
+
+
+Reimplemented from \hyperlink{class_c_random_variable_a60e88c15450ab21dea6bef00d8836da7}{C\-Random\-Variable}.
+
+\hypertarget{class_c_categorical_d_r_v_aa5d047a29e2ff173134e60a04f24eb1c}{\index{C\-Categorical\-D\-R\-V@{C\-Categorical\-D\-R\-V}!max\-Value@{max\-Value}}
+\index{max\-Value@{max\-Value}!CCategoricalDRV@{C\-Categorical\-D\-R\-V}}
+\subsubsection[{max\-Value}]{\setlength{\rightskip}{0pt plus 5cm}virtual double C\-Categorical\-D\-R\-V\-::max\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_categorical_d_r_v_aa5d047a29e2ff173134e60a04f24eb1c}
+
+
+Returns maximal value of the random variable. 
+
+
+
+Implements \hyperlink{class_c_random_variable_a48a5e98363d866f1f46568ed658479ad}{C\-Random\-Variable}.
+
+\hypertarget{class_c_categorical_d_r_v_a2b4cfded808f058c38d931ac4c74ad31}{\index{C\-Categorical\-D\-R\-V@{C\-Categorical\-D\-R\-V}!min\-Value@{min\-Value}}
+\index{min\-Value@{min\-Value}!CCategoricalDRV@{C\-Categorical\-D\-R\-V}}
+\subsubsection[{min\-Value}]{\setlength{\rightskip}{0pt plus 5cm}virtual double C\-Categorical\-D\-R\-V\-::min\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_categorical_d_r_v_a2b4cfded808f058c38d931ac4c74ad31}
+
+
+After expansion, number of new variables is equal to the number of categories. 
+
+Returns minimal value of the random variable. 
+
+Implements \hyperlink{class_c_random_variable_a233ddd2eedb51b09a04a8c330646f356}{C\-Random\-Variable}.
+
+\hypertarget{class_c_categorical_d_r_v_a7bbfb60b24d3aa7ef4aaa42212eeb638}{\index{C\-Categorical\-D\-R\-V@{C\-Categorical\-D\-R\-V}!probability@{probability}}
+\index{probability@{probability}!CCategoricalDRV@{C\-Categorical\-D\-R\-V}}
+\subsubsection[{probability}]{\setlength{\rightskip}{0pt plus 5cm}virtual double C\-Categorical\-D\-R\-V\-::probability (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-k}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_categorical_d_r_v_a7bbfb60b24d3aa7ef4aaa42212eeb638}
+
+
+Function that returns P\-M\-F. 
+
+\hypertarget{class_c_categorical_d_r_v_a7d834148a34cfdabdb71040858032fcf}{\index{C\-Categorical\-D\-R\-V@{C\-Categorical\-D\-R\-V}!serialize@{serialize}}
+\index{serialize@{serialize}!CCategoricalDRV@{C\-Categorical\-D\-R\-V}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Archive $>$ void C\-Categorical\-D\-R\-V\-::serialize (
+\begin{DoxyParamCaption}
+\item[{Archive \&}]{ar, }
+\item[{const unsigned int}]{version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_categorical_d_r_v_a7d834148a34cfdabdb71040858032fcf}
+\hypertarget{class_c_categorical_d_r_v_aba3393786eddeb6a235cd1e58d88c280}{\index{C\-Categorical\-D\-R\-V@{C\-Categorical\-D\-R\-V}!set\-Distribution@{set\-Distribution}}
+\index{set\-Distribution@{set\-Distribution}!CCategoricalDRV@{C\-Categorical\-D\-R\-V}}
+\subsubsection[{set\-Distribution}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Categorical\-D\-R\-V\-::set\-Distribution (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Discrete\-Sample} \&}]{\-\_\-a\-S}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_categorical_d_r_v_aba3393786eddeb6a235cd1e58d88c280}
+
+
+Computes P\-M\-F and C\-D\-F from sample histogram. 
+
+\hypertarget{class_c_categorical_d_r_v_a78e27950e4b4e248abd75305b55d0519}{\index{C\-Categorical\-D\-R\-V@{C\-Categorical\-D\-R\-V}!variance@{variance}}
+\index{variance@{variance}!CCategoricalDRV@{C\-Categorical\-D\-R\-V}}
+\subsubsection[{variance}]{\setlength{\rightskip}{0pt plus 5cm}virtual double C\-Categorical\-D\-R\-V\-::variance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_categorical_d_r_v_a78e27950e4b4e248abd75305b55d0519}
+
+
+Returns variance of the random variable. 
+
+
+
+Implements \hyperlink{class_c_random_variable_a3b0b87c4aab74c0406cd8321b8b96747}{C\-Random\-Variable}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_c_categorical_d_r_v_ac98d07dd8f7b70e16ccb9a01abf56b9c}{\index{C\-Categorical\-D\-R\-V@{C\-Categorical\-D\-R\-V}!boost\-::serialization\-::access@{boost\-::serialization\-::access}}
+\index{boost\-::serialization\-::access@{boost\-::serialization\-::access}!CCategoricalDRV@{C\-Categorical\-D\-R\-V}}
+\subsubsection[{boost\-::serialization\-::access}]{\setlength{\rightskip}{0pt plus 5cm}friend class boost\-::serialization\-::access\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_c_categorical_d_r_v_ac98d07dd8f7b70e16ccb9a01abf56b9c}
+
+
+Boost serialization. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_categorical_d_r_v_a78c2837dfae368a3ecdbb416b0e9d094}{\index{C\-Categorical\-D\-R\-V@{C\-Categorical\-D\-R\-V}!cdf@{cdf}}
+\index{cdf@{cdf}!CCategoricalDRV@{C\-Categorical\-D\-R\-V}}
+\subsubsection[{cdf}]{\setlength{\rightskip}{0pt plus 5cm}Array\-Xd C\-Categorical\-D\-R\-V\-::cdf\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_categorical_d_r_v_a78c2837dfae368a3ecdbb416b0e9d094}
+P\-M\-F (p) and C\-D\-F (cdf) data. \hypertarget{class_c_categorical_d_r_v_ae7de998dd49975a1be0de37cbc4f23b5}{\index{C\-Categorical\-D\-R\-V@{C\-Categorical\-D\-R\-V}!p@{p}}
+\index{p@{p}!CCategoricalDRV@{C\-Categorical\-D\-R\-V}}
+\subsubsection[{p}]{\setlength{\rightskip}{0pt plus 5cm}Array\-Xd C\-Categorical\-D\-R\-V\-::p\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_categorical_d_r_v_ae7de998dd49975a1be0de37cbc4f23b5}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Development/core/\hyperlink{_random_variable_8h}{Random\-Variable.\-h}\item 
+C\-:/\-Development/core/\hyperlink{_random_variable_8cpp}{Random\-Variable.\-cpp}\end{DoxyCompactItemize}

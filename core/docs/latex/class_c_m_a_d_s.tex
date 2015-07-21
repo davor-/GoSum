@@ -1,0 +1,316 @@
+\hypertarget{class_c_m_a_d_s}{\section{C\-M\-A\-D\-S Class Reference}
+\label{class_c_m_a_d_s}\index{C\-M\-A\-D\-S@{C\-M\-A\-D\-S}}
+}
+
+
+Class for the mesh addaptive direct serach, i.\-e. interface for N\-O\-M\-A\-D.  
+
+
+
+
+{\ttfamily \#include $<$M\-A\-D\-S\-Optimization.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_m_a_d_s_a80e31199addf50b5d34bd3aeb7812521}{C\-M\-A\-D\-S} ()
+\item 
+virtual \hyperlink{class_c_m_a_d_s_af43c613be3091d5ce2523fd21048574a}{$\sim$\-C\-M\-A\-D\-S} ()
+\item 
+Array\-Xd \hyperlink{class_c_m_a_d_s_a952faa93a4f38ca237dad46d8fec929e}{optimize} (\hyperlink{class_c_optimization_problem}{C\-Optimization\-Problem} $\ast$\-\_\-p\-O\-P, std\-::ostream \&\-\_\-out=std\-::cout)
+\begin{DoxyCompactList}\small\item\em Solves the optimizations problem. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_m_a_d_s_ad8a920109cf781c8dadca57983f3122f}{evaluation\-Size} () const 
+\begin{DoxyCompactList}\small\item\em Returns maximal number of evaluations. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_m_a_d_s_ac532678117eb81760fb20a90abaf4f5e}{set\-Evaluation\-Size} (int \-\_\-maxeval)
+\begin{DoxyCompactList}\small\item\em Sets maximal number of evaluations. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_m_a_d_s_a1cfffca12bdc69f981414c869d80b37c}{initial\-L\-H\-Search} () const 
+\begin{DoxyCompactList}\small\item\em Returns initial value for L\-H search. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_m_a_d_s_a853551c7d08c15950c881c3add3ced2e}{set\-Initial\-L\-H\-Search} (int \-\_\-lh0)
+\begin{DoxyCompactList}\small\item\em Sets initial value for L\-H search. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_m_a_d_s_a2e1b3ebc4aabb5ddba0d27b2ef7d69c3}{iteration\-L\-H\-Search} () const 
+\begin{DoxyCompactList}\small\item\em Returns iteration value for L\-H search. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_m_a_d_s_aa3eb719cc325a85c936ab8a2726823d1}{set\-Iteration\-L\-H\-Search} (int \-\_\-lhi)
+\begin{DoxyCompactList}\small\item\em Sets iteration value for L\-H search. \end{DoxyCompactList}\item 
+double \hyperlink{class_c_m_a_d_s_a4f7f28c0ef8d53f2fc6c787f2c563ee4}{inital\-Mesh\-Size} () const 
+\begin{DoxyCompactList}\small\item\em Returns initial mesh size factor. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_m_a_d_s_adaa46855d1352f36c25eaedbeec36e63}{set\-Initial\-Mesh\-Size} (double \-\_\-ims)
+\begin{DoxyCompactList}\small\item\em Sets initial mesh size factor. \end{DoxyCompactList}\item 
+double \hyperlink{class_c_m_a_d_s_af4c8a983df3b90769230f1e1829af082}{minimal\-Poll\-Size} () const 
+\begin{DoxyCompactList}\small\item\em Returns minimal poll size factor. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_m_a_d_s_a1580912554dc75226645bc667d5fb1ec}{set\-Minimal\-Poll\-Size} (double \-\_\-mps)
+\begin{DoxyCompactList}\small\item\em Sets minimal poll size factor. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_m_a_d_s_a1c09eee0705ed297fa20af147e9235bc}{progress\-Steps\-Size} () const 
+\begin{DoxyCompactList}\small\item\em Returns progress steps size. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static N\-O\-M\-A\-D\-::\-Point \hyperlink{class_c_m_a_d_s_ad025c8a5bc49648b475ad0f7e744de64}{Array\-Xd2\-N\-O\-M\-A\-D\-Point} (const Array\-Xd \&x)
+\begin{DoxyCompactList}\small\item\em Utility\-: converts Array\-Xd to N\-O\-M\-A\-D\-::\-Point. \end{DoxyCompactList}\item 
+static Array\-Xd \hyperlink{class_c_m_a_d_s_a0ca8523e34599ee52c7d28027dee33f5}{N\-O\-M\-A\-D\-Point2\-Array\-Xd} (const N\-O\-M\-A\-D\-::\-Point \&p)
+\begin{DoxyCompactList}\small\item\em Utility\-: converts N\-O\-M\-A\-D\-::\-Point to Array\-Xd. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \hyperlink{class_c_m_a_d_s_a1bdfd9d99efd11ad0a0e4051d3897903}{serialize} (Archive \&ar, const unsigned int version)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_optimization_problem}{C\-Optimization\-Problem} $\ast$ \hyperlink{class_c_m_a_d_s_a2df4d9f465992f6130c89fed7880e4e7}{p\-O\-P}
+\begin{DoxyCompactList}\small\item\em Points to the optimization problem. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_m_a_d_s_ade4448bc470dc7c4c64f890c87f762da}{maxeval}
+\begin{DoxyCompactList}\small\item\em Holds maximal number of objective \& constraints evaluations during optimization. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_m_a_d_s_a4eaead3a0de0217d182cd70b858c066f}{lh0}
+\item 
+int \hyperlink{class_c_m_a_d_s_ac6c70518f5b7d42b32f656419406ed7a}{lhi}
+\item 
+double \hyperlink{class_c_m_a_d_s_a6274e43889cea689ac1bc2d3f2895528}{ims}
+\item 
+double \hyperlink{class_c_m_a_d_s_a96712dada3b9eb67c28026ac994b5eb1}{mps}
+\item 
+Array\-Xd \hyperlink{class_c_m_a_d_s_a632620e4e6de702a936648fe4bc8dbe1}{Xbest}
+\item 
+double \hyperlink{class_c_m_a_d_s_a81f3cabb204f7b152714f65a56f7dac4}{ybest}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_c_m_a_d_s_ac98d07dd8f7b70e16ccb9a01abf56b9c}{boost\-::serialization\-::access}
+\begin{DoxyCompactList}\small\item\em Boost serialization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for the mesh addaptive direct serach, i.\-e. interface for N\-O\-M\-A\-D. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_m_a_d_s_a80e31199addf50b5d34bd3aeb7812521}{\index{C\-M\-A\-D\-S@{C\-M\-A\-D\-S}!C\-M\-A\-D\-S@{C\-M\-A\-D\-S}}
+\index{C\-M\-A\-D\-S@{C\-M\-A\-D\-S}!CMADS@{C\-M\-A\-D\-S}}
+\subsubsection[{C\-M\-A\-D\-S}]{\setlength{\rightskip}{0pt plus 5cm}C\-M\-A\-D\-S\-::\-C\-M\-A\-D\-S (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_m_a_d_s_a80e31199addf50b5d34bd3aeb7812521}
+\hypertarget{class_c_m_a_d_s_af43c613be3091d5ce2523fd21048574a}{\index{C\-M\-A\-D\-S@{C\-M\-A\-D\-S}!$\sim$\-C\-M\-A\-D\-S@{$\sim$\-C\-M\-A\-D\-S}}
+\index{$\sim$\-C\-M\-A\-D\-S@{$\sim$\-C\-M\-A\-D\-S}!CMADS@{C\-M\-A\-D\-S}}
+\subsubsection[{$\sim$\-C\-M\-A\-D\-S}]{\setlength{\rightskip}{0pt plus 5cm}virtual C\-M\-A\-D\-S\-::$\sim$\-C\-M\-A\-D\-S (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_m_a_d_s_af43c613be3091d5ce2523fd21048574a}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_m_a_d_s_ad025c8a5bc49648b475ad0f7e744de64}{\index{C\-M\-A\-D\-S@{C\-M\-A\-D\-S}!Array\-Xd2\-N\-O\-M\-A\-D\-Point@{Array\-Xd2\-N\-O\-M\-A\-D\-Point}}
+\index{Array\-Xd2\-N\-O\-M\-A\-D\-Point@{Array\-Xd2\-N\-O\-M\-A\-D\-Point}!CMADS@{C\-M\-A\-D\-S}}
+\subsubsection[{Array\-Xd2\-N\-O\-M\-A\-D\-Point}]{\setlength{\rightskip}{0pt plus 5cm}N\-O\-M\-A\-D\-::\-Point C\-M\-A\-D\-S\-::\-Array\-Xd2\-N\-O\-M\-A\-D\-Point (
+\begin{DoxyParamCaption}
+\item[{const Array\-Xd \&}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_c_m_a_d_s_ad025c8a5bc49648b475ad0f7e744de64}
+
+
+Utility\-: converts Array\-Xd to N\-O\-M\-A\-D\-::\-Point. 
+
+\hypertarget{class_c_m_a_d_s_ad8a920109cf781c8dadca57983f3122f}{\index{C\-M\-A\-D\-S@{C\-M\-A\-D\-S}!evaluation\-Size@{evaluation\-Size}}
+\index{evaluation\-Size@{evaluation\-Size}!CMADS@{C\-M\-A\-D\-S}}
+\subsubsection[{evaluation\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int C\-M\-A\-D\-S\-::evaluation\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_m_a_d_s_ad8a920109cf781c8dadca57983f3122f}
+
+
+Returns maximal number of evaluations. 
+
+\hypertarget{class_c_m_a_d_s_a4f7f28c0ef8d53f2fc6c787f2c563ee4}{\index{C\-M\-A\-D\-S@{C\-M\-A\-D\-S}!inital\-Mesh\-Size@{inital\-Mesh\-Size}}
+\index{inital\-Mesh\-Size@{inital\-Mesh\-Size}!CMADS@{C\-M\-A\-D\-S}}
+\subsubsection[{inital\-Mesh\-Size}]{\setlength{\rightskip}{0pt plus 5cm}double C\-M\-A\-D\-S\-::inital\-Mesh\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_m_a_d_s_a4f7f28c0ef8d53f2fc6c787f2c563ee4}
+
+
+Returns initial mesh size factor. 
+
+\hypertarget{class_c_m_a_d_s_a1cfffca12bdc69f981414c869d80b37c}{\index{C\-M\-A\-D\-S@{C\-M\-A\-D\-S}!initial\-L\-H\-Search@{initial\-L\-H\-Search}}
+\index{initial\-L\-H\-Search@{initial\-L\-H\-Search}!CMADS@{C\-M\-A\-D\-S}}
+\subsubsection[{initial\-L\-H\-Search}]{\setlength{\rightskip}{0pt plus 5cm}int C\-M\-A\-D\-S\-::initial\-L\-H\-Search (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_m_a_d_s_a1cfffca12bdc69f981414c869d80b37c}
+
+
+Returns initial value for L\-H search. 
+
+\hypertarget{class_c_m_a_d_s_a2e1b3ebc4aabb5ddba0d27b2ef7d69c3}{\index{C\-M\-A\-D\-S@{C\-M\-A\-D\-S}!iteration\-L\-H\-Search@{iteration\-L\-H\-Search}}
+\index{iteration\-L\-H\-Search@{iteration\-L\-H\-Search}!CMADS@{C\-M\-A\-D\-S}}
+\subsubsection[{iteration\-L\-H\-Search}]{\setlength{\rightskip}{0pt plus 5cm}int C\-M\-A\-D\-S\-::iteration\-L\-H\-Search (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_m_a_d_s_a2e1b3ebc4aabb5ddba0d27b2ef7d69c3}
+
+
+Returns iteration value for L\-H search. 
+
+\hypertarget{class_c_m_a_d_s_af4c8a983df3b90769230f1e1829af082}{\index{C\-M\-A\-D\-S@{C\-M\-A\-D\-S}!minimal\-Poll\-Size@{minimal\-Poll\-Size}}
+\index{minimal\-Poll\-Size@{minimal\-Poll\-Size}!CMADS@{C\-M\-A\-D\-S}}
+\subsubsection[{minimal\-Poll\-Size}]{\setlength{\rightskip}{0pt plus 5cm}double C\-M\-A\-D\-S\-::minimal\-Poll\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_m_a_d_s_af4c8a983df3b90769230f1e1829af082}
+
+
+Returns minimal poll size factor. 
+
+\hypertarget{class_c_m_a_d_s_a0ca8523e34599ee52c7d28027dee33f5}{\index{C\-M\-A\-D\-S@{C\-M\-A\-D\-S}!N\-O\-M\-A\-D\-Point2\-Array\-Xd@{N\-O\-M\-A\-D\-Point2\-Array\-Xd}}
+\index{N\-O\-M\-A\-D\-Point2\-Array\-Xd@{N\-O\-M\-A\-D\-Point2\-Array\-Xd}!CMADS@{C\-M\-A\-D\-S}}
+\subsubsection[{N\-O\-M\-A\-D\-Point2\-Array\-Xd}]{\setlength{\rightskip}{0pt plus 5cm}Array\-Xd C\-M\-A\-D\-S\-::\-N\-O\-M\-A\-D\-Point2\-Array\-Xd (
+\begin{DoxyParamCaption}
+\item[{const N\-O\-M\-A\-D\-::\-Point \&}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_c_m_a_d_s_a0ca8523e34599ee52c7d28027dee33f5}
+
+
+Utility\-: converts N\-O\-M\-A\-D\-::\-Point to Array\-Xd. 
+
+\hypertarget{class_c_m_a_d_s_a952faa93a4f38ca237dad46d8fec929e}{\index{C\-M\-A\-D\-S@{C\-M\-A\-D\-S}!optimize@{optimize}}
+\index{optimize@{optimize}!CMADS@{C\-M\-A\-D\-S}}
+\subsubsection[{optimize}]{\setlength{\rightskip}{0pt plus 5cm}Array\-Xd C\-M\-A\-D\-S\-::optimize (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Optimization\-Problem} $\ast$}]{\-\_\-p\-O\-P, }
+\item[{std\-::ostream \&}]{\-\_\-out = {\ttfamily std\-:\-:cout}}
+\end{DoxyParamCaption}
+)}}\label{class_c_m_a_d_s_a952faa93a4f38ca237dad46d8fec929e}
+
+
+Solves the optimizations problem. 
+
+\hypertarget{class_c_m_a_d_s_a1c09eee0705ed297fa20af147e9235bc}{\index{C\-M\-A\-D\-S@{C\-M\-A\-D\-S}!progress\-Steps\-Size@{progress\-Steps\-Size}}
+\index{progress\-Steps\-Size@{progress\-Steps\-Size}!CMADS@{C\-M\-A\-D\-S}}
+\subsubsection[{progress\-Steps\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int C\-M\-A\-D\-S\-::progress\-Steps\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_m_a_d_s_a1c09eee0705ed297fa20af147e9235bc}
+
+
+Returns progress steps size. 
+
+\hypertarget{class_c_m_a_d_s_a1bdfd9d99efd11ad0a0e4051d3897903}{\index{C\-M\-A\-D\-S@{C\-M\-A\-D\-S}!serialize@{serialize}}
+\index{serialize@{serialize}!CMADS@{C\-M\-A\-D\-S}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Archive $>$ void C\-M\-A\-D\-S\-::serialize (
+\begin{DoxyParamCaption}
+\item[{Archive \&}]{ar, }
+\item[{const unsigned int}]{version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_c_m_a_d_s_a1bdfd9d99efd11ad0a0e4051d3897903}
+\hypertarget{class_c_m_a_d_s_ac532678117eb81760fb20a90abaf4f5e}{\index{C\-M\-A\-D\-S@{C\-M\-A\-D\-S}!set\-Evaluation\-Size@{set\-Evaluation\-Size}}
+\index{set\-Evaluation\-Size@{set\-Evaluation\-Size}!CMADS@{C\-M\-A\-D\-S}}
+\subsubsection[{set\-Evaluation\-Size}]{\setlength{\rightskip}{0pt plus 5cm}void C\-M\-A\-D\-S\-::set\-Evaluation\-Size (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-maxeval}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_m_a_d_s_ac532678117eb81760fb20a90abaf4f5e}
+
+
+Sets maximal number of evaluations. 
+
+\hypertarget{class_c_m_a_d_s_a853551c7d08c15950c881c3add3ced2e}{\index{C\-M\-A\-D\-S@{C\-M\-A\-D\-S}!set\-Initial\-L\-H\-Search@{set\-Initial\-L\-H\-Search}}
+\index{set\-Initial\-L\-H\-Search@{set\-Initial\-L\-H\-Search}!CMADS@{C\-M\-A\-D\-S}}
+\subsubsection[{set\-Initial\-L\-H\-Search}]{\setlength{\rightskip}{0pt plus 5cm}void C\-M\-A\-D\-S\-::set\-Initial\-L\-H\-Search (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-lh0}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_m_a_d_s_a853551c7d08c15950c881c3add3ced2e}
+
+
+Sets initial value for L\-H search. 
+
+\hypertarget{class_c_m_a_d_s_adaa46855d1352f36c25eaedbeec36e63}{\index{C\-M\-A\-D\-S@{C\-M\-A\-D\-S}!set\-Initial\-Mesh\-Size@{set\-Initial\-Mesh\-Size}}
+\index{set\-Initial\-Mesh\-Size@{set\-Initial\-Mesh\-Size}!CMADS@{C\-M\-A\-D\-S}}
+\subsubsection[{set\-Initial\-Mesh\-Size}]{\setlength{\rightskip}{0pt plus 5cm}void C\-M\-A\-D\-S\-::set\-Initial\-Mesh\-Size (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-ims}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_m_a_d_s_adaa46855d1352f36c25eaedbeec36e63}
+
+
+Sets initial mesh size factor. 
+
+\hypertarget{class_c_m_a_d_s_aa3eb719cc325a85c936ab8a2726823d1}{\index{C\-M\-A\-D\-S@{C\-M\-A\-D\-S}!set\-Iteration\-L\-H\-Search@{set\-Iteration\-L\-H\-Search}}
+\index{set\-Iteration\-L\-H\-Search@{set\-Iteration\-L\-H\-Search}!CMADS@{C\-M\-A\-D\-S}}
+\subsubsection[{set\-Iteration\-L\-H\-Search}]{\setlength{\rightskip}{0pt plus 5cm}void C\-M\-A\-D\-S\-::set\-Iteration\-L\-H\-Search (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-lhi}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_m_a_d_s_aa3eb719cc325a85c936ab8a2726823d1}
+
+
+Sets iteration value for L\-H search. 
+
+\hypertarget{class_c_m_a_d_s_a1580912554dc75226645bc667d5fb1ec}{\index{C\-M\-A\-D\-S@{C\-M\-A\-D\-S}!set\-Minimal\-Poll\-Size@{set\-Minimal\-Poll\-Size}}
+\index{set\-Minimal\-Poll\-Size@{set\-Minimal\-Poll\-Size}!CMADS@{C\-M\-A\-D\-S}}
+\subsubsection[{set\-Minimal\-Poll\-Size}]{\setlength{\rightskip}{0pt plus 5cm}void C\-M\-A\-D\-S\-::set\-Minimal\-Poll\-Size (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-mps}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_m_a_d_s_a1580912554dc75226645bc667d5fb1ec}
+
+
+Sets minimal poll size factor. 
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_c_m_a_d_s_ac98d07dd8f7b70e16ccb9a01abf56b9c}{\index{C\-M\-A\-D\-S@{C\-M\-A\-D\-S}!boost\-::serialization\-::access@{boost\-::serialization\-::access}}
+\index{boost\-::serialization\-::access@{boost\-::serialization\-::access}!CMADS@{C\-M\-A\-D\-S}}
+\subsubsection[{boost\-::serialization\-::access}]{\setlength{\rightskip}{0pt plus 5cm}friend class boost\-::serialization\-::access\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_c_m_a_d_s_ac98d07dd8f7b70e16ccb9a01abf56b9c}
+
+
+Boost serialization. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_m_a_d_s_a6274e43889cea689ac1bc2d3f2895528}{\index{C\-M\-A\-D\-S@{C\-M\-A\-D\-S}!ims@{ims}}
+\index{ims@{ims}!CMADS@{C\-M\-A\-D\-S}}
+\subsubsection[{ims}]{\setlength{\rightskip}{0pt plus 5cm}double C\-M\-A\-D\-S\-::ims\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_c_m_a_d_s_a6274e43889cea689ac1bc2d3f2895528}
+\hypertarget{class_c_m_a_d_s_a4eaead3a0de0217d182cd70b858c066f}{\index{C\-M\-A\-D\-S@{C\-M\-A\-D\-S}!lh0@{lh0}}
+\index{lh0@{lh0}!CMADS@{C\-M\-A\-D\-S}}
+\subsubsection[{lh0}]{\setlength{\rightskip}{0pt plus 5cm}int C\-M\-A\-D\-S\-::lh0\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_c_m_a_d_s_a4eaead3a0de0217d182cd70b858c066f}
+\hypertarget{class_c_m_a_d_s_ac6c70518f5b7d42b32f656419406ed7a}{\index{C\-M\-A\-D\-S@{C\-M\-A\-D\-S}!lhi@{lhi}}
+\index{lhi@{lhi}!CMADS@{C\-M\-A\-D\-S}}
+\subsubsection[{lhi}]{\setlength{\rightskip}{0pt plus 5cm}int C\-M\-A\-D\-S\-::lhi\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_c_m_a_d_s_ac6c70518f5b7d42b32f656419406ed7a}
+\hypertarget{class_c_m_a_d_s_ade4448bc470dc7c4c64f890c87f762da}{\index{C\-M\-A\-D\-S@{C\-M\-A\-D\-S}!maxeval@{maxeval}}
+\index{maxeval@{maxeval}!CMADS@{C\-M\-A\-D\-S}}
+\subsubsection[{maxeval}]{\setlength{\rightskip}{0pt plus 5cm}int C\-M\-A\-D\-S\-::maxeval\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_c_m_a_d_s_ade4448bc470dc7c4c64f890c87f762da}
+
+
+Holds maximal number of objective \& constraints evaluations during optimization. 
+
+\hypertarget{class_c_m_a_d_s_a96712dada3b9eb67c28026ac994b5eb1}{\index{C\-M\-A\-D\-S@{C\-M\-A\-D\-S}!mps@{mps}}
+\index{mps@{mps}!CMADS@{C\-M\-A\-D\-S}}
+\subsubsection[{mps}]{\setlength{\rightskip}{0pt plus 5cm}double C\-M\-A\-D\-S\-::mps\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_c_m_a_d_s_a96712dada3b9eb67c28026ac994b5eb1}
+\hypertarget{class_c_m_a_d_s_a2df4d9f465992f6130c89fed7880e4e7}{\index{C\-M\-A\-D\-S@{C\-M\-A\-D\-S}!p\-O\-P@{p\-O\-P}}
+\index{p\-O\-P@{p\-O\-P}!CMADS@{C\-M\-A\-D\-S}}
+\subsubsection[{p\-O\-P}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Optimization\-Problem}$\ast$ C\-M\-A\-D\-S\-::p\-O\-P\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_c_m_a_d_s_a2df4d9f465992f6130c89fed7880e4e7}
+
+
+Points to the optimization problem. 
+
+\hypertarget{class_c_m_a_d_s_a632620e4e6de702a936648fe4bc8dbe1}{\index{C\-M\-A\-D\-S@{C\-M\-A\-D\-S}!Xbest@{Xbest}}
+\index{Xbest@{Xbest}!CMADS@{C\-M\-A\-D\-S}}
+\subsubsection[{Xbest}]{\setlength{\rightskip}{0pt plus 5cm}Array\-Xd C\-M\-A\-D\-S\-::\-Xbest\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_c_m_a_d_s_a632620e4e6de702a936648fe4bc8dbe1}
+\hypertarget{class_c_m_a_d_s_a81f3cabb204f7b152714f65a56f7dac4}{\index{C\-M\-A\-D\-S@{C\-M\-A\-D\-S}!ybest@{ybest}}
+\index{ybest@{ybest}!CMADS@{C\-M\-A\-D\-S}}
+\subsubsection[{ybest}]{\setlength{\rightskip}{0pt plus 5cm}double C\-M\-A\-D\-S\-::ybest\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_c_m_a_d_s_a81f3cabb204f7b152714f65a56f7dac4}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Development/core/\hyperlink{_m_a_d_s_optimization_8h}{M\-A\-D\-S\-Optimization.\-h}\item 
+C\-:/\-Development/core/\hyperlink{_m_a_d_s_optimization_8cpp}{M\-A\-D\-S\-Optimization.\-cpp}\end{DoxyCompactItemize}

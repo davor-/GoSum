@@ -1,0 +1,188 @@
+\hypertarget{class_c_discrete_sample}{\section{C\-Discrete\-Sample Class Reference}
+\label{class_c_discrete_sample}\index{C\-Discrete\-Sample@{C\-Discrete\-Sample}}
+}
+
+
+{\ttfamily \#include $<$Sample.\-h$>$}
+
+Inheritance diagram for C\-Discrete\-Sample\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_c_discrete_sample}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_discrete_sample_ac891c831c15bb1dbbf5cabd94862893c}{C\-Discrete\-Sample} ()
+\item 
+virtual \hyperlink{class_c_discrete_sample_a5e3dbd761477945ac08a622409c9efdb}{$\sim$\-C\-Discrete\-Sample} ()
+\item 
+\hyperlink{class_c_discrete_sample_ab658862e3edd371c03a791bfb187eb4c}{C\-Discrete\-Sample} (const \hyperlink{class_c_discrete_sample}{C\-Discrete\-Sample} \&O)
+\item 
+virtual void \hyperlink{class_c_discrete_sample_a35f047c74401f8a3b83ec024579d049c}{compute\-Statistics} (int \-\_\-n)
+\begin{DoxyCompactList}\small\item\em Computes sample statistics, i.\-e. normalized histogram etc. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_c_discrete_sample_aca5d068b16f23c329d05af382ab68807}{export\-Histogram} (Array\-Xi \&\-\_\-x, Array\-Xd \&\-\_\-\-H) const 
+\begin{DoxyCompactList}\small\item\em Exports histogram (x,H). \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_discrete_sample_a59a5822c0311f42f7fe3538ea729fd70}{export\-Sub\-Histogram} (Array\-Xd \&\-\_\-sub\-H, const std\-::vector$<$ int $>$ \&subset) const 
+\begin{DoxyCompactList}\small\item\em Exports histogram relative to a subset of sample data. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_c_discrete_sample_a3e2d5a72842be01a167f890960a34bef}{variance} () const 
+\begin{DoxyCompactList}\small\item\em Returns sample variance (i.\-e.\-empirical). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \hyperlink{class_c_discrete_sample_aa3e70fbd99f76fc47705c08d6230b726}{serialize} (Archive \&ar, const unsigned int version)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_c_discrete_sample_a3292af167095c8fc140dcb925e53fc58}{compute\-Normalized\-Histogram} (int \-\_\-n)
+\begin{DoxyCompactList}\small\item\em C.\-omputes normalized histogram from sample data. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_discrete_sample_a7056f6e7c8d98a88e272ef26dde01380}{compute\-Normalized\-Sub\-Histogram} (Array\-Xd \&\-\_\-sub\-H, const std\-::vector$<$ int $>$ \&subset) const 
+\begin{DoxyCompactList}\small\item\em Computes normalized histogram from a subset of sample data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_c_discrete_sample_ac98d07dd8f7b70e16ccb9a01abf56b9c}{boost\-::serialization\-::access}
+\begin{DoxyCompactList}\small\item\em Boost serialization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_discrete_sample_ac891c831c15bb1dbbf5cabd94862893c}{\index{C\-Discrete\-Sample@{C\-Discrete\-Sample}!C\-Discrete\-Sample@{C\-Discrete\-Sample}}
+\index{C\-Discrete\-Sample@{C\-Discrete\-Sample}!CDiscreteSample@{C\-Discrete\-Sample}}
+\subsubsection[{C\-Discrete\-Sample}]{\setlength{\rightskip}{0pt plus 5cm}C\-Discrete\-Sample\-::\-C\-Discrete\-Sample (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_discrete_sample_ac891c831c15bb1dbbf5cabd94862893c}
+\hypertarget{class_c_discrete_sample_a5e3dbd761477945ac08a622409c9efdb}{\index{C\-Discrete\-Sample@{C\-Discrete\-Sample}!$\sim$\-C\-Discrete\-Sample@{$\sim$\-C\-Discrete\-Sample}}
+\index{$\sim$\-C\-Discrete\-Sample@{$\sim$\-C\-Discrete\-Sample}!CDiscreteSample@{C\-Discrete\-Sample}}
+\subsubsection[{$\sim$\-C\-Discrete\-Sample}]{\setlength{\rightskip}{0pt plus 5cm}virtual C\-Discrete\-Sample\-::$\sim$\-C\-Discrete\-Sample (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_discrete_sample_a5e3dbd761477945ac08a622409c9efdb}
+\hypertarget{class_c_discrete_sample_ab658862e3edd371c03a791bfb187eb4c}{\index{C\-Discrete\-Sample@{C\-Discrete\-Sample}!C\-Discrete\-Sample@{C\-Discrete\-Sample}}
+\index{C\-Discrete\-Sample@{C\-Discrete\-Sample}!CDiscreteSample@{C\-Discrete\-Sample}}
+\subsubsection[{C\-Discrete\-Sample}]{\setlength{\rightskip}{0pt plus 5cm}C\-Discrete\-Sample\-::\-C\-Discrete\-Sample (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Discrete\-Sample} \&}]{O}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_discrete_sample_ab658862e3edd371c03a791bfb187eb4c}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_discrete_sample_a3292af167095c8fc140dcb925e53fc58}{\index{C\-Discrete\-Sample@{C\-Discrete\-Sample}!compute\-Normalized\-Histogram@{compute\-Normalized\-Histogram}}
+\index{compute\-Normalized\-Histogram@{compute\-Normalized\-Histogram}!CDiscreteSample@{C\-Discrete\-Sample}}
+\subsubsection[{compute\-Normalized\-Histogram}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Discrete\-Sample\-::compute\-Normalized\-Histogram (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}}\label{class_c_discrete_sample_a3292af167095c8fc140dcb925e53fc58}
+
+
+C.\-omputes normalized histogram from sample data. 
+
+\hypertarget{class_c_discrete_sample_a7056f6e7c8d98a88e272ef26dde01380}{\index{C\-Discrete\-Sample@{C\-Discrete\-Sample}!compute\-Normalized\-Sub\-Histogram@{compute\-Normalized\-Sub\-Histogram}}
+\index{compute\-Normalized\-Sub\-Histogram@{compute\-Normalized\-Sub\-Histogram}!CDiscreteSample@{C\-Discrete\-Sample}}
+\subsubsection[{compute\-Normalized\-Sub\-Histogram}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Discrete\-Sample\-::compute\-Normalized\-Sub\-Histogram (
+\begin{DoxyParamCaption}
+\item[{Array\-Xd \&}]{\-\_\-sub\-H, }
+\item[{const std\-::vector$<$ int $>$ \&}]{subset}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}}\label{class_c_discrete_sample_a7056f6e7c8d98a88e272ef26dde01380}
+
+
+Computes normalized histogram from a subset of sample data. 
+
+\hypertarget{class_c_discrete_sample_a35f047c74401f8a3b83ec024579d049c}{\index{C\-Discrete\-Sample@{C\-Discrete\-Sample}!compute\-Statistics@{compute\-Statistics}}
+\index{compute\-Statistics@{compute\-Statistics}!CDiscreteSample@{C\-Discrete\-Sample}}
+\subsubsection[{compute\-Statistics}]{\setlength{\rightskip}{0pt plus 5cm}virtual void C\-Discrete\-Sample\-::compute\-Statistics (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_discrete_sample_a35f047c74401f8a3b83ec024579d049c}
+
+
+Computes sample statistics, i.\-e. normalized histogram etc. 
+
+
+
+Implements \hyperlink{class_c_sample_a10000ec1dade335a2a96a8646e0bae03}{C\-Sample}.
+
+\hypertarget{class_c_discrete_sample_aca5d068b16f23c329d05af382ab68807}{\index{C\-Discrete\-Sample@{C\-Discrete\-Sample}!export\-Histogram@{export\-Histogram}}
+\index{export\-Histogram@{export\-Histogram}!CDiscreteSample@{C\-Discrete\-Sample}}
+\subsubsection[{export\-Histogram}]{\setlength{\rightskip}{0pt plus 5cm}int C\-Discrete\-Sample\-::export\-Histogram (
+\begin{DoxyParamCaption}
+\item[{Array\-Xi \&}]{\-\_\-x, }
+\item[{Array\-Xd \&}]{\-\_\-\-H}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_discrete_sample_aca5d068b16f23c329d05af382ab68807}
+
+
+Exports histogram (x,H). 
+
+\hypertarget{class_c_discrete_sample_a59a5822c0311f42f7fe3538ea729fd70}{\index{C\-Discrete\-Sample@{C\-Discrete\-Sample}!export\-Sub\-Histogram@{export\-Sub\-Histogram}}
+\index{export\-Sub\-Histogram@{export\-Sub\-Histogram}!CDiscreteSample@{C\-Discrete\-Sample}}
+\subsubsection[{export\-Sub\-Histogram}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Discrete\-Sample\-::export\-Sub\-Histogram (
+\begin{DoxyParamCaption}
+\item[{Array\-Xd \&}]{\-\_\-sub\-H, }
+\item[{const std\-::vector$<$ int $>$ \&}]{subset}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_discrete_sample_a59a5822c0311f42f7fe3538ea729fd70}
+
+
+Exports histogram relative to a subset of sample data. 
+
+
+
+Implements \hyperlink{class_t_sample_a1ce3bdd77627f5783edbec6f607c3ea9}{T\-Sample$<$ t $>$}.
+
+\hypertarget{class_c_discrete_sample_aa3e70fbd99f76fc47705c08d6230b726}{\index{C\-Discrete\-Sample@{C\-Discrete\-Sample}!serialize@{serialize}}
+\index{serialize@{serialize}!CDiscreteSample@{C\-Discrete\-Sample}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Archive $>$ void C\-Discrete\-Sample\-::serialize (
+\begin{DoxyParamCaption}
+\item[{Archive \&}]{ar, }
+\item[{const unsigned int}]{version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_c_discrete_sample_aa3e70fbd99f76fc47705c08d6230b726}
+
+
+Reimplemented from \hyperlink{class_t_sample_a0f53b1db72dd3e83c50ab28dd31929a5}{T\-Sample$<$ t $>$}.
+
+\hypertarget{class_c_discrete_sample_a3e2d5a72842be01a167f890960a34bef}{\index{C\-Discrete\-Sample@{C\-Discrete\-Sample}!variance@{variance}}
+\index{variance@{variance}!CDiscreteSample@{C\-Discrete\-Sample}}
+\subsubsection[{variance}]{\setlength{\rightskip}{0pt plus 5cm}virtual double C\-Discrete\-Sample\-::variance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_discrete_sample_a3e2d5a72842be01a167f890960a34bef}
+
+
+Returns sample variance (i.\-e.\-empirical). 
+
+
+
+Implements \hyperlink{class_c_sample_a5ce1e4ff44a8ac2e021dc36541343651}{C\-Sample}.
+
+
+
+Reimplemented in \hyperlink{class_c_categorical_sample_a5408236fafb24d5a246823b97cc7427a}{C\-Categorical\-Sample}, and \hyperlink{class_c_numerical_sample_aedf72750cb229d9c17417ba787e487f1}{C\-Numerical\-Sample}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_c_discrete_sample_ac98d07dd8f7b70e16ccb9a01abf56b9c}{\index{C\-Discrete\-Sample@{C\-Discrete\-Sample}!boost\-::serialization\-::access@{boost\-::serialization\-::access}}
+\index{boost\-::serialization\-::access@{boost\-::serialization\-::access}!CDiscreteSample@{C\-Discrete\-Sample}}
+\subsubsection[{boost\-::serialization\-::access}]{\setlength{\rightskip}{0pt plus 5cm}friend class boost\-::serialization\-::access\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_c_discrete_sample_ac98d07dd8f7b70e16ccb9a01abf56b9c}
+
+
+Boost serialization. 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Development/core/\hyperlink{_sample_8h}{Sample.\-h}\item 
+C\-:/\-Development/core/\hyperlink{_sample_8cpp}{Sample.\-cpp}\end{DoxyCompactItemize}

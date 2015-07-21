@@ -1,0 +1,186 @@
+\hypertarget{class_go_s_u_m_1_1_c_matlab_engine_evaluator}{\section{Go\-S\-U\-M\-:\-:C\-Matlab\-Engine\-Evaluator Class Reference}
+\label{class_go_s_u_m_1_1_c_matlab_engine_evaluator}\index{Go\-S\-U\-M\-::\-C\-Matlab\-Engine\-Evaluator@{Go\-S\-U\-M\-::\-C\-Matlab\-Engine\-Evaluator}}
+}
+
+
+Class for the evaluator through Matlab engine derived from \hyperlink{class_go_s_u_m_1_1_c_model_evaluator}{C\-Model\-Evaluator}.  
+
+
+
+
+{\ttfamily \#include $<$Original\-Model.\-h$>$}
+
+Inheritance diagram for Go\-S\-U\-M\-:\-:C\-Matlab\-Engine\-Evaluator\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_go_s_u_m_1_1_c_matlab_engine_evaluator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_go_s_u_m_1_1_c_matlab_engine_evaluator_a02ed581900a8c193fa413517e992cce2}{C\-Matlab\-Engine\-Evaluator} ()
+\item 
+\hyperlink{class_go_s_u_m_1_1_c_matlab_engine_evaluator_af40c36abb8201ffd38ecb9379c04ff36}{C\-Matlab\-Engine\-Evaluator} (const \hyperlink{class_go_s_u_m_1_1_c_input_parameters}{C\-Input\-Parameters} $\ast$\-\_\-p\-I\-P, \hyperlink{class_go_s_u_m_1_1_c_output_states}{C\-Output\-States} $\ast$\-\_\-p\-O\-S, int \-\_\-trd\-I)
+\item 
+virtual \hyperlink{class_go_s_u_m_1_1_c_matlab_engine_evaluator_a31a086ffbc31094487bed97bbae53bd3}{$\sim$\-C\-Matlab\-Engine\-Evaluator} ()
+\item 
+virtual void \hyperlink{class_go_s_u_m_1_1_c_matlab_engine_evaluator_a878e5b84a93c808806cad12019372722}{open\-Evaluation} ()
+\begin{DoxyCompactList}\small\item\em Opens, i.\-e. prepares evaluation process. \end{DoxyCompactList}\item 
+virtual Array\-Xd \hyperlink{class_go_s_u_m_1_1_c_matlab_engine_evaluator_a68cf94eec612bdd72fd032f5631aad66}{operator()} (const Array\-Xd \&X)
+\begin{DoxyCompactList}\small\item\em Returns output state evaluated on a single input parameter n-\/tuple. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_go_s_u_m_1_1_c_matlab_engine_evaluator_a646d7c6412cf8256a65271af5b1aad89}{evaluate\-Outputs\-Size} ()
+\begin{DoxyCompactList}\small\item\em Evaluates outputs size by running model evaluator. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_go_s_u_m_1_1_c_matlab_engine_evaluator_a238f3a03165e37f5707611ae1e1a53ae}{close\-Evaluation} ()
+\begin{DoxyCompactList}\small\item\em Closes evaluation process. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \hyperlink{class_go_s_u_m_1_1_c_matlab_engine_evaluator_ad33ed3b3581e5da2f7575c0e3f1d9e55}{serialize} (Archive \&ar, const unsigned int version)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Engine $\ast$ \hyperlink{class_go_s_u_m_1_1_c_matlab_engine_evaluator_a27f4cdd2025a3dbcc975dc75d8fffb14}{ep}
+\begin{DoxyCompactList}\small\item\em Points to the matlab engine. \end{DoxyCompactList}\item 
+\hyperlink{class_c_m_a_t_l_a_b}{C\-M\-A\-T\-L\-A\-B} \hyperlink{class_go_s_u_m_1_1_c_matlab_engine_evaluator_ae5cb5436e2edaabb0f0db24d41daac0f}{matlab}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_go_s_u_m_1_1_c_matlab_engine_evaluator_ac98d07dd8f7b70e16ccb9a01abf56b9c}{boost\-::serialization\-::access}
+\begin{DoxyCompactList}\small\item\em Boost serialization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class for the evaluator through Matlab engine derived from \hyperlink{class_go_s_u_m_1_1_c_model_evaluator}{C\-Model\-Evaluator}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_matlab_engine_evaluator_a02ed581900a8c193fa413517e992cce2}{\index{Go\-S\-U\-M\-::\-C\-Matlab\-Engine\-Evaluator@{Go\-S\-U\-M\-::\-C\-Matlab\-Engine\-Evaluator}!C\-Matlab\-Engine\-Evaluator@{C\-Matlab\-Engine\-Evaluator}}
+\index{C\-Matlab\-Engine\-Evaluator@{C\-Matlab\-Engine\-Evaluator}!GoSUM::CMatlabEngineEvaluator@{Go\-S\-U\-M\-::\-C\-Matlab\-Engine\-Evaluator}}
+\subsubsection[{C\-Matlab\-Engine\-Evaluator}]{\setlength{\rightskip}{0pt plus 5cm}Go\-S\-U\-M\-::\-C\-Matlab\-Engine\-Evaluator\-::\-C\-Matlab\-Engine\-Evaluator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_matlab_engine_evaluator_a02ed581900a8c193fa413517e992cce2}
+\hypertarget{class_go_s_u_m_1_1_c_matlab_engine_evaluator_af40c36abb8201ffd38ecb9379c04ff36}{\index{Go\-S\-U\-M\-::\-C\-Matlab\-Engine\-Evaluator@{Go\-S\-U\-M\-::\-C\-Matlab\-Engine\-Evaluator}!C\-Matlab\-Engine\-Evaluator@{C\-Matlab\-Engine\-Evaluator}}
+\index{C\-Matlab\-Engine\-Evaluator@{C\-Matlab\-Engine\-Evaluator}!GoSUM::CMatlabEngineEvaluator@{Go\-S\-U\-M\-::\-C\-Matlab\-Engine\-Evaluator}}
+\subsubsection[{C\-Matlab\-Engine\-Evaluator}]{\setlength{\rightskip}{0pt plus 5cm}Go\-S\-U\-M\-::\-C\-Matlab\-Engine\-Evaluator\-::\-C\-Matlab\-Engine\-Evaluator (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Input\-Parameters} $\ast$}]{\-\_\-p\-I\-P, }
+\item[{{\bf C\-Output\-States} $\ast$}]{\-\_\-p\-O\-S, }
+\item[{int}]{\-\_\-trd\-I}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_matlab_engine_evaluator_af40c36abb8201ffd38ecb9379c04ff36}
+\hypertarget{class_go_s_u_m_1_1_c_matlab_engine_evaluator_a31a086ffbc31094487bed97bbae53bd3}{\index{Go\-S\-U\-M\-::\-C\-Matlab\-Engine\-Evaluator@{Go\-S\-U\-M\-::\-C\-Matlab\-Engine\-Evaluator}!$\sim$\-C\-Matlab\-Engine\-Evaluator@{$\sim$\-C\-Matlab\-Engine\-Evaluator}}
+\index{$\sim$\-C\-Matlab\-Engine\-Evaluator@{$\sim$\-C\-Matlab\-Engine\-Evaluator}!GoSUM::CMatlabEngineEvaluator@{Go\-S\-U\-M\-::\-C\-Matlab\-Engine\-Evaluator}}
+\subsubsection[{$\sim$\-C\-Matlab\-Engine\-Evaluator}]{\setlength{\rightskip}{0pt plus 5cm}virtual Go\-S\-U\-M\-::\-C\-Matlab\-Engine\-Evaluator\-::$\sim$\-C\-Matlab\-Engine\-Evaluator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_matlab_engine_evaluator_a31a086ffbc31094487bed97bbae53bd3}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_matlab_engine_evaluator_a238f3a03165e37f5707611ae1e1a53ae}{\index{Go\-S\-U\-M\-::\-C\-Matlab\-Engine\-Evaluator@{Go\-S\-U\-M\-::\-C\-Matlab\-Engine\-Evaluator}!close\-Evaluation@{close\-Evaluation}}
+\index{close\-Evaluation@{close\-Evaluation}!GoSUM::CMatlabEngineEvaluator@{Go\-S\-U\-M\-::\-C\-Matlab\-Engine\-Evaluator}}
+\subsubsection[{close\-Evaluation}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Matlab\-Engine\-Evaluator\-::close\-Evaluation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_matlab_engine_evaluator_a238f3a03165e37f5707611ae1e1a53ae}
+
+
+Closes evaluation process. 
+
+
+
+Implements \hyperlink{class_go_s_u_m_1_1_c_model_evaluator_a7ed9761e18560616881ebe459c6b8952}{Go\-S\-U\-M\-::\-C\-Model\-Evaluator}.
+
+\hypertarget{class_go_s_u_m_1_1_c_matlab_engine_evaluator_a646d7c6412cf8256a65271af5b1aad89}{\index{Go\-S\-U\-M\-::\-C\-Matlab\-Engine\-Evaluator@{Go\-S\-U\-M\-::\-C\-Matlab\-Engine\-Evaluator}!evaluate\-Outputs\-Size@{evaluate\-Outputs\-Size}}
+\index{evaluate\-Outputs\-Size@{evaluate\-Outputs\-Size}!GoSUM::CMatlabEngineEvaluator@{Go\-S\-U\-M\-::\-C\-Matlab\-Engine\-Evaluator}}
+\subsubsection[{evaluate\-Outputs\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int Go\-S\-U\-M\-::\-C\-Matlab\-Engine\-Evaluator\-::evaluate\-Outputs\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_matlab_engine_evaluator_a646d7c6412cf8256a65271af5b1aad89}
+
+
+Evaluates outputs size by running model evaluator. 
+
+
+
+Reimplemented from \hyperlink{class_go_s_u_m_1_1_c_model_evaluator_a822314faa443612c8840e6252018efb2}{Go\-S\-U\-M\-::\-C\-Model\-Evaluator}.
+
+\hypertarget{class_go_s_u_m_1_1_c_matlab_engine_evaluator_a878e5b84a93c808806cad12019372722}{\index{Go\-S\-U\-M\-::\-C\-Matlab\-Engine\-Evaluator@{Go\-S\-U\-M\-::\-C\-Matlab\-Engine\-Evaluator}!open\-Evaluation@{open\-Evaluation}}
+\index{open\-Evaluation@{open\-Evaluation}!GoSUM::CMatlabEngineEvaluator@{Go\-S\-U\-M\-::\-C\-Matlab\-Engine\-Evaluator}}
+\subsubsection[{open\-Evaluation}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Matlab\-Engine\-Evaluator\-::open\-Evaluation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_matlab_engine_evaluator_a878e5b84a93c808806cad12019372722}
+
+
+Opens, i.\-e. prepares evaluation process. 
+
+
+
+Implements \hyperlink{class_go_s_u_m_1_1_c_model_evaluator_a0f5afddb7ed75aad687d3a00e44012a0}{Go\-S\-U\-M\-::\-C\-Model\-Evaluator}.
+
+\hypertarget{class_go_s_u_m_1_1_c_matlab_engine_evaluator_a68cf94eec612bdd72fd032f5631aad66}{\index{Go\-S\-U\-M\-::\-C\-Matlab\-Engine\-Evaluator@{Go\-S\-U\-M\-::\-C\-Matlab\-Engine\-Evaluator}!operator()@{operator()}}
+\index{operator()@{operator()}!GoSUM::CMatlabEngineEvaluator@{Go\-S\-U\-M\-::\-C\-Matlab\-Engine\-Evaluator}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}Array\-Xd Go\-S\-U\-M\-::\-C\-Matlab\-Engine\-Evaluator\-::operator() (
+\begin{DoxyParamCaption}
+\item[{const Array\-Xd \&}]{X}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_matlab_engine_evaluator_a68cf94eec612bdd72fd032f5631aad66}
+
+
+Returns output state evaluated on a single input parameter n-\/tuple. 
+
+
+
+Implements \hyperlink{class_go_s_u_m_1_1_c_model_evaluator_a17541eada67797802edcae14533361ad}{Go\-S\-U\-M\-::\-C\-Model\-Evaluator}.
+
+\hypertarget{class_go_s_u_m_1_1_c_matlab_engine_evaluator_ad33ed3b3581e5da2f7575c0e3f1d9e55}{\index{Go\-S\-U\-M\-::\-C\-Matlab\-Engine\-Evaluator@{Go\-S\-U\-M\-::\-C\-Matlab\-Engine\-Evaluator}!serialize@{serialize}}
+\index{serialize@{serialize}!GoSUM::CMatlabEngineEvaluator@{Go\-S\-U\-M\-::\-C\-Matlab\-Engine\-Evaluator}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Archive $>$ void Go\-S\-U\-M\-::\-C\-Matlab\-Engine\-Evaluator\-::serialize (
+\begin{DoxyParamCaption}
+\item[{Archive \&}]{ar, }
+\item[{const unsigned int}]{version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_matlab_engine_evaluator_ad33ed3b3581e5da2f7575c0e3f1d9e55}
+
+
+Reimplemented from \hyperlink{class_go_s_u_m_1_1_c_model_evaluator_a80e334f1496f3bee1da84cee050a72a1}{Go\-S\-U\-M\-::\-C\-Model\-Evaluator}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_matlab_engine_evaluator_ac98d07dd8f7b70e16ccb9a01abf56b9c}{\index{Go\-S\-U\-M\-::\-C\-Matlab\-Engine\-Evaluator@{Go\-S\-U\-M\-::\-C\-Matlab\-Engine\-Evaluator}!boost\-::serialization\-::access@{boost\-::serialization\-::access}}
+\index{boost\-::serialization\-::access@{boost\-::serialization\-::access}!GoSUM::CMatlabEngineEvaluator@{Go\-S\-U\-M\-::\-C\-Matlab\-Engine\-Evaluator}}
+\subsubsection[{boost\-::serialization\-::access}]{\setlength{\rightskip}{0pt plus 5cm}friend class boost\-::serialization\-::access\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_go_s_u_m_1_1_c_matlab_engine_evaluator_ac98d07dd8f7b70e16ccb9a01abf56b9c}
+
+
+Boost serialization. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_matlab_engine_evaluator_a27f4cdd2025a3dbcc975dc75d8fffb14}{\index{Go\-S\-U\-M\-::\-C\-Matlab\-Engine\-Evaluator@{Go\-S\-U\-M\-::\-C\-Matlab\-Engine\-Evaluator}!ep@{ep}}
+\index{ep@{ep}!GoSUM::CMatlabEngineEvaluator@{Go\-S\-U\-M\-::\-C\-Matlab\-Engine\-Evaluator}}
+\subsubsection[{ep}]{\setlength{\rightskip}{0pt plus 5cm}Engine$\ast$ Go\-S\-U\-M\-::\-C\-Matlab\-Engine\-Evaluator\-::ep\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_matlab_engine_evaluator_a27f4cdd2025a3dbcc975dc75d8fffb14}
+
+
+Points to the matlab engine. 
+
+\hypertarget{class_go_s_u_m_1_1_c_matlab_engine_evaluator_ae5cb5436e2edaabb0f0db24d41daac0f}{\index{Go\-S\-U\-M\-::\-C\-Matlab\-Engine\-Evaluator@{Go\-S\-U\-M\-::\-C\-Matlab\-Engine\-Evaluator}!matlab@{matlab}}
+\index{matlab@{matlab}!GoSUM::CMatlabEngineEvaluator@{Go\-S\-U\-M\-::\-C\-Matlab\-Engine\-Evaluator}}
+\subsubsection[{matlab}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-M\-A\-T\-L\-A\-B} Go\-S\-U\-M\-::\-C\-Matlab\-Engine\-Evaluator\-::matlab\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_matlab_engine_evaluator_ae5cb5436e2edaabb0f0db24d41daac0f}
+Object for matlab library functions. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Development/core/\hyperlink{_original_model_8h}{Original\-Model.\-h}\item 
+C\-:/\-Development/core/\hyperlink{_original_model_8cpp}{Original\-Model.\-cpp}\end{DoxyCompactItemize}

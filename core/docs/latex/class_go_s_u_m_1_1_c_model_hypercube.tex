@@ -1,0 +1,225 @@
+\hypertarget{class_go_s_u_m_1_1_c_model_hypercube}{\section{Go\-S\-U\-M\-:\-:C\-Model\-Hypercube Class Reference}
+\label{class_go_s_u_m_1_1_c_model_hypercube}\index{Go\-S\-U\-M\-::\-C\-Model\-Hypercube@{Go\-S\-U\-M\-::\-C\-Model\-Hypercube}}
+}
+
+
+{\ttfamily \#include $<$Hypercube.\-h$>$}
+
+Inheritance diagram for Go\-S\-U\-M\-:\-:C\-Model\-Hypercube\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_go_s_u_m_1_1_c_model_hypercube}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_go_s_u_m_1_1_c_model_hypercube_ab16030ca1067a265077a762fb56caf46}{C\-Model\-Hypercube} (\hyperlink{class_go_s_u_m_1_1_c_input_parameters}{C\-Input\-Parameters} $\ast$\-\_\-p\-I\-P)
+\item 
+virtual \hyperlink{class_go_s_u_m_1_1_c_model_hypercube_aa7ab99f4bad3c65123675a2d29c7cf87}{$\sim$\-C\-Model\-Hypercube} ()
+\item 
+virtual void \hyperlink{class_go_s_u_m_1_1_c_model_hypercube_acd201b7a6dcab576a907f85c127fa6ce}{generate} (int \-\_\-rssize, int \-\_\-dim, std\-::vector$<$ Array\-Xd $>$ \&\-\_\-samples)
+\begin{DoxyCompactList}\small\item\em Generates \-\_\-samples\-: \-\_\-rssize model points (satisifing constraints) of dimension \-\_\-dim. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \hyperlink{class_go_s_u_m_1_1_c_model_hypercube_a67de6632c6f6ca3685d2a750599974c6}{serialize} (Archive \&ar, const unsigned int version)
+\item 
+Array\-Xd \& \hyperlink{class_go_s_u_m_1_1_c_model_hypercube_a4d64e5c09e2ed5a270ac67d44635c07c}{generate\-H\-C\-Point} (Array\-Xd \&x)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_model_hypercube_ae52705f007701d127b797845f4c2ad6b}{generate\-H\-C\-Points} (int N, int dim, std\-::vector$<$ Array\-Xd $>$ \&y)
+\begin{DoxyCompactList}\small\item\em Generates N hypercube points. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_model_hypercube_a2b5a2350b562bbb6d130e7791d5bb5e4}{generate\-Model\-Points} (int N, int dim, std\-::vector$<$ Array\-Xd $>$ \&y)
+\begin{DoxyCompactList}\small\item\em Generates N model points. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_model_hypercube_a1419c038ee212ec1bc80420da32a7351}{check\-H\-C\-Points} (std\-::vector$<$ Array\-Xd $>$ \&y)
+\begin{DoxyCompactList}\small\item\em Checks if hypercube points when mapped to model points satisfy constraints. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_model_hypercube_adcf1da087b48ec609994853abae9c52e}{hc\-Points2\-Model\-Points} (std\-::vector$<$ Array\-Xd $>$ \&y)
+\begin{DoxyCompactList}\small\item\em Maps hypercube points to model points. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_go_s_u_m_1_1_c_model_hypercube_a1e92dd784f1c20b604fecd1a48bea2f4}{do\-Generate} (int \-\_\-rssize, int \-\_\-dim, std\-::vector$<$ Array\-Xd $>$ \&\-\_\-samples)=0
+\begin{DoxyCompactList}\small\item\em Core of the generation. \end{DoxyCompactList}\item 
+\hyperlink{class_go_s_u_m_1_1_c_model_hypercube_a2bd3061ba2c197b831389341a0ff5661}{C\-Model\-Hypercube} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_go_s_u_m_1_1_c_input_parameters}{C\-Input\-Parameters} $\ast$ \hyperlink{class_go_s_u_m_1_1_c_model_hypercube_a7382643c37cf27c4b1e881bdf08b7ff4}{p\-I\-P}
+\begin{DoxyCompactList}\small\item\em Holds pointer to input parameters. \end{DoxyCompactList}\item 
+\hyperlink{class_go_s_u_m_1_1_c_model_constraints}{C\-Model\-Constraints} $\ast$ \hyperlink{class_go_s_u_m_1_1_c_model_hypercube_afefc6601f2bb4b95c7bd56250fcef2c4}{p\-I\-C}
+\begin{DoxyCompactList}\small\item\em Holds pointer to input parameter constraints. \end{DoxyCompactList}\item 
+int \hyperlink{class_go_s_u_m_1_1_c_model_hypercube_a2b0d3bcbf328d89f7bcb3706795dbbc4}{maxtries}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_go_s_u_m_1_1_c_model_hypercube_ac98d07dd8f7b70e16ccb9a01abf56b9c}{boost\-::serialization\-::access}
+\begin{DoxyCompactList}\small\item\em Boost serialization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_model_hypercube_a2bd3061ba2c197b831389341a0ff5661}{\index{Go\-S\-U\-M\-::\-C\-Model\-Hypercube@{Go\-S\-U\-M\-::\-C\-Model\-Hypercube}!C\-Model\-Hypercube@{C\-Model\-Hypercube}}
+\index{C\-Model\-Hypercube@{C\-Model\-Hypercube}!GoSUM::CModelHypercube@{Go\-S\-U\-M\-::\-C\-Model\-Hypercube}}
+\subsubsection[{C\-Model\-Hypercube}]{\setlength{\rightskip}{0pt plus 5cm}Go\-S\-U\-M\-::\-C\-Model\-Hypercube\-::\-C\-Model\-Hypercube (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_model_hypercube_a2bd3061ba2c197b831389341a0ff5661}
+\hypertarget{class_go_s_u_m_1_1_c_model_hypercube_ab16030ca1067a265077a762fb56caf46}{\index{Go\-S\-U\-M\-::\-C\-Model\-Hypercube@{Go\-S\-U\-M\-::\-C\-Model\-Hypercube}!C\-Model\-Hypercube@{C\-Model\-Hypercube}}
+\index{C\-Model\-Hypercube@{C\-Model\-Hypercube}!GoSUM::CModelHypercube@{Go\-S\-U\-M\-::\-C\-Model\-Hypercube}}
+\subsubsection[{C\-Model\-Hypercube}]{\setlength{\rightskip}{0pt plus 5cm}Go\-S\-U\-M\-::\-C\-Model\-Hypercube\-::\-C\-Model\-Hypercube (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Input\-Parameters} $\ast$}]{\-\_\-p\-I\-P}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_model_hypercube_ab16030ca1067a265077a762fb56caf46}
+\hypertarget{class_go_s_u_m_1_1_c_model_hypercube_aa7ab99f4bad3c65123675a2d29c7cf87}{\index{Go\-S\-U\-M\-::\-C\-Model\-Hypercube@{Go\-S\-U\-M\-::\-C\-Model\-Hypercube}!$\sim$\-C\-Model\-Hypercube@{$\sim$\-C\-Model\-Hypercube}}
+\index{$\sim$\-C\-Model\-Hypercube@{$\sim$\-C\-Model\-Hypercube}!GoSUM::CModelHypercube@{Go\-S\-U\-M\-::\-C\-Model\-Hypercube}}
+\subsubsection[{$\sim$\-C\-Model\-Hypercube}]{\setlength{\rightskip}{0pt plus 5cm}virtual Go\-S\-U\-M\-::\-C\-Model\-Hypercube\-::$\sim$\-C\-Model\-Hypercube (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_model_hypercube_aa7ab99f4bad3c65123675a2d29c7cf87}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_model_hypercube_a1419c038ee212ec1bc80420da32a7351}{\index{Go\-S\-U\-M\-::\-C\-Model\-Hypercube@{Go\-S\-U\-M\-::\-C\-Model\-Hypercube}!check\-H\-C\-Points@{check\-H\-C\-Points}}
+\index{check\-H\-C\-Points@{check\-H\-C\-Points}!GoSUM::CModelHypercube@{Go\-S\-U\-M\-::\-C\-Model\-Hypercube}}
+\subsubsection[{check\-H\-C\-Points}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Model\-Hypercube\-::check\-H\-C\-Points (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ Array\-Xd $>$ \&}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_model_hypercube_a1419c038ee212ec1bc80420da32a7351}
+
+
+Checks if hypercube points when mapped to model points satisfy constraints. 
+
+\hypertarget{class_go_s_u_m_1_1_c_model_hypercube_a1e92dd784f1c20b604fecd1a48bea2f4}{\index{Go\-S\-U\-M\-::\-C\-Model\-Hypercube@{Go\-S\-U\-M\-::\-C\-Model\-Hypercube}!do\-Generate@{do\-Generate}}
+\index{do\-Generate@{do\-Generate}!GoSUM::CModelHypercube@{Go\-S\-U\-M\-::\-C\-Model\-Hypercube}}
+\subsubsection[{do\-Generate}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Go\-S\-U\-M\-::\-C\-Model\-Hypercube\-::do\-Generate (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-rssize, }
+\item[{int}]{\-\_\-dim, }
+\item[{std\-::vector$<$ Array\-Xd $>$ \&}]{\-\_\-samples}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{class_go_s_u_m_1_1_c_model_hypercube_a1e92dd784f1c20b604fecd1a48bea2f4}
+
+
+Core of the generation. 
+
+
+
+Implemented in \hyperlink{class_go_s_u_m_1_1_c_l_c_voronoi_h_c_a02e90ea8deecafc3b398709f748fa9af}{Go\-S\-U\-M\-::\-C\-L\-C\-Voronoi\-H\-C}, \hyperlink{class_go_s_u_m_1_1_c_c_voronoi_h_c_ae3ecc9c8e8c09e42c13b77d0bfa8c020}{Go\-S\-U\-M\-::\-C\-C\-Voronoi\-H\-C}, \hyperlink{class_go_s_u_m_1_1_c_monte_carlo_h_c_a848c0dded522350b9d6edb41497e19d1}{Go\-S\-U\-M\-::\-C\-Monte\-Carlo\-H\-C}, and \hyperlink{class_go_s_u_m_1_1_c_d_sample_h_c_aaa41eae7d120c7bf8d29ed2a0dc5c470}{Go\-S\-U\-M\-::\-C\-D\-Sample\-H\-C}.
+
+\hypertarget{class_go_s_u_m_1_1_c_model_hypercube_acd201b7a6dcab576a907f85c127fa6ce}{\index{Go\-S\-U\-M\-::\-C\-Model\-Hypercube@{Go\-S\-U\-M\-::\-C\-Model\-Hypercube}!generate@{generate}}
+\index{generate@{generate}!GoSUM::CModelHypercube@{Go\-S\-U\-M\-::\-C\-Model\-Hypercube}}
+\subsubsection[{generate}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Model\-Hypercube\-::generate (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-rssize, }
+\item[{int}]{\-\_\-dim, }
+\item[{std\-::vector$<$ Array\-Xd $>$ \&}]{\-\_\-samples}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_model_hypercube_acd201b7a6dcab576a907f85c127fa6ce}
+
+
+Generates \-\_\-samples\-: \-\_\-rssize model points (satisifing constraints) of dimension \-\_\-dim. 
+
+\hypertarget{class_go_s_u_m_1_1_c_model_hypercube_a4d64e5c09e2ed5a270ac67d44635c07c}{\index{Go\-S\-U\-M\-::\-C\-Model\-Hypercube@{Go\-S\-U\-M\-::\-C\-Model\-Hypercube}!generate\-H\-C\-Point@{generate\-H\-C\-Point}}
+\index{generate\-H\-C\-Point@{generate\-H\-C\-Point}!GoSUM::CModelHypercube@{Go\-S\-U\-M\-::\-C\-Model\-Hypercube}}
+\subsubsection[{generate\-H\-C\-Point}]{\setlength{\rightskip}{0pt plus 5cm}Array\-Xd\& Go\-S\-U\-M\-::\-C\-Model\-Hypercube\-::generate\-H\-C\-Point (
+\begin{DoxyParamCaption}
+\item[{Array\-Xd \&}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_model_hypercube_a4d64e5c09e2ed5a270ac67d44635c07c}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Generates single hypercube point. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_go_s_u_m_1_1_c_model_hypercube_ae52705f007701d127b797845f4c2ad6b}{\index{Go\-S\-U\-M\-::\-C\-Model\-Hypercube@{Go\-S\-U\-M\-::\-C\-Model\-Hypercube}!generate\-H\-C\-Points@{generate\-H\-C\-Points}}
+\index{generate\-H\-C\-Points@{generate\-H\-C\-Points}!GoSUM::CModelHypercube@{Go\-S\-U\-M\-::\-C\-Model\-Hypercube}}
+\subsubsection[{generate\-H\-C\-Points}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Model\-Hypercube\-::generate\-H\-C\-Points (
+\begin{DoxyParamCaption}
+\item[{int}]{N, }
+\item[{int}]{dim, }
+\item[{std\-::vector$<$ Array\-Xd $>$ \&}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_model_hypercube_ae52705f007701d127b797845f4c2ad6b}
+
+
+Generates N hypercube points. 
+
+\hypertarget{class_go_s_u_m_1_1_c_model_hypercube_a2b5a2350b562bbb6d130e7791d5bb5e4}{\index{Go\-S\-U\-M\-::\-C\-Model\-Hypercube@{Go\-S\-U\-M\-::\-C\-Model\-Hypercube}!generate\-Model\-Points@{generate\-Model\-Points}}
+\index{generate\-Model\-Points@{generate\-Model\-Points}!GoSUM::CModelHypercube@{Go\-S\-U\-M\-::\-C\-Model\-Hypercube}}
+\subsubsection[{generate\-Model\-Points}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Model\-Hypercube\-::generate\-Model\-Points (
+\begin{DoxyParamCaption}
+\item[{int}]{N, }
+\item[{int}]{dim, }
+\item[{std\-::vector$<$ Array\-Xd $>$ \&}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_model_hypercube_a2b5a2350b562bbb6d130e7791d5bb5e4}
+
+
+Generates N model points. 
+
+\hypertarget{class_go_s_u_m_1_1_c_model_hypercube_adcf1da087b48ec609994853abae9c52e}{\index{Go\-S\-U\-M\-::\-C\-Model\-Hypercube@{Go\-S\-U\-M\-::\-C\-Model\-Hypercube}!hc\-Points2\-Model\-Points@{hc\-Points2\-Model\-Points}}
+\index{hc\-Points2\-Model\-Points@{hc\-Points2\-Model\-Points}!GoSUM::CModelHypercube@{Go\-S\-U\-M\-::\-C\-Model\-Hypercube}}
+\subsubsection[{hc\-Points2\-Model\-Points}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Model\-Hypercube\-::hc\-Points2\-Model\-Points (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ Array\-Xd $>$ \&}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_model_hypercube_adcf1da087b48ec609994853abae9c52e}
+
+
+Maps hypercube points to model points. 
+
+\hypertarget{class_go_s_u_m_1_1_c_model_hypercube_a67de6632c6f6ca3685d2a750599974c6}{\index{Go\-S\-U\-M\-::\-C\-Model\-Hypercube@{Go\-S\-U\-M\-::\-C\-Model\-Hypercube}!serialize@{serialize}}
+\index{serialize@{serialize}!GoSUM::CModelHypercube@{Go\-S\-U\-M\-::\-C\-Model\-Hypercube}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Archive $>$ void Go\-S\-U\-M\-::\-C\-Model\-Hypercube\-::serialize (
+\begin{DoxyParamCaption}
+\item[{Archive \&}]{ar, }
+\item[{const unsigned int}]{version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_model_hypercube_a67de6632c6f6ca3685d2a750599974c6}
+
+
+Reimplemented from \hyperlink{class_go_s_u_m_1_1_c_hypercube_a7303a209b69f0d628b8d2249867e9247}{Go\-S\-U\-M\-::\-C\-Hypercube}.
+
+
+
+Reimplemented in \hyperlink{class_go_s_u_m_1_1_c_l_c_voronoi_h_c_a98f588c33a8f2e2f4b681b48d63f2109}{Go\-S\-U\-M\-::\-C\-L\-C\-Voronoi\-H\-C}, \hyperlink{class_go_s_u_m_1_1_c_c_voronoi_h_c_abbeaabd93028069b81be4dfc078e3d02}{Go\-S\-U\-M\-::\-C\-C\-Voronoi\-H\-C}, and \hyperlink{class_go_s_u_m_1_1_c_monte_carlo_h_c_ae04ab348b02072028893eee2541cadf8}{Go\-S\-U\-M\-::\-C\-Monte\-Carlo\-H\-C}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_model_hypercube_ac98d07dd8f7b70e16ccb9a01abf56b9c}{\index{Go\-S\-U\-M\-::\-C\-Model\-Hypercube@{Go\-S\-U\-M\-::\-C\-Model\-Hypercube}!boost\-::serialization\-::access@{boost\-::serialization\-::access}}
+\index{boost\-::serialization\-::access@{boost\-::serialization\-::access}!GoSUM::CModelHypercube@{Go\-S\-U\-M\-::\-C\-Model\-Hypercube}}
+\subsubsection[{boost\-::serialization\-::access}]{\setlength{\rightskip}{0pt plus 5cm}friend class boost\-::serialization\-::access\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_go_s_u_m_1_1_c_model_hypercube_ac98d07dd8f7b70e16ccb9a01abf56b9c}
+
+
+Boost serialization. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_model_hypercube_a2b0d3bcbf328d89f7bcb3706795dbbc4}{\index{Go\-S\-U\-M\-::\-C\-Model\-Hypercube@{Go\-S\-U\-M\-::\-C\-Model\-Hypercube}!maxtries@{maxtries}}
+\index{maxtries@{maxtries}!GoSUM::CModelHypercube@{Go\-S\-U\-M\-::\-C\-Model\-Hypercube}}
+\subsubsection[{maxtries}]{\setlength{\rightskip}{0pt plus 5cm}int Go\-S\-U\-M\-::\-C\-Model\-Hypercube\-::maxtries\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_model_hypercube_a2b0d3bcbf328d89f7bcb3706795dbbc4}
+Holds maximal number of tries to satisfy model constraints. \hypertarget{class_go_s_u_m_1_1_c_model_hypercube_afefc6601f2bb4b95c7bd56250fcef2c4}{\index{Go\-S\-U\-M\-::\-C\-Model\-Hypercube@{Go\-S\-U\-M\-::\-C\-Model\-Hypercube}!p\-I\-C@{p\-I\-C}}
+\index{p\-I\-C@{p\-I\-C}!GoSUM::CModelHypercube@{Go\-S\-U\-M\-::\-C\-Model\-Hypercube}}
+\subsubsection[{p\-I\-C}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Model\-Constraints}$\ast$ Go\-S\-U\-M\-::\-C\-Model\-Hypercube\-::p\-I\-C\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_model_hypercube_afefc6601f2bb4b95c7bd56250fcef2c4}
+
+
+Holds pointer to input parameter constraints. 
+
+\hypertarget{class_go_s_u_m_1_1_c_model_hypercube_a7382643c37cf27c4b1e881bdf08b7ff4}{\index{Go\-S\-U\-M\-::\-C\-Model\-Hypercube@{Go\-S\-U\-M\-::\-C\-Model\-Hypercube}!p\-I\-P@{p\-I\-P}}
+\index{p\-I\-P@{p\-I\-P}!GoSUM::CModelHypercube@{Go\-S\-U\-M\-::\-C\-Model\-Hypercube}}
+\subsubsection[{p\-I\-P}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Input\-Parameters}$\ast$ Go\-S\-U\-M\-::\-C\-Model\-Hypercube\-::p\-I\-P\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_model_hypercube_a7382643c37cf27c4b1e881bdf08b7ff4}
+
+
+Holds pointer to input parameters. 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Development/core/\hyperlink{_hypercube_8h}{Hypercube.\-h}\item 
+C\-:/\-Development/core/\hyperlink{_hypercube_8cpp}{Hypercube.\-cpp}\end{DoxyCompactItemize}

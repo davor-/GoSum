@@ -1,0 +1,149 @@
+\hypertarget{class_go_s_u_m_1_1_c_m_a_d_s}{\section{Go\-S\-U\-M\-:\-:C\-M\-A\-D\-S Class Reference}
+\label{class_go_s_u_m_1_1_c_m_a_d_s}\index{Go\-S\-U\-M\-::\-C\-M\-A\-D\-S@{Go\-S\-U\-M\-::\-C\-M\-A\-D\-S}}
+}
+
+
+class for the mesh addaptive direct serach, i.\-e. interface for N\-O\-M\-A\-D  
+
+
+
+
+{\ttfamily \#include $<$M\-A\-D\-S\-Optimization.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_go_s_u_m_1_1_c_m_a_d_s_a7cab80ccbd0ee8d72f6e619d8aeb887c}{C\-M\-A\-D\-S} ()
+\item 
+virtual \hyperlink{class_go_s_u_m_1_1_c_m_a_d_s_a7b8028bbe89d113c40b59b8d77694d19}{$\sim$\-C\-M\-A\-D\-S} ()
+\item 
+Array\-Xd \hyperlink{class_go_s_u_m_1_1_c_m_a_d_s_a36e83ee14a6fcc580ed3f5e804fedcfd}{optimize} (\hyperlink{class_go_s_u_m_1_1_c_optimization_problem}{C\-Optimization\-Problem} $\ast$\-\_\-p\-O\-P, std\-::ostream \&\-\_\-out=std\-::cout)
+\begin{DoxyCompactList}\small\item\em solves the optimizations problem \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static N\-O\-M\-A\-D\-::\-Point \hyperlink{class_go_s_u_m_1_1_c_m_a_d_s_a8fa658bbda2afe664d1a4f18e319fae2}{Array\-Xd2\-N\-O\-M\-A\-D\-Point} (const Array\-Xd \&x)
+\begin{DoxyCompactList}\small\item\em utility\-: converts Array\-Xd to N\-O\-M\-A\-D\-::\-Point \end{DoxyCompactList}\item 
+static Array\-Xd \hyperlink{class_go_s_u_m_1_1_c_m_a_d_s_a877db8a831536c1e7907386e941b2cd1}{N\-O\-M\-A\-D\-Point2\-Array\-Xd} (const N\-O\-M\-A\-D\-::\-Point \&p)
+\begin{DoxyCompactList}\small\item\em utility\-: converts N\-O\-M\-A\-D\-::\-Point to Array\-Xd \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \hyperlink{class_go_s_u_m_1_1_c_m_a_d_s_a17c1bc35dc49c5955e80cb3bc3b88565}{serialize} (Archive \&ar, const unsigned int version)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_go_s_u_m_1_1_c_optimization_problem}{C\-Optimization\-Problem} $\ast$ \hyperlink{class_go_s_u_m_1_1_c_m_a_d_s_a181584f16f368a69f6bd2d71e2f88f3c}{p\-O\-P}
+\begin{DoxyCompactList}\small\item\em points to the optimization problem \end{DoxyCompactList}\item 
+int \hyperlink{class_go_s_u_m_1_1_c_m_a_d_s_a32b63abd38e4866c6d75ebb7d0f51195}{maxeval}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_go_s_u_m_1_1_c_m_a_d_s_ac98d07dd8f7b70e16ccb9a01abf56b9c}{boost\-::serialization\-::access}
+\begin{DoxyCompactList}\small\item\em boost serialization \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+class for the mesh addaptive direct serach, i.\-e. interface for N\-O\-M\-A\-D 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_m_a_d_s_a7cab80ccbd0ee8d72f6e619d8aeb887c}{\index{Go\-S\-U\-M\-::\-C\-M\-A\-D\-S@{Go\-S\-U\-M\-::\-C\-M\-A\-D\-S}!C\-M\-A\-D\-S@{C\-M\-A\-D\-S}}
+\index{C\-M\-A\-D\-S@{C\-M\-A\-D\-S}!GoSUM::CMADS@{Go\-S\-U\-M\-::\-C\-M\-A\-D\-S}}
+\subsubsection[{C\-M\-A\-D\-S}]{\setlength{\rightskip}{0pt plus 5cm}Go\-S\-U\-M\-::\-C\-M\-A\-D\-S\-::\-C\-M\-A\-D\-S (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_m_a_d_s_a7cab80ccbd0ee8d72f6e619d8aeb887c}
+\hypertarget{class_go_s_u_m_1_1_c_m_a_d_s_a7b8028bbe89d113c40b59b8d77694d19}{\index{Go\-S\-U\-M\-::\-C\-M\-A\-D\-S@{Go\-S\-U\-M\-::\-C\-M\-A\-D\-S}!$\sim$\-C\-M\-A\-D\-S@{$\sim$\-C\-M\-A\-D\-S}}
+\index{$\sim$\-C\-M\-A\-D\-S@{$\sim$\-C\-M\-A\-D\-S}!GoSUM::CMADS@{Go\-S\-U\-M\-::\-C\-M\-A\-D\-S}}
+\subsubsection[{$\sim$\-C\-M\-A\-D\-S}]{\setlength{\rightskip}{0pt plus 5cm}virtual Go\-S\-U\-M\-::\-C\-M\-A\-D\-S\-::$\sim$\-C\-M\-A\-D\-S (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_m_a_d_s_a7b8028bbe89d113c40b59b8d77694d19}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_m_a_d_s_a8fa658bbda2afe664d1a4f18e319fae2}{\index{Go\-S\-U\-M\-::\-C\-M\-A\-D\-S@{Go\-S\-U\-M\-::\-C\-M\-A\-D\-S}!Array\-Xd2\-N\-O\-M\-A\-D\-Point@{Array\-Xd2\-N\-O\-M\-A\-D\-Point}}
+\index{Array\-Xd2\-N\-O\-M\-A\-D\-Point@{Array\-Xd2\-N\-O\-M\-A\-D\-Point}!GoSUM::CMADS@{Go\-S\-U\-M\-::\-C\-M\-A\-D\-S}}
+\subsubsection[{Array\-Xd2\-N\-O\-M\-A\-D\-Point}]{\setlength{\rightskip}{0pt plus 5cm}N\-O\-M\-A\-D\-::\-Point Go\-S\-U\-M\-::\-C\-M\-A\-D\-S\-::\-Array\-Xd2\-N\-O\-M\-A\-D\-Point (
+\begin{DoxyParamCaption}
+\item[{const Array\-Xd \&}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_go_s_u_m_1_1_c_m_a_d_s_a8fa658bbda2afe664d1a4f18e319fae2}
+
+
+utility\-: converts Array\-Xd to N\-O\-M\-A\-D\-::\-Point 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & utility\-: converts Array\-Xd to N\-O\-M\-A\-D\-::\-Point \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_go_s_u_m_1_1_c_m_a_d_s_a877db8a831536c1e7907386e941b2cd1}{\index{Go\-S\-U\-M\-::\-C\-M\-A\-D\-S@{Go\-S\-U\-M\-::\-C\-M\-A\-D\-S}!N\-O\-M\-A\-D\-Point2\-Array\-Xd@{N\-O\-M\-A\-D\-Point2\-Array\-Xd}}
+\index{N\-O\-M\-A\-D\-Point2\-Array\-Xd@{N\-O\-M\-A\-D\-Point2\-Array\-Xd}!GoSUM::CMADS@{Go\-S\-U\-M\-::\-C\-M\-A\-D\-S}}
+\subsubsection[{N\-O\-M\-A\-D\-Point2\-Array\-Xd}]{\setlength{\rightskip}{0pt plus 5cm}Array\-Xd Go\-S\-U\-M\-::\-C\-M\-A\-D\-S\-::\-N\-O\-M\-A\-D\-Point2\-Array\-Xd (
+\begin{DoxyParamCaption}
+\item[{const N\-O\-M\-A\-D\-::\-Point \&}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_go_s_u_m_1_1_c_m_a_d_s_a877db8a831536c1e7907386e941b2cd1}
+
+
+utility\-: converts N\-O\-M\-A\-D\-::\-Point to Array\-Xd 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & utility\-: converts N\-O\-M\-A\-D\-::\-Point to Array\-Xd \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_go_s_u_m_1_1_c_m_a_d_s_a36e83ee14a6fcc580ed3f5e804fedcfd}{\index{Go\-S\-U\-M\-::\-C\-M\-A\-D\-S@{Go\-S\-U\-M\-::\-C\-M\-A\-D\-S}!optimize@{optimize}}
+\index{optimize@{optimize}!GoSUM::CMADS@{Go\-S\-U\-M\-::\-C\-M\-A\-D\-S}}
+\subsubsection[{optimize}]{\setlength{\rightskip}{0pt plus 5cm}Array\-Xd Go\-S\-U\-M\-::\-C\-M\-A\-D\-S\-::optimize (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Optimization\-Problem} $\ast$}]{\-\_\-p\-O\-P, }
+\item[{std\-::ostream \&}]{\-\_\-out = {\ttfamily std\-:\-:cout}}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_m_a_d_s_a36e83ee14a6fcc580ed3f5e804fedcfd}
+
+
+solves the optimizations problem 
+
+\hypertarget{class_go_s_u_m_1_1_c_m_a_d_s_a17c1bc35dc49c5955e80cb3bc3b88565}{\index{Go\-S\-U\-M\-::\-C\-M\-A\-D\-S@{Go\-S\-U\-M\-::\-C\-M\-A\-D\-S}!serialize@{serialize}}
+\index{serialize@{serialize}!GoSUM::CMADS@{Go\-S\-U\-M\-::\-C\-M\-A\-D\-S}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Archive $>$ void Go\-S\-U\-M\-::\-C\-M\-A\-D\-S\-::serialize (
+\begin{DoxyParamCaption}
+\item[{Archive \&}]{ar, }
+\item[{const unsigned int}]{version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_m_a_d_s_a17c1bc35dc49c5955e80cb3bc3b88565}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_m_a_d_s_ac98d07dd8f7b70e16ccb9a01abf56b9c}{\index{Go\-S\-U\-M\-::\-C\-M\-A\-D\-S@{Go\-S\-U\-M\-::\-C\-M\-A\-D\-S}!boost\-::serialization\-::access@{boost\-::serialization\-::access}}
+\index{boost\-::serialization\-::access@{boost\-::serialization\-::access}!GoSUM::CMADS@{Go\-S\-U\-M\-::\-C\-M\-A\-D\-S}}
+\subsubsection[{boost\-::serialization\-::access}]{\setlength{\rightskip}{0pt plus 5cm}friend class boost\-::serialization\-::access\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_go_s_u_m_1_1_c_m_a_d_s_ac98d07dd8f7b70e16ccb9a01abf56b9c}
+
+
+boost serialization 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_m_a_d_s_a32b63abd38e4866c6d75ebb7d0f51195}{\index{Go\-S\-U\-M\-::\-C\-M\-A\-D\-S@{Go\-S\-U\-M\-::\-C\-M\-A\-D\-S}!maxeval@{maxeval}}
+\index{maxeval@{maxeval}!GoSUM::CMADS@{Go\-S\-U\-M\-::\-C\-M\-A\-D\-S}}
+\subsubsection[{maxeval}]{\setlength{\rightskip}{0pt plus 5cm}int Go\-S\-U\-M\-::\-C\-M\-A\-D\-S\-::maxeval\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_m_a_d_s_a32b63abd38e4866c6d75ebb7d0f51195}
+holds maximal number of objective \& constraints evaluations during optimization \hypertarget{class_go_s_u_m_1_1_c_m_a_d_s_a181584f16f368a69f6bd2d71e2f88f3c}{\index{Go\-S\-U\-M\-::\-C\-M\-A\-D\-S@{Go\-S\-U\-M\-::\-C\-M\-A\-D\-S}!p\-O\-P@{p\-O\-P}}
+\index{p\-O\-P@{p\-O\-P}!GoSUM::CMADS@{Go\-S\-U\-M\-::\-C\-M\-A\-D\-S}}
+\subsubsection[{p\-O\-P}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Optimization\-Problem}$\ast$ Go\-S\-U\-M\-::\-C\-M\-A\-D\-S\-::p\-O\-P\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_m_a_d_s_a181584f16f368a69f6bd2d71e2f88f3c}
+
+
+points to the optimization problem 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Development/core/\hyperlink{_m_a_d_s_optimization_8h}{M\-A\-D\-S\-Optimization.\-h}\item 
+C\-:/\-Development/core/\hyperlink{_m_a_d_s_optimization_8cpp}{M\-A\-D\-S\-Optimization.\-cpp}\end{DoxyCompactItemize}

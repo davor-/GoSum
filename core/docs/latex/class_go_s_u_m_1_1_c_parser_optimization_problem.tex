@@ -1,0 +1,387 @@
+\hypertarget{class_go_s_u_m_1_1_c_parser_optimization_problem}{\section{Go\-S\-U\-M\-:\-:C\-Parser\-Optimization\-Problem Class Reference}
+\label{class_go_s_u_m_1_1_c_parser_optimization_problem}\index{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem@{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}}
+}
+
+
+Class for the optimization problem with parser functions.  
+
+
+
+
+{\ttfamily \#include $<$Parser\-Optimization\-Problem.\-h$>$}
+
+Inheritance diagram for Go\-S\-U\-M\-:\-:C\-Parser\-Optimization\-Problem\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{class_go_s_u_m_1_1_c_parser_optimization_problem}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_go_s_u_m_1_1_c_parser_optimization_problem_ae670707f9d4fea8169702fad66e8d06d}{C\-Parser\-Optimization\-Problem} ()
+\item 
+virtual \hyperlink{class_go_s_u_m_1_1_c_parser_optimization_problem_acd03172cb902fe1de962bb53004f34dd}{$\sim$\-C\-Parser\-Optimization\-Problem} ()
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_parser_optimization_problem_a03bde75b606e470d2b1f3f995295c03f}{set\-Objective\-Expression} (const std\-::string \&\-\_\-fexpr)
+\begin{DoxyCompactList}\small\item\em Sets objective expression. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{class_go_s_u_m_1_1_c_parser_optimization_problem_a78240780535507b4f29472fc1712e722}{objective\-Expression} ()
+\begin{DoxyCompactList}\small\item\em Returns objective expression. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_go_s_u_m_1_1_c_parser_optimization_problem_a038c506b870e9e77f7fd50b6f9864dcb}{constraints\-Size} () const 
+\begin{DoxyCompactList}\small\item\em Returns size of the constraints. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_parser_optimization_problem_abd7f99e4a42d777aaad785d0aba49e2c}{clear\-Constraint\-Expressions} ()
+\begin{DoxyCompactList}\small\item\em Clears constraints expressions. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_parser_optimization_problem_a8e204a6010df7c6fc7c3c030e2624a3b}{add\-Constraint\-Expression} (const std\-::string \&\-\_\-gexpr)
+\begin{DoxyCompactList}\small\item\em Adds constraint expression. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_parser_optimization_problem_a0413dc4ee4875ae8eedf1801769ad03e}{erase\-Constraint\-Expression} (int \-\_\-at)
+\begin{DoxyCompactList}\small\item\em Erases particular constraint expression. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_parser_optimization_problem_a4e4a1664dc3ba561fd5d00baf76e122d}{set\-Constraint\-Expression} (const std\-::string \&\-\_\-gexpr, int \-\_\-at)
+\begin{DoxyCompactList}\small\item\em Sets particular constraint expression. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{class_go_s_u_m_1_1_c_parser_optimization_problem_a1832758ae7eebc90862f5a430b59a819}{constraint\-Expression} (int \-\_\-at)
+\begin{DoxyCompactList}\small\item\em Returns particular constraint expression. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{class_go_s_u_m_1_1_c_parser_optimization_problem_aaa0b8c69caf31aaef83963d2bced9bf5}{roundoff\-Equality} (std\-::string \-\_\-expr)
+\begin{DoxyCompactList}\small\item\em If \-\_\-expr is an equality expression left=right it returns expression abs(left-\/right)$<$=T\-I\-N\-Y. \end{DoxyCompactList}\item 
+bool \hyperlink{class_go_s_u_m_1_1_c_parser_optimization_problem_a92202addf0da14fe57311b0015296f44}{validate\-Expressions} ()
+\begin{DoxyCompactList}\small\item\em Validates all expressions. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_parser_optimization_problem_af7f009a42704da441d1899fda94c1928}{parse\-Expressions} ()
+\begin{DoxyCompactList}\small\item\em Parses all expressions. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_go_s_u_m_1_1_c_parser_optimization_problem_a56ce1fd2aada271c5aece350dd9b3d03}{open\-Optimization} ()
+\item 
+virtual void \hyperlink{class_go_s_u_m_1_1_c_parser_optimization_problem_aa750bd3725ca5e71d8ce9901e78661a8}{close\-Optimization} ()
+\begin{DoxyCompactList}\small\item\em Opens, i.\-e. prepares optimization. \end{DoxyCompactList}\item 
+double \hyperlink{class_go_s_u_m_1_1_c_parser_optimization_problem_a8ab9a986329b04402af2a25ee19c9fd4}{objective} (const Array\-Xd \&\-\_\-mv)
+\begin{DoxyCompactList}\small\item\em Closes optimization, i.\-e. closes what was opened in open\-Optimization. \end{DoxyCompactList}\item 
+double \hyperlink{class_go_s_u_m_1_1_c_parser_optimization_problem_a90d550681fe3ef512822cfa9598eb5b0}{constraint} (const Array\-Xd \&\-\_\-mv, int \-\_\-at)
+\begin{DoxyCompactList}\small\item\em Evalautes particular constraint value from model variables values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boost\-::signal$<$ void()$>$ \hyperlink{class_go_s_u_m_1_1_c_parser_optimization_problem_aab0e689caaf0806fc8ebbe45f9f7861c}{optimizing\-Progressed}
+\begin{DoxyCompactList}\small\item\em Signal for optimizing progress, emitted on single objective evaluation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \hyperlink{class_go_s_u_m_1_1_c_parser_optimization_problem_ae04362457ca2031eb85373131d8bbd12}{serialize} (Archive \&ar, const unsigned int version)
+\item 
+virtual void \hyperlink{class_go_s_u_m_1_1_c_parser_optimization_problem_a4d5c16683fc5feed6ed58c02206fd14b}{set\-Variable\-Names} ()=0
+\begin{DoxyCompactList}\small\item\em Sets variable names for the parser. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string \hyperlink{class_go_s_u_m_1_1_c_parser_optimization_problem_aa7f4b76eee9da8610745c67772c768d1}{names}
+\begin{DoxyCompactList}\small\item\em Holds all names that are permited in objective and constraint expressions. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{class_go_s_u_m_1_1_c_parser_optimization_problem_a0e5ca56845f6f3b1fc0822ded4d8ff28}{fexpr}
+\begin{DoxyCompactList}\small\item\em Holds objective function expression. \end{DoxyCompactList}\item 
+std\-::vector$<$ std\-::string $>$ \hyperlink{class_go_s_u_m_1_1_c_parser_optimization_problem_a41e738f2f8251c6229a7aafd671cced0}{gexpr}
+\begin{DoxyCompactList}\small\item\em Holds expressions for constraints. \end{DoxyCompactList}\item 
+Function\-Parser \hyperlink{class_go_s_u_m_1_1_c_parser_optimization_problem_a0c6b06efec51542bc99e397b7d15afa0}{f}
+\begin{DoxyCompactList}\small\item\em Holds function parser for objective function. \end{DoxyCompactList}\item 
+std\-::vector$<$ Function\-Parser $>$ \hyperlink{class_go_s_u_m_1_1_c_parser_optimization_problem_a8ba8e1a4d04ba3ca2bc8367bf3c8aa19}{g}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_go_s_u_m_1_1_c_parser_optimization_problem_ac98d07dd8f7b70e16ccb9a01abf56b9c}{boost\-::serialization\-::access}
+\begin{DoxyCompactList}\small\item\em Boost serialization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for the optimization problem with parser functions. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_parser_optimization_problem_ae670707f9d4fea8169702fad66e8d06d}{\index{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem@{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}!C\-Parser\-Optimization\-Problem@{C\-Parser\-Optimization\-Problem}}
+\index{C\-Parser\-Optimization\-Problem@{C\-Parser\-Optimization\-Problem}!GoSUM::CParserOptimizationProblem@{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}}
+\subsubsection[{C\-Parser\-Optimization\-Problem}]{\setlength{\rightskip}{0pt plus 5cm}Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem\-::\-C\-Parser\-Optimization\-Problem (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_parser_optimization_problem_ae670707f9d4fea8169702fad66e8d06d}
+\hypertarget{class_go_s_u_m_1_1_c_parser_optimization_problem_acd03172cb902fe1de962bb53004f34dd}{\index{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem@{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}!$\sim$\-C\-Parser\-Optimization\-Problem@{$\sim$\-C\-Parser\-Optimization\-Problem}}
+\index{$\sim$\-C\-Parser\-Optimization\-Problem@{$\sim$\-C\-Parser\-Optimization\-Problem}!GoSUM::CParserOptimizationProblem@{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}}
+\subsubsection[{$\sim$\-C\-Parser\-Optimization\-Problem}]{\setlength{\rightskip}{0pt plus 5cm}virtual Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem\-::$\sim$\-C\-Parser\-Optimization\-Problem (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_parser_optimization_problem_acd03172cb902fe1de962bb53004f34dd}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_parser_optimization_problem_a8e204a6010df7c6fc7c3c030e2624a3b}{\index{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem@{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}!add\-Constraint\-Expression@{add\-Constraint\-Expression}}
+\index{add\-Constraint\-Expression@{add\-Constraint\-Expression}!GoSUM::CParserOptimizationProblem@{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}}
+\subsubsection[{add\-Constraint\-Expression}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem\-::add\-Constraint\-Expression (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{\-\_\-gexpr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_parser_optimization_problem_a8e204a6010df7c6fc7c3c030e2624a3b}
+
+
+Adds constraint expression. 
+
+\hypertarget{class_go_s_u_m_1_1_c_parser_optimization_problem_abd7f99e4a42d777aaad785d0aba49e2c}{\index{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem@{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}!clear\-Constraint\-Expressions@{clear\-Constraint\-Expressions}}
+\index{clear\-Constraint\-Expressions@{clear\-Constraint\-Expressions}!GoSUM::CParserOptimizationProblem@{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}}
+\subsubsection[{clear\-Constraint\-Expressions}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem\-::clear\-Constraint\-Expressions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_parser_optimization_problem_abd7f99e4a42d777aaad785d0aba49e2c}
+
+
+Clears constraints expressions. 
+
+\hypertarget{class_go_s_u_m_1_1_c_parser_optimization_problem_aa750bd3725ca5e71d8ce9901e78661a8}{\index{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem@{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}!close\-Optimization@{close\-Optimization}}
+\index{close\-Optimization@{close\-Optimization}!GoSUM::CParserOptimizationProblem@{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}}
+\subsubsection[{close\-Optimization}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem\-::close\-Optimization (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_parser_optimization_problem_aa750bd3725ca5e71d8ce9901e78661a8}
+
+
+Opens, i.\-e. prepares optimization. 
+
+
+
+Reimplemented from \hyperlink{class_c_optimization_problem_a30fa53ab400882df886d28109ed92ea1}{C\-Optimization\-Problem}.
+
+
+
+Reimplemented in \hyperlink{class_go_s_u_m_1_1_c_original_optimization_problem_a75b28528cda5b1be7bdc2cc4a309a314}{Go\-S\-U\-M\-::\-C\-Original\-Optimization\-Problem}, and \hyperlink{class_go_s_u_m_1_1_c_simple_optimization_problem_af34b88f099f94727611b79d5f5ca4e9a}{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem}.
+
+\hypertarget{class_go_s_u_m_1_1_c_parser_optimization_problem_a90d550681fe3ef512822cfa9598eb5b0}{\index{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem@{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}!constraint@{constraint}}
+\index{constraint@{constraint}!GoSUM::CParserOptimizationProblem@{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}}
+\subsubsection[{constraint}]{\setlength{\rightskip}{0pt plus 5cm}double Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem\-::constraint (
+\begin{DoxyParamCaption}
+\item[{const Array\-Xd \&}]{\-\_\-mv, }
+\item[{int}]{\-\_\-at}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_parser_optimization_problem_a90d550681fe3ef512822cfa9598eb5b0}
+
+
+Evalautes particular constraint value from model variables values. 
+
+
+
+Implements \hyperlink{class_c_optimization_problem_ac37dd6a981b9049943189b3fea343f64}{C\-Optimization\-Problem}.
+
+\hypertarget{class_go_s_u_m_1_1_c_parser_optimization_problem_a1832758ae7eebc90862f5a430b59a819}{\index{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem@{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}!constraint\-Expression@{constraint\-Expression}}
+\index{constraint\-Expression@{constraint\-Expression}!GoSUM::CParserOptimizationProblem@{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}}
+\subsubsection[{constraint\-Expression}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem\-::constraint\-Expression (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-at}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_parser_optimization_problem_a1832758ae7eebc90862f5a430b59a819}
+
+
+Returns particular constraint expression. 
+
+\hypertarget{class_go_s_u_m_1_1_c_parser_optimization_problem_a038c506b870e9e77f7fd50b6f9864dcb}{\index{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem@{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}!constraints\-Size@{constraints\-Size}}
+\index{constraints\-Size@{constraints\-Size}!GoSUM::CParserOptimizationProblem@{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}}
+\subsubsection[{constraints\-Size}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem\-::constraints\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_parser_optimization_problem_a038c506b870e9e77f7fd50b6f9864dcb}
+
+
+Returns size of the constraints. 
+
+
+
+Implements \hyperlink{class_c_optimization_problem_aa4c04d9a7d3885450e9c528f5446c241}{C\-Optimization\-Problem}.
+
+\hypertarget{class_go_s_u_m_1_1_c_parser_optimization_problem_a0413dc4ee4875ae8eedf1801769ad03e}{\index{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem@{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}!erase\-Constraint\-Expression@{erase\-Constraint\-Expression}}
+\index{erase\-Constraint\-Expression@{erase\-Constraint\-Expression}!GoSUM::CParserOptimizationProblem@{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}}
+\subsubsection[{erase\-Constraint\-Expression}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem\-::erase\-Constraint\-Expression (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-at}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_parser_optimization_problem_a0413dc4ee4875ae8eedf1801769ad03e}
+
+
+Erases particular constraint expression. 
+
+\hypertarget{class_go_s_u_m_1_1_c_parser_optimization_problem_a8ab9a986329b04402af2a25ee19c9fd4}{\index{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem@{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}!objective@{objective}}
+\index{objective@{objective}!GoSUM::CParserOptimizationProblem@{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}}
+\subsubsection[{objective}]{\setlength{\rightskip}{0pt plus 5cm}double Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem\-::objective (
+\begin{DoxyParamCaption}
+\item[{const Array\-Xd \&}]{\-\_\-mv}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_parser_optimization_problem_a8ab9a986329b04402af2a25ee19c9fd4}
+
+
+Closes optimization, i.\-e. closes what was opened in open\-Optimization. 
+
+Evaluates objective function value from model variables values. 
+
+Implements \hyperlink{class_c_optimization_problem_a3e0cc82f344895bd593d1960c4fbadf9}{C\-Optimization\-Problem}.
+
+\hypertarget{class_go_s_u_m_1_1_c_parser_optimization_problem_a78240780535507b4f29472fc1712e722}{\index{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem@{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}!objective\-Expression@{objective\-Expression}}
+\index{objective\-Expression@{objective\-Expression}!GoSUM::CParserOptimizationProblem@{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}}
+\subsubsection[{objective\-Expression}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem\-::objective\-Expression (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_parser_optimization_problem_a78240780535507b4f29472fc1712e722}
+
+
+Returns objective expression. 
+
+\hypertarget{class_go_s_u_m_1_1_c_parser_optimization_problem_a56ce1fd2aada271c5aece350dd9b3d03}{\index{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem@{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}!open\-Optimization@{open\-Optimization}}
+\index{open\-Optimization@{open\-Optimization}!GoSUM::CParserOptimizationProblem@{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}}
+\subsubsection[{open\-Optimization}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem\-::open\-Optimization (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_parser_optimization_problem_a56ce1fd2aada271c5aece350dd9b3d03}
+
+
+Reimplemented from \hyperlink{class_c_optimization_problem_af06324e65035961b500de11edcdab889}{C\-Optimization\-Problem}.
+
+
+
+Reimplemented in \hyperlink{class_go_s_u_m_1_1_c_original_optimization_problem_aa2473c8014cf051d66ecbe6107043b6a}{Go\-S\-U\-M\-::\-C\-Original\-Optimization\-Problem}, and \hyperlink{class_go_s_u_m_1_1_c_simple_optimization_problem_a772db1ec2c35c78a4b68551969e4083c}{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem}.
+
+\hypertarget{class_go_s_u_m_1_1_c_parser_optimization_problem_af7f009a42704da441d1899fda94c1928}{\index{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem@{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}!parse\-Expressions@{parse\-Expressions}}
+\index{parse\-Expressions@{parse\-Expressions}!GoSUM::CParserOptimizationProblem@{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}}
+\subsubsection[{parse\-Expressions}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem\-::parse\-Expressions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_parser_optimization_problem_af7f009a42704da441d1899fda94c1928}
+
+
+Parses all expressions. 
+
+\hypertarget{class_go_s_u_m_1_1_c_parser_optimization_problem_aaa0b8c69caf31aaef83963d2bced9bf5}{\index{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem@{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}!roundoff\-Equality@{roundoff\-Equality}}
+\index{roundoff\-Equality@{roundoff\-Equality}!GoSUM::CParserOptimizationProblem@{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}}
+\subsubsection[{roundoff\-Equality}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem\-::roundoff\-Equality (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{\-\_\-expr}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_parser_optimization_problem_aaa0b8c69caf31aaef83963d2bced9bf5}
+
+
+If \-\_\-expr is an equality expression left=right it returns expression abs(left-\/right)$<$=T\-I\-N\-Y. 
+
+\hypertarget{class_go_s_u_m_1_1_c_parser_optimization_problem_ae04362457ca2031eb85373131d8bbd12}{\index{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem@{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}!serialize@{serialize}}
+\index{serialize@{serialize}!GoSUM::CParserOptimizationProblem@{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Archive $>$ void Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem\-::serialize (
+\begin{DoxyParamCaption}
+\item[{Archive \&}]{ar, }
+\item[{const unsigned int}]{version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_parser_optimization_problem_ae04362457ca2031eb85373131d8bbd12}
+
+
+Reimplemented from \hyperlink{class_c_optimization_problem_ad5b8db9e394c4eedeb28686acb4dce43}{C\-Optimization\-Problem}.
+
+
+
+Reimplemented in \hyperlink{class_go_s_u_m_1_1_c_analytical_optimization_problem_a258b0f6d24b501a1bb5ca1e65a06e8c5}{Go\-S\-U\-M\-::\-C\-Analytical\-Optimization\-Problem}, \hyperlink{class_go_s_u_m_1_1_c_original_optimization_problem_a41f4a21189b39fcdb0d820d2f8348475}{Go\-S\-U\-M\-::\-C\-Original\-Optimization\-Problem}, and \hyperlink{class_go_s_u_m_1_1_c_simple_optimization_problem_a627c6cfdc256739e723cbdbf1a61c007}{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem}.
+
+\hypertarget{class_go_s_u_m_1_1_c_parser_optimization_problem_a4e4a1664dc3ba561fd5d00baf76e122d}{\index{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem@{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}!set\-Constraint\-Expression@{set\-Constraint\-Expression}}
+\index{set\-Constraint\-Expression@{set\-Constraint\-Expression}!GoSUM::CParserOptimizationProblem@{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}}
+\subsubsection[{set\-Constraint\-Expression}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem\-::set\-Constraint\-Expression (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{\-\_\-gexpr, }
+\item[{int}]{\-\_\-at}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_parser_optimization_problem_a4e4a1664dc3ba561fd5d00baf76e122d}
+
+
+Sets particular constraint expression. 
+
+\hypertarget{class_go_s_u_m_1_1_c_parser_optimization_problem_a03bde75b606e470d2b1f3f995295c03f}{\index{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem@{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}!set\-Objective\-Expression@{set\-Objective\-Expression}}
+\index{set\-Objective\-Expression@{set\-Objective\-Expression}!GoSUM::CParserOptimizationProblem@{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}}
+\subsubsection[{set\-Objective\-Expression}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem\-::set\-Objective\-Expression (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{\-\_\-fexpr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_parser_optimization_problem_a03bde75b606e470d2b1f3f995295c03f}
+
+
+Sets objective expression. 
+
+\hypertarget{class_go_s_u_m_1_1_c_parser_optimization_problem_a4d5c16683fc5feed6ed58c02206fd14b}{\index{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem@{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}!set\-Variable\-Names@{set\-Variable\-Names}}
+\index{set\-Variable\-Names@{set\-Variable\-Names}!GoSUM::CParserOptimizationProblem@{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}}
+\subsubsection[{set\-Variable\-Names}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem\-::set\-Variable\-Names (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{class_go_s_u_m_1_1_c_parser_optimization_problem_a4d5c16683fc5feed6ed58c02206fd14b}
+
+
+Sets variable names for the parser. 
+
+
+
+Implemented in \hyperlink{class_go_s_u_m_1_1_c_original_optimization_problem_aabc85a11abb23fdfe5b99f8d141ae4bb}{Go\-S\-U\-M\-::\-C\-Original\-Optimization\-Problem}, and \hyperlink{class_go_s_u_m_1_1_c_simple_optimization_problem_a051a218199a044cd97ba46a1cf9175f7}{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem}.
+
+\hypertarget{class_go_s_u_m_1_1_c_parser_optimization_problem_a92202addf0da14fe57311b0015296f44}{\index{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem@{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}!validate\-Expressions@{validate\-Expressions}}
+\index{validate\-Expressions@{validate\-Expressions}!GoSUM::CParserOptimizationProblem@{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}}
+\subsubsection[{validate\-Expressions}]{\setlength{\rightskip}{0pt plus 5cm}bool Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem\-::validate\-Expressions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_parser_optimization_problem_a92202addf0da14fe57311b0015296f44}
+
+
+Validates all expressions. 
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_parser_optimization_problem_ac98d07dd8f7b70e16ccb9a01abf56b9c}{\index{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem@{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}!boost\-::serialization\-::access@{boost\-::serialization\-::access}}
+\index{boost\-::serialization\-::access@{boost\-::serialization\-::access}!GoSUM::CParserOptimizationProblem@{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}}
+\subsubsection[{boost\-::serialization\-::access}]{\setlength{\rightskip}{0pt plus 5cm}friend class boost\-::serialization\-::access\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_go_s_u_m_1_1_c_parser_optimization_problem_ac98d07dd8f7b70e16ccb9a01abf56b9c}
+
+
+Boost serialization. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_parser_optimization_problem_a0c6b06efec51542bc99e397b7d15afa0}{\index{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem@{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}!f@{f}}
+\index{f@{f}!GoSUM::CParserOptimizationProblem@{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}}
+\subsubsection[{f}]{\setlength{\rightskip}{0pt plus 5cm}Function\-Parser Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem\-::f\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_parser_optimization_problem_a0c6b06efec51542bc99e397b7d15afa0}
+
+
+Holds function parser for objective function. 
+
+\hypertarget{class_go_s_u_m_1_1_c_parser_optimization_problem_a0e5ca56845f6f3b1fc0822ded4d8ff28}{\index{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem@{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}!fexpr@{fexpr}}
+\index{fexpr@{fexpr}!GoSUM::CParserOptimizationProblem@{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}}
+\subsubsection[{fexpr}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem\-::fexpr\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_parser_optimization_problem_a0e5ca56845f6f3b1fc0822ded4d8ff28}
+
+
+Holds objective function expression. 
+
+\hypertarget{class_go_s_u_m_1_1_c_parser_optimization_problem_a8ba8e1a4d04ba3ca2bc8367bf3c8aa19}{\index{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem@{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}!g@{g}}
+\index{g@{g}!GoSUM::CParserOptimizationProblem@{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}}
+\subsubsection[{g}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$Function\-Parser$>$ Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem\-::g\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_parser_optimization_problem_a8ba8e1a4d04ba3ca2bc8367bf3c8aa19}
+Holds function parsers for constraints. \hypertarget{class_go_s_u_m_1_1_c_parser_optimization_problem_a41e738f2f8251c6229a7aafd671cced0}{\index{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem@{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}!gexpr@{gexpr}}
+\index{gexpr@{gexpr}!GoSUM::CParserOptimizationProblem@{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}}
+\subsubsection[{gexpr}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$std\-::string$>$ Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem\-::gexpr\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_parser_optimization_problem_a41e738f2f8251c6229a7aafd671cced0}
+
+
+Holds expressions for constraints. 
+
+\hypertarget{class_go_s_u_m_1_1_c_parser_optimization_problem_aa7f4b76eee9da8610745c67772c768d1}{\index{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem@{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}!names@{names}}
+\index{names@{names}!GoSUM::CParserOptimizationProblem@{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}}
+\subsubsection[{names}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem\-::names\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_parser_optimization_problem_aa7f4b76eee9da8610745c67772c768d1}
+
+
+Holds all names that are permited in objective and constraint expressions. 
+
+\hypertarget{class_go_s_u_m_1_1_c_parser_optimization_problem_aab0e689caaf0806fc8ebbe45f9f7861c}{\index{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem@{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}!optimizing\-Progressed@{optimizing\-Progressed}}
+\index{optimizing\-Progressed@{optimizing\-Progressed}!GoSUM::CParserOptimizationProblem@{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}}
+\subsubsection[{optimizing\-Progressed}]{\setlength{\rightskip}{0pt plus 5cm}boost\-::signal$<$void()$>$ Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem\-::optimizing\-Progressed}}\label{class_go_s_u_m_1_1_c_parser_optimization_problem_aab0e689caaf0806fc8ebbe45f9f7861c}
+
+
+Signal for optimizing progress, emitted on single objective evaluation. 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Development/core/\hyperlink{_parser_optimization_problem_8h}{Parser\-Optimization\-Problem.\-h}\item 
+C\-:/\-Development/core/\hyperlink{_parser_optimization_problem_8cpp}{Parser\-Optimization\-Problem.\-cpp}\end{DoxyCompactItemize}

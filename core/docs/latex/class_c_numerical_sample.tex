@@ -1,0 +1,216 @@
+\hypertarget{class_c_numerical_sample}{\section{C\-Numerical\-Sample Class Reference}
+\label{class_c_numerical_sample}\index{C\-Numerical\-Sample@{C\-Numerical\-Sample}}
+}
+
+
+Abstract class for numerical discrete samples.  
+
+
+
+
+{\ttfamily \#include $<$Sample.\-h$>$}
+
+Inheritance diagram for C\-Numerical\-Sample\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_c_numerical_sample}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_numerical_sample_a048b81156592132f06e23c4bcf1cd113}{C\-Numerical\-Sample} ()
+\item 
+\hyperlink{class_c_numerical_sample_ad63a5b9e8440a380a6daa5cdcdc1cd28}{C\-Numerical\-Sample} (const \hyperlink{class_c_numerical_sample}{C\-Numerical\-Sample} \&O)
+\item 
+\hyperlink{class_c_numerical_sample_accc910ec7b8abfaa9af11346f8bd8cb0}{C\-Numerical\-Sample} (const \hyperlink{class_c_continuous_sample}{C\-Continuous\-Sample} \&O)
+\item 
+virtual \hyperlink{class_c_numerical_sample_ae1d6f516e0122a2b257a036b1e42da1d}{$\sim$\-C\-Numerical\-Sample} ()
+\item 
+virtual void \hyperlink{class_c_numerical_sample_a929eddefbbb32c7079e2e60ca95535da}{read\-Sample\-Value} (std\-::ifstream \&\-\_\-ifs, int \-\_\-at)
+\begin{DoxyCompactList}\small\item\em Reads particular sample data from input file stream. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_numerical_sample_ae1ed83416fc77ab40019c2577047a788}{write\-Sample\-Value} (std\-::ofstream \&\-\_\-ofs, int \-\_\-at) const 
+\begin{DoxyCompactList}\small\item\em $<$ Writes particular sample data to output file stream. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_numerical_sample_a2a558ba5736bf8893121dd9174110140}{set\-Sample\-Size} (int \-\_\-n)
+\begin{DoxyCompactList}\small\item\em Sets particular sample data value. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_numerical_sample_a23b6f5afff20a9bd788c49a557702d8c}{min\-Value} () const 
+\begin{DoxyCompactList}\small\item\em Returns minimal sample data value. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_numerical_sample_ad207c9baed07803c1fb2ac5e285bd896}{max\-Value} () const 
+\begin{DoxyCompactList}\small\item\em Returns maximal sample data value. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_c_numerical_sample_aedf72750cb229d9c17417ba787e487f1}{variance} () const 
+\begin{DoxyCompactList}\small\item\em Returns sample variance (i.\-e.\-empirical). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \hyperlink{class_c_numerical_sample_a1f1ace88ad7ae05196dcd498b518af3c}{serialize} (Archive \&ar, const unsigned int version)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::vector$<$ double $>$ \hyperlink{class_c_numerical_sample_a2e2653a81d6c91eafc0548c0e7b50227}{values}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_c_numerical_sample_ac98d07dd8f7b70e16ccb9a01abf56b9c}{boost\-::serialization\-::access}
+\begin{DoxyCompactList}\small\item\em Boost serialization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Abstract class for numerical discrete samples. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_numerical_sample_a048b81156592132f06e23c4bcf1cd113}{\index{C\-Numerical\-Sample@{C\-Numerical\-Sample}!C\-Numerical\-Sample@{C\-Numerical\-Sample}}
+\index{C\-Numerical\-Sample@{C\-Numerical\-Sample}!CNumericalSample@{C\-Numerical\-Sample}}
+\subsubsection[{C\-Numerical\-Sample}]{\setlength{\rightskip}{0pt plus 5cm}C\-Numerical\-Sample\-::\-C\-Numerical\-Sample (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_numerical_sample_a048b81156592132f06e23c4bcf1cd113}
+\hypertarget{class_c_numerical_sample_ad63a5b9e8440a380a6daa5cdcdc1cd28}{\index{C\-Numerical\-Sample@{C\-Numerical\-Sample}!C\-Numerical\-Sample@{C\-Numerical\-Sample}}
+\index{C\-Numerical\-Sample@{C\-Numerical\-Sample}!CNumericalSample@{C\-Numerical\-Sample}}
+\subsubsection[{C\-Numerical\-Sample}]{\setlength{\rightskip}{0pt plus 5cm}C\-Numerical\-Sample\-::\-C\-Numerical\-Sample (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Numerical\-Sample} \&}]{O}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_numerical_sample_ad63a5b9e8440a380a6daa5cdcdc1cd28}
+\hypertarget{class_c_numerical_sample_accc910ec7b8abfaa9af11346f8bd8cb0}{\index{C\-Numerical\-Sample@{C\-Numerical\-Sample}!C\-Numerical\-Sample@{C\-Numerical\-Sample}}
+\index{C\-Numerical\-Sample@{C\-Numerical\-Sample}!CNumericalSample@{C\-Numerical\-Sample}}
+\subsubsection[{C\-Numerical\-Sample}]{\setlength{\rightskip}{0pt plus 5cm}C\-Numerical\-Sample\-::\-C\-Numerical\-Sample (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Continuous\-Sample} \&}]{O}
+\end{DoxyParamCaption}
+)}}\label{class_c_numerical_sample_accc910ec7b8abfaa9af11346f8bd8cb0}
+\hypertarget{class_c_numerical_sample_ae1d6f516e0122a2b257a036b1e42da1d}{\index{C\-Numerical\-Sample@{C\-Numerical\-Sample}!$\sim$\-C\-Numerical\-Sample@{$\sim$\-C\-Numerical\-Sample}}
+\index{$\sim$\-C\-Numerical\-Sample@{$\sim$\-C\-Numerical\-Sample}!CNumericalSample@{C\-Numerical\-Sample}}
+\subsubsection[{$\sim$\-C\-Numerical\-Sample}]{\setlength{\rightskip}{0pt plus 5cm}virtual C\-Numerical\-Sample\-::$\sim$\-C\-Numerical\-Sample (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_numerical_sample_ae1d6f516e0122a2b257a036b1e42da1d}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_numerical_sample_ad207c9baed07803c1fb2ac5e285bd896}{\index{C\-Numerical\-Sample@{C\-Numerical\-Sample}!max\-Value@{max\-Value}}
+\index{max\-Value@{max\-Value}!CNumericalSample@{C\-Numerical\-Sample}}
+\subsubsection[{max\-Value}]{\setlength{\rightskip}{0pt plus 5cm}int C\-Numerical\-Sample\-::max\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_numerical_sample_ad207c9baed07803c1fb2ac5e285bd896}
+
+
+Returns maximal sample data value. 
+
+
+
+Reimplemented from \hyperlink{class_t_sample_aac5e27142c09df0a3213a702a5db2a46}{T\-Sample$<$ t $>$}.
+
+\hypertarget{class_c_numerical_sample_a23b6f5afff20a9bd788c49a557702d8c}{\index{C\-Numerical\-Sample@{C\-Numerical\-Sample}!min\-Value@{min\-Value}}
+\index{min\-Value@{min\-Value}!CNumericalSample@{C\-Numerical\-Sample}}
+\subsubsection[{min\-Value}]{\setlength{\rightskip}{0pt plus 5cm}int C\-Numerical\-Sample\-::min\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_numerical_sample_a23b6f5afff20a9bd788c49a557702d8c}
+
+
+Returns minimal sample data value. 
+
+
+
+Reimplemented from \hyperlink{class_t_sample_a8390ad552199323ae9cc6ab9b17486c6}{T\-Sample$<$ t $>$}.
+
+\hypertarget{class_c_numerical_sample_a929eddefbbb32c7079e2e60ca95535da}{\index{C\-Numerical\-Sample@{C\-Numerical\-Sample}!read\-Sample\-Value@{read\-Sample\-Value}}
+\index{read\-Sample\-Value@{read\-Sample\-Value}!CNumericalSample@{C\-Numerical\-Sample}}
+\subsubsection[{read\-Sample\-Value}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Numerical\-Sample\-::read\-Sample\-Value (
+\begin{DoxyParamCaption}
+\item[{std\-::ifstream \&}]{\-\_\-ifs, }
+\item[{int}]{\-\_\-at}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_numerical_sample_a929eddefbbb32c7079e2e60ca95535da}
+
+
+Reads particular sample data from input file stream. 
+
+
+
+Reimplemented from \hyperlink{class_t_sample_a7a13ccc3ca57276ad789bafd9ceec1d8}{T\-Sample$<$ t $>$}.
+
+\hypertarget{class_c_numerical_sample_a1f1ace88ad7ae05196dcd498b518af3c}{\index{C\-Numerical\-Sample@{C\-Numerical\-Sample}!serialize@{serialize}}
+\index{serialize@{serialize}!CNumericalSample@{C\-Numerical\-Sample}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Archive $>$ void C\-Numerical\-Sample\-::serialize (
+\begin{DoxyParamCaption}
+\item[{Archive \&}]{ar, }
+\item[{const unsigned int}]{version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_numerical_sample_a1f1ace88ad7ae05196dcd498b518af3c}
+\hypertarget{class_c_numerical_sample_a2a558ba5736bf8893121dd9174110140}{\index{C\-Numerical\-Sample@{C\-Numerical\-Sample}!set\-Sample\-Size@{set\-Sample\-Size}}
+\index{set\-Sample\-Size@{set\-Sample\-Size}!CNumericalSample@{C\-Numerical\-Sample}}
+\subsubsection[{set\-Sample\-Size}]{\setlength{\rightskip}{0pt plus 5cm}virtual void C\-Numerical\-Sample\-::set\-Sample\-Size (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_numerical_sample_a2a558ba5736bf8893121dd9174110140}
+
+
+Sets particular sample data value. 
+
+
+
+Reimplemented from \hyperlink{class_t_sample_a3b92f468f11169b27a564fd801144fee}{T\-Sample$<$ t $>$}.
+
+\hypertarget{class_c_numerical_sample_aedf72750cb229d9c17417ba787e487f1}{\index{C\-Numerical\-Sample@{C\-Numerical\-Sample}!variance@{variance}}
+\index{variance@{variance}!CNumericalSample@{C\-Numerical\-Sample}}
+\subsubsection[{variance}]{\setlength{\rightskip}{0pt plus 5cm}virtual double C\-Numerical\-Sample\-::variance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_numerical_sample_aedf72750cb229d9c17417ba787e487f1}
+
+
+Returns sample variance (i.\-e.\-empirical). 
+
+
+
+Reimplemented from \hyperlink{class_c_discrete_sample_a3e2d5a72842be01a167f890960a34bef}{C\-Discrete\-Sample}.
+
+\hypertarget{class_c_numerical_sample_ae1ed83416fc77ab40019c2577047a788}{\index{C\-Numerical\-Sample@{C\-Numerical\-Sample}!write\-Sample\-Value@{write\-Sample\-Value}}
+\index{write\-Sample\-Value@{write\-Sample\-Value}!CNumericalSample@{C\-Numerical\-Sample}}
+\subsubsection[{write\-Sample\-Value}]{\setlength{\rightskip}{0pt plus 5cm}virtual void C\-Numerical\-Sample\-::write\-Sample\-Value (
+\begin{DoxyParamCaption}
+\item[{std\-::ofstream \&}]{\-\_\-ofs, }
+\item[{int}]{\-\_\-at}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_numerical_sample_ae1ed83416fc77ab40019c2577047a788}
+
+
+$<$ Writes particular sample data to output file stream. 
+
+
+
+Reimplemented from \hyperlink{class_t_sample_abb2feebe92f8fdb290046d6ef0573507}{T\-Sample$<$ t $>$}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_c_numerical_sample_ac98d07dd8f7b70e16ccb9a01abf56b9c}{\index{C\-Numerical\-Sample@{C\-Numerical\-Sample}!boost\-::serialization\-::access@{boost\-::serialization\-::access}}
+\index{boost\-::serialization\-::access@{boost\-::serialization\-::access}!CNumericalSample@{C\-Numerical\-Sample}}
+\subsubsection[{boost\-::serialization\-::access}]{\setlength{\rightskip}{0pt plus 5cm}friend class boost\-::serialization\-::access\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_c_numerical_sample_ac98d07dd8f7b70e16ccb9a01abf56b9c}
+
+
+Boost serialization. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_numerical_sample_a2e2653a81d6c91eafc0548c0e7b50227}{\index{C\-Numerical\-Sample@{C\-Numerical\-Sample}!values@{values}}
+\index{values@{values}!CNumericalSample@{C\-Numerical\-Sample}}
+\subsubsection[{values}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$double$>$ C\-Numerical\-Sample\-::values\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_numerical_sample_a2e2653a81d6c91eafc0548c0e7b50227}
+Holds all numerical values. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Development/core/\hyperlink{_sample_8h}{Sample.\-h}\item 
+C\-:/\-Development/core/\hyperlink{_sample_8cpp}{Sample.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,344 @@
+\hypertarget{class_c_uniform_d_r_v}{\section{C\-Uniform\-D\-R\-V Class Reference}
+\label{class_c_uniform_d_r_v}\index{C\-Uniform\-D\-R\-V@{C\-Uniform\-D\-R\-V}}
+}
+
+
+Class for uniform discrete random variables derived from discrete random variables.  
+
+
+
+
+{\ttfamily \#include $<$Random\-Variable.\-h$>$}
+
+Inheritance diagram for C\-Uniform\-D\-R\-V\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_c_uniform_d_r_v}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_uniform_d_r_v_a55cb9431fba570dcfb1e1e8840c3a30f}{C\-Uniform\-D\-R\-V} ()
+\item 
+virtual \hyperlink{class_c_uniform_d_r_v_a5e176427ef922d3b54108774f7a31a43}{$\sim$\-C\-Uniform\-D\-R\-V} ()
+\item 
+\hyperlink{class_c_uniform_d_r_v_a33ee9fc630c5b3a6974c1a67ebeb3e07}{C\-Uniform\-D\-R\-V} (const \hyperlink{class_c_uniform_d_r_v}{C\-Uniform\-D\-R\-V} \&O)
+\item 
+virtual void \hyperlink{class_c_uniform_d_r_v_a1649494e352ccd451fd63e9628203626}{set\-Distribution} (int \-\_\-a, int \-\_\-b)
+\begin{DoxyCompactList}\small\item\em Set distribution parameters. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_c_uniform_d_r_v_a6ca68e947812236e050b648966899339}{probability} (int \-\_\-k) const 
+\begin{DoxyCompactList}\small\item\em Function that returns P\-M\-F. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_c_uniform_d_r_v_a8fbd47fb7dc53e172374913f42074078}{cumulative} (int \-\_\-k) const 
+\begin{DoxyCompactList}\small\item\em Function that returns C\-D\-F. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_c_uniform_d_r_v_acfc4ae15c3f8376d09c359f5a9c77042}{min\-Value} () const 
+\begin{DoxyCompactList}\small\item\em Returns minimal value of the random variable. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_c_uniform_d_r_v_afb4394d6a7e10ea356974fa29c936865}{max\-Value} () const 
+\begin{DoxyCompactList}\small\item\em Returns maximal value of the random variable. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_c_uniform_d_r_v_a25a9923ef347bcf7b00ceb9022ddeade}{expected\-Value} () const 
+\begin{DoxyCompactList}\small\item\em Returns expected value of the random variable. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_c_random_variable_a80d2a87c43847274138b51f7d713d7f1}{distributiontype} \hyperlink{class_c_uniform_d_r_v_afeb83cfc2424f7687fbb09e67d18dc3e}{distribution\-Type} () const 
+\begin{DoxyCompactList}\small\item\em Returns enum type of the random variable distribution. \end{DoxyCompactList}\item 
+virtual std\-::string \hyperlink{class_c_uniform_d_r_v_a6d0c29215bd5ed56db2ff2e5a29c402e}{distribution\-Name} () const 
+\begin{DoxyCompactList}\small\item\em Returns name of the random variable distribution. \end{DoxyCompactList}\item 
+virtual Array\-Xi \hyperlink{class_c_uniform_d_r_v_ac8e01c8b8e6f9403855259da5511fa89}{export\-Domain} () const 
+\begin{DoxyCompactList}\small\item\em Exports domain of the random variable. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_uniform_d_r_v_a813fa4aa08b957def7d63c6710fc885b}{lower\-Bound} () const 
+\begin{DoxyCompactList}\small\item\em Returns lower bound of the uniform radnom variable. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_uniform_d_r_v_a3bb09d320f39b56effd7984fd784c551}{upper\-Bound} () const 
+\begin{DoxyCompactList}\small\item\em Returns upper bound of the uniform radnom variable. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_uniform_d_r_v_a9ea70c6f5d00e516ebb70c836aaac18f}{set\-Lower\-Bound} (int \-\_\-a)
+\begin{DoxyCompactList}\small\item\em Sets lower bound of the uniform radnom variable. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_uniform_d_r_v_af49b510284ccaa96f370e90200c8597d}{set\-Upper\-Bound} (int \-\_\-b)
+\begin{DoxyCompactList}\small\item\em Sets upper bound of the uniform radnom variable. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_c_uniform_d_r_v_a759aca373487c4f7194e5a07473cd6ed}{variance} () const 
+\begin{DoxyCompactList}\small\item\em Returns variance of the random variable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual double \hyperlink{class_c_uniform_d_r_v_aabceef44c94b875240c901349644b191}{do\-Quantile} (double \-\_\-p) const 
+\begin{DoxyCompactList}\small\item\em Quantile, formula implementation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \hyperlink{class_c_uniform_d_r_v_a359f0d33f2524fb33f2b5bc8c7dd474e}{serialize} (Archive \&ar, const unsigned int version)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_c_uniform_d_r_v_a27e69eec5f473918bb39e5878a9b8983}{a}
+\item 
+int \hyperlink{class_c_uniform_d_r_v_a67e7c41484fd23c788b612af61797992}{b}
+\item 
+int \hyperlink{class_c_uniform_d_r_v_a9a5ada91bbce53c6b3eb01179eae1537}{n}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_c_uniform_d_r_v_ac98d07dd8f7b70e16ccb9a01abf56b9c}{boost\-::serialization\-::access}
+\begin{DoxyCompactList}\small\item\em Boost serialization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class for uniform discrete random variables derived from discrete random variables. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_uniform_d_r_v_a55cb9431fba570dcfb1e1e8840c3a30f}{\index{C\-Uniform\-D\-R\-V@{C\-Uniform\-D\-R\-V}!C\-Uniform\-D\-R\-V@{C\-Uniform\-D\-R\-V}}
+\index{C\-Uniform\-D\-R\-V@{C\-Uniform\-D\-R\-V}!CUniformDRV@{C\-Uniform\-D\-R\-V}}
+\subsubsection[{C\-Uniform\-D\-R\-V}]{\setlength{\rightskip}{0pt plus 5cm}C\-Uniform\-D\-R\-V\-::\-C\-Uniform\-D\-R\-V (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_uniform_d_r_v_a55cb9431fba570dcfb1e1e8840c3a30f}
+\hypertarget{class_c_uniform_d_r_v_a5e176427ef922d3b54108774f7a31a43}{\index{C\-Uniform\-D\-R\-V@{C\-Uniform\-D\-R\-V}!$\sim$\-C\-Uniform\-D\-R\-V@{$\sim$\-C\-Uniform\-D\-R\-V}}
+\index{$\sim$\-C\-Uniform\-D\-R\-V@{$\sim$\-C\-Uniform\-D\-R\-V}!CUniformDRV@{C\-Uniform\-D\-R\-V}}
+\subsubsection[{$\sim$\-C\-Uniform\-D\-R\-V}]{\setlength{\rightskip}{0pt plus 5cm}virtual C\-Uniform\-D\-R\-V\-::$\sim$\-C\-Uniform\-D\-R\-V (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_uniform_d_r_v_a5e176427ef922d3b54108774f7a31a43}
+\hypertarget{class_c_uniform_d_r_v_a33ee9fc630c5b3a6974c1a67ebeb3e07}{\index{C\-Uniform\-D\-R\-V@{C\-Uniform\-D\-R\-V}!C\-Uniform\-D\-R\-V@{C\-Uniform\-D\-R\-V}}
+\index{C\-Uniform\-D\-R\-V@{C\-Uniform\-D\-R\-V}!CUniformDRV@{C\-Uniform\-D\-R\-V}}
+\subsubsection[{C\-Uniform\-D\-R\-V}]{\setlength{\rightskip}{0pt plus 5cm}C\-Uniform\-D\-R\-V\-::\-C\-Uniform\-D\-R\-V (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Uniform\-D\-R\-V} \&}]{O}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_uniform_d_r_v_a33ee9fc630c5b3a6974c1a67ebeb3e07}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_uniform_d_r_v_a8fbd47fb7dc53e172374913f42074078}{\index{C\-Uniform\-D\-R\-V@{C\-Uniform\-D\-R\-V}!cumulative@{cumulative}}
+\index{cumulative@{cumulative}!CUniformDRV@{C\-Uniform\-D\-R\-V}}
+\subsubsection[{cumulative}]{\setlength{\rightskip}{0pt plus 5cm}virtual double C\-Uniform\-D\-R\-V\-::cumulative (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-k}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_uniform_d_r_v_a8fbd47fb7dc53e172374913f42074078}
+
+
+Function that returns C\-D\-F. 
+
+\hypertarget{class_c_uniform_d_r_v_a6d0c29215bd5ed56db2ff2e5a29c402e}{\index{C\-Uniform\-D\-R\-V@{C\-Uniform\-D\-R\-V}!distribution\-Name@{distribution\-Name}}
+\index{distribution\-Name@{distribution\-Name}!CUniformDRV@{C\-Uniform\-D\-R\-V}}
+\subsubsection[{distribution\-Name}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\-::string C\-Uniform\-D\-R\-V\-::distribution\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_uniform_d_r_v_a6d0c29215bd5ed56db2ff2e5a29c402e}
+
+
+Returns name of the random variable distribution. 
+
+
+
+Implements \hyperlink{class_c_random_variable_a4b33eef7c56f9f1a83af01fa8ef2502b}{C\-Random\-Variable}.
+
+\hypertarget{class_c_uniform_d_r_v_afeb83cfc2424f7687fbb09e67d18dc3e}{\index{C\-Uniform\-D\-R\-V@{C\-Uniform\-D\-R\-V}!distribution\-Type@{distribution\-Type}}
+\index{distribution\-Type@{distribution\-Type}!CUniformDRV@{C\-Uniform\-D\-R\-V}}
+\subsubsection[{distribution\-Type}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf distributiontype} C\-Uniform\-D\-R\-V\-::distribution\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_uniform_d_r_v_afeb83cfc2424f7687fbb09e67d18dc3e}
+
+
+Returns enum type of the random variable distribution. 
+
+
+
+Implements \hyperlink{class_c_random_variable_a3b30589d41f4dd200bd40c8273cac2cd}{C\-Random\-Variable}.
+
+\hypertarget{class_c_uniform_d_r_v_aabceef44c94b875240c901349644b191}{\index{C\-Uniform\-D\-R\-V@{C\-Uniform\-D\-R\-V}!do\-Quantile@{do\-Quantile}}
+\index{do\-Quantile@{do\-Quantile}!CUniformDRV@{C\-Uniform\-D\-R\-V}}
+\subsubsection[{do\-Quantile}]{\setlength{\rightskip}{0pt plus 5cm}virtual double C\-Uniform\-D\-R\-V\-::do\-Quantile (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-p}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_c_uniform_d_r_v_aabceef44c94b875240c901349644b191}
+
+
+Quantile, formula implementation. 
+
+
+
+Implements \hyperlink{class_c_random_variable_a552ab36c8144d7154cbe3cd363eee65b}{C\-Random\-Variable}.
+
+\hypertarget{class_c_uniform_d_r_v_a25a9923ef347bcf7b00ceb9022ddeade}{\index{C\-Uniform\-D\-R\-V@{C\-Uniform\-D\-R\-V}!expected\-Value@{expected\-Value}}
+\index{expected\-Value@{expected\-Value}!CUniformDRV@{C\-Uniform\-D\-R\-V}}
+\subsubsection[{expected\-Value}]{\setlength{\rightskip}{0pt plus 5cm}virtual double C\-Uniform\-D\-R\-V\-::expected\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_uniform_d_r_v_a25a9923ef347bcf7b00ceb9022ddeade}
+
+
+Returns expected value of the random variable. 
+
+
+
+Implements \hyperlink{class_c_random_variable_a6e5490d17f2b6abcf9922c8b1bd6d4ed}{C\-Random\-Variable}.
+
+\hypertarget{class_c_uniform_d_r_v_ac8e01c8b8e6f9403855259da5511fa89}{\index{C\-Uniform\-D\-R\-V@{C\-Uniform\-D\-R\-V}!export\-Domain@{export\-Domain}}
+\index{export\-Domain@{export\-Domain}!CUniformDRV@{C\-Uniform\-D\-R\-V}}
+\subsubsection[{export\-Domain}]{\setlength{\rightskip}{0pt plus 5cm}Array\-Xi C\-Uniform\-D\-R\-V\-::export\-Domain (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_uniform_d_r_v_ac8e01c8b8e6f9403855259da5511fa89}
+
+
+Exports domain of the random variable. 
+
+
+
+Implements \hyperlink{class_t_random_variable_a37fc52d5fa37493a353887242d279a27}{T\-Random\-Variable$<$ t, T $>$}.
+
+\hypertarget{class_c_uniform_d_r_v_a813fa4aa08b957def7d63c6710fc885b}{\index{C\-Uniform\-D\-R\-V@{C\-Uniform\-D\-R\-V}!lower\-Bound@{lower\-Bound}}
+\index{lower\-Bound@{lower\-Bound}!CUniformDRV@{C\-Uniform\-D\-R\-V}}
+\subsubsection[{lower\-Bound}]{\setlength{\rightskip}{0pt plus 5cm}int C\-Uniform\-D\-R\-V\-::lower\-Bound (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_uniform_d_r_v_a813fa4aa08b957def7d63c6710fc885b}
+
+
+Returns lower bound of the uniform radnom variable. 
+
+\hypertarget{class_c_uniform_d_r_v_afb4394d6a7e10ea356974fa29c936865}{\index{C\-Uniform\-D\-R\-V@{C\-Uniform\-D\-R\-V}!max\-Value@{max\-Value}}
+\index{max\-Value@{max\-Value}!CUniformDRV@{C\-Uniform\-D\-R\-V}}
+\subsubsection[{max\-Value}]{\setlength{\rightskip}{0pt plus 5cm}virtual double C\-Uniform\-D\-R\-V\-::max\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_uniform_d_r_v_afb4394d6a7e10ea356974fa29c936865}
+
+
+Returns maximal value of the random variable. 
+
+
+
+Implements \hyperlink{class_c_random_variable_a48a5e98363d866f1f46568ed658479ad}{C\-Random\-Variable}.
+
+\hypertarget{class_c_uniform_d_r_v_acfc4ae15c3f8376d09c359f5a9c77042}{\index{C\-Uniform\-D\-R\-V@{C\-Uniform\-D\-R\-V}!min\-Value@{min\-Value}}
+\index{min\-Value@{min\-Value}!CUniformDRV@{C\-Uniform\-D\-R\-V}}
+\subsubsection[{min\-Value}]{\setlength{\rightskip}{0pt plus 5cm}virtual double C\-Uniform\-D\-R\-V\-::min\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_uniform_d_r_v_acfc4ae15c3f8376d09c359f5a9c77042}
+
+
+Returns minimal value of the random variable. 
+
+
+
+Implements \hyperlink{class_c_random_variable_a233ddd2eedb51b09a04a8c330646f356}{C\-Random\-Variable}.
+
+\hypertarget{class_c_uniform_d_r_v_a6ca68e947812236e050b648966899339}{\index{C\-Uniform\-D\-R\-V@{C\-Uniform\-D\-R\-V}!probability@{probability}}
+\index{probability@{probability}!CUniformDRV@{C\-Uniform\-D\-R\-V}}
+\subsubsection[{probability}]{\setlength{\rightskip}{0pt plus 5cm}virtual double C\-Uniform\-D\-R\-V\-::probability (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-k}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_uniform_d_r_v_a6ca68e947812236e050b648966899339}
+
+
+Function that returns P\-M\-F. 
+
+\hypertarget{class_c_uniform_d_r_v_a359f0d33f2524fb33f2b5bc8c7dd474e}{\index{C\-Uniform\-D\-R\-V@{C\-Uniform\-D\-R\-V}!serialize@{serialize}}
+\index{serialize@{serialize}!CUniformDRV@{C\-Uniform\-D\-R\-V}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Archive $>$ void C\-Uniform\-D\-R\-V\-::serialize (
+\begin{DoxyParamCaption}
+\item[{Archive \&}]{ar, }
+\item[{const unsigned int}]{version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_uniform_d_r_v_a359f0d33f2524fb33f2b5bc8c7dd474e}
+\hypertarget{class_c_uniform_d_r_v_a1649494e352ccd451fd63e9628203626}{\index{C\-Uniform\-D\-R\-V@{C\-Uniform\-D\-R\-V}!set\-Distribution@{set\-Distribution}}
+\index{set\-Distribution@{set\-Distribution}!CUniformDRV@{C\-Uniform\-D\-R\-V}}
+\subsubsection[{set\-Distribution}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Uniform\-D\-R\-V\-::set\-Distribution (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-a, }
+\item[{int}]{\-\_\-b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_uniform_d_r_v_a1649494e352ccd451fd63e9628203626}
+
+
+Set distribution parameters. 
+
+\hypertarget{class_c_uniform_d_r_v_a9ea70c6f5d00e516ebb70c836aaac18f}{\index{C\-Uniform\-D\-R\-V@{C\-Uniform\-D\-R\-V}!set\-Lower\-Bound@{set\-Lower\-Bound}}
+\index{set\-Lower\-Bound@{set\-Lower\-Bound}!CUniformDRV@{C\-Uniform\-D\-R\-V}}
+\subsubsection[{set\-Lower\-Bound}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Uniform\-D\-R\-V\-::set\-Lower\-Bound (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_uniform_d_r_v_a9ea70c6f5d00e516ebb70c836aaac18f}
+
+
+Sets lower bound of the uniform radnom variable. 
+
+\hypertarget{class_c_uniform_d_r_v_af49b510284ccaa96f370e90200c8597d}{\index{C\-Uniform\-D\-R\-V@{C\-Uniform\-D\-R\-V}!set\-Upper\-Bound@{set\-Upper\-Bound}}
+\index{set\-Upper\-Bound@{set\-Upper\-Bound}!CUniformDRV@{C\-Uniform\-D\-R\-V}}
+\subsubsection[{set\-Upper\-Bound}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Uniform\-D\-R\-V\-::set\-Upper\-Bound (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_uniform_d_r_v_af49b510284ccaa96f370e90200c8597d}
+
+
+Sets upper bound of the uniform radnom variable. 
+
+\hypertarget{class_c_uniform_d_r_v_a3bb09d320f39b56effd7984fd784c551}{\index{C\-Uniform\-D\-R\-V@{C\-Uniform\-D\-R\-V}!upper\-Bound@{upper\-Bound}}
+\index{upper\-Bound@{upper\-Bound}!CUniformDRV@{C\-Uniform\-D\-R\-V}}
+\subsubsection[{upper\-Bound}]{\setlength{\rightskip}{0pt plus 5cm}int C\-Uniform\-D\-R\-V\-::upper\-Bound (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_uniform_d_r_v_a3bb09d320f39b56effd7984fd784c551}
+
+
+Returns upper bound of the uniform radnom variable. 
+
+\hypertarget{class_c_uniform_d_r_v_a759aca373487c4f7194e5a07473cd6ed}{\index{C\-Uniform\-D\-R\-V@{C\-Uniform\-D\-R\-V}!variance@{variance}}
+\index{variance@{variance}!CUniformDRV@{C\-Uniform\-D\-R\-V}}
+\subsubsection[{variance}]{\setlength{\rightskip}{0pt plus 5cm}virtual double C\-Uniform\-D\-R\-V\-::variance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_uniform_d_r_v_a759aca373487c4f7194e5a07473cd6ed}
+
+
+Returns variance of the random variable. 
+
+
+
+Implements \hyperlink{class_c_random_variable_a3b0b87c4aab74c0406cd8321b8b96747}{C\-Random\-Variable}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_c_uniform_d_r_v_ac98d07dd8f7b70e16ccb9a01abf56b9c}{\index{C\-Uniform\-D\-R\-V@{C\-Uniform\-D\-R\-V}!boost\-::serialization\-::access@{boost\-::serialization\-::access}}
+\index{boost\-::serialization\-::access@{boost\-::serialization\-::access}!CUniformDRV@{C\-Uniform\-D\-R\-V}}
+\subsubsection[{boost\-::serialization\-::access}]{\setlength{\rightskip}{0pt plus 5cm}friend class boost\-::serialization\-::access\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_c_uniform_d_r_v_ac98d07dd8f7b70e16ccb9a01abf56b9c}
+
+
+Boost serialization. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_uniform_d_r_v_a27e69eec5f473918bb39e5878a9b8983}{\index{C\-Uniform\-D\-R\-V@{C\-Uniform\-D\-R\-V}!a@{a}}
+\index{a@{a}!CUniformDRV@{C\-Uniform\-D\-R\-V}}
+\subsubsection[{a}]{\setlength{\rightskip}{0pt plus 5cm}int C\-Uniform\-D\-R\-V\-::a\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_uniform_d_r_v_a27e69eec5f473918bb39e5878a9b8983}
+\hypertarget{class_c_uniform_d_r_v_a67e7c41484fd23c788b612af61797992}{\index{C\-Uniform\-D\-R\-V@{C\-Uniform\-D\-R\-V}!b@{b}}
+\index{b@{b}!CUniformDRV@{C\-Uniform\-D\-R\-V}}
+\subsubsection[{b}]{\setlength{\rightskip}{0pt plus 5cm}int C\-Uniform\-D\-R\-V\-::b\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_uniform_d_r_v_a67e7c41484fd23c788b612af61797992}
+\hypertarget{class_c_uniform_d_r_v_a9a5ada91bbce53c6b3eb01179eae1537}{\index{C\-Uniform\-D\-R\-V@{C\-Uniform\-D\-R\-V}!n@{n}}
+\index{n@{n}!CUniformDRV@{C\-Uniform\-D\-R\-V}}
+\subsubsection[{n}]{\setlength{\rightskip}{0pt plus 5cm}int C\-Uniform\-D\-R\-V\-::n\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_uniform_d_r_v_a9a5ada91bbce53c6b3eb01179eae1537}
+Distribution parameters\-: random variable can have one of the n=b-\/a+1 integer values between a and b. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Development/core/\hyperlink{_random_variable_8h}{Random\-Variable.\-h}\item 
+C\-:/\-Development/core/\hyperlink{_random_variable_8cpp}{Random\-Variable.\-cpp}\end{DoxyCompactItemize}

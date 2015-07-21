@@ -1,0 +1,656 @@
+\hypertarget{class_go_s_u_m_1_1_c_model_variables}{\section{Go\-S\-U\-M\-:\-:C\-Model\-Variables Class Reference}
+\label{class_go_s_u_m_1_1_c_model_variables}\index{Go\-S\-U\-M\-::\-C\-Model\-Variables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}}
+}
+
+
+Class for the vector of model variables (inputs \& outputs).  
+
+
+
+
+{\ttfamily \#include $<$Model.\-h$>$}
+
+Inheritance diagram for Go\-S\-U\-M\-:\-:C\-Model\-Variables\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_go_s_u_m_1_1_c_model_variables}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_go_s_u_m_1_1_c_model_variables_a539072552d0e09d02843a1fa44b11d3b}{C\-Model\-Variables} ()
+\item 
+virtual \hyperlink{class_go_s_u_m_1_1_c_model_variables_a441352009e92c8d767e798d41e9c19ea}{$\sim$\-C\-Model\-Variables} ()
+\item 
+std\-::string \hyperlink{class_go_s_u_m_1_1_c_model_variables_a9351f5510881471981abd458b4ca4488}{base\-Name} () const 
+\begin{DoxyCompactList}\small\item\em Returns base name. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_model_variables_a11a9ee018a817a9d6ce0914e6bed0b91}{set\-Base\-Name} (std\-::string \-\_\-basename)
+\begin{DoxyCompactList}\small\item\em Sets base name. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{class_go_s_u_m_1_1_c_model_variables_af11771a78369e73163d30e13e6e90c2f}{next\-Name} () const 
+\begin{DoxyCompactList}\small\item\em Returns next variable name. \end{DoxyCompactList}\item 
+bool \hyperlink{class_go_s_u_m_1_1_c_model_variables_a89540611f83890ddefa97505ef2c02de}{empty} () const 
+\begin{DoxyCompactList}\small\item\em Returns true if object contains no model variables, false otherwise. \end{DoxyCompactList}\item 
+bool \hyperlink{class_go_s_u_m_1_1_c_model_variables_aed850606b33ac1a1d04293eb49ea34fa}{empty\-Samples} () const 
+\begin{DoxyCompactList}\small\item\em Returns true if object contains no samples, false otherwise. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_model_variables_aae62db449aed7eaeb8eefb0143e5de2c}{clear} ()
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_model_variables_a5a7a04ad12b2d23d0921cded3d7121de}{clear\-Samples} ()
+\begin{DoxyCompactList}\small\item\em Clears data. \end{DoxyCompactList}\item 
+const \hyperlink{class_go_s_u_m_1_1_c_model_variable}{C\-Model\-Variable} \& \hyperlink{class_go_s_u_m_1_1_c_model_variables_af311763812d7724409678b8fc87f237c}{operator()} (int \-\_\-at) const 
+\begin{DoxyCompactList}\small\item\em Clears samples. \end{DoxyCompactList}\item 
+\hyperlink{class_go_s_u_m_1_1_c_model_variable}{C\-Model\-Variable} \& \hyperlink{class_go_s_u_m_1_1_c_model_variables_a08d7808b67e19ba1f97603901f80cff9}{operator()} (int \-\_\-at)
+\begin{DoxyCompactList}\small\item\em Returns paticular model variable. \end{DoxyCompactList}\item 
+int \hyperlink{class_go_s_u_m_1_1_c_model_variables_ac78a93b9814e6b053f3cd7d72ccfa794}{find} (const std\-::string \&\-\_\-name) const 
+\begin{DoxyCompactList}\small\item\em $<$ Finds model variable by name, returns it's index. \end{DoxyCompactList}\item 
+int \hyperlink{class_go_s_u_m_1_1_c_model_variables_a3c9ed3cad5fd7c1773a2b13d2e0d4cbe}{size} () const 
+\begin{DoxyCompactList}\small\item\em Returns the size of model variables. \end{DoxyCompactList}\item 
+int \hyperlink{class_go_s_u_m_1_1_c_model_variables_a0fb75174963bd1a9ce6f6969c5bc57ab}{expanded\-Size} () const 
+\begin{DoxyCompactList}\small\item\em Returns expanded size of model variables (due to categorical). \end{DoxyCompactList}\item 
+int \hyperlink{class_go_s_u_m_1_1_c_model_variables_aaa7564978d3d08d4f9ab0a3c58f59239}{sample\-Size} () const 
+\begin{DoxyCompactList}\small\item\em Returns sample size. \end{DoxyCompactList}\item 
+\hyperlink{class_go_s_u_m_1_1_c_model_variable}{C\-Model\-Variable} $\ast$ \hyperlink{class_go_s_u_m_1_1_c_model_variables_a5c03df35b287bec6b42dfb1b13a8c7cc}{add} (\hyperlink{class_go_s_u_m_1_1_c_model_variable}{C\-Model\-Variable} $\ast$\-\_\-p\-M\-V)
+\begin{DoxyCompactList}\small\item\em Adds, i.\-e. pushes back model variable. \end{DoxyCompactList}\item 
+\hyperlink{class_go_s_u_m_1_1_c_model_variable}{C\-Model\-Variable} $\ast$ \hyperlink{class_go_s_u_m_1_1_c_model_variables_aaf419a53e0a053f11801718b7228c578}{insert} (\hyperlink{class_go_s_u_m_1_1_c_model_variable}{C\-Model\-Variable} $\ast$\-\_\-p\-M\-V, int \-\_\-before)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_model_variables_a915503ed71fab8f50e6fa05a13eb9aba}{erase} (int \-\_\-at)
+\item 
+\hyperlink{class_go_s_u_m_1_1_c_model_variable}{C\-Model\-Variable} $\ast$ \hyperlink{class_go_s_u_m_1_1_c_model_variables_afe392d83fccb9fdf63edbd80e532cf31}{replace} (int \-\_\-at, \hyperlink{class_go_s_u_m_1_1_c_model_variable}{C\-Model\-Variable} $\ast$\-\_\-p\-M\-V)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_model_variables_a2489a0422fc411d13f266bf24639a41c}{rename} (int \-\_\-at, const std\-::string \&\-\_\-name)
+\item 
+std\-::vector$<$ Array\-Xd $>$ \hyperlink{class_go_s_u_m_1_1_c_model_variables_ab2ae6e3a54d10b6d90f98f402a89f6ee}{samples} ()
+\begin{DoxyCompactList}\small\item\em Returns all samples. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_model_variables_a7f8df103f73331f3bca77b1baf13da0b}{set\-Samples} (const std\-::vector$<$ Array\-Xd $>$ \&\-\_\-samples)
+\begin{DoxyCompactList}\small\item\em Sets samples of all model variables to values in \-\_\-samples. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_model_variables_afaf27c06a9addbf93646c67360d3eb48}{compute\-Statistics} (int \-\_\-n)
+\begin{DoxyCompactList}\small\item\em Computes statistics of all model variables. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_model_variables_a4e7df5a62ff6c0eda6f0de196a704e12}{compute\-Statistics} (const std\-::vector$<$ int $>$ \&\-\_\-selected, int \-\_\-n)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_model_variables_a8b7087357a18fbfaba390a47ce3ba309}{set\-Distributions} (const std\-::vector$<$ int $>$ \&\-\_\-selected)
+\begin{DoxyCompactList}\small\item\em For selected model variables detects distribution from empirical sample data. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_model_variables_a8c5d6852c04dc7d5dcfdf49cdbb801a1}{set\-Distributions} ()
+\begin{DoxyCompactList}\small\item\em For all model variables detects distribution from empirical sample data. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_model_variables_a75268d82c04c54ca4496ff5e1b1406ee}{set\-N\-Tuple} (const Array\-Xd \&X, int \-\_\-at)
+\begin{DoxyCompactList}\small\item\em Sets \-\_\-at sample values of all model variables. \end{DoxyCompactList}\item 
+Array\-Xd \hyperlink{class_go_s_u_m_1_1_c_model_variables_a92bd5ab6d1d46551a415a98541a2d32a}{n\-Tuple} (int \-\_\-at) const 
+\begin{DoxyCompactList}\small\item\em Returns n-\/tuple containing \-\_\-at sample values of all model variables. \end{DoxyCompactList}\item 
+Array\-Xd \hyperlink{class_go_s_u_m_1_1_c_model_variables_a8aca475f569e0e81bf88d697468cdf67}{expanded\-N\-Tuple} (int \-\_\-at) const 
+\begin{DoxyCompactList}\small\item\em Returns expanded n-\/tuple containing \-\_\-at sample values of all model variables. \end{DoxyCompactList}\item 
+Array\-Xd \hyperlink{class_go_s_u_m_1_1_c_model_variables_ad6d83d056cb740499c710711f3fcff1d}{expand\-N\-Tuple} (const Array\-Xd \&X) const 
+\begin{DoxyCompactList}\small\item\em Expands given n-\/tuple. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_model_variables_a28359235bd83070fa2c40bdeeb90fe01}{set\-Normalization} ()
+\item 
+double \hyperlink{class_go_s_u_m_1_1_c_model_variables_abf4db473db4a17e0010cae650aa0d907}{normalize} (double Vi, int i) const 
+\begin{DoxyCompactList}\small\item\em (Re)sets normalization of model variables using empirical data in samples. \end{DoxyCompactList}\item 
+Array\-Xd \hyperlink{class_go_s_u_m_1_1_c_model_variables_ac2bbbbc99a0717ab9d5d501b0cf86427}{normalize} (const Array\-Xd \&V) const 
+\begin{DoxyCompactList}\small\item\em Normalizes values of all (expanded) model variables. \end{DoxyCompactList}\item 
+double \hyperlink{class_go_s_u_m_1_1_c_model_variables_a42b21bbfdd60a640f0925802035bd772}{denormalize} (double Vi, int i) const 
+\begin{DoxyCompactList}\small\item\em Denoramlizes value of the ith (expanded) model variable. \end{DoxyCompactList}\item 
+Array\-Xd \hyperlink{class_go_s_u_m_1_1_c_model_variables_aefcc9a87015565230d6f8dd0897173bd}{denormalize} (const Array\-Xd \&V) const 
+\begin{DoxyCompactList}\small\item\em Denormalizes values of all (expanded) model variables. \end{DoxyCompactList}\item 
+double \hyperlink{class_go_s_u_m_1_1_c_model_variables_a3e372277479386d4ed795b718296b439}{d\-Normalize} (int i) const 
+\begin{DoxyCompactList}\small\item\em Returns derivative of the normalization function for ith (expanded) model variable. \end{DoxyCompactList}\item 
+Array\-Xd \hyperlink{class_go_s_u_m_1_1_c_model_variables_a1a029447ceb9c51a71bd22ccf4a01802}{d\-Normalize} () const 
+\begin{DoxyCompactList}\small\item\em Returns derivatives of the normalization function for (expanded) model variables. \end{DoxyCompactList}\item 
+double \hyperlink{class_go_s_u_m_1_1_c_model_variables_abc720f34bfd0c1044150675d5cd5594d}{d\-Denormalize} (int i) const 
+\begin{DoxyCompactList}\small\item\em Returns derivative of the denormalization function for ith (expanded) model variable. \end{DoxyCompactList}\item 
+Array\-Xd \hyperlink{class_go_s_u_m_1_1_c_model_variables_a65b28acfc2b82e889679abf55b94c2c1}{d\-Denormalize} () const 
+\begin{DoxyCompactList}\small\item\em Returns derivatives of the denormalization function for (expanded) model variables. \end{DoxyCompactList}\item 
+Array\-Xd \hyperlink{class_go_s_u_m_1_1_c_model_variables_a43186a53e67e1cfd7f0115977bac1c17}{hc\-Point2\-Model\-Point} (const Array\-Xd \&x)
+\begin{DoxyCompactList}\small\item\em Maps hypercube point to model point. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_model_variables_a96c11c4fd04abebab9e981d3bdf3db11}{erase\-Selected\-Samples} (const std\-::vector$<$ int $>$ \&sel)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \hyperlink{class_go_s_u_m_1_1_c_model_variables_aa2274914e5ce27be8925b5894b425fa3}{serialize} (Archive \&ar, const unsigned int version)
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{class_go_s_u_m_1_1_c_model_variables_ae9f6f163a086ba7c964ff8cf85a6cfb4}{is\-Model\-Variable\-Name} (const \hyperlink{class_go_s_u_m_1_1_c_model_variable}{C\-Model\-Variable} \&\-\_\-a\-M\-V)
+\begin{DoxyCompactList}\small\item\em Used in member function Find. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string \hyperlink{class_go_s_u_m_1_1_c_model_variables_a3e0a177e926f2512b4499a47ecc9c957}{basename}
+\begin{DoxyCompactList}\small\item\em Holds basename used for generating model variable unique names. \end{DoxyCompactList}\item 
+boost\-::ptr\-\_\-vector$<$ \hyperlink{class_go_s_u_m_1_1_c_model_variable}{C\-Model\-Variable} $>$ \hyperlink{class_go_s_u_m_1_1_c_model_variables_a9ce0daf443666eb920bbbbdee00e1e37}{mvs}
+\begin{DoxyCompactList}\small\item\em Holds pointers to model variables. \end{DoxyCompactList}\item 
+Array\-Xd \hyperlink{class_go_s_u_m_1_1_c_model_variables_a44c359c9aeda8913e9c93bdf133638dd}{trn}
+\item 
+Array\-Xd \hyperlink{class_go_s_u_m_1_1_c_model_variables_a82725532f90f4b4c6c6bd6b4c25d20c3}{scl}
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static std\-::string \hyperlink{class_go_s_u_m_1_1_c_model_variables_aa295a3899598dab50afc56434eb7ace4}{name\-To\-Find} = \char`\"{}\char`\"{}
+\begin{DoxyCompactList}\small\item\em Used in member function Find. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_go_s_u_m_1_1_c_model_variables_ac98d07dd8f7b70e16ccb9a01abf56b9c}{boost\-::serialization\-::access}
+\begin{DoxyCompactList}\small\item\em Boost serialization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for the vector of model variables (inputs \& outputs). 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_model_variables_a539072552d0e09d02843a1fa44b11d3b}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}!C\-Model\-Variables@{C\-Model\-Variables}}
+\index{C\-Model\-Variables@{C\-Model\-Variables}!GoSUM::CModelVariables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}}
+\subsubsection[{C\-Model\-Variables}]{\setlength{\rightskip}{0pt plus 5cm}Go\-S\-U\-M\-::\-C\-Model\-Variables\-::\-C\-Model\-Variables (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_model_variables_a539072552d0e09d02843a1fa44b11d3b}
+\hypertarget{class_go_s_u_m_1_1_c_model_variables_a441352009e92c8d767e798d41e9c19ea}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}!$\sim$\-C\-Model\-Variables@{$\sim$\-C\-Model\-Variables}}
+\index{$\sim$\-C\-Model\-Variables@{$\sim$\-C\-Model\-Variables}!GoSUM::CModelVariables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}}
+\subsubsection[{$\sim$\-C\-Model\-Variables}]{\setlength{\rightskip}{0pt plus 5cm}virtual Go\-S\-U\-M\-::\-C\-Model\-Variables\-::$\sim$\-C\-Model\-Variables (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_model_variables_a441352009e92c8d767e798d41e9c19ea}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_model_variables_a5c03df35b287bec6b42dfb1b13a8c7cc}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}!add@{add}}
+\index{add@{add}!GoSUM::CModelVariables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Model\-Variable}$\ast$ Go\-S\-U\-M\-::\-C\-Model\-Variables\-::add (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Model\-Variable} $\ast$}]{\-\_\-p\-M\-V}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_model_variables_a5c03df35b287bec6b42dfb1b13a8c7cc}
+
+
+Adds, i.\-e. pushes back model variable. 
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variables_a9351f5510881471981abd458b4ca4488}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}!base\-Name@{base\-Name}}
+\index{base\-Name@{base\-Name}!GoSUM::CModelVariables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}}
+\subsubsection[{base\-Name}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Go\-S\-U\-M\-::\-C\-Model\-Variables\-::base\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_model_variables_a9351f5510881471981abd458b4ca4488}
+
+
+Returns base name. 
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variables_aae62db449aed7eaeb8eefb0143e5de2c}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}!clear@{clear}}
+\index{clear@{clear}!GoSUM::CModelVariables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Model\-Variables\-::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_model_variables_aae62db449aed7eaeb8eefb0143e5de2c}
+\hypertarget{class_go_s_u_m_1_1_c_model_variables_a5a7a04ad12b2d23d0921cded3d7121de}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}!clear\-Samples@{clear\-Samples}}
+\index{clear\-Samples@{clear\-Samples}!GoSUM::CModelVariables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}}
+\subsubsection[{clear\-Samples}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Model\-Variables\-::clear\-Samples (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_model_variables_a5a7a04ad12b2d23d0921cded3d7121de}
+
+
+Clears data. 
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variables_afaf27c06a9addbf93646c67360d3eb48}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}!compute\-Statistics@{compute\-Statistics}}
+\index{compute\-Statistics@{compute\-Statistics}!GoSUM::CModelVariables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}}
+\subsubsection[{compute\-Statistics}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Model\-Variables\-::compute\-Statistics (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_model_variables_afaf27c06a9addbf93646c67360d3eb48}
+
+
+Computes statistics of all model variables. 
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variables_a4e7df5a62ff6c0eda6f0de196a704e12}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}!compute\-Statistics@{compute\-Statistics}}
+\index{compute\-Statistics@{compute\-Statistics}!GoSUM::CModelVariables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}}
+\subsubsection[{compute\-Statistics}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Model\-Variables\-::compute\-Statistics (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ int $>$ \&}]{\-\_\-selected, }
+\item[{int}]{\-\_\-n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_model_variables_a4e7df5a62ff6c0eda6f0de196a704e12}
+
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-n} & Computes statistics of selected model variables. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_go_s_u_m_1_1_c_model_variables_abc720f34bfd0c1044150675d5cd5594d}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}!d\-Denormalize@{d\-Denormalize}}
+\index{d\-Denormalize@{d\-Denormalize}!GoSUM::CModelVariables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}}
+\subsubsection[{d\-Denormalize}]{\setlength{\rightskip}{0pt plus 5cm}double Go\-S\-U\-M\-::\-C\-Model\-Variables\-::d\-Denormalize (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_model_variables_abc720f34bfd0c1044150675d5cd5594d}
+
+
+Returns derivative of the denormalization function for ith (expanded) model variable. 
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variables_a65b28acfc2b82e889679abf55b94c2c1}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}!d\-Denormalize@{d\-Denormalize}}
+\index{d\-Denormalize@{d\-Denormalize}!GoSUM::CModelVariables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}}
+\subsubsection[{d\-Denormalize}]{\setlength{\rightskip}{0pt plus 5cm}Array\-Xd Go\-S\-U\-M\-::\-C\-Model\-Variables\-::d\-Denormalize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_model_variables_a65b28acfc2b82e889679abf55b94c2c1}
+
+
+Returns derivatives of the denormalization function for (expanded) model variables. 
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variables_a42b21bbfdd60a640f0925802035bd772}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}!denormalize@{denormalize}}
+\index{denormalize@{denormalize}!GoSUM::CModelVariables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}}
+\subsubsection[{denormalize}]{\setlength{\rightskip}{0pt plus 5cm}double Go\-S\-U\-M\-::\-C\-Model\-Variables\-::denormalize (
+\begin{DoxyParamCaption}
+\item[{double}]{Vi, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_model_variables_a42b21bbfdd60a640f0925802035bd772}
+
+
+Denoramlizes value of the ith (expanded) model variable. 
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variables_aefcc9a87015565230d6f8dd0897173bd}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}!denormalize@{denormalize}}
+\index{denormalize@{denormalize}!GoSUM::CModelVariables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}}
+\subsubsection[{denormalize}]{\setlength{\rightskip}{0pt plus 5cm}Array\-Xd Go\-S\-U\-M\-::\-C\-Model\-Variables\-::denormalize (
+\begin{DoxyParamCaption}
+\item[{const Array\-Xd \&}]{V}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_model_variables_aefcc9a87015565230d6f8dd0897173bd}
+
+
+Denormalizes values of all (expanded) model variables. 
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variables_a3e372277479386d4ed795b718296b439}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}!d\-Normalize@{d\-Normalize}}
+\index{d\-Normalize@{d\-Normalize}!GoSUM::CModelVariables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}}
+\subsubsection[{d\-Normalize}]{\setlength{\rightskip}{0pt plus 5cm}double Go\-S\-U\-M\-::\-C\-Model\-Variables\-::d\-Normalize (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_model_variables_a3e372277479386d4ed795b718296b439}
+
+
+Returns derivative of the normalization function for ith (expanded) model variable. 
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variables_a1a029447ceb9c51a71bd22ccf4a01802}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}!d\-Normalize@{d\-Normalize}}
+\index{d\-Normalize@{d\-Normalize}!GoSUM::CModelVariables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}}
+\subsubsection[{d\-Normalize}]{\setlength{\rightskip}{0pt plus 5cm}Array\-Xd Go\-S\-U\-M\-::\-C\-Model\-Variables\-::d\-Normalize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_model_variables_a1a029447ceb9c51a71bd22ccf4a01802}
+
+
+Returns derivatives of the normalization function for (expanded) model variables. 
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variables_a89540611f83890ddefa97505ef2c02de}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}!empty@{empty}}
+\index{empty@{empty}!GoSUM::CModelVariables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}}
+\subsubsection[{empty}]{\setlength{\rightskip}{0pt plus 5cm}bool Go\-S\-U\-M\-::\-C\-Model\-Variables\-::empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_model_variables_a89540611f83890ddefa97505ef2c02de}
+
+
+Returns true if object contains no model variables, false otherwise. 
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variables_aed850606b33ac1a1d04293eb49ea34fa}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}!empty\-Samples@{empty\-Samples}}
+\index{empty\-Samples@{empty\-Samples}!GoSUM::CModelVariables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}}
+\subsubsection[{empty\-Samples}]{\setlength{\rightskip}{0pt plus 5cm}bool Go\-S\-U\-M\-::\-C\-Model\-Variables\-::empty\-Samples (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_model_variables_aed850606b33ac1a1d04293eb49ea34fa}
+
+
+Returns true if object contains no samples, false otherwise. 
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variables_a915503ed71fab8f50e6fa05a13eb9aba}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}!erase@{erase}}
+\index{erase@{erase}!GoSUM::CModelVariables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}}
+\subsubsection[{erase}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Model\-Variables\-::erase (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-at}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_model_variables_a915503ed71fab8f50e6fa05a13eb9aba}
+
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-at} & Erases particular model variable. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_go_s_u_m_1_1_c_model_variables_a96c11c4fd04abebab9e981d3bdf3db11}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}!erase\-Selected\-Samples@{erase\-Selected\-Samples}}
+\index{erase\-Selected\-Samples@{erase\-Selected\-Samples}!GoSUM::CModelVariables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}}
+\subsubsection[{erase\-Selected\-Samples}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Model\-Variables\-::erase\-Selected\-Samples (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ int $>$ \&}]{sel}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_model_variables_a96c11c4fd04abebab9e981d3bdf3db11}
+
+\begin{DoxyParams}{Parameters}
+{\em sel} & Erases selected sample values. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_go_s_u_m_1_1_c_model_variables_a8aca475f569e0e81bf88d697468cdf67}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}!expanded\-N\-Tuple@{expanded\-N\-Tuple}}
+\index{expanded\-N\-Tuple@{expanded\-N\-Tuple}!GoSUM::CModelVariables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}}
+\subsubsection[{expanded\-N\-Tuple}]{\setlength{\rightskip}{0pt plus 5cm}Array\-Xd Go\-S\-U\-M\-::\-C\-Model\-Variables\-::expanded\-N\-Tuple (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-at}
+\end{DoxyParamCaption}
+) const}}\label{class_go_s_u_m_1_1_c_model_variables_a8aca475f569e0e81bf88d697468cdf67}
+
+
+Returns expanded n-\/tuple containing \-\_\-at sample values of all model variables. 
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variables_a0fb75174963bd1a9ce6f6969c5bc57ab}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}!expanded\-Size@{expanded\-Size}}
+\index{expanded\-Size@{expanded\-Size}!GoSUM::CModelVariables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}}
+\subsubsection[{expanded\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int Go\-S\-U\-M\-::\-C\-Model\-Variables\-::expanded\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_go_s_u_m_1_1_c_model_variables_a0fb75174963bd1a9ce6f6969c5bc57ab}
+
+
+Returns expanded size of model variables (due to categorical). 
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variables_ad6d83d056cb740499c710711f3fcff1d}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}!expand\-N\-Tuple@{expand\-N\-Tuple}}
+\index{expand\-N\-Tuple@{expand\-N\-Tuple}!GoSUM::CModelVariables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}}
+\subsubsection[{expand\-N\-Tuple}]{\setlength{\rightskip}{0pt plus 5cm}Array\-Xd Go\-S\-U\-M\-::\-C\-Model\-Variables\-::expand\-N\-Tuple (
+\begin{DoxyParamCaption}
+\item[{const Array\-Xd \&}]{X}
+\end{DoxyParamCaption}
+) const}}\label{class_go_s_u_m_1_1_c_model_variables_ad6d83d056cb740499c710711f3fcff1d}
+
+
+Expands given n-\/tuple. 
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variables_ac78a93b9814e6b053f3cd7d72ccfa794}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}!find@{find}}
+\index{find@{find}!GoSUM::CModelVariables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}}
+\subsubsection[{find}]{\setlength{\rightskip}{0pt plus 5cm}int Go\-S\-U\-M\-::\-C\-Model\-Variables\-::find (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{\-\_\-name}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_model_variables_ac78a93b9814e6b053f3cd7d72ccfa794}
+
+
+$<$ Finds model variable by name, returns it's index. 
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variables_a43186a53e67e1cfd7f0115977bac1c17}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}!hc\-Point2\-Model\-Point@{hc\-Point2\-Model\-Point}}
+\index{hc\-Point2\-Model\-Point@{hc\-Point2\-Model\-Point}!GoSUM::CModelVariables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}}
+\subsubsection[{hc\-Point2\-Model\-Point}]{\setlength{\rightskip}{0pt plus 5cm}Array\-Xd Go\-S\-U\-M\-::\-C\-Model\-Variables\-::hc\-Point2\-Model\-Point (
+\begin{DoxyParamCaption}
+\item[{const Array\-Xd \&}]{x}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_model_variables_a43186a53e67e1cfd7f0115977bac1c17}
+
+
+Maps hypercube point to model point. 
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variables_aaf419a53e0a053f11801718b7228c578}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}!insert@{insert}}
+\index{insert@{insert}!GoSUM::CModelVariables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Model\-Variable}$\ast$ Go\-S\-U\-M\-::\-C\-Model\-Variables\-::insert (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Model\-Variable} $\ast$}]{\-\_\-p\-M\-V, }
+\item[{int}]{\-\_\-before}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_model_variables_aaf419a53e0a053f11801718b7228c578}
+
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-before} & Inserts model variable in position \-\_\-before. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_go_s_u_m_1_1_c_model_variables_ae9f6f163a086ba7c964ff8cf85a6cfb4}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}!is\-Model\-Variable\-Name@{is\-Model\-Variable\-Name}}
+\index{is\-Model\-Variable\-Name@{is\-Model\-Variable\-Name}!GoSUM::CModelVariables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}}
+\subsubsection[{is\-Model\-Variable\-Name}]{\setlength{\rightskip}{0pt plus 5cm}static bool Go\-S\-U\-M\-::\-C\-Model\-Variables\-::is\-Model\-Variable\-Name (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Model\-Variable} \&}]{\-\_\-a\-M\-V}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_model_variables_ae9f6f163a086ba7c964ff8cf85a6cfb4}
+
+
+Used in member function Find. 
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variables_af11771a78369e73163d30e13e6e90c2f}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}!next\-Name@{next\-Name}}
+\index{next\-Name@{next\-Name}!GoSUM::CModelVariables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}}
+\subsubsection[{next\-Name}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Go\-S\-U\-M\-::\-C\-Model\-Variables\-::next\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_go_s_u_m_1_1_c_model_variables_af11771a78369e73163d30e13e6e90c2f}
+
+
+Returns next variable name. 
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variables_abf4db473db4a17e0010cae650aa0d907}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}!normalize@{normalize}}
+\index{normalize@{normalize}!GoSUM::CModelVariables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}}
+\subsubsection[{normalize}]{\setlength{\rightskip}{0pt plus 5cm}double Go\-S\-U\-M\-::\-C\-Model\-Variables\-::normalize (
+\begin{DoxyParamCaption}
+\item[{double}]{Vi, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_model_variables_abf4db473db4a17e0010cae650aa0d907}
+
+
+(Re)sets normalization of model variables using empirical data in samples. 
+
+Normalizes value of the ith (expanded) model variable. \hypertarget{class_go_s_u_m_1_1_c_model_variables_ac2bbbbc99a0717ab9d5d501b0cf86427}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}!normalize@{normalize}}
+\index{normalize@{normalize}!GoSUM::CModelVariables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}}
+\subsubsection[{normalize}]{\setlength{\rightskip}{0pt plus 5cm}Array\-Xd Go\-S\-U\-M\-::\-C\-Model\-Variables\-::normalize (
+\begin{DoxyParamCaption}
+\item[{const Array\-Xd \&}]{V}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_model_variables_ac2bbbbc99a0717ab9d5d501b0cf86427}
+
+
+Normalizes values of all (expanded) model variables. 
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variables_a92bd5ab6d1d46551a415a98541a2d32a}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}!n\-Tuple@{n\-Tuple}}
+\index{n\-Tuple@{n\-Tuple}!GoSUM::CModelVariables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}}
+\subsubsection[{n\-Tuple}]{\setlength{\rightskip}{0pt plus 5cm}Array\-Xd Go\-S\-U\-M\-::\-C\-Model\-Variables\-::n\-Tuple (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-at}
+\end{DoxyParamCaption}
+) const}}\label{class_go_s_u_m_1_1_c_model_variables_a92bd5ab6d1d46551a415a98541a2d32a}
+
+
+Returns n-\/tuple containing \-\_\-at sample values of all model variables. 
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variables_af311763812d7724409678b8fc87f237c}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}!operator()@{operator()}}
+\index{operator()@{operator()}!GoSUM::CModelVariables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf C\-Model\-Variable}\& Go\-S\-U\-M\-::\-C\-Model\-Variables\-::operator() (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-at}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_model_variables_af311763812d7724409678b8fc87f237c}
+
+
+Clears samples. 
+
+Returns paticular model variable. \hypertarget{class_go_s_u_m_1_1_c_model_variables_a08d7808b67e19ba1f97603901f80cff9}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}!operator()@{operator()}}
+\index{operator()@{operator()}!GoSUM::CModelVariables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Model\-Variable}\& Go\-S\-U\-M\-::\-C\-Model\-Variables\-::operator() (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-at}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_model_variables_a08d7808b67e19ba1f97603901f80cff9}
+
+
+Returns paticular model variable. 
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variables_a2489a0422fc411d13f266bf24639a41c}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}!rename@{rename}}
+\index{rename@{rename}!GoSUM::CModelVariables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}}
+\subsubsection[{rename}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Model\-Variables\-::rename (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-at, }
+\item[{const std\-::string \&}]{\-\_\-name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_model_variables_a2489a0422fc411d13f266bf24639a41c}
+
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-name} & Renames particular model variable. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_go_s_u_m_1_1_c_model_variables_afe392d83fccb9fdf63edbd80e532cf31}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}!replace@{replace}}
+\index{replace@{replace}!GoSUM::CModelVariables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}}
+\subsubsection[{replace}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Model\-Variable}$\ast$ Go\-S\-U\-M\-::\-C\-Model\-Variables\-::replace (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-at, }
+\item[{{\bf C\-Model\-Variable} $\ast$}]{\-\_\-p\-M\-V}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_model_variables_afe392d83fccb9fdf63edbd80e532cf31}
+
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-p\-M\-V} & Replaces model variable in position \-\_\-at with model variable \-\_\-p\-M\-V2. The replaced variable is destroyed. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_go_s_u_m_1_1_c_model_variables_ab2ae6e3a54d10b6d90f98f402a89f6ee}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}!samples@{samples}}
+\index{samples@{samples}!GoSUM::CModelVariables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}}
+\subsubsection[{samples}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ Array\-Xd $>$ Go\-S\-U\-M\-::\-C\-Model\-Variables\-::samples (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_model_variables_ab2ae6e3a54d10b6d90f98f402a89f6ee}
+
+
+Returns all samples. 
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variables_aaa7564978d3d08d4f9ab0a3c58f59239}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}!sample\-Size@{sample\-Size}}
+\index{sample\-Size@{sample\-Size}!GoSUM::CModelVariables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}}
+\subsubsection[{sample\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int Go\-S\-U\-M\-::\-C\-Model\-Variables\-::sample\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_model_variables_aaa7564978d3d08d4f9ab0a3c58f59239}
+
+
+Returns sample size. 
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variables_aa2274914e5ce27be8925b5894b425fa3}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}!serialize@{serialize}}
+\index{serialize@{serialize}!GoSUM::CModelVariables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Archive $>$ void Go\-S\-U\-M\-::\-C\-Model\-Variables\-::serialize (
+\begin{DoxyParamCaption}
+\item[{Archive \&}]{ar, }
+\item[{const unsigned int}]{version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_model_variables_aa2274914e5ce27be8925b5894b425fa3}
+\hypertarget{class_go_s_u_m_1_1_c_model_variables_a11a9ee018a817a9d6ce0914e6bed0b91}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}!set\-Base\-Name@{set\-Base\-Name}}
+\index{set\-Base\-Name@{set\-Base\-Name}!GoSUM::CModelVariables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}}
+\subsubsection[{set\-Base\-Name}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Model\-Variables\-::set\-Base\-Name (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{\-\_\-basename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_model_variables_a11a9ee018a817a9d6ce0914e6bed0b91}
+
+
+Sets base name. 
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variables_a8b7087357a18fbfaba390a47ce3ba309}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}!set\-Distributions@{set\-Distributions}}
+\index{set\-Distributions@{set\-Distributions}!GoSUM::CModelVariables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}}
+\subsubsection[{set\-Distributions}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Model\-Variables\-::set\-Distributions (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ int $>$ \&}]{\-\_\-selected}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_model_variables_a8b7087357a18fbfaba390a47ce3ba309}
+
+
+For selected model variables detects distribution from empirical sample data. 
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variables_a8c5d6852c04dc7d5dcfdf49cdbb801a1}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}!set\-Distributions@{set\-Distributions}}
+\index{set\-Distributions@{set\-Distributions}!GoSUM::CModelVariables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}}
+\subsubsection[{set\-Distributions}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Model\-Variables\-::set\-Distributions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_model_variables_a8c5d6852c04dc7d5dcfdf49cdbb801a1}
+
+
+For all model variables detects distribution from empirical sample data. 
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variables_a28359235bd83070fa2c40bdeeb90fe01}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}!set\-Normalization@{set\-Normalization}}
+\index{set\-Normalization@{set\-Normalization}!GoSUM::CModelVariables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}}
+\subsubsection[{set\-Normalization}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Model\-Variables\-::set\-Normalization (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_model_variables_a28359235bd83070fa2c40bdeeb90fe01}
+\hypertarget{class_go_s_u_m_1_1_c_model_variables_a75268d82c04c54ca4496ff5e1b1406ee}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}!set\-N\-Tuple@{set\-N\-Tuple}}
+\index{set\-N\-Tuple@{set\-N\-Tuple}!GoSUM::CModelVariables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}}
+\subsubsection[{set\-N\-Tuple}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Model\-Variables\-::set\-N\-Tuple (
+\begin{DoxyParamCaption}
+\item[{const Array\-Xd \&}]{X, }
+\item[{int}]{\-\_\-at}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_model_variables_a75268d82c04c54ca4496ff5e1b1406ee}
+
+
+Sets \-\_\-at sample values of all model variables. 
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variables_a7f8df103f73331f3bca77b1baf13da0b}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}!set\-Samples@{set\-Samples}}
+\index{set\-Samples@{set\-Samples}!GoSUM::CModelVariables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}}
+\subsubsection[{set\-Samples}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Model\-Variables\-::set\-Samples (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ Array\-Xd $>$ \&}]{\-\_\-samples}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_model_variables_a7f8df103f73331f3bca77b1baf13da0b}
+
+
+Sets samples of all model variables to values in \-\_\-samples. 
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variables_a3c9ed3cad5fd7c1773a2b13d2e0d4cbe}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}!size@{size}}
+\index{size@{size}!GoSUM::CModelVariables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}int Go\-S\-U\-M\-::\-C\-Model\-Variables\-::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_model_variables_a3c9ed3cad5fd7c1773a2b13d2e0d4cbe}
+
+
+Returns the size of model variables. 
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_model_variables_ac98d07dd8f7b70e16ccb9a01abf56b9c}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}!boost\-::serialization\-::access@{boost\-::serialization\-::access}}
+\index{boost\-::serialization\-::access@{boost\-::serialization\-::access}!GoSUM::CModelVariables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}}
+\subsubsection[{boost\-::serialization\-::access}]{\setlength{\rightskip}{0pt plus 5cm}friend class boost\-::serialization\-::access\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_go_s_u_m_1_1_c_model_variables_ac98d07dd8f7b70e16ccb9a01abf56b9c}
+
+
+Boost serialization. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_model_variables_a3e0a177e926f2512b4499a47ecc9c957}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}!basename@{basename}}
+\index{basename@{basename}!GoSUM::CModelVariables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}}
+\subsubsection[{basename}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Go\-S\-U\-M\-::\-C\-Model\-Variables\-::basename\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_model_variables_a3e0a177e926f2512b4499a47ecc9c957}
+
+
+Holds basename used for generating model variable unique names. 
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variables_a9ce0daf443666eb920bbbbdee00e1e37}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}!mvs@{mvs}}
+\index{mvs@{mvs}!GoSUM::CModelVariables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}}
+\subsubsection[{mvs}]{\setlength{\rightskip}{0pt plus 5cm}boost\-::ptr\-\_\-vector$<${\bf C\-Model\-Variable}$>$ Go\-S\-U\-M\-::\-C\-Model\-Variables\-::mvs\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_model_variables_a9ce0daf443666eb920bbbbdee00e1e37}
+
+
+Holds pointers to model variables. 
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variables_aa295a3899598dab50afc56434eb7ace4}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}!name\-To\-Find@{name\-To\-Find}}
+\index{name\-To\-Find@{name\-To\-Find}!GoSUM::CModelVariables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}}
+\subsubsection[{name\-To\-Find}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Go\-S\-U\-M\-::\-C\-Model\-Variables\-::name\-To\-Find = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_model_variables_aa295a3899598dab50afc56434eb7ace4}
+
+
+Used in member function Find. 
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variables_a82725532f90f4b4c6c6bd6b4c25d20c3}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}!scl@{scl}}
+\index{scl@{scl}!GoSUM::CModelVariables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}}
+\subsubsection[{scl}]{\setlength{\rightskip}{0pt plus 5cm}Array\-Xd Go\-S\-U\-M\-::\-C\-Model\-Variables\-::scl\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_model_variables_a82725532f90f4b4c6c6bd6b4c25d20c3}
+Holds translation and scaling values for normalization of model variables. \hypertarget{class_go_s_u_m_1_1_c_model_variables_a44c359c9aeda8913e9c93bdf133638dd}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}!trn@{trn}}
+\index{trn@{trn}!GoSUM::CModelVariables@{Go\-S\-U\-M\-::\-C\-Model\-Variables}}
+\subsubsection[{trn}]{\setlength{\rightskip}{0pt plus 5cm}Array\-Xd Go\-S\-U\-M\-::\-C\-Model\-Variables\-::trn\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_model_variables_a44c359c9aeda8913e9c93bdf133638dd}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Development/core/\hyperlink{_model_8h}{Model.\-h}\item 
+C\-:/\-Development/core/\hyperlink{_model_8cpp}{Model.\-cpp}\end{DoxyCompactItemize}

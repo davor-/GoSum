@@ -1,0 +1,316 @@
+\hypertarget{class_c_empirical_d_r_v}{\section{C\-Empirical\-D\-R\-V Class Reference}
+\label{class_c_empirical_d_r_v}\index{C\-Empirical\-D\-R\-V@{C\-Empirical\-D\-R\-V}}
+}
+
+
+Class for categorical discrete random variables derived from discrete random variables.  
+
+
+
+
+{\ttfamily \#include $<$Random\-Variable.\-h$>$}
+
+Inheritance diagram for C\-Empirical\-D\-R\-V\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_c_empirical_d_r_v}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_empirical_d_r_v_a0b812bee54d50c33f987da3788a5da70}{C\-Empirical\-D\-R\-V} ()
+\item 
+virtual \hyperlink{class_c_empirical_d_r_v_af84a843f152e353a5ccac842685679c5}{$\sim$\-C\-Empirical\-D\-R\-V} ()
+\item 
+\hyperlink{class_c_empirical_d_r_v_a98462a73cfcab11dc73e5bb6f7244de4}{C\-Empirical\-D\-R\-V} (const \hyperlink{class_c_empirical_d_r_v}{C\-Empirical\-D\-R\-V} \&O)
+\item 
+virtual void \hyperlink{class_c_empirical_d_r_v_accbce4693814409137e7d77c5b36c910}{set\-Distribution} (const \hyperlink{class_c_discrete_sample}{C\-Discrete\-Sample} \&\-\_\-a\-S)
+\begin{DoxyCompactList}\small\item\em Computes P\-M\-F and C\-D\-F from sample histogram. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_c_empirical_d_r_v_a0bb8d31e01e419c3f8b77ecf034ca2a8}{probability} (int \-\_\-k) const 
+\begin{DoxyCompactList}\small\item\em Function that returns P\-M\-F. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_c_empirical_d_r_v_adab1bd8fb031410412f70d52d3ddb3e3}{cumulative} (int \-\_\-k) const 
+\begin{DoxyCompactList}\small\item\em Function that returns C\-D\-F. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_c_empirical_d_r_v_abb2052290e862d26d122b24aeeafa7cb}{expanded\-Size} () const 
+\item 
+virtual double \hyperlink{class_c_empirical_d_r_v_a85960e7ea87de4879f5893ad89b683f2}{min\-Value} () const 
+\begin{DoxyCompactList}\small\item\em After expansion, number of new variables is equal to the number of categories. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_c_empirical_d_r_v_a9831b815323ea8a6a60f68eda50294d8}{max\-Value} () const 
+\begin{DoxyCompactList}\small\item\em Returns maximal value of the random variable. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_c_empirical_d_r_v_a0d952cfaf3190a59525b774de4a1f2e3}{expected\-Value} () const 
+\begin{DoxyCompactList}\small\item\em Returns expected value of the random variable. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_c_random_variable_a80d2a87c43847274138b51f7d713d7f1}{distributiontype} \hyperlink{class_c_empirical_d_r_v_a14227ae88985f6cdd28f7ccd3fa734e7}{distribution\-Type} () const 
+\begin{DoxyCompactList}\small\item\em Returns enum type of the random variable distribution. \end{DoxyCompactList}\item 
+virtual std\-::string \hyperlink{class_c_empirical_d_r_v_acfea0ba8ae0a961a27869ce8e966ba4d}{distribution\-Name} () const 
+\begin{DoxyCompactList}\small\item\em Returns name of the random variable distribution. \end{DoxyCompactList}\item 
+virtual Array\-Xi \hyperlink{class_c_empirical_d_r_v_a896eab1e119e990165bca4ffcb5dc7b6}{export\-Domain} () const 
+\begin{DoxyCompactList}\small\item\em Exports domain of the random variable. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_c_empirical_d_r_v_a54549be13650697081979ee7ea7aae6c}{is\-Distribution\-Defined} () const 
+\begin{DoxyCompactList}\small\item\em Returns true if distribution is defined, false otherwise. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_c_empirical_d_r_v_a65bc76e9a58f20e0e6eec0f036e469f5}{variance} () const 
+\begin{DoxyCompactList}\small\item\em Returns variance of the random variable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual double \hyperlink{class_c_empirical_d_r_v_afa06f54ed41c6c9e743ea2d7603b6b36}{do\-Quantile} (double \-\_\-p) const 
+\begin{DoxyCompactList}\small\item\em Quantile, formula implementation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \hyperlink{class_c_empirical_d_r_v_ae17e04b165f0f575cb7ee96078faac70}{serialize} (Archive \&ar, const unsigned int version)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Array\-Xd \hyperlink{class_c_empirical_d_r_v_a854fc8afdf4194880c978b91baff4852}{p}
+\item 
+Array\-Xd \hyperlink{class_c_empirical_d_r_v_aceab7d27df5fefbaaa64ab7b2e410763}{cdf}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_c_empirical_d_r_v_ac98d07dd8f7b70e16ccb9a01abf56b9c}{boost\-::serialization\-::access}
+\begin{DoxyCompactList}\small\item\em Boost serialization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class for categorical discrete random variables derived from discrete random variables. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_empirical_d_r_v_a0b812bee54d50c33f987da3788a5da70}{\index{C\-Empirical\-D\-R\-V@{C\-Empirical\-D\-R\-V}!C\-Empirical\-D\-R\-V@{C\-Empirical\-D\-R\-V}}
+\index{C\-Empirical\-D\-R\-V@{C\-Empirical\-D\-R\-V}!CEmpiricalDRV@{C\-Empirical\-D\-R\-V}}
+\subsubsection[{C\-Empirical\-D\-R\-V}]{\setlength{\rightskip}{0pt plus 5cm}C\-Empirical\-D\-R\-V\-::\-C\-Empirical\-D\-R\-V (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_empirical_d_r_v_a0b812bee54d50c33f987da3788a5da70}
+\hypertarget{class_c_empirical_d_r_v_af84a843f152e353a5ccac842685679c5}{\index{C\-Empirical\-D\-R\-V@{C\-Empirical\-D\-R\-V}!$\sim$\-C\-Empirical\-D\-R\-V@{$\sim$\-C\-Empirical\-D\-R\-V}}
+\index{$\sim$\-C\-Empirical\-D\-R\-V@{$\sim$\-C\-Empirical\-D\-R\-V}!CEmpiricalDRV@{C\-Empirical\-D\-R\-V}}
+\subsubsection[{$\sim$\-C\-Empirical\-D\-R\-V}]{\setlength{\rightskip}{0pt plus 5cm}virtual C\-Empirical\-D\-R\-V\-::$\sim$\-C\-Empirical\-D\-R\-V (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_empirical_d_r_v_af84a843f152e353a5ccac842685679c5}
+\hypertarget{class_c_empirical_d_r_v_a98462a73cfcab11dc73e5bb6f7244de4}{\index{C\-Empirical\-D\-R\-V@{C\-Empirical\-D\-R\-V}!C\-Empirical\-D\-R\-V@{C\-Empirical\-D\-R\-V}}
+\index{C\-Empirical\-D\-R\-V@{C\-Empirical\-D\-R\-V}!CEmpiricalDRV@{C\-Empirical\-D\-R\-V}}
+\subsubsection[{C\-Empirical\-D\-R\-V}]{\setlength{\rightskip}{0pt plus 5cm}C\-Empirical\-D\-R\-V\-::\-C\-Empirical\-D\-R\-V (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Empirical\-D\-R\-V} \&}]{O}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_empirical_d_r_v_a98462a73cfcab11dc73e5bb6f7244de4}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_empirical_d_r_v_adab1bd8fb031410412f70d52d3ddb3e3}{\index{C\-Empirical\-D\-R\-V@{C\-Empirical\-D\-R\-V}!cumulative@{cumulative}}
+\index{cumulative@{cumulative}!CEmpiricalDRV@{C\-Empirical\-D\-R\-V}}
+\subsubsection[{cumulative}]{\setlength{\rightskip}{0pt plus 5cm}virtual double C\-Empirical\-D\-R\-V\-::cumulative (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-k}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_empirical_d_r_v_adab1bd8fb031410412f70d52d3ddb3e3}
+
+
+Function that returns C\-D\-F. 
+
+\hypertarget{class_c_empirical_d_r_v_acfea0ba8ae0a961a27869ce8e966ba4d}{\index{C\-Empirical\-D\-R\-V@{C\-Empirical\-D\-R\-V}!distribution\-Name@{distribution\-Name}}
+\index{distribution\-Name@{distribution\-Name}!CEmpiricalDRV@{C\-Empirical\-D\-R\-V}}
+\subsubsection[{distribution\-Name}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\-::string C\-Empirical\-D\-R\-V\-::distribution\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_empirical_d_r_v_acfea0ba8ae0a961a27869ce8e966ba4d}
+
+
+Returns name of the random variable distribution. 
+
+
+
+Implements \hyperlink{class_c_random_variable_a4b33eef7c56f9f1a83af01fa8ef2502b}{C\-Random\-Variable}.
+
+\hypertarget{class_c_empirical_d_r_v_a14227ae88985f6cdd28f7ccd3fa734e7}{\index{C\-Empirical\-D\-R\-V@{C\-Empirical\-D\-R\-V}!distribution\-Type@{distribution\-Type}}
+\index{distribution\-Type@{distribution\-Type}!CEmpiricalDRV@{C\-Empirical\-D\-R\-V}}
+\subsubsection[{distribution\-Type}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf distributiontype} C\-Empirical\-D\-R\-V\-::distribution\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_empirical_d_r_v_a14227ae88985f6cdd28f7ccd3fa734e7}
+
+
+Returns enum type of the random variable distribution. 
+
+
+
+Implements \hyperlink{class_c_random_variable_a3b30589d41f4dd200bd40c8273cac2cd}{C\-Random\-Variable}.
+
+\hypertarget{class_c_empirical_d_r_v_afa06f54ed41c6c9e743ea2d7603b6b36}{\index{C\-Empirical\-D\-R\-V@{C\-Empirical\-D\-R\-V}!do\-Quantile@{do\-Quantile}}
+\index{do\-Quantile@{do\-Quantile}!CEmpiricalDRV@{C\-Empirical\-D\-R\-V}}
+\subsubsection[{do\-Quantile}]{\setlength{\rightskip}{0pt plus 5cm}double C\-Empirical\-D\-R\-V\-::do\-Quantile (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-p}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_c_empirical_d_r_v_afa06f54ed41c6c9e743ea2d7603b6b36}
+
+
+Quantile, formula implementation. 
+
+
+
+Implements \hyperlink{class_c_random_variable_a552ab36c8144d7154cbe3cd363eee65b}{C\-Random\-Variable}.
+
+\hypertarget{class_c_empirical_d_r_v_abb2052290e862d26d122b24aeeafa7cb}{\index{C\-Empirical\-D\-R\-V@{C\-Empirical\-D\-R\-V}!expanded\-Size@{expanded\-Size}}
+\index{expanded\-Size@{expanded\-Size}!CEmpiricalDRV@{C\-Empirical\-D\-R\-V}}
+\subsubsection[{expanded\-Size}]{\setlength{\rightskip}{0pt plus 5cm}virtual int C\-Empirical\-D\-R\-V\-::expanded\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_empirical_d_r_v_abb2052290e862d26d122b24aeeafa7cb}
+
+
+Reimplemented from \hyperlink{class_c_random_variable_ada091c2895cf25a75ac8aacecb5da47f}{C\-Random\-Variable}.
+
+\hypertarget{class_c_empirical_d_r_v_a0d952cfaf3190a59525b774de4a1f2e3}{\index{C\-Empirical\-D\-R\-V@{C\-Empirical\-D\-R\-V}!expected\-Value@{expected\-Value}}
+\index{expected\-Value@{expected\-Value}!CEmpiricalDRV@{C\-Empirical\-D\-R\-V}}
+\subsubsection[{expected\-Value}]{\setlength{\rightskip}{0pt plus 5cm}virtual double C\-Empirical\-D\-R\-V\-::expected\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_empirical_d_r_v_a0d952cfaf3190a59525b774de4a1f2e3}
+
+
+Returns expected value of the random variable. 
+
+
+
+Implements \hyperlink{class_c_random_variable_a6e5490d17f2b6abcf9922c8b1bd6d4ed}{C\-Random\-Variable}.
+
+\hypertarget{class_c_empirical_d_r_v_a896eab1e119e990165bca4ffcb5dc7b6}{\index{C\-Empirical\-D\-R\-V@{C\-Empirical\-D\-R\-V}!export\-Domain@{export\-Domain}}
+\index{export\-Domain@{export\-Domain}!CEmpiricalDRV@{C\-Empirical\-D\-R\-V}}
+\subsubsection[{export\-Domain}]{\setlength{\rightskip}{0pt plus 5cm}Array\-Xi C\-Empirical\-D\-R\-V\-::export\-Domain (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_empirical_d_r_v_a896eab1e119e990165bca4ffcb5dc7b6}
+
+
+Exports domain of the random variable. 
+
+
+
+Implements \hyperlink{class_t_random_variable_a37fc52d5fa37493a353887242d279a27}{T\-Random\-Variable$<$ t, T $>$}.
+
+\hypertarget{class_c_empirical_d_r_v_a54549be13650697081979ee7ea7aae6c}{\index{C\-Empirical\-D\-R\-V@{C\-Empirical\-D\-R\-V}!is\-Distribution\-Defined@{is\-Distribution\-Defined}}
+\index{is\-Distribution\-Defined@{is\-Distribution\-Defined}!CEmpiricalDRV@{C\-Empirical\-D\-R\-V}}
+\subsubsection[{is\-Distribution\-Defined}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool C\-Empirical\-D\-R\-V\-::is\-Distribution\-Defined (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_empirical_d_r_v_a54549be13650697081979ee7ea7aae6c}
+
+
+Returns true if distribution is defined, false otherwise. 
+
+
+
+Reimplemented from \hyperlink{class_c_random_variable_a60e88c15450ab21dea6bef00d8836da7}{C\-Random\-Variable}.
+
+\hypertarget{class_c_empirical_d_r_v_a9831b815323ea8a6a60f68eda50294d8}{\index{C\-Empirical\-D\-R\-V@{C\-Empirical\-D\-R\-V}!max\-Value@{max\-Value}}
+\index{max\-Value@{max\-Value}!CEmpiricalDRV@{C\-Empirical\-D\-R\-V}}
+\subsubsection[{max\-Value}]{\setlength{\rightskip}{0pt plus 5cm}virtual double C\-Empirical\-D\-R\-V\-::max\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_empirical_d_r_v_a9831b815323ea8a6a60f68eda50294d8}
+
+
+Returns maximal value of the random variable. 
+
+
+
+Implements \hyperlink{class_c_random_variable_a48a5e98363d866f1f46568ed658479ad}{C\-Random\-Variable}.
+
+\hypertarget{class_c_empirical_d_r_v_a85960e7ea87de4879f5893ad89b683f2}{\index{C\-Empirical\-D\-R\-V@{C\-Empirical\-D\-R\-V}!min\-Value@{min\-Value}}
+\index{min\-Value@{min\-Value}!CEmpiricalDRV@{C\-Empirical\-D\-R\-V}}
+\subsubsection[{min\-Value}]{\setlength{\rightskip}{0pt plus 5cm}virtual double C\-Empirical\-D\-R\-V\-::min\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_empirical_d_r_v_a85960e7ea87de4879f5893ad89b683f2}
+
+
+After expansion, number of new variables is equal to the number of categories. 
+
+Returns minimal value of the random variable. 
+
+Implements \hyperlink{class_c_random_variable_a233ddd2eedb51b09a04a8c330646f356}{C\-Random\-Variable}.
+
+\hypertarget{class_c_empirical_d_r_v_a0bb8d31e01e419c3f8b77ecf034ca2a8}{\index{C\-Empirical\-D\-R\-V@{C\-Empirical\-D\-R\-V}!probability@{probability}}
+\index{probability@{probability}!CEmpiricalDRV@{C\-Empirical\-D\-R\-V}}
+\subsubsection[{probability}]{\setlength{\rightskip}{0pt plus 5cm}virtual double C\-Empirical\-D\-R\-V\-::probability (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-k}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_empirical_d_r_v_a0bb8d31e01e419c3f8b77ecf034ca2a8}
+
+
+Function that returns P\-M\-F. 
+
+\hypertarget{class_c_empirical_d_r_v_ae17e04b165f0f575cb7ee96078faac70}{\index{C\-Empirical\-D\-R\-V@{C\-Empirical\-D\-R\-V}!serialize@{serialize}}
+\index{serialize@{serialize}!CEmpiricalDRV@{C\-Empirical\-D\-R\-V}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Archive $>$ void C\-Empirical\-D\-R\-V\-::serialize (
+\begin{DoxyParamCaption}
+\item[{Archive \&}]{ar, }
+\item[{const unsigned int}]{version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_empirical_d_r_v_ae17e04b165f0f575cb7ee96078faac70}
+\hypertarget{class_c_empirical_d_r_v_accbce4693814409137e7d77c5b36c910}{\index{C\-Empirical\-D\-R\-V@{C\-Empirical\-D\-R\-V}!set\-Distribution@{set\-Distribution}}
+\index{set\-Distribution@{set\-Distribution}!CEmpiricalDRV@{C\-Empirical\-D\-R\-V}}
+\subsubsection[{set\-Distribution}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Empirical\-D\-R\-V\-::set\-Distribution (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Discrete\-Sample} \&}]{\-\_\-a\-S}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_empirical_d_r_v_accbce4693814409137e7d77c5b36c910}
+
+
+Computes P\-M\-F and C\-D\-F from sample histogram. 
+
+\hypertarget{class_c_empirical_d_r_v_a65bc76e9a58f20e0e6eec0f036e469f5}{\index{C\-Empirical\-D\-R\-V@{C\-Empirical\-D\-R\-V}!variance@{variance}}
+\index{variance@{variance}!CEmpiricalDRV@{C\-Empirical\-D\-R\-V}}
+\subsubsection[{variance}]{\setlength{\rightskip}{0pt plus 5cm}virtual double C\-Empirical\-D\-R\-V\-::variance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_empirical_d_r_v_a65bc76e9a58f20e0e6eec0f036e469f5}
+
+
+Returns variance of the random variable. 
+
+
+
+Implements \hyperlink{class_c_random_variable_a3b0b87c4aab74c0406cd8321b8b96747}{C\-Random\-Variable}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_c_empirical_d_r_v_ac98d07dd8f7b70e16ccb9a01abf56b9c}{\index{C\-Empirical\-D\-R\-V@{C\-Empirical\-D\-R\-V}!boost\-::serialization\-::access@{boost\-::serialization\-::access}}
+\index{boost\-::serialization\-::access@{boost\-::serialization\-::access}!CEmpiricalDRV@{C\-Empirical\-D\-R\-V}}
+\subsubsection[{boost\-::serialization\-::access}]{\setlength{\rightskip}{0pt plus 5cm}friend class boost\-::serialization\-::access\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_c_empirical_d_r_v_ac98d07dd8f7b70e16ccb9a01abf56b9c}
+
+
+Boost serialization. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_empirical_d_r_v_aceab7d27df5fefbaaa64ab7b2e410763}{\index{C\-Empirical\-D\-R\-V@{C\-Empirical\-D\-R\-V}!cdf@{cdf}}
+\index{cdf@{cdf}!CEmpiricalDRV@{C\-Empirical\-D\-R\-V}}
+\subsubsection[{cdf}]{\setlength{\rightskip}{0pt plus 5cm}Array\-Xd C\-Empirical\-D\-R\-V\-::cdf\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_empirical_d_r_v_aceab7d27df5fefbaaa64ab7b2e410763}
+P\-M\-F (p) and C\-D\-F (cdf) data. \hypertarget{class_c_empirical_d_r_v_a854fc8afdf4194880c978b91baff4852}{\index{C\-Empirical\-D\-R\-V@{C\-Empirical\-D\-R\-V}!p@{p}}
+\index{p@{p}!CEmpiricalDRV@{C\-Empirical\-D\-R\-V}}
+\subsubsection[{p}]{\setlength{\rightskip}{0pt plus 5cm}Array\-Xd C\-Empirical\-D\-R\-V\-::p\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_empirical_d_r_v_a854fc8afdf4194880c978b91baff4852}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Development/core/\hyperlink{_random_variable_8h}{Random\-Variable.\-h}\item 
+C\-:/\-Development/core/\hyperlink{_random_variable_8cpp}{Random\-Variable.\-cpp}\end{DoxyCompactItemize}

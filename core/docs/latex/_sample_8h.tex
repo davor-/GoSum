@@ -1,0 +1,43 @@
+\hypertarget{_sample_8h}{\section{C\-:/\-Development/core/\-Sample.h File Reference}
+\label{_sample_8h}\index{C\-:/\-Development/core/\-Sample.\-h@{C\-:/\-Development/core/\-Sample.\-h}}
+}
+{\ttfamily \#include \char`\"{}Various\-Math.\-h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_c_sample}{C\-Sample}
+\begin{DoxyCompactList}\small\item\em Abstract class for all samples. \end{DoxyCompactList}\item 
+class \hyperlink{class_t_sample}{T\-Sample$<$ t $>$}
+\begin{DoxyCompactList}\small\item\em Template of an abstract class -\/ covers two types of samples\-: discrete (t=int) or continuous (t=double). \end{DoxyCompactList}\item 
+class \hyperlink{class_c_discrete_sample}{C\-Discrete\-Sample}
+\item 
+class \hyperlink{class_c_continuous_sample}{C\-Continuous\-Sample}
+\item 
+class \hyperlink{class_c_numerical_sample}{C\-Numerical\-Sample}
+\begin{DoxyCompactList}\small\item\em Abstract class for numerical discrete samples. \end{DoxyCompactList}\item 
+class \hyperlink{class_c_categorical_sample}{C\-Categorical\-Sample}
+\begin{DoxyCompactList}\small\item\em Abstract class for categorical discrete samples. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{class_t_sample}{T\-Sample}$<$ int $>$ \hyperlink{_sample_8h_af9bd820cee7809e8c01dafc646e27ec5}{C\-T\-Discrete\-Sample}
+\begin{DoxyCompactList}\small\item\em Abstract class for all discrete samples derived as specialization with t=int. \end{DoxyCompactList}\item 
+typedef \hyperlink{class_t_sample}{T\-Sample}$<$ double $>$ \hyperlink{_sample_8h_a03513f7227fe8a887dd582ddbbb6581f}{C\-T\-Continuous\-Sample}
+\begin{DoxyCompactList}\small\item\em Abstract class for all continuous samples derived as specialization with t=double. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{_sample_8h_a03513f7227fe8a887dd582ddbbb6581f}{\index{Sample.\-h@{Sample.\-h}!C\-T\-Continuous\-Sample@{C\-T\-Continuous\-Sample}}
+\index{C\-T\-Continuous\-Sample@{C\-T\-Continuous\-Sample}!Sample.h@{Sample.\-h}}
+\subsubsection[{C\-T\-Continuous\-Sample}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf T\-Sample}$<$double$>$ {\bf C\-T\-Continuous\-Sample}}}\label{_sample_8h_a03513f7227fe8a887dd582ddbbb6581f}
+
+
+Abstract class for all continuous samples derived as specialization with t=double. 
+
+\hypertarget{_sample_8h_af9bd820cee7809e8c01dafc646e27ec5}{\index{Sample.\-h@{Sample.\-h}!C\-T\-Discrete\-Sample@{C\-T\-Discrete\-Sample}}
+\index{C\-T\-Discrete\-Sample@{C\-T\-Discrete\-Sample}!Sample.h@{Sample.\-h}}
+\subsubsection[{C\-T\-Discrete\-Sample}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf T\-Sample}$<$int$>$ {\bf C\-T\-Discrete\-Sample}}}\label{_sample_8h_af9bd820cee7809e8c01dafc646e27ec5}
+
+
+Abstract class for all discrete samples derived as specialization with t=int. 
+

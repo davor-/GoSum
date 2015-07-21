@@ -1,0 +1,841 @@
+\hypertarget{class_go_s_u_m_1_1_c_script}{\section{Go\-S\-U\-M\-:\-:C\-Script Class Reference}
+\label{class_go_s_u_m_1_1_c_script}\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}}
+}
+
+
+Class for the \hyperlink{struct_go_s_u_m}{Go\-S\-U\-M} script format.  
+
+
+
+
+{\ttfamily \#include $<$Script.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_go_s_u_m_1_1_c_script_a06c3e2db22ecff77965d66bc02d341d2}{C\-Script} ()
+\item 
+virtual \hyperlink{class_go_s_u_m_1_1_c_script_a3c53e854d5bb35c32847beb29acb1060}{$\sim$\-C\-Script} ()
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_a342b561a6400679b076b17e5deb348f1}{read} (\hyperlink{class_go_s_u_m_1_1_c_container}{Go\-S\-U\-M\-::\-C\-Container} $\ast$\-\_\-p\-Container, const std\-::string \&\-\_\-file\-Name)
+\begin{DoxyCompactList}\small\item\em Reads script file and interprets all script commands. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string \hyperlink{class_go_s_u_m_1_1_c_script_a3745cb775f003334d0db6f160536e0f0}{line2\-Path} (std\-::istringstream \&\-\_\-line)
+\begin{DoxyCompactList}\small\item\em Returns path from the input line. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_a15231a0ddd7b3e7d9ee541eeed255fd1}{add\-Variable} (std\-::istringstream \&iscl)
+\begin{DoxyCompactList}\small\item\em Tells project to add model variable. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_adaf0a3a0757fe6057d219e903a3fa3b6}{add\-Variables} (std\-::istringstream \&iscl)
+\begin{DoxyCompactList}\small\item\em Tells project to add model variables. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_aacd0b6d646b1c912beff0430dd001111}{import\-Variables} (std\-::istringstream \&iscl)
+\begin{DoxyCompactList}\small\item\em Tells project to import model variables. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_a5ccd10b1bac4849d5d433a213c4df583}{set\-Project\-Path} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_a6c5347a107096f29ddde5a302c135b75}{set\-Project\-Name} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_af017738819ce477a37b6963077187487}{set\-Project\-Type} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_a13ba29937c117759a9203d4b3a13606c}{set\-Optimization\-Method} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_a5145a840697ab228d2b44f778258ae8f}{set\-Core\-Size} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_a1b06f62a9c08397c1a36e68650d4a34f}{set\-Mat\-Lab\-Path} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_a85b28212a2bfa185eaa6f84bd6cf998f}{set\-R\-N\-G} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_ad652f2ffb2f8779c205f6d82c3b2338e}{add\-Input} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_a7f4fd8f930d9b6c40285dc673deab819}{add\-Output} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_a84ac1047a5e9a374d837ba5540efb1f2}{add\-Inputs} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_a1eeff9fb12a8fde4b6c727bb4d1b86ad}{add\-Outputs} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_adca98aa2c216382d0ec75e0c1393947f}{import\-Inputs} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_a03f578d1c59b2bd261a1f287d46fcbd2}{import\-Outputs} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_ad5cc96be544d7e558e54f8dc08cff1b1}{set\-Resample\-Type} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_a100a80b2c82847007e9272de5d27fb51}{set\-Resample\-Size} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_a049fdf49e87f6e0ab4057999ee9962cd}{set\-Voronoi\-Options} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_a828b553795cc1bec6ae7962a0cd50b86}{resample\-Inputs} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_a918cf422ed0a4e4e3b293282803a7b33}{set\-Model\-Evaluator} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_a8ff5f382c99fb261be9c0abaf21c0cba}{evaluate\-Outputs} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_a1dc461afd2bf5a4bb296a2fe0aaed768}{export\-Input\-Samples} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_a3f76c8c705bfcc7c5e6deb93403f3e5d}{export\-Output\-Samples} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_aaffbacef5bb3b80fd9f487f784b98673}{learn\-Model} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_abc13faf84a2eb8776ca16f166d650959}{import\-Prediction\-Input\-Samples} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_a765f8e1412dcf451c538b205cbb9b1e8}{export\-Prediction\-Output\-Samples} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_a35a8adf25da2fb8dd139ba9e25dcfaa1}{predict} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_a2ab05e665020cf4f694c77fad4aa0305}{set\-Sensitivity\-Options} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_a4c87c55b67a31c0519e8ce81f4d53d6b}{compute\-Sensitivities} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_aaa8c188490fc770831f85859cbff2d20}{set\-Reduction\-Type} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_a7d4221d7057203491f5438a373d497b4}{set\-Reduction\-Outputs} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_a0ede9b035ac834704173b29128740467}{set\-Reduction\-Cutoff\-Size} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_a7ac7512269145c4860882664527fe649}{set\-Reduction\-Cutoff\-Value} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_af9dc9d620d750be5592dd6ee21b0069d}{reduce} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_af28286a54873ea654c468b76b0209fad}{set\-Objective} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_a5ad6edee53cc37c7ac31c51a7da11646}{add\-Optimization\-Constraint} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_a9726d3533bd28e2563929054d2d5cc4c}{set\-Const\-Lower\-Bound} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_ac3c8fda5e692efadaa920ff6112212cb}{set\-Lower\-Bound} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_af9d64ebfd552df3c845d732ed1550d33}{set\-Const\-Upper\-Bound} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_a130e3bf91f74663adda52c97007d221b}{set\-Upper\-Bound} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_add1d6db49a625f22abd4ade32b7dd85d}{set\-Const\-Initial\-Value} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_a91528ab0d0ab138fee82d9a25bc27920}{set\-Initial\-Value} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_a02f1e28faf36d038a41a22523f5a8913}{set\-Mads\-Max\-Evaluation} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_a1b3627fa5e60605390601792c346742f}{set\-Mads\-L\-H\-Search} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_aeeaaf1250133763b77d76d4b3a596981}{set\-Mads\-Init\-Mesh\-Size} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_ae992b0f41a3001021498152a1ffb7be8}{set\-Mads\-Min\-Poll\-Size} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_a98f0a704b09a616af9c2b396c1a42bef}{minimize} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_a270541844d1c34de201598a21d1cffd4}{maximize} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_afe31685f7f6a404c7eff3a3478e53021}{save} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_a0ac0f0522dc2f5ac7efba45beed9f123}{load} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_ad69e6d10860b29b5da51210b562be473}{save\-Xml} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_a0c4edd71b685e35c9bb8804e8cb034cc}{load\-Xml} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_a1104a6eab4ac6a0cae2426586ace7803}{save\-Txt} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_a99f6957ea98fb4f9046a98a3a454b086}{load\-Txt} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_a99e5b53e8cb234a5860e45b6980d773e}{export\-Derivative\-Sensitivity} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_ab3d45d784bc5b3ebe29f05e95146d52f}{export\-Average\-Derivative} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_a5026f7d43cca7545adb02ed1506cc9ed}{export\-Absolute\-Average\-Derivative} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_ade71c2f6bf6d8b695227825b0f67f6f1}{export\-Variance\-Sensitivity} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_a3835177aa9da931873ad15d762ee7dfc}{export\-A\-N\-O\-V\-A1} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_a55e32e5c439dfaf7a0a5017fcb081c35}{export\-Optimization\-Method} (std\-::istringstream \&iscl)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_script_a6e2fc8daf94de0f968dee9f27cd0f03f}{export\-Optimization\-History} (std\-::istringstream \&iscl)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ pair$<$ std\-::string, \\*
+\hyperlink{struct_go_s_u_m_a66b78848987ba5d005b4e86b8a1aef37}{paction} $>$ $>$ \hyperlink{class_go_s_u_m_1_1_c_script_a8dc1a600d5d66301d94f19ed3f49030c}{cmds}
+\begin{DoxyCompactList}\small\item\em Vector of pairs\-: first is string of the admissible script command, second is pointer to action function. \end{DoxyCompactList}\item 
+int \hyperlink{class_go_s_u_m_1_1_c_script_a6e87e334e47c180f9156bd158125e10c}{noeq\-I}
+\item 
+\hyperlink{class_go_s_u_m_1_1_c_container}{C\-Container} $\ast$ \hyperlink{class_go_s_u_m_1_1_c_script_a0434cbf97af11bf18d4d9c61bb10abc5}{p\-Container}
+\begin{DoxyCompactList}\small\item\em Pointer to \hyperlink{struct_go_s_u_m}{Go\-S\-U\-M} project container. \end{DoxyCompactList}\item 
+void(C\-Container\-::$\ast$ \hyperlink{class_go_s_u_m_1_1_c_script_ade2f8577d8eb25ddf804f29d250b0d9b}{padd} )(const std\-::string \&, \hyperlink{class_c_random_variable_a80d2a87c43847274138b51f7d713d7f1}{C\-Random\-Variable\-::distributiontype}, double, double)
+\begin{DoxyCompactList}\small\item\em Pointer to member function that tells project to add model variable. \end{DoxyCompactList}\item 
+void(C\-Container\-::$\ast$ \hyperlink{class_go_s_u_m_1_1_c_script_ac74b46284f8f3bb0840c08d8c4c5599f}{padds} )(int, const std\-::string \&, \hyperlink{class_c_random_variable_a80d2a87c43847274138b51f7d713d7f1}{C\-Random\-Variable\-::distributiontype}, double, double)
+\begin{DoxyCompactList}\small\item\em Pointer to member function that tells project to add model variables. \end{DoxyCompactList}\item 
+void(C\-Container\-::$\ast$ \hyperlink{class_go_s_u_m_1_1_c_script_a9c054f68ecb632cd954e7330bd59cda6}{pimport} )(const std\-::string \&\-\_\-fname)
+\begin{DoxyCompactList}\small\item\em Pointer to member function that tells project to import data from import file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for the \hyperlink{struct_go_s_u_m}{Go\-S\-U\-M} script format. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_script_a06c3e2db22ecff77965d66bc02d341d2}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!C\-Script@{C\-Script}}
+\index{C\-Script@{C\-Script}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{C\-Script}]{\setlength{\rightskip}{0pt plus 5cm}Go\-S\-U\-M\-::\-C\-Script\-::\-C\-Script (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_script_a06c3e2db22ecff77965d66bc02d341d2}
+\hypertarget{class_go_s_u_m_1_1_c_script_a3c53e854d5bb35c32847beb29acb1060}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!$\sim$\-C\-Script@{$\sim$\-C\-Script}}
+\index{$\sim$\-C\-Script@{$\sim$\-C\-Script}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{$\sim$\-C\-Script}]{\setlength{\rightskip}{0pt plus 5cm}virtual Go\-S\-U\-M\-::\-C\-Script\-::$\sim$\-C\-Script (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_script_a3c53e854d5bb35c32847beb29acb1060}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_script_ad652f2ffb2f8779c205f6d82c3b2338e}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!add\-Input@{add\-Input}}
+\index{add\-Input@{add\-Input}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{add\-Input}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::add\-Input (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_ad652f2ffb2f8779c205f6d82c3b2338e}
+Tells project to add one input parameter. Format of the related script command is\-: \par
+ {\bfseries add\-\_\-input = nm tp a b} \par
+ where {\bfseries nm} is the input parameter name (must be unique), {\bfseries tp} is the distribution type, and {\bfseries a} and {\bfseries b} are distribution parameters, for some types they must be omitted. More precisely, following distribution types, and related distribution parameters can be used\-: \par
+
+\begin{DoxyItemize}
+\item {\itshape constantdiscrete}, then {\bfseries a} is the constant value of that random variable, {\bfseries b} must be omitted, \par
+
+\item {\itshape uniformdiscrete}, then {\bfseries a} and {\bfseries b} are the lower and the upper boound of that random variable, \par
+
+\item {\itshape categorical}, then {\bfseries a} and {\bfseries b} must be omitted, \par
+
+\item {\itshape constantcontinuous}, then {\bfseries a} is the constant value of that random variable, {\bfseries b} must be omitted, \par
+
+\item {\itshape uniformcontinuous}, then {\bfseries a} and {\bfseries b} are the lower and the upper boound of that random variable, \par
+
+\item {\itshape gaussian}, then {\bfseries a} is the mean and {\bfseries b} is the standard deviation of the gaussian distribution, \par
+
+\item {\itshape exponential}, then {\bfseries a} is the rate parameter of the exponential parameter, {\bfseries b} must be omitted, \par
+
+\item {\itshape empiricalcontinuous}, then {\bfseries a} and {\bfseries b} must be omitted. 
+\end{DoxyItemize}\hypertarget{class_go_s_u_m_1_1_c_script_a84ac1047a5e9a374d837ba5540efb1f2}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!add\-Inputs@{add\-Inputs}}
+\index{add\-Inputs@{add\-Inputs}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{add\-Inputs}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::add\-Inputs (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_a84ac1047a5e9a374d837ba5540efb1f2}
+Tells project to add multiple input parameters. Format of the related script command is\-: \par
+ {\bfseries add\-\_\-inputs = sz nm tp a b} \par
+ where {\bfseries sz} is the number of input parameters to be added, {\bfseries nm} is the common part for the input parameters name (must be unique), {\bfseries tp} is the distribution type, and {\bfseries a} and {\bfseries b} are distribution parameters, for some types they must be omitted. Multiple adding of input parameters is possible only for input parameters that have the same distribution, and their names are generated by adding a suffix to the common part of the name. For more details on distribution types and parameters, see description of {\bfseries add\-\_\-input} script command. \hypertarget{class_go_s_u_m_1_1_c_script_a5ad6edee53cc37c7ac31c51a7da11646}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!add\-Optimization\-Constraint@{add\-Optimization\-Constraint}}
+\index{add\-Optimization\-Constraint@{add\-Optimization\-Constraint}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{add\-Optimization\-Constraint}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::add\-Optimization\-Constraint (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_a5ad6edee53cc37c7ac31c51a7da11646}
+Tells project to add an optimization constraint. Format of the related script command is\-: \par
+ {\bfseries add\-\_\-optimization\-\_\-constraint = gexpr} \par
+ where {\bfseries gexpr} is the analytical expression of the constraint. \hypertarget{class_go_s_u_m_1_1_c_script_a7f4fd8f930d9b6c40285dc673deab819}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!add\-Output@{add\-Output}}
+\index{add\-Output@{add\-Output}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{add\-Output}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::add\-Output (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_a7f4fd8f930d9b6c40285dc673deab819}
+Tells project to add one output state. Format of the related script command is\-: \par
+ {\bfseries add\-\_\-output = nm tp a b} \par
+ where {\bfseries nm} is the output state name (must be unique), {\bfseries tp} is the distribution type, and {\bfseries a} and {\bfseries b} are distribution parameters, for some types they must be omitted. For more details on distribution types and parameters, see description of {\bfseries add\-\_\-input} script command. \hypertarget{class_go_s_u_m_1_1_c_script_a1eeff9fb12a8fde4b6c727bb4d1b86ad}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!add\-Outputs@{add\-Outputs}}
+\index{add\-Outputs@{add\-Outputs}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{add\-Outputs}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::add\-Outputs (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_a1eeff9fb12a8fde4b6c727bb4d1b86ad}
+Tells project to add multiple output states. Format of the related script command is\-: \par
+ {\bfseries add\-\_\-outputs = sz nm tp a b} \par
+ where {\bfseries sz} is the number of output states to be added, {\bfseries nm} is the common part for the output state name (must be unique), {\bfseries tp} is the distribution type, and {\bfseries a} and {\bfseries b} are distribution parameters, for some types they must be omitted. Multiple adding of output states is possible only for output states that have the same distribution, and their names are generated by adding a suffix to the common part of the name. For more details, see description of {\bfseries add\-\_\-input} script command. \hypertarget{class_go_s_u_m_1_1_c_script_a15231a0ddd7b3e7d9ee541eeed255fd1}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!add\-Variable@{add\-Variable}}
+\index{add\-Variable@{add\-Variable}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{add\-Variable}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::add\-Variable (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_a15231a0ddd7b3e7d9ee541eeed255fd1}
+
+
+Tells project to add model variable. 
+
+\hypertarget{class_go_s_u_m_1_1_c_script_adaf0a3a0757fe6057d219e903a3fa3b6}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!add\-Variables@{add\-Variables}}
+\index{add\-Variables@{add\-Variables}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{add\-Variables}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::add\-Variables (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_adaf0a3a0757fe6057d219e903a3fa3b6}
+
+
+Tells project to add model variables. 
+
+\hypertarget{class_go_s_u_m_1_1_c_script_a4c87c55b67a31c0519e8ce81f4d53d6b}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!compute\-Sensitivities@{compute\-Sensitivities}}
+\index{compute\-Sensitivities@{compute\-Sensitivities}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{compute\-Sensitivities}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::compute\-Sensitivities (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_a4c87c55b67a31c0519e8ce81f4d53d6b}
+Tells project to compute sensitivities. Format of the related script command is\-: \par
+ {\bfseries compute\-\_\-sensitivities} \par
+ \hypertarget{class_go_s_u_m_1_1_c_script_a8ff5f382c99fb261be9c0abaf21c0cba}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!evaluate\-Outputs@{evaluate\-Outputs}}
+\index{evaluate\-Outputs@{evaluate\-Outputs}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{evaluate\-Outputs}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::evaluate\-Outputs (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_a8ff5f382c99fb261be9c0abaf21c0cba}
+Tells project to evaluate output states. Format of the related script command is\-: \par
+ {\bfseries evaluate\-\_\-outputs} \par
+ \hypertarget{class_go_s_u_m_1_1_c_script_a5026f7d43cca7545adb02ed1506cc9ed}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!export\-Absolute\-Average\-Derivative@{export\-Absolute\-Average\-Derivative}}
+\index{export\-Absolute\-Average\-Derivative@{export\-Absolute\-Average\-Derivative}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{export\-Absolute\-Average\-Derivative}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::export\-Absolute\-Average\-Derivative (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_a5026f7d43cca7545adb02ed1506cc9ed}
+Tells project to export absolute average derivative. Format of the related script command is\-: \par
+ {\bfseries export\-\_\-absolute\-\_\-average\-\_\-derivative = fn} \par
+ where {\bfseries fn} is the name of the export file. \hypertarget{class_go_s_u_m_1_1_c_script_a3835177aa9da931873ad15d762ee7dfc}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!export\-A\-N\-O\-V\-A1@{export\-A\-N\-O\-V\-A1}}
+\index{export\-A\-N\-O\-V\-A1@{export\-A\-N\-O\-V\-A1}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{export\-A\-N\-O\-V\-A1}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::export\-A\-N\-O\-V\-A1 (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_a3835177aa9da931873ad15d762ee7dfc}
+Tells project to export first order A\-N\-O\-V\-A. Format of the related script command is\-: \par
+ {\bfseries export\-\_\-\-A\-N\-O\-V\-A1 = fn} \par
+ where {\bfseries fn} is the name of the export file. \hypertarget{class_go_s_u_m_1_1_c_script_ab3d45d784bc5b3ebe29f05e95146d52f}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!export\-Average\-Derivative@{export\-Average\-Derivative}}
+\index{export\-Average\-Derivative@{export\-Average\-Derivative}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{export\-Average\-Derivative}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::export\-Average\-Derivative (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_ab3d45d784bc5b3ebe29f05e95146d52f}
+Tells project to export average derivative. Format of the related script command is\-: \par
+ {\bfseries export\-\_\-average\-\_\-derivative = fn} \par
+ where {\bfseries fn} is the name of the export file. \hypertarget{class_go_s_u_m_1_1_c_script_a99e5b53e8cb234a5860e45b6980d773e}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!export\-Derivative\-Sensitivity@{export\-Derivative\-Sensitivity}}
+\index{export\-Derivative\-Sensitivity@{export\-Derivative\-Sensitivity}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{export\-Derivative\-Sensitivity}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::export\-Derivative\-Sensitivity (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_a99e5b53e8cb234a5860e45b6980d773e}
+Tells project to export derivative sensitivities. Format of the related script command is\-: \par
+ {\bfseries export\-\_\-derivative\-\_\-sensitivity = fn} \par
+ where {\bfseries fn} is the name of the export file. \hypertarget{class_go_s_u_m_1_1_c_script_a1dc461afd2bf5a4bb296a2fe0aaed768}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!export\-Input\-Samples@{export\-Input\-Samples}}
+\index{export\-Input\-Samples@{export\-Input\-Samples}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{export\-Input\-Samples}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::export\-Input\-Samples (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_a1dc461afd2bf5a4bb296a2fe0aaed768}
+Tells project to export input samples. Format of the related script command is\-: \par
+ {\bfseries export\-\_\-input\-\_\-samples = fn} \par
+ where {\bfseries fn} is the name of the export file. \hypertarget{class_go_s_u_m_1_1_c_script_a6e2fc8daf94de0f968dee9f27cd0f03f}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!export\-Optimization\-History@{export\-Optimization\-History}}
+\index{export\-Optimization\-History@{export\-Optimization\-History}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{export\-Optimization\-History}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::export\-Optimization\-History (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_a6e2fc8daf94de0f968dee9f27cd0f03f}
+Tells project to export optimization history. Format of the related script command is\-: \par
+ {\bfseries export\-\_\-optimization\-\_\-history = fn} \par
+ where {\bfseries fn} is the name of the export file. \hypertarget{class_go_s_u_m_1_1_c_script_a55e32e5c439dfaf7a0a5017fcb081c35}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!export\-Optimization\-Method@{export\-Optimization\-Method}}
+\index{export\-Optimization\-Method@{export\-Optimization\-Method}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{export\-Optimization\-Method}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::export\-Optimization\-Method (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_a55e32e5c439dfaf7a0a5017fcb081c35}
+Tells project to export optimization method. Format of the related script command is\-: \par
+ {\bfseries export\-\_\-optimization\-\_\-method = fn} \par
+ where {\bfseries fn} is the name of the export file. \hypertarget{class_go_s_u_m_1_1_c_script_a3f76c8c705bfcc7c5e6deb93403f3e5d}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!export\-Output\-Samples@{export\-Output\-Samples}}
+\index{export\-Output\-Samples@{export\-Output\-Samples}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{export\-Output\-Samples}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::export\-Output\-Samples (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_a3f76c8c705bfcc7c5e6deb93403f3e5d}
+Tells project to export output samples. Format of the related script command is\-: \par
+ {\bfseries export\-\_\-output\-\_\-samples = fn} \par
+ where {\bfseries fn} is the name of the export file. \hypertarget{class_go_s_u_m_1_1_c_script_a765f8e1412dcf451c538b205cbb9b1e8}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!export\-Prediction\-Output\-Samples@{export\-Prediction\-Output\-Samples}}
+\index{export\-Prediction\-Output\-Samples@{export\-Prediction\-Output\-Samples}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{export\-Prediction\-Output\-Samples}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::export\-Prediction\-Output\-Samples (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_a765f8e1412dcf451c538b205cbb9b1e8}
+Tells project to export prediction output samples. Format of the related script command is\-: \par
+ {\bfseries export\-\_\-prediction\-\_\-output\-\_\-samples = fn} \par
+ where {\bfseries fn} is the name of the export file. \hypertarget{class_go_s_u_m_1_1_c_script_ade71c2f6bf6d8b695227825b0f67f6f1}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!export\-Variance\-Sensitivity@{export\-Variance\-Sensitivity}}
+\index{export\-Variance\-Sensitivity@{export\-Variance\-Sensitivity}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{export\-Variance\-Sensitivity}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::export\-Variance\-Sensitivity (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_ade71c2f6bf6d8b695227825b0f67f6f1}
+Tells project to export variance sensitivities. Format of the related script command is\-: \par
+ {\bfseries export\-\_\-variance\-\_\-sensitivity = fn} \par
+ where {\bfseries fn} is the name of the export file. \hypertarget{class_go_s_u_m_1_1_c_script_adca98aa2c216382d0ec75e0c1393947f}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!import\-Inputs@{import\-Inputs}}
+\index{import\-Inputs@{import\-Inputs}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{import\-Inputs}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::import\-Inputs (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_adca98aa2c216382d0ec75e0c1393947f}
+Tells project to import input parameters. Format of the related script command is\-: \par
+ {\bfseries import\-\_\-inputs = fn} \par
+ where {\bfseries fn} is the name of the import file. Import file must have one of the following four formats. (1) In the case of {\bfseries named theoretical variables format} each line must contain variable name, variable distribution type, and distribution parameters. (2) In the case of {\bfseries theoretical variables format} each line must contain variable distribution type and distribution parameters. (3) In the case of {\bfseries named empirical variables format} first line must begin with a \# sign and must contain names of all imported variables. The rest of the file must contain sample data, with columns as variables, and rows as samples. (4) In the case of {\bfseries empirical variables format} file must contain sample data, with columns as variables, and rows as samples. For more details on distribution types and distribution parameters see description of {\bfseries add\-\_\-input} script command. (5) In the case of {\bfseries named declared empirical variables format} first line must begin with a \# sign and must contain names of all imported variables, and second line must begin with a double \# sign and must contain types of all imported variables. The rest of the file must contain sample data, with columns as variables, and rows as samples. (6) In the case of {\bfseries declared empirical variables format} first line must begin with a double \# sign and must contain types of all imported variables. The rest of the file must contain sample data, with columns as variables, and rows as samples. For more details on distribution types and distribution parameters see description of {\bfseries add\-\_\-input} script command. \hypertarget{class_go_s_u_m_1_1_c_script_a03f578d1c59b2bd261a1f287d46fcbd2}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!import\-Outputs@{import\-Outputs}}
+\index{import\-Outputs@{import\-Outputs}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{import\-Outputs}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::import\-Outputs (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_a03f578d1c59b2bd261a1f287d46fcbd2}
+Tells project to import output states. Format of the related script command is\-: \par
+ {\bfseries import\-\_\-outputs = fn} \par
+ where {\bfseries fn} is the name of the import file. For the description of the import file format see cescrition of {\bfseries import\-\_\-inputs} command, format cases (3), (4), (5), and (6). \hypertarget{class_go_s_u_m_1_1_c_script_abc13faf84a2eb8776ca16f166d650959}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!import\-Prediction\-Input\-Samples@{import\-Prediction\-Input\-Samples}}
+\index{import\-Prediction\-Input\-Samples@{import\-Prediction\-Input\-Samples}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{import\-Prediction\-Input\-Samples}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::import\-Prediction\-Input\-Samples (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_abc13faf84a2eb8776ca16f166d650959}
+Tells project to import prediction input samples. Format of the related script command is\-: \par
+ {\bfseries import\-\_\-prediction\-\_\-input\-\_\-samples = fn} \par
+ where {\bfseries fn} is the name of the import file. \hypertarget{class_go_s_u_m_1_1_c_script_aacd0b6d646b1c912beff0430dd001111}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!import\-Variables@{import\-Variables}}
+\index{import\-Variables@{import\-Variables}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{import\-Variables}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::import\-Variables (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_aacd0b6d646b1c912beff0430dd001111}
+
+
+Tells project to import model variables. 
+
+\hypertarget{class_go_s_u_m_1_1_c_script_aaffbacef5bb3b80fd9f487f784b98673}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!learn\-Model@{learn\-Model}}
+\index{learn\-Model@{learn\-Model}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{learn\-Model}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::learn\-Model (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_aaffbacef5bb3b80fd9f487f784b98673}
+Tells project to learn analytical model from the original model. Format of the related script command is\-: \par
+ {\bfseries learn\-\_\-model} \par
+ \hypertarget{class_go_s_u_m_1_1_c_script_a3745cb775f003334d0db6f160536e0f0}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!line2\-Path@{line2\-Path}}
+\index{line2\-Path@{line2\-Path}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{line2\-Path}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Go\-S\-U\-M\-::\-C\-Script\-::line2\-Path (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{\-\_\-line}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_a3745cb775f003334d0db6f160536e0f0}
+
+
+Returns path from the input line. 
+
+\hypertarget{class_go_s_u_m_1_1_c_script_a0ac0f0522dc2f5ac7efba45beed9f123}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!load@{load}}
+\index{load@{load}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::load (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_a0ac0f0522dc2f5ac7efba45beed9f123}
+Tells project to load from binary format. Format of the related script command is\-: \par
+ {\bfseries load} \par
+ \hypertarget{class_go_s_u_m_1_1_c_script_a99f6957ea98fb4f9046a98a3a454b086}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!load\-Txt@{load\-Txt}}
+\index{load\-Txt@{load\-Txt}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{load\-Txt}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::load\-Txt (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_a99f6957ea98fb4f9046a98a3a454b086}
+Tells project to load from txt format. Format of the related script command is\-: \par
+ {\bfseries load\-\_\-txt} \par
+ \hypertarget{class_go_s_u_m_1_1_c_script_a0c4edd71b685e35c9bb8804e8cb034cc}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!load\-Xml@{load\-Xml}}
+\index{load\-Xml@{load\-Xml}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{load\-Xml}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::load\-Xml (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_a0c4edd71b685e35c9bb8804e8cb034cc}
+Tells project to load from xml format. Format of the related script command is\-: \par
+ {\bfseries load\-\_\-xml} \par
+ \hypertarget{class_go_s_u_m_1_1_c_script_a270541844d1c34de201598a21d1cffd4}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!maximize@{maximize}}
+\index{maximize@{maximize}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{maximize}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::maximize (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_a270541844d1c34de201598a21d1cffd4}
+Tells project to find maximum of the previously defined optimization problem. Format of the related script command is\-: \par
+ {\bfseries maximize} \par
+ \hypertarget{class_go_s_u_m_1_1_c_script_a98f0a704b09a616af9c2b396c1a42bef}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!minimize@{minimize}}
+\index{minimize@{minimize}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{minimize}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::minimize (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_a98f0a704b09a616af9c2b396c1a42bef}
+Tells project to find minimum of the previously defined optimization problem. Format of the related script command is\-: \par
+ {\bfseries minimize} \par
+ \hypertarget{class_go_s_u_m_1_1_c_script_a35a8adf25da2fb8dd139ba9e25dcfaa1}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!predict@{predict}}
+\index{predict@{predict}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{predict}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::predict (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_a35a8adf25da2fb8dd139ba9e25dcfaa1}
+Tells project to predict using analytical model. Format of the related script command is\-: \par
+ {\bfseries predict} \par
+ \hypertarget{class_go_s_u_m_1_1_c_script_a342b561a6400679b076b17e5deb348f1}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!read@{read}}
+\index{read@{read}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{read}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::read (
+\begin{DoxyParamCaption}
+\item[{{\bf Go\-S\-U\-M\-::\-C\-Container} $\ast$}]{\-\_\-p\-Container, }
+\item[{const std\-::string \&}]{\-\_\-file\-Name}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_script_a342b561a6400679b076b17e5deb348f1}
+
+
+Reads script file and interprets all script commands. 
+
+\hypertarget{class_go_s_u_m_1_1_c_script_af9dc9d620d750be5592dd6ee21b0069d}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!reduce@{reduce}}
+\index{reduce@{reduce}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{reduce}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::reduce (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_af9dc9d620d750be5592dd6ee21b0069d}
+Tells project to reduce model. Format of the related script command is\-: \par
+ {\bfseries reduce} \par
+ \hypertarget{class_go_s_u_m_1_1_c_script_a828b553795cc1bec6ae7962a0cd50b86}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!resample\-Inputs@{resample\-Inputs}}
+\index{resample\-Inputs@{resample\-Inputs}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{resample\-Inputs}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::resample\-Inputs (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_a828b553795cc1bec6ae7962a0cd50b86}
+Tells project to resample input parameters. Format of the related script command is\-: \par
+ {\bfseries resample\-\_\-inputs} \par
+ \hypertarget{class_go_s_u_m_1_1_c_script_afe31685f7f6a404c7eff3a3478e53021}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!save@{save}}
+\index{save@{save}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::save (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_afe31685f7f6a404c7eff3a3478e53021}
+Tells project to save to binary format. Format of the related script command is\-: \par
+ {\bfseries save} \par
+ \hypertarget{class_go_s_u_m_1_1_c_script_a1104a6eab4ac6a0cae2426586ace7803}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!save\-Txt@{save\-Txt}}
+\index{save\-Txt@{save\-Txt}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{save\-Txt}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::save\-Txt (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_a1104a6eab4ac6a0cae2426586ace7803}
+Tells project to save to txt format. Format of the related script command is\-: \par
+ {\bfseries save\-\_\-txt} \par
+ \hypertarget{class_go_s_u_m_1_1_c_script_ad69e6d10860b29b5da51210b562be473}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!save\-Xml@{save\-Xml}}
+\index{save\-Xml@{save\-Xml}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{save\-Xml}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::save\-Xml (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_ad69e6d10860b29b5da51210b562be473}
+Tells project to save to xml format. Format of the related script command is\-: \par
+ {\bfseries save\-\_\-xml} \par
+ \hypertarget{class_go_s_u_m_1_1_c_script_add1d6db49a625f22abd4ade32b7dd85d}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!set\-Const\-Initial\-Value@{set\-Const\-Initial\-Value}}
+\index{set\-Const\-Initial\-Value@{set\-Const\-Initial\-Value}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{set\-Const\-Initial\-Value}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::set\-Const\-Initial\-Value (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_add1d6db49a625f22abd4ade32b7dd85d}
+Tells project to set constant initial value. Format of the related script command is\-: \par
+ {\bfseries set\-\_\-const\-\_\-upper\-\_\-bound = x0} \par
+ where {\bfseries x0} is the same initial value for all decision variables. \hypertarget{class_go_s_u_m_1_1_c_script_a9726d3533bd28e2563929054d2d5cc4c}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!set\-Const\-Lower\-Bound@{set\-Const\-Lower\-Bound}}
+\index{set\-Const\-Lower\-Bound@{set\-Const\-Lower\-Bound}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{set\-Const\-Lower\-Bound}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::set\-Const\-Lower\-Bound (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_a9726d3533bd28e2563929054d2d5cc4c}
+Tells project to set constant lower bounds. Format of the related script command is\-: \par
+ {\bfseries set\-\_\-const\-\_\-lower\-\_\-bound = xl} \par
+ where {\bfseries xl} is the same lower bound value for all decision variables. \hypertarget{class_go_s_u_m_1_1_c_script_af9d64ebfd552df3c845d732ed1550d33}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!set\-Const\-Upper\-Bound@{set\-Const\-Upper\-Bound}}
+\index{set\-Const\-Upper\-Bound@{set\-Const\-Upper\-Bound}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{set\-Const\-Upper\-Bound}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::set\-Const\-Upper\-Bound (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_af9d64ebfd552df3c845d732ed1550d33}
+Tells project to set constant upper bound. Format of the related script command is\-: \par
+ {\bfseries set\-\_\-const\-\_\-upper\-\_\-bound = xu} \par
+ where {\bfseries xu} is the same upper bound value for all decision variables. \hypertarget{class_go_s_u_m_1_1_c_script_a5145a840697ab228d2b44f778258ae8f}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!set\-Core\-Size@{set\-Core\-Size}}
+\index{set\-Core\-Size@{set\-Core\-Size}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{set\-Core\-Size}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::set\-Core\-Size (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_a5145a840697ab228d2b44f778258ae8f}
+Tells project to set core size. Format of the related script command is\-: \par
+ {\bfseries set\-\_\-core\-\_\-size = cs} \par
+ where {\bfseries cs} is the core size, i.\-e. number of cores to be used when multithreading is used in computations. The optimal value is one less than the number of computer cores. \hypertarget{class_go_s_u_m_1_1_c_script_a91528ab0d0ab138fee82d9a25bc27920}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!set\-Initial\-Value@{set\-Initial\-Value}}
+\index{set\-Initial\-Value@{set\-Initial\-Value}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{set\-Initial\-Value}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::set\-Initial\-Value (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_a91528ab0d0ab138fee82d9a25bc27920}
+Tells project to set initial values for all decision variables. Format of the related script command is\-: \par
+ {\bfseries set\-\_\-initial\-\_\-value = x1\-\_\-0 x2\-\_\-0 ...} \par
+ where {\bfseries x1\-\_\-0} , {\bfseries x2\-\_\-0} , etc. are initial values for decision variables. \hypertarget{class_go_s_u_m_1_1_c_script_ac3c8fda5e692efadaa920ff6112212cb}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!set\-Lower\-Bound@{set\-Lower\-Bound}}
+\index{set\-Lower\-Bound@{set\-Lower\-Bound}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{set\-Lower\-Bound}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::set\-Lower\-Bound (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_ac3c8fda5e692efadaa920ff6112212cb}
+Tells project to set lower bounds for all decision variables. Format of the related script command is\-: \par
+ {\bfseries set\-\_\-lower\-\_\-bound = x1\-\_\-\-L x2\-\_\-\-L ...} \par
+ where {\bfseries x1\-\_\-\-L} , {\bfseries x2\-\_\-\-L} , etc. are lower bounds for decision variables. \hypertarget{class_go_s_u_m_1_1_c_script_aeeaaf1250133763b77d76d4b3a596981}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!set\-Mads\-Init\-Mesh\-Size@{set\-Mads\-Init\-Mesh\-Size}}
+\index{set\-Mads\-Init\-Mesh\-Size@{set\-Mads\-Init\-Mesh\-Size}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{set\-Mads\-Init\-Mesh\-Size}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::set\-Mads\-Init\-Mesh\-Size (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_aeeaaf1250133763b77d76d4b3a596981}
+Tells project to set inital mesh size in M\-A\-D\-S. Format of the related script command is\-: \par
+ {\bfseries set\-\_\-mads\-\_\-init\-\_\-mesh\-\_\-size = ims} \par
+ where {\bfseries ims} is the inital mesh size. \hypertarget{class_go_s_u_m_1_1_c_script_a1b3627fa5e60605390601792c346742f}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!set\-Mads\-L\-H\-Search@{set\-Mads\-L\-H\-Search}}
+\index{set\-Mads\-L\-H\-Search@{set\-Mads\-L\-H\-Search}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{set\-Mads\-L\-H\-Search}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::set\-Mads\-L\-H\-Search (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_a1b3627fa5e60605390601792c346742f}
+Tells project to set L\-H search parameters in M\-A\-D\-S. Format of the related script command is\-: \par
+ {\bfseries set\-\_\-mads\-\_\-lh\-\_\-search = lh0 lhi} \par
+ where {\bfseries lh0} is the inital L\-H value, and {\bfseries lhi} is the L\-H iteration. \hypertarget{class_go_s_u_m_1_1_c_script_a02f1e28faf36d038a41a22523f5a8913}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!set\-Mads\-Max\-Evaluation@{set\-Mads\-Max\-Evaluation}}
+\index{set\-Mads\-Max\-Evaluation@{set\-Mads\-Max\-Evaluation}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{set\-Mads\-Max\-Evaluation}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::set\-Mads\-Max\-Evaluation (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_a02f1e28faf36d038a41a22523f5a8913}
+Tells project to set maximal number of evaluations in M\-A\-D\-S. Format of the related script command is\-: \par
+ {\bfseries set\-\_\-mads\-\_\-max\-\_\-evaluation = maxeval} \par
+ where {\bfseries maxeval} is the maximal number of evaluations. \hypertarget{class_go_s_u_m_1_1_c_script_ae992b0f41a3001021498152a1ffb7be8}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!set\-Mads\-Min\-Poll\-Size@{set\-Mads\-Min\-Poll\-Size}}
+\index{set\-Mads\-Min\-Poll\-Size@{set\-Mads\-Min\-Poll\-Size}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{set\-Mads\-Min\-Poll\-Size}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::set\-Mads\-Min\-Poll\-Size (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_ae992b0f41a3001021498152a1ffb7be8}
+Tells project to set minimal poll size in M\-A\-D\-S. Format of the related script command is\-: \par
+ {\bfseries set\-\_\-mads\-\_\-min\-\_\-poll\-\_\-size = mps} \par
+ where {\bfseries mps} is the minimal poll size. \hypertarget{class_go_s_u_m_1_1_c_script_a1b06f62a9c08397c1a36e68650d4a34f}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!set\-Mat\-Lab\-Path@{set\-Mat\-Lab\-Path}}
+\index{set\-Mat\-Lab\-Path@{set\-Mat\-Lab\-Path}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{set\-Mat\-Lab\-Path}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::set\-Mat\-Lab\-Path (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_a1b06f62a9c08397c1a36e68650d4a34f}
+Tells project to set Mat\-Lab path. Format of the related script command is\-: \par
+ {\bfseries set\-\_\-matlab\-\_\-path = mp} \par
+ where {\bfseries mp} is the Mat\-Lab path, i.\-e. the path of the M\-A\-T\-L\-A\-B.\-exe. \hypertarget{class_go_s_u_m_1_1_c_script_a918cf422ed0a4e4e3b293282803a7b33}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!set\-Model\-Evaluator@{set\-Model\-Evaluator}}
+\index{set\-Model\-Evaluator@{set\-Model\-Evaluator}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{set\-Model\-Evaluator}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::set\-Model\-Evaluator (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_a918cf422ed0a4e4e3b293282803a7b33}
+Tells project to set model evaluator. Format of the related script command is\-: \par
+ {\bfseries set\-\_\-model\-\_\-evaluator = me exe} \par
+ where {\bfseries me} is on of the following model evaluator types\-: {\itshape exeascii}, {\itshape exemat}, {\itshape matlabshell}, {\itshape matlabengine}; and {\bfseries exe} is the name of the executable. \hypertarget{class_go_s_u_m_1_1_c_script_af28286a54873ea654c468b76b0209fad}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!set\-Objective@{set\-Objective}}
+\index{set\-Objective@{set\-Objective}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{set\-Objective}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::set\-Objective (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_af28286a54873ea654c468b76b0209fad}
+Tells project to set objective. Format of the related script command is\-: \par
+ {\bfseries set\-\_\-objective = fexpr} \par
+ where {\bfseries fexpr} is the analytical expression of the objective function. \hypertarget{class_go_s_u_m_1_1_c_script_a13ba29937c117759a9203d4b3a13606c}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!set\-Optimization\-Method@{set\-Optimization\-Method}}
+\index{set\-Optimization\-Method@{set\-Optimization\-Method}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{set\-Optimization\-Method}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::set\-Optimization\-Method (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_a13ba29937c117759a9203d4b3a13606c}
+Tells project to set optimization method. Format of the related script command is\-: \par
+ {\bfseries set\-\_\-optimization\-\_\-method = om} \par
+ where {\bfseries om} is one of the following optimization methods\-: {\itshape mads}, {\itshape ga}. \hypertarget{class_go_s_u_m_1_1_c_script_a6c5347a107096f29ddde5a302c135b75}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!set\-Project\-Name@{set\-Project\-Name}}
+\index{set\-Project\-Name@{set\-Project\-Name}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{set\-Project\-Name}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::set\-Project\-Name (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_a6c5347a107096f29ddde5a302c135b75}
+Tells project to set project name. Format of the related script command is\-: \par
+ {\bfseries set\-\_\-project\-\_\-name = pn} \par
+ where {\bfseries pn} is the name of the project. \hypertarget{class_go_s_u_m_1_1_c_script_a5ccd10b1bac4849d5d433a213c4df583}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!set\-Project\-Path@{set\-Project\-Path}}
+\index{set\-Project\-Path@{set\-Project\-Path}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{set\-Project\-Path}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::set\-Project\-Path (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_a5ccd10b1bac4849d5d433a213c4df583}
+Tells project to set project path. Format of the related script command is\-: \par
+ {\bfseries set\-\_\-project\-\_\-path = pp} \par
+ where {\bfseries pp} is the path which contains all the project related files, must end with a backslash. \hypertarget{class_go_s_u_m_1_1_c_script_af017738819ce477a37b6963077187487}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!set\-Project\-Type@{set\-Project\-Type}}
+\index{set\-Project\-Type@{set\-Project\-Type}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{set\-Project\-Type}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::set\-Project\-Type (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_af017738819ce477a37b6963077187487}
+Tells project to set project type. Format of the related script command is\-: \par
+ {\bfseries set\-\_\-project\-\_\-type = pt} \par
+ where {\bfseries pt} is one of the following project types\-: {\itshape samplegeneration}, {\itshape modelanalysis}, {\itshape dataanalysis}, {\itshape simpleopt}, {\itshape modelopt}, {\itshape learnedmodelopt}, {\itshape learneddataopt}. \hypertarget{class_go_s_u_m_1_1_c_script_a0ede9b035ac834704173b29128740467}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!set\-Reduction\-Cutoff\-Size@{set\-Reduction\-Cutoff\-Size}}
+\index{set\-Reduction\-Cutoff\-Size@{set\-Reduction\-Cutoff\-Size}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{set\-Reduction\-Cutoff\-Size}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::set\-Reduction\-Cutoff\-Size (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_a0ede9b035ac834704173b29128740467}
+Tells project to set reduction cut. Format of the related script command is\-: \par
+ {\bfseries set\-\_\-reduction\-\_\-cutoff\-\_\-size = c} \par
+ where {\bfseries c} is size of chosen top intputs. \hypertarget{class_go_s_u_m_1_1_c_script_a7ac7512269145c4860882664527fe649}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!set\-Reduction\-Cutoff\-Value@{set\-Reduction\-Cutoff\-Value}}
+\index{set\-Reduction\-Cutoff\-Value@{set\-Reduction\-Cutoff\-Value}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{set\-Reduction\-Cutoff\-Value}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::set\-Reduction\-Cutoff\-Value (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_a7ac7512269145c4860882664527fe649}
+Tells project to set reduction cut value. Format of the related script command is\-: \par
+ {\bfseries set\-\_\-reduction\-\_\-cutoff\-\_\-value = c} \par
+ where {\bfseries c} is the cutoff value for choosing top inputs. \hypertarget{class_go_s_u_m_1_1_c_script_a7d4221d7057203491f5438a373d497b4}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!set\-Reduction\-Outputs@{set\-Reduction\-Outputs}}
+\index{set\-Reduction\-Outputs@{set\-Reduction\-Outputs}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{set\-Reduction\-Outputs}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::set\-Reduction\-Outputs (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_a7d4221d7057203491f5438a373d497b4}
+Tells project to set/choose outputs for the model reduction. Format of the related script command is\-: \par
+ {\bfseries set\-\_\-reduction\-\_\-outputs = n o1 o2 ...} \par
+ where {\bfseries rn} is size of chosen outputs, and {\bfseries o1}, {\bfseries o2}, etc. are names of the chosen outputs. \hypertarget{class_go_s_u_m_1_1_c_script_aaa8c188490fc770831f85859cbff2d20}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!set\-Reduction\-Type@{set\-Reduction\-Type}}
+\index{set\-Reduction\-Type@{set\-Reduction\-Type}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{set\-Reduction\-Type}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::set\-Reduction\-Type (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_aaa8c188490fc770831f85859cbff2d20}
+Tells project to set model reduction type. Format of the related script command is\-: \par
+ {\bfseries set\-\_\-reduction\-\_\-type = rt} \par
+ where {\bfseries rt} is one of the following model reduction types\-: {\itshape derivative}, {\itshape averagederivative}, {\itshape absoluteaveragederivative}, {\itshape variance}. \hypertarget{class_go_s_u_m_1_1_c_script_a100a80b2c82847007e9272de5d27fb51}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!set\-Resample\-Size@{set\-Resample\-Size}}
+\index{set\-Resample\-Size@{set\-Resample\-Size}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{set\-Resample\-Size}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::set\-Resample\-Size (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_a100a80b2c82847007e9272de5d27fb51}
+Tells project to set resample size. Format of the related script command is\-: \par
+ {\bfseries set\-\_\-resample\-\_\-size = sz} \par
+ where {\bfseries sz} is the resampling size, i.\-e. number of the samples to be generated. \hypertarget{class_go_s_u_m_1_1_c_script_ad5cc96be544d7e558e54f8dc08cff1b1}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!set\-Resample\-Type@{set\-Resample\-Type}}
+\index{set\-Resample\-Type@{set\-Resample\-Type}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{set\-Resample\-Type}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::set\-Resample\-Type (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_ad5cc96be544d7e558e54f8dc08cff1b1}
+Tells project to set resample type. Format of the related script command is\-: \par
+ {\bfseries set\-\_\-resample\-\_\-type = rg} \par
+ where {\bfseries rg} is one of the following sample generator types\-: {\itshape dsample}, {\itshape montecarlo}, {\itshape cvoronoi}, {\itshape lcvoronoi}. \hypertarget{class_go_s_u_m_1_1_c_script_a85b28212a2bfa185eaa6f84bd6cf998f}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!set\-R\-N\-G@{set\-R\-N\-G}}
+\index{set\-R\-N\-G@{set\-R\-N\-G}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{set\-R\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::set\-R\-N\-G (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_a85b28212a2bfa185eaa6f84bd6cf998f}
+Tells project to set random number generator (R\-N\-G) type. Format of the related script command is\-: \par
+ {\bfseries set\-\_\-rng = rng} \par
+ where {\bfseries rng} is one of the following R\-N\-G types\-: {\itshape smallperiod} (10$^\wedge$8), {\itshape mediumperiod} (2 $\ast$ 10$^\wedge$18), {\itshape nonlinearcongruential}, {\itshape largeperiod} (3.\-138$\ast$10$^\wedge$57), {\itshape dsample} (default), {\itshape mads}. \hypertarget{class_go_s_u_m_1_1_c_script_a2ab05e665020cf4f694c77fad4aa0305}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!set\-Sensitivity\-Options@{set\-Sensitivity\-Options}}
+\index{set\-Sensitivity\-Options@{set\-Sensitivity\-Options}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{set\-Sensitivity\-Options}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::set\-Sensitivity\-Options (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_a2ab05e665020cf4f694c77fad4aa0305}
+Tells project to set sensitivity options. Format of the related script command is\-: \par
+ {\bfseries set\-\_\-sensitivity\-\_\-options = sz eps1 eps2 eps3} \par
+ where {\bfseries sz} is the resized sample size, {\bfseries eps1} is the sensitivity error (default 0.\-005), {\bfseries eps2} is the separability error (default 0.\-01), and {\bfseries eps3} is the coupling error (default 0.\-01). \hypertarget{class_go_s_u_m_1_1_c_script_a130e3bf91f74663adda52c97007d221b}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!set\-Upper\-Bound@{set\-Upper\-Bound}}
+\index{set\-Upper\-Bound@{set\-Upper\-Bound}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{set\-Upper\-Bound}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::set\-Upper\-Bound (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_a130e3bf91f74663adda52c97007d221b}
+Tells project to set upper bounds for all decision variables. Format of the related script command is\-: \par
+ {\bfseries set\-\_\-upper\-\_\-bound = x1\-\_\-\-U x2\-\_\-\-U ...} \par
+ where {\bfseries x1\-\_\-\-U} , {\bfseries x2\-\_\-\-U} , etc. are upper bounds for decision variables. \hypertarget{class_go_s_u_m_1_1_c_script_a049fdf49e87f6e0ab4057999ee9962cd}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!set\-Voronoi\-Options@{set\-Voronoi\-Options}}
+\index{set\-Voronoi\-Options@{set\-Voronoi\-Options}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{set\-Voronoi\-Options}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Script\-::set\-Voronoi\-Options (
+\begin{DoxyParamCaption}
+\item[{std\-::istringstream \&}]{iscl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_a049fdf49e87f6e0ab4057999ee9962cd}
+Tells project to set Centralized Voronoi Tessellation (C\-V\-T) options. Format of the related script command is\-: \par
+ {\bfseries set\-\_\-voronoi\-\_\-options = maxiter q alpha2 beta2} \par
+ where {\bfseries maxiter} is maximal number of iterations in C\-V\-T, and {\bfseries q}, {\bfseries alpha2}, and {\bfseries beta2} are C\-V\-T parameters. 
+
+\subsection{Member Data Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_script_a8dc1a600d5d66301d94f19ed3f49030c}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!cmds@{cmds}}
+\index{cmds@{cmds}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{cmds}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ pair$<$std\-::string,{\bf paction}$>$ $>$ Go\-S\-U\-M\-::\-C\-Script\-::cmds\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_a8dc1a600d5d66301d94f19ed3f49030c}
+
+
+Vector of pairs\-: first is string of the admissible script command, second is pointer to action function. 
+
+\hypertarget{class_go_s_u_m_1_1_c_script_a6e87e334e47c180f9156bd158125e10c}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!noeq\-I@{noeq\-I}}
+\index{noeq\-I@{noeq\-I}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{noeq\-I}]{\setlength{\rightskip}{0pt plus 5cm}int Go\-S\-U\-M\-::\-C\-Script\-::noeq\-I\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_a6e87e334e47c180f9156bd158125e10c}
+\hypertarget{class_go_s_u_m_1_1_c_script_ade2f8577d8eb25ddf804f29d250b0d9b}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!padd@{padd}}
+\index{padd@{padd}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{padd}]{\setlength{\rightskip}{0pt plus 5cm}void(C\-Container\-::$\ast$ Go\-S\-U\-M\-::\-C\-Script\-::padd)(const std\-::string \&, {\bf C\-Random\-Variable\-::distributiontype},double,double)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_ade2f8577d8eb25ddf804f29d250b0d9b}
+
+
+Pointer to member function that tells project to add model variable. 
+
+\hypertarget{class_go_s_u_m_1_1_c_script_ac74b46284f8f3bb0840c08d8c4c5599f}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!padds@{padds}}
+\index{padds@{padds}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{padds}]{\setlength{\rightskip}{0pt plus 5cm}void(C\-Container\-::$\ast$ Go\-S\-U\-M\-::\-C\-Script\-::padds)(int,const std\-::string \&,{\bf C\-Random\-Variable\-::distributiontype},double,double)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_ac74b46284f8f3bb0840c08d8c4c5599f}
+
+
+Pointer to member function that tells project to add model variables. 
+
+\hypertarget{class_go_s_u_m_1_1_c_script_a0434cbf97af11bf18d4d9c61bb10abc5}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!p\-Container@{p\-Container}}
+\index{p\-Container@{p\-Container}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{p\-Container}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Container}$\ast$ Go\-S\-U\-M\-::\-C\-Script\-::p\-Container\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_a0434cbf97af11bf18d4d9c61bb10abc5}
+
+
+Pointer to \hyperlink{struct_go_s_u_m}{Go\-S\-U\-M} project container. 
+
+\hypertarget{class_go_s_u_m_1_1_c_script_a9c054f68ecb632cd954e7330bd59cda6}{\index{Go\-S\-U\-M\-::\-C\-Script@{Go\-S\-U\-M\-::\-C\-Script}!pimport@{pimport}}
+\index{pimport@{pimport}!GoSUM::CScript@{Go\-S\-U\-M\-::\-C\-Script}}
+\subsubsection[{pimport}]{\setlength{\rightskip}{0pt plus 5cm}void(C\-Container\-::$\ast$ Go\-S\-U\-M\-::\-C\-Script\-::pimport)(const std\-::string \&\-\_\-fname)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_script_a9c054f68ecb632cd954e7330bd59cda6}
+
+
+Pointer to member function that tells project to import data from import file. 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Development/core/\hyperlink{_script_8h}{Script.\-h}\item 
+C\-:/\-Development/core/\hyperlink{_script_8cpp}{Script.\-cpp}\end{DoxyCompactItemize}

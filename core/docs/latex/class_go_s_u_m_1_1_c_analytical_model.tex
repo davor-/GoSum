@@ -1,0 +1,389 @@
+\hypertarget{class_go_s_u_m_1_1_c_analytical_model}{\section{Go\-S\-U\-M\-:\-:C\-Analytical\-Model Class Reference}
+\label{class_go_s_u_m_1_1_c_analytical_model}\index{Go\-S\-U\-M\-::\-C\-Analytical\-Model@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}}
+}
+
+
+Class for analytical representation of the model.  
+
+
+
+
+{\ttfamily \#include $<$Analytical\-Model.\-h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_go_s_u_m_1_1_c_analytical_model_ad8bee3341d00a0c75e89c1a4376d6fbb}{svmtype} \{ \hyperlink{class_go_s_u_m_1_1_c_analytical_model_ad8bee3341d00a0c75e89c1a4376d6fbba57a67aad789d0e6d497f44cc2af4dcbe}{epsilonsvr}, 
+\hyperlink{class_go_s_u_m_1_1_c_analytical_model_ad8bee3341d00a0c75e89c1a4376d6fbba5df7898d8ae62d31d25057570e7e15a8}{nusvr}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_go_s_u_m_1_1_c_analytical_model_a44ebec353f82334ade65e6635360e04d}{C\-Analytical\-Model} (\hyperlink{class_go_s_u_m_1_1_c_input_parameters}{C\-Input\-Parameters} $\ast$\-\_\-p\-I\-P, \hyperlink{class_go_s_u_m_1_1_c_output_states}{C\-Output\-States} $\ast$\-\_\-p\-O\-S)
+\item 
+virtual \hyperlink{class_go_s_u_m_1_1_c_analytical_model_a8cc6911beea31fccc79fec5dfe857097}{$\sim$\-C\-Analytical\-Model} ()
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_analytical_model_a9b8a16c57ed0f46bc06bbff78f7c588d}{set\-Svm\-Type} (\hyperlink{class_go_s_u_m_1_1_c_analytical_model_ad8bee3341d00a0c75e89c1a4376d6fbb}{svmtype} \-\_\-etype)
+\begin{DoxyCompactList}\small\item\em Sets chosen svm type. \end{DoxyCompactList}\item 
+\hyperlink{class_go_s_u_m_1_1_c_analytical_model_ad8bee3341d00a0c75e89c1a4376d6fbb}{svmtype} \hyperlink{class_go_s_u_m_1_1_c_analytical_model_a368b3443f4b4bf373fcf7c094237eef9}{svm\-Type} () const 
+\begin{DoxyCompactList}\small\item\em Returns chosen svm type. \end{DoxyCompactList}\item 
+bool \hyperlink{class_go_s_u_m_1_1_c_analytical_model_a47722614e0a971dd937b7ffc570e716c}{empty} () const 
+\begin{DoxyCompactList}\small\item\em Returns true if object is empty, true otherwise. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_analytical_model_a7d10a35d125be37b30c08410cdebff4a}{clear} ()
+\begin{DoxyCompactList}\small\item\em Clears data. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_analytical_model_a390911197964f00cdaf79af4d76e7335}{learn} (\hyperlink{class_c_m_a_d_s}{C\-M\-A\-D\-S} \&\-\_\-mads, std\-::ostream \&\-\_\-out=std\-::cout)
+\begin{DoxyCompactList}\small\item\em Learns S\-V\-M models for all output states. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_analytical_model_a6308bceb0b417036f07f880faf7626d1}{set\-Input\-Samples} (const std\-::vector$<$ Array\-Xd $>$ \&\-\_\-\-X)
+\begin{DoxyCompactList}\small\item\em Sets internal input parameter samples. \end{DoxyCompactList}\item 
+const std\-::vector$<$ Array\-Xd $>$ \& \hyperlink{class_go_s_u_m_1_1_c_analytical_model_acd5facd13931cdc70a39744bf31ea86c}{input\-Samples} ()
+\begin{DoxyCompactList}\small\item\em Returns internal input parameter samples. \end{DoxyCompactList}\item 
+const std\-::vector$<$ Array\-Xd $>$ \& \hyperlink{class_go_s_u_m_1_1_c_analytical_model_a2bc7a8158888665abfcdfaef746120e8}{output\-Samples} ()
+\begin{DoxyCompactList}\small\item\em Returns internal output state samples. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_analytical_model_aece71455392ddef8e4ed2ffbf9b84644}{predict} ()
+\begin{DoxyCompactList}\small\item\em Computes predicted values on internal input/output samples. \end{DoxyCompactList}\item 
+double \hyperlink{class_go_s_u_m_1_1_c_analytical_model_a04f7ececc316bd19909a890940deac2f}{predict\-Value} (const Array\-Xd \&\-\_\-\-X, int i) const 
+\begin{DoxyCompactList}\small\item\em Predicts value of the ith (expanded) output state, \-\_\-\-X must be unexpanded. \end{DoxyCompactList}\item 
+Array\-Xd \hyperlink{class_go_s_u_m_1_1_c_analytical_model_a91b45c57a009c7f19dd1a267ab8cb16c}{predict\-Derivative} (const Array\-Xd \&\-\_\-\-X, int i) const 
+\begin{DoxyCompactList}\small\item\em Predicts gradient of the ith (expanded) output state, \-\_\-\-X must be unexpanded. \end{DoxyCompactList}\item 
+Array\-Xd \hyperlink{class_go_s_u_m_1_1_c_analytical_model_abe4cda89f75cca0b3f9f16447a046b3e}{predict\-Values} (const Array\-Xd \&\-\_\-\-X) const 
+\begin{DoxyCompactList}\small\item\em Predicts values of all output states, \-\_\-\-X must be unexpanded. \end{DoxyCompactList}\item 
+Array\-X\-Xd \hyperlink{class_go_s_u_m_1_1_c_analytical_model_a45f96156ca784a8b8cd9281d8cb84320}{predict\-Derivatives} (const Array\-Xd \&\-\_\-\-X) const 
+\begin{DoxyCompactList}\small\item\em Predicts gradients of all (expanded) output states, \-\_\-\-X must be unexpanded. \end{DoxyCompactList}\item 
+Array\-Xd \hyperlink{class_go_s_u_m_1_1_c_analytical_model_a480b173f4ea83f1fb132c379a1d0947d}{export\-Expected\-Curve} (const Array\-Xd \&\-\_\-x, int \-\_\-i, int \-\_\-o) const 
+\begin{DoxyCompactList}\small\item\em Exports \-\_\-o output vs. \-\_\-i input curve, while other inputs are set to their expected values. \end{DoxyCompactList}\item 
+Array\-Xd \hyperlink{class_go_s_u_m_1_1_c_analytical_model_a1b3f0ceefc23e944989e5d26ad63fdad}{export\-Intersection\-Curve} (int \-\_\-s, const Array\-Xd \&\-\_\-x, int \-\_\-i, int \-\_\-o) const 
+\begin{DoxyCompactList}\small\item\em Exports \-\_\-o output vs. \-\_\-i input curve, while other inputs are set to values in \-\_\-x. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_analytical_model_a614389edb49c62340ee78aeea8732cc1}{set\-Progress\-Slot} (boost\-::function$<$ void()$>$ \-\_\-progress\-Slot)
+\begin{DoxyCompactList}\small\item\em Sets external progress slot. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boost\-::function$<$ void()$>$ \hyperlink{class_go_s_u_m_1_1_c_analytical_model_a1a7e0234d76dda2a15b99c95b6b81d4f}{progress\-Slot}
+\begin{DoxyCompactList}\small\item\em External progress slot, later connected to signal for optimization progress. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \hyperlink{class_go_s_u_m_1_1_c_analytical_model_a4d60f0d24f726a626ba834215a90380d}{serialize} (Archive \&ar, const unsigned int version)
+\item 
+\hyperlink{class_go_s_u_m_1_1_c_analytical_model_a9b902a590c6a95d66cd9c65b9e941bb8}{C\-Analytical\-Model} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_go_s_u_m_1_1_c_analytical_model_ad8bee3341d00a0c75e89c1a4376d6fbb}{svmtype} \hyperlink{class_go_s_u_m_1_1_c_analytical_model_acb4d7f4128a67445757b81c9d82a4ffe}{etype}
+\begin{DoxyCompactList}\small\item\em Holds chosen analytical model type. \end{DoxyCompactList}\item 
+\hyperlink{class_go_s_u_m_1_1_c_input_parameters}{C\-Input\-Parameters} $\ast$ \hyperlink{class_go_s_u_m_1_1_c_analytical_model_ad7743d89d391a77a3328db3497e800db}{p\-I\-P}
+\begin{DoxyCompactList}\small\item\em Points to input parameters. \end{DoxyCompactList}\item 
+\hyperlink{class_go_s_u_m_1_1_c_output_states}{C\-Output\-States} $\ast$ \hyperlink{class_go_s_u_m_1_1_c_analytical_model_adc7b8239bc679f97800d0165d15e83f0}{p\-O\-S}
+\begin{DoxyCompactList}\small\item\em Points to output states. \end{DoxyCompactList}\item 
+boost\-::ptr\-\_\-vector$<$ \hyperlink{class_go_s_u_m_1_1_c_single_a_m}{C\-Single\-A\-M} $>$ \hyperlink{class_go_s_u_m_1_1_c_analytical_model_a032842ab4f4464dbefed384088ed754e}{sam}
+\begin{DoxyCompactList}\small\item\em Holds pointers to snigle output state analytical models. \end{DoxyCompactList}\item 
+std\-::vector$<$ Array\-Xd $>$ \hyperlink{class_go_s_u_m_1_1_c_analytical_model_aebd4e3617cb5a88d6d3b3bca772cea10}{X}
+\item 
+std\-::vector$<$ Array\-Xd $>$ \hyperlink{class_go_s_u_m_1_1_c_analytical_model_ac5eeddbe5c0117e14768bc020b493709}{Y}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_go_s_u_m_1_1_c_analytical_model_ac98d07dd8f7b70e16ccb9a01abf56b9c}{boost\-::serialization\-::access}
+\begin{DoxyCompactList}\small\item\em Boost serialization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for analytical representation of the model. 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_analytical_model_ad8bee3341d00a0c75e89c1a4376d6fbb}{\index{Go\-S\-U\-M\-::\-C\-Analytical\-Model@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}!svmtype@{svmtype}}
+\index{svmtype@{svmtype}!GoSUM::CAnalyticalModel@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}}
+\subsubsection[{svmtype}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Go\-S\-U\-M\-::\-C\-Analytical\-Model\-::svmtype}}}\label{class_go_s_u_m_1_1_c_analytical_model_ad8bee3341d00a0c75e89c1a4376d6fbb}
+\begin{Desc}
+\item[Enumerator\-: ]\par
+\begin{description}
+\index{epsilonsvr@{epsilonsvr}!Go\-S\-U\-M\-::\-C\-Analytical\-Model@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}}\index{Go\-S\-U\-M\-::\-C\-Analytical\-Model@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}!epsilonsvr@{epsilonsvr}}\item[{\em 
+\hypertarget{class_go_s_u_m_1_1_c_analytical_model_ad8bee3341d00a0c75e89c1a4376d6fbba57a67aad789d0e6d497f44cc2af4dcbe}{epsilonsvr}\label{class_go_s_u_m_1_1_c_analytical_model_ad8bee3341d00a0c75e89c1a4376d6fbba57a67aad789d0e6d497f44cc2af4dcbe}
+}]\index{nusvr@{nusvr}!Go\-S\-U\-M\-::\-C\-Analytical\-Model@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}}\index{Go\-S\-U\-M\-::\-C\-Analytical\-Model@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}!nusvr@{nusvr}}\item[{\em 
+\hypertarget{class_go_s_u_m_1_1_c_analytical_model_ad8bee3341d00a0c75e89c1a4376d6fbba5df7898d8ae62d31d25057570e7e15a8}{nusvr}\label{class_go_s_u_m_1_1_c_analytical_model_ad8bee3341d00a0c75e89c1a4376d6fbba5df7898d8ae62d31d25057570e7e15a8}
+}]\end{description}
+\end{Desc}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_analytical_model_a9b902a590c6a95d66cd9c65b9e941bb8}{\index{Go\-S\-U\-M\-::\-C\-Analytical\-Model@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}!C\-Analytical\-Model@{C\-Analytical\-Model}}
+\index{C\-Analytical\-Model@{C\-Analytical\-Model}!GoSUM::CAnalyticalModel@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}}
+\subsubsection[{C\-Analytical\-Model}]{\setlength{\rightskip}{0pt plus 5cm}Go\-S\-U\-M\-::\-C\-Analytical\-Model\-::\-C\-Analytical\-Model (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_analytical_model_a9b902a590c6a95d66cd9c65b9e941bb8}
+\hypertarget{class_go_s_u_m_1_1_c_analytical_model_a44ebec353f82334ade65e6635360e04d}{\index{Go\-S\-U\-M\-::\-C\-Analytical\-Model@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}!C\-Analytical\-Model@{C\-Analytical\-Model}}
+\index{C\-Analytical\-Model@{C\-Analytical\-Model}!GoSUM::CAnalyticalModel@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}}
+\subsubsection[{C\-Analytical\-Model}]{\setlength{\rightskip}{0pt plus 5cm}Go\-S\-U\-M\-::\-C\-Analytical\-Model\-::\-C\-Analytical\-Model (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Input\-Parameters} $\ast$}]{\-\_\-p\-I\-P, }
+\item[{{\bf C\-Output\-States} $\ast$}]{\-\_\-p\-O\-S}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_analytical_model_a44ebec353f82334ade65e6635360e04d}
+\hypertarget{class_go_s_u_m_1_1_c_analytical_model_a8cc6911beea31fccc79fec5dfe857097}{\index{Go\-S\-U\-M\-::\-C\-Analytical\-Model@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}!$\sim$\-C\-Analytical\-Model@{$\sim$\-C\-Analytical\-Model}}
+\index{$\sim$\-C\-Analytical\-Model@{$\sim$\-C\-Analytical\-Model}!GoSUM::CAnalyticalModel@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}}
+\subsubsection[{$\sim$\-C\-Analytical\-Model}]{\setlength{\rightskip}{0pt plus 5cm}virtual Go\-S\-U\-M\-::\-C\-Analytical\-Model\-::$\sim$\-C\-Analytical\-Model (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_analytical_model_a8cc6911beea31fccc79fec5dfe857097}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_analytical_model_a7d10a35d125be37b30c08410cdebff4a}{\index{Go\-S\-U\-M\-::\-C\-Analytical\-Model@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}!clear@{clear}}
+\index{clear@{clear}!GoSUM::CAnalyticalModel@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Analytical\-Model\-::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_analytical_model_a7d10a35d125be37b30c08410cdebff4a}
+
+
+Clears data. 
+
+\hypertarget{class_go_s_u_m_1_1_c_analytical_model_a47722614e0a971dd937b7ffc570e716c}{\index{Go\-S\-U\-M\-::\-C\-Analytical\-Model@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}!empty@{empty}}
+\index{empty@{empty}!GoSUM::CAnalyticalModel@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}}
+\subsubsection[{empty}]{\setlength{\rightskip}{0pt plus 5cm}bool Go\-S\-U\-M\-::\-C\-Analytical\-Model\-::empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_analytical_model_a47722614e0a971dd937b7ffc570e716c}
+
+
+Returns true if object is empty, true otherwise. 
+
+\hypertarget{class_go_s_u_m_1_1_c_analytical_model_a480b173f4ea83f1fb132c379a1d0947d}{\index{Go\-S\-U\-M\-::\-C\-Analytical\-Model@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}!export\-Expected\-Curve@{export\-Expected\-Curve}}
+\index{export\-Expected\-Curve@{export\-Expected\-Curve}!GoSUM::CAnalyticalModel@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}}
+\subsubsection[{export\-Expected\-Curve}]{\setlength{\rightskip}{0pt plus 5cm}Array\-Xd Go\-S\-U\-M\-::\-C\-Analytical\-Model\-::export\-Expected\-Curve (
+\begin{DoxyParamCaption}
+\item[{const Array\-Xd \&}]{\-\_\-x, }
+\item[{int}]{\-\_\-i, }
+\item[{int}]{\-\_\-o}
+\end{DoxyParamCaption}
+) const}}\label{class_go_s_u_m_1_1_c_analytical_model_a480b173f4ea83f1fb132c379a1d0947d}
+
+
+Exports \-\_\-o output vs. \-\_\-i input curve, while other inputs are set to their expected values. 
+
+\hypertarget{class_go_s_u_m_1_1_c_analytical_model_a1b3f0ceefc23e944989e5d26ad63fdad}{\index{Go\-S\-U\-M\-::\-C\-Analytical\-Model@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}!export\-Intersection\-Curve@{export\-Intersection\-Curve}}
+\index{export\-Intersection\-Curve@{export\-Intersection\-Curve}!GoSUM::CAnalyticalModel@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}}
+\subsubsection[{export\-Intersection\-Curve}]{\setlength{\rightskip}{0pt plus 5cm}Array\-Xd Go\-S\-U\-M\-::\-C\-Analytical\-Model\-::export\-Intersection\-Curve (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-s, }
+\item[{const Array\-Xd \&}]{\-\_\-x, }
+\item[{int}]{\-\_\-i, }
+\item[{int}]{\-\_\-o}
+\end{DoxyParamCaption}
+) const}}\label{class_go_s_u_m_1_1_c_analytical_model_a1b3f0ceefc23e944989e5d26ad63fdad}
+
+
+Exports \-\_\-o output vs. \-\_\-i input curve, while other inputs are set to values in \-\_\-x. 
+
+\hypertarget{class_go_s_u_m_1_1_c_analytical_model_acd5facd13931cdc70a39744bf31ea86c}{\index{Go\-S\-U\-M\-::\-C\-Analytical\-Model@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}!input\-Samples@{input\-Samples}}
+\index{input\-Samples@{input\-Samples}!GoSUM::CAnalyticalModel@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}}
+\subsubsection[{input\-Samples}]{\setlength{\rightskip}{0pt plus 5cm}const std\-::vector$<$Array\-Xd$>$\& Go\-S\-U\-M\-::\-C\-Analytical\-Model\-::input\-Samples (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_analytical_model_acd5facd13931cdc70a39744bf31ea86c}
+
+
+Returns internal input parameter samples. 
+
+\hypertarget{class_go_s_u_m_1_1_c_analytical_model_a390911197964f00cdaf79af4d76e7335}{\index{Go\-S\-U\-M\-::\-C\-Analytical\-Model@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}!learn@{learn}}
+\index{learn@{learn}!GoSUM::CAnalyticalModel@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}}
+\subsubsection[{learn}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Analytical\-Model\-::learn (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-M\-A\-D\-S} \&}]{\-\_\-mads, }
+\item[{std\-::ostream \&}]{\-\_\-out = {\ttfamily std\-:\-:cout}}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_analytical_model_a390911197964f00cdaf79af4d76e7335}
+
+
+Learns S\-V\-M models for all output states. 
+
+\hypertarget{class_go_s_u_m_1_1_c_analytical_model_a2bc7a8158888665abfcdfaef746120e8}{\index{Go\-S\-U\-M\-::\-C\-Analytical\-Model@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}!output\-Samples@{output\-Samples}}
+\index{output\-Samples@{output\-Samples}!GoSUM::CAnalyticalModel@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}}
+\subsubsection[{output\-Samples}]{\setlength{\rightskip}{0pt plus 5cm}const std\-::vector$<$Array\-Xd$>$\& Go\-S\-U\-M\-::\-C\-Analytical\-Model\-::output\-Samples (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_analytical_model_a2bc7a8158888665abfcdfaef746120e8}
+
+
+Returns internal output state samples. 
+
+\hypertarget{class_go_s_u_m_1_1_c_analytical_model_aece71455392ddef8e4ed2ffbf9b84644}{\index{Go\-S\-U\-M\-::\-C\-Analytical\-Model@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}!predict@{predict}}
+\index{predict@{predict}!GoSUM::CAnalyticalModel@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}}
+\subsubsection[{predict}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Analytical\-Model\-::predict (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_analytical_model_aece71455392ddef8e4ed2ffbf9b84644}
+
+
+Computes predicted values on internal input/output samples. 
+
+\hypertarget{class_go_s_u_m_1_1_c_analytical_model_a91b45c57a009c7f19dd1a267ab8cb16c}{\index{Go\-S\-U\-M\-::\-C\-Analytical\-Model@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}!predict\-Derivative@{predict\-Derivative}}
+\index{predict\-Derivative@{predict\-Derivative}!GoSUM::CAnalyticalModel@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}}
+\subsubsection[{predict\-Derivative}]{\setlength{\rightskip}{0pt plus 5cm}Array\-Xd Go\-S\-U\-M\-::\-C\-Analytical\-Model\-::predict\-Derivative (
+\begin{DoxyParamCaption}
+\item[{const Array\-Xd \&}]{\-\_\-\-X, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+) const}}\label{class_go_s_u_m_1_1_c_analytical_model_a91b45c57a009c7f19dd1a267ab8cb16c}
+
+
+Predicts gradient of the ith (expanded) output state, \-\_\-\-X must be unexpanded. 
+
+\hypertarget{class_go_s_u_m_1_1_c_analytical_model_a45f96156ca784a8b8cd9281d8cb84320}{\index{Go\-S\-U\-M\-::\-C\-Analytical\-Model@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}!predict\-Derivatives@{predict\-Derivatives}}
+\index{predict\-Derivatives@{predict\-Derivatives}!GoSUM::CAnalyticalModel@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}}
+\subsubsection[{predict\-Derivatives}]{\setlength{\rightskip}{0pt plus 5cm}Array\-X\-Xd Go\-S\-U\-M\-::\-C\-Analytical\-Model\-::predict\-Derivatives (
+\begin{DoxyParamCaption}
+\item[{const Array\-Xd \&}]{\-\_\-\-X}
+\end{DoxyParamCaption}
+) const}}\label{class_go_s_u_m_1_1_c_analytical_model_a45f96156ca784a8b8cd9281d8cb84320}
+
+
+Predicts gradients of all (expanded) output states, \-\_\-\-X must be unexpanded. 
+
+\hypertarget{class_go_s_u_m_1_1_c_analytical_model_a04f7ececc316bd19909a890940deac2f}{\index{Go\-S\-U\-M\-::\-C\-Analytical\-Model@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}!predict\-Value@{predict\-Value}}
+\index{predict\-Value@{predict\-Value}!GoSUM::CAnalyticalModel@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}}
+\subsubsection[{predict\-Value}]{\setlength{\rightskip}{0pt plus 5cm}double Go\-S\-U\-M\-::\-C\-Analytical\-Model\-::predict\-Value (
+\begin{DoxyParamCaption}
+\item[{const Array\-Xd \&}]{\-\_\-\-X, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+) const}}\label{class_go_s_u_m_1_1_c_analytical_model_a04f7ececc316bd19909a890940deac2f}
+
+
+Predicts value of the ith (expanded) output state, \-\_\-\-X must be unexpanded. 
+
+\hypertarget{class_go_s_u_m_1_1_c_analytical_model_abe4cda89f75cca0b3f9f16447a046b3e}{\index{Go\-S\-U\-M\-::\-C\-Analytical\-Model@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}!predict\-Values@{predict\-Values}}
+\index{predict\-Values@{predict\-Values}!GoSUM::CAnalyticalModel@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}}
+\subsubsection[{predict\-Values}]{\setlength{\rightskip}{0pt plus 5cm}Array\-Xd Go\-S\-U\-M\-::\-C\-Analytical\-Model\-::predict\-Values (
+\begin{DoxyParamCaption}
+\item[{const Array\-Xd \&}]{\-\_\-\-X}
+\end{DoxyParamCaption}
+) const}}\label{class_go_s_u_m_1_1_c_analytical_model_abe4cda89f75cca0b3f9f16447a046b3e}
+
+
+Predicts values of all output states, \-\_\-\-X must be unexpanded. 
+
+\hypertarget{class_go_s_u_m_1_1_c_analytical_model_a4d60f0d24f726a626ba834215a90380d}{\index{Go\-S\-U\-M\-::\-C\-Analytical\-Model@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}!serialize@{serialize}}
+\index{serialize@{serialize}!GoSUM::CAnalyticalModel@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Archive $>$ void Go\-S\-U\-M\-::\-C\-Analytical\-Model\-::serialize (
+\begin{DoxyParamCaption}
+\item[{Archive \&}]{ar, }
+\item[{const unsigned int}]{version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_analytical_model_a4d60f0d24f726a626ba834215a90380d}
+\hypertarget{class_go_s_u_m_1_1_c_analytical_model_a6308bceb0b417036f07f880faf7626d1}{\index{Go\-S\-U\-M\-::\-C\-Analytical\-Model@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}!set\-Input\-Samples@{set\-Input\-Samples}}
+\index{set\-Input\-Samples@{set\-Input\-Samples}!GoSUM::CAnalyticalModel@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}}
+\subsubsection[{set\-Input\-Samples}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Analytical\-Model\-::set\-Input\-Samples (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ Array\-Xd $>$ \&}]{\-\_\-\-X}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_analytical_model_a6308bceb0b417036f07f880faf7626d1}
+
+
+Sets internal input parameter samples. 
+
+\hypertarget{class_go_s_u_m_1_1_c_analytical_model_a614389edb49c62340ee78aeea8732cc1}{\index{Go\-S\-U\-M\-::\-C\-Analytical\-Model@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}!set\-Progress\-Slot@{set\-Progress\-Slot}}
+\index{set\-Progress\-Slot@{set\-Progress\-Slot}!GoSUM::CAnalyticalModel@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}}
+\subsubsection[{set\-Progress\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Analytical\-Model\-::set\-Progress\-Slot (
+\begin{DoxyParamCaption}
+\item[{boost\-::function$<$ void()$>$}]{\-\_\-progress\-Slot}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_analytical_model_a614389edb49c62340ee78aeea8732cc1}
+
+
+Sets external progress slot. 
+
+\hypertarget{class_go_s_u_m_1_1_c_analytical_model_a9b8a16c57ed0f46bc06bbff78f7c588d}{\index{Go\-S\-U\-M\-::\-C\-Analytical\-Model@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}!set\-Svm\-Type@{set\-Svm\-Type}}
+\index{set\-Svm\-Type@{set\-Svm\-Type}!GoSUM::CAnalyticalModel@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}}
+\subsubsection[{set\-Svm\-Type}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Analytical\-Model\-::set\-Svm\-Type (
+\begin{DoxyParamCaption}
+\item[{{\bf svmtype}}]{\-\_\-etype}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_analytical_model_a9b8a16c57ed0f46bc06bbff78f7c588d}
+
+
+Sets chosen svm type. 
+
+\hypertarget{class_go_s_u_m_1_1_c_analytical_model_a368b3443f4b4bf373fcf7c094237eef9}{\index{Go\-S\-U\-M\-::\-C\-Analytical\-Model@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}!svm\-Type@{svm\-Type}}
+\index{svm\-Type@{svm\-Type}!GoSUM::CAnalyticalModel@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}}
+\subsubsection[{svm\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf svmtype} Go\-S\-U\-M\-::\-C\-Analytical\-Model\-::svm\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_analytical_model_a368b3443f4b4bf373fcf7c094237eef9}
+
+
+Returns chosen svm type. 
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_analytical_model_ac98d07dd8f7b70e16ccb9a01abf56b9c}{\index{Go\-S\-U\-M\-::\-C\-Analytical\-Model@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}!boost\-::serialization\-::access@{boost\-::serialization\-::access}}
+\index{boost\-::serialization\-::access@{boost\-::serialization\-::access}!GoSUM::CAnalyticalModel@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}}
+\subsubsection[{boost\-::serialization\-::access}]{\setlength{\rightskip}{0pt plus 5cm}friend class boost\-::serialization\-::access\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_go_s_u_m_1_1_c_analytical_model_ac98d07dd8f7b70e16ccb9a01abf56b9c}
+
+
+Boost serialization. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_analytical_model_acb4d7f4128a67445757b81c9d82a4ffe}{\index{Go\-S\-U\-M\-::\-C\-Analytical\-Model@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}!etype@{etype}}
+\index{etype@{etype}!GoSUM::CAnalyticalModel@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}}
+\subsubsection[{etype}]{\setlength{\rightskip}{0pt plus 5cm}{\bf svmtype} Go\-S\-U\-M\-::\-C\-Analytical\-Model\-::etype\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_analytical_model_acb4d7f4128a67445757b81c9d82a4ffe}
+
+
+Holds chosen analytical model type. 
+
+\hypertarget{class_go_s_u_m_1_1_c_analytical_model_ad7743d89d391a77a3328db3497e800db}{\index{Go\-S\-U\-M\-::\-C\-Analytical\-Model@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}!p\-I\-P@{p\-I\-P}}
+\index{p\-I\-P@{p\-I\-P}!GoSUM::CAnalyticalModel@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}}
+\subsubsection[{p\-I\-P}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Input\-Parameters}$\ast$ Go\-S\-U\-M\-::\-C\-Analytical\-Model\-::p\-I\-P\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_analytical_model_ad7743d89d391a77a3328db3497e800db}
+
+
+Points to input parameters. 
+
+\hypertarget{class_go_s_u_m_1_1_c_analytical_model_adc7b8239bc679f97800d0165d15e83f0}{\index{Go\-S\-U\-M\-::\-C\-Analytical\-Model@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}!p\-O\-S@{p\-O\-S}}
+\index{p\-O\-S@{p\-O\-S}!GoSUM::CAnalyticalModel@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}}
+\subsubsection[{p\-O\-S}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Output\-States}$\ast$ Go\-S\-U\-M\-::\-C\-Analytical\-Model\-::p\-O\-S\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_analytical_model_adc7b8239bc679f97800d0165d15e83f0}
+
+
+Points to output states. 
+
+\hypertarget{class_go_s_u_m_1_1_c_analytical_model_a1a7e0234d76dda2a15b99c95b6b81d4f}{\index{Go\-S\-U\-M\-::\-C\-Analytical\-Model@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}!progress\-Slot@{progress\-Slot}}
+\index{progress\-Slot@{progress\-Slot}!GoSUM::CAnalyticalModel@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}}
+\subsubsection[{progress\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}boost\-::function$<$void()$>$ Go\-S\-U\-M\-::\-C\-Analytical\-Model\-::progress\-Slot}}\label{class_go_s_u_m_1_1_c_analytical_model_a1a7e0234d76dda2a15b99c95b6b81d4f}
+
+
+External progress slot, later connected to signal for optimization progress. 
+
+\hypertarget{class_go_s_u_m_1_1_c_analytical_model_a032842ab4f4464dbefed384088ed754e}{\index{Go\-S\-U\-M\-::\-C\-Analytical\-Model@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}!sam@{sam}}
+\index{sam@{sam}!GoSUM::CAnalyticalModel@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}}
+\subsubsection[{sam}]{\setlength{\rightskip}{0pt plus 5cm}boost\-::ptr\-\_\-vector$<${\bf C\-Single\-A\-M}$>$ Go\-S\-U\-M\-::\-C\-Analytical\-Model\-::sam\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_analytical_model_a032842ab4f4464dbefed384088ed754e}
+
+
+Holds pointers to snigle output state analytical models. 
+
+\hypertarget{class_go_s_u_m_1_1_c_analytical_model_aebd4e3617cb5a88d6d3b3bca772cea10}{\index{Go\-S\-U\-M\-::\-C\-Analytical\-Model@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}!X@{X}}
+\index{X@{X}!GoSUM::CAnalyticalModel@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}}
+\subsubsection[{X}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$Array\-Xd$>$ Go\-S\-U\-M\-::\-C\-Analytical\-Model\-::\-X\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_analytical_model_aebd4e3617cb5a88d6d3b3bca772cea10}
+\hypertarget{class_go_s_u_m_1_1_c_analytical_model_ac5eeddbe5c0117e14768bc020b493709}{\index{Go\-S\-U\-M\-::\-C\-Analytical\-Model@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}!Y@{Y}}
+\index{Y@{Y}!GoSUM::CAnalyticalModel@{Go\-S\-U\-M\-::\-C\-Analytical\-Model}}
+\subsubsection[{Y}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$Array\-Xd$>$ Go\-S\-U\-M\-::\-C\-Analytical\-Model\-::\-Y\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_analytical_model_ac5eeddbe5c0117e14768bc020b493709}
+Input parameter and output state samples for prediction. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Development/core/\hyperlink{_analytical_model_8h}{Analytical\-Model.\-h}\item 
+C\-:/\-Development/core/\hyperlink{_analytical_model_8cpp}{Analytical\-Model.\-cpp}\end{DoxyCompactItemize}

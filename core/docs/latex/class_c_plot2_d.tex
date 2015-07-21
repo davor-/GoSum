@@ -1,0 +1,270 @@
+\hypertarget{class_c_plot2_d}{\section{C\-Plot2\-D Class Reference}
+\label{class_c_plot2_d}\index{C\-Plot2\-D@{C\-Plot2\-D}}
+}
+
+
+{\ttfamily \#include $<$Plot2\-D.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_plot2_d_a246d313948262010a6b4c0ae35dcd018}{C\-Plot2\-D} ()
+\item 
+virtual \hyperlink{class_c_plot2_d_ab6a336373e5d6c8921203d02f6c9b001}{$\sim$\-C\-Plot2\-D} ()
+\item 
+Qwt\-Plot\-Canvas $\ast$ \hyperlink{class_c_plot2_d_adaf4b046b335ef408b926aafa6904e94}{canvas} ()
+\begin{DoxyCompactList}\small\item\em Returns pointer to plot canvas. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_plot2_d_ac75b52dfcaf4b747eb9c4a00b9e4a8d6}{new\-Plot} (Q\-Widget $\ast$pwidget, double xmin, double xmax, double ymin, double ymax, double lymin, double lymax)
+\begin{DoxyCompactList}\small\item\em Creates new 2\-D plot with given min and max values on the axis. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_plot2_d_ab684969d5d7c18cde8912a839c3c4ea1}{new\-Color\-Bar\-Plot} (Q\-Widget $\ast$pwidget, double xmin, double xmax, double ymin, double ymax, double zmin, double zmax)
+\begin{DoxyCompactList}\small\item\em Creates new 2\-D plot with given min and max values on the axis. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_plot2_d_af6a12102bfbb2de27dbbf978ee4f73cc}{set\-Titles} (string title, Qt\-::\-Global\-Color clr, string btitle, Qt\-::\-Global\-Color bclr, string ttitle, Qt\-::\-Global\-Color tclr, string ltitle, Qt\-::\-Global\-Color lclr, string rtitle, Qt\-::\-Global\-Color rclr)
+\item 
+void \hyperlink{class_c_plot2_d_a8a4279b0dce8f4c6211b889898a72ba8}{replot} ()
+\begin{DoxyCompactList}\small\item\em Sets titles (text and color) for all axis. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_plot2_d_a4ea1db373775fa3ea8411b6da428abee}{clear} ()
+\begin{DoxyCompactList}\small\item\em Clears object. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_plot2_d_a5bdce50a9d19c1b1984dfa95140b05b4}{plot\-With\-Pen} (const Array\-Xd \&X, const Array\-Xd \&Y, string name, Qt\-::\-Global\-Color clr)
+\begin{DoxyCompactList}\small\item\em Plots data using pen. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_plot2_d_a8cfde68202cdef9abbaa0c61e742c1fe}{plot\-With\-Symbol} (const Array\-Xd \&X, const Array\-Xd \&Y, string name, Qt\-::\-Global\-Color clr)
+\begin{DoxyCompactList}\small\item\em Plots data using symbols. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_plot2_d_a953dd4f846fd81ae9adc527d072713c2}{plot\-With\-Symbol} (const std\-::vector$<$ double $>$ \&X, const std\-::vector$<$ double $>$ \&Y, string name, Qt\-::\-Global\-Color clr)
+\begin{DoxyCompactList}\small\item\em Plots data using symbols. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_plot2_d_ac29ef6ddb8c2d2f64332b90476cfb601}{plot\-With\-Histogram} (const Array\-Xi \&Xi, const Array\-Xd \&H, string name, Qt\-::\-Global\-Color clr)
+\begin{DoxyCompactList}\small\item\em Plots data using histogram. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_plot2_d_ab68706ba0a4f3220108269830490f8c0}{plot\-With\-Histogram} (const Array\-Xd \&X, const Array\-Xd \&H, string name, Qt\-::\-Global\-Color clr)
+\begin{DoxyCompactList}\small\item\em Plots data using histogram. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_plot2_d_a1fbafb6098887872e62cbec35ad08d0f}{plot\-With\-Spectrogram} (const Array\-X\-Xd \&A, const std\-::vector$<$ std\-::string $>$ \&xlabels, const std\-::vector$<$ std\-::string $>$ \&ylabels)
+\begin{DoxyCompactList}\small\item\em Plots data using spectrogram. \end{DoxyCompactList}\item 
+Qwt\-Plot $\ast$ \hyperlink{class_c_plot2_d_a638d86e37cd2c349f73fd44e33b30ee6}{get\-Plot} ()
+\begin{DoxyCompactList}\small\item\em Returns the Qwt\-Plot object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Qwt\-Linear\-Color\-Map $\ast$ \hyperlink{class_c_plot2_d_a8daa9859c3f21a1bb234ab9291bb2edc}{new\-Color\-Map} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Qwt\-Plot $\ast$ \hyperlink{class_c_plot2_d_a2aa95de8ef10820fecda3c1ba2ad0605}{plot}
+\begin{DoxyCompactList}\small\item\em Holds pointer to the Qwt\-Plot object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_plot2_d_a246d313948262010a6b4c0ae35dcd018}{\index{C\-Plot2\-D@{C\-Plot2\-D}!C\-Plot2\-D@{C\-Plot2\-D}}
+\index{C\-Plot2\-D@{C\-Plot2\-D}!CPlot2D@{C\-Plot2\-D}}
+\subsubsection[{C\-Plot2\-D}]{\setlength{\rightskip}{0pt plus 5cm}C\-Plot2\-D\-::\-C\-Plot2\-D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_plot2_d_a246d313948262010a6b4c0ae35dcd018}
+\hypertarget{class_c_plot2_d_ab6a336373e5d6c8921203d02f6c9b001}{\index{C\-Plot2\-D@{C\-Plot2\-D}!$\sim$\-C\-Plot2\-D@{$\sim$\-C\-Plot2\-D}}
+\index{$\sim$\-C\-Plot2\-D@{$\sim$\-C\-Plot2\-D}!CPlot2D@{C\-Plot2\-D}}
+\subsubsection[{$\sim$\-C\-Plot2\-D}]{\setlength{\rightskip}{0pt plus 5cm}virtual C\-Plot2\-D\-::$\sim$\-C\-Plot2\-D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_plot2_d_ab6a336373e5d6c8921203d02f6c9b001}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_plot2_d_adaf4b046b335ef408b926aafa6904e94}{\index{C\-Plot2\-D@{C\-Plot2\-D}!canvas@{canvas}}
+\index{canvas@{canvas}!CPlot2D@{C\-Plot2\-D}}
+\subsubsection[{canvas}]{\setlength{\rightskip}{0pt plus 5cm}Qwt\-Plot\-Canvas $\ast$ C\-Plot2\-D\-::canvas (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_plot2_d_adaf4b046b335ef408b926aafa6904e94}
+
+
+Returns pointer to plot canvas. 
+
+\hypertarget{class_c_plot2_d_a4ea1db373775fa3ea8411b6da428abee}{\index{C\-Plot2\-D@{C\-Plot2\-D}!clear@{clear}}
+\index{clear@{clear}!CPlot2D@{C\-Plot2\-D}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Plot2\-D\-::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_plot2_d_a4ea1db373775fa3ea8411b6da428abee}
+
+
+Clears object. 
+
+\hypertarget{class_c_plot2_d_a638d86e37cd2c349f73fd44e33b30ee6}{\index{C\-Plot2\-D@{C\-Plot2\-D}!get\-Plot@{get\-Plot}}
+\index{get\-Plot@{get\-Plot}!CPlot2D@{C\-Plot2\-D}}
+\subsubsection[{get\-Plot}]{\setlength{\rightskip}{0pt plus 5cm}Qwt\-Plot$\ast$ C\-Plot2\-D\-::get\-Plot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_plot2_d_a638d86e37cd2c349f73fd44e33b30ee6}
+
+
+Returns the Qwt\-Plot object. 
+
+\hypertarget{class_c_plot2_d_ab684969d5d7c18cde8912a839c3c4ea1}{\index{C\-Plot2\-D@{C\-Plot2\-D}!new\-Color\-Bar\-Plot@{new\-Color\-Bar\-Plot}}
+\index{new\-Color\-Bar\-Plot@{new\-Color\-Bar\-Plot}!CPlot2D@{C\-Plot2\-D}}
+\subsubsection[{new\-Color\-Bar\-Plot}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Plot2\-D\-::new\-Color\-Bar\-Plot (
+\begin{DoxyParamCaption}
+\item[{Q\-Widget $\ast$}]{pwidget, }
+\item[{double}]{xmin, }
+\item[{double}]{xmax, }
+\item[{double}]{ymin, }
+\item[{double}]{ymax, }
+\item[{double}]{zmin, }
+\item[{double}]{zmax}
+\end{DoxyParamCaption}
+)}}\label{class_c_plot2_d_ab684969d5d7c18cde8912a839c3c4ea1}
+
+
+Creates new 2\-D plot with given min and max values on the axis. 
+
+\hypertarget{class_c_plot2_d_a8daa9859c3f21a1bb234ab9291bb2edc}{\index{C\-Plot2\-D@{C\-Plot2\-D}!new\-Color\-Map@{new\-Color\-Map}}
+\index{new\-Color\-Map@{new\-Color\-Map}!CPlot2D@{C\-Plot2\-D}}
+\subsubsection[{new\-Color\-Map}]{\setlength{\rightskip}{0pt plus 5cm}Qwt\-Linear\-Color\-Map $\ast$ C\-Plot2\-D\-::new\-Color\-Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_plot2_d_a8daa9859c3f21a1bb234ab9291bb2edc}
+\hypertarget{class_c_plot2_d_ac75b52dfcaf4b747eb9c4a00b9e4a8d6}{\index{C\-Plot2\-D@{C\-Plot2\-D}!new\-Plot@{new\-Plot}}
+\index{new\-Plot@{new\-Plot}!CPlot2D@{C\-Plot2\-D}}
+\subsubsection[{new\-Plot}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Plot2\-D\-::new\-Plot (
+\begin{DoxyParamCaption}
+\item[{Q\-Widget $\ast$}]{pwidget, }
+\item[{double}]{xmin, }
+\item[{double}]{xmax, }
+\item[{double}]{ymin, }
+\item[{double}]{ymax, }
+\item[{double}]{lymin, }
+\item[{double}]{lymax}
+\end{DoxyParamCaption}
+)}}\label{class_c_plot2_d_ac75b52dfcaf4b747eb9c4a00b9e4a8d6}
+
+
+Creates new 2\-D plot with given min and max values on the axis. 
+
+\hypertarget{class_c_plot2_d_ac29ef6ddb8c2d2f64332b90476cfb601}{\index{C\-Plot2\-D@{C\-Plot2\-D}!plot\-With\-Histogram@{plot\-With\-Histogram}}
+\index{plot\-With\-Histogram@{plot\-With\-Histogram}!CPlot2D@{C\-Plot2\-D}}
+\subsubsection[{plot\-With\-Histogram}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Plot2\-D\-::plot\-With\-Histogram (
+\begin{DoxyParamCaption}
+\item[{const Array\-Xi \&}]{Xi, }
+\item[{const Array\-Xd \&}]{H, }
+\item[{string}]{name, }
+\item[{Qt\-::\-Global\-Color}]{clr}
+\end{DoxyParamCaption}
+)}}\label{class_c_plot2_d_ac29ef6ddb8c2d2f64332b90476cfb601}
+
+
+Plots data using histogram. 
+
+\hypertarget{class_c_plot2_d_ab68706ba0a4f3220108269830490f8c0}{\index{C\-Plot2\-D@{C\-Plot2\-D}!plot\-With\-Histogram@{plot\-With\-Histogram}}
+\index{plot\-With\-Histogram@{plot\-With\-Histogram}!CPlot2D@{C\-Plot2\-D}}
+\subsubsection[{plot\-With\-Histogram}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Plot2\-D\-::plot\-With\-Histogram (
+\begin{DoxyParamCaption}
+\item[{const Array\-Xd \&}]{X, }
+\item[{const Array\-Xd \&}]{H, }
+\item[{string}]{name, }
+\item[{Qt\-::\-Global\-Color}]{clr}
+\end{DoxyParamCaption}
+)}}\label{class_c_plot2_d_ab68706ba0a4f3220108269830490f8c0}
+
+
+Plots data using histogram. 
+
+\hypertarget{class_c_plot2_d_a5bdce50a9d19c1b1984dfa95140b05b4}{\index{C\-Plot2\-D@{C\-Plot2\-D}!plot\-With\-Pen@{plot\-With\-Pen}}
+\index{plot\-With\-Pen@{plot\-With\-Pen}!CPlot2D@{C\-Plot2\-D}}
+\subsubsection[{plot\-With\-Pen}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Plot2\-D\-::plot\-With\-Pen (
+\begin{DoxyParamCaption}
+\item[{const Array\-Xd \&}]{X, }
+\item[{const Array\-Xd \&}]{Y, }
+\item[{string}]{name, }
+\item[{Qt\-::\-Global\-Color}]{clr}
+\end{DoxyParamCaption}
+)}}\label{class_c_plot2_d_a5bdce50a9d19c1b1984dfa95140b05b4}
+
+
+Plots data using pen. 
+
+\hypertarget{class_c_plot2_d_a1fbafb6098887872e62cbec35ad08d0f}{\index{C\-Plot2\-D@{C\-Plot2\-D}!plot\-With\-Spectrogram@{plot\-With\-Spectrogram}}
+\index{plot\-With\-Spectrogram@{plot\-With\-Spectrogram}!CPlot2D@{C\-Plot2\-D}}
+\subsubsection[{plot\-With\-Spectrogram}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Plot2\-D\-::plot\-With\-Spectrogram (
+\begin{DoxyParamCaption}
+\item[{const Array\-X\-Xd \&}]{A, }
+\item[{const std\-::vector$<$ std\-::string $>$ \&}]{xlabels, }
+\item[{const std\-::vector$<$ std\-::string $>$ \&}]{ylabels}
+\end{DoxyParamCaption}
+)}}\label{class_c_plot2_d_a1fbafb6098887872e62cbec35ad08d0f}
+
+
+Plots data using spectrogram. 
+
+\hypertarget{class_c_plot2_d_a8cfde68202cdef9abbaa0c61e742c1fe}{\index{C\-Plot2\-D@{C\-Plot2\-D}!plot\-With\-Symbol@{plot\-With\-Symbol}}
+\index{plot\-With\-Symbol@{plot\-With\-Symbol}!CPlot2D@{C\-Plot2\-D}}
+\subsubsection[{plot\-With\-Symbol}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Plot2\-D\-::plot\-With\-Symbol (
+\begin{DoxyParamCaption}
+\item[{const Array\-Xd \&}]{X, }
+\item[{const Array\-Xd \&}]{Y, }
+\item[{string}]{name, }
+\item[{Qt\-::\-Global\-Color}]{clr}
+\end{DoxyParamCaption}
+)}}\label{class_c_plot2_d_a8cfde68202cdef9abbaa0c61e742c1fe}
+
+
+Plots data using symbols. 
+
+\hypertarget{class_c_plot2_d_a953dd4f846fd81ae9adc527d072713c2}{\index{C\-Plot2\-D@{C\-Plot2\-D}!plot\-With\-Symbol@{plot\-With\-Symbol}}
+\index{plot\-With\-Symbol@{plot\-With\-Symbol}!CPlot2D@{C\-Plot2\-D}}
+\subsubsection[{plot\-With\-Symbol}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Plot2\-D\-::plot\-With\-Symbol (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ double $>$ \&}]{X, }
+\item[{const std\-::vector$<$ double $>$ \&}]{Y, }
+\item[{string}]{name, }
+\item[{Qt\-::\-Global\-Color}]{clr}
+\end{DoxyParamCaption}
+)}}\label{class_c_plot2_d_a953dd4f846fd81ae9adc527d072713c2}
+
+
+Plots data using symbols. 
+
+\hypertarget{class_c_plot2_d_a8a4279b0dce8f4c6211b889898a72ba8}{\index{C\-Plot2\-D@{C\-Plot2\-D}!replot@{replot}}
+\index{replot@{replot}!CPlot2D@{C\-Plot2\-D}}
+\subsubsection[{replot}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Plot2\-D\-::replot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_plot2_d_a8a4279b0dce8f4c6211b889898a72ba8}
+
+
+Sets titles (text and color) for all axis. 
+
+Replots the 2\-D plot. \hypertarget{class_c_plot2_d_af6a12102bfbb2de27dbbf978ee4f73cc}{\index{C\-Plot2\-D@{C\-Plot2\-D}!set\-Titles@{set\-Titles}}
+\index{set\-Titles@{set\-Titles}!CPlot2D@{C\-Plot2\-D}}
+\subsubsection[{set\-Titles}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Plot2\-D\-::set\-Titles (
+\begin{DoxyParamCaption}
+\item[{string}]{title, }
+\item[{Qt\-::\-Global\-Color}]{clr, }
+\item[{string}]{btitle, }
+\item[{Qt\-::\-Global\-Color}]{bclr, }
+\item[{string}]{ttitle, }
+\item[{Qt\-::\-Global\-Color}]{tclr, }
+\item[{string}]{ltitle, }
+\item[{Qt\-::\-Global\-Color}]{lclr, }
+\item[{string}]{rtitle, }
+\item[{Qt\-::\-Global\-Color}]{rclr}
+\end{DoxyParamCaption}
+)}}\label{class_c_plot2_d_af6a12102bfbb2de27dbbf978ee4f73cc}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_plot2_d_a2aa95de8ef10820fecda3c1ba2ad0605}{\index{C\-Plot2\-D@{C\-Plot2\-D}!plot@{plot}}
+\index{plot@{plot}!CPlot2D@{C\-Plot2\-D}}
+\subsubsection[{plot}]{\setlength{\rightskip}{0pt plus 5cm}Qwt\-Plot$\ast$ C\-Plot2\-D\-::plot\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_plot2_d_a2aa95de8ef10820fecda3c1ba2ad0605}
+
+
+Holds pointer to the Qwt\-Plot object. 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Development/core/\hyperlink{_plot2_d_8h}{Plot2\-D.\-h}\item 
+C\-:/\-Development/core/\hyperlink{_plot2_d_8cpp}{Plot2\-D.\-cpp}\end{DoxyCompactItemize}

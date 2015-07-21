@@ -1,0 +1,580 @@
+\hypertarget{class_go_s_u_m_1_1_c_model_variable}{\section{Go\-S\-U\-M\-:\-:C\-Model\-Variable Class Reference}
+\label{class_go_s_u_m_1_1_c_model_variable}\index{Go\-S\-U\-M\-::\-C\-Model\-Variable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}}
+}
+
+
+Class for any variable in the \hyperlink{struct_go_s_u_m}{Go\-S\-U\-M} model (input or output).  
+
+
+
+
+{\ttfamily \#include $<$Model\-Variable.\-h$>$}
+
+Inheritance diagram for Go\-S\-U\-M\-:\-:C\-Model\-Variable\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_go_s_u_m_1_1_c_model_variable}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_go_s_u_m_1_1_c_model_variable_af87a883a7decdacb83591c41817a0a12}{C\-Model\-Variable} ()
+\item 
+virtual \hyperlink{class_go_s_u_m_1_1_c_model_variable_a54604e01443f4195b1ea3a197458dc07}{$\sim$\-C\-Model\-Variable} ()
+\item 
+\hyperlink{class_go_s_u_m_1_1_c_model_variable}{C\-Model\-Variable} $\ast$ \hyperlink{class_go_s_u_m_1_1_c_model_variable_ab70398d40549692929f1bfbff7281a56}{clone} (std\-::string \-\_\-uname)
+\begin{DoxyCompactList}\small\item\em Clones itself to a new model variable with different name. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_model_variable_a2166acba16fad9f71f3fcf8b1f8cebb2}{set\-Name} (const std\-::string \&\-\_\-uname)
+\begin{DoxyCompactList}\small\item\em Set name of the model variable. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{class_go_s_u_m_1_1_c_model_variable_ae305b19e3e4705db2a0c989b45dd58f9}{name} () const 
+\begin{DoxyCompactList}\small\item\em Returns name of the model variable. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_go_s_u_m_1_1_c_model_variable_af53c01e36cd1b8fdfec4e66a99776745}{clear\-Sample} ()=0
+\begin{DoxyCompactList}\small\item\em Clears variable's sample. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_go_s_u_m_1_1_c_model_variable_ab2889a825983ec58f9661a1e162904f3}{expanded\-Size} () const =0
+\item 
+virtual void \hyperlink{class_go_s_u_m_1_1_c_model_variable_a4424193dc952f62acaa2bb902b1585cd}{set\-Sample\-Size} (int \-\_\-n)=0
+\begin{DoxyCompactList}\small\item\em Returns number of variables after expansion for analytical model. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_go_s_u_m_1_1_c_model_variable_a6119dc5693874222727b2c2e24c7494d}{sample\-Size} () const =0
+\begin{DoxyCompactList}\small\item\em Returns sample size. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_go_s_u_m_1_1_c_model_variable_a08f9738a6142029c5e9f0609a171c8c5}{set\-Sample\-Value} (double \-\_\-val, int \-\_\-at)=0
+\begin{DoxyCompactList}\small\item\em Sets particular sample value. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_go_s_u_m_1_1_c_model_variable_aeb0c0339dee635d29b2dfea21bac6e06}{sample\-Value} (int \-\_\-at) const =0
+\begin{DoxyCompactList}\small\item\em Returns particular sample value. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_go_s_u_m_1_1_c_model_variable_a29c06485593cef56e0d6fc39c279feb5}{read\-Sample\-Value} (std\-::ifstream \&\-\_\-ifs, int \-\_\-at)=0
+\begin{DoxyCompactList}\small\item\em Reads particular sample value from input file stream. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_go_s_u_m_1_1_c_model_variable_a9de10a737f4b03f6e790e856e5822d58}{write\-Sample\-Value} (std\-::ofstream \&\-\_\-ofs, int \-\_\-at) const =0
+\begin{DoxyCompactList}\small\item\em Writes particular sample value to output file stream. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_go_s_u_m_1_1_c_model_variable_a9fff9e4b5f200249d1376b0890c2d132}{generate\-Sample\-Value} (double \-\_\-ranval, int \-\_\-at)=0
+\begin{DoxyCompactList}\small\item\em Generates particular sample value using actual random variable model. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_go_s_u_m_1_1_c_model_variable_a940f366fe5007e353cb2de3408d4d0f1}{generate\-Sample\-Value} (double \-\_\-p)=0
+\begin{DoxyCompactList}\small\item\em Generates sample value using actual random variable model. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_go_s_u_m_1_1_c_model_variable_afa96767d105fb9f3eb05380480b1febf}{compute\-Statistics} (int \-\_\-n)=0
+\begin{DoxyCompactList}\small\item\em Computes statistics from sample (histogram, empirical mean and standard deviation etc.). \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_go_s_u_m_1_1_c_model_variable_a3a147e484e87534b549b44c210e8f4ec}{min\-Value} () const =0
+\begin{DoxyCompactList}\small\item\em Returns minimal variable value. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_go_s_u_m_1_1_c_model_variable_abf8b08388b38cffce2f8c881b257467a}{max\-Value} () const =0
+\begin{DoxyCompactList}\small\item\em Returns maximal variable value. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_go_s_u_m_1_1_c_model_variable_a88f89892435e7e3c2fc86a6b837415bc}{expected\-Value} () const =0
+\begin{DoxyCompactList}\small\item\em Returns expected variable value. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_go_s_u_m_1_1_c_model_variable_ad57110dd29c67f648825661e8ba0a3d5}{set\-Empirical\-Distribution} ()
+\begin{DoxyCompactList}\small\item\em Computes distribution of the actual random variable from empirical sample data. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_go_s_u_m_1_1_c_model_variable_a762505d1b3d1e36daeebfec111d221b1}{set\-Theoretical\-Distribution} ()
+\begin{DoxyCompactList}\small\item\em Tests goodness-\/of-\/fit for theoretical random variables and replaces with the best that satisfies Kolomogorov-\/\-Smirnov. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_go_s_u_m_1_1_c_model_variable_a7d4e06b18bd92b412112cbd8f3374d5b}{set\-Distribution} ()
+\begin{DoxyCompactList}\small\item\em Computes distribution of the actual random variable from available data. \end{DoxyCompactList}\item 
+virtual \\*
+\hyperlink{class_c_random_variable_a80d2a87c43847274138b51f7d713d7f1}{C\-Random\-Variable\-::distributiontype} \hyperlink{class_go_s_u_m_1_1_c_model_variable_a7d8d75d0c4657a6b19ded363571bdec4}{distribution\-Type} () const =0
+\begin{DoxyCompactList}\small\item\em Returns type of the random variable distribution. \end{DoxyCompactList}\item 
+virtual std\-::string \hyperlink{class_go_s_u_m_1_1_c_model_variable_ab363a847d6c2c562e8f7ee22f0cf6f02}{distribution\-Name} () const =0
+\begin{DoxyCompactList}\small\item\em Returns name of the random variable distribution. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_go_s_u_m_1_1_c_model_variable_a2ec4aee717249dcbad98fd6e6320a6b7}{is\-Continuous} () const =0
+\begin{DoxyCompactList}\small\item\em Returns true if model variable is continuous, false otherwise. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_go_s_u_m_1_1_c_model_variable_a9d0140b610b7a1c04a3b31e2d84f86da}{is\-Discrete} () const =0
+\begin{DoxyCompactList}\small\item\em Returns true if model variable is discrete, false otherwise. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_go_s_u_m_1_1_c_model_variable_a0ab50d62f624918807daef90d881c3da}{is\-Distribution\-Defined} () const =0
+\begin{DoxyCompactList}\small\item\em Returns true if distribution is defined, false otherwise. \end{DoxyCompactList}\item 
+\hyperlink{class_go_s_u_m_1_1_c_continuous_m_v}{C\-Continuous\-M\-V} $\ast$ \hyperlink{class_go_s_u_m_1_1_c_model_variable_a76ad39dc00e51af83d00b47a03d191a7}{cast2\-Continuous\-M\-V} ()
+\begin{DoxyCompactList}\small\item\em Safe cast of model variable to \hyperlink{class_go_s_u_m_1_1_c_continuous_m_v}{C\-Continuous\-M\-V} type. \end{DoxyCompactList}\item 
+\hyperlink{class_go_s_u_m_1_1_c_discrete_m_v}{C\-Discrete\-M\-V} $\ast$ \hyperlink{class_go_s_u_m_1_1_c_model_variable_a5d53861a7d2e7f9030a9a857698662da}{cast2\-Discrete\-M\-V} ()
+\begin{DoxyCompactList}\small\item\em Safe cast of model variable to \hyperlink{class_go_s_u_m_1_1_c_discrete_m_v}{C\-Discrete\-M\-V} type. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_c_random_variable}{C\-Random\-Variable} $\ast$ \hyperlink{class_go_s_u_m_1_1_c_model_variable_ae12d28329d27f1b85085c8e0fc310739}{random\-Variable} () const =0
+\begin{DoxyCompactList}\small\item\em Returns random variable. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_c_sample}{C\-Sample} $\ast$ \hyperlink{class_go_s_u_m_1_1_c_model_variable_a4f5739cec4081b98efc26c1c8bde690e}{sample} () const =0
+\begin{DoxyCompactList}\small\item\em Returns sample. \end{DoxyCompactList}\item 
+Array\-Xd \hyperlink{class_go_s_u_m_1_1_c_model_variable_a4956d33b5e6b10c2772d04db9379d467}{cast\-Export\-Sample} ()
+\begin{DoxyCompactList}\small\item\em Exports model variables sample and casts it to array of doubles. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \hyperlink{class_go_s_u_m_1_1_c_model_variable_ac65c599cd7344f263ec632db106b04f3}{serialize} (Archive \&ar, const unsigned int version)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string \hyperlink{class_go_s_u_m_1_1_c_model_variable_ae7476c53db1987e31c50ac89b88f5402}{uname}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_go_s_u_m_1_1_c_model_variable_ac98d07dd8f7b70e16ccb9a01abf56b9c}{boost\-::serialization\-::access}
+\begin{DoxyCompactList}\small\item\em Boost serialization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for any variable in the \hyperlink{struct_go_s_u_m}{Go\-S\-U\-M} model (input or output). 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_model_variable_af87a883a7decdacb83591c41817a0a12}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}!C\-Model\-Variable@{C\-Model\-Variable}}
+\index{C\-Model\-Variable@{C\-Model\-Variable}!GoSUM::CModelVariable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}}
+\subsubsection[{C\-Model\-Variable}]{\setlength{\rightskip}{0pt plus 5cm}Go\-S\-U\-M\-::\-C\-Model\-Variable\-::\-C\-Model\-Variable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_model_variable_af87a883a7decdacb83591c41817a0a12}
+\hypertarget{class_go_s_u_m_1_1_c_model_variable_a54604e01443f4195b1ea3a197458dc07}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}!$\sim$\-C\-Model\-Variable@{$\sim$\-C\-Model\-Variable}}
+\index{$\sim$\-C\-Model\-Variable@{$\sim$\-C\-Model\-Variable}!GoSUM::CModelVariable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}}
+\subsubsection[{$\sim$\-C\-Model\-Variable}]{\setlength{\rightskip}{0pt plus 5cm}virtual Go\-S\-U\-M\-::\-C\-Model\-Variable\-::$\sim$\-C\-Model\-Variable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_model_variable_a54604e01443f4195b1ea3a197458dc07}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_model_variable_a76ad39dc00e51af83d00b47a03d191a7}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}!cast2\-Continuous\-M\-V@{cast2\-Continuous\-M\-V}}
+\index{cast2\-Continuous\-M\-V@{cast2\-Continuous\-M\-V}!GoSUM::CModelVariable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}}
+\subsubsection[{cast2\-Continuous\-M\-V}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Go\-S\-U\-M\-::\-C\-Continuous\-M\-V} $\ast$ Go\-S\-U\-M\-::\-C\-Model\-Variable\-::cast2\-Continuous\-M\-V (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_model_variable_a76ad39dc00e51af83d00b47a03d191a7}
+
+
+Safe cast of model variable to \hyperlink{class_go_s_u_m_1_1_c_continuous_m_v}{C\-Continuous\-M\-V} type. 
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variable_a5d53861a7d2e7f9030a9a857698662da}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}!cast2\-Discrete\-M\-V@{cast2\-Discrete\-M\-V}}
+\index{cast2\-Discrete\-M\-V@{cast2\-Discrete\-M\-V}!GoSUM::CModelVariable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}}
+\subsubsection[{cast2\-Discrete\-M\-V}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Go\-S\-U\-M\-::\-C\-Discrete\-M\-V} $\ast$ Go\-S\-U\-M\-::\-C\-Model\-Variable\-::cast2\-Discrete\-M\-V (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_model_variable_a5d53861a7d2e7f9030a9a857698662da}
+
+
+Safe cast of model variable to \hyperlink{class_go_s_u_m_1_1_c_discrete_m_v}{C\-Discrete\-M\-V} type. 
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variable_a4956d33b5e6b10c2772d04db9379d467}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}!cast\-Export\-Sample@{cast\-Export\-Sample}}
+\index{cast\-Export\-Sample@{cast\-Export\-Sample}!GoSUM::CModelVariable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}}
+\subsubsection[{cast\-Export\-Sample}]{\setlength{\rightskip}{0pt plus 5cm}Array\-Xd Go\-S\-U\-M\-::\-C\-Model\-Variable\-::cast\-Export\-Sample (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_model_variable_a4956d33b5e6b10c2772d04db9379d467}
+
+
+Exports model variables sample and casts it to array of doubles. 
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variable_af53c01e36cd1b8fdfec4e66a99776745}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}!clear\-Sample@{clear\-Sample}}
+\index{clear\-Sample@{clear\-Sample}!GoSUM::CModelVariable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}}
+\subsubsection[{clear\-Sample}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Go\-S\-U\-M\-::\-C\-Model\-Variable\-::clear\-Sample (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_go_s_u_m_1_1_c_model_variable_af53c01e36cd1b8fdfec4e66a99776745}
+
+
+Clears variable's sample. 
+
+
+
+Implemented in \hyperlink{class_go_s_u_m_1_1_t_model_variable_a92694058f7f782f6e7302f1130f1f174}{Go\-S\-U\-M\-::\-T\-Model\-Variable$<$ R, S, t $>$}.
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variable_ab70398d40549692929f1bfbff7281a56}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}!clone@{clone}}
+\index{clone@{clone}!GoSUM::CModelVariable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}}
+\subsubsection[{clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Go\-S\-U\-M\-::\-C\-Model\-Variable} $\ast$ Go\-S\-U\-M\-::\-C\-Model\-Variable\-::clone (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{\-\_\-uname}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_model_variable_ab70398d40549692929f1bfbff7281a56}
+
+
+Clones itself to a new model variable with different name. 
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variable_afa96767d105fb9f3eb05380480b1febf}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}!compute\-Statistics@{compute\-Statistics}}
+\index{compute\-Statistics@{compute\-Statistics}!GoSUM::CModelVariable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}}
+\subsubsection[{compute\-Statistics}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Go\-S\-U\-M\-::\-C\-Model\-Variable\-::compute\-Statistics (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_go_s_u_m_1_1_c_model_variable_afa96767d105fb9f3eb05380480b1febf}
+
+
+Computes statistics from sample (histogram, empirical mean and standard deviation etc.). 
+
+
+
+Implemented in \hyperlink{class_go_s_u_m_1_1_t_model_variable_ad1995ed1abea87ed8678f65659cf7a64}{Go\-S\-U\-M\-::\-T\-Model\-Variable$<$ R, S, t $>$}.
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variable_ab363a847d6c2c562e8f7ee22f0cf6f02}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}!distribution\-Name@{distribution\-Name}}
+\index{distribution\-Name@{distribution\-Name}!GoSUM::CModelVariable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}}
+\subsubsection[{distribution\-Name}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\-::string Go\-S\-U\-M\-::\-C\-Model\-Variable\-::distribution\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_go_s_u_m_1_1_c_model_variable_ab363a847d6c2c562e8f7ee22f0cf6f02}
+
+
+Returns name of the random variable distribution. 
+
+
+
+Implemented in \hyperlink{class_go_s_u_m_1_1_t_model_variable_aa41c0ebb9c0e5dfbb98c2ea66a77890d}{Go\-S\-U\-M\-::\-T\-Model\-Variable$<$ R, S, t $>$}.
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variable_a7d8d75d0c4657a6b19ded363571bdec4}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}!distribution\-Type@{distribution\-Type}}
+\index{distribution\-Type@{distribution\-Type}!GoSUM::CModelVariable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}}
+\subsubsection[{distribution\-Type}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf C\-Random\-Variable\-::distributiontype} Go\-S\-U\-M\-::\-C\-Model\-Variable\-::distribution\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_go_s_u_m_1_1_c_model_variable_a7d8d75d0c4657a6b19ded363571bdec4}
+
+
+Returns type of the random variable distribution. 
+
+
+
+Implemented in \hyperlink{class_go_s_u_m_1_1_t_model_variable_a8dea19600fc9455dadd31a79c539e82e}{Go\-S\-U\-M\-::\-T\-Model\-Variable$<$ R, S, t $>$}.
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variable_ab2889a825983ec58f9661a1e162904f3}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}!expanded\-Size@{expanded\-Size}}
+\index{expanded\-Size@{expanded\-Size}!GoSUM::CModelVariable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}}
+\subsubsection[{expanded\-Size}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Go\-S\-U\-M\-::\-C\-Model\-Variable\-::expanded\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_go_s_u_m_1_1_c_model_variable_ab2889a825983ec58f9661a1e162904f3}
+
+
+Implemented in \hyperlink{class_go_s_u_m_1_1_t_model_variable_ae00e5653833fcf6f8d05c24d4cff741d}{Go\-S\-U\-M\-::\-T\-Model\-Variable$<$ R, S, t $>$}.
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variable_a88f89892435e7e3c2fc86a6b837415bc}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}!expected\-Value@{expected\-Value}}
+\index{expected\-Value@{expected\-Value}!GoSUM::CModelVariable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}}
+\subsubsection[{expected\-Value}]{\setlength{\rightskip}{0pt plus 5cm}virtual double Go\-S\-U\-M\-::\-C\-Model\-Variable\-::expected\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_go_s_u_m_1_1_c_model_variable_a88f89892435e7e3c2fc86a6b837415bc}
+
+
+Returns expected variable value. 
+
+
+
+Implemented in \hyperlink{class_go_s_u_m_1_1_t_model_variable_a6bdec5497c51d855daccf9033927b8bc}{Go\-S\-U\-M\-::\-T\-Model\-Variable$<$ R, S, t $>$}.
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variable_a9fff9e4b5f200249d1376b0890c2d132}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}!generate\-Sample\-Value@{generate\-Sample\-Value}}
+\index{generate\-Sample\-Value@{generate\-Sample\-Value}!GoSUM::CModelVariable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}}
+\subsubsection[{generate\-Sample\-Value}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Go\-S\-U\-M\-::\-C\-Model\-Variable\-::generate\-Sample\-Value (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-ranval, }
+\item[{int}]{\-\_\-at}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_go_s_u_m_1_1_c_model_variable_a9fff9e4b5f200249d1376b0890c2d132}
+
+
+Generates particular sample value using actual random variable model. 
+
+
+
+Implemented in \hyperlink{class_go_s_u_m_1_1_t_model_variable_a94c22ba7a540482c9f38ca5f00d9a755}{Go\-S\-U\-M\-::\-T\-Model\-Variable$<$ R, S, t $>$}.
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variable_a940f366fe5007e353cb2de3408d4d0f1}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}!generate\-Sample\-Value@{generate\-Sample\-Value}}
+\index{generate\-Sample\-Value@{generate\-Sample\-Value}!GoSUM::CModelVariable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}}
+\subsubsection[{generate\-Sample\-Value}]{\setlength{\rightskip}{0pt plus 5cm}virtual double Go\-S\-U\-M\-::\-C\-Model\-Variable\-::generate\-Sample\-Value (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_go_s_u_m_1_1_c_model_variable_a940f366fe5007e353cb2de3408d4d0f1}
+
+
+Generates sample value using actual random variable model. 
+
+
+
+Implemented in \hyperlink{class_go_s_u_m_1_1_t_model_variable_a5ebe0e2a02aa1a98fa2442865170a2f5}{Go\-S\-U\-M\-::\-T\-Model\-Variable$<$ R, S, t $>$}.
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variable_a2ec4aee717249dcbad98fd6e6320a6b7}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}!is\-Continuous@{is\-Continuous}}
+\index{is\-Continuous@{is\-Continuous}!GoSUM::CModelVariable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}}
+\subsubsection[{is\-Continuous}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Go\-S\-U\-M\-::\-C\-Model\-Variable\-::is\-Continuous (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_go_s_u_m_1_1_c_model_variable_a2ec4aee717249dcbad98fd6e6320a6b7}
+
+
+Returns true if model variable is continuous, false otherwise. 
+
+
+
+Implemented in \hyperlink{class_go_s_u_m_1_1_c_continuous_m_v_a8f523f36ccdecfb58d468b6976890b15}{Go\-S\-U\-M\-::\-C\-Continuous\-M\-V}, and \hyperlink{class_go_s_u_m_1_1_c_discrete_m_v_a6366f6f6fd00242942b733ef5715592e}{Go\-S\-U\-M\-::\-C\-Discrete\-M\-V}.
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variable_a9d0140b610b7a1c04a3b31e2d84f86da}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}!is\-Discrete@{is\-Discrete}}
+\index{is\-Discrete@{is\-Discrete}!GoSUM::CModelVariable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}}
+\subsubsection[{is\-Discrete}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Go\-S\-U\-M\-::\-C\-Model\-Variable\-::is\-Discrete (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_go_s_u_m_1_1_c_model_variable_a9d0140b610b7a1c04a3b31e2d84f86da}
+
+
+Returns true if model variable is discrete, false otherwise. 
+
+
+
+Implemented in \hyperlink{class_go_s_u_m_1_1_c_continuous_m_v_aeaef5939c27a7e074c33f783d73484a5}{Go\-S\-U\-M\-::\-C\-Continuous\-M\-V}, and \hyperlink{class_go_s_u_m_1_1_c_discrete_m_v_ad9da78f518019e7133440189803f9cad}{Go\-S\-U\-M\-::\-C\-Discrete\-M\-V}.
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variable_a0ab50d62f624918807daef90d881c3da}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}!is\-Distribution\-Defined@{is\-Distribution\-Defined}}
+\index{is\-Distribution\-Defined@{is\-Distribution\-Defined}!GoSUM::CModelVariable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}}
+\subsubsection[{is\-Distribution\-Defined}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Go\-S\-U\-M\-::\-C\-Model\-Variable\-::is\-Distribution\-Defined (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_go_s_u_m_1_1_c_model_variable_a0ab50d62f624918807daef90d881c3da}
+
+
+Returns true if distribution is defined, false otherwise. 
+
+
+
+Implemented in \hyperlink{class_go_s_u_m_1_1_t_model_variable_a49e8bb3711a10e298e90cb6a8d12661a}{Go\-S\-U\-M\-::\-T\-Model\-Variable$<$ R, S, t $>$}.
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variable_abf8b08388b38cffce2f8c881b257467a}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}!max\-Value@{max\-Value}}
+\index{max\-Value@{max\-Value}!GoSUM::CModelVariable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}}
+\subsubsection[{max\-Value}]{\setlength{\rightskip}{0pt plus 5cm}virtual double Go\-S\-U\-M\-::\-C\-Model\-Variable\-::max\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_go_s_u_m_1_1_c_model_variable_abf8b08388b38cffce2f8c881b257467a}
+
+
+Returns maximal variable value. 
+
+
+
+Implemented in \hyperlink{class_go_s_u_m_1_1_t_model_variable_a0d9ad1fc30fde0f3dd7ba204f1b525a2}{Go\-S\-U\-M\-::\-T\-Model\-Variable$<$ R, S, t $>$}.
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variable_a3a147e484e87534b549b44c210e8f4ec}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}!min\-Value@{min\-Value}}
+\index{min\-Value@{min\-Value}!GoSUM::CModelVariable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}}
+\subsubsection[{min\-Value}]{\setlength{\rightskip}{0pt plus 5cm}virtual double Go\-S\-U\-M\-::\-C\-Model\-Variable\-::min\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_go_s_u_m_1_1_c_model_variable_a3a147e484e87534b549b44c210e8f4ec}
+
+
+Returns minimal variable value. 
+
+
+
+Implemented in \hyperlink{class_go_s_u_m_1_1_t_model_variable_a0395e6699e577b7ccb77e19787adc169}{Go\-S\-U\-M\-::\-T\-Model\-Variable$<$ R, S, t $>$}.
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variable_ae305b19e3e4705db2a0c989b45dd58f9}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}!name@{name}}
+\index{name@{name}!GoSUM::CModelVariable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Go\-S\-U\-M\-::\-C\-Model\-Variable\-::name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_model_variable_ae305b19e3e4705db2a0c989b45dd58f9}
+
+
+Returns name of the model variable. 
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variable_ae12d28329d27f1b85085c8e0fc310739}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}!random\-Variable@{random\-Variable}}
+\index{random\-Variable@{random\-Variable}!GoSUM::CModelVariable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}}
+\subsubsection[{random\-Variable}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf C\-Random\-Variable}$\ast$ Go\-S\-U\-M\-::\-C\-Model\-Variable\-::random\-Variable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_go_s_u_m_1_1_c_model_variable_ae12d28329d27f1b85085c8e0fc310739}
+
+
+Returns random variable. 
+
+
+
+Implemented in \hyperlink{class_go_s_u_m_1_1_t_model_variable_a8d74a8298078d6d99f62da8ea096e359}{Go\-S\-U\-M\-::\-T\-Model\-Variable$<$ R, S, t $>$}.
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variable_a29c06485593cef56e0d6fc39c279feb5}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}!read\-Sample\-Value@{read\-Sample\-Value}}
+\index{read\-Sample\-Value@{read\-Sample\-Value}!GoSUM::CModelVariable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}}
+\subsubsection[{read\-Sample\-Value}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Go\-S\-U\-M\-::\-C\-Model\-Variable\-::read\-Sample\-Value (
+\begin{DoxyParamCaption}
+\item[{std\-::ifstream \&}]{\-\_\-ifs, }
+\item[{int}]{\-\_\-at}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_go_s_u_m_1_1_c_model_variable_a29c06485593cef56e0d6fc39c279feb5}
+
+
+Reads particular sample value from input file stream. 
+
+
+
+Implemented in \hyperlink{class_go_s_u_m_1_1_t_model_variable_afee2c55fb595ff40904551e4a7edf360}{Go\-S\-U\-M\-::\-T\-Model\-Variable$<$ R, S, t $>$}.
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variable_a4f5739cec4081b98efc26c1c8bde690e}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}!sample@{sample}}
+\index{sample@{sample}!GoSUM::CModelVariable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}}
+\subsubsection[{sample}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf C\-Sample}$\ast$ Go\-S\-U\-M\-::\-C\-Model\-Variable\-::sample (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_go_s_u_m_1_1_c_model_variable_a4f5739cec4081b98efc26c1c8bde690e}
+
+
+Returns sample. 
+
+
+
+Implemented in \hyperlink{class_go_s_u_m_1_1_t_model_variable_ad7699e50c6f2a7b67ff9e178fe1af740}{Go\-S\-U\-M\-::\-T\-Model\-Variable$<$ R, S, t $>$}.
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variable_a6119dc5693874222727b2c2e24c7494d}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}!sample\-Size@{sample\-Size}}
+\index{sample\-Size@{sample\-Size}!GoSUM::CModelVariable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}}
+\subsubsection[{sample\-Size}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Go\-S\-U\-M\-::\-C\-Model\-Variable\-::sample\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_go_s_u_m_1_1_c_model_variable_a6119dc5693874222727b2c2e24c7494d}
+
+
+Returns sample size. 
+
+
+
+Implemented in \hyperlink{class_go_s_u_m_1_1_t_model_variable_a4c63e42e4ec1971dc9d5671785071426}{Go\-S\-U\-M\-::\-T\-Model\-Variable$<$ R, S, t $>$}.
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variable_aeb0c0339dee635d29b2dfea21bac6e06}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}!sample\-Value@{sample\-Value}}
+\index{sample\-Value@{sample\-Value}!GoSUM::CModelVariable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}}
+\subsubsection[{sample\-Value}]{\setlength{\rightskip}{0pt plus 5cm}virtual double Go\-S\-U\-M\-::\-C\-Model\-Variable\-::sample\-Value (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-at}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_go_s_u_m_1_1_c_model_variable_aeb0c0339dee635d29b2dfea21bac6e06}
+
+
+Returns particular sample value. 
+
+
+
+Implemented in \hyperlink{class_go_s_u_m_1_1_t_model_variable_ae851745a4f6ec2f6655adcbbc83ff8c5}{Go\-S\-U\-M\-::\-T\-Model\-Variable$<$ R, S, t $>$}.
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variable_ac65c599cd7344f263ec632db106b04f3}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}!serialize@{serialize}}
+\index{serialize@{serialize}!GoSUM::CModelVariable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Archive $>$ void Go\-S\-U\-M\-::\-C\-Model\-Variable\-::serialize (
+\begin{DoxyParamCaption}
+\item[{Archive \&}]{ar, }
+\item[{const unsigned int}]{version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_model_variable_ac65c599cd7344f263ec632db106b04f3}
+
+
+Reimplemented in \hyperlink{class_go_s_u_m_1_1_t_model_variable_a0a5c395a4ff28acc07f8e5670ff9d289}{Go\-S\-U\-M\-::\-T\-Model\-Variable$<$ R, S, t $>$}.
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variable_a7d4e06b18bd92b412112cbd8f3374d5b}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}!set\-Distribution@{set\-Distribution}}
+\index{set\-Distribution@{set\-Distribution}!GoSUM::CModelVariable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}}
+\subsubsection[{set\-Distribution}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Go\-S\-U\-M\-::\-C\-Model\-Variable\-::set\-Distribution (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_model_variable_a7d4e06b18bd92b412112cbd8f3374d5b}
+
+
+Computes distribution of the actual random variable from available data. 
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variable_ad57110dd29c67f648825661e8ba0a3d5}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}!set\-Empirical\-Distribution@{set\-Empirical\-Distribution}}
+\index{set\-Empirical\-Distribution@{set\-Empirical\-Distribution}!GoSUM::CModelVariable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}}
+\subsubsection[{set\-Empirical\-Distribution}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Go\-S\-U\-M\-::\-C\-Model\-Variable\-::set\-Empirical\-Distribution (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_model_variable_ad57110dd29c67f648825661e8ba0a3d5}
+
+
+Computes distribution of the actual random variable from empirical sample data. 
+
+
+
+Reimplemented in \hyperlink{class_go_s_u_m_1_1_c_continuous_m_v_a65b0b9b16980f16fe2bc36bf8d79e3b9}{Go\-S\-U\-M\-::\-C\-Continuous\-M\-V}, \hyperlink{class_go_s_u_m_1_1_c_discrete_m_v_a7dd5ab7ac4922cdb2682012c942e1f10}{Go\-S\-U\-M\-::\-C\-Discrete\-M\-V}, and \hyperlink{class_go_s_u_m_1_1_t_model_variable_a3128d12e3ce0757714a7596de087314e}{Go\-S\-U\-M\-::\-T\-Model\-Variable$<$ R, S, t $>$}.
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variable_a2166acba16fad9f71f3fcf8b1f8cebb2}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}!set\-Name@{set\-Name}}
+\index{set\-Name@{set\-Name}!GoSUM::CModelVariable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}}
+\subsubsection[{set\-Name}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Model\-Variable\-::set\-Name (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{\-\_\-uname}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_model_variable_a2166acba16fad9f71f3fcf8b1f8cebb2}
+
+
+Set name of the model variable. 
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variable_a4424193dc952f62acaa2bb902b1585cd}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}!set\-Sample\-Size@{set\-Sample\-Size}}
+\index{set\-Sample\-Size@{set\-Sample\-Size}!GoSUM::CModelVariable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}}
+\subsubsection[{set\-Sample\-Size}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Go\-S\-U\-M\-::\-C\-Model\-Variable\-::set\-Sample\-Size (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_go_s_u_m_1_1_c_model_variable_a4424193dc952f62acaa2bb902b1585cd}
+
+
+Returns number of variables after expansion for analytical model. 
+
+Sets sample size. 
+
+Implemented in \hyperlink{class_go_s_u_m_1_1_t_model_variable_aa172b11eba6fd1819f10a80d95fc4877}{Go\-S\-U\-M\-::\-T\-Model\-Variable$<$ R, S, t $>$}.
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variable_a08f9738a6142029c5e9f0609a171c8c5}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}!set\-Sample\-Value@{set\-Sample\-Value}}
+\index{set\-Sample\-Value@{set\-Sample\-Value}!GoSUM::CModelVariable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}}
+\subsubsection[{set\-Sample\-Value}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Go\-S\-U\-M\-::\-C\-Model\-Variable\-::set\-Sample\-Value (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-val, }
+\item[{int}]{\-\_\-at}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_go_s_u_m_1_1_c_model_variable_a08f9738a6142029c5e9f0609a171c8c5}
+
+
+Sets particular sample value. 
+
+
+
+Implemented in \hyperlink{class_go_s_u_m_1_1_t_model_variable_acc9cdd0db3d7bc217ae68da7bd6de737}{Go\-S\-U\-M\-::\-T\-Model\-Variable$<$ R, S, t $>$}.
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variable_a762505d1b3d1e36daeebfec111d221b1}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}!set\-Theoretical\-Distribution@{set\-Theoretical\-Distribution}}
+\index{set\-Theoretical\-Distribution@{set\-Theoretical\-Distribution}!GoSUM::CModelVariable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}}
+\subsubsection[{set\-Theoretical\-Distribution}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Go\-S\-U\-M\-::\-C\-Model\-Variable\-::set\-Theoretical\-Distribution (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_model_variable_a762505d1b3d1e36daeebfec111d221b1}
+
+
+Tests goodness-\/of-\/fit for theoretical random variables and replaces with the best that satisfies Kolomogorov-\/\-Smirnov. 
+
+
+
+Reimplemented in \hyperlink{class_go_s_u_m_1_1_c_continuous_m_v_a923c07b0735783d016b4e155b5eb0539}{Go\-S\-U\-M\-::\-C\-Continuous\-M\-V}, \hyperlink{class_go_s_u_m_1_1_c_discrete_m_v_a1061fb0a466b852ffeb111238b702b39}{Go\-S\-U\-M\-::\-C\-Discrete\-M\-V}, and \hyperlink{class_go_s_u_m_1_1_t_model_variable_ad113f33f216796f775855dd3f8553f03}{Go\-S\-U\-M\-::\-T\-Model\-Variable$<$ R, S, t $>$}.
+
+\hypertarget{class_go_s_u_m_1_1_c_model_variable_a9de10a737f4b03f6e790e856e5822d58}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}!write\-Sample\-Value@{write\-Sample\-Value}}
+\index{write\-Sample\-Value@{write\-Sample\-Value}!GoSUM::CModelVariable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}}
+\subsubsection[{write\-Sample\-Value}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Go\-S\-U\-M\-::\-C\-Model\-Variable\-::write\-Sample\-Value (
+\begin{DoxyParamCaption}
+\item[{std\-::ofstream \&}]{\-\_\-ofs, }
+\item[{int}]{\-\_\-at}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_go_s_u_m_1_1_c_model_variable_a9de10a737f4b03f6e790e856e5822d58}
+
+
+Writes particular sample value to output file stream. 
+
+
+
+Implemented in \hyperlink{class_go_s_u_m_1_1_t_model_variable_a98d527cb3d0ce4c3a96ddb4e04c0d931}{Go\-S\-U\-M\-::\-T\-Model\-Variable$<$ R, S, t $>$}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_model_variable_ac98d07dd8f7b70e16ccb9a01abf56b9c}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}!boost\-::serialization\-::access@{boost\-::serialization\-::access}}
+\index{boost\-::serialization\-::access@{boost\-::serialization\-::access}!GoSUM::CModelVariable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}}
+\subsubsection[{boost\-::serialization\-::access}]{\setlength{\rightskip}{0pt plus 5cm}friend class boost\-::serialization\-::access\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_go_s_u_m_1_1_c_model_variable_ac98d07dd8f7b70e16ccb9a01abf56b9c}
+
+
+Boost serialization. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_model_variable_ae7476c53db1987e31c50ac89b88f5402}{\index{Go\-S\-U\-M\-::\-C\-Model\-Variable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}!uname@{uname}}
+\index{uname@{uname}!GoSUM::CModelVariable@{Go\-S\-U\-M\-::\-C\-Model\-Variable}}
+\subsubsection[{uname}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Go\-S\-U\-M\-::\-C\-Model\-Variable\-::uname\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_model_variable_ae7476c53db1987e31c50ac89b88f5402}
+Unique name of the model variable. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Development/core/\hyperlink{_model_variable_8h}{Model\-Variable.\-h}\item 
+C\-:/\-Development/core/\hyperlink{_model_variable_8cpp}{Model\-Variable.\-cpp}\end{DoxyCompactItemize}

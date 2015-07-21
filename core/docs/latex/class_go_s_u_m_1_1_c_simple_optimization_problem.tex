@@ -1,0 +1,359 @@
+\hypertarget{class_go_s_u_m_1_1_c_simple_optimization_problem}{\section{Go\-S\-U\-M\-:\-:C\-Simple\-Optimization\-Problem Class Reference}
+\label{class_go_s_u_m_1_1_c_simple_optimization_problem}\index{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem@{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem}}
+}
+
+
+Class for the optimization problem based only on \hyperlink{struct_go_s_u_m}{Go\-S\-U\-M} input parameters.  
+
+
+
+
+{\ttfamily \#include $<$Parser\-Optimization\-Problem.\-h$>$}
+
+Inheritance diagram for Go\-S\-U\-M\-:\-:C\-Simple\-Optimization\-Problem\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{class_go_s_u_m_1_1_c_simple_optimization_problem}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_go_s_u_m_1_1_c_simple_optimization_problem_aca2f3702b5973f9eff6eee3ba2fba9f7}{C\-Simple\-Optimization\-Problem} (\hyperlink{class_go_s_u_m_1_1_c_input_parameters}{C\-Input\-Parameters} $\ast$\-\_\-p\-I\-P)
+\item 
+virtual \hyperlink{class_go_s_u_m_1_1_c_simple_optimization_problem_a3e604a851cc89ce49daf95d0ca9d1cbb}{$\sim$\-C\-Simple\-Optimization\-Problem} ()
+\item 
+virtual void \hyperlink{class_go_s_u_m_1_1_c_simple_optimization_problem_ac5843023c605a273e8276656336b51af}{clear} ()
+\begin{DoxyCompactList}\small\item\em Clears all. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_go_s_u_m_1_1_c_simple_optimization_problem_a87a5cfb79c799788b85705794c373f40}{clear\-History} ()
+\begin{DoxyCompactList}\small\item\em Clears results. \end{DoxyCompactList}\item 
+int \hyperlink{class_go_s_u_m_1_1_c_simple_optimization_problem_a022d38045804084463299d89bffb7d42}{find\-Connected\-To} (\hyperlink{class_go_s_u_m_1_1_c_model_variable}{C\-Model\-Variable} $\ast$\-\_\-pip) const 
+\begin{DoxyCompactList}\small\item\em Finds optimization variable connected to a particular input parameter. \end{DoxyCompactList}\item 
+const \hyperlink{class_go_s_u_m_1_1_c_model_optimization_variable}{C\-Model\-Optimization\-Variable} \& \hyperlink{class_go_s_u_m_1_1_c_simple_optimization_problem_a8f390c55136c8324ba5fce698482aaa2}{variable} (int \-\_\-at) const 
+\begin{DoxyCompactList}\small\item\em Returns paticular optimization variable. \end{DoxyCompactList}\item 
+\hyperlink{class_go_s_u_m_1_1_c_model_optimization_variable}{C\-Model\-Optimization\-Variable} \& \hyperlink{class_go_s_u_m_1_1_c_simple_optimization_problem_a48d8644397b8ca9c8408263465035458}{variable} (int \-\_\-at)
+\begin{DoxyCompactList}\small\item\em Returns paticular optimization variable. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{class_go_s_u_m_1_1_c_simple_optimization_problem_ac044232f2c68d23b4791fbcf6dffcc81}{variable\-Name} (int \-\_\-at)
+\begin{DoxyCompactList}\small\item\em Returns name of the particular optimization variable. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_go_s_u_m_1_1_c_simple_optimization_problem_aa66a0dd530b4cab400fc88b32f566298}{is\-Feasible} (const Array\-Xd \&\-\_\-ip)
+\begin{DoxyCompactList}\small\item\em Returns true if model variables is admissible, false otherwise. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_go_s_u_m_1_1_c_simple_optimization_problem_a772db1ec2c35c78a4b68551969e4083c}{open\-Optimization} ()
+\item 
+virtual void \hyperlink{class_go_s_u_m_1_1_c_simple_optimization_problem_af34b88f099f94727611b79d5f5ca4e9a}{close\-Optimization} ()
+\begin{DoxyCompactList}\small\item\em Opens, i.\-e. prepares optimization. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_go_s_u_m_1_1_c_simple_optimization_problem_aa746b5adb39e80712ecddf18e466f4ab}{evaluate} (const Array\-Xd \&\-\_\-hp, Array\-Xd \&\-\_\-ep)
+\begin{DoxyCompactList}\small\item\em Closes optimization, i.\-e. closes what was opened in open\-Optimization. \end{DoxyCompactList}\item 
+Array\-Xd \hyperlink{class_go_s_u_m_1_1_c_simple_optimization_problem_a1eb9802fcaf98b032e0ad2f5c70541ce}{input\-Point2\-Model\-Point} (const Array\-Xd \&\-\_\-ip)
+\begin{DoxyCompactList}\small\item\em Converts input parameter point to model point. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \hyperlink{class_go_s_u_m_1_1_c_simple_optimization_problem_a627c6cfdc256739e723cbdbf1a61c007}{serialize} (Archive \&ar, const unsigned int version)
+\item 
+\hyperlink{class_go_s_u_m_1_1_c_simple_optimization_problem_adb4bce3597cb1920de36cc0d9f009a1b}{C\-Simple\-Optimization\-Problem} ()
+\item 
+virtual void \hyperlink{class_go_s_u_m_1_1_c_simple_optimization_problem_a051a218199a044cd97ba46a1cf9175f7}{set\-Variable\-Names} ()
+\begin{DoxyCompactList}\small\item\em Sets variable names for the parser. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{class_go_s_u_m_1_1_c_simple_optimization_problem_a87fbc6696a3a066a41b775b79500b78c}{is\-Model\-Variable} (const \hyperlink{class_c_optimization_variable}{C\-Optimization\-Variable} \&\-\_\-a\-O\-V)
+\begin{DoxyCompactList}\small\item\em Used in member function Find. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_go_s_u_m_1_1_c_input_parameters}{C\-Input\-Parameters} $\ast$ \hyperlink{class_go_s_u_m_1_1_c_simple_optimization_problem_a6163e020d2c137adb71e449c73780a51}{p\-I\-P}
+\begin{DoxyCompactList}\small\item\em Points to input parameters. \end{DoxyCompactList}\item 
+std\-::vector$<$ int $>$ \hyperlink{class_go_s_u_m_1_1_c_simple_optimization_problem_abe82037eb165ad085057b12b32886d8d}{ovind}
+\item 
+std\-::vector$<$ int $>$ \hyperlink{class_go_s_u_m_1_1_c_simple_optimization_problem_acddbd19e980f3afb8eb0113dfbcc21a1}{uvind}
+\begin{DoxyCompactList}\small\item\em Vectors of indices of optimization variables (ovind) and uncertain variables (uvind) among input parameters. \end{DoxyCompactList}\item 
+std\-::vector$<$ Array\-Xd $>$ \hyperlink{class_go_s_u_m_1_1_c_simple_optimization_problem_acb6bedecb1d9856dba7d3aafa41e5738}{samples}
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_go_s_u_m_1_1_c_model_variable}{C\-Model\-Variable} $\ast$ \hyperlink{class_go_s_u_m_1_1_c_simple_optimization_problem_a5aefa2b214c065e7844b1316f6c38aba}{pip\-To\-Find} = \hyperlink{struct_go_s_u_m_a3e6605d298c4dcd991f606a654a6cae4}{N\-U\-L\-L}
+\begin{DoxyCompactList}\small\item\em Used in member function Find. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_go_s_u_m_1_1_c_simple_optimization_problem_ac98d07dd8f7b70e16ccb9a01abf56b9c}{boost\-::serialization\-::access}
+\begin{DoxyCompactList}\small\item\em Boost serialization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class for the optimization problem based only on \hyperlink{struct_go_s_u_m}{Go\-S\-U\-M} input parameters. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_simple_optimization_problem_adb4bce3597cb1920de36cc0d9f009a1b}{\index{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem@{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem}!C\-Simple\-Optimization\-Problem@{C\-Simple\-Optimization\-Problem}}
+\index{C\-Simple\-Optimization\-Problem@{C\-Simple\-Optimization\-Problem}!GoSUM::CSimpleOptimizationProblem@{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem}}
+\subsubsection[{C\-Simple\-Optimization\-Problem}]{\setlength{\rightskip}{0pt plus 5cm}Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem\-::\-C\-Simple\-Optimization\-Problem (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_simple_optimization_problem_adb4bce3597cb1920de36cc0d9f009a1b}
+\hypertarget{class_go_s_u_m_1_1_c_simple_optimization_problem_aca2f3702b5973f9eff6eee3ba2fba9f7}{\index{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem@{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem}!C\-Simple\-Optimization\-Problem@{C\-Simple\-Optimization\-Problem}}
+\index{C\-Simple\-Optimization\-Problem@{C\-Simple\-Optimization\-Problem}!GoSUM::CSimpleOptimizationProblem@{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem}}
+\subsubsection[{C\-Simple\-Optimization\-Problem}]{\setlength{\rightskip}{0pt plus 5cm}Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem\-::\-C\-Simple\-Optimization\-Problem (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Input\-Parameters} $\ast$}]{\-\_\-p\-I\-P}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_simple_optimization_problem_aca2f3702b5973f9eff6eee3ba2fba9f7}
+\hypertarget{class_go_s_u_m_1_1_c_simple_optimization_problem_a3e604a851cc89ce49daf95d0ca9d1cbb}{\index{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem@{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem}!$\sim$\-C\-Simple\-Optimization\-Problem@{$\sim$\-C\-Simple\-Optimization\-Problem}}
+\index{$\sim$\-C\-Simple\-Optimization\-Problem@{$\sim$\-C\-Simple\-Optimization\-Problem}!GoSUM::CSimpleOptimizationProblem@{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem}}
+\subsubsection[{$\sim$\-C\-Simple\-Optimization\-Problem}]{\setlength{\rightskip}{0pt plus 5cm}virtual Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem\-::$\sim$\-C\-Simple\-Optimization\-Problem (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_simple_optimization_problem_a3e604a851cc89ce49daf95d0ca9d1cbb}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_simple_optimization_problem_ac5843023c605a273e8276656336b51af}{\index{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem@{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem}!clear@{clear}}
+\index{clear@{clear}!GoSUM::CSimpleOptimizationProblem@{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem\-::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_simple_optimization_problem_ac5843023c605a273e8276656336b51af}
+
+
+Clears all. 
+
+
+
+Reimplemented from \hyperlink{class_c_optimization_problem_a59a36304309b79f0dc7be25638016ee0}{C\-Optimization\-Problem}.
+
+\hypertarget{class_go_s_u_m_1_1_c_simple_optimization_problem_a87a5cfb79c799788b85705794c373f40}{\index{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem@{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem}!clear\-History@{clear\-History}}
+\index{clear\-History@{clear\-History}!GoSUM::CSimpleOptimizationProblem@{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem}}
+\subsubsection[{clear\-History}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem\-::clear\-History (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_simple_optimization_problem_a87a5cfb79c799788b85705794c373f40}
+
+
+Clears results. 
+
+
+
+Reimplemented from \hyperlink{class_c_optimization_problem_a405d5e1e0008ba9e8604327632e93cbe}{C\-Optimization\-Problem}.
+
+\hypertarget{class_go_s_u_m_1_1_c_simple_optimization_problem_af34b88f099f94727611b79d5f5ca4e9a}{\index{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem@{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem}!close\-Optimization@{close\-Optimization}}
+\index{close\-Optimization@{close\-Optimization}!GoSUM::CSimpleOptimizationProblem@{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem}}
+\subsubsection[{close\-Optimization}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem\-::close\-Optimization (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_simple_optimization_problem_af34b88f099f94727611b79d5f5ca4e9a}
+
+
+Opens, i.\-e. prepares optimization. 
+
+
+
+Reimplemented from \hyperlink{class_go_s_u_m_1_1_c_parser_optimization_problem_aa750bd3725ca5e71d8ce9901e78661a8}{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}.
+
+
+
+Reimplemented in \hyperlink{class_go_s_u_m_1_1_c_original_optimization_problem_a75b28528cda5b1be7bdc2cc4a309a314}{Go\-S\-U\-M\-::\-C\-Original\-Optimization\-Problem}.
+
+\hypertarget{class_go_s_u_m_1_1_c_simple_optimization_problem_aa746b5adb39e80712ecddf18e466f4ab}{\index{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem@{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!GoSUM::CSimpleOptimizationProblem@{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem}}
+\subsubsection[{evaluate}]{\setlength{\rightskip}{0pt plus 5cm}bool Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem\-::evaluate (
+\begin{DoxyParamCaption}
+\item[{const Array\-Xd \&}]{\-\_\-hp, }
+\item[{Array\-Xd \&}]{\-\_\-ep}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_simple_optimization_problem_aa746b5adb39e80712ecddf18e466f4ab}
+
+
+Closes optimization, i.\-e. closes what was opened in open\-Optimization. 
+
+Evaluates objective and all constraints from optimization variables values and returns true if it is feasible, false otherwise. 
+
+Reimplemented from \hyperlink{class_c_optimization_problem_a6edffc27d4d909c9572a95d7ea6c7c8b}{C\-Optimization\-Problem}.
+
+\hypertarget{class_go_s_u_m_1_1_c_simple_optimization_problem_a022d38045804084463299d89bffb7d42}{\index{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem@{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem}!find\-Connected\-To@{find\-Connected\-To}}
+\index{find\-Connected\-To@{find\-Connected\-To}!GoSUM::CSimpleOptimizationProblem@{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem}}
+\subsubsection[{find\-Connected\-To}]{\setlength{\rightskip}{0pt plus 5cm}int Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem\-::find\-Connected\-To (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Model\-Variable} $\ast$}]{\-\_\-pip}
+\end{DoxyParamCaption}
+) const}}\label{class_go_s_u_m_1_1_c_simple_optimization_problem_a022d38045804084463299d89bffb7d42}
+
+
+Finds optimization variable connected to a particular input parameter. 
+
+\hypertarget{class_go_s_u_m_1_1_c_simple_optimization_problem_a1eb9802fcaf98b032e0ad2f5c70541ce}{\index{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem@{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem}!input\-Point2\-Model\-Point@{input\-Point2\-Model\-Point}}
+\index{input\-Point2\-Model\-Point@{input\-Point2\-Model\-Point}!GoSUM::CSimpleOptimizationProblem@{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem}}
+\subsubsection[{input\-Point2\-Model\-Point}]{\setlength{\rightskip}{0pt plus 5cm}Array\-Xd Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem\-::input\-Point2\-Model\-Point (
+\begin{DoxyParamCaption}
+\item[{const Array\-Xd \&}]{\-\_\-ip}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_simple_optimization_problem_a1eb9802fcaf98b032e0ad2f5c70541ce}
+
+
+Converts input parameter point to model point. 
+
+
+
+Reimplemented in \hyperlink{class_go_s_u_m_1_1_c_analytical_optimization_problem_a83cf54606759ec8e5cb20cbb0b0ce6f5}{Go\-S\-U\-M\-::\-C\-Analytical\-Optimization\-Problem}, and \hyperlink{class_go_s_u_m_1_1_c_original_optimization_problem_a3ad565122964e4fdec8156f6457c582e}{Go\-S\-U\-M\-::\-C\-Original\-Optimization\-Problem}.
+
+\hypertarget{class_go_s_u_m_1_1_c_simple_optimization_problem_aa66a0dd530b4cab400fc88b32f566298}{\index{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem@{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem}!is\-Feasible@{is\-Feasible}}
+\index{is\-Feasible@{is\-Feasible}!GoSUM::CSimpleOptimizationProblem@{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem}}
+\subsubsection[{is\-Feasible}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem\-::is\-Feasible (
+\begin{DoxyParamCaption}
+\item[{const Array\-Xd \&}]{\-\_\-ip}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_simple_optimization_problem_aa66a0dd530b4cab400fc88b32f566298}
+
+
+Returns true if model variables is admissible, false otherwise. 
+
+
+
+Reimplemented from \hyperlink{class_c_optimization_problem_ad3bfb3d51edfeeb18be3ce32731c2ed1}{C\-Optimization\-Problem}.
+
+\hypertarget{class_go_s_u_m_1_1_c_simple_optimization_problem_a87fbc6696a3a066a41b775b79500b78c}{\index{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem@{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem}!is\-Model\-Variable@{is\-Model\-Variable}}
+\index{is\-Model\-Variable@{is\-Model\-Variable}!GoSUM::CSimpleOptimizationProblem@{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem}}
+\subsubsection[{is\-Model\-Variable}]{\setlength{\rightskip}{0pt plus 5cm}static bool Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem\-::is\-Model\-Variable (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Optimization\-Variable} \&}]{\-\_\-a\-O\-V}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_simple_optimization_problem_a87fbc6696a3a066a41b775b79500b78c}
+
+
+Used in member function Find. 
+
+\hypertarget{class_go_s_u_m_1_1_c_simple_optimization_problem_a772db1ec2c35c78a4b68551969e4083c}{\index{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem@{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem}!open\-Optimization@{open\-Optimization}}
+\index{open\-Optimization@{open\-Optimization}!GoSUM::CSimpleOptimizationProblem@{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem}}
+\subsubsection[{open\-Optimization}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem\-::open\-Optimization (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_simple_optimization_problem_a772db1ec2c35c78a4b68551969e4083c}
+
+
+Reimplemented from \hyperlink{class_go_s_u_m_1_1_c_parser_optimization_problem_a56ce1fd2aada271c5aece350dd9b3d03}{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}.
+
+
+
+Reimplemented in \hyperlink{class_go_s_u_m_1_1_c_original_optimization_problem_aa2473c8014cf051d66ecbe6107043b6a}{Go\-S\-U\-M\-::\-C\-Original\-Optimization\-Problem}.
+
+\hypertarget{class_go_s_u_m_1_1_c_simple_optimization_problem_a627c6cfdc256739e723cbdbf1a61c007}{\index{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem@{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem}!serialize@{serialize}}
+\index{serialize@{serialize}!GoSUM::CSimpleOptimizationProblem@{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Archive $>$ void Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem\-::serialize (
+\begin{DoxyParamCaption}
+\item[{Archive \&}]{ar, }
+\item[{const unsigned int}]{version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_simple_optimization_problem_a627c6cfdc256739e723cbdbf1a61c007}
+
+
+Reimplemented from \hyperlink{class_go_s_u_m_1_1_c_parser_optimization_problem_ae04362457ca2031eb85373131d8bbd12}{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}.
+
+
+
+Reimplemented in \hyperlink{class_go_s_u_m_1_1_c_analytical_optimization_problem_a258b0f6d24b501a1bb5ca1e65a06e8c5}{Go\-S\-U\-M\-::\-C\-Analytical\-Optimization\-Problem}, and \hyperlink{class_go_s_u_m_1_1_c_original_optimization_problem_a41f4a21189b39fcdb0d820d2f8348475}{Go\-S\-U\-M\-::\-C\-Original\-Optimization\-Problem}.
+
+\hypertarget{class_go_s_u_m_1_1_c_simple_optimization_problem_a051a218199a044cd97ba46a1cf9175f7}{\index{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem@{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem}!set\-Variable\-Names@{set\-Variable\-Names}}
+\index{set\-Variable\-Names@{set\-Variable\-Names}!GoSUM::CSimpleOptimizationProblem@{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem}}
+\subsubsection[{set\-Variable\-Names}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem\-::set\-Variable\-Names (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_simple_optimization_problem_a051a218199a044cd97ba46a1cf9175f7}
+
+
+Sets variable names for the parser. 
+
+
+
+Implements \hyperlink{class_go_s_u_m_1_1_c_parser_optimization_problem_a4d5c16683fc5feed6ed58c02206fd14b}{Go\-S\-U\-M\-::\-C\-Parser\-Optimization\-Problem}.
+
+
+
+Reimplemented in \hyperlink{class_go_s_u_m_1_1_c_original_optimization_problem_aabc85a11abb23fdfe5b99f8d141ae4bb}{Go\-S\-U\-M\-::\-C\-Original\-Optimization\-Problem}.
+
+\hypertarget{class_go_s_u_m_1_1_c_simple_optimization_problem_a8f390c55136c8324ba5fce698482aaa2}{\index{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem@{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem}!variable@{variable}}
+\index{variable@{variable}!GoSUM::CSimpleOptimizationProblem@{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem}}
+\subsubsection[{variable}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf C\-Model\-Optimization\-Variable}\& Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem\-::variable (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-at}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_simple_optimization_problem_a8f390c55136c8324ba5fce698482aaa2}
+
+
+Returns paticular optimization variable. 
+
+\hypertarget{class_go_s_u_m_1_1_c_simple_optimization_problem_a48d8644397b8ca9c8408263465035458}{\index{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem@{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem}!variable@{variable}}
+\index{variable@{variable}!GoSUM::CSimpleOptimizationProblem@{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem}}
+\subsubsection[{variable}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Model\-Optimization\-Variable}\& Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem\-::variable (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-at}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_simple_optimization_problem_a48d8644397b8ca9c8408263465035458}
+
+
+Returns paticular optimization variable. 
+
+\hypertarget{class_go_s_u_m_1_1_c_simple_optimization_problem_ac044232f2c68d23b4791fbcf6dffcc81}{\index{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem@{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem}!variable\-Name@{variable\-Name}}
+\index{variable\-Name@{variable\-Name}!GoSUM::CSimpleOptimizationProblem@{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem}}
+\subsubsection[{variable\-Name}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem\-::variable\-Name (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-at}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_simple_optimization_problem_ac044232f2c68d23b4791fbcf6dffcc81}
+
+
+Returns name of the particular optimization variable. 
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_simple_optimization_problem_ac98d07dd8f7b70e16ccb9a01abf56b9c}{\index{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem@{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem}!boost\-::serialization\-::access@{boost\-::serialization\-::access}}
+\index{boost\-::serialization\-::access@{boost\-::serialization\-::access}!GoSUM::CSimpleOptimizationProblem@{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem}}
+\subsubsection[{boost\-::serialization\-::access}]{\setlength{\rightskip}{0pt plus 5cm}friend class boost\-::serialization\-::access\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_go_s_u_m_1_1_c_simple_optimization_problem_ac98d07dd8f7b70e16ccb9a01abf56b9c}
+
+
+Boost serialization. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_simple_optimization_problem_abe82037eb165ad085057b12b32886d8d}{\index{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem@{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem}!ovind@{ovind}}
+\index{ovind@{ovind}!GoSUM::CSimpleOptimizationProblem@{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem}}
+\subsubsection[{ovind}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$int$>$ Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem\-::ovind\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_simple_optimization_problem_abe82037eb165ad085057b12b32886d8d}
+\hypertarget{class_go_s_u_m_1_1_c_simple_optimization_problem_a6163e020d2c137adb71e449c73780a51}{\index{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem@{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem}!p\-I\-P@{p\-I\-P}}
+\index{p\-I\-P@{p\-I\-P}!GoSUM::CSimpleOptimizationProblem@{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem}}
+\subsubsection[{p\-I\-P}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Input\-Parameters}$\ast$ Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem\-::p\-I\-P\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_simple_optimization_problem_a6163e020d2c137adb71e449c73780a51}
+
+
+Points to input parameters. 
+
+\hypertarget{class_go_s_u_m_1_1_c_simple_optimization_problem_a5aefa2b214c065e7844b1316f6c38aba}{\index{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem@{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem}!pip\-To\-Find@{pip\-To\-Find}}
+\index{pip\-To\-Find@{pip\-To\-Find}!GoSUM::CSimpleOptimizationProblem@{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem}}
+\subsubsection[{pip\-To\-Find}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Go\-S\-U\-M\-::\-C\-Model\-Variable} $\ast$ Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem\-::pip\-To\-Find = {\bf N\-U\-L\-L}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_simple_optimization_problem_a5aefa2b214c065e7844b1316f6c38aba}
+
+
+Used in member function Find. 
+
+\hypertarget{class_go_s_u_m_1_1_c_simple_optimization_problem_acb6bedecb1d9856dba7d3aafa41e5738}{\index{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem@{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem}!samples@{samples}}
+\index{samples@{samples}!GoSUM::CSimpleOptimizationProblem@{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem}}
+\subsubsection[{samples}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$Array\-Xd$>$ Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem\-::samples\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_simple_optimization_problem_acb6bedecb1d9856dba7d3aafa41e5738}
+Samples for the uncertain varibles. \hypertarget{class_go_s_u_m_1_1_c_simple_optimization_problem_acddbd19e980f3afb8eb0113dfbcc21a1}{\index{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem@{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem}!uvind@{uvind}}
+\index{uvind@{uvind}!GoSUM::CSimpleOptimizationProblem@{Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem}}
+\subsubsection[{uvind}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$int$>$ Go\-S\-U\-M\-::\-C\-Simple\-Optimization\-Problem\-::uvind\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_simple_optimization_problem_acddbd19e980f3afb8eb0113dfbcc21a1}
+
+
+Vectors of indices of optimization variables (ovind) and uncertain variables (uvind) among input parameters. 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Development/core/\hyperlink{_parser_optimization_problem_8h}{Parser\-Optimization\-Problem.\-h}\item 
+C\-:/\-Development/core/\hyperlink{_parser_optimization_problem_8cpp}{Parser\-Optimization\-Problem.\-cpp}\end{DoxyCompactItemize}

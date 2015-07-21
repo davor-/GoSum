@@ -1,0 +1,158 @@
+\hypertarget{class_go_s_u_m_1_1_c_model_constraints}{\section{Go\-S\-U\-M\-:\-:C\-Model\-Constraints Class Reference}
+\label{class_go_s_u_m_1_1_c_model_constraints}\index{Go\-S\-U\-M\-::\-C\-Model\-Constraints@{Go\-S\-U\-M\-::\-C\-Model\-Constraints}}
+}
+
+
+{\ttfamily \#include $<$Constraints.\-h$>$}
+
+Inheritance diagram for Go\-S\-U\-M\-:\-:C\-Model\-Constraints\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_go_s_u_m_1_1_c_model_constraints}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_go_s_u_m_1_1_c_model_constraints_a1d6d718ab8ceeef75a4e35bbc747ccba}{C\-Model\-Constraints} ()
+\item 
+virtual \hyperlink{class_go_s_u_m_1_1_c_model_constraints_a903d48132b0bc708f1ae4c72bb1f1223}{$\sim$\-C\-Model\-Constraints} ()
+\item 
+virtual void \hyperlink{class_go_s_u_m_1_1_c_model_constraints_ab547fb9c0109eb85715d65caf04eed84}{clear} ()
+\begin{DoxyCompactList}\small\item\em Clears object. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_model_constraints_a0191da2921b3dd708e7aa5466735402b}{set} (\hyperlink{class_go_s_u_m_1_1_c_input_parameters}{C\-Input\-Parameters} $\ast$\-\_\-p\-I\-P)
+\begin{DoxyCompactList}\small\item\em Sets input parameters pointer. \end{DoxyCompactList}\item 
+bool \hyperlink{class_go_s_u_m_1_1_c_model_constraints_a3b6c33a11d19b7efc0f293fb1252bae8}{is\-Constrained} (int \-\_\-at) const 
+\begin{DoxyCompactList}\small\item\em Returns status (cosntrained or not) for particular input parameter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \hyperlink{class_go_s_u_m_1_1_c_model_constraints_a7e4ec6b59419b56907b7cfedec230ca7}{serialize} (Archive \&ar, const unsigned int version)
+\item 
+virtual void \hyperlink{class_go_s_u_m_1_1_c_model_constraints_afe8e8cbf1fc08ae1f2ee494146da01fa}{set\-Variable\-Names} ()
+\begin{DoxyCompactList}\small\item\em Sets variable names for the parser. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_go_s_u_m_1_1_c_input_parameters}{C\-Input\-Parameters} $\ast$ \hyperlink{class_go_s_u_m_1_1_c_model_constraints_a174e787472c4043054393c0bb5aaf402}{p\-I\-P}
+\begin{DoxyCompactList}\small\item\em Points to input parameters. \end{DoxyCompactList}\item 
+std\-::vector$<$ bool $>$ \hyperlink{class_go_s_u_m_1_1_c_model_constraints_a499e59d8384b98eaba5498043e792f26}{status}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_go_s_u_m_1_1_c_model_constraints_ac98d07dd8f7b70e16ccb9a01abf56b9c}{boost\-::serialization\-::access}
+\begin{DoxyCompactList}\small\item\em Boost serialization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_model_constraints_a1d6d718ab8ceeef75a4e35bbc747ccba}{\index{Go\-S\-U\-M\-::\-C\-Model\-Constraints@{Go\-S\-U\-M\-::\-C\-Model\-Constraints}!C\-Model\-Constraints@{C\-Model\-Constraints}}
+\index{C\-Model\-Constraints@{C\-Model\-Constraints}!GoSUM::CModelConstraints@{Go\-S\-U\-M\-::\-C\-Model\-Constraints}}
+\subsubsection[{C\-Model\-Constraints}]{\setlength{\rightskip}{0pt plus 5cm}Go\-S\-U\-M\-::\-C\-Model\-Constraints\-::\-C\-Model\-Constraints (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_model_constraints_a1d6d718ab8ceeef75a4e35bbc747ccba}
+\hypertarget{class_go_s_u_m_1_1_c_model_constraints_a903d48132b0bc708f1ae4c72bb1f1223}{\index{Go\-S\-U\-M\-::\-C\-Model\-Constraints@{Go\-S\-U\-M\-::\-C\-Model\-Constraints}!$\sim$\-C\-Model\-Constraints@{$\sim$\-C\-Model\-Constraints}}
+\index{$\sim$\-C\-Model\-Constraints@{$\sim$\-C\-Model\-Constraints}!GoSUM::CModelConstraints@{Go\-S\-U\-M\-::\-C\-Model\-Constraints}}
+\subsubsection[{$\sim$\-C\-Model\-Constraints}]{\setlength{\rightskip}{0pt plus 5cm}virtual Go\-S\-U\-M\-::\-C\-Model\-Constraints\-::$\sim$\-C\-Model\-Constraints (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_model_constraints_a903d48132b0bc708f1ae4c72bb1f1223}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_model_constraints_ab547fb9c0109eb85715d65caf04eed84}{\index{Go\-S\-U\-M\-::\-C\-Model\-Constraints@{Go\-S\-U\-M\-::\-C\-Model\-Constraints}!clear@{clear}}
+\index{clear@{clear}!GoSUM::CModelConstraints@{Go\-S\-U\-M\-::\-C\-Model\-Constraints}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Go\-S\-U\-M\-::\-C\-Model\-Constraints\-::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_model_constraints_ab547fb9c0109eb85715d65caf04eed84}
+
+
+Clears object. 
+
+
+
+Reimplemented from \hyperlink{class_go_s_u_m_1_1_c_constraints_a45acde7b103ba957a718031b6ecebf69}{Go\-S\-U\-M\-::\-C\-Constraints}.
+
+\hypertarget{class_go_s_u_m_1_1_c_model_constraints_a3b6c33a11d19b7efc0f293fb1252bae8}{\index{Go\-S\-U\-M\-::\-C\-Model\-Constraints@{Go\-S\-U\-M\-::\-C\-Model\-Constraints}!is\-Constrained@{is\-Constrained}}
+\index{is\-Constrained@{is\-Constrained}!GoSUM::CModelConstraints@{Go\-S\-U\-M\-::\-C\-Model\-Constraints}}
+\subsubsection[{is\-Constrained}]{\setlength{\rightskip}{0pt plus 5cm}bool Go\-S\-U\-M\-::\-C\-Model\-Constraints\-::is\-Constrained (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-at}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_model_constraints_a3b6c33a11d19b7efc0f293fb1252bae8}
+
+
+Returns status (cosntrained or not) for particular input parameter. 
+
+\hypertarget{class_go_s_u_m_1_1_c_model_constraints_a7e4ec6b59419b56907b7cfedec230ca7}{\index{Go\-S\-U\-M\-::\-C\-Model\-Constraints@{Go\-S\-U\-M\-::\-C\-Model\-Constraints}!serialize@{serialize}}
+\index{serialize@{serialize}!GoSUM::CModelConstraints@{Go\-S\-U\-M\-::\-C\-Model\-Constraints}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Archive $>$ void Go\-S\-U\-M\-::\-C\-Model\-Constraints\-::serialize (
+\begin{DoxyParamCaption}
+\item[{Archive \&}]{ar, }
+\item[{const unsigned int}]{version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_model_constraints_a7e4ec6b59419b56907b7cfedec230ca7}
+
+
+Reimplemented from \hyperlink{class_go_s_u_m_1_1_c_constraints_af98bbd20b50e8db2b88630d865fbf10f}{Go\-S\-U\-M\-::\-C\-Constraints}.
+
+\hypertarget{class_go_s_u_m_1_1_c_model_constraints_a0191da2921b3dd708e7aa5466735402b}{\index{Go\-S\-U\-M\-::\-C\-Model\-Constraints@{Go\-S\-U\-M\-::\-C\-Model\-Constraints}!set@{set}}
+\index{set@{set}!GoSUM::CModelConstraints@{Go\-S\-U\-M\-::\-C\-Model\-Constraints}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Model\-Constraints\-::set (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Input\-Parameters} $\ast$}]{\-\_\-p\-I\-P}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_model_constraints_a0191da2921b3dd708e7aa5466735402b}
+
+
+Sets input parameters pointer. 
+
+\hypertarget{class_go_s_u_m_1_1_c_model_constraints_afe8e8cbf1fc08ae1f2ee494146da01fa}{\index{Go\-S\-U\-M\-::\-C\-Model\-Constraints@{Go\-S\-U\-M\-::\-C\-Model\-Constraints}!set\-Variable\-Names@{set\-Variable\-Names}}
+\index{set\-Variable\-Names@{set\-Variable\-Names}!GoSUM::CModelConstraints@{Go\-S\-U\-M\-::\-C\-Model\-Constraints}}
+\subsubsection[{set\-Variable\-Names}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Model\-Constraints\-::set\-Variable\-Names (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_model_constraints_afe8e8cbf1fc08ae1f2ee494146da01fa}
+
+
+Sets variable names for the parser. 
+
+
+
+Implements \hyperlink{class_go_s_u_m_1_1_c_constraints_a68a322c212879db65e3ebc1c1f201432}{Go\-S\-U\-M\-::\-C\-Constraints}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_model_constraints_ac98d07dd8f7b70e16ccb9a01abf56b9c}{\index{Go\-S\-U\-M\-::\-C\-Model\-Constraints@{Go\-S\-U\-M\-::\-C\-Model\-Constraints}!boost\-::serialization\-::access@{boost\-::serialization\-::access}}
+\index{boost\-::serialization\-::access@{boost\-::serialization\-::access}!GoSUM::CModelConstraints@{Go\-S\-U\-M\-::\-C\-Model\-Constraints}}
+\subsubsection[{boost\-::serialization\-::access}]{\setlength{\rightskip}{0pt plus 5cm}friend class boost\-::serialization\-::access\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_go_s_u_m_1_1_c_model_constraints_ac98d07dd8f7b70e16ccb9a01abf56b9c}
+
+
+Boost serialization. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_model_constraints_a174e787472c4043054393c0bb5aaf402}{\index{Go\-S\-U\-M\-::\-C\-Model\-Constraints@{Go\-S\-U\-M\-::\-C\-Model\-Constraints}!p\-I\-P@{p\-I\-P}}
+\index{p\-I\-P@{p\-I\-P}!GoSUM::CModelConstraints@{Go\-S\-U\-M\-::\-C\-Model\-Constraints}}
+\subsubsection[{p\-I\-P}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Input\-Parameters}$\ast$ Go\-S\-U\-M\-::\-C\-Model\-Constraints\-::p\-I\-P\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_model_constraints_a174e787472c4043054393c0bb5aaf402}
+
+
+Points to input parameters. 
+
+\hypertarget{class_go_s_u_m_1_1_c_model_constraints_a499e59d8384b98eaba5498043e792f26}{\index{Go\-S\-U\-M\-::\-C\-Model\-Constraints@{Go\-S\-U\-M\-::\-C\-Model\-Constraints}!status@{status}}
+\index{status@{status}!GoSUM::CModelConstraints@{Go\-S\-U\-M\-::\-C\-Model\-Constraints}}
+\subsubsection[{status}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$bool$>$ Go\-S\-U\-M\-::\-C\-Model\-Constraints\-::status\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_model_constraints_a499e59d8384b98eaba5498043e792f26}
+Status (constrained or not) for each input parameter. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Development/core/\hyperlink{_constraints_8h}{Constraints.\-h}\item 
+C\-:/\-Development/core/\hyperlink{_constraints_8cpp}{Constraints.\-cpp}\end{DoxyCompactItemize}

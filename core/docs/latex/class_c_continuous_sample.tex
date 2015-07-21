@@ -1,0 +1,248 @@
+\hypertarget{class_c_continuous_sample}{\section{C\-Continuous\-Sample Class Reference}
+\label{class_c_continuous_sample}\index{C\-Continuous\-Sample@{C\-Continuous\-Sample}}
+}
+
+
+{\ttfamily \#include $<$Sample.\-h$>$}
+
+Inheritance diagram for C\-Continuous\-Sample\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_continuous_sample}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_continuous_sample_ada43d66e4e4e38cfa8c82e55d618a614}{C\-Continuous\-Sample} ()
+\item 
+virtual \hyperlink{class_c_continuous_sample_af7732d71f3a91df8941993dc22f62d0a}{$\sim$\-C\-Continuous\-Sample} ()
+\item 
+\hyperlink{class_c_continuous_sample_aaefe6f714c1f0b6907ae3c443fff34b0}{C\-Continuous\-Sample} (const \hyperlink{class_c_continuous_sample}{C\-Continuous\-Sample} \&O)
+\item 
+virtual void \hyperlink{class_c_continuous_sample_aed08dc4372c437b9a6168399f583d863}{compute\-Statistics} (int \-\_\-n)
+\begin{DoxyCompactList}\small\item\em Computes sample statistics, i.\-e. normalized histogram etc. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_c_continuous_sample_a30e72f44dbb7c2ca3c6b8f77ff53688a}{mean} () const 
+\begin{DoxyCompactList}\small\item\em Returns empirical mean. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_c_continuous_sample_a676e1bdea044e64b6c096fd58d056116}{standard\-Deviation} () const 
+\begin{DoxyCompactList}\small\item\em Returns empirical standard deviation. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_c_continuous_sample_ad2011a526a7e7c156bdf7a9cccf48277}{export\-Histogram} (Array\-Xd \&\-\_\-x, Array\-Xd \&\-\_\-\-H) const 
+\begin{DoxyCompactList}\small\item\em Exports histogram (x,H). \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_continuous_sample_aa3ea500b67bc9fdb767c7c324975a2eb}{export\-Sub\-Histogram} (Array\-Xd \&\-\_\-sub\-H, const std\-::vector$<$ int $>$ \&subset) const 
+\begin{DoxyCompactList}\small\item\em Exports histogram relative to a subset of sample data. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_c_continuous_sample_a79881662a2bcb842c97b418487d57eed}{variance} () const 
+\begin{DoxyCompactList}\small\item\em Returns sample variance (i.\-e.\-empirical). \end{DoxyCompactList}\item 
+bool \hyperlink{class_c_continuous_sample_a61a67310dfc13d836a845ec59cddd38e}{has\-Discrete\-Data} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \hyperlink{class_c_continuous_sample_ab5508a93778215d7408fde456f9e8faf}{serialize} (Archive \&ar, const unsigned int version)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{class_c_continuous_sample_a1e4e0d9a75c4111d5c5c3bc67ded57bb}{mu}
+\item 
+double \hyperlink{class_c_continuous_sample_a5ccdb718bac3e945f5e593d0137717e0}{stdv}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_c_continuous_sample_a59be50a77a49716c8fd181c2c1eb10bd}{compute\-Normalized\-Histogram} (int \-\_\-n)
+\begin{DoxyCompactList}\small\item\em Computes normalized histogram from sample data. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_continuous_sample_a2d7208d5acb81d8d9e69e7c24a916d99}{compute\-Normalized\-Sub\-Histogram} (Array\-Xd \&\-\_\-sub\-H, const std\-::vector$<$ int $>$ \&subset) const 
+\begin{DoxyCompactList}\small\item\em Computes normalized histogram from a subset of sample data. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_continuous_sample_a50aa31aff2e9767744e74f9b482aa8c5}{compute\-Mean\-And\-Standard\-Deviation} ()
+\begin{DoxyCompactList}\small\item\em Computes empirical mean and standard deviation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_c_continuous_sample_ac98d07dd8f7b70e16ccb9a01abf56b9c}{boost\-::serialization\-::access}
+\begin{DoxyCompactList}\small\item\em Boost serialization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_continuous_sample_ada43d66e4e4e38cfa8c82e55d618a614}{\index{C\-Continuous\-Sample@{C\-Continuous\-Sample}!C\-Continuous\-Sample@{C\-Continuous\-Sample}}
+\index{C\-Continuous\-Sample@{C\-Continuous\-Sample}!CContinuousSample@{C\-Continuous\-Sample}}
+\subsubsection[{C\-Continuous\-Sample}]{\setlength{\rightskip}{0pt plus 5cm}C\-Continuous\-Sample\-::\-C\-Continuous\-Sample (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_continuous_sample_ada43d66e4e4e38cfa8c82e55d618a614}
+\hypertarget{class_c_continuous_sample_af7732d71f3a91df8941993dc22f62d0a}{\index{C\-Continuous\-Sample@{C\-Continuous\-Sample}!$\sim$\-C\-Continuous\-Sample@{$\sim$\-C\-Continuous\-Sample}}
+\index{$\sim$\-C\-Continuous\-Sample@{$\sim$\-C\-Continuous\-Sample}!CContinuousSample@{C\-Continuous\-Sample}}
+\subsubsection[{$\sim$\-C\-Continuous\-Sample}]{\setlength{\rightskip}{0pt plus 5cm}virtual C\-Continuous\-Sample\-::$\sim$\-C\-Continuous\-Sample (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_continuous_sample_af7732d71f3a91df8941993dc22f62d0a}
+\hypertarget{class_c_continuous_sample_aaefe6f714c1f0b6907ae3c443fff34b0}{\index{C\-Continuous\-Sample@{C\-Continuous\-Sample}!C\-Continuous\-Sample@{C\-Continuous\-Sample}}
+\index{C\-Continuous\-Sample@{C\-Continuous\-Sample}!CContinuousSample@{C\-Continuous\-Sample}}
+\subsubsection[{C\-Continuous\-Sample}]{\setlength{\rightskip}{0pt plus 5cm}C\-Continuous\-Sample\-::\-C\-Continuous\-Sample (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Continuous\-Sample} \&}]{O}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_continuous_sample_aaefe6f714c1f0b6907ae3c443fff34b0}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_continuous_sample_a50aa31aff2e9767744e74f9b482aa8c5}{\index{C\-Continuous\-Sample@{C\-Continuous\-Sample}!compute\-Mean\-And\-Standard\-Deviation@{compute\-Mean\-And\-Standard\-Deviation}}
+\index{compute\-Mean\-And\-Standard\-Deviation@{compute\-Mean\-And\-Standard\-Deviation}!CContinuousSample@{C\-Continuous\-Sample}}
+\subsubsection[{compute\-Mean\-And\-Standard\-Deviation}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Continuous\-Sample\-::compute\-Mean\-And\-Standard\-Deviation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}}\label{class_c_continuous_sample_a50aa31aff2e9767744e74f9b482aa8c5}
+
+
+Computes empirical mean and standard deviation. 
+
+\hypertarget{class_c_continuous_sample_a59be50a77a49716c8fd181c2c1eb10bd}{\index{C\-Continuous\-Sample@{C\-Continuous\-Sample}!compute\-Normalized\-Histogram@{compute\-Normalized\-Histogram}}
+\index{compute\-Normalized\-Histogram@{compute\-Normalized\-Histogram}!CContinuousSample@{C\-Continuous\-Sample}}
+\subsubsection[{compute\-Normalized\-Histogram}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Continuous\-Sample\-::compute\-Normalized\-Histogram (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}}\label{class_c_continuous_sample_a59be50a77a49716c8fd181c2c1eb10bd}
+
+
+Computes normalized histogram from sample data. 
+
+\hypertarget{class_c_continuous_sample_a2d7208d5acb81d8d9e69e7c24a916d99}{\index{C\-Continuous\-Sample@{C\-Continuous\-Sample}!compute\-Normalized\-Sub\-Histogram@{compute\-Normalized\-Sub\-Histogram}}
+\index{compute\-Normalized\-Sub\-Histogram@{compute\-Normalized\-Sub\-Histogram}!CContinuousSample@{C\-Continuous\-Sample}}
+\subsubsection[{compute\-Normalized\-Sub\-Histogram}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Continuous\-Sample\-::compute\-Normalized\-Sub\-Histogram (
+\begin{DoxyParamCaption}
+\item[{Array\-Xd \&}]{\-\_\-sub\-H, }
+\item[{const std\-::vector$<$ int $>$ \&}]{subset}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}}\label{class_c_continuous_sample_a2d7208d5acb81d8d9e69e7c24a916d99}
+
+
+Computes normalized histogram from a subset of sample data. 
+
+\hypertarget{class_c_continuous_sample_aed08dc4372c437b9a6168399f583d863}{\index{C\-Continuous\-Sample@{C\-Continuous\-Sample}!compute\-Statistics@{compute\-Statistics}}
+\index{compute\-Statistics@{compute\-Statistics}!CContinuousSample@{C\-Continuous\-Sample}}
+\subsubsection[{compute\-Statistics}]{\setlength{\rightskip}{0pt plus 5cm}virtual void C\-Continuous\-Sample\-::compute\-Statistics (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_continuous_sample_aed08dc4372c437b9a6168399f583d863}
+
+
+Computes sample statistics, i.\-e. normalized histogram etc. 
+
+
+
+Implements \hyperlink{class_c_sample_a10000ec1dade335a2a96a8646e0bae03}{C\-Sample}.
+
+\hypertarget{class_c_continuous_sample_ad2011a526a7e7c156bdf7a9cccf48277}{\index{C\-Continuous\-Sample@{C\-Continuous\-Sample}!export\-Histogram@{export\-Histogram}}
+\index{export\-Histogram@{export\-Histogram}!CContinuousSample@{C\-Continuous\-Sample}}
+\subsubsection[{export\-Histogram}]{\setlength{\rightskip}{0pt plus 5cm}double C\-Continuous\-Sample\-::export\-Histogram (
+\begin{DoxyParamCaption}
+\item[{Array\-Xd \&}]{\-\_\-x, }
+\item[{Array\-Xd \&}]{\-\_\-\-H}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_continuous_sample_ad2011a526a7e7c156bdf7a9cccf48277}
+
+
+Exports histogram (x,H). 
+
+\hypertarget{class_c_continuous_sample_aa3ea500b67bc9fdb767c7c324975a2eb}{\index{C\-Continuous\-Sample@{C\-Continuous\-Sample}!export\-Sub\-Histogram@{export\-Sub\-Histogram}}
+\index{export\-Sub\-Histogram@{export\-Sub\-Histogram}!CContinuousSample@{C\-Continuous\-Sample}}
+\subsubsection[{export\-Sub\-Histogram}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Continuous\-Sample\-::export\-Sub\-Histogram (
+\begin{DoxyParamCaption}
+\item[{Array\-Xd \&}]{\-\_\-sub\-H, }
+\item[{const std\-::vector$<$ int $>$ \&}]{subset}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_continuous_sample_aa3ea500b67bc9fdb767c7c324975a2eb}
+
+
+Exports histogram relative to a subset of sample data. 
+
+
+
+Implements \hyperlink{class_t_sample_a1ce3bdd77627f5783edbec6f607c3ea9}{T\-Sample$<$ t $>$}.
+
+\hypertarget{class_c_continuous_sample_a61a67310dfc13d836a845ec59cddd38e}{\index{C\-Continuous\-Sample@{C\-Continuous\-Sample}!has\-Discrete\-Data@{has\-Discrete\-Data}}
+\index{has\-Discrete\-Data@{has\-Discrete\-Data}!CContinuousSample@{C\-Continuous\-Sample}}
+\subsubsection[{has\-Discrete\-Data}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-Continuous\-Sample\-::has\-Discrete\-Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_continuous_sample_a61a67310dfc13d836a845ec59cddd38e}
+\hypertarget{class_c_continuous_sample_a30e72f44dbb7c2ca3c6b8f77ff53688a}{\index{C\-Continuous\-Sample@{C\-Continuous\-Sample}!mean@{mean}}
+\index{mean@{mean}!CContinuousSample@{C\-Continuous\-Sample}}
+\subsubsection[{mean}]{\setlength{\rightskip}{0pt plus 5cm}virtual double C\-Continuous\-Sample\-::mean (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_continuous_sample_a30e72f44dbb7c2ca3c6b8f77ff53688a}
+
+
+Returns empirical mean. 
+
+\hypertarget{class_c_continuous_sample_ab5508a93778215d7408fde456f9e8faf}{\index{C\-Continuous\-Sample@{C\-Continuous\-Sample}!serialize@{serialize}}
+\index{serialize@{serialize}!CContinuousSample@{C\-Continuous\-Sample}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Archive $>$ void C\-Continuous\-Sample\-::serialize (
+\begin{DoxyParamCaption}
+\item[{Archive \&}]{ar, }
+\item[{const unsigned int}]{version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_c_continuous_sample_ab5508a93778215d7408fde456f9e8faf}
+
+
+Reimplemented from \hyperlink{class_t_sample_a0f53b1db72dd3e83c50ab28dd31929a5}{T\-Sample$<$ t $>$}.
+
+\hypertarget{class_c_continuous_sample_a676e1bdea044e64b6c096fd58d056116}{\index{C\-Continuous\-Sample@{C\-Continuous\-Sample}!standard\-Deviation@{standard\-Deviation}}
+\index{standard\-Deviation@{standard\-Deviation}!CContinuousSample@{C\-Continuous\-Sample}}
+\subsubsection[{standard\-Deviation}]{\setlength{\rightskip}{0pt plus 5cm}virtual double C\-Continuous\-Sample\-::standard\-Deviation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_continuous_sample_a676e1bdea044e64b6c096fd58d056116}
+
+
+Returns empirical standard deviation. 
+
+\hypertarget{class_c_continuous_sample_a79881662a2bcb842c97b418487d57eed}{\index{C\-Continuous\-Sample@{C\-Continuous\-Sample}!variance@{variance}}
+\index{variance@{variance}!CContinuousSample@{C\-Continuous\-Sample}}
+\subsubsection[{variance}]{\setlength{\rightskip}{0pt plus 5cm}virtual double C\-Continuous\-Sample\-::variance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_continuous_sample_a79881662a2bcb842c97b418487d57eed}
+
+
+Returns sample variance (i.\-e.\-empirical). 
+
+
+
+Implements \hyperlink{class_c_sample_a5ce1e4ff44a8ac2e021dc36541343651}{C\-Sample}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_c_continuous_sample_ac98d07dd8f7b70e16ccb9a01abf56b9c}{\index{C\-Continuous\-Sample@{C\-Continuous\-Sample}!boost\-::serialization\-::access@{boost\-::serialization\-::access}}
+\index{boost\-::serialization\-::access@{boost\-::serialization\-::access}!CContinuousSample@{C\-Continuous\-Sample}}
+\subsubsection[{boost\-::serialization\-::access}]{\setlength{\rightskip}{0pt plus 5cm}friend class boost\-::serialization\-::access\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_c_continuous_sample_ac98d07dd8f7b70e16ccb9a01abf56b9c}
+
+
+Boost serialization. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_continuous_sample_a1e4e0d9a75c4111d5c5c3bc67ded57bb}{\index{C\-Continuous\-Sample@{C\-Continuous\-Sample}!mu@{mu}}
+\index{mu@{mu}!CContinuousSample@{C\-Continuous\-Sample}}
+\subsubsection[{mu}]{\setlength{\rightskip}{0pt plus 5cm}double C\-Continuous\-Sample\-::mu\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_c_continuous_sample_a1e4e0d9a75c4111d5c5c3bc67ded57bb}
+\hypertarget{class_c_continuous_sample_a5ccdb718bac3e945f5e593d0137717e0}{\index{C\-Continuous\-Sample@{C\-Continuous\-Sample}!stdv@{stdv}}
+\index{stdv@{stdv}!CContinuousSample@{C\-Continuous\-Sample}}
+\subsubsection[{stdv}]{\setlength{\rightskip}{0pt plus 5cm}double C\-Continuous\-Sample\-::stdv\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_c_continuous_sample_a5ccdb718bac3e945f5e593d0137717e0}
+Empirical mean (mu) and standard deviation (std). 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Development/core/\hyperlink{_sample_8h}{Sample.\-h}\item 
+C\-:/\-Development/core/\hyperlink{_sample_8cpp}{Sample.\-cpp}\end{DoxyCompactItemize}

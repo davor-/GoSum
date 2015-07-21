@@ -1,0 +1,280 @@
+\hypertarget{class_c_sample}{\section{C\-Sample Class Reference}
+\label{class_c_sample}\index{C\-Sample@{C\-Sample}}
+}
+
+
+Abstract class for all samples.  
+
+
+
+
+{\ttfamily \#include $<$Sample.\-h$>$}
+
+Inheritance diagram for C\-Sample\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_c_sample}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_sample_acb24169cbb8c2c32151af43c60f29e26}{C\-Sample} ()
+\item 
+virtual \hyperlink{class_c_sample_a9e0d665855900b996d61bd6b15926441}{$\sim$\-C\-Sample} ()
+\item 
+\hyperlink{class_c_sample_ac2d67f8db3ca7eeb7143bee73530c564}{C\-Sample} (const \hyperlink{class_c_sample}{C\-Sample} \&O)
+\item 
+virtual void \hyperlink{class_c_sample_ad7418ef7bc065cdf14213c0f393720fe}{clear} ()=0
+\begin{DoxyCompactList}\small\item\em Clears object. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_sample_ae227fc339ddebd8c2744eb6c605b4544}{set\-Sample\-Size} (int \-\_\-n)=0
+\begin{DoxyCompactList}\small\item\em (Re)sizes the sample, all previous data is lost. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_c_sample_a7e732f11d879108d632170cdf3fe065a}{sample\-Size} () const =0
+\begin{DoxyCompactList}\small\item\em Returns sample size (number of data in the sample). \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_sample_a6817250e12af0b84730ddbbee7832ce7}{set\-Sample\-Value} (double \-\_\-val, int \-\_\-at)=0
+\begin{DoxyCompactList}\small\item\em Sets particular sample data value. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_sample_a3f2e73517f1818861a7b5114e5412e7d}{read\-Sample\-Value} (std\-::ifstream \&\-\_\-ifs, int \-\_\-at)=0
+\begin{DoxyCompactList}\small\item\em Reads particular sample data from input file stream. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_sample_ae259be8e58656626e12cedba8c99bacc}{write\-Sample\-Value} (std\-::ofstream \&\-\_\-ofs, int \-\_\-at) const =0
+\begin{DoxyCompactList}\small\item\em Writes particular sample data to output file stream. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_sample_a10000ec1dade335a2a96a8646e0bae03}{compute\-Statistics} (int \-\_\-n)=0
+\begin{DoxyCompactList}\small\item\em Computes sample statistics, i.\-e. normalized histogram etc. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_c_sample_a5ce1e4ff44a8ac2e021dc36541343651}{variance} () const =0
+\begin{DoxyCompactList}\small\item\em Returns sample variance (i.\-e.\-empirical). \end{DoxyCompactList}\item 
+virtual std\-::vector$<$ int $>$ \hyperlink{class_c_sample_acd41cc9c1219ea843abd59131ffaa458}{select} (double \-\_\-left, double \-\_\-right) const =0
+\begin{DoxyCompactList}\small\item\em Returns vector of indices of sample values selected if they are in the interval \mbox{[}\-\_\-left,\-\_\-right\mbox{]}. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_sample_a85d084b0fdf82081e265ad8ca39876f3}{erase\-Selected} (const std\-::vector$<$ int $>$ \&sel)=0
+\begin{DoxyCompactList}\small\item\em Erases sample values on positions defiend by sel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \hyperlink{class_c_sample_a56f06010d5e070739b5983e12bc7751a}{serialize} (Archive \&ar, const unsigned int version)
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{class_c_sample_a8373612b7c5eb96d0a0d86bb677f79df}{maxdiscretesize} = 11
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_c_sample_ac98d07dd8f7b70e16ccb9a01abf56b9c}{boost\-::serialization\-::access}
+\begin{DoxyCompactList}\small\item\em Boost serialization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract class for all samples. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_sample_acb24169cbb8c2c32151af43c60f29e26}{\index{C\-Sample@{C\-Sample}!C\-Sample@{C\-Sample}}
+\index{C\-Sample@{C\-Sample}!CSample@{C\-Sample}}
+\subsubsection[{C\-Sample}]{\setlength{\rightskip}{0pt plus 5cm}C\-Sample\-::\-C\-Sample (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_sample_acb24169cbb8c2c32151af43c60f29e26}
+\hypertarget{class_c_sample_a9e0d665855900b996d61bd6b15926441}{\index{C\-Sample@{C\-Sample}!$\sim$\-C\-Sample@{$\sim$\-C\-Sample}}
+\index{$\sim$\-C\-Sample@{$\sim$\-C\-Sample}!CSample@{C\-Sample}}
+\subsubsection[{$\sim$\-C\-Sample}]{\setlength{\rightskip}{0pt plus 5cm}virtual C\-Sample\-::$\sim$\-C\-Sample (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_sample_a9e0d665855900b996d61bd6b15926441}
+\hypertarget{class_c_sample_ac2d67f8db3ca7eeb7143bee73530c564}{\index{C\-Sample@{C\-Sample}!C\-Sample@{C\-Sample}}
+\index{C\-Sample@{C\-Sample}!CSample@{C\-Sample}}
+\subsubsection[{C\-Sample}]{\setlength{\rightskip}{0pt plus 5cm}C\-Sample\-::\-C\-Sample (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Sample} \&}]{O}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_sample_ac2d67f8db3ca7eeb7143bee73530c564}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_sample_ad7418ef7bc065cdf14213c0f393720fe}{\index{C\-Sample@{C\-Sample}!clear@{clear}}
+\index{clear@{clear}!CSample@{C\-Sample}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}virtual void C\-Sample\-::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_c_sample_ad7418ef7bc065cdf14213c0f393720fe}
+
+
+Clears object. 
+
+
+
+Implemented in \hyperlink{class_t_sample_ad4b1d357361c0f4543a91d929a2b51fa}{T\-Sample$<$ t $>$}.
+
+\hypertarget{class_c_sample_a10000ec1dade335a2a96a8646e0bae03}{\index{C\-Sample@{C\-Sample}!compute\-Statistics@{compute\-Statistics}}
+\index{compute\-Statistics@{compute\-Statistics}!CSample@{C\-Sample}}
+\subsubsection[{compute\-Statistics}]{\setlength{\rightskip}{0pt plus 5cm}virtual void C\-Sample\-::compute\-Statistics (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_c_sample_a10000ec1dade335a2a96a8646e0bae03}
+
+
+Computes sample statistics, i.\-e. normalized histogram etc. 
+
+
+
+Implemented in \hyperlink{class_c_continuous_sample_aed08dc4372c437b9a6168399f583d863}{C\-Continuous\-Sample}, and \hyperlink{class_c_discrete_sample_a35f047c74401f8a3b83ec024579d049c}{C\-Discrete\-Sample}.
+
+\hypertarget{class_c_sample_a85d084b0fdf82081e265ad8ca39876f3}{\index{C\-Sample@{C\-Sample}!erase\-Selected@{erase\-Selected}}
+\index{erase\-Selected@{erase\-Selected}!CSample@{C\-Sample}}
+\subsubsection[{erase\-Selected}]{\setlength{\rightskip}{0pt plus 5cm}virtual void C\-Sample\-::erase\-Selected (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ int $>$ \&}]{sel}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_c_sample_a85d084b0fdf82081e265ad8ca39876f3}
+
+
+Erases sample values on positions defiend by sel. 
+
+
+
+Implemented in \hyperlink{class_t_sample_a97502ddc915cc2f198fbce9ae82622ad}{T\-Sample$<$ t $>$}.
+
+\hypertarget{class_c_sample_a3f2e73517f1818861a7b5114e5412e7d}{\index{C\-Sample@{C\-Sample}!read\-Sample\-Value@{read\-Sample\-Value}}
+\index{read\-Sample\-Value@{read\-Sample\-Value}!CSample@{C\-Sample}}
+\subsubsection[{read\-Sample\-Value}]{\setlength{\rightskip}{0pt plus 5cm}virtual void C\-Sample\-::read\-Sample\-Value (
+\begin{DoxyParamCaption}
+\item[{std\-::ifstream \&}]{\-\_\-ifs, }
+\item[{int}]{\-\_\-at}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_c_sample_a3f2e73517f1818861a7b5114e5412e7d}
+
+
+Reads particular sample data from input file stream. 
+
+
+
+Implemented in \hyperlink{class_c_categorical_sample_af1adebf697521884fdc51653ee5f4b97}{C\-Categorical\-Sample}, \hyperlink{class_c_numerical_sample_a929eddefbbb32c7079e2e60ca95535da}{C\-Numerical\-Sample}, and \hyperlink{class_t_sample_a7a13ccc3ca57276ad789bafd9ceec1d8}{T\-Sample$<$ t $>$}.
+
+\hypertarget{class_c_sample_a7e732f11d879108d632170cdf3fe065a}{\index{C\-Sample@{C\-Sample}!sample\-Size@{sample\-Size}}
+\index{sample\-Size@{sample\-Size}!CSample@{C\-Sample}}
+\subsubsection[{sample\-Size}]{\setlength{\rightskip}{0pt plus 5cm}virtual int C\-Sample\-::sample\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_c_sample_a7e732f11d879108d632170cdf3fe065a}
+
+
+Returns sample size (number of data in the sample). 
+
+
+
+Implemented in \hyperlink{class_t_sample_a188e42364f5afe3ca9cd086130e5ea90}{T\-Sample$<$ t $>$}.
+
+\hypertarget{class_c_sample_acd41cc9c1219ea843abd59131ffaa458}{\index{C\-Sample@{C\-Sample}!select@{select}}
+\index{select@{select}!CSample@{C\-Sample}}
+\subsubsection[{select}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\-::vector$<$int$>$ C\-Sample\-::select (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-left, }
+\item[{double}]{\-\_\-right}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_c_sample_acd41cc9c1219ea843abd59131ffaa458}
+
+
+Returns vector of indices of sample values selected if they are in the interval \mbox{[}\-\_\-left,\-\_\-right\mbox{]}. 
+
+
+
+Implemented in \hyperlink{class_t_sample_ad774e7731052f913cba023dcfd619e7d}{T\-Sample$<$ t $>$}.
+
+\hypertarget{class_c_sample_a56f06010d5e070739b5983e12bc7751a}{\index{C\-Sample@{C\-Sample}!serialize@{serialize}}
+\index{serialize@{serialize}!CSample@{C\-Sample}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Archive $>$ void C\-Sample\-::serialize (
+\begin{DoxyParamCaption}
+\item[{Archive \&}]{ar, }
+\item[{const unsigned int}]{version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{class_c_sample_a56f06010d5e070739b5983e12bc7751a}
+
+
+Reimplemented in \hyperlink{class_c_continuous_sample_ab5508a93778215d7408fde456f9e8faf}{C\-Continuous\-Sample}, \hyperlink{class_c_discrete_sample_aa3e70fbd99f76fc47705c08d6230b726}{C\-Discrete\-Sample}, and \hyperlink{class_t_sample_a0f53b1db72dd3e83c50ab28dd31929a5}{T\-Sample$<$ t $>$}.
+
+\hypertarget{class_c_sample_ae227fc339ddebd8c2744eb6c605b4544}{\index{C\-Sample@{C\-Sample}!set\-Sample\-Size@{set\-Sample\-Size}}
+\index{set\-Sample\-Size@{set\-Sample\-Size}!CSample@{C\-Sample}}
+\subsubsection[{set\-Sample\-Size}]{\setlength{\rightskip}{0pt plus 5cm}virtual void C\-Sample\-::set\-Sample\-Size (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_c_sample_ae227fc339ddebd8c2744eb6c605b4544}
+
+
+(Re)sizes the sample, all previous data is lost. 
+
+
+
+Implemented in \hyperlink{class_c_categorical_sample_a7326fb12831014e2ee7504eb010f6356}{C\-Categorical\-Sample}, \hyperlink{class_c_numerical_sample_a2a558ba5736bf8893121dd9174110140}{C\-Numerical\-Sample}, and \hyperlink{class_t_sample_a3b92f468f11169b27a564fd801144fee}{T\-Sample$<$ t $>$}.
+
+\hypertarget{class_c_sample_a6817250e12af0b84730ddbbee7832ce7}{\index{C\-Sample@{C\-Sample}!set\-Sample\-Value@{set\-Sample\-Value}}
+\index{set\-Sample\-Value@{set\-Sample\-Value}!CSample@{C\-Sample}}
+\subsubsection[{set\-Sample\-Value}]{\setlength{\rightskip}{0pt plus 5cm}virtual void C\-Sample\-::set\-Sample\-Value (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-val, }
+\item[{int}]{\-\_\-at}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_c_sample_a6817250e12af0b84730ddbbee7832ce7}
+
+
+Sets particular sample data value. 
+
+
+
+Implemented in \hyperlink{class_t_sample_a08b273f6f0c4f4229be0b6a1267c98d1}{T\-Sample$<$ t $>$}.
+
+\hypertarget{class_c_sample_a5ce1e4ff44a8ac2e021dc36541343651}{\index{C\-Sample@{C\-Sample}!variance@{variance}}
+\index{variance@{variance}!CSample@{C\-Sample}}
+\subsubsection[{variance}]{\setlength{\rightskip}{0pt plus 5cm}virtual double C\-Sample\-::variance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_c_sample_a5ce1e4ff44a8ac2e021dc36541343651}
+
+
+Returns sample variance (i.\-e.\-empirical). 
+
+
+
+Implemented in \hyperlink{class_c_categorical_sample_a5408236fafb24d5a246823b97cc7427a}{C\-Categorical\-Sample}, \hyperlink{class_c_numerical_sample_aedf72750cb229d9c17417ba787e487f1}{C\-Numerical\-Sample}, \hyperlink{class_c_continuous_sample_a79881662a2bcb842c97b418487d57eed}{C\-Continuous\-Sample}, and \hyperlink{class_c_discrete_sample_a3e2d5a72842be01a167f890960a34bef}{C\-Discrete\-Sample}.
+
+\hypertarget{class_c_sample_ae259be8e58656626e12cedba8c99bacc}{\index{C\-Sample@{C\-Sample}!write\-Sample\-Value@{write\-Sample\-Value}}
+\index{write\-Sample\-Value@{write\-Sample\-Value}!CSample@{C\-Sample}}
+\subsubsection[{write\-Sample\-Value}]{\setlength{\rightskip}{0pt plus 5cm}virtual void C\-Sample\-::write\-Sample\-Value (
+\begin{DoxyParamCaption}
+\item[{std\-::ofstream \&}]{\-\_\-ofs, }
+\item[{int}]{\-\_\-at}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_c_sample_ae259be8e58656626e12cedba8c99bacc}
+
+
+Writes particular sample data to output file stream. 
+
+
+
+Implemented in \hyperlink{class_c_categorical_sample_ab20e228cf0a5b43de4981e1cc95da129}{C\-Categorical\-Sample}, \hyperlink{class_c_numerical_sample_ae1ed83416fc77ab40019c2577047a788}{C\-Numerical\-Sample}, and \hyperlink{class_t_sample_abb2feebe92f8fdb290046d6ef0573507}{T\-Sample$<$ t $>$}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_c_sample_ac98d07dd8f7b70e16ccb9a01abf56b9c}{\index{C\-Sample@{C\-Sample}!boost\-::serialization\-::access@{boost\-::serialization\-::access}}
+\index{boost\-::serialization\-::access@{boost\-::serialization\-::access}!CSample@{C\-Sample}}
+\subsubsection[{boost\-::serialization\-::access}]{\setlength{\rightskip}{0pt plus 5cm}friend class boost\-::serialization\-::access\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_c_sample_ac98d07dd8f7b70e16ccb9a01abf56b9c}
+
+
+Boost serialization. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_sample_a8373612b7c5eb96d0a0d86bb677f79df}{\index{C\-Sample@{C\-Sample}!maxdiscretesize@{maxdiscretesize}}
+\index{maxdiscretesize@{maxdiscretesize}!CSample@{C\-Sample}}
+\subsubsection[{maxdiscretesize}]{\setlength{\rightskip}{0pt plus 5cm}int C\-Sample\-::maxdiscretesize = 11\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_c_sample_a8373612b7c5eb96d0a0d86bb677f79df}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Development/core/\hyperlink{_sample_8h}{Sample.\-h}\item 
+C\-:/\-Development/core/\hyperlink{_sample_8cpp}{Sample.\-cpp}\end{DoxyCompactItemize}

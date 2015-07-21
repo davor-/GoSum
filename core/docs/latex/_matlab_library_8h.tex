@@ -1,0 +1,120 @@
+\hypertarget{_matlab_library_8h}{\section{C\-:/\-Development/core/\-Matlab\-Library.h File Reference}
+\label{_matlab_library_8h}\index{C\-:/\-Development/core/\-Matlab\-Library.\-h@{C\-:/\-Development/core/\-Matlab\-Library.\-h}}
+}
+{\ttfamily \#include \char`\"{}Utilities.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$Q\-Library$>$}\\*
+{\ttfamily \#include $<$mat.\-h$>$}\\*
+{\ttfamily \#include $<$engine.\-h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_c_m_a_t_l_a_b}{C\-M\-A\-T\-L\-A\-B}
+\begin{DoxyCompactList}\small\item\em Class interface for Matlab's libmat and libmx dynamic libraries. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef M\-A\-T\-File $\ast$($\ast$ \hyperlink{_matlab_library_8h_aca268297c120351425e9c3f63baf7513}{matftype1} )(const char $\ast$, const char $\ast$)
+\begin{DoxyCompactList}\small\item\em Typedefs for functions in Matlab's libmat dynamic library. \end{DoxyCompactList}\item 
+typedef int($\ast$ \hyperlink{_matlab_library_8h_a13c95ec00742c85c5995ee73f65aa04b}{matftype2} )(M\-A\-T\-File $\ast$)
+\item 
+typedef int($\ast$ \hyperlink{_matlab_library_8h_a7160a09ad0d8f7cdf8ddee355882db75}{matftype3} )(M\-A\-T\-File $\ast$, const char $\ast$, const mx\-Array $\ast$)
+\item 
+typedef mx\-Array $\ast$($\ast$ \hyperlink{_matlab_library_8h_a19aaafe0b8eebabce596da80414ebe6e}{matftype4} )(M\-A\-T\-File $\ast$, const char $\ast$)
+\item 
+typedef mx\-Array $\ast$($\ast$ \hyperlink{_matlab_library_8h_a55b81c948c47f9bfd82db6232884abdd}{mxftype1} )(mw\-Size, mw\-Size, mx\-Complexity)
+\begin{DoxyCompactList}\small\item\em Typedefs for functions in Matlab's libmx dynamic library. \end{DoxyCompactList}\item 
+typedef void($\ast$ \hyperlink{_matlab_library_8h_a7022359525610a30ebe4504fff8e3134}{mxftype2} )(mx\-Array $\ast$)
+\item 
+typedef double $\ast$($\ast$ \hyperlink{_matlab_library_8h_a5c09a212f0d14401cca990067c9f1dbc}{mxftype3} )(const mx\-Array $\ast$)
+\item 
+typedef void($\ast$ \hyperlink{_matlab_library_8h_af4399c0ac6b0e40881ea310c79348f66}{mxftype4} )(mx\-Array $\ast$pa, double $\ast$pr)
+\item 
+typedef size\-\_\-t($\ast$ \hyperlink{_matlab_library_8h_a2b30bc63e1127ad09ffdcb6f160bd48f}{mxftype5} )(const mx\-Array $\ast$)
+\item 
+typedef Engine $\ast$($\ast$ \hyperlink{_matlab_library_8h_ac4da6e2ee1808b7028f262b520994543}{engftype1} )(const char $\ast$, void $\ast$, int $\ast$)
+\begin{DoxyCompactList}\small\item\em Typedefs for functions in Matlab's libeng dynamic library. \end{DoxyCompactList}\item 
+typedef Engine $\ast$($\ast$ \hyperlink{_matlab_library_8h_a8a03b820f78fb36ce5f8f54c883eafbd}{engftype2} )(const char $\ast$)
+\item 
+typedef int($\ast$ \hyperlink{_matlab_library_8h_a3a87349e792acc67028be136d5704897}{engftype3} )(Engine $\ast$)
+\item 
+typedef int($\ast$ \hyperlink{_matlab_library_8h_af3f2bab0b2bc988ebc51c2eec3eeb121}{engftype4} )(Engine $\ast$, bool $\ast$)
+\item 
+typedef int($\ast$ \hyperlink{_matlab_library_8h_ac134537e723ad0d3c52a9a2119ad37cc}{engftype5} )(Engine $\ast$, bool)
+\item 
+typedef int($\ast$ \hyperlink{_matlab_library_8h_a4746cb1b1e7fec4353d4519d19b8490e}{engftype6} )(Engine $\ast$, const char $\ast$)
+\item 
+typedef mx\-Array $\ast$($\ast$ \hyperlink{_matlab_library_8h_a1764197cbd1c4dbb4a7dc14405d0eaa8}{engftype7} )(Engine $\ast$, const char $\ast$)
+\item 
+typedef int($\ast$ \hyperlink{_matlab_library_8h_acc6e68fe4c87fc8b28417a49f7bbf040}{engftype8} )(Engine $\ast$, const char $\ast$, const mx\-Array $\ast$)
+\item 
+typedef int($\ast$ \hyperlink{_matlab_library_8h_a49ce13d36241af0257a6b66c29a65131}{engftype9} )(Engine $\ast$, char $\ast$, int)
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{_matlab_library_8h_ac4da6e2ee1808b7028f262b520994543}{\index{Matlab\-Library.\-h@{Matlab\-Library.\-h}!engftype1@{engftype1}}
+\index{engftype1@{engftype1}!MatlabLibrary.h@{Matlab\-Library.\-h}}
+\subsubsection[{engftype1}]{\setlength{\rightskip}{0pt plus 5cm}typedef Engine$\ast$($\ast$ engftype1)(const char $\ast$, void $\ast$, int $\ast$)}}\label{_matlab_library_8h_ac4da6e2ee1808b7028f262b520994543}
+
+
+Typedefs for functions in Matlab's libeng dynamic library. 
+
+\hypertarget{_matlab_library_8h_a8a03b820f78fb36ce5f8f54c883eafbd}{\index{Matlab\-Library.\-h@{Matlab\-Library.\-h}!engftype2@{engftype2}}
+\index{engftype2@{engftype2}!MatlabLibrary.h@{Matlab\-Library.\-h}}
+\subsubsection[{engftype2}]{\setlength{\rightskip}{0pt plus 5cm}typedef Engine$\ast$($\ast$ engftype2)(const char $\ast$)}}\label{_matlab_library_8h_a8a03b820f78fb36ce5f8f54c883eafbd}
+\hypertarget{_matlab_library_8h_a3a87349e792acc67028be136d5704897}{\index{Matlab\-Library.\-h@{Matlab\-Library.\-h}!engftype3@{engftype3}}
+\index{engftype3@{engftype3}!MatlabLibrary.h@{Matlab\-Library.\-h}}
+\subsubsection[{engftype3}]{\setlength{\rightskip}{0pt plus 5cm}typedef int($\ast$ engftype3)(Engine $\ast$)}}\label{_matlab_library_8h_a3a87349e792acc67028be136d5704897}
+\hypertarget{_matlab_library_8h_af3f2bab0b2bc988ebc51c2eec3eeb121}{\index{Matlab\-Library.\-h@{Matlab\-Library.\-h}!engftype4@{engftype4}}
+\index{engftype4@{engftype4}!MatlabLibrary.h@{Matlab\-Library.\-h}}
+\subsubsection[{engftype4}]{\setlength{\rightskip}{0pt plus 5cm}typedef int($\ast$ engftype4)(Engine $\ast$, bool $\ast$)}}\label{_matlab_library_8h_af3f2bab0b2bc988ebc51c2eec3eeb121}
+\hypertarget{_matlab_library_8h_ac134537e723ad0d3c52a9a2119ad37cc}{\index{Matlab\-Library.\-h@{Matlab\-Library.\-h}!engftype5@{engftype5}}
+\index{engftype5@{engftype5}!MatlabLibrary.h@{Matlab\-Library.\-h}}
+\subsubsection[{engftype5}]{\setlength{\rightskip}{0pt plus 5cm}typedef int($\ast$ engftype5)(Engine $\ast$, bool)}}\label{_matlab_library_8h_ac134537e723ad0d3c52a9a2119ad37cc}
+\hypertarget{_matlab_library_8h_a4746cb1b1e7fec4353d4519d19b8490e}{\index{Matlab\-Library.\-h@{Matlab\-Library.\-h}!engftype6@{engftype6}}
+\index{engftype6@{engftype6}!MatlabLibrary.h@{Matlab\-Library.\-h}}
+\subsubsection[{engftype6}]{\setlength{\rightskip}{0pt plus 5cm}typedef int($\ast$ engftype6)(Engine $\ast$, const char $\ast$)}}\label{_matlab_library_8h_a4746cb1b1e7fec4353d4519d19b8490e}
+\hypertarget{_matlab_library_8h_a1764197cbd1c4dbb4a7dc14405d0eaa8}{\index{Matlab\-Library.\-h@{Matlab\-Library.\-h}!engftype7@{engftype7}}
+\index{engftype7@{engftype7}!MatlabLibrary.h@{Matlab\-Library.\-h}}
+\subsubsection[{engftype7}]{\setlength{\rightskip}{0pt plus 5cm}typedef mx\-Array$\ast$($\ast$ engftype7)(Engine $\ast$, const char $\ast$)}}\label{_matlab_library_8h_a1764197cbd1c4dbb4a7dc14405d0eaa8}
+\hypertarget{_matlab_library_8h_acc6e68fe4c87fc8b28417a49f7bbf040}{\index{Matlab\-Library.\-h@{Matlab\-Library.\-h}!engftype8@{engftype8}}
+\index{engftype8@{engftype8}!MatlabLibrary.h@{Matlab\-Library.\-h}}
+\subsubsection[{engftype8}]{\setlength{\rightskip}{0pt plus 5cm}typedef int($\ast$ engftype8)(Engine $\ast$, const char $\ast$, const mx\-Array $\ast$)}}\label{_matlab_library_8h_acc6e68fe4c87fc8b28417a49f7bbf040}
+\hypertarget{_matlab_library_8h_a49ce13d36241af0257a6b66c29a65131}{\index{Matlab\-Library.\-h@{Matlab\-Library.\-h}!engftype9@{engftype9}}
+\index{engftype9@{engftype9}!MatlabLibrary.h@{Matlab\-Library.\-h}}
+\subsubsection[{engftype9}]{\setlength{\rightskip}{0pt plus 5cm}typedef int($\ast$ engftype9)(Engine $\ast$, char $\ast$, int)}}\label{_matlab_library_8h_a49ce13d36241af0257a6b66c29a65131}
+\hypertarget{_matlab_library_8h_aca268297c120351425e9c3f63baf7513}{\index{Matlab\-Library.\-h@{Matlab\-Library.\-h}!matftype1@{matftype1}}
+\index{matftype1@{matftype1}!MatlabLibrary.h@{Matlab\-Library.\-h}}
+\subsubsection[{matftype1}]{\setlength{\rightskip}{0pt plus 5cm}typedef M\-A\-T\-File$\ast$($\ast$ matftype1)(const char $\ast$, const char $\ast$)}}\label{_matlab_library_8h_aca268297c120351425e9c3f63baf7513}
+
+
+Typedefs for functions in Matlab's libmat dynamic library. 
+
+\hypertarget{_matlab_library_8h_a13c95ec00742c85c5995ee73f65aa04b}{\index{Matlab\-Library.\-h@{Matlab\-Library.\-h}!matftype2@{matftype2}}
+\index{matftype2@{matftype2}!MatlabLibrary.h@{Matlab\-Library.\-h}}
+\subsubsection[{matftype2}]{\setlength{\rightskip}{0pt plus 5cm}typedef int($\ast$ matftype2)(M\-A\-T\-File $\ast$)}}\label{_matlab_library_8h_a13c95ec00742c85c5995ee73f65aa04b}
+\hypertarget{_matlab_library_8h_a7160a09ad0d8f7cdf8ddee355882db75}{\index{Matlab\-Library.\-h@{Matlab\-Library.\-h}!matftype3@{matftype3}}
+\index{matftype3@{matftype3}!MatlabLibrary.h@{Matlab\-Library.\-h}}
+\subsubsection[{matftype3}]{\setlength{\rightskip}{0pt plus 5cm}typedef int($\ast$ matftype3)(M\-A\-T\-File $\ast$, const char $\ast$, const mx\-Array $\ast$)}}\label{_matlab_library_8h_a7160a09ad0d8f7cdf8ddee355882db75}
+\hypertarget{_matlab_library_8h_a19aaafe0b8eebabce596da80414ebe6e}{\index{Matlab\-Library.\-h@{Matlab\-Library.\-h}!matftype4@{matftype4}}
+\index{matftype4@{matftype4}!MatlabLibrary.h@{Matlab\-Library.\-h}}
+\subsubsection[{matftype4}]{\setlength{\rightskip}{0pt plus 5cm}typedef mx\-Array$\ast$($\ast$ matftype4)(M\-A\-T\-File $\ast$, const char $\ast$)}}\label{_matlab_library_8h_a19aaafe0b8eebabce596da80414ebe6e}
+\hypertarget{_matlab_library_8h_a55b81c948c47f9bfd82db6232884abdd}{\index{Matlab\-Library.\-h@{Matlab\-Library.\-h}!mxftype1@{mxftype1}}
+\index{mxftype1@{mxftype1}!MatlabLibrary.h@{Matlab\-Library.\-h}}
+\subsubsection[{mxftype1}]{\setlength{\rightskip}{0pt plus 5cm}typedef mx\-Array$\ast$($\ast$ mxftype1)(mw\-Size,mw\-Size,mx\-Complexity)}}\label{_matlab_library_8h_a55b81c948c47f9bfd82db6232884abdd}
+
+
+Typedefs for functions in Matlab's libmx dynamic library. 
+
+\hypertarget{_matlab_library_8h_a7022359525610a30ebe4504fff8e3134}{\index{Matlab\-Library.\-h@{Matlab\-Library.\-h}!mxftype2@{mxftype2}}
+\index{mxftype2@{mxftype2}!MatlabLibrary.h@{Matlab\-Library.\-h}}
+\subsubsection[{mxftype2}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ mxftype2)(mx\-Array $\ast$)}}\label{_matlab_library_8h_a7022359525610a30ebe4504fff8e3134}
+\hypertarget{_matlab_library_8h_a5c09a212f0d14401cca990067c9f1dbc}{\index{Matlab\-Library.\-h@{Matlab\-Library.\-h}!mxftype3@{mxftype3}}
+\index{mxftype3@{mxftype3}!MatlabLibrary.h@{Matlab\-Library.\-h}}
+\subsubsection[{mxftype3}]{\setlength{\rightskip}{0pt plus 5cm}typedef double$\ast$($\ast$ mxftype3)(const mx\-Array $\ast$)}}\label{_matlab_library_8h_a5c09a212f0d14401cca990067c9f1dbc}
+\hypertarget{_matlab_library_8h_af4399c0ac6b0e40881ea310c79348f66}{\index{Matlab\-Library.\-h@{Matlab\-Library.\-h}!mxftype4@{mxftype4}}
+\index{mxftype4@{mxftype4}!MatlabLibrary.h@{Matlab\-Library.\-h}}
+\subsubsection[{mxftype4}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ mxftype4)(mx\-Array $\ast$pa, double $\ast$pr)}}\label{_matlab_library_8h_af4399c0ac6b0e40881ea310c79348f66}
+\hypertarget{_matlab_library_8h_a2b30bc63e1127ad09ffdcb6f160bd48f}{\index{Matlab\-Library.\-h@{Matlab\-Library.\-h}!mxftype5@{mxftype5}}
+\index{mxftype5@{mxftype5}!MatlabLibrary.h@{Matlab\-Library.\-h}}
+\subsubsection[{mxftype5}]{\setlength{\rightskip}{0pt plus 5cm}typedef size\-\_\-t($\ast$ mxftype5)(const mx\-Array $\ast$)}}\label{_matlab_library_8h_a2b30bc63e1127ad09ffdcb6f160bd48f}

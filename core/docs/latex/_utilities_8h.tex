@@ -1,0 +1,136 @@
+\hypertarget{_utilities_8h}{\section{C\-:/\-Development/core/\-Utilities.h File Reference}
+\label{_utilities_8h}\index{C\-:/\-Development/core/\-Utilities.\-h@{C\-:/\-Development/core/\-Utilities.\-h}}
+}
+{\ttfamily \#include $<$cmath$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$fstream$>$}\\*
+{\ttfamily \#include $<$sstream$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$algorithm$>$}\\*
+{\ttfamily \#include $<$utility$>$}\\*
+{\ttfamily \#include $<$queue$>$}\\*
+{\ttfamily \#include $<$boost/math/special\-\_\-functions/erf.\-hpp$>$}\\*
+{\ttfamily \#include $<$boost/math/distributions/chi\-\_\-squared.\-hpp$>$}\\*
+{\ttfamily \#include $<$boost/ptr\-\_\-container/ptr\-\_\-vector.\-hpp$>$}\\*
+{\ttfamily \#include $<$boost/serialization/split\-\_\-member.\-hpp$>$}\\*
+{\ttfamily \#include $<$boost/serialization/nvp.\-hpp$>$}\\*
+{\ttfamily \#include $<$boost/serialization/base\-\_\-object.\-hpp$>$}\\*
+{\ttfamily \#include $<$boost/serialization/utility.\-hpp$>$}\\*
+{\ttfamily \#include $<$boost/serialization/vector.\-hpp$>$}\\*
+{\ttfamily \#include $<$boost/serialization/string.\-hpp$>$}\\*
+{\ttfamily \#include $<$boost/serialization/export.\-hpp$>$}\\*
+{\ttfamily \#include $<$boost/ptr\-\_\-container/serialize\-\_\-ptr\-\_\-vector.\-hpp$>$}\\*
+{\ttfamily \#include $<$boost/config.\-hpp$>$}\\*
+{\ttfamily \#include $<$boost/archive/text\-\_\-iarchive.\-hpp$>$}\\*
+{\ttfamily \#include $<$boost/archive/text\-\_\-oarchive.\-hpp$>$}\\*
+{\ttfamily \#include $<$boost/archive/binary\-\_\-iarchive.\-hpp$>$}\\*
+{\ttfamily \#include $<$boost/archive/binary\-\_\-oarchive.\-hpp$>$}\\*
+{\ttfamily \#include $<$boost/archive/xml\-\_\-iarchive.\-hpp$>$}\\*
+{\ttfamily \#include $<$boost/archive/xml\-\_\-oarchive.\-hpp$>$}\\*
+{\ttfamily \#include $<$boost/thread.\-hpp$>$}\\*
+{\ttfamily \#include $<$boost/signal.\-hpp$>$}\\*
+{\ttfamily \#include $<$boost/bind.\-hpp$>$}\\*
+{\ttfamily \#include $<$Eigen/\-Dense$>$}\\*
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \hyperlink{namespaceboost}{boost}
+\item 
+namespace \hyperlink{namespaceboost_1_1serialization}{boost\-::serialization}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_utilities_8h_a525335710b53cb064ca56b936120431e}{\-\_\-\-U\-S\-E\-\_\-\-M\-A\-T\-H\-\_\-\-D\-E\-F\-I\-N\-E\-S}
+\item 
+\#define \hyperlink{_utilities_8h_a0c025f520fdb8c8574d13b7637b9cba9}{S\-I\-G\-N\-A\-L\-S\-L\-I\-B\-\_\-\-H\-P\-P\-\_\-\-I\-N\-C\-L\-U\-D\-E\-D}
+\item 
+\#define \hyperlink{_utilities_8h_ad5943dd486552fb4f8a7533c78336656}{boost\-Serialize\-Array\-Xdi\-Macro}(A)
+\begin{DoxyCompactList}\small\item\em Boost serialization for some Eigen Arrays. \end{DoxyCompactList}\item 
+\#define \hyperlink{_utilities_8h_a5450306cb522f7e3dc5def54e593d3d7}{boost\-Serialize\-Array\-X\-Xdi\-Macro}(B)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\-::wstring \hyperlink{_utilities_8h_a3635945271d18ff3677bbc03873b3495}{string2\-Wide\-String} (const std\-::string \&s)
+\begin{DoxyCompactList}\small\item\em Some utility functions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_utilities_8h_a525335710b53cb064ca56b936120431e}{\index{Utilities.\-h@{Utilities.\-h}!\-\_\-\-U\-S\-E\-\_\-\-M\-A\-T\-H\-\_\-\-D\-E\-F\-I\-N\-E\-S@{\-\_\-\-U\-S\-E\-\_\-\-M\-A\-T\-H\-\_\-\-D\-E\-F\-I\-N\-E\-S}}
+\index{\-\_\-\-U\-S\-E\-\_\-\-M\-A\-T\-H\-\_\-\-D\-E\-F\-I\-N\-E\-S@{\-\_\-\-U\-S\-E\-\_\-\-M\-A\-T\-H\-\_\-\-D\-E\-F\-I\-N\-E\-S}!Utilities.h@{Utilities.\-h}}
+\subsubsection[{\-\_\-\-U\-S\-E\-\_\-\-M\-A\-T\-H\-\_\-\-D\-E\-F\-I\-N\-E\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-\_\-\-U\-S\-E\-\_\-\-M\-A\-T\-H\-\_\-\-D\-E\-F\-I\-N\-E\-S}}\label{_utilities_8h_a525335710b53cb064ca56b936120431e}
+\hypertarget{_utilities_8h_ad5943dd486552fb4f8a7533c78336656}{\index{Utilities.\-h@{Utilities.\-h}!boost\-Serialize\-Array\-Xdi\-Macro@{boost\-Serialize\-Array\-Xdi\-Macro}}
+\index{boost\-Serialize\-Array\-Xdi\-Macro@{boost\-Serialize\-Array\-Xdi\-Macro}!Utilities.h@{Utilities.\-h}}
+\subsubsection[{boost\-Serialize\-Array\-Xdi\-Macro}]{\setlength{\rightskip}{0pt plus 5cm}\#define boost\-Serialize\-Array\-Xdi\-Macro(
+\begin{DoxyParamCaption}
+\item[{}]{A}
+\end{DoxyParamCaption}
+)}}\label{_utilities_8h_ad5943dd486552fb4f8a7533c78336656}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keyword}{template}<\textcolor{keyword}{class} Archive> \(\backslash\)
+void save(Archive &ar,\textcolor{keyword}{const} A &a,\textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} version) \(\backslash\)
+\{   \textcolor{keywordtype}{int} i,n=int(a.size()); \(\backslash\)
+    ar << boost::serialization::make\_nvp(\textcolor{stringliteral}{"size"},n); \(\backslash\)
+    for ( i=0; i<n; i++ )  ar << boost::serialization::make\_nvp(\textcolor{stringliteral}{"data"},a(i)); \(\backslash\)
+\} \(\backslash\)
+template<class Archive> \(\backslash\)
+void load(Archive &ar,A &a,\textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} version) \(\backslash\)
+\{   \textcolor{keywordtype}{int} i,n; \(\backslash\)
+    ar >> boost::serialization::make\_nvp(\textcolor{stringliteral}{"size"},n); \(\backslash\)
+    a.resize(n); \(\backslash\)
+    for ( i=0; i<n; i++ )  ar >> boost::serialization::make\_nvp(\textcolor{stringliteral}{"data"},a(i)); \(\backslash\)
+\}
+\end{DoxyCode}
+
+
+Boost serialization for some Eigen Arrays. 
+
+\hypertarget{_utilities_8h_a5450306cb522f7e3dc5def54e593d3d7}{\index{Utilities.\-h@{Utilities.\-h}!boost\-Serialize\-Array\-X\-Xdi\-Macro@{boost\-Serialize\-Array\-X\-Xdi\-Macro}}
+\index{boost\-Serialize\-Array\-X\-Xdi\-Macro@{boost\-Serialize\-Array\-X\-Xdi\-Macro}!Utilities.h@{Utilities.\-h}}
+\subsubsection[{boost\-Serialize\-Array\-X\-Xdi\-Macro}]{\setlength{\rightskip}{0pt plus 5cm}\#define boost\-Serialize\-Array\-X\-Xdi\-Macro(
+\begin{DoxyParamCaption}
+\item[{}]{B}
+\end{DoxyParamCaption}
+)}}\label{_utilities_8h_a5450306cb522f7e3dc5def54e593d3d7}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keyword}{template}<\textcolor{keyword}{class} Archive> \(\backslash\)
+void save(Archive &ar,\textcolor{keyword}{const} B &a,\textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} version) \(\backslash\)
+\{   \textcolor{keywordtype}{int} i,j,n=int(a.rows()),m=\textcolor{keywordtype}{int}(a.cols()); \(\backslash\)
+    ar << boost::serialization::make\_nvp(\textcolor{stringliteral}{"rows"},n); \(\backslash\)
+    ar << boost::serialization::make\_nvp(\textcolor{stringliteral}{"cols"},m); \(\backslash\)
+    for ( i=0; i<n; i++ ) \(\backslash\)
+       \textcolor{keywordflow}{for} ( j=0; j<m; j++ ) \(\backslash\)
+            ar << boost::serialization::make\_nvp(\textcolor{stringliteral}{"data"},a(i,j)); \(\backslash\)
+\} \(\backslash\)
+template<class Archive> \(\backslash\)
+void load(Archive &ar,B &a,\textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} version) \(\backslash\)
+\{   \textcolor{keywordtype}{int} i,j,n,m; \(\backslash\)
+    ar >> boost::serialization::make\_nvp(\textcolor{stringliteral}{"rows"},n); \(\backslash\)
+    ar >> boost::serialization::make\_nvp(\textcolor{stringliteral}{"cols"},m); \(\backslash\)
+    a.resize(n,m); \(\backslash\)
+    for ( i=0; i<n; i++ ) \(\backslash\)
+        \textcolor{keywordflow}{for} ( j=0; j<m; j++ ) \(\backslash\)
+            ar >> boost::serialization::make\_nvp(\textcolor{stringliteral}{"data"},a(i,j)); \(\backslash\)
+\}
+\end{DoxyCode}
+\hypertarget{_utilities_8h_a0c025f520fdb8c8574d13b7637b9cba9}{\index{Utilities.\-h@{Utilities.\-h}!S\-I\-G\-N\-A\-L\-S\-L\-I\-B\-\_\-\-H\-P\-P\-\_\-\-I\-N\-C\-L\-U\-D\-E\-D@{S\-I\-G\-N\-A\-L\-S\-L\-I\-B\-\_\-\-H\-P\-P\-\_\-\-I\-N\-C\-L\-U\-D\-E\-D}}
+\index{S\-I\-G\-N\-A\-L\-S\-L\-I\-B\-\_\-\-H\-P\-P\-\_\-\-I\-N\-C\-L\-U\-D\-E\-D@{S\-I\-G\-N\-A\-L\-S\-L\-I\-B\-\_\-\-H\-P\-P\-\_\-\-I\-N\-C\-L\-U\-D\-E\-D}!Utilities.h@{Utilities.\-h}}
+\subsubsection[{S\-I\-G\-N\-A\-L\-S\-L\-I\-B\-\_\-\-H\-P\-P\-\_\-\-I\-N\-C\-L\-U\-D\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-I\-G\-N\-A\-L\-S\-L\-I\-B\-\_\-\-H\-P\-P\-\_\-\-I\-N\-C\-L\-U\-D\-E\-D}}\label{_utilities_8h_a0c025f520fdb8c8574d13b7637b9cba9}
+
+
+\subsection{Function Documentation}
+\hypertarget{_utilities_8h_a3635945271d18ff3677bbc03873b3495}{\index{Utilities.\-h@{Utilities.\-h}!string2\-Wide\-String@{string2\-Wide\-String}}
+\index{string2\-Wide\-String@{string2\-Wide\-String}!Utilities.h@{Utilities.\-h}}
+\subsubsection[{string2\-Wide\-String}]{\setlength{\rightskip}{0pt plus 5cm}std\-::wstring string2\-Wide\-String (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{s}
+\end{DoxyParamCaption}
+)}}\label{_utilities_8h_a3635945271d18ff3677bbc03873b3495}
+
+
+Some utility functions. 
+
+Converts string to wide string. 

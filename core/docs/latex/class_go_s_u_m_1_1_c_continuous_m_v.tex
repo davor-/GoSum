@@ -1,0 +1,170 @@
+\hypertarget{class_go_s_u_m_1_1_c_continuous_m_v}{\section{Go\-S\-U\-M\-:\-:C\-Continuous\-M\-V Class Reference}
+\label{class_go_s_u_m_1_1_c_continuous_m_v}\index{Go\-S\-U\-M\-::\-C\-Continuous\-M\-V@{Go\-S\-U\-M\-::\-C\-Continuous\-M\-V}}
+}
+
+
+{\ttfamily \#include $<$Model\-Variable.\-h$>$}
+
+Inheritance diagram for Go\-S\-U\-M\-:\-:C\-Continuous\-M\-V\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_go_s_u_m_1_1_c_continuous_m_v}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_go_s_u_m_1_1_c_continuous_m_v_a2ae3981f3aa32aea3c1d3224c31f4643}{C\-Continuous\-M\-V} (const std\-::string \&\-\_\-uname, \hyperlink{class_c_random_variable_a80d2a87c43847274138b51f7d713d7f1}{C\-Random\-Variable\-::distributiontype} \-\_\-type)
+\begin{DoxyCompactList}\small\item\em Constructs new model variable by name and type. \end{DoxyCompactList}\item 
+\hyperlink{class_go_s_u_m_1_1_c_continuous_m_v_a6934633087f0189586c9c5b7cb5f86f7}{C\-Continuous\-M\-V} (const \hyperlink{class_go_s_u_m_1_1_c_continuous_m_v}{C\-Continuous\-M\-V} \&O)
+\item 
+virtual void \hyperlink{class_go_s_u_m_1_1_c_continuous_m_v_a923c07b0735783d016b4e155b5eb0539}{set\-Theoretical\-Distribution} ()
+\begin{DoxyCompactList}\small\item\em Tests goodness-\/of-\/fit for theoretical random variables and replaces with the best that satisfies Kolomogorov-\/\-Smirnov. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_go_s_u_m_1_1_c_continuous_m_v_a65b0b9b16980f16fe2bc36bf8d79e3b9}{set\-Empirical\-Distribution} ()
+\begin{DoxyCompactList}\small\item\em Compute distribution of the actual random variable from empirical sample data. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_go_s_u_m_1_1_c_continuous_m_v_a8f523f36ccdecfb58d468b6976890b15}{is\-Continuous} () const 
+\begin{DoxyCompactList}\small\item\em Returns true if model variable is continuous, false otherwise. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_go_s_u_m_1_1_c_continuous_m_v_aeaef5939c27a7e074c33f783d73484a5}{is\-Discrete} () const 
+\begin{DoxyCompactList}\small\item\em Returns true if model variable is discrete, false otherwise. \end{DoxyCompactList}\item 
+bool \hyperlink{class_go_s_u_m_1_1_c_continuous_m_v_a58012df86509e7f8ee5b23c5e44b8465}{has\-Discrete\-Data} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \hyperlink{class_go_s_u_m_1_1_c_continuous_m_v_a81cec49f19a1032334fdd57e7a61bdea}{serialize} (Archive \&ar, const unsigned int version)
+\item 
+\hyperlink{class_go_s_u_m_1_1_c_continuous_m_v_a74bd14dccc63f842fdc2e43fae3afde8}{C\-Continuous\-M\-V} ()
+\begin{DoxyCompactList}\small\item\em Private constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_go_s_u_m_1_1_c_continuous_m_v_ac98d07dd8f7b70e16ccb9a01abf56b9c}{boost\-::serialization\-::access}
+\begin{DoxyCompactList}\small\item\em Boost serialization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_continuous_m_v_a74bd14dccc63f842fdc2e43fae3afde8}{\index{Go\-S\-U\-M\-::\-C\-Continuous\-M\-V@{Go\-S\-U\-M\-::\-C\-Continuous\-M\-V}!C\-Continuous\-M\-V@{C\-Continuous\-M\-V}}
+\index{C\-Continuous\-M\-V@{C\-Continuous\-M\-V}!GoSUM::CContinuousMV@{Go\-S\-U\-M\-::\-C\-Continuous\-M\-V}}
+\subsubsection[{C\-Continuous\-M\-V}]{\setlength{\rightskip}{0pt plus 5cm}Go\-S\-U\-M\-::\-C\-Continuous\-M\-V\-::\-C\-Continuous\-M\-V (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_continuous_m_v_a74bd14dccc63f842fdc2e43fae3afde8}
+
+
+Private constructor. 
+
+\hypertarget{class_go_s_u_m_1_1_c_continuous_m_v_a2ae3981f3aa32aea3c1d3224c31f4643}{\index{Go\-S\-U\-M\-::\-C\-Continuous\-M\-V@{Go\-S\-U\-M\-::\-C\-Continuous\-M\-V}!C\-Continuous\-M\-V@{C\-Continuous\-M\-V}}
+\index{C\-Continuous\-M\-V@{C\-Continuous\-M\-V}!GoSUM::CContinuousMV@{Go\-S\-U\-M\-::\-C\-Continuous\-M\-V}}
+\subsubsection[{C\-Continuous\-M\-V}]{\setlength{\rightskip}{0pt plus 5cm}Go\-S\-U\-M\-::\-C\-Continuous\-M\-V\-::\-C\-Continuous\-M\-V (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{\-\_\-uname, }
+\item[{{\bf C\-Random\-Variable\-::distributiontype}}]{\-\_\-type}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_continuous_m_v_a2ae3981f3aa32aea3c1d3224c31f4643}
+
+
+Constructs new model variable by name and type. 
+
+\hypertarget{class_go_s_u_m_1_1_c_continuous_m_v_a6934633087f0189586c9c5b7cb5f86f7}{\index{Go\-S\-U\-M\-::\-C\-Continuous\-M\-V@{Go\-S\-U\-M\-::\-C\-Continuous\-M\-V}!C\-Continuous\-M\-V@{C\-Continuous\-M\-V}}
+\index{C\-Continuous\-M\-V@{C\-Continuous\-M\-V}!GoSUM::CContinuousMV@{Go\-S\-U\-M\-::\-C\-Continuous\-M\-V}}
+\subsubsection[{C\-Continuous\-M\-V}]{\setlength{\rightskip}{0pt plus 5cm}Go\-S\-U\-M\-::\-C\-Continuous\-M\-V\-::\-C\-Continuous\-M\-V (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Continuous\-M\-V} \&}]{O}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_continuous_m_v_a6934633087f0189586c9c5b7cb5f86f7}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_continuous_m_v_a58012df86509e7f8ee5b23c5e44b8465}{\index{Go\-S\-U\-M\-::\-C\-Continuous\-M\-V@{Go\-S\-U\-M\-::\-C\-Continuous\-M\-V}!has\-Discrete\-Data@{has\-Discrete\-Data}}
+\index{has\-Discrete\-Data@{has\-Discrete\-Data}!GoSUM::CContinuousMV@{Go\-S\-U\-M\-::\-C\-Continuous\-M\-V}}
+\subsubsection[{has\-Discrete\-Data}]{\setlength{\rightskip}{0pt plus 5cm}bool Go\-S\-U\-M\-::\-C\-Continuous\-M\-V\-::has\-Discrete\-Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_continuous_m_v_a58012df86509e7f8ee5b23c5e44b8465}
+\hypertarget{class_go_s_u_m_1_1_c_continuous_m_v_a8f523f36ccdecfb58d468b6976890b15}{\index{Go\-S\-U\-M\-::\-C\-Continuous\-M\-V@{Go\-S\-U\-M\-::\-C\-Continuous\-M\-V}!is\-Continuous@{is\-Continuous}}
+\index{is\-Continuous@{is\-Continuous}!GoSUM::CContinuousMV@{Go\-S\-U\-M\-::\-C\-Continuous\-M\-V}}
+\subsubsection[{is\-Continuous}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Go\-S\-U\-M\-::\-C\-Continuous\-M\-V\-::is\-Continuous (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_continuous_m_v_a8f523f36ccdecfb58d468b6976890b15}
+
+
+Returns true if model variable is continuous, false otherwise. 
+
+
+
+Implements \hyperlink{class_go_s_u_m_1_1_c_model_variable_a2ec4aee717249dcbad98fd6e6320a6b7}{Go\-S\-U\-M\-::\-C\-Model\-Variable}.
+
+\hypertarget{class_go_s_u_m_1_1_c_continuous_m_v_aeaef5939c27a7e074c33f783d73484a5}{\index{Go\-S\-U\-M\-::\-C\-Continuous\-M\-V@{Go\-S\-U\-M\-::\-C\-Continuous\-M\-V}!is\-Discrete@{is\-Discrete}}
+\index{is\-Discrete@{is\-Discrete}!GoSUM::CContinuousMV@{Go\-S\-U\-M\-::\-C\-Continuous\-M\-V}}
+\subsubsection[{is\-Discrete}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Go\-S\-U\-M\-::\-C\-Continuous\-M\-V\-::is\-Discrete (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_continuous_m_v_aeaef5939c27a7e074c33f783d73484a5}
+
+
+Returns true if model variable is discrete, false otherwise. 
+
+
+
+Implements \hyperlink{class_go_s_u_m_1_1_c_model_variable_a9d0140b610b7a1c04a3b31e2d84f86da}{Go\-S\-U\-M\-::\-C\-Model\-Variable}.
+
+\hypertarget{class_go_s_u_m_1_1_c_continuous_m_v_a81cec49f19a1032334fdd57e7a61bdea}{\index{Go\-S\-U\-M\-::\-C\-Continuous\-M\-V@{Go\-S\-U\-M\-::\-C\-Continuous\-M\-V}!serialize@{serialize}}
+\index{serialize@{serialize}!GoSUM::CContinuousMV@{Go\-S\-U\-M\-::\-C\-Continuous\-M\-V}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Archive $>$ void Go\-S\-U\-M\-::\-C\-Continuous\-M\-V\-::serialize (
+\begin{DoxyParamCaption}
+\item[{Archive \&}]{ar, }
+\item[{const unsigned int}]{version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_continuous_m_v_a81cec49f19a1032334fdd57e7a61bdea}
+\hypertarget{class_go_s_u_m_1_1_c_continuous_m_v_a65b0b9b16980f16fe2bc36bf8d79e3b9}{\index{Go\-S\-U\-M\-::\-C\-Continuous\-M\-V@{Go\-S\-U\-M\-::\-C\-Continuous\-M\-V}!set\-Empirical\-Distribution@{set\-Empirical\-Distribution}}
+\index{set\-Empirical\-Distribution@{set\-Empirical\-Distribution}!GoSUM::CContinuousMV@{Go\-S\-U\-M\-::\-C\-Continuous\-M\-V}}
+\subsubsection[{set\-Empirical\-Distribution}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Go\-S\-U\-M\-::\-C\-Continuous\-M\-V\-::set\-Empirical\-Distribution (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_continuous_m_v_a65b0b9b16980f16fe2bc36bf8d79e3b9}
+
+
+Compute distribution of the actual random variable from empirical sample data. 
+
+
+
+Implements \hyperlink{class_go_s_u_m_1_1_t_model_variable_a3128d12e3ce0757714a7596de087314e}{Go\-S\-U\-M\-::\-T\-Model\-Variable$<$ R, S, t $>$}.
+
+\hypertarget{class_go_s_u_m_1_1_c_continuous_m_v_a923c07b0735783d016b4e155b5eb0539}{\index{Go\-S\-U\-M\-::\-C\-Continuous\-M\-V@{Go\-S\-U\-M\-::\-C\-Continuous\-M\-V}!set\-Theoretical\-Distribution@{set\-Theoretical\-Distribution}}
+\index{set\-Theoretical\-Distribution@{set\-Theoretical\-Distribution}!GoSUM::CContinuousMV@{Go\-S\-U\-M\-::\-C\-Continuous\-M\-V}}
+\subsubsection[{set\-Theoretical\-Distribution}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Continuous\-M\-V\-::set\-Theoretical\-Distribution (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_continuous_m_v_a923c07b0735783d016b4e155b5eb0539}
+
+
+Tests goodness-\/of-\/fit for theoretical random variables and replaces with the best that satisfies Kolomogorov-\/\-Smirnov. 
+
+
+
+Implements \hyperlink{class_go_s_u_m_1_1_t_model_variable_ad113f33f216796f775855dd3f8553f03}{Go\-S\-U\-M\-::\-T\-Model\-Variable$<$ R, S, t $>$}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_continuous_m_v_ac98d07dd8f7b70e16ccb9a01abf56b9c}{\index{Go\-S\-U\-M\-::\-C\-Continuous\-M\-V@{Go\-S\-U\-M\-::\-C\-Continuous\-M\-V}!boost\-::serialization\-::access@{boost\-::serialization\-::access}}
+\index{boost\-::serialization\-::access@{boost\-::serialization\-::access}!GoSUM::CContinuousMV@{Go\-S\-U\-M\-::\-C\-Continuous\-M\-V}}
+\subsubsection[{boost\-::serialization\-::access}]{\setlength{\rightskip}{0pt plus 5cm}friend class boost\-::serialization\-::access\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_go_s_u_m_1_1_c_continuous_m_v_ac98d07dd8f7b70e16ccb9a01abf56b9c}
+
+
+Boost serialization. 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Development/core/\hyperlink{_model_variable_8h}{Model\-Variable.\-h}\item 
+C\-:/\-Development/core/\hyperlink{_model_variable_8cpp}{Model\-Variable.\-cpp}\end{DoxyCompactItemize}

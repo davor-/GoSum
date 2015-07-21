@@ -1,0 +1,139 @@
+\hypertarget{class_c_small_period_r_n_g}{\section{C\-Small\-Period\-R\-N\-G Class Reference}
+\label{class_c_small_period_r_n_g}\index{C\-Small\-Period\-R\-N\-G@{C\-Small\-Period\-R\-N\-G}}
+}
+
+
+{\ttfamily \#include $<$Random\-Generators.\-h$>$}
+
+Inheritance diagram for C\-Small\-Period\-R\-N\-G\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_small_period_r_n_g}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_small_period_r_n_g_a2458f1138fd465ec27c1dc8906083dba}{C\-Small\-Period\-R\-N\-G} ()
+\item 
+\hyperlink{class_c_small_period_r_n_g_ae06d2e0294e19d39dbb9318488c621bf}{C\-Small\-Period\-R\-N\-G} (unsigned int s)
+\item 
+virtual \hyperlink{class_c_small_period_r_n_g_a2946da46c82a1d5790a729390e7aa187}{$\sim$\-C\-Small\-Period\-R\-N\-G} ()
+\item 
+virtual void \hyperlink{class_c_small_period_r_n_g_a7a799121f858fd32c8300970ab46a26a}{set\-Seed} (unsigned int s)
+\begin{DoxyCompactList}\small\item\em Sets seed of the R\-N\-G. \end{DoxyCompactList}\item 
+virtual unsigned int \hyperlink{class_c_small_period_r_n_g_a60061ed8dc92ede13ad2a4579023e792}{rndi} ()
+\begin{DoxyCompactList}\small\item\em Returns randomly generated unsigned int. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_c_small_period_r_n_g_af82a1d5b0232cd7dc4b73114e632057c}{rnd} ()
+\begin{DoxyCompactList}\small\item\em Returns randomly generated double between 0 and 1. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static long \hyperlink{class_c_small_period_r_n_g_aa06811ff44a472047f67cc157fec2add}{iy1} = 0
+\begin{DoxyCompactList}\small\item\em Paramters of the small period R\-N\-G. \end{DoxyCompactList}\item 
+static long \hyperlink{class_c_small_period_r_n_g_adbc06e71f816140c47a14050087c0d35}{iv1} \mbox{[}\hyperlink{_random_generators_8h_a0e93cfb2d62849853fd34957ba6e6fdc}{N\-T\-A\-B}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Paramters of the small period R\-N\-G. \end{DoxyCompactList}\item 
+static long \hyperlink{class_c_small_period_r_n_g_a71f1b2a5e8fb9ea6b7dca1086b2ee407}{idum1} = 0
+\begin{DoxyCompactList}\small\item\em Paramters of the small period R\-N\-G. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_small_period_r_n_g_a2458f1138fd465ec27c1dc8906083dba}{\index{C\-Small\-Period\-R\-N\-G@{C\-Small\-Period\-R\-N\-G}!C\-Small\-Period\-R\-N\-G@{C\-Small\-Period\-R\-N\-G}}
+\index{C\-Small\-Period\-R\-N\-G@{C\-Small\-Period\-R\-N\-G}!CSmallPeriodRNG@{C\-Small\-Period\-R\-N\-G}}
+\subsubsection[{C\-Small\-Period\-R\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}C\-Small\-Period\-R\-N\-G\-::\-C\-Small\-Period\-R\-N\-G (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_small_period_r_n_g_a2458f1138fd465ec27c1dc8906083dba}
+\hypertarget{class_c_small_period_r_n_g_ae06d2e0294e19d39dbb9318488c621bf}{\index{C\-Small\-Period\-R\-N\-G@{C\-Small\-Period\-R\-N\-G}!C\-Small\-Period\-R\-N\-G@{C\-Small\-Period\-R\-N\-G}}
+\index{C\-Small\-Period\-R\-N\-G@{C\-Small\-Period\-R\-N\-G}!CSmallPeriodRNG@{C\-Small\-Period\-R\-N\-G}}
+\subsubsection[{C\-Small\-Period\-R\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}C\-Small\-Period\-R\-N\-G\-::\-C\-Small\-Period\-R\-N\-G (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_small_period_r_n_g_ae06d2e0294e19d39dbb9318488c621bf}
+\hypertarget{class_c_small_period_r_n_g_a2946da46c82a1d5790a729390e7aa187}{\index{C\-Small\-Period\-R\-N\-G@{C\-Small\-Period\-R\-N\-G}!$\sim$\-C\-Small\-Period\-R\-N\-G@{$\sim$\-C\-Small\-Period\-R\-N\-G}}
+\index{$\sim$\-C\-Small\-Period\-R\-N\-G@{$\sim$\-C\-Small\-Period\-R\-N\-G}!CSmallPeriodRNG@{C\-Small\-Period\-R\-N\-G}}
+\subsubsection[{$\sim$\-C\-Small\-Period\-R\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}virtual C\-Small\-Period\-R\-N\-G\-::$\sim$\-C\-Small\-Period\-R\-N\-G (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_small_period_r_n_g_a2946da46c82a1d5790a729390e7aa187}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_small_period_r_n_g_af82a1d5b0232cd7dc4b73114e632057c}{\index{C\-Small\-Period\-R\-N\-G@{C\-Small\-Period\-R\-N\-G}!rnd@{rnd}}
+\index{rnd@{rnd}!CSmallPeriodRNG@{C\-Small\-Period\-R\-N\-G}}
+\subsubsection[{rnd}]{\setlength{\rightskip}{0pt plus 5cm}double C\-Small\-Period\-R\-N\-G\-::rnd (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_small_period_r_n_g_af82a1d5b0232cd7dc4b73114e632057c}
+
+
+Returns randomly generated double between 0 and 1. 
+
+
+
+Implements \hyperlink{class_c_base_r_n_g_abbd60a5ecdc9502dd646434224ab5d6b}{C\-Base\-R\-N\-G}.
+
+\hypertarget{class_c_small_period_r_n_g_a60061ed8dc92ede13ad2a4579023e792}{\index{C\-Small\-Period\-R\-N\-G@{C\-Small\-Period\-R\-N\-G}!rndi@{rndi}}
+\index{rndi@{rndi}!CSmallPeriodRNG@{C\-Small\-Period\-R\-N\-G}}
+\subsubsection[{rndi}]{\setlength{\rightskip}{0pt plus 5cm}virtual unsigned int C\-Small\-Period\-R\-N\-G\-::rndi (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_small_period_r_n_g_a60061ed8dc92ede13ad2a4579023e792}
+
+
+Returns randomly generated unsigned int. 
+
+
+
+Implements \hyperlink{class_c_base_r_n_g_a2db96fbf06a2f11b3613d422043fb7b8}{C\-Base\-R\-N\-G}.
+
+\hypertarget{class_c_small_period_r_n_g_a7a799121f858fd32c8300970ab46a26a}{\index{C\-Small\-Period\-R\-N\-G@{C\-Small\-Period\-R\-N\-G}!set\-Seed@{set\-Seed}}
+\index{set\-Seed@{set\-Seed}!CSmallPeriodRNG@{C\-Small\-Period\-R\-N\-G}}
+\subsubsection[{set\-Seed}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Small\-Period\-R\-N\-G\-::set\-Seed (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_small_period_r_n_g_a7a799121f858fd32c8300970ab46a26a}
+
+
+Sets seed of the R\-N\-G. 
+
+
+
+Implements \hyperlink{class_c_base_r_n_g_a56fbf75ca07b73954596ee04820e0b07}{C\-Base\-R\-N\-G}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_small_period_r_n_g_a71f1b2a5e8fb9ea6b7dca1086b2ee407}{\index{C\-Small\-Period\-R\-N\-G@{C\-Small\-Period\-R\-N\-G}!idum1@{idum1}}
+\index{idum1@{idum1}!CSmallPeriodRNG@{C\-Small\-Period\-R\-N\-G}}
+\subsubsection[{idum1}]{\setlength{\rightskip}{0pt plus 5cm}long C\-Small\-Period\-R\-N\-G\-::idum1 = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{class_c_small_period_r_n_g_a71f1b2a5e8fb9ea6b7dca1086b2ee407}
+
+
+Paramters of the small period R\-N\-G. 
+
+\hypertarget{class_c_small_period_r_n_g_adbc06e71f816140c47a14050087c0d35}{\index{C\-Small\-Period\-R\-N\-G@{C\-Small\-Period\-R\-N\-G}!iv1@{iv1}}
+\index{iv1@{iv1}!CSmallPeriodRNG@{C\-Small\-Period\-R\-N\-G}}
+\subsubsection[{iv1}]{\setlength{\rightskip}{0pt plus 5cm}long C\-Small\-Period\-R\-N\-G\-::iv1\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{class_c_small_period_r_n_g_adbc06e71f816140c47a14050087c0d35}
+
+
+Paramters of the small period R\-N\-G. 
+
+\hypertarget{class_c_small_period_r_n_g_aa06811ff44a472047f67cc157fec2add}{\index{C\-Small\-Period\-R\-N\-G@{C\-Small\-Period\-R\-N\-G}!iy1@{iy1}}
+\index{iy1@{iy1}!CSmallPeriodRNG@{C\-Small\-Period\-R\-N\-G}}
+\subsubsection[{iy1}]{\setlength{\rightskip}{0pt plus 5cm}long C\-Small\-Period\-R\-N\-G\-::iy1 = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{class_c_small_period_r_n_g_aa06811ff44a472047f67cc157fec2add}
+
+
+Paramters of the small period R\-N\-G. 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Development/core/\hyperlink{_random_generators_8h}{Random\-Generators.\-h}\item 
+C\-:/\-Development/core/\hyperlink{_random_generators_8cpp}{Random\-Generators.\-cpp}\end{DoxyCompactItemize}

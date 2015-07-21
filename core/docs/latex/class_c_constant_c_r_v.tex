@@ -1,0 +1,321 @@
+\hypertarget{class_c_constant_c_r_v}{\section{C\-Constant\-C\-R\-V Class Reference}
+\label{class_c_constant_c_r_v}\index{C\-Constant\-C\-R\-V@{C\-Constant\-C\-R\-V}}
+}
+
+
+Class for constant continuous random variables derived from continuous random variables.  
+
+
+
+
+{\ttfamily \#include $<$Random\-Variable.\-h$>$}
+
+Inheritance diagram for C\-Constant\-C\-R\-V\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_c_constant_c_r_v}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_constant_c_r_v_a83c7a44fb68bf048527412009a612f61}{C\-Constant\-C\-R\-V} ()
+\item 
+virtual \hyperlink{class_c_constant_c_r_v_ab25575c114e0fe2165d8cb7ec12a65bb}{$\sim$\-C\-Constant\-C\-R\-V} ()
+\item 
+\hyperlink{class_c_constant_c_r_v_a3bf02e24577267e0bd1984358785d79c}{C\-Constant\-C\-R\-V} (const \hyperlink{class_c_constant_c_r_v}{C\-Constant\-C\-R\-V} \&O)
+\item 
+virtual void \hyperlink{class_c_constant_c_r_v_ac85e4654e4760830a461b128d1af0293}{set\-Distribution} (double \-\_\-xc, double \-\_\-dp2=0)
+\begin{DoxyCompactList}\small\item\em Set distribution parameter. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_constant_c_r_v_a96e78eee64773501b8c44001942a3d7d}{set\-Distribution} (const \hyperlink{class_c_continuous_sample}{C\-Continuous\-Sample} \&\-\_\-a\-S)
+\begin{DoxyCompactList}\small\item\em Set distribution parameters from sample empirical parameters. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_c_constant_c_r_v_a3b32fa2e4cad96f6e777126f4b970b10}{probability} (double \-\_\-x) const 
+\begin{DoxyCompactList}\small\item\em Function that returns P\-M\-F. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_c_constant_c_r_v_ad4cc2382b81238efe0f62eb97ce2f360}{cumulative} (double \-\_\-x) const 
+\begin{DoxyCompactList}\small\item\em Function that returns C\-D\-F. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_c_constant_c_r_v_ab6c57777abbff6cb66d95b96d3f089b8}{min\-Value} () const 
+\begin{DoxyCompactList}\small\item\em Returns minimal value of the random variable. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_c_constant_c_r_v_a33cd27bc45a581fdcb4f780387e90373}{max\-Value} () const 
+\begin{DoxyCompactList}\small\item\em Returns maximal value of the random variable. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_c_constant_c_r_v_a54ca9f831246b31679becf095aa655e3}{expected\-Value} () const 
+\begin{DoxyCompactList}\small\item\em Returns expected value of the random variable. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_c_random_variable_a80d2a87c43847274138b51f7d713d7f1}{distributiontype} \hyperlink{class_c_constant_c_r_v_ab23347fb640e75308cf6dade83e0f9ae}{distribution\-Type} () const 
+\begin{DoxyCompactList}\small\item\em Returns enum type of the random variable distribution. \end{DoxyCompactList}\item 
+virtual std\-::string \hyperlink{class_c_constant_c_r_v_adf14a402f883d652657f53ab4a10d0be}{distribution\-Name} () const 
+\begin{DoxyCompactList}\small\item\em Returns name of the random variable distribution. \end{DoxyCompactList}\item 
+virtual Array\-Xd \hyperlink{class_c_constant_c_r_v_a19ccacd82627d70423d98f3cd81fb7b8}{export\-Domain} () const 
+\begin{DoxyCompactList}\small\item\em Exports domain of the random variable. \end{DoxyCompactList}\item 
+double \hyperlink{class_c_constant_c_r_v_a78b8c987ec4325a3e57c2c25effb851f}{constant\-Value} () const 
+\begin{DoxyCompactList}\small\item\em Returns value of constant random variable. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_constant_c_r_v_a358c670636bdfdec515f279abd2db23a}{set\-Constant\-Value} (double \-\_\-xc)
+\begin{DoxyCompactList}\small\item\em Sets value of constant random variable. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_c_constant_c_r_v_a606fa01ade61968377b77fec8e22bb5b}{variance} () const 
+\begin{DoxyCompactList}\small\item\em Returns variance of the random variable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual double \hyperlink{class_c_constant_c_r_v_a7a3d90e12dbff50c473433f7d94de163}{do\-Quantile} (double \-\_\-p) const 
+\begin{DoxyCompactList}\small\item\em Quantile, formula implementation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \hyperlink{class_c_constant_c_r_v_a5fdc32e0b2c507f4c9e2532e57f93d59}{serialize} (Archive \&ar, const unsigned int version)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{class_c_constant_c_r_v_a2a82360ef61c3c3ea5b4728f82f3e489}{xc}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_c_constant_c_r_v_ac98d07dd8f7b70e16ccb9a01abf56b9c}{boost\-::serialization\-::access}
+\begin{DoxyCompactList}\small\item\em Boost serialization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class for constant continuous random variables derived from continuous random variables. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_constant_c_r_v_a83c7a44fb68bf048527412009a612f61}{\index{C\-Constant\-C\-R\-V@{C\-Constant\-C\-R\-V}!C\-Constant\-C\-R\-V@{C\-Constant\-C\-R\-V}}
+\index{C\-Constant\-C\-R\-V@{C\-Constant\-C\-R\-V}!CConstantCRV@{C\-Constant\-C\-R\-V}}
+\subsubsection[{C\-Constant\-C\-R\-V}]{\setlength{\rightskip}{0pt plus 5cm}C\-Constant\-C\-R\-V\-::\-C\-Constant\-C\-R\-V (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_constant_c_r_v_a83c7a44fb68bf048527412009a612f61}
+\hypertarget{class_c_constant_c_r_v_ab25575c114e0fe2165d8cb7ec12a65bb}{\index{C\-Constant\-C\-R\-V@{C\-Constant\-C\-R\-V}!$\sim$\-C\-Constant\-C\-R\-V@{$\sim$\-C\-Constant\-C\-R\-V}}
+\index{$\sim$\-C\-Constant\-C\-R\-V@{$\sim$\-C\-Constant\-C\-R\-V}!CConstantCRV@{C\-Constant\-C\-R\-V}}
+\subsubsection[{$\sim$\-C\-Constant\-C\-R\-V}]{\setlength{\rightskip}{0pt plus 5cm}virtual C\-Constant\-C\-R\-V\-::$\sim$\-C\-Constant\-C\-R\-V (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_constant_c_r_v_ab25575c114e0fe2165d8cb7ec12a65bb}
+\hypertarget{class_c_constant_c_r_v_a3bf02e24577267e0bd1984358785d79c}{\index{C\-Constant\-C\-R\-V@{C\-Constant\-C\-R\-V}!C\-Constant\-C\-R\-V@{C\-Constant\-C\-R\-V}}
+\index{C\-Constant\-C\-R\-V@{C\-Constant\-C\-R\-V}!CConstantCRV@{C\-Constant\-C\-R\-V}}
+\subsubsection[{C\-Constant\-C\-R\-V}]{\setlength{\rightskip}{0pt plus 5cm}C\-Constant\-C\-R\-V\-::\-C\-Constant\-C\-R\-V (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Constant\-C\-R\-V} \&}]{O}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_constant_c_r_v_a3bf02e24577267e0bd1984358785d79c}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_constant_c_r_v_a78b8c987ec4325a3e57c2c25effb851f}{\index{C\-Constant\-C\-R\-V@{C\-Constant\-C\-R\-V}!constant\-Value@{constant\-Value}}
+\index{constant\-Value@{constant\-Value}!CConstantCRV@{C\-Constant\-C\-R\-V}}
+\subsubsection[{constant\-Value}]{\setlength{\rightskip}{0pt plus 5cm}double C\-Constant\-C\-R\-V\-::constant\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_constant_c_r_v_a78b8c987ec4325a3e57c2c25effb851f}
+
+
+Returns value of constant random variable. 
+
+\hypertarget{class_c_constant_c_r_v_ad4cc2382b81238efe0f62eb97ce2f360}{\index{C\-Constant\-C\-R\-V@{C\-Constant\-C\-R\-V}!cumulative@{cumulative}}
+\index{cumulative@{cumulative}!CConstantCRV@{C\-Constant\-C\-R\-V}}
+\subsubsection[{cumulative}]{\setlength{\rightskip}{0pt plus 5cm}virtual double C\-Constant\-C\-R\-V\-::cumulative (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-x}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_constant_c_r_v_ad4cc2382b81238efe0f62eb97ce2f360}
+
+
+Function that returns C\-D\-F. 
+
+\hypertarget{class_c_constant_c_r_v_adf14a402f883d652657f53ab4a10d0be}{\index{C\-Constant\-C\-R\-V@{C\-Constant\-C\-R\-V}!distribution\-Name@{distribution\-Name}}
+\index{distribution\-Name@{distribution\-Name}!CConstantCRV@{C\-Constant\-C\-R\-V}}
+\subsubsection[{distribution\-Name}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\-::string C\-Constant\-C\-R\-V\-::distribution\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_constant_c_r_v_adf14a402f883d652657f53ab4a10d0be}
+
+
+Returns name of the random variable distribution. 
+
+
+
+Implements \hyperlink{class_c_random_variable_a4b33eef7c56f9f1a83af01fa8ef2502b}{C\-Random\-Variable}.
+
+\hypertarget{class_c_constant_c_r_v_ab23347fb640e75308cf6dade83e0f9ae}{\index{C\-Constant\-C\-R\-V@{C\-Constant\-C\-R\-V}!distribution\-Type@{distribution\-Type}}
+\index{distribution\-Type@{distribution\-Type}!CConstantCRV@{C\-Constant\-C\-R\-V}}
+\subsubsection[{distribution\-Type}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf distributiontype} C\-Constant\-C\-R\-V\-::distribution\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_constant_c_r_v_ab23347fb640e75308cf6dade83e0f9ae}
+
+
+Returns enum type of the random variable distribution. 
+
+
+
+Implements \hyperlink{class_c_random_variable_a3b30589d41f4dd200bd40c8273cac2cd}{C\-Random\-Variable}.
+
+\hypertarget{class_c_constant_c_r_v_a7a3d90e12dbff50c473433f7d94de163}{\index{C\-Constant\-C\-R\-V@{C\-Constant\-C\-R\-V}!do\-Quantile@{do\-Quantile}}
+\index{do\-Quantile@{do\-Quantile}!CConstantCRV@{C\-Constant\-C\-R\-V}}
+\subsubsection[{do\-Quantile}]{\setlength{\rightskip}{0pt plus 5cm}virtual double C\-Constant\-C\-R\-V\-::do\-Quantile (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-p}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_c_constant_c_r_v_a7a3d90e12dbff50c473433f7d94de163}
+
+
+Quantile, formula implementation. 
+
+
+
+Implements \hyperlink{class_c_random_variable_a552ab36c8144d7154cbe3cd363eee65b}{C\-Random\-Variable}.
+
+\hypertarget{class_c_constant_c_r_v_a54ca9f831246b31679becf095aa655e3}{\index{C\-Constant\-C\-R\-V@{C\-Constant\-C\-R\-V}!expected\-Value@{expected\-Value}}
+\index{expected\-Value@{expected\-Value}!CConstantCRV@{C\-Constant\-C\-R\-V}}
+\subsubsection[{expected\-Value}]{\setlength{\rightskip}{0pt plus 5cm}virtual double C\-Constant\-C\-R\-V\-::expected\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_constant_c_r_v_a54ca9f831246b31679becf095aa655e3}
+
+
+Returns expected value of the random variable. 
+
+
+
+Implements \hyperlink{class_c_random_variable_a6e5490d17f2b6abcf9922c8b1bd6d4ed}{C\-Random\-Variable}.
+
+\hypertarget{class_c_constant_c_r_v_a19ccacd82627d70423d98f3cd81fb7b8}{\index{C\-Constant\-C\-R\-V@{C\-Constant\-C\-R\-V}!export\-Domain@{export\-Domain}}
+\index{export\-Domain@{export\-Domain}!CConstantCRV@{C\-Constant\-C\-R\-V}}
+\subsubsection[{export\-Domain}]{\setlength{\rightskip}{0pt plus 5cm}Array\-Xd C\-Constant\-C\-R\-V\-::export\-Domain (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_constant_c_r_v_a19ccacd82627d70423d98f3cd81fb7b8}
+
+
+Exports domain of the random variable. 
+
+
+
+Implements \hyperlink{class_t_random_variable_a37fc52d5fa37493a353887242d279a27}{T\-Random\-Variable$<$ t, T $>$}.
+
+\hypertarget{class_c_constant_c_r_v_a33cd27bc45a581fdcb4f780387e90373}{\index{C\-Constant\-C\-R\-V@{C\-Constant\-C\-R\-V}!max\-Value@{max\-Value}}
+\index{max\-Value@{max\-Value}!CConstantCRV@{C\-Constant\-C\-R\-V}}
+\subsubsection[{max\-Value}]{\setlength{\rightskip}{0pt plus 5cm}virtual double C\-Constant\-C\-R\-V\-::max\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_constant_c_r_v_a33cd27bc45a581fdcb4f780387e90373}
+
+
+Returns maximal value of the random variable. 
+
+
+
+Implements \hyperlink{class_c_random_variable_a48a5e98363d866f1f46568ed658479ad}{C\-Random\-Variable}.
+
+\hypertarget{class_c_constant_c_r_v_ab6c57777abbff6cb66d95b96d3f089b8}{\index{C\-Constant\-C\-R\-V@{C\-Constant\-C\-R\-V}!min\-Value@{min\-Value}}
+\index{min\-Value@{min\-Value}!CConstantCRV@{C\-Constant\-C\-R\-V}}
+\subsubsection[{min\-Value}]{\setlength{\rightskip}{0pt plus 5cm}virtual double C\-Constant\-C\-R\-V\-::min\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_constant_c_r_v_ab6c57777abbff6cb66d95b96d3f089b8}
+
+
+Returns minimal value of the random variable. 
+
+
+
+Implements \hyperlink{class_c_random_variable_a233ddd2eedb51b09a04a8c330646f356}{C\-Random\-Variable}.
+
+\hypertarget{class_c_constant_c_r_v_a3b32fa2e4cad96f6e777126f4b970b10}{\index{C\-Constant\-C\-R\-V@{C\-Constant\-C\-R\-V}!probability@{probability}}
+\index{probability@{probability}!CConstantCRV@{C\-Constant\-C\-R\-V}}
+\subsubsection[{probability}]{\setlength{\rightskip}{0pt plus 5cm}virtual double C\-Constant\-C\-R\-V\-::probability (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-x}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_constant_c_r_v_a3b32fa2e4cad96f6e777126f4b970b10}
+
+
+Function that returns P\-M\-F. 
+
+\hypertarget{class_c_constant_c_r_v_a5fdc32e0b2c507f4c9e2532e57f93d59}{\index{C\-Constant\-C\-R\-V@{C\-Constant\-C\-R\-V}!serialize@{serialize}}
+\index{serialize@{serialize}!CConstantCRV@{C\-Constant\-C\-R\-V}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Archive $>$ void C\-Constant\-C\-R\-V\-::serialize (
+\begin{DoxyParamCaption}
+\item[{Archive \&}]{ar, }
+\item[{const unsigned int}]{version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_constant_c_r_v_a5fdc32e0b2c507f4c9e2532e57f93d59}
+\hypertarget{class_c_constant_c_r_v_a358c670636bdfdec515f279abd2db23a}{\index{C\-Constant\-C\-R\-V@{C\-Constant\-C\-R\-V}!set\-Constant\-Value@{set\-Constant\-Value}}
+\index{set\-Constant\-Value@{set\-Constant\-Value}!CConstantCRV@{C\-Constant\-C\-R\-V}}
+\subsubsection[{set\-Constant\-Value}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Constant\-C\-R\-V\-::set\-Constant\-Value (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-xc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_constant_c_r_v_a358c670636bdfdec515f279abd2db23a}
+
+
+Sets value of constant random variable. 
+
+\hypertarget{class_c_constant_c_r_v_ac85e4654e4760830a461b128d1af0293}{\index{C\-Constant\-C\-R\-V@{C\-Constant\-C\-R\-V}!set\-Distribution@{set\-Distribution}}
+\index{set\-Distribution@{set\-Distribution}!CConstantCRV@{C\-Constant\-C\-R\-V}}
+\subsubsection[{set\-Distribution}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Constant\-C\-R\-V\-::set\-Distribution (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-xc, }
+\item[{double}]{\-\_\-dp2 = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_constant_c_r_v_ac85e4654e4760830a461b128d1af0293}
+
+
+Set distribution parameter. 
+
+\hypertarget{class_c_constant_c_r_v_a96e78eee64773501b8c44001942a3d7d}{\index{C\-Constant\-C\-R\-V@{C\-Constant\-C\-R\-V}!set\-Distribution@{set\-Distribution}}
+\index{set\-Distribution@{set\-Distribution}!CConstantCRV@{C\-Constant\-C\-R\-V}}
+\subsubsection[{set\-Distribution}]{\setlength{\rightskip}{0pt plus 5cm}virtual void C\-Constant\-C\-R\-V\-::set\-Distribution (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Continuous\-Sample} \&}]{\-\_\-a\-S}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_constant_c_r_v_a96e78eee64773501b8c44001942a3d7d}
+
+
+Set distribution parameters from sample empirical parameters. 
+
+\hypertarget{class_c_constant_c_r_v_a606fa01ade61968377b77fec8e22bb5b}{\index{C\-Constant\-C\-R\-V@{C\-Constant\-C\-R\-V}!variance@{variance}}
+\index{variance@{variance}!CConstantCRV@{C\-Constant\-C\-R\-V}}
+\subsubsection[{variance}]{\setlength{\rightskip}{0pt plus 5cm}virtual double C\-Constant\-C\-R\-V\-::variance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_constant_c_r_v_a606fa01ade61968377b77fec8e22bb5b}
+
+
+Returns variance of the random variable. 
+
+
+
+Implements \hyperlink{class_c_random_variable_a3b0b87c4aab74c0406cd8321b8b96747}{C\-Random\-Variable}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_c_constant_c_r_v_ac98d07dd8f7b70e16ccb9a01abf56b9c}{\index{C\-Constant\-C\-R\-V@{C\-Constant\-C\-R\-V}!boost\-::serialization\-::access@{boost\-::serialization\-::access}}
+\index{boost\-::serialization\-::access@{boost\-::serialization\-::access}!CConstantCRV@{C\-Constant\-C\-R\-V}}
+\subsubsection[{boost\-::serialization\-::access}]{\setlength{\rightskip}{0pt plus 5cm}friend class boost\-::serialization\-::access\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_c_constant_c_r_v_ac98d07dd8f7b70e16ccb9a01abf56b9c}
+
+
+Boost serialization. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_constant_c_r_v_a2a82360ef61c3c3ea5b4728f82f3e489}{\index{C\-Constant\-C\-R\-V@{C\-Constant\-C\-R\-V}!xc@{xc}}
+\index{xc@{xc}!CConstantCRV@{C\-Constant\-C\-R\-V}}
+\subsubsection[{xc}]{\setlength{\rightskip}{0pt plus 5cm}double C\-Constant\-C\-R\-V\-::xc\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_constant_c_r_v_a2a82360ef61c3c3ea5b4728f82f3e489}
+Distribution parameter\-: constant integer value of the random varialbe. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Development/core/\hyperlink{_random_variable_8h}{Random\-Variable.\-h}\item 
+C\-:/\-Development/core/\hyperlink{_random_variable_8cpp}{Random\-Variable.\-cpp}\end{DoxyCompactItemize}

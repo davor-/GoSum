@@ -1,0 +1,619 @@
+\hypertarget{class_go_s_u_m_1_1_c_sensitivity_analysis}{\section{Go\-S\-U\-M\-:\-:C\-Sensitivity\-Analysis Class Reference}
+\label{class_go_s_u_m_1_1_c_sensitivity_analysis}\index{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}}
+}
+
+
+Class for sensitivity analyis of the model.  
+
+
+
+
+{\ttfamily \#include $<$Sensitivity\-Analysis.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis_a4b038d1332020eabaf57306feec84568}{C\-Sensitivity\-Analysis} (\hyperlink{class_go_s_u_m_1_1_c_input_parameters}{C\-Input\-Parameters} $\ast$\-\_\-p\-I\-P, \hyperlink{class_go_s_u_m_1_1_c_output_states}{C\-Output\-States} $\ast$\-\_\-p\-O\-S, \hyperlink{class_go_s_u_m_1_1_c_analytical_model}{C\-Analytical\-Model} $\ast$\-\_\-p\-A\-M)
+\item 
+virtual \hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis_a95c029a4782c7894ea81dd87f552f486}{$\sim$\-C\-Sensitivity\-Analysis} ()
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis_a735958f5e185dcd8cb52cbc96c03a30c}{clear} ()
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis_af68023bdd1984843c5070c95a295c235}{set\-Sensitivity\-Options} (int \-\_\-\-R\-Ssize, double \-\_\-eps1, double \-\_\-eps2, double \-\_\-eps3)
+\item 
+int \hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis_a84d72c0e8db6d639f2e0742c88820f71}{resample\-Size} () const 
+\begin{DoxyCompactList}\small\item\em Returns resample size. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis_ab9cc0053b21b5fd50e1d9080fdabfe3b}{set\-Resample\-Size} (int \-\_\-\-R\-Ssize)
+\begin{DoxyCompactList}\small\item\em Sets resample size. \end{DoxyCompactList}\item 
+double \hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis_a52581eded17ee8409b5ae4d68d7ad6f3}{sensitivity\-Error} () const 
+\begin{DoxyCompactList}\small\item\em Returns sensitivity error. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis_a412a14d208245c607ef78f931805a852}{set\-Sensitivity\-Error} (double \-\_\-eps1)
+\begin{DoxyCompactList}\small\item\em Sets sensitivity error. \end{DoxyCompactList}\item 
+double \hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis_a6612e7998dd41ac3b92f7fa0748ad847}{separability\-Error} () const 
+\begin{DoxyCompactList}\small\item\em Returns separability error. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis_a2a3031fbc415dd70ec49bb63bb61fd9e}{set\-Separability\-Error} (double \-\_\-eps2)
+\begin{DoxyCompactList}\small\item\em Sets separability error. \end{DoxyCompactList}\item 
+double \hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis_a66238241f0fcb39a773e75ca6715bbfd}{coupling\-Error} () const 
+\begin{DoxyCompactList}\small\item\em Returns coupling error. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis_a3122336f35b0863f8268fe3206652e67}{set\-Coupling\-Error} (double \-\_\-eps3)
+\begin{DoxyCompactList}\small\item\em Sets coupling error. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis_a0549bb9d579b671d48b7fb6488b6fe95}{prepare} ()
+\begin{DoxyCompactList}\small\item\em Prepares sensitivity analysis computation. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis_ae0e6ea7068b1e7e327193384260c9803}{compute\-Derivative\-Sensitivities} ()
+\begin{DoxyCompactList}\small\item\em Computes derivative sensitivities. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis_a058e59084f2ad2c5647318b2a62c5b40}{compute\-Variance\-Sensitivities} ()
+\begin{DoxyCompactList}\small\item\em Computes variance sensitivities. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis_a71c28b1b594d0774bb44eb37e3e437c9}{compute\-Variance\-Sensitivities1} ()
+\begin{DoxyCompactList}\small\item\em Computes variance sensitivities (Homma \& Saltelli approach). \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis_a9b5c69ba4203f5c22434fc5890a34b5e}{compute\-Sensitivities} ()
+\begin{DoxyCompactList}\small\item\em Computes sensitivities. \end{DoxyCompactList}\item 
+const Array\-X\-Xd \& \hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis_aea2a3a12727bd5cd26157abd69088212}{derivative\-Sensitivity} ()
+\begin{DoxyCompactList}\small\item\em Returns derivative sensitivity (L2) for all output states (rows) over all input parameters (columns). \end{DoxyCompactList}\item 
+const Array\-X\-Xd \& \hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis_a945a3687a4b65ba63d27cae6a32c9c2a}{average\-Derivative} ()
+\begin{DoxyCompactList}\small\item\em Returns average derivative for all output states (rows) over all input parameters (columns). \end{DoxyCompactList}\item 
+const Array\-X\-Xd \& \hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis_a825fec4a36a7f107fc310a9a333b8fe8}{absolute\-Average\-Derivative} ()
+\begin{DoxyCompactList}\small\item\em Returns absolute average derivative (L1) for all output states (rows) over all input parameters (columns). \end{DoxyCompactList}\item 
+const Array\-X\-Xd \& \hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis_ab20cbf6e7fda3616769df651b2d79a7c}{variance\-Sensitivity} ()
+\begin{DoxyCompactList}\small\item\em Returns variance sensitivity (L2) for all output states (rows) over all input parameters (columns). \end{DoxyCompactList}\item 
+const Array\-X\-Xd \& \hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis_a0ade75386c12f8a84a17b95643dc193b}{first\-Order\-A\-N\-O\-V\-A} ()
+\begin{DoxyCompactList}\small\item\em Returns first order A\-N\-O\-V\-A for all output states (rows) over all input parameters (columns). \end{DoxyCompactList}\item 
+std\-::vector$<$ std\-::pair$<$ int, \\*
+int $>$ $>$ \hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis_ace8481cee588242e1a8db95f0c12a41f}{second\-Order\-A\-N\-O\-V\-A\-Pairs} ()
+\begin{DoxyCompactList}\small\item\em Returns second order A\-N\-O\-V\-A pairs. \end{DoxyCompactList}\item 
+Array\-X\-Xd \hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis_a8a22c4f7e4087ef427d546827a2601f4}{second\-Order\-A\-N\-O\-V\-A} (const std\-::vector$<$ std\-::pair$<$ int, int $>$ $>$ \&a2\-L)
+\item 
+bool \hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis_a8e7f2dc84832eeb676c3e3e59ef77a24}{empty\-Derivative\-Sensitivity} () const 
+\begin{DoxyCompactList}\small\item\em Returns second order A\-N\-O\-V\-A indices for given pairs. \end{DoxyCompactList}\item 
+bool \hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis_a4d8bf59473240b15c70af2c121645aea}{empty\-Average\-Derivative\-Sensitivity} () const 
+\begin{DoxyCompactList}\small\item\em Returns true if average derivative is empty, false otherwise. \end{DoxyCompactList}\item 
+bool \hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis_ae285a5614a6d3159458e35c50fea758f}{empty\-Absolute\-Average\-Derivative\-Sensitivity} () const 
+\begin{DoxyCompactList}\small\item\em Returns true if absolute average derivative (L1) is empty, false otherwise. \end{DoxyCompactList}\item 
+bool \hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis_af0b3073046472c00caaddd94f044e03f}{empty\-Variance\-Sensitivity} () const 
+\begin{DoxyCompactList}\small\item\em Returns true if variance sensitivity (L2) is empty, false otherwise. \end{DoxyCompactList}\item 
+bool \hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis_a8c1533d57beb4f671bff7725c85a1e3a}{empty\-First\-Order\-A\-N\-O\-V\-A} () const 
+\begin{DoxyCompactList}\small\item\em Returns true if 1st order A\-N\-O\-V\-A is empty, false otherwise. \end{DoxyCompactList}\item 
+bool \hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis_a5900537612a1fbff3bfb9d3052681195}{empty} () const 
+\begin{DoxyCompactList}\small\item\em Returns true if all sentitivity indices are empty, false otherwise. \end{DoxyCompactList}\item 
+int \hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis_a2c854cf2bb8c5a6bb610fa50957b0a0e}{progress\-Steps\-Size} () const 
+\begin{DoxyCompactList}\small\item\em Returns progress steps size. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boost\-::signal$<$ void()$>$ \hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis_a27d7ec32318e94f97569c7f8bc1080f8}{computing\-Progressed}
+\begin{DoxyCompactList}\small\item\em Signal for computing progress, emitted on each sensitivity index computed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis_a22f847db8628ebc695b14b6bc4068e0a}{serialize} (Archive \&ar, const unsigned int version)
+\item 
+\hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis_aed43f527d22035d9cf363138d2e93539}{C\-Sensitivity\-Analysis} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_go_s_u_m_1_1_c_input_parameters}{C\-Input\-Parameters} $\ast$ \hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis_acd625d19c687c2fc95ec3c086bd55d40}{p\-I\-P}
+\begin{DoxyCompactList}\small\item\em Points to input parameters. \end{DoxyCompactList}\item 
+\hyperlink{class_go_s_u_m_1_1_c_output_states}{C\-Output\-States} $\ast$ \hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis_ad8bdf2806f9226a5fcadc18b02345c11}{p\-O\-S}
+\begin{DoxyCompactList}\small\item\em Points to output states. \end{DoxyCompactList}\item 
+\hyperlink{class_go_s_u_m_1_1_c_analytical_model}{C\-Analytical\-Model} $\ast$ \hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis_a5830e671d4f07bf47cf6f5093226589f}{p\-A\-M}
+\begin{DoxyCompactList}\small\item\em Points to the analytical model. \end{DoxyCompactList}\item 
+int \hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis_ae6a6354b8d61c87328715d89bd2e34eb}{R\-Ssize}
+\begin{DoxyCompactList}\small\item\em Resized sample size. \end{DoxyCompactList}\item 
+double \hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis_a4d493ceaedd73ca46b740a3f64b39a41}{eps1}
+\begin{DoxyCompactList}\small\item\em Sensitivity error. \end{DoxyCompactList}\item 
+double \hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis_ac007c702d7002b57e42cdca9bb40c66c}{eps2}
+\begin{DoxyCompactList}\small\item\em Separability error. \end{DoxyCompactList}\item 
+double \hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis_a22561f312eacc952b940c5a551bd9fe1}{eps3}
+\begin{DoxyCompactList}\small\item\em Coupling error. \end{DoxyCompactList}\item 
+std\-::vector$<$ Array\-Xd $>$ \hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis_a4d7c3c0c2f9ff497a3572e3076eab4cd}{sample1}
+\item 
+std\-::vector$<$ Array\-Xd $>$ \hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis_a83eb17d32027d8784cbb15016a0959ea}{sample2}
+\item 
+Array\-X\-Xd \hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis_a171637b92e5aea9ed4ef91b6d9a071fc}{y}
+\item 
+Array\-Xd \hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis_a6312834689d3d295a7819352140dcc72}{yvar}
+\item 
+Array\-Xd \hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis_a51c232e563e72f692ca0888aa70a1b16}{ymu}
+\item 
+Array\-X\-Xd \hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis_a6f187832e5572a283ab5cf99000f55e3}{si1der}
+\begin{DoxyCompactList}\small\item\em Holds derivative sensitivity (L2) for all output states (rows) over all input parameters (columns). \end{DoxyCompactList}\item 
+Array\-X\-Xd \hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis_a242251c1a3100d2f27901211c5ed4383}{ader}
+\begin{DoxyCompactList}\small\item\em Holds average derivative for all output states (rows) over all input parameters (columns). \end{DoxyCompactList}\item 
+Array\-X\-Xd \hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis_af54ec9ad8cf33e25585bc6cc0df05e4a}{aader}
+\begin{DoxyCompactList}\small\item\em Holds absolute average derivative (L1) for all output states (rows) over all input parameters (columns). \end{DoxyCompactList}\item 
+Array\-X\-Xd \hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis_ab1c5393c009a6a16101da4062e8c9467}{si\-T}
+\begin{DoxyCompactList}\small\item\em Holds variance sensitivity (L2) for all output states (rows) over all input parameters (columns). \end{DoxyCompactList}\item 
+Array\-X\-Xd \hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis_afa914a5ec4a2686c2a3eed9076c7afe4}{si1}
+\begin{DoxyCompactList}\small\item\em Holds first order A\-N\-O\-V\-A sensitivity for all output states (rows) over all input parameters (columns). \end{DoxyCompactList}\item 
+std\-::vector$<$ std\-::vector\\*
+$<$ std\-::pair$<$ std\-::pair$<$ int, \\*
+int $>$, double $>$ $>$ $>$ \hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis_aabc866244d32b74e89158997ea102f32}{si2}
+\begin{DoxyCompactList}\small\item\em Holds second order A\-N\-O\-V\-A sensitivity for all output states over all input parameter pairs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis_ac98d07dd8f7b70e16ccb9a01abf56b9c}{boost\-::serialization\-::access}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for sensitivity analyis of the model. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_sensitivity_analysis_aed43f527d22035d9cf363138d2e93539}{\index{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}!C\-Sensitivity\-Analysis@{C\-Sensitivity\-Analysis}}
+\index{C\-Sensitivity\-Analysis@{C\-Sensitivity\-Analysis}!GoSUM::CSensitivityAnalysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}}
+\subsubsection[{C\-Sensitivity\-Analysis}]{\setlength{\rightskip}{0pt plus 5cm}Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis\-::\-C\-Sensitivity\-Analysis (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_sensitivity_analysis_aed43f527d22035d9cf363138d2e93539}
+\hypertarget{class_go_s_u_m_1_1_c_sensitivity_analysis_a4b038d1332020eabaf57306feec84568}{\index{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}!C\-Sensitivity\-Analysis@{C\-Sensitivity\-Analysis}}
+\index{C\-Sensitivity\-Analysis@{C\-Sensitivity\-Analysis}!GoSUM::CSensitivityAnalysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}}
+\subsubsection[{C\-Sensitivity\-Analysis}]{\setlength{\rightskip}{0pt plus 5cm}Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis\-::\-C\-Sensitivity\-Analysis (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Input\-Parameters} $\ast$}]{\-\_\-p\-I\-P, }
+\item[{{\bf C\-Output\-States} $\ast$}]{\-\_\-p\-O\-S, }
+\item[{{\bf C\-Analytical\-Model} $\ast$}]{\-\_\-p\-A\-M}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_sensitivity_analysis_a4b038d1332020eabaf57306feec84568}
+\hypertarget{class_go_s_u_m_1_1_c_sensitivity_analysis_a95c029a4782c7894ea81dd87f552f486}{\index{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}!$\sim$\-C\-Sensitivity\-Analysis@{$\sim$\-C\-Sensitivity\-Analysis}}
+\index{$\sim$\-C\-Sensitivity\-Analysis@{$\sim$\-C\-Sensitivity\-Analysis}!GoSUM::CSensitivityAnalysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}}
+\subsubsection[{$\sim$\-C\-Sensitivity\-Analysis}]{\setlength{\rightskip}{0pt plus 5cm}virtual Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis\-::$\sim$\-C\-Sensitivity\-Analysis (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_sensitivity_analysis_a95c029a4782c7894ea81dd87f552f486}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_sensitivity_analysis_a825fec4a36a7f107fc310a9a333b8fe8}{\index{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}!absolute\-Average\-Derivative@{absolute\-Average\-Derivative}}
+\index{absolute\-Average\-Derivative@{absolute\-Average\-Derivative}!GoSUM::CSensitivityAnalysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}}
+\subsubsection[{absolute\-Average\-Derivative}]{\setlength{\rightskip}{0pt plus 5cm}const Array\-X\-Xd\& Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis\-::absolute\-Average\-Derivative (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_sensitivity_analysis_a825fec4a36a7f107fc310a9a333b8fe8}
+
+
+Returns absolute average derivative (L1) for all output states (rows) over all input parameters (columns). 
+
+\hypertarget{class_go_s_u_m_1_1_c_sensitivity_analysis_a945a3687a4b65ba63d27cae6a32c9c2a}{\index{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}!average\-Derivative@{average\-Derivative}}
+\index{average\-Derivative@{average\-Derivative}!GoSUM::CSensitivityAnalysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}}
+\subsubsection[{average\-Derivative}]{\setlength{\rightskip}{0pt plus 5cm}const Array\-X\-Xd\& Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis\-::average\-Derivative (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_sensitivity_analysis_a945a3687a4b65ba63d27cae6a32c9c2a}
+
+
+Returns average derivative for all output states (rows) over all input parameters (columns). 
+
+\hypertarget{class_go_s_u_m_1_1_c_sensitivity_analysis_a735958f5e185dcd8cb52cbc96c03a30c}{\index{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}!clear@{clear}}
+\index{clear@{clear}!GoSUM::CSensitivityAnalysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis\-::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_sensitivity_analysis_a735958f5e185dcd8cb52cbc96c03a30c}
+\hypertarget{class_go_s_u_m_1_1_c_sensitivity_analysis_ae0e6ea7068b1e7e327193384260c9803}{\index{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}!compute\-Derivative\-Sensitivities@{compute\-Derivative\-Sensitivities}}
+\index{compute\-Derivative\-Sensitivities@{compute\-Derivative\-Sensitivities}!GoSUM::CSensitivityAnalysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}}
+\subsubsection[{compute\-Derivative\-Sensitivities}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis\-::compute\-Derivative\-Sensitivities (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_sensitivity_analysis_ae0e6ea7068b1e7e327193384260c9803}
+
+
+Computes derivative sensitivities. 
+
+\hypertarget{class_go_s_u_m_1_1_c_sensitivity_analysis_a9b5c69ba4203f5c22434fc5890a34b5e}{\index{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}!compute\-Sensitivities@{compute\-Sensitivities}}
+\index{compute\-Sensitivities@{compute\-Sensitivities}!GoSUM::CSensitivityAnalysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}}
+\subsubsection[{compute\-Sensitivities}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis\-::compute\-Sensitivities (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_sensitivity_analysis_a9b5c69ba4203f5c22434fc5890a34b5e}
+
+
+Computes sensitivities. 
+
+\hypertarget{class_go_s_u_m_1_1_c_sensitivity_analysis_a058e59084f2ad2c5647318b2a62c5b40}{\index{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}!compute\-Variance\-Sensitivities@{compute\-Variance\-Sensitivities}}
+\index{compute\-Variance\-Sensitivities@{compute\-Variance\-Sensitivities}!GoSUM::CSensitivityAnalysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}}
+\subsubsection[{compute\-Variance\-Sensitivities}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis\-::compute\-Variance\-Sensitivities (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_sensitivity_analysis_a058e59084f2ad2c5647318b2a62c5b40}
+
+
+Computes variance sensitivities. 
+
+\hypertarget{class_go_s_u_m_1_1_c_sensitivity_analysis_a71c28b1b594d0774bb44eb37e3e437c9}{\index{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}!compute\-Variance\-Sensitivities1@{compute\-Variance\-Sensitivities1}}
+\index{compute\-Variance\-Sensitivities1@{compute\-Variance\-Sensitivities1}!GoSUM::CSensitivityAnalysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}}
+\subsubsection[{compute\-Variance\-Sensitivities1}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis\-::compute\-Variance\-Sensitivities1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_sensitivity_analysis_a71c28b1b594d0774bb44eb37e3e437c9}
+
+
+Computes variance sensitivities (Homma \& Saltelli approach). 
+
+\hypertarget{class_go_s_u_m_1_1_c_sensitivity_analysis_a66238241f0fcb39a773e75ca6715bbfd}{\index{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}!coupling\-Error@{coupling\-Error}}
+\index{coupling\-Error@{coupling\-Error}!GoSUM::CSensitivityAnalysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}}
+\subsubsection[{coupling\-Error}]{\setlength{\rightskip}{0pt plus 5cm}double Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis\-::coupling\-Error (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_sensitivity_analysis_a66238241f0fcb39a773e75ca6715bbfd}
+
+
+Returns coupling error. 
+
+\hypertarget{class_go_s_u_m_1_1_c_sensitivity_analysis_aea2a3a12727bd5cd26157abd69088212}{\index{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}!derivative\-Sensitivity@{derivative\-Sensitivity}}
+\index{derivative\-Sensitivity@{derivative\-Sensitivity}!GoSUM::CSensitivityAnalysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}}
+\subsubsection[{derivative\-Sensitivity}]{\setlength{\rightskip}{0pt plus 5cm}const Array\-X\-Xd\& Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis\-::derivative\-Sensitivity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_sensitivity_analysis_aea2a3a12727bd5cd26157abd69088212}
+
+
+Returns derivative sensitivity (L2) for all output states (rows) over all input parameters (columns). 
+
+\hypertarget{class_go_s_u_m_1_1_c_sensitivity_analysis_a5900537612a1fbff3bfb9d3052681195}{\index{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}!empty@{empty}}
+\index{empty@{empty}!GoSUM::CSensitivityAnalysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}}
+\subsubsection[{empty}]{\setlength{\rightskip}{0pt plus 5cm}bool Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis\-::empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_sensitivity_analysis_a5900537612a1fbff3bfb9d3052681195}
+
+
+Returns true if all sentitivity indices are empty, false otherwise. 
+
+\hypertarget{class_go_s_u_m_1_1_c_sensitivity_analysis_ae285a5614a6d3159458e35c50fea758f}{\index{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}!empty\-Absolute\-Average\-Derivative\-Sensitivity@{empty\-Absolute\-Average\-Derivative\-Sensitivity}}
+\index{empty\-Absolute\-Average\-Derivative\-Sensitivity@{empty\-Absolute\-Average\-Derivative\-Sensitivity}!GoSUM::CSensitivityAnalysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}}
+\subsubsection[{empty\-Absolute\-Average\-Derivative\-Sensitivity}]{\setlength{\rightskip}{0pt plus 5cm}bool Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis\-::empty\-Absolute\-Average\-Derivative\-Sensitivity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_sensitivity_analysis_ae285a5614a6d3159458e35c50fea758f}
+
+
+Returns true if absolute average derivative (L1) is empty, false otherwise. 
+
+\hypertarget{class_go_s_u_m_1_1_c_sensitivity_analysis_a4d8bf59473240b15c70af2c121645aea}{\index{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}!empty\-Average\-Derivative\-Sensitivity@{empty\-Average\-Derivative\-Sensitivity}}
+\index{empty\-Average\-Derivative\-Sensitivity@{empty\-Average\-Derivative\-Sensitivity}!GoSUM::CSensitivityAnalysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}}
+\subsubsection[{empty\-Average\-Derivative\-Sensitivity}]{\setlength{\rightskip}{0pt plus 5cm}bool Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis\-::empty\-Average\-Derivative\-Sensitivity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_sensitivity_analysis_a4d8bf59473240b15c70af2c121645aea}
+
+
+Returns true if average derivative is empty, false otherwise. 
+
+\hypertarget{class_go_s_u_m_1_1_c_sensitivity_analysis_a8e7f2dc84832eeb676c3e3e59ef77a24}{\index{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}!empty\-Derivative\-Sensitivity@{empty\-Derivative\-Sensitivity}}
+\index{empty\-Derivative\-Sensitivity@{empty\-Derivative\-Sensitivity}!GoSUM::CSensitivityAnalysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}}
+\subsubsection[{empty\-Derivative\-Sensitivity}]{\setlength{\rightskip}{0pt plus 5cm}bool Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis\-::empty\-Derivative\-Sensitivity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_sensitivity_analysis_a8e7f2dc84832eeb676c3e3e59ef77a24}
+
+
+Returns second order A\-N\-O\-V\-A indices for given pairs. 
+
+Returns true if derivative sentitivity (L2) is empty, false otherwise. \hypertarget{class_go_s_u_m_1_1_c_sensitivity_analysis_a8c1533d57beb4f671bff7725c85a1e3a}{\index{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}!empty\-First\-Order\-A\-N\-O\-V\-A@{empty\-First\-Order\-A\-N\-O\-V\-A}}
+\index{empty\-First\-Order\-A\-N\-O\-V\-A@{empty\-First\-Order\-A\-N\-O\-V\-A}!GoSUM::CSensitivityAnalysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}}
+\subsubsection[{empty\-First\-Order\-A\-N\-O\-V\-A}]{\setlength{\rightskip}{0pt plus 5cm}bool Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis\-::empty\-First\-Order\-A\-N\-O\-V\-A (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_sensitivity_analysis_a8c1533d57beb4f671bff7725c85a1e3a}
+
+
+Returns true if 1st order A\-N\-O\-V\-A is empty, false otherwise. 
+
+\hypertarget{class_go_s_u_m_1_1_c_sensitivity_analysis_af0b3073046472c00caaddd94f044e03f}{\index{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}!empty\-Variance\-Sensitivity@{empty\-Variance\-Sensitivity}}
+\index{empty\-Variance\-Sensitivity@{empty\-Variance\-Sensitivity}!GoSUM::CSensitivityAnalysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}}
+\subsubsection[{empty\-Variance\-Sensitivity}]{\setlength{\rightskip}{0pt plus 5cm}bool Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis\-::empty\-Variance\-Sensitivity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_sensitivity_analysis_af0b3073046472c00caaddd94f044e03f}
+
+
+Returns true if variance sensitivity (L2) is empty, false otherwise. 
+
+\hypertarget{class_go_s_u_m_1_1_c_sensitivity_analysis_a0ade75386c12f8a84a17b95643dc193b}{\index{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}!first\-Order\-A\-N\-O\-V\-A@{first\-Order\-A\-N\-O\-V\-A}}
+\index{first\-Order\-A\-N\-O\-V\-A@{first\-Order\-A\-N\-O\-V\-A}!GoSUM::CSensitivityAnalysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}}
+\subsubsection[{first\-Order\-A\-N\-O\-V\-A}]{\setlength{\rightskip}{0pt plus 5cm}const Array\-X\-Xd\& Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis\-::first\-Order\-A\-N\-O\-V\-A (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_sensitivity_analysis_a0ade75386c12f8a84a17b95643dc193b}
+
+
+Returns first order A\-N\-O\-V\-A for all output states (rows) over all input parameters (columns). 
+
+\hypertarget{class_go_s_u_m_1_1_c_sensitivity_analysis_a0549bb9d579b671d48b7fb6488b6fe95}{\index{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}!prepare@{prepare}}
+\index{prepare@{prepare}!GoSUM::CSensitivityAnalysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}}
+\subsubsection[{prepare}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis\-::prepare (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_sensitivity_analysis_a0549bb9d579b671d48b7fb6488b6fe95}
+
+
+Prepares sensitivity analysis computation. 
+
+\hypertarget{class_go_s_u_m_1_1_c_sensitivity_analysis_a2c854cf2bb8c5a6bb610fa50957b0a0e}{\index{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}!progress\-Steps\-Size@{progress\-Steps\-Size}}
+\index{progress\-Steps\-Size@{progress\-Steps\-Size}!GoSUM::CSensitivityAnalysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}}
+\subsubsection[{progress\-Steps\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis\-::progress\-Steps\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_sensitivity_analysis_a2c854cf2bb8c5a6bb610fa50957b0a0e}
+
+
+Returns progress steps size. 
+
+\hypertarget{class_go_s_u_m_1_1_c_sensitivity_analysis_a84d72c0e8db6d639f2e0742c88820f71}{\index{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}!resample\-Size@{resample\-Size}}
+\index{resample\-Size@{resample\-Size}!GoSUM::CSensitivityAnalysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}}
+\subsubsection[{resample\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis\-::resample\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_sensitivity_analysis_a84d72c0e8db6d639f2e0742c88820f71}
+
+
+Returns resample size. 
+
+\hypertarget{class_go_s_u_m_1_1_c_sensitivity_analysis_a8a22c4f7e4087ef427d546827a2601f4}{\index{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}!second\-Order\-A\-N\-O\-V\-A@{second\-Order\-A\-N\-O\-V\-A}}
+\index{second\-Order\-A\-N\-O\-V\-A@{second\-Order\-A\-N\-O\-V\-A}!GoSUM::CSensitivityAnalysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}}
+\subsubsection[{second\-Order\-A\-N\-O\-V\-A}]{\setlength{\rightskip}{0pt plus 5cm}Array\-X\-Xd Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis\-::second\-Order\-A\-N\-O\-V\-A (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ std\-::pair$<$ int, int $>$ $>$ \&}]{a2\-L}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_sensitivity_analysis_a8a22c4f7e4087ef427d546827a2601f4}
+\hypertarget{class_go_s_u_m_1_1_c_sensitivity_analysis_ace8481cee588242e1a8db95f0c12a41f}{\index{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}!second\-Order\-A\-N\-O\-V\-A\-Pairs@{second\-Order\-A\-N\-O\-V\-A\-Pairs}}
+\index{second\-Order\-A\-N\-O\-V\-A\-Pairs@{second\-Order\-A\-N\-O\-V\-A\-Pairs}!GoSUM::CSensitivityAnalysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}}
+\subsubsection[{second\-Order\-A\-N\-O\-V\-A\-Pairs}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ std\-::pair$<$ int, int $>$ $>$ Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis\-::second\-Order\-A\-N\-O\-V\-A\-Pairs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_sensitivity_analysis_ace8481cee588242e1a8db95f0c12a41f}
+
+
+Returns second order A\-N\-O\-V\-A pairs. 
+
+\hypertarget{class_go_s_u_m_1_1_c_sensitivity_analysis_a52581eded17ee8409b5ae4d68d7ad6f3}{\index{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}!sensitivity\-Error@{sensitivity\-Error}}
+\index{sensitivity\-Error@{sensitivity\-Error}!GoSUM::CSensitivityAnalysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}}
+\subsubsection[{sensitivity\-Error}]{\setlength{\rightskip}{0pt plus 5cm}double Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis\-::sensitivity\-Error (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_sensitivity_analysis_a52581eded17ee8409b5ae4d68d7ad6f3}
+
+
+Returns sensitivity error. 
+
+\hypertarget{class_go_s_u_m_1_1_c_sensitivity_analysis_a6612e7998dd41ac3b92f7fa0748ad847}{\index{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}!separability\-Error@{separability\-Error}}
+\index{separability\-Error@{separability\-Error}!GoSUM::CSensitivityAnalysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}}
+\subsubsection[{separability\-Error}]{\setlength{\rightskip}{0pt plus 5cm}double Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis\-::separability\-Error (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_sensitivity_analysis_a6612e7998dd41ac3b92f7fa0748ad847}
+
+
+Returns separability error. 
+
+\hypertarget{class_go_s_u_m_1_1_c_sensitivity_analysis_a22f847db8628ebc695b14b6bc4068e0a}{\index{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}!serialize@{serialize}}
+\index{serialize@{serialize}!GoSUM::CSensitivityAnalysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Archive $>$ void Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis\-::serialize (
+\begin{DoxyParamCaption}
+\item[{Archive \&}]{ar, }
+\item[{const unsigned int}]{version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_sensitivity_analysis_a22f847db8628ebc695b14b6bc4068e0a}
+\hypertarget{class_go_s_u_m_1_1_c_sensitivity_analysis_a3122336f35b0863f8268fe3206652e67}{\index{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}!set\-Coupling\-Error@{set\-Coupling\-Error}}
+\index{set\-Coupling\-Error@{set\-Coupling\-Error}!GoSUM::CSensitivityAnalysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}}
+\subsubsection[{set\-Coupling\-Error}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis\-::set\-Coupling\-Error (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-eps3}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_sensitivity_analysis_a3122336f35b0863f8268fe3206652e67}
+
+
+Sets coupling error. 
+
+\hypertarget{class_go_s_u_m_1_1_c_sensitivity_analysis_ab9cc0053b21b5fd50e1d9080fdabfe3b}{\index{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}!set\-Resample\-Size@{set\-Resample\-Size}}
+\index{set\-Resample\-Size@{set\-Resample\-Size}!GoSUM::CSensitivityAnalysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}}
+\subsubsection[{set\-Resample\-Size}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis\-::set\-Resample\-Size (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-\-R\-Ssize}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_sensitivity_analysis_ab9cc0053b21b5fd50e1d9080fdabfe3b}
+
+
+Sets resample size. 
+
+\hypertarget{class_go_s_u_m_1_1_c_sensitivity_analysis_a412a14d208245c607ef78f931805a852}{\index{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}!set\-Sensitivity\-Error@{set\-Sensitivity\-Error}}
+\index{set\-Sensitivity\-Error@{set\-Sensitivity\-Error}!GoSUM::CSensitivityAnalysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}}
+\subsubsection[{set\-Sensitivity\-Error}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis\-::set\-Sensitivity\-Error (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-eps1}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_sensitivity_analysis_a412a14d208245c607ef78f931805a852}
+
+
+Sets sensitivity error. 
+
+\hypertarget{class_go_s_u_m_1_1_c_sensitivity_analysis_af68023bdd1984843c5070c95a295c235}{\index{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}!set\-Sensitivity\-Options@{set\-Sensitivity\-Options}}
+\index{set\-Sensitivity\-Options@{set\-Sensitivity\-Options}!GoSUM::CSensitivityAnalysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}}
+\subsubsection[{set\-Sensitivity\-Options}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis\-::set\-Sensitivity\-Options (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-\-R\-Ssize, }
+\item[{double}]{\-\_\-eps1, }
+\item[{double}]{\-\_\-eps2, }
+\item[{double}]{\-\_\-eps3}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_sensitivity_analysis_af68023bdd1984843c5070c95a295c235}
+
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-eps3} & Sets options for sensitivity analysis. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_go_s_u_m_1_1_c_sensitivity_analysis_a2a3031fbc415dd70ec49bb63bb61fd9e}{\index{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}!set\-Separability\-Error@{set\-Separability\-Error}}
+\index{set\-Separability\-Error@{set\-Separability\-Error}!GoSUM::CSensitivityAnalysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}}
+\subsubsection[{set\-Separability\-Error}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis\-::set\-Separability\-Error (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-eps2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_sensitivity_analysis_a2a3031fbc415dd70ec49bb63bb61fd9e}
+
+
+Sets separability error. 
+
+\hypertarget{class_go_s_u_m_1_1_c_sensitivity_analysis_ab20cbf6e7fda3616769df651b2d79a7c}{\index{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}!variance\-Sensitivity@{variance\-Sensitivity}}
+\index{variance\-Sensitivity@{variance\-Sensitivity}!GoSUM::CSensitivityAnalysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}}
+\subsubsection[{variance\-Sensitivity}]{\setlength{\rightskip}{0pt plus 5cm}const Array\-X\-Xd\& Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis\-::variance\-Sensitivity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_sensitivity_analysis_ab20cbf6e7fda3616769df651b2d79a7c}
+
+
+Returns variance sensitivity (L2) for all output states (rows) over all input parameters (columns). 
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_sensitivity_analysis_ac98d07dd8f7b70e16ccb9a01abf56b9c}{\index{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}!boost\-::serialization\-::access@{boost\-::serialization\-::access}}
+\index{boost\-::serialization\-::access@{boost\-::serialization\-::access}!GoSUM::CSensitivityAnalysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}}
+\subsubsection[{boost\-::serialization\-::access}]{\setlength{\rightskip}{0pt plus 5cm}friend class boost\-::serialization\-::access\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_go_s_u_m_1_1_c_sensitivity_analysis_ac98d07dd8f7b70e16ccb9a01abf56b9c}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_sensitivity_analysis_af54ec9ad8cf33e25585bc6cc0df05e4a}{\index{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}!aader@{aader}}
+\index{aader@{aader}!GoSUM::CSensitivityAnalysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}}
+\subsubsection[{aader}]{\setlength{\rightskip}{0pt plus 5cm}Array\-X\-Xd Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis\-::aader\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_sensitivity_analysis_af54ec9ad8cf33e25585bc6cc0df05e4a}
+
+
+Holds absolute average derivative (L1) for all output states (rows) over all input parameters (columns). 
+
+\hypertarget{class_go_s_u_m_1_1_c_sensitivity_analysis_a242251c1a3100d2f27901211c5ed4383}{\index{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}!ader@{ader}}
+\index{ader@{ader}!GoSUM::CSensitivityAnalysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}}
+\subsubsection[{ader}]{\setlength{\rightskip}{0pt plus 5cm}Array\-X\-Xd Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis\-::ader\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_sensitivity_analysis_a242251c1a3100d2f27901211c5ed4383}
+
+
+Holds average derivative for all output states (rows) over all input parameters (columns). 
+
+\hypertarget{class_go_s_u_m_1_1_c_sensitivity_analysis_a27d7ec32318e94f97569c7f8bc1080f8}{\index{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}!computing\-Progressed@{computing\-Progressed}}
+\index{computing\-Progressed@{computing\-Progressed}!GoSUM::CSensitivityAnalysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}}
+\subsubsection[{computing\-Progressed}]{\setlength{\rightskip}{0pt plus 5cm}boost\-::signal$<$void()$>$ Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis\-::computing\-Progressed}}\label{class_go_s_u_m_1_1_c_sensitivity_analysis_a27d7ec32318e94f97569c7f8bc1080f8}
+
+
+Signal for computing progress, emitted on each sensitivity index computed. 
+
+\hypertarget{class_go_s_u_m_1_1_c_sensitivity_analysis_a4d493ceaedd73ca46b740a3f64b39a41}{\index{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}!eps1@{eps1}}
+\index{eps1@{eps1}!GoSUM::CSensitivityAnalysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}}
+\subsubsection[{eps1}]{\setlength{\rightskip}{0pt plus 5cm}double Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis\-::eps1\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_sensitivity_analysis_a4d493ceaedd73ca46b740a3f64b39a41}
+
+
+Sensitivity error. 
+
+\hypertarget{class_go_s_u_m_1_1_c_sensitivity_analysis_ac007c702d7002b57e42cdca9bb40c66c}{\index{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}!eps2@{eps2}}
+\index{eps2@{eps2}!GoSUM::CSensitivityAnalysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}}
+\subsubsection[{eps2}]{\setlength{\rightskip}{0pt plus 5cm}double Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis\-::eps2\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_sensitivity_analysis_ac007c702d7002b57e42cdca9bb40c66c}
+
+
+Separability error. 
+
+\hypertarget{class_go_s_u_m_1_1_c_sensitivity_analysis_a22561f312eacc952b940c5a551bd9fe1}{\index{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}!eps3@{eps3}}
+\index{eps3@{eps3}!GoSUM::CSensitivityAnalysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}}
+\subsubsection[{eps3}]{\setlength{\rightskip}{0pt plus 5cm}double Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis\-::eps3\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_sensitivity_analysis_a22561f312eacc952b940c5a551bd9fe1}
+
+
+Coupling error. 
+
+\hypertarget{class_go_s_u_m_1_1_c_sensitivity_analysis_a5830e671d4f07bf47cf6f5093226589f}{\index{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}!p\-A\-M@{p\-A\-M}}
+\index{p\-A\-M@{p\-A\-M}!GoSUM::CSensitivityAnalysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}}
+\subsubsection[{p\-A\-M}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Analytical\-Model}$\ast$ Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis\-::p\-A\-M\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_sensitivity_analysis_a5830e671d4f07bf47cf6f5093226589f}
+
+
+Points to the analytical model. 
+
+\hypertarget{class_go_s_u_m_1_1_c_sensitivity_analysis_acd625d19c687c2fc95ec3c086bd55d40}{\index{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}!p\-I\-P@{p\-I\-P}}
+\index{p\-I\-P@{p\-I\-P}!GoSUM::CSensitivityAnalysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}}
+\subsubsection[{p\-I\-P}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Input\-Parameters}$\ast$ Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis\-::p\-I\-P\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_sensitivity_analysis_acd625d19c687c2fc95ec3c086bd55d40}
+
+
+Points to input parameters. 
+
+\hypertarget{class_go_s_u_m_1_1_c_sensitivity_analysis_ad8bdf2806f9226a5fcadc18b02345c11}{\index{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}!p\-O\-S@{p\-O\-S}}
+\index{p\-O\-S@{p\-O\-S}!GoSUM::CSensitivityAnalysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}}
+\subsubsection[{p\-O\-S}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Output\-States}$\ast$ Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis\-::p\-O\-S\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_sensitivity_analysis_ad8bdf2806f9226a5fcadc18b02345c11}
+
+
+Points to output states. 
+
+\hypertarget{class_go_s_u_m_1_1_c_sensitivity_analysis_ae6a6354b8d61c87328715d89bd2e34eb}{\index{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}!R\-Ssize@{R\-Ssize}}
+\index{R\-Ssize@{R\-Ssize}!GoSUM::CSensitivityAnalysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}}
+\subsubsection[{R\-Ssize}]{\setlength{\rightskip}{0pt plus 5cm}int Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis\-::\-R\-Ssize\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_sensitivity_analysis_ae6a6354b8d61c87328715d89bd2e34eb}
+
+
+Resized sample size. 
+
+\hypertarget{class_go_s_u_m_1_1_c_sensitivity_analysis_a4d7c3c0c2f9ff497a3572e3076eab4cd}{\index{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}!sample1@{sample1}}
+\index{sample1@{sample1}!GoSUM::CSensitivityAnalysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}}
+\subsubsection[{sample1}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$Array\-Xd$>$ Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis\-::sample1\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_sensitivity_analysis_a4d7c3c0c2f9ff497a3572e3076eab4cd}
+\hypertarget{class_go_s_u_m_1_1_c_sensitivity_analysis_a83eb17d32027d8784cbb15016a0959ea}{\index{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}!sample2@{sample2}}
+\index{sample2@{sample2}!GoSUM::CSensitivityAnalysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}}
+\subsubsection[{sample2}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$Array\-Xd$>$ Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis\-::sample2\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_sensitivity_analysis_a83eb17d32027d8784cbb15016a0959ea}
+\hypertarget{class_go_s_u_m_1_1_c_sensitivity_analysis_afa914a5ec4a2686c2a3eed9076c7afe4}{\index{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}!si1@{si1}}
+\index{si1@{si1}!GoSUM::CSensitivityAnalysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}}
+\subsubsection[{si1}]{\setlength{\rightskip}{0pt plus 5cm}Array\-X\-Xd Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis\-::si1\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_sensitivity_analysis_afa914a5ec4a2686c2a3eed9076c7afe4}
+
+
+Holds first order A\-N\-O\-V\-A sensitivity for all output states (rows) over all input parameters (columns). 
+
+\hypertarget{class_go_s_u_m_1_1_c_sensitivity_analysis_a6f187832e5572a283ab5cf99000f55e3}{\index{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}!si1der@{si1der}}
+\index{si1der@{si1der}!GoSUM::CSensitivityAnalysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}}
+\subsubsection[{si1der}]{\setlength{\rightskip}{0pt plus 5cm}Array\-X\-Xd Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis\-::si1der\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_sensitivity_analysis_a6f187832e5572a283ab5cf99000f55e3}
+
+
+Holds derivative sensitivity (L2) for all output states (rows) over all input parameters (columns). 
+
+\hypertarget{class_go_s_u_m_1_1_c_sensitivity_analysis_aabc866244d32b74e89158997ea102f32}{\index{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}!si2@{si2}}
+\index{si2@{si2}!GoSUM::CSensitivityAnalysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}}
+\subsubsection[{si2}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$std\-::vector$<$std\-::pair$<$std\-::pair$<$int,int$>$,double$>$ $>$ $>$ Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis\-::si2\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_sensitivity_analysis_aabc866244d32b74e89158997ea102f32}
+
+
+Holds second order A\-N\-O\-V\-A sensitivity for all output states over all input parameter pairs. 
+
+\hypertarget{class_go_s_u_m_1_1_c_sensitivity_analysis_ab1c5393c009a6a16101da4062e8c9467}{\index{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}!si\-T@{si\-T}}
+\index{si\-T@{si\-T}!GoSUM::CSensitivityAnalysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}}
+\subsubsection[{si\-T}]{\setlength{\rightskip}{0pt plus 5cm}Array\-X\-Xd Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis\-::si\-T\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_sensitivity_analysis_ab1c5393c009a6a16101da4062e8c9467}
+
+
+Holds variance sensitivity (L2) for all output states (rows) over all input parameters (columns). 
+
+\hypertarget{class_go_s_u_m_1_1_c_sensitivity_analysis_a171637b92e5aea9ed4ef91b6d9a071fc}{\index{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}!y@{y}}
+\index{y@{y}!GoSUM::CSensitivityAnalysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}}
+\subsubsection[{y}]{\setlength{\rightskip}{0pt plus 5cm}Array\-X\-Xd Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis\-::y\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_sensitivity_analysis_a171637b92e5aea9ed4ef91b6d9a071fc}
+\hypertarget{class_go_s_u_m_1_1_c_sensitivity_analysis_a51c232e563e72f692ca0888aa70a1b16}{\index{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}!ymu@{ymu}}
+\index{ymu@{ymu}!GoSUM::CSensitivityAnalysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}}
+\subsubsection[{ymu}]{\setlength{\rightskip}{0pt plus 5cm}Array\-Xd Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis\-::ymu\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_sensitivity_analysis_a51c232e563e72f692ca0888aa70a1b16}
+\hypertarget{class_go_s_u_m_1_1_c_sensitivity_analysis_a6312834689d3d295a7819352140dcc72}{\index{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}!yvar@{yvar}}
+\index{yvar@{yvar}!GoSUM::CSensitivityAnalysis@{Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis}}
+\subsubsection[{yvar}]{\setlength{\rightskip}{0pt plus 5cm}Array\-Xd Go\-S\-U\-M\-::\-C\-Sensitivity\-Analysis\-::yvar\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_sensitivity_analysis_a6312834689d3d295a7819352140dcc72}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Development/core/\hyperlink{_sensitivity_analysis_8h}{Sensitivity\-Analysis.\-h}\item 
+C\-:/\-Development/core/\hyperlink{_sensitivity_analysis_8cpp}{Sensitivity\-Analysis.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,142 @@
+\hypertarget{class_go_s_u_m_1_1_t_exe_evaluator}{\section{Go\-S\-U\-M\-:\-:T\-Exe\-Evaluator$<$ F $>$ Class Template Reference}
+\label{class_go_s_u_m_1_1_t_exe_evaluator}\index{Go\-S\-U\-M\-::\-T\-Exe\-Evaluator$<$ F $>$@{Go\-S\-U\-M\-::\-T\-Exe\-Evaluator$<$ F $>$}}
+}
+
+
+template for the evaluator with some file i/o and .exe derived from \hyperlink{class_go_s_u_m_1_1_c_model_evaluator}{C\-Model\-Evaluator}  
+
+
+
+
+{\ttfamily \#include $<$Original\-Model.\-h$>$}
+
+Inheritance diagram for Go\-S\-U\-M\-:\-:T\-Exe\-Evaluator$<$ F $>$\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_go_s_u_m_1_1_t_exe_evaluator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_go_s_u_m_1_1_t_exe_evaluator_a4f4da2a5218c752a28cd626fb442fb76}{T\-Exe\-Evaluator} ()
+\item 
+\hyperlink{class_go_s_u_m_1_1_t_exe_evaluator_a2785431cde7f4c24b17ae61c8df0be8a}{T\-Exe\-Evaluator} (const \hyperlink{class_go_s_u_m_1_1_c_input_parameters}{C\-Input\-Parameters} $\ast$\-\_\-p\-I\-P, \hyperlink{class_go_s_u_m_1_1_c_output_states}{C\-Output\-States} $\ast$\-\_\-p\-O\-S, int \-\_\-trd\-I)
+\item 
+virtual \hyperlink{class_go_s_u_m_1_1_t_exe_evaluator_a337a006e72c79c487dfedf233f116626}{$\sim$\-T\-Exe\-Evaluator} ()
+\item 
+virtual Array\-Xd \hyperlink{class_go_s_u_m_1_1_t_exe_evaluator_ac70575204e298f146646c923b31c2edd}{operator()} (const Array\-Xd \&X)
+\begin{DoxyCompactList}\small\item\em returns output state evaluated on a single input parameter n-\/tuple \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \hyperlink{class_go_s_u_m_1_1_t_exe_evaluator_a176872b0078963c5a2514a93c425f72a}{serialize} (Archive \&ar, const unsigned int version)
+\item 
+virtual void \hyperlink{class_go_s_u_m_1_1_t_exe_evaluator_add51ecf6232d4cb0a8dd33a05472976b}{system\-Command} (std\-::ostringstream \&cmd)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+F \hyperlink{class_go_s_u_m_1_1_t_exe_evaluator_a64bc943e457b942367662298bca60211}{ei}
+\item 
+Q\-Process $\ast$ \hyperlink{class_go_s_u_m_1_1_t_exe_evaluator_a660bd62e713f8cdaf329e4dafad6b740}{p\-P}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_go_s_u_m_1_1_t_exe_evaluator_ac98d07dd8f7b70e16ccb9a01abf56b9c}{boost\-::serialization\-::access}
+\begin{DoxyCompactList}\small\item\em boost serialization \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class F$>$class Go\-S\-U\-M\-::\-T\-Exe\-Evaluator$<$ F $>$}
+
+template for the evaluator with some file i/o and .exe derived from \hyperlink{class_go_s_u_m_1_1_c_model_evaluator}{C\-Model\-Evaluator} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_go_s_u_m_1_1_t_exe_evaluator_a4f4da2a5218c752a28cd626fb442fb76}{\index{Go\-S\-U\-M\-::\-T\-Exe\-Evaluator@{Go\-S\-U\-M\-::\-T\-Exe\-Evaluator}!T\-Exe\-Evaluator@{T\-Exe\-Evaluator}}
+\index{T\-Exe\-Evaluator@{T\-Exe\-Evaluator}!GoSUM::TExeEvaluator@{Go\-S\-U\-M\-::\-T\-Exe\-Evaluator}}
+\subsubsection[{T\-Exe\-Evaluator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class F $>$ {\bf Go\-S\-U\-M\-::\-T\-Exe\-Evaluator}$<$ F $>$\-::{\bf T\-Exe\-Evaluator} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_t_exe_evaluator_a4f4da2a5218c752a28cd626fb442fb76}
+\hypertarget{class_go_s_u_m_1_1_t_exe_evaluator_a2785431cde7f4c24b17ae61c8df0be8a}{\index{Go\-S\-U\-M\-::\-T\-Exe\-Evaluator@{Go\-S\-U\-M\-::\-T\-Exe\-Evaluator}!T\-Exe\-Evaluator@{T\-Exe\-Evaluator}}
+\index{T\-Exe\-Evaluator@{T\-Exe\-Evaluator}!GoSUM::TExeEvaluator@{Go\-S\-U\-M\-::\-T\-Exe\-Evaluator}}
+\subsubsection[{T\-Exe\-Evaluator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class F $>$ {\bf Go\-S\-U\-M\-::\-T\-Exe\-Evaluator}$<$ F $>$\-::{\bf T\-Exe\-Evaluator} (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Input\-Parameters} $\ast$}]{\-\_\-p\-I\-P, }
+\item[{{\bf C\-Output\-States} $\ast$}]{\-\_\-p\-O\-S, }
+\item[{int}]{\-\_\-trd\-I}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_t_exe_evaluator_a2785431cde7f4c24b17ae61c8df0be8a}
+\hypertarget{class_go_s_u_m_1_1_t_exe_evaluator_a337a006e72c79c487dfedf233f116626}{\index{Go\-S\-U\-M\-::\-T\-Exe\-Evaluator@{Go\-S\-U\-M\-::\-T\-Exe\-Evaluator}!$\sim$\-T\-Exe\-Evaluator@{$\sim$\-T\-Exe\-Evaluator}}
+\index{$\sim$\-T\-Exe\-Evaluator@{$\sim$\-T\-Exe\-Evaluator}!GoSUM::TExeEvaluator@{Go\-S\-U\-M\-::\-T\-Exe\-Evaluator}}
+\subsubsection[{$\sim$\-T\-Exe\-Evaluator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class F $>$ virtual {\bf Go\-S\-U\-M\-::\-T\-Exe\-Evaluator}$<$ F $>$\-::$\sim${\bf T\-Exe\-Evaluator} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_t_exe_evaluator_a337a006e72c79c487dfedf233f116626}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_go_s_u_m_1_1_t_exe_evaluator_ac70575204e298f146646c923b31c2edd}{\index{Go\-S\-U\-M\-::\-T\-Exe\-Evaluator@{Go\-S\-U\-M\-::\-T\-Exe\-Evaluator}!operator()@{operator()}}
+\index{operator()@{operator()}!GoSUM::TExeEvaluator@{Go\-S\-U\-M\-::\-T\-Exe\-Evaluator}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class F $>$ virtual Array\-Xd {\bf Go\-S\-U\-M\-::\-T\-Exe\-Evaluator}$<$ F $>$\-::operator() (
+\begin{DoxyParamCaption}
+\item[{const Array\-Xd \&}]{X}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_t_exe_evaluator_ac70575204e298f146646c923b31c2edd}
+
+
+returns output state evaluated on a single input parameter n-\/tuple 
+
+
+\begin{DoxyParams}{Parameters}
+{\em X} & returns output state evaluated on for a single input parameter n-\/tuple \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_go_s_u_m_1_1_c_model_evaluator_a17541eada67797802edcae14533361ad}{Go\-S\-U\-M\-::\-C\-Model\-Evaluator}.
+
+\hypertarget{class_go_s_u_m_1_1_t_exe_evaluator_a176872b0078963c5a2514a93c425f72a}{\index{Go\-S\-U\-M\-::\-T\-Exe\-Evaluator@{Go\-S\-U\-M\-::\-T\-Exe\-Evaluator}!serialize@{serialize}}
+\index{serialize@{serialize}!GoSUM::TExeEvaluator@{Go\-S\-U\-M\-::\-T\-Exe\-Evaluator}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class F $>$ template$<$class Archive $>$ void {\bf Go\-S\-U\-M\-::\-T\-Exe\-Evaluator}$<$ F $>$\-::serialize (
+\begin{DoxyParamCaption}
+\item[{Archive \&}]{ar, }
+\item[{const unsigned int}]{version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{class_go_s_u_m_1_1_t_exe_evaluator_a176872b0078963c5a2514a93c425f72a}
+\hypertarget{class_go_s_u_m_1_1_t_exe_evaluator_add51ecf6232d4cb0a8dd33a05472976b}{\index{Go\-S\-U\-M\-::\-T\-Exe\-Evaluator@{Go\-S\-U\-M\-::\-T\-Exe\-Evaluator}!system\-Command@{system\-Command}}
+\index{system\-Command@{system\-Command}!GoSUM::TExeEvaluator@{Go\-S\-U\-M\-::\-T\-Exe\-Evaluator}}
+\subsubsection[{system\-Command}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class F $>$ virtual void {\bf Go\-S\-U\-M\-::\-T\-Exe\-Evaluator}$<$ F $>$\-::system\-Command (
+\begin{DoxyParamCaption}
+\item[{std\-::ostringstream \&}]{cmd}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_t_exe_evaluator_add51ecf6232d4cb0a8dd33a05472976b}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_go_s_u_m_1_1_t_exe_evaluator_ac98d07dd8f7b70e16ccb9a01abf56b9c}{\index{Go\-S\-U\-M\-::\-T\-Exe\-Evaluator@{Go\-S\-U\-M\-::\-T\-Exe\-Evaluator}!boost\-::serialization\-::access@{boost\-::serialization\-::access}}
+\index{boost\-::serialization\-::access@{boost\-::serialization\-::access}!GoSUM::TExeEvaluator@{Go\-S\-U\-M\-::\-T\-Exe\-Evaluator}}
+\subsubsection[{boost\-::serialization\-::access}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class F $>$ friend class boost\-::serialization\-::access\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_go_s_u_m_1_1_t_exe_evaluator_ac98d07dd8f7b70e16ccb9a01abf56b9c}
+
+
+boost serialization 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_go_s_u_m_1_1_t_exe_evaluator_a64bc943e457b942367662298bca60211}{\index{Go\-S\-U\-M\-::\-T\-Exe\-Evaluator@{Go\-S\-U\-M\-::\-T\-Exe\-Evaluator}!ei@{ei}}
+\index{ei@{ei}!GoSUM::TExeEvaluator@{Go\-S\-U\-M\-::\-T\-Exe\-Evaluator}}
+\subsubsection[{ei}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class F $>$ F {\bf Go\-S\-U\-M\-::\-T\-Exe\-Evaluator}$<$ F $>$\-::ei\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_t_exe_evaluator_a64bc943e457b942367662298bca60211}
+\hypertarget{class_go_s_u_m_1_1_t_exe_evaluator_a660bd62e713f8cdaf329e4dafad6b740}{\index{Go\-S\-U\-M\-::\-T\-Exe\-Evaluator@{Go\-S\-U\-M\-::\-T\-Exe\-Evaluator}!p\-P@{p\-P}}
+\index{p\-P@{p\-P}!GoSUM::TExeEvaluator@{Go\-S\-U\-M\-::\-T\-Exe\-Evaluator}}
+\subsubsection[{p\-P}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class F $>$ Q\-Process$\ast$ {\bf Go\-S\-U\-M\-::\-T\-Exe\-Evaluator}$<$ F $>$\-::p\-P\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_t_exe_evaluator_a660bd62e713f8cdaf329e4dafad6b740}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Development/core/\hyperlink{_original_model_8h}{Original\-Model.\-h}\end{DoxyCompactItemize}

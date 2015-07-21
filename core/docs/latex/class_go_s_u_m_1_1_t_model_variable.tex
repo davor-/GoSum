@@ -1,0 +1,584 @@
+\hypertarget{class_go_s_u_m_1_1_t_model_variable}{\section{Go\-S\-U\-M\-:\-:T\-Model\-Variable$<$ R, S, t $>$ Class Template Reference}
+\label{class_go_s_u_m_1_1_t_model_variable}\index{Go\-S\-U\-M\-::\-T\-Model\-Variable$<$ R, S, t $>$@{Go\-S\-U\-M\-::\-T\-Model\-Variable$<$ R, S, t $>$}}
+}
+
+
+{\ttfamily \#include $<$Model\-Variable.\-h$>$}
+
+Inheritance diagram for Go\-S\-U\-M\-:\-:T\-Model\-Variable$<$ R, S, t $>$\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_go_s_u_m_1_1_t_model_variable}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_go_s_u_m_1_1_t_model_variable_af0df5acf6df0b5a277529ec8f6e080d7}{T\-Model\-Variable} ()
+\item 
+virtual \hyperlink{class_go_s_u_m_1_1_t_model_variable_afd83a567b87fa34ca212ec216ee7b5cd}{$\sim$\-T\-Model\-Variable} ()
+\item 
+virtual void \hyperlink{class_go_s_u_m_1_1_t_model_variable_a92694058f7f782f6e7302f1130f1f174}{clear\-Sample} ()
+\begin{DoxyCompactList}\small\item\em Clears variable's sample. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_go_s_u_m_1_1_t_model_variable_ae00e5653833fcf6f8d05c24d4cff741d}{expanded\-Size} () const 
+\item 
+virtual void \hyperlink{class_go_s_u_m_1_1_t_model_variable_aa172b11eba6fd1819f10a80d95fc4877}{set\-Sample\-Size} (int \-\_\-n)
+\begin{DoxyCompactList}\small\item\em Returns number of variables after expansion for analyitical model. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_go_s_u_m_1_1_t_model_variable_a4c63e42e4ec1971dc9d5671785071426}{sample\-Size} () const 
+\begin{DoxyCompactList}\small\item\em Returns sample size. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_go_s_u_m_1_1_t_model_variable_acc9cdd0db3d7bc217ae68da7bd6de737}{set\-Sample\-Value} (double \-\_\-val, int \-\_\-at)
+\begin{DoxyCompactList}\small\item\em Sets particular sample value. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_go_s_u_m_1_1_t_model_variable_ae851745a4f6ec2f6655adcbbc83ff8c5}{sample\-Value} (int \-\_\-at) const 
+\begin{DoxyCompactList}\small\item\em Returns particular sample value. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_go_s_u_m_1_1_t_model_variable_afee2c55fb595ff40904551e4a7edf360}{read\-Sample\-Value} (std\-::ifstream \&\-\_\-ifs, int \-\_\-at)
+\begin{DoxyCompactList}\small\item\em Reads particular sample value from input file stream. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_go_s_u_m_1_1_t_model_variable_a98d527cb3d0ce4c3a96ddb4e04c0d931}{write\-Sample\-Value} (std\-::ofstream \&\-\_\-ofs, int \-\_\-at) const 
+\begin{DoxyCompactList}\small\item\em Writes particular sample value to output file stream. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_go_s_u_m_1_1_t_model_variable_a94c22ba7a540482c9f38ca5f00d9a755}{generate\-Sample\-Value} (double \-\_\-p, int \-\_\-at)
+\begin{DoxyCompactList}\small\item\em generates particular sample value using actual random variable model. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_go_s_u_m_1_1_t_model_variable_a5ebe0e2a02aa1a98fa2442865170a2f5}{generate\-Sample\-Value} (double \-\_\-p)
+\begin{DoxyCompactList}\small\item\em Generates sample value using actual random variable model. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_go_s_u_m_1_1_t_model_variable_ad1995ed1abea87ed8678f65659cf7a64}{compute\-Statistics} (int \-\_\-n)
+\begin{DoxyCompactList}\small\item\em Computes histogram and statistical indicators. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_go_s_u_m_1_1_t_model_variable_a0395e6699e577b7ccb77e19787adc169}{min\-Value} () const 
+\begin{DoxyCompactList}\small\item\em Returns minimal variable value. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_go_s_u_m_1_1_t_model_variable_a0d9ad1fc30fde0f3dd7ba204f1b525a2}{max\-Value} () const 
+\begin{DoxyCompactList}\small\item\em Returns maximal variable value. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_go_s_u_m_1_1_t_model_variable_a6bdec5497c51d855daccf9033927b8bc}{expected\-Value} () const 
+\begin{DoxyCompactList}\small\item\em Returns expected variable value. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_c_random_variable}{C\-Random\-Variable} $\ast$ \hyperlink{class_go_s_u_m_1_1_t_model_variable_a8d74a8298078d6d99f62da8ea096e359}{random\-Variable} () const 
+\begin{DoxyCompactList}\small\item\em Returns random variable. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_c_sample}{C\-Sample} $\ast$ \hyperlink{class_go_s_u_m_1_1_t_model_variable_ad7699e50c6f2a7b67ff9e178fe1af740}{sample} () const 
+\begin{DoxyCompactList}\small\item\em Returns sample. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_t_model_variable_a22b3e3106bba45b0ef22bf7fcaedb090}{set\-Distribution\-Parameters} (t \-\_\-dp1, t \-\_\-dp2=0)
+\begin{DoxyCompactList}\small\item\em Set parameters of the theoretical distribution. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_go_s_u_m_1_1_t_model_variable_ad113f33f216796f775855dd3f8553f03}{set\-Theoretical\-Distribution} ()=0
+\begin{DoxyCompactList}\small\item\em Detects distribution and turns random variable to appropirate type. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_go_s_u_m_1_1_t_model_variable_a3128d12e3ce0757714a7596de087314e}{set\-Empirical\-Distribution} ()=0
+\begin{DoxyCompactList}\small\item\em Compute distribution of the actual random variable from empirical sample data. \end{DoxyCompactList}\item 
+Array$<$ t, Dynamic, 1 $>$ \hyperlink{class_go_s_u_m_1_1_t_model_variable_a63396005c1bbf85a9afeaacc39e5511b}{export\-Domain} () const 
+\begin{DoxyCompactList}\small\item\em Exports probability values for given \-\_\-x values. \end{DoxyCompactList}\item 
+Array\-Xd \hyperlink{class_go_s_u_m_1_1_t_model_variable_a5258b734fe5e9d101974afb4340962d0}{export\-Probability} (const Array$<$ t, Dynamic, 1 $>$ \&\-\_\-x) const 
+\begin{DoxyCompactList}\small\item\em Exports probability values for given \-\_\-x values. \end{DoxyCompactList}\item 
+Array\-Xd \hyperlink{class_go_s_u_m_1_1_t_model_variable_ae77b154e6c1dab7ab45850ae8352bdf8}{export\-Cumulative} (const Array$<$ t, Dynamic, 1 $>$ \&\-\_\-x) const 
+\begin{DoxyCompactList}\small\item\em Exports cumulative values for given \-\_\-x values. \end{DoxyCompactList}\item 
+Array\-Xd \hyperlink{class_go_s_u_m_1_1_t_model_variable_a21dca63fa52a498c7a1cf9aedc0c001f}{export\-Quantile} (const Array\-Xd \&\-\_\-p) const 
+\begin{DoxyCompactList}\small\item\em Exports quantile values for given \-\_\-x values. \end{DoxyCompactList}\item 
+Array$<$ t, Dynamic, 1 $>$ \hyperlink{class_go_s_u_m_1_1_t_model_variable_a8bbe390a7629c543412135ca40217be7}{export\-Sample} () const 
+\begin{DoxyCompactList}\small\item\em Exports sample values. \end{DoxyCompactList}\item 
+virtual \\*
+\hyperlink{class_c_random_variable_a80d2a87c43847274138b51f7d713d7f1}{C\-Random\-Variable\-::distributiontype} \hyperlink{class_go_s_u_m_1_1_t_model_variable_a8dea19600fc9455dadd31a79c539e82e}{distribution\-Type} () const 
+\begin{DoxyCompactList}\small\item\em Returns type of the random variable distribution. \end{DoxyCompactList}\item 
+virtual std\-::string \hyperlink{class_go_s_u_m_1_1_t_model_variable_aa41c0ebb9c0e5dfbb98c2ea66a77890d}{distribution\-Name} () const 
+\begin{DoxyCompactList}\small\item\em Returns name of the random variable distribution. \end{DoxyCompactList}\item 
+t \hyperlink{class_go_s_u_m_1_1_t_model_variable_a25c6c52d753c9273ee1d0a9d1b845b3d}{normalized\-Histogram} (Array$<$ t, Dynamic, 1 $>$ \&\-\_\-x, Array\-Xd \&\-\_\-\-H) const 
+\begin{DoxyCompactList}\small\item\em Returns normalized histogram (x,H). \end{DoxyCompactList}\item 
+t \hyperlink{class_go_s_u_m_1_1_t_model_variable_a9a436fbe029936882a0cbf2d6ada20ed}{export\-Histogram} (Array$<$ t, Dynamic, 1 $>$ \&\-\_\-x, Array\-Xd \&\-\_\-\-H) const 
+\begin{DoxyCompactList}\small\item\em Returns histogram (x,H). \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_t_model_variable_a05956fc110017f6a9e856901d1072a31}{export\-Sub\-Histogram} (Array\-Xd \&\-\_\-sub\-H, const std\-::vector$<$ int $>$ \&subset) const 
+\begin{DoxyCompactList}\small\item\em Returns subhistogram. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_go_s_u_m_1_1_t_model_variable_a49e8bb3711a10e298e90cb6a8d12661a}{is\-Distribution\-Defined} () const 
+\begin{DoxyCompactList}\small\item\em Returns true if distribution is defined, false otherwise. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \hyperlink{class_go_s_u_m_1_1_t_model_variable_a0a5c395a4ff28acc07f8e5670ff9d289}{serialize} (Archive \&ar, const unsigned int version)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+R $\ast$ \hyperlink{class_go_s_u_m_1_1_t_model_variable_ae48bc1204051b96adc0ecff50edea231}{p\-R\-V}
+\begin{DoxyCompactList}\small\item\em Pointer to a random variable that models behaviour of model variable. \end{DoxyCompactList}\item 
+S $\ast$ \hyperlink{class_go_s_u_m_1_1_t_model_variable_a7c0daa5e00c6ea510079dd5bf78916bc}{p\-S}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_go_s_u_m_1_1_t_model_variable_ac98d07dd8f7b70e16ccb9a01abf56b9c}{boost\-::serialization\-::access}
+\begin{DoxyCompactList}\small\item\em Boost serialization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_go_s_u_m_1_1_t_model_variable_af0df5acf6df0b5a277529ec8f6e080d7}{\index{Go\-S\-U\-M\-::\-T\-Model\-Variable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}!T\-Model\-Variable@{T\-Model\-Variable}}
+\index{T\-Model\-Variable@{T\-Model\-Variable}!GoSUM::TModelVariable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}}
+\subsubsection[{T\-Model\-Variable}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class R , class S , typename t $>$ {\bf Go\-S\-U\-M\-::\-T\-Model\-Variable}$<$ R, S, t $>$\-::{\bf T\-Model\-Variable} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_t_model_variable_af0df5acf6df0b5a277529ec8f6e080d7}
+\hypertarget{class_go_s_u_m_1_1_t_model_variable_afd83a567b87fa34ca212ec216ee7b5cd}{\index{Go\-S\-U\-M\-::\-T\-Model\-Variable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}!$\sim$\-T\-Model\-Variable@{$\sim$\-T\-Model\-Variable}}
+\index{$\sim$\-T\-Model\-Variable@{$\sim$\-T\-Model\-Variable}!GoSUM::TModelVariable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}}
+\subsubsection[{$\sim$\-T\-Model\-Variable}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class R , class S , typename t $>$ virtual {\bf Go\-S\-U\-M\-::\-T\-Model\-Variable}$<$ R, S, t $>$\-::$\sim${\bf T\-Model\-Variable} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_t_model_variable_afd83a567b87fa34ca212ec216ee7b5cd}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_go_s_u_m_1_1_t_model_variable_a92694058f7f782f6e7302f1130f1f174}{\index{Go\-S\-U\-M\-::\-T\-Model\-Variable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}!clear\-Sample@{clear\-Sample}}
+\index{clear\-Sample@{clear\-Sample}!GoSUM::TModelVariable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}}
+\subsubsection[{clear\-Sample}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class R , class S , typename t $>$ virtual void {\bf Go\-S\-U\-M\-::\-T\-Model\-Variable}$<$ R, S, t $>$\-::clear\-Sample (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_t_model_variable_a92694058f7f782f6e7302f1130f1f174}
+
+
+Clears variable's sample. 
+
+
+
+Implements \hyperlink{class_go_s_u_m_1_1_c_model_variable_af53c01e36cd1b8fdfec4e66a99776745}{Go\-S\-U\-M\-::\-C\-Model\-Variable}.
+
+\hypertarget{class_go_s_u_m_1_1_t_model_variable_ad1995ed1abea87ed8678f65659cf7a64}{\index{Go\-S\-U\-M\-::\-T\-Model\-Variable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}!compute\-Statistics@{compute\-Statistics}}
+\index{compute\-Statistics@{compute\-Statistics}!GoSUM::TModelVariable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}}
+\subsubsection[{compute\-Statistics}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class R , class S , typename t $>$ virtual void {\bf Go\-S\-U\-M\-::\-T\-Model\-Variable}$<$ R, S, t $>$\-::compute\-Statistics (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_t_model_variable_ad1995ed1abea87ed8678f65659cf7a64}
+
+
+Computes histogram and statistical indicators. 
+
+
+
+Implements \hyperlink{class_go_s_u_m_1_1_c_model_variable_afa96767d105fb9f3eb05380480b1febf}{Go\-S\-U\-M\-::\-C\-Model\-Variable}.
+
+\hypertarget{class_go_s_u_m_1_1_t_model_variable_aa41c0ebb9c0e5dfbb98c2ea66a77890d}{\index{Go\-S\-U\-M\-::\-T\-Model\-Variable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}!distribution\-Name@{distribution\-Name}}
+\index{distribution\-Name@{distribution\-Name}!GoSUM::TModelVariable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}}
+\subsubsection[{distribution\-Name}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class R , class S , typename t $>$ virtual std\-::string {\bf Go\-S\-U\-M\-::\-T\-Model\-Variable}$<$ R, S, t $>$\-::distribution\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_t_model_variable_aa41c0ebb9c0e5dfbb98c2ea66a77890d}
+
+
+Returns name of the random variable distribution. 
+
+
+
+Implements \hyperlink{class_go_s_u_m_1_1_c_model_variable_ab363a847d6c2c562e8f7ee22f0cf6f02}{Go\-S\-U\-M\-::\-C\-Model\-Variable}.
+
+\hypertarget{class_go_s_u_m_1_1_t_model_variable_a8dea19600fc9455dadd31a79c539e82e}{\index{Go\-S\-U\-M\-::\-T\-Model\-Variable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}!distribution\-Type@{distribution\-Type}}
+\index{distribution\-Type@{distribution\-Type}!GoSUM::TModelVariable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}}
+\subsubsection[{distribution\-Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class R , class S , typename t $>$ virtual {\bf C\-Random\-Variable\-::distributiontype} {\bf Go\-S\-U\-M\-::\-T\-Model\-Variable}$<$ R, S, t $>$\-::distribution\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_t_model_variable_a8dea19600fc9455dadd31a79c539e82e}
+
+
+Returns type of the random variable distribution. 
+
+
+
+Implements \hyperlink{class_go_s_u_m_1_1_c_model_variable_a7d8d75d0c4657a6b19ded363571bdec4}{Go\-S\-U\-M\-::\-C\-Model\-Variable}.
+
+\hypertarget{class_go_s_u_m_1_1_t_model_variable_ae00e5653833fcf6f8d05c24d4cff741d}{\index{Go\-S\-U\-M\-::\-T\-Model\-Variable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}!expanded\-Size@{expanded\-Size}}
+\index{expanded\-Size@{expanded\-Size}!GoSUM::TModelVariable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}}
+\subsubsection[{expanded\-Size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class R , class S , typename t $>$ virtual int {\bf Go\-S\-U\-M\-::\-T\-Model\-Variable}$<$ R, S, t $>$\-::expanded\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_t_model_variable_ae00e5653833fcf6f8d05c24d4cff741d}
+
+
+Implements \hyperlink{class_go_s_u_m_1_1_c_model_variable_ab2889a825983ec58f9661a1e162904f3}{Go\-S\-U\-M\-::\-C\-Model\-Variable}.
+
+\hypertarget{class_go_s_u_m_1_1_t_model_variable_a6bdec5497c51d855daccf9033927b8bc}{\index{Go\-S\-U\-M\-::\-T\-Model\-Variable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}!expected\-Value@{expected\-Value}}
+\index{expected\-Value@{expected\-Value}!GoSUM::TModelVariable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}}
+\subsubsection[{expected\-Value}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class R , class S , typename t $>$ virtual double {\bf Go\-S\-U\-M\-::\-T\-Model\-Variable}$<$ R, S, t $>$\-::expected\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_t_model_variable_a6bdec5497c51d855daccf9033927b8bc}
+
+
+Returns expected variable value. 
+
+
+
+Implements \hyperlink{class_go_s_u_m_1_1_c_model_variable_a88f89892435e7e3c2fc86a6b837415bc}{Go\-S\-U\-M\-::\-C\-Model\-Variable}.
+
+\hypertarget{class_go_s_u_m_1_1_t_model_variable_ae77b154e6c1dab7ab45850ae8352bdf8}{\index{Go\-S\-U\-M\-::\-T\-Model\-Variable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}!export\-Cumulative@{export\-Cumulative}}
+\index{export\-Cumulative@{export\-Cumulative}!GoSUM::TModelVariable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}}
+\subsubsection[{export\-Cumulative}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class R , class S , typename t $>$ Array\-Xd {\bf Go\-S\-U\-M\-::\-T\-Model\-Variable}$<$ R, S, t $>$\-::export\-Cumulative (
+\begin{DoxyParamCaption}
+\item[{const Array$<$ t, Dynamic, 1 $>$ \&}]{\-\_\-x}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_t_model_variable_ae77b154e6c1dab7ab45850ae8352bdf8}
+
+
+Exports cumulative values for given \-\_\-x values. 
+
+\hypertarget{class_go_s_u_m_1_1_t_model_variable_a63396005c1bbf85a9afeaacc39e5511b}{\index{Go\-S\-U\-M\-::\-T\-Model\-Variable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}!export\-Domain@{export\-Domain}}
+\index{export\-Domain@{export\-Domain}!GoSUM::TModelVariable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}}
+\subsubsection[{export\-Domain}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class R , class S , typename t $>$ Array$<$t,Dynamic,1$>$ {\bf Go\-S\-U\-M\-::\-T\-Model\-Variable}$<$ R, S, t $>$\-::export\-Domain (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_t_model_variable_a63396005c1bbf85a9afeaacc39e5511b}
+
+
+Exports probability values for given \-\_\-x values. 
+
+\hypertarget{class_go_s_u_m_1_1_t_model_variable_a9a436fbe029936882a0cbf2d6ada20ed}{\index{Go\-S\-U\-M\-::\-T\-Model\-Variable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}!export\-Histogram@{export\-Histogram}}
+\index{export\-Histogram@{export\-Histogram}!GoSUM::TModelVariable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}}
+\subsubsection[{export\-Histogram}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class R , class S , typename t $>$ t {\bf Go\-S\-U\-M\-::\-T\-Model\-Variable}$<$ R, S, t $>$\-::export\-Histogram (
+\begin{DoxyParamCaption}
+\item[{Array$<$ t, Dynamic, 1 $>$ \&}]{\-\_\-x, }
+\item[{Array\-Xd \&}]{\-\_\-\-H}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_t_model_variable_a9a436fbe029936882a0cbf2d6ada20ed}
+
+
+Returns histogram (x,H). 
+
+\hypertarget{class_go_s_u_m_1_1_t_model_variable_a5258b734fe5e9d101974afb4340962d0}{\index{Go\-S\-U\-M\-::\-T\-Model\-Variable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}!export\-Probability@{export\-Probability}}
+\index{export\-Probability@{export\-Probability}!GoSUM::TModelVariable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}}
+\subsubsection[{export\-Probability}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class R , class S , typename t $>$ Array\-Xd {\bf Go\-S\-U\-M\-::\-T\-Model\-Variable}$<$ R, S, t $>$\-::export\-Probability (
+\begin{DoxyParamCaption}
+\item[{const Array$<$ t, Dynamic, 1 $>$ \&}]{\-\_\-x}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_t_model_variable_a5258b734fe5e9d101974afb4340962d0}
+
+
+Exports probability values for given \-\_\-x values. 
+
+\hypertarget{class_go_s_u_m_1_1_t_model_variable_a21dca63fa52a498c7a1cf9aedc0c001f}{\index{Go\-S\-U\-M\-::\-T\-Model\-Variable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}!export\-Quantile@{export\-Quantile}}
+\index{export\-Quantile@{export\-Quantile}!GoSUM::TModelVariable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}}
+\subsubsection[{export\-Quantile}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class R , class S , typename t $>$ Array\-Xd {\bf Go\-S\-U\-M\-::\-T\-Model\-Variable}$<$ R, S, t $>$\-::export\-Quantile (
+\begin{DoxyParamCaption}
+\item[{const Array\-Xd \&}]{\-\_\-p}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_t_model_variable_a21dca63fa52a498c7a1cf9aedc0c001f}
+
+
+Exports quantile values for given \-\_\-x values. 
+
+\hypertarget{class_go_s_u_m_1_1_t_model_variable_a8bbe390a7629c543412135ca40217be7}{\index{Go\-S\-U\-M\-::\-T\-Model\-Variable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}!export\-Sample@{export\-Sample}}
+\index{export\-Sample@{export\-Sample}!GoSUM::TModelVariable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}}
+\subsubsection[{export\-Sample}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class R , class S , typename t $>$ Array$<$t,Dynamic,1$>$ {\bf Go\-S\-U\-M\-::\-T\-Model\-Variable}$<$ R, S, t $>$\-::export\-Sample (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_t_model_variable_a8bbe390a7629c543412135ca40217be7}
+
+
+Exports sample values. 
+
+\hypertarget{class_go_s_u_m_1_1_t_model_variable_a05956fc110017f6a9e856901d1072a31}{\index{Go\-S\-U\-M\-::\-T\-Model\-Variable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}!export\-Sub\-Histogram@{export\-Sub\-Histogram}}
+\index{export\-Sub\-Histogram@{export\-Sub\-Histogram}!GoSUM::TModelVariable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}}
+\subsubsection[{export\-Sub\-Histogram}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class R , class S , typename t $>$ void {\bf Go\-S\-U\-M\-::\-T\-Model\-Variable}$<$ R, S, t $>$\-::export\-Sub\-Histogram (
+\begin{DoxyParamCaption}
+\item[{Array\-Xd \&}]{\-\_\-sub\-H, }
+\item[{const std\-::vector$<$ int $>$ \&}]{subset}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_t_model_variable_a05956fc110017f6a9e856901d1072a31}
+
+
+Returns subhistogram. 
+
+\hypertarget{class_go_s_u_m_1_1_t_model_variable_a94c22ba7a540482c9f38ca5f00d9a755}{\index{Go\-S\-U\-M\-::\-T\-Model\-Variable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}!generate\-Sample\-Value@{generate\-Sample\-Value}}
+\index{generate\-Sample\-Value@{generate\-Sample\-Value}!GoSUM::TModelVariable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}}
+\subsubsection[{generate\-Sample\-Value}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class R , class S , typename t $>$ virtual void {\bf Go\-S\-U\-M\-::\-T\-Model\-Variable}$<$ R, S, t $>$\-::generate\-Sample\-Value (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-p, }
+\item[{int}]{\-\_\-at}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_t_model_variable_a94c22ba7a540482c9f38ca5f00d9a755}
+
+
+generates particular sample value using actual random variable model. 
+
+
+
+Implements \hyperlink{class_go_s_u_m_1_1_c_model_variable_a9fff9e4b5f200249d1376b0890c2d132}{Go\-S\-U\-M\-::\-C\-Model\-Variable}.
+
+\hypertarget{class_go_s_u_m_1_1_t_model_variable_a5ebe0e2a02aa1a98fa2442865170a2f5}{\index{Go\-S\-U\-M\-::\-T\-Model\-Variable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}!generate\-Sample\-Value@{generate\-Sample\-Value}}
+\index{generate\-Sample\-Value@{generate\-Sample\-Value}!GoSUM::TModelVariable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}}
+\subsubsection[{generate\-Sample\-Value}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class R , class S , typename t $>$ virtual double {\bf Go\-S\-U\-M\-::\-T\-Model\-Variable}$<$ R, S, t $>$\-::generate\-Sample\-Value (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_t_model_variable_a5ebe0e2a02aa1a98fa2442865170a2f5}
+
+
+Generates sample value using actual random variable model. 
+
+
+
+Implements \hyperlink{class_go_s_u_m_1_1_c_model_variable_a940f366fe5007e353cb2de3408d4d0f1}{Go\-S\-U\-M\-::\-C\-Model\-Variable}.
+
+\hypertarget{class_go_s_u_m_1_1_t_model_variable_a49e8bb3711a10e298e90cb6a8d12661a}{\index{Go\-S\-U\-M\-::\-T\-Model\-Variable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}!is\-Distribution\-Defined@{is\-Distribution\-Defined}}
+\index{is\-Distribution\-Defined@{is\-Distribution\-Defined}!GoSUM::TModelVariable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}}
+\subsubsection[{is\-Distribution\-Defined}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class R , class S , typename t $>$ virtual bool {\bf Go\-S\-U\-M\-::\-T\-Model\-Variable}$<$ R, S, t $>$\-::is\-Distribution\-Defined (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_t_model_variable_a49e8bb3711a10e298e90cb6a8d12661a}
+
+
+Returns true if distribution is defined, false otherwise. 
+
+
+
+Implements \hyperlink{class_go_s_u_m_1_1_c_model_variable_a0ab50d62f624918807daef90d881c3da}{Go\-S\-U\-M\-::\-C\-Model\-Variable}.
+
+\hypertarget{class_go_s_u_m_1_1_t_model_variable_a0d9ad1fc30fde0f3dd7ba204f1b525a2}{\index{Go\-S\-U\-M\-::\-T\-Model\-Variable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}!max\-Value@{max\-Value}}
+\index{max\-Value@{max\-Value}!GoSUM::TModelVariable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}}
+\subsubsection[{max\-Value}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class R , class S , typename t $>$ virtual double {\bf Go\-S\-U\-M\-::\-T\-Model\-Variable}$<$ R, S, t $>$\-::max\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_t_model_variable_a0d9ad1fc30fde0f3dd7ba204f1b525a2}
+
+
+Returns maximal variable value. 
+
+
+
+Implements \hyperlink{class_go_s_u_m_1_1_c_model_variable_abf8b08388b38cffce2f8c881b257467a}{Go\-S\-U\-M\-::\-C\-Model\-Variable}.
+
+\hypertarget{class_go_s_u_m_1_1_t_model_variable_a0395e6699e577b7ccb77e19787adc169}{\index{Go\-S\-U\-M\-::\-T\-Model\-Variable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}!min\-Value@{min\-Value}}
+\index{min\-Value@{min\-Value}!GoSUM::TModelVariable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}}
+\subsubsection[{min\-Value}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class R , class S , typename t $>$ virtual double {\bf Go\-S\-U\-M\-::\-T\-Model\-Variable}$<$ R, S, t $>$\-::min\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_t_model_variable_a0395e6699e577b7ccb77e19787adc169}
+
+
+Returns minimal variable value. 
+
+
+
+Implements \hyperlink{class_go_s_u_m_1_1_c_model_variable_a3a147e484e87534b549b44c210e8f4ec}{Go\-S\-U\-M\-::\-C\-Model\-Variable}.
+
+\hypertarget{class_go_s_u_m_1_1_t_model_variable_a25c6c52d753c9273ee1d0a9d1b845b3d}{\index{Go\-S\-U\-M\-::\-T\-Model\-Variable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}!normalized\-Histogram@{normalized\-Histogram}}
+\index{normalized\-Histogram@{normalized\-Histogram}!GoSUM::TModelVariable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}}
+\subsubsection[{normalized\-Histogram}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class R , class S , typename t $>$ t {\bf Go\-S\-U\-M\-::\-T\-Model\-Variable}$<$ R, S, t $>$\-::normalized\-Histogram (
+\begin{DoxyParamCaption}
+\item[{Array$<$ t, Dynamic, 1 $>$ \&}]{\-\_\-x, }
+\item[{Array\-Xd \&}]{\-\_\-\-H}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_t_model_variable_a25c6c52d753c9273ee1d0a9d1b845b3d}
+
+
+Returns normalized histogram (x,H). 
+
+\hypertarget{class_go_s_u_m_1_1_t_model_variable_a8d74a8298078d6d99f62da8ea096e359}{\index{Go\-S\-U\-M\-::\-T\-Model\-Variable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}!random\-Variable@{random\-Variable}}
+\index{random\-Variable@{random\-Variable}!GoSUM::TModelVariable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}}
+\subsubsection[{random\-Variable}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class R , class S , typename t $>$ virtual {\bf C\-Random\-Variable}$\ast$ {\bf Go\-S\-U\-M\-::\-T\-Model\-Variable}$<$ R, S, t $>$\-::random\-Variable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_t_model_variable_a8d74a8298078d6d99f62da8ea096e359}
+
+
+Returns random variable. 
+
+
+
+Implements \hyperlink{class_go_s_u_m_1_1_c_model_variable_ae12d28329d27f1b85085c8e0fc310739}{Go\-S\-U\-M\-::\-C\-Model\-Variable}.
+
+\hypertarget{class_go_s_u_m_1_1_t_model_variable_afee2c55fb595ff40904551e4a7edf360}{\index{Go\-S\-U\-M\-::\-T\-Model\-Variable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}!read\-Sample\-Value@{read\-Sample\-Value}}
+\index{read\-Sample\-Value@{read\-Sample\-Value}!GoSUM::TModelVariable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}}
+\subsubsection[{read\-Sample\-Value}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class R , class S , typename t $>$ virtual void {\bf Go\-S\-U\-M\-::\-T\-Model\-Variable}$<$ R, S, t $>$\-::read\-Sample\-Value (
+\begin{DoxyParamCaption}
+\item[{std\-::ifstream \&}]{\-\_\-ifs, }
+\item[{int}]{\-\_\-at}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_t_model_variable_afee2c55fb595ff40904551e4a7edf360}
+
+
+Reads particular sample value from input file stream. 
+
+
+
+Implements \hyperlink{class_go_s_u_m_1_1_c_model_variable_a29c06485593cef56e0d6fc39c279feb5}{Go\-S\-U\-M\-::\-C\-Model\-Variable}.
+
+\hypertarget{class_go_s_u_m_1_1_t_model_variable_ad7699e50c6f2a7b67ff9e178fe1af740}{\index{Go\-S\-U\-M\-::\-T\-Model\-Variable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}!sample@{sample}}
+\index{sample@{sample}!GoSUM::TModelVariable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}}
+\subsubsection[{sample}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class R , class S , typename t $>$ virtual {\bf C\-Sample}$\ast$ {\bf Go\-S\-U\-M\-::\-T\-Model\-Variable}$<$ R, S, t $>$\-::sample (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_t_model_variable_ad7699e50c6f2a7b67ff9e178fe1af740}
+
+
+Returns sample. 
+
+
+
+Implements \hyperlink{class_go_s_u_m_1_1_c_model_variable_a4f5739cec4081b98efc26c1c8bde690e}{Go\-S\-U\-M\-::\-C\-Model\-Variable}.
+
+\hypertarget{class_go_s_u_m_1_1_t_model_variable_a4c63e42e4ec1971dc9d5671785071426}{\index{Go\-S\-U\-M\-::\-T\-Model\-Variable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}!sample\-Size@{sample\-Size}}
+\index{sample\-Size@{sample\-Size}!GoSUM::TModelVariable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}}
+\subsubsection[{sample\-Size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class R , class S , typename t $>$ virtual int {\bf Go\-S\-U\-M\-::\-T\-Model\-Variable}$<$ R, S, t $>$\-::sample\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_t_model_variable_a4c63e42e4ec1971dc9d5671785071426}
+
+
+Returns sample size. 
+
+
+
+Implements \hyperlink{class_go_s_u_m_1_1_c_model_variable_a6119dc5693874222727b2c2e24c7494d}{Go\-S\-U\-M\-::\-C\-Model\-Variable}.
+
+\hypertarget{class_go_s_u_m_1_1_t_model_variable_ae851745a4f6ec2f6655adcbbc83ff8c5}{\index{Go\-S\-U\-M\-::\-T\-Model\-Variable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}!sample\-Value@{sample\-Value}}
+\index{sample\-Value@{sample\-Value}!GoSUM::TModelVariable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}}
+\subsubsection[{sample\-Value}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class R , class S , typename t $>$ virtual double {\bf Go\-S\-U\-M\-::\-T\-Model\-Variable}$<$ R, S, t $>$\-::sample\-Value (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-at}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_t_model_variable_ae851745a4f6ec2f6655adcbbc83ff8c5}
+
+
+Returns particular sample value. 
+
+
+
+Implements \hyperlink{class_go_s_u_m_1_1_c_model_variable_aeb0c0339dee635d29b2dfea21bac6e06}{Go\-S\-U\-M\-::\-C\-Model\-Variable}.
+
+\hypertarget{class_go_s_u_m_1_1_t_model_variable_a0a5c395a4ff28acc07f8e5670ff9d289}{\index{Go\-S\-U\-M\-::\-T\-Model\-Variable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}!serialize@{serialize}}
+\index{serialize@{serialize}!GoSUM::TModelVariable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class R , class S , typename t $>$ template$<$class Archive $>$ void {\bf Go\-S\-U\-M\-::\-T\-Model\-Variable}$<$ R, S, t $>$\-::serialize (
+\begin{DoxyParamCaption}
+\item[{Archive \&}]{ar, }
+\item[{const unsigned int}]{version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_t_model_variable_a0a5c395a4ff28acc07f8e5670ff9d289}
+
+
+Reimplemented from \hyperlink{class_go_s_u_m_1_1_c_model_variable_ac65c599cd7344f263ec632db106b04f3}{Go\-S\-U\-M\-::\-C\-Model\-Variable}.
+
+\hypertarget{class_go_s_u_m_1_1_t_model_variable_a22b3e3106bba45b0ef22bf7fcaedb090}{\index{Go\-S\-U\-M\-::\-T\-Model\-Variable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}!set\-Distribution\-Parameters@{set\-Distribution\-Parameters}}
+\index{set\-Distribution\-Parameters@{set\-Distribution\-Parameters}!GoSUM::TModelVariable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}}
+\subsubsection[{set\-Distribution\-Parameters}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class R , class S , typename t $>$ void {\bf Go\-S\-U\-M\-::\-T\-Model\-Variable}$<$ R, S, t $>$\-::set\-Distribution\-Parameters (
+\begin{DoxyParamCaption}
+\item[{t}]{\-\_\-dp1, }
+\item[{t}]{\-\_\-dp2 = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_t_model_variable_a22b3e3106bba45b0ef22bf7fcaedb090}
+
+
+Set parameters of the theoretical distribution. 
+
+\hypertarget{class_go_s_u_m_1_1_t_model_variable_a3128d12e3ce0757714a7596de087314e}{\index{Go\-S\-U\-M\-::\-T\-Model\-Variable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}!set\-Empirical\-Distribution@{set\-Empirical\-Distribution}}
+\index{set\-Empirical\-Distribution@{set\-Empirical\-Distribution}!GoSUM::TModelVariable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}}
+\subsubsection[{set\-Empirical\-Distribution}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class R , class S , typename t $>$ virtual void {\bf Go\-S\-U\-M\-::\-T\-Model\-Variable}$<$ R, S, t $>$\-::set\-Empirical\-Distribution (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_go_s_u_m_1_1_t_model_variable_a3128d12e3ce0757714a7596de087314e}
+
+
+Compute distribution of the actual random variable from empirical sample data. 
+
+
+
+Reimplemented from \hyperlink{class_go_s_u_m_1_1_c_model_variable_ad57110dd29c67f648825661e8ba0a3d5}{Go\-S\-U\-M\-::\-C\-Model\-Variable}.
+
+
+
+Implemented in \hyperlink{class_go_s_u_m_1_1_c_continuous_m_v_a65b0b9b16980f16fe2bc36bf8d79e3b9}{Go\-S\-U\-M\-::\-C\-Continuous\-M\-V}, and \hyperlink{class_go_s_u_m_1_1_c_discrete_m_v_a7dd5ab7ac4922cdb2682012c942e1f10}{Go\-S\-U\-M\-::\-C\-Discrete\-M\-V}.
+
+\hypertarget{class_go_s_u_m_1_1_t_model_variable_aa172b11eba6fd1819f10a80d95fc4877}{\index{Go\-S\-U\-M\-::\-T\-Model\-Variable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}!set\-Sample\-Size@{set\-Sample\-Size}}
+\index{set\-Sample\-Size@{set\-Sample\-Size}!GoSUM::TModelVariable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}}
+\subsubsection[{set\-Sample\-Size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class R , class S , typename t $>$ virtual void {\bf Go\-S\-U\-M\-::\-T\-Model\-Variable}$<$ R, S, t $>$\-::set\-Sample\-Size (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_t_model_variable_aa172b11eba6fd1819f10a80d95fc4877}
+
+
+Returns number of variables after expansion for analyitical model. 
+
+Sets sample size. 
+
+Implements \hyperlink{class_go_s_u_m_1_1_c_model_variable_a4424193dc952f62acaa2bb902b1585cd}{Go\-S\-U\-M\-::\-C\-Model\-Variable}.
+
+\hypertarget{class_go_s_u_m_1_1_t_model_variable_acc9cdd0db3d7bc217ae68da7bd6de737}{\index{Go\-S\-U\-M\-::\-T\-Model\-Variable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}!set\-Sample\-Value@{set\-Sample\-Value}}
+\index{set\-Sample\-Value@{set\-Sample\-Value}!GoSUM::TModelVariable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}}
+\subsubsection[{set\-Sample\-Value}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class R , class S , typename t $>$ virtual void {\bf Go\-S\-U\-M\-::\-T\-Model\-Variable}$<$ R, S, t $>$\-::set\-Sample\-Value (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-val, }
+\item[{int}]{\-\_\-at}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_t_model_variable_acc9cdd0db3d7bc217ae68da7bd6de737}
+
+
+Sets particular sample value. 
+
+
+
+Implements \hyperlink{class_go_s_u_m_1_1_c_model_variable_a08f9738a6142029c5e9f0609a171c8c5}{Go\-S\-U\-M\-::\-C\-Model\-Variable}.
+
+\hypertarget{class_go_s_u_m_1_1_t_model_variable_ad113f33f216796f775855dd3f8553f03}{\index{Go\-S\-U\-M\-::\-T\-Model\-Variable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}!set\-Theoretical\-Distribution@{set\-Theoretical\-Distribution}}
+\index{set\-Theoretical\-Distribution@{set\-Theoretical\-Distribution}!GoSUM::TModelVariable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}}
+\subsubsection[{set\-Theoretical\-Distribution}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class R , class S , typename t $>$ virtual void {\bf Go\-S\-U\-M\-::\-T\-Model\-Variable}$<$ R, S, t $>$\-::set\-Theoretical\-Distribution (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_go_s_u_m_1_1_t_model_variable_ad113f33f216796f775855dd3f8553f03}
+
+
+Detects distribution and turns random variable to appropirate type. 
+
+
+
+Reimplemented from \hyperlink{class_go_s_u_m_1_1_c_model_variable_a762505d1b3d1e36daeebfec111d221b1}{Go\-S\-U\-M\-::\-C\-Model\-Variable}.
+
+
+
+Implemented in \hyperlink{class_go_s_u_m_1_1_c_continuous_m_v_a923c07b0735783d016b4e155b5eb0539}{Go\-S\-U\-M\-::\-C\-Continuous\-M\-V}, and \hyperlink{class_go_s_u_m_1_1_c_discrete_m_v_a1061fb0a466b852ffeb111238b702b39}{Go\-S\-U\-M\-::\-C\-Discrete\-M\-V}.
+
+\hypertarget{class_go_s_u_m_1_1_t_model_variable_a98d527cb3d0ce4c3a96ddb4e04c0d931}{\index{Go\-S\-U\-M\-::\-T\-Model\-Variable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}!write\-Sample\-Value@{write\-Sample\-Value}}
+\index{write\-Sample\-Value@{write\-Sample\-Value}!GoSUM::TModelVariable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}}
+\subsubsection[{write\-Sample\-Value}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class R , class S , typename t $>$ virtual void {\bf Go\-S\-U\-M\-::\-T\-Model\-Variable}$<$ R, S, t $>$\-::write\-Sample\-Value (
+\begin{DoxyParamCaption}
+\item[{std\-::ofstream \&}]{\-\_\-ofs, }
+\item[{int}]{\-\_\-at}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_t_model_variable_a98d527cb3d0ce4c3a96ddb4e04c0d931}
+
+
+Writes particular sample value to output file stream. 
+
+
+
+Implements \hyperlink{class_go_s_u_m_1_1_c_model_variable_a9de10a737f4b03f6e790e856e5822d58}{Go\-S\-U\-M\-::\-C\-Model\-Variable}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_go_s_u_m_1_1_t_model_variable_ac98d07dd8f7b70e16ccb9a01abf56b9c}{\index{Go\-S\-U\-M\-::\-T\-Model\-Variable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}!boost\-::serialization\-::access@{boost\-::serialization\-::access}}
+\index{boost\-::serialization\-::access@{boost\-::serialization\-::access}!GoSUM::TModelVariable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}}
+\subsubsection[{boost\-::serialization\-::access}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class R , class S , typename t $>$ friend class boost\-::serialization\-::access\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_go_s_u_m_1_1_t_model_variable_ac98d07dd8f7b70e16ccb9a01abf56b9c}
+
+
+Boost serialization. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_go_s_u_m_1_1_t_model_variable_ae48bc1204051b96adc0ecff50edea231}{\index{Go\-S\-U\-M\-::\-T\-Model\-Variable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}!p\-R\-V@{p\-R\-V}}
+\index{p\-R\-V@{p\-R\-V}!GoSUM::TModelVariable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}}
+\subsubsection[{p\-R\-V}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class R , class S , typename t $>$ R$\ast$ {\bf Go\-S\-U\-M\-::\-T\-Model\-Variable}$<$ R, S, t $>$\-::p\-R\-V\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_t_model_variable_ae48bc1204051b96adc0ecff50edea231}
+
+
+Pointer to a random variable that models behaviour of model variable. 
+
+\hypertarget{class_go_s_u_m_1_1_t_model_variable_a7c0daa5e00c6ea510079dd5bf78916bc}{\index{Go\-S\-U\-M\-::\-T\-Model\-Variable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}!p\-S@{p\-S}}
+\index{p\-S@{p\-S}!GoSUM::TModelVariable@{Go\-S\-U\-M\-::\-T\-Model\-Variable}}
+\subsubsection[{p\-S}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class R , class S , typename t $>$ S$\ast$ {\bf Go\-S\-U\-M\-::\-T\-Model\-Variable}$<$ R, S, t $>$\-::p\-S\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_t_model_variable_a7c0daa5e00c6ea510079dd5bf78916bc}
+Pointer to the sample data of the model variable. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Development/core/\hyperlink{_model_variable_8h}{Model\-Variable.\-h}\end{DoxyCompactItemize}

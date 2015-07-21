@@ -1,0 +1,188 @@
+\hypertarget{class_c_hypercube}{\section{C\-Hypercube Class Reference}
+\label{class_c_hypercube}\index{C\-Hypercube@{C\-Hypercube}}
+}
+
+
+Class for hypercube with Voronoi Tessellation (V\-T) generators.  
+
+
+
+
+{\ttfamily \#include $<$Hypercube.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_hypercube_a3a62eb55c78f4a2f8b618d3dd45e4e7f}{C\-Hypercube} (int \-\_\-dim, int \-\_\-\-N)
+\item 
+virtual \hyperlink{class_c_hypercube_adea9be7c946bfd0051316c8129841d23}{$\sim$\-C\-Hypercube} ()
+\item 
+double \hyperlink{class_c_hypercube_a2bd2cdb7ffcd62e77e3a856e1e5b8e3e}{operator()} (int i, int j) const 
+\begin{DoxyCompactList}\small\item\em Returns jth coordinate of the ith V\-T generator. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_hypercube_a6dc2a4fa2c97c2ae9b0e0c1fb0c5d860}{generate} ()
+\begin{DoxyCompactList}\small\item\em Creates V\-T generators using rng. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_hypercube_a3a788118af6bcdd149b9191407db364b}{do\-Centroidal\-Voronoi\-Tessellation} (int maxiter, int q, double alpha2, double beta2)
+\begin{DoxyCompactList}\small\item\em Moves V\-T generators so that V\-T becomes centroidal. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_hypercube_aefc832541d84a6c27d1682dbc1c7942d}{latinize} ()
+\begin{DoxyCompactList}\small\item\em Latinizes V\-T generators. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_hypercube_a0b290cec3556dfd71b96925505806e49}{C\-Hypercube} ()
+\item 
+void \hyperlink{class_c_hypercube_ae9e96413f19e3104a3a2d1bfb1d6dbc2}{generate} (std\-::vector$<$ Array\-Xd $>$ \&y)
+\begin{DoxyCompactList}\small\item\em Creates any point set in hypercube using rng. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{class_c_hypercube_a712a63c77227ecef7e3707c0d5887f3a}{compcoo} (Array\-Xd \&a, Array\-Xd \&b)
+\begin{DoxyCompactList}\small\item\em Compare points by coo cordinate value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_c_hypercube_aa46e76296cb1f00d6bbf237de95b943e}{dim}
+\item 
+int \hyperlink{class_c_hypercube_a5ae7a70b21a9969219f150498c7e9cf3}{N}
+\begin{DoxyCompactList}\small\item\em Dimension of the space and number of V\-T generators. \end{DoxyCompactList}\item 
+std\-::vector$<$ Array\-Xd $>$ \hyperlink{class_c_hypercube_ae50abfa68524ad94ba198dcf08cb6389}{z}
+\begin{DoxyCompactList}\small\item\em V\-T generators. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{class_c_hypercube_aca37fbb8699607d3d7f69081fbb4cf31}{coo}
+\begin{DoxyCompactList}\small\item\em Used in compcoo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for hypercube with Voronoi Tessellation (V\-T) generators. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_hypercube_a0b290cec3556dfd71b96925505806e49}{\index{C\-Hypercube@{C\-Hypercube}!C\-Hypercube@{C\-Hypercube}}
+\index{C\-Hypercube@{C\-Hypercube}!CHypercube@{C\-Hypercube}}
+\subsubsection[{C\-Hypercube}]{\setlength{\rightskip}{0pt plus 5cm}C\-Hypercube\-::\-C\-Hypercube (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{class_c_hypercube_a0b290cec3556dfd71b96925505806e49}
+\hypertarget{class_c_hypercube_a3a62eb55c78f4a2f8b618d3dd45e4e7f}{\index{C\-Hypercube@{C\-Hypercube}!C\-Hypercube@{C\-Hypercube}}
+\index{C\-Hypercube@{C\-Hypercube}!CHypercube@{C\-Hypercube}}
+\subsubsection[{C\-Hypercube}]{\setlength{\rightskip}{0pt plus 5cm}C\-Hypercube\-::\-C\-Hypercube (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-dim, }
+\item[{int}]{\-\_\-\-N}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_hypercube_a3a62eb55c78f4a2f8b618d3dd45e4e7f}
+\hypertarget{class_c_hypercube_adea9be7c946bfd0051316c8129841d23}{\index{C\-Hypercube@{C\-Hypercube}!$\sim$\-C\-Hypercube@{$\sim$\-C\-Hypercube}}
+\index{$\sim$\-C\-Hypercube@{$\sim$\-C\-Hypercube}!CHypercube@{C\-Hypercube}}
+\subsubsection[{$\sim$\-C\-Hypercube}]{\setlength{\rightskip}{0pt plus 5cm}virtual C\-Hypercube\-::$\sim$\-C\-Hypercube (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_hypercube_adea9be7c946bfd0051316c8129841d23}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_hypercube_a712a63c77227ecef7e3707c0d5887f3a}{\index{C\-Hypercube@{C\-Hypercube}!compcoo@{compcoo}}
+\index{compcoo@{compcoo}!CHypercube@{C\-Hypercube}}
+\subsubsection[{compcoo}]{\setlength{\rightskip}{0pt plus 5cm}static bool C\-Hypercube\-::compcoo (
+\begin{DoxyParamCaption}
+\item[{Array\-Xd \&}]{a, }
+\item[{Array\-Xd \&}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}}\label{class_c_hypercube_a712a63c77227ecef7e3707c0d5887f3a}
+
+
+Compare points by coo cordinate value. 
+
+\hypertarget{class_c_hypercube_a3a788118af6bcdd149b9191407db364b}{\index{C\-Hypercube@{C\-Hypercube}!do\-Centroidal\-Voronoi\-Tessellation@{do\-Centroidal\-Voronoi\-Tessellation}}
+\index{do\-Centroidal\-Voronoi\-Tessellation@{do\-Centroidal\-Voronoi\-Tessellation}!CHypercube@{C\-Hypercube}}
+\subsubsection[{do\-Centroidal\-Voronoi\-Tessellation}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Hypercube\-::do\-Centroidal\-Voronoi\-Tessellation (
+\begin{DoxyParamCaption}
+\item[{int}]{maxiter, }
+\item[{int}]{q, }
+\item[{double}]{alpha2, }
+\item[{double}]{beta2}
+\end{DoxyParamCaption}
+)}}\label{class_c_hypercube_a3a788118af6bcdd149b9191407db364b}
+
+
+Moves V\-T generators so that V\-T becomes centroidal. 
+
+\hypertarget{class_c_hypercube_ae9e96413f19e3104a3a2d1bfb1d6dbc2}{\index{C\-Hypercube@{C\-Hypercube}!generate@{generate}}
+\index{generate@{generate}!CHypercube@{C\-Hypercube}}
+\subsubsection[{generate}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Hypercube\-::generate (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ Array\-Xd $>$ \&}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_hypercube_ae9e96413f19e3104a3a2d1bfb1d6dbc2}
+
+
+Creates any point set in hypercube using rng. 
+
+\hypertarget{class_c_hypercube_a6dc2a4fa2c97c2ae9b0e0c1fb0c5d860}{\index{C\-Hypercube@{C\-Hypercube}!generate@{generate}}
+\index{generate@{generate}!CHypercube@{C\-Hypercube}}
+\subsubsection[{generate}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Hypercube\-::generate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_hypercube_a6dc2a4fa2c97c2ae9b0e0c1fb0c5d860}
+
+
+Creates V\-T generators using rng. 
+
+\hypertarget{class_c_hypercube_aefc832541d84a6c27d1682dbc1c7942d}{\index{C\-Hypercube@{C\-Hypercube}!latinize@{latinize}}
+\index{latinize@{latinize}!CHypercube@{C\-Hypercube}}
+\subsubsection[{latinize}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Hypercube\-::latinize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_hypercube_aefc832541d84a6c27d1682dbc1c7942d}
+
+
+Latinizes V\-T generators. 
+
+\hypertarget{class_c_hypercube_a2bd2cdb7ffcd62e77e3a856e1e5b8e3e}{\index{C\-Hypercube@{C\-Hypercube}!operator()@{operator()}}
+\index{operator()@{operator()}!CHypercube@{C\-Hypercube}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}double C\-Hypercube\-::operator() (
+\begin{DoxyParamCaption}
+\item[{int}]{i, }
+\item[{int}]{j}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_hypercube_a2bd2cdb7ffcd62e77e3a856e1e5b8e3e}
+
+
+Returns jth coordinate of the ith V\-T generator. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_hypercube_aca37fbb8699607d3d7f69081fbb4cf31}{\index{C\-Hypercube@{C\-Hypercube}!coo@{coo}}
+\index{coo@{coo}!CHypercube@{C\-Hypercube}}
+\subsubsection[{coo}]{\setlength{\rightskip}{0pt plus 5cm}int C\-Hypercube\-::coo\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{class_c_hypercube_aca37fbb8699607d3d7f69081fbb4cf31}
+
+
+Used in compcoo. 
+
+\hypertarget{class_c_hypercube_aa46e76296cb1f00d6bbf237de95b943e}{\index{C\-Hypercube@{C\-Hypercube}!dim@{dim}}
+\index{dim@{dim}!CHypercube@{C\-Hypercube}}
+\subsubsection[{dim}]{\setlength{\rightskip}{0pt plus 5cm}int C\-Hypercube\-::dim\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_hypercube_aa46e76296cb1f00d6bbf237de95b943e}
+\hypertarget{class_c_hypercube_a5ae7a70b21a9969219f150498c7e9cf3}{\index{C\-Hypercube@{C\-Hypercube}!N@{N}}
+\index{N@{N}!CHypercube@{C\-Hypercube}}
+\subsubsection[{N}]{\setlength{\rightskip}{0pt plus 5cm}int C\-Hypercube\-::\-N\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_hypercube_a5ae7a70b21a9969219f150498c7e9cf3}
+
+
+Dimension of the space and number of V\-T generators. 
+
+\hypertarget{class_c_hypercube_ae50abfa68524ad94ba198dcf08cb6389}{\index{C\-Hypercube@{C\-Hypercube}!z@{z}}
+\index{z@{z}!CHypercube@{C\-Hypercube}}
+\subsubsection[{z}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$Array\-Xd$>$ C\-Hypercube\-::z\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_hypercube_ae50abfa68524ad94ba198dcf08cb6389}
+
+
+V\-T generators. 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Development/core/\hyperlink{_hypercube_8h}{Hypercube.\-h}\item 
+C\-:/\-Development/core/\hyperlink{_hypercube_8cpp}{Hypercube.\-cpp}\end{DoxyCompactItemize}

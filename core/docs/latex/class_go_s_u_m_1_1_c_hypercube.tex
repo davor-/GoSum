@@ -1,0 +1,365 @@
+\hypertarget{class_go_s_u_m_1_1_c_hypercube}{\section{Go\-S\-U\-M\-:\-:C\-Hypercube Class Reference}
+\label{class_go_s_u_m_1_1_c_hypercube}\index{Go\-S\-U\-M\-::\-C\-Hypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}}
+}
+
+
+{\ttfamily \#include $<$Hypercube.\-h$>$}
+
+Inheritance diagram for Go\-S\-U\-M\-:\-:C\-Hypercube\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_go_s_u_m_1_1_c_hypercube}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_go_s_u_m_1_1_c_hypercube_a9113655515864c06ea6d4f08d5195c90}{hctype} \{ \hyperlink{class_go_s_u_m_1_1_c_hypercube_a9113655515864c06ea6d4f08d5195c90abe62aed07dcbdbeda5783e3345005e16}{dsample}, 
+\hyperlink{class_go_s_u_m_1_1_c_hypercube_a9113655515864c06ea6d4f08d5195c90af9afda139c9899e40caa1661dee6d2a2}{montecarlo}, 
+\hyperlink{class_go_s_u_m_1_1_c_hypercube_a9113655515864c06ea6d4f08d5195c90aa7aa76eb38939f209c50edb0c5ecd16f}{cvoronoi}, 
+\hyperlink{class_go_s_u_m_1_1_c_hypercube_a9113655515864c06ea6d4f08d5195c90aa292c11539b19d2d7845af56abbd1460}{lcvoronoi}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_go_s_u_m_1_1_c_hypercube_ab10b56e929fd581467fac4bf8d141993}{C\-Hypercube} ()
+\item 
+virtual \hyperlink{class_go_s_u_m_1_1_c_hypercube_af040de408525be03112bbd560768a373}{$\sim$\-C\-Hypercube} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_go_s_u_m_1_1_c_hypercube_a9113655515864c06ea6d4f08d5195c90}{hctype} \hyperlink{class_go_s_u_m_1_1_c_hypercube_a6d05fe2a4610d87af24ec6b39b8e1025}{Type} (const std\-::string \&\-\_\-stype)
+\begin{DoxyCompactList}\small\item\em Returns hypercube type enumerator from hypercube type name. \end{DoxyCompactList}\item 
+static \hyperlink{class_go_s_u_m_1_1_c_hypercube_a9113655515864c06ea6d4f08d5195c90}{hctype} \hyperlink{class_go_s_u_m_1_1_c_hypercube_abc5b419f9502e45cb89812a08d8a41cc}{Type} ()
+\begin{DoxyCompactList}\small\item\em Returns hypercube type. \end{DoxyCompactList}\item 
+static void \hyperlink{class_go_s_u_m_1_1_c_hypercube_a96309f61dce90f72da0b1ecc5c3d758b}{Set\-Type} (\hyperlink{class_go_s_u_m_1_1_c_hypercube_a9113655515864c06ea6d4f08d5195c90}{hctype} \-\_\-etype)
+\begin{DoxyCompactList}\small\item\em Sets hypercube type. \end{DoxyCompactList}\item 
+static void \hyperlink{class_go_s_u_m_1_1_c_hypercube_a1ba153b23eaf17f51cd0b3e85f2cc59d}{Voronoi\-Options} (int \&\-\_\-maxiter, int \&\-\_\-q, double \&\-\_\-alpha2, double \&\-\_\-beta2)
+\item 
+static void \hyperlink{class_go_s_u_m_1_1_c_hypercube_a1c4d81419562b324b8c3486f36ef2033}{Set\-Voronoi\-Options} (int \-\_\-maxiter, int \-\_\-q, double \-\_\-alpha2, double \-\_\-beta2)
+\item 
+static int \hyperlink{class_go_s_u_m_1_1_c_hypercube_a402c5b23d7bb6a209ad7c423b7469008}{Cvt\-Iteration\-Size} ()
+\begin{DoxyCompactList}\small\item\em Returns C\-V\-T iteration size. \end{DoxyCompactList}\item 
+static void \hyperlink{class_go_s_u_m_1_1_c_hypercube_a94f1eb472623fd241372562607e8d6a5}{Set\-Cvt\-Iteration\-Size} (int \-\_\-maxiter)
+\begin{DoxyCompactList}\small\item\em Sets C\-V\-T iteration size. \end{DoxyCompactList}\item 
+static int \hyperlink{class_go_s_u_m_1_1_c_hypercube_acc500fc5157c78d0d1d260a502c34288}{Cvt\-Points\-Size} ()
+\begin{DoxyCompactList}\small\item\em Returns C\-V\-T points size. \end{DoxyCompactList}\item 
+static void \hyperlink{class_go_s_u_m_1_1_c_hypercube_a3c9ed7e8c464c78afc0eb4cf62438df9}{Set\-Cvt\-Points\-Size} (int \-\_\-q)
+\begin{DoxyCompactList}\small\item\em Sets C\-V\-T points size. \end{DoxyCompactList}\item 
+static double \hyperlink{class_go_s_u_m_1_1_c_hypercube_aaa4c700e7636bc8f8c627f900925af30}{Cvt\-Old\-Center\-Coefficient} ()
+\begin{DoxyCompactList}\small\item\em Returns C\-V\-T parameter \#1. \end{DoxyCompactList}\item 
+static void \hyperlink{class_go_s_u_m_1_1_c_hypercube_a27859b27c8e541cd42ac0424d7117b88}{Set\-Cvt\-Old\-Center\-Coefficient} (double \-\_\-alpha2)
+\begin{DoxyCompactList}\small\item\em Sets C\-V\-T paramter \#1. \end{DoxyCompactList}\item 
+static double \hyperlink{class_go_s_u_m_1_1_c_hypercube_a7af9011cef9d24170f558d601307a4f0}{Cvt\-New\-Center\-Coefficient} ()
+\begin{DoxyCompactList}\small\item\em Returns C\-V\-T paramter \#2. \end{DoxyCompactList}\item 
+static void \hyperlink{class_go_s_u_m_1_1_c_hypercube_a7347f28cd7134c3215ba0fe0c44d65e7}{Set\-Cvt\-New\-Center\-Coefficient} (double \-\_\-beta2)
+\begin{DoxyCompactList}\small\item\em Sets C\-V\-T paramter \#2. \end{DoxyCompactList}\item 
+static \hyperlink{class_go_s_u_m_1_1_c_model_hypercube}{Go\-S\-U\-M\-::\-C\-Model\-Hypercube} $\ast$ \hyperlink{class_go_s_u_m_1_1_c_hypercube_a737402ef325701acaf51e3a5af5f78df}{New} (\hyperlink{class_go_s_u_m_1_1_c_input_parameters}{C\-Input\-Parameters} $\ast$\-\_\-p\-I\-P)
+\begin{DoxyCompactList}\small\item\em Returns new model hypercube. \end{DoxyCompactList}\item 
+static int \hyperlink{class_go_s_u_m_1_1_c_hypercube_ada2117043dce22d1d0caf9f9635d7018}{Progress\-Size} (int \-\_\-rssize, int \-\_\-dim)
+\begin{DoxyCompactList}\small\item\em Returns progress steps size. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boost\-::signal$<$ void()$>$ \hyperlink{class_go_s_u_m_1_1_c_hypercube_aae23731c5d5e5faf5881fc7c28542656}{generating\-Progressed}
+\begin{DoxyCompactList}\small\item\em Signal for centralize progress. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \hyperlink{class_go_s_u_m_1_1_c_hypercube_a7303a209b69f0d628b8d2249867e9247}{serialize} (Archive \&ar, const unsigned int version)
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_go_s_u_m_1_1_c_hypercube_a9113655515864c06ea6d4f08d5195c90}{hctype} \hyperlink{class_go_s_u_m_1_1_c_hypercube_a8f9d864e2940c4982480ea394931fcf5}{etype} = \hyperlink{class_go_s_u_m_1_1_c_hypercube_a9113655515864c06ea6d4f08d5195c90abe62aed07dcbdbeda5783e3345005e16}{Go\-S\-U\-M\-::\-C\-Hypercube\-::dsample}
+\begin{DoxyCompactList}\small\item\em Holds hypercube type. \end{DoxyCompactList}\item 
+static int \hyperlink{class_go_s_u_m_1_1_c_hypercube_a0e3ec089584a2c55fbc8db58b1e543ac}{maxiter} = 10000
+\item 
+static int \hyperlink{class_go_s_u_m_1_1_c_hypercube_aecbeeb5c680a49beeebbc613242055d4}{q} = 1
+\begin{DoxyCompactList}\small\item\em Holds C\-V\-T parameters. \end{DoxyCompactList}\item 
+static double \hyperlink{class_go_s_u_m_1_1_c_hypercube_a88f945378fe038456780cdc88aeaadd0}{alpha2} = 0.
+\item 
+static double \hyperlink{class_go_s_u_m_1_1_c_hypercube_a674776d76c1fd0d53a25975b057198f9}{beta2} = 1.
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_go_s_u_m_1_1_c_hypercube_ac98d07dd8f7b70e16ccb9a01abf56b9c}{boost\-::serialization\-::access}
+\begin{DoxyCompactList}\small\item\em Boost serialization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_hypercube_a9113655515864c06ea6d4f08d5195c90}{\index{Go\-S\-U\-M\-::\-C\-Hypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}!hctype@{hctype}}
+\index{hctype@{hctype}!GoSUM::CHypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}}
+\subsubsection[{hctype}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Go\-S\-U\-M\-::\-C\-Hypercube\-::hctype}}}\label{class_go_s_u_m_1_1_c_hypercube_a9113655515864c06ea6d4f08d5195c90}
+\begin{Desc}
+\item[Enumerator\-: ]\par
+\begin{description}
+\index{dsample@{dsample}!Go\-S\-U\-M\-::\-C\-Hypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}}\index{Go\-S\-U\-M\-::\-C\-Hypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}!dsample@{dsample}}\item[{\em 
+\hypertarget{class_go_s_u_m_1_1_c_hypercube_a9113655515864c06ea6d4f08d5195c90abe62aed07dcbdbeda5783e3345005e16}{dsample}\label{class_go_s_u_m_1_1_c_hypercube_a9113655515864c06ea6d4f08d5195c90abe62aed07dcbdbeda5783e3345005e16}
+}]\index{montecarlo@{montecarlo}!Go\-S\-U\-M\-::\-C\-Hypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}}\index{Go\-S\-U\-M\-::\-C\-Hypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}!montecarlo@{montecarlo}}\item[{\em 
+\hypertarget{class_go_s_u_m_1_1_c_hypercube_a9113655515864c06ea6d4f08d5195c90af9afda139c9899e40caa1661dee6d2a2}{montecarlo}\label{class_go_s_u_m_1_1_c_hypercube_a9113655515864c06ea6d4f08d5195c90af9afda139c9899e40caa1661dee6d2a2}
+}]\index{cvoronoi@{cvoronoi}!Go\-S\-U\-M\-::\-C\-Hypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}}\index{Go\-S\-U\-M\-::\-C\-Hypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}!cvoronoi@{cvoronoi}}\item[{\em 
+\hypertarget{class_go_s_u_m_1_1_c_hypercube_a9113655515864c06ea6d4f08d5195c90aa7aa76eb38939f209c50edb0c5ecd16f}{cvoronoi}\label{class_go_s_u_m_1_1_c_hypercube_a9113655515864c06ea6d4f08d5195c90aa7aa76eb38939f209c50edb0c5ecd16f}
+}]\index{lcvoronoi@{lcvoronoi}!Go\-S\-U\-M\-::\-C\-Hypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}}\index{Go\-S\-U\-M\-::\-C\-Hypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}!lcvoronoi@{lcvoronoi}}\item[{\em 
+\hypertarget{class_go_s_u_m_1_1_c_hypercube_a9113655515864c06ea6d4f08d5195c90aa292c11539b19d2d7845af56abbd1460}{lcvoronoi}\label{class_go_s_u_m_1_1_c_hypercube_a9113655515864c06ea6d4f08d5195c90aa292c11539b19d2d7845af56abbd1460}
+}]\end{description}
+\end{Desc}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_hypercube_ab10b56e929fd581467fac4bf8d141993}{\index{Go\-S\-U\-M\-::\-C\-Hypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}!C\-Hypercube@{C\-Hypercube}}
+\index{C\-Hypercube@{C\-Hypercube}!GoSUM::CHypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}}
+\subsubsection[{C\-Hypercube}]{\setlength{\rightskip}{0pt plus 5cm}Go\-S\-U\-M\-::\-C\-Hypercube\-::\-C\-Hypercube (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_hypercube_ab10b56e929fd581467fac4bf8d141993}
+\hypertarget{class_go_s_u_m_1_1_c_hypercube_af040de408525be03112bbd560768a373}{\index{Go\-S\-U\-M\-::\-C\-Hypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}!$\sim$\-C\-Hypercube@{$\sim$\-C\-Hypercube}}
+\index{$\sim$\-C\-Hypercube@{$\sim$\-C\-Hypercube}!GoSUM::CHypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}}
+\subsubsection[{$\sim$\-C\-Hypercube}]{\setlength{\rightskip}{0pt plus 5cm}virtual Go\-S\-U\-M\-::\-C\-Hypercube\-::$\sim$\-C\-Hypercube (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_hypercube_af040de408525be03112bbd560768a373}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_hypercube_a402c5b23d7bb6a209ad7c423b7469008}{\index{Go\-S\-U\-M\-::\-C\-Hypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}!Cvt\-Iteration\-Size@{Cvt\-Iteration\-Size}}
+\index{Cvt\-Iteration\-Size@{Cvt\-Iteration\-Size}!GoSUM::CHypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}}
+\subsubsection[{Cvt\-Iteration\-Size}]{\setlength{\rightskip}{0pt plus 5cm}static int Go\-S\-U\-M\-::\-C\-Hypercube\-::\-Cvt\-Iteration\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_go_s_u_m_1_1_c_hypercube_a402c5b23d7bb6a209ad7c423b7469008}
+
+
+Returns C\-V\-T iteration size. 
+
+\hypertarget{class_go_s_u_m_1_1_c_hypercube_a7af9011cef9d24170f558d601307a4f0}{\index{Go\-S\-U\-M\-::\-C\-Hypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}!Cvt\-New\-Center\-Coefficient@{Cvt\-New\-Center\-Coefficient}}
+\index{Cvt\-New\-Center\-Coefficient@{Cvt\-New\-Center\-Coefficient}!GoSUM::CHypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}}
+\subsubsection[{Cvt\-New\-Center\-Coefficient}]{\setlength{\rightskip}{0pt plus 5cm}static double Go\-S\-U\-M\-::\-C\-Hypercube\-::\-Cvt\-New\-Center\-Coefficient (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_go_s_u_m_1_1_c_hypercube_a7af9011cef9d24170f558d601307a4f0}
+
+
+Returns C\-V\-T paramter \#2. 
+
+\hypertarget{class_go_s_u_m_1_1_c_hypercube_aaa4c700e7636bc8f8c627f900925af30}{\index{Go\-S\-U\-M\-::\-C\-Hypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}!Cvt\-Old\-Center\-Coefficient@{Cvt\-Old\-Center\-Coefficient}}
+\index{Cvt\-Old\-Center\-Coefficient@{Cvt\-Old\-Center\-Coefficient}!GoSUM::CHypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}}
+\subsubsection[{Cvt\-Old\-Center\-Coefficient}]{\setlength{\rightskip}{0pt plus 5cm}static double Go\-S\-U\-M\-::\-C\-Hypercube\-::\-Cvt\-Old\-Center\-Coefficient (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_go_s_u_m_1_1_c_hypercube_aaa4c700e7636bc8f8c627f900925af30}
+
+
+Returns C\-V\-T parameter \#1. 
+
+\hypertarget{class_go_s_u_m_1_1_c_hypercube_acc500fc5157c78d0d1d260a502c34288}{\index{Go\-S\-U\-M\-::\-C\-Hypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}!Cvt\-Points\-Size@{Cvt\-Points\-Size}}
+\index{Cvt\-Points\-Size@{Cvt\-Points\-Size}!GoSUM::CHypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}}
+\subsubsection[{Cvt\-Points\-Size}]{\setlength{\rightskip}{0pt plus 5cm}static int Go\-S\-U\-M\-::\-C\-Hypercube\-::\-Cvt\-Points\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_go_s_u_m_1_1_c_hypercube_acc500fc5157c78d0d1d260a502c34288}
+
+
+Returns C\-V\-T points size. 
+
+\hypertarget{class_go_s_u_m_1_1_c_hypercube_a737402ef325701acaf51e3a5af5f78df}{\index{Go\-S\-U\-M\-::\-C\-Hypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}!New@{New}}
+\index{New@{New}!GoSUM::CHypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}}
+\subsubsection[{New}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Go\-S\-U\-M\-::\-C\-Model\-Hypercube} $\ast$ Go\-S\-U\-M\-::\-C\-Hypercube\-::\-New (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Input\-Parameters} $\ast$}]{\-\_\-p\-I\-P}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_go_s_u_m_1_1_c_hypercube_a737402ef325701acaf51e3a5af5f78df}
+
+
+Returns new model hypercube. 
+
+\hypertarget{class_go_s_u_m_1_1_c_hypercube_ada2117043dce22d1d0caf9f9635d7018}{\index{Go\-S\-U\-M\-::\-C\-Hypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}!Progress\-Size@{Progress\-Size}}
+\index{Progress\-Size@{Progress\-Size}!GoSUM::CHypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}}
+\subsubsection[{Progress\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int Go\-S\-U\-M\-::\-C\-Hypercube\-::\-Progress\-Size (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-rssize, }
+\item[{int}]{\-\_\-dim}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_go_s_u_m_1_1_c_hypercube_ada2117043dce22d1d0caf9f9635d7018}
+
+
+Returns progress steps size. 
+
+\hypertarget{class_go_s_u_m_1_1_c_hypercube_a7303a209b69f0d628b8d2249867e9247}{\index{Go\-S\-U\-M\-::\-C\-Hypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}!serialize@{serialize}}
+\index{serialize@{serialize}!GoSUM::CHypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Archive $>$ void Go\-S\-U\-M\-::\-C\-Hypercube\-::serialize (
+\begin{DoxyParamCaption}
+\item[{Archive \&}]{ar, }
+\item[{const unsigned int}]{version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_hypercube_a7303a209b69f0d628b8d2249867e9247}
+
+
+Reimplemented in \hyperlink{class_go_s_u_m_1_1_c_l_c_voronoi_h_c_a98f588c33a8f2e2f4b681b48d63f2109}{Go\-S\-U\-M\-::\-C\-L\-C\-Voronoi\-H\-C}, \hyperlink{class_go_s_u_m_1_1_c_c_voronoi_h_c_abbeaabd93028069b81be4dfc078e3d02}{Go\-S\-U\-M\-::\-C\-C\-Voronoi\-H\-C}, \hyperlink{class_go_s_u_m_1_1_c_monte_carlo_h_c_ae04ab348b02072028893eee2541cadf8}{Go\-S\-U\-M\-::\-C\-Monte\-Carlo\-H\-C}, and \hyperlink{class_go_s_u_m_1_1_c_model_hypercube_a67de6632c6f6ca3685d2a750599974c6}{Go\-S\-U\-M\-::\-C\-Model\-Hypercube}.
+
+\hypertarget{class_go_s_u_m_1_1_c_hypercube_a94f1eb472623fd241372562607e8d6a5}{\index{Go\-S\-U\-M\-::\-C\-Hypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}!Set\-Cvt\-Iteration\-Size@{Set\-Cvt\-Iteration\-Size}}
+\index{Set\-Cvt\-Iteration\-Size@{Set\-Cvt\-Iteration\-Size}!GoSUM::CHypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}}
+\subsubsection[{Set\-Cvt\-Iteration\-Size}]{\setlength{\rightskip}{0pt plus 5cm}static void Go\-S\-U\-M\-::\-C\-Hypercube\-::\-Set\-Cvt\-Iteration\-Size (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-maxiter}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_go_s_u_m_1_1_c_hypercube_a94f1eb472623fd241372562607e8d6a5}
+
+
+Sets C\-V\-T iteration size. 
+
+\hypertarget{class_go_s_u_m_1_1_c_hypercube_a7347f28cd7134c3215ba0fe0c44d65e7}{\index{Go\-S\-U\-M\-::\-C\-Hypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}!Set\-Cvt\-New\-Center\-Coefficient@{Set\-Cvt\-New\-Center\-Coefficient}}
+\index{Set\-Cvt\-New\-Center\-Coefficient@{Set\-Cvt\-New\-Center\-Coefficient}!GoSUM::CHypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}}
+\subsubsection[{Set\-Cvt\-New\-Center\-Coefficient}]{\setlength{\rightskip}{0pt plus 5cm}static void Go\-S\-U\-M\-::\-C\-Hypercube\-::\-Set\-Cvt\-New\-Center\-Coefficient (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-beta2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_go_s_u_m_1_1_c_hypercube_a7347f28cd7134c3215ba0fe0c44d65e7}
+
+
+Sets C\-V\-T paramter \#2. 
+
+\hypertarget{class_go_s_u_m_1_1_c_hypercube_a27859b27c8e541cd42ac0424d7117b88}{\index{Go\-S\-U\-M\-::\-C\-Hypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}!Set\-Cvt\-Old\-Center\-Coefficient@{Set\-Cvt\-Old\-Center\-Coefficient}}
+\index{Set\-Cvt\-Old\-Center\-Coefficient@{Set\-Cvt\-Old\-Center\-Coefficient}!GoSUM::CHypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}}
+\subsubsection[{Set\-Cvt\-Old\-Center\-Coefficient}]{\setlength{\rightskip}{0pt plus 5cm}static void Go\-S\-U\-M\-::\-C\-Hypercube\-::\-Set\-Cvt\-Old\-Center\-Coefficient (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-alpha2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_go_s_u_m_1_1_c_hypercube_a27859b27c8e541cd42ac0424d7117b88}
+
+
+Sets C\-V\-T paramter \#1. 
+
+\hypertarget{class_go_s_u_m_1_1_c_hypercube_a3c9ed7e8c464c78afc0eb4cf62438df9}{\index{Go\-S\-U\-M\-::\-C\-Hypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}!Set\-Cvt\-Points\-Size@{Set\-Cvt\-Points\-Size}}
+\index{Set\-Cvt\-Points\-Size@{Set\-Cvt\-Points\-Size}!GoSUM::CHypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}}
+\subsubsection[{Set\-Cvt\-Points\-Size}]{\setlength{\rightskip}{0pt plus 5cm}static void Go\-S\-U\-M\-::\-C\-Hypercube\-::\-Set\-Cvt\-Points\-Size (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-q}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_go_s_u_m_1_1_c_hypercube_a3c9ed7e8c464c78afc0eb4cf62438df9}
+
+
+Sets C\-V\-T points size. 
+
+\hypertarget{class_go_s_u_m_1_1_c_hypercube_a96309f61dce90f72da0b1ecc5c3d758b}{\index{Go\-S\-U\-M\-::\-C\-Hypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}!Set\-Type@{Set\-Type}}
+\index{Set\-Type@{Set\-Type}!GoSUM::CHypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}}
+\subsubsection[{Set\-Type}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Hypercube\-::\-Set\-Type (
+\begin{DoxyParamCaption}
+\item[{{\bf hctype}}]{\-\_\-etype}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_go_s_u_m_1_1_c_hypercube_a96309f61dce90f72da0b1ecc5c3d758b}
+
+
+Sets hypercube type. 
+
+\hypertarget{class_go_s_u_m_1_1_c_hypercube_a1c4d81419562b324b8c3486f36ef2033}{\index{Go\-S\-U\-M\-::\-C\-Hypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}!Set\-Voronoi\-Options@{Set\-Voronoi\-Options}}
+\index{Set\-Voronoi\-Options@{Set\-Voronoi\-Options}!GoSUM::CHypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}}
+\subsubsection[{Set\-Voronoi\-Options}]{\setlength{\rightskip}{0pt plus 5cm}static void Go\-S\-U\-M\-::\-C\-Hypercube\-::\-Set\-Voronoi\-Options (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-maxiter, }
+\item[{int}]{\-\_\-q, }
+\item[{double}]{\-\_\-alpha2, }
+\item[{double}]{\-\_\-beta2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_go_s_u_m_1_1_c_hypercube_a1c4d81419562b324b8c3486f36ef2033}
+
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-beta2} & Sets Voronoi options. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_go_s_u_m_1_1_c_hypercube_a6d05fe2a4610d87af24ec6b39b8e1025}{\index{Go\-S\-U\-M\-::\-C\-Hypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}!Type@{Type}}
+\index{Type@{Type}!GoSUM::CHypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}}
+\subsubsection[{Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Go\-S\-U\-M\-::\-C\-Hypercube\-::hctype} Go\-S\-U\-M\-::\-C\-Hypercube\-::\-Type (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{\-\_\-stype}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_go_s_u_m_1_1_c_hypercube_a6d05fe2a4610d87af24ec6b39b8e1025}
+
+
+Returns hypercube type enumerator from hypercube type name. 
+
+\hypertarget{class_go_s_u_m_1_1_c_hypercube_abc5b419f9502e45cb89812a08d8a41cc}{\index{Go\-S\-U\-M\-::\-C\-Hypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}!Type@{Type}}
+\index{Type@{Type}!GoSUM::CHypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}}
+\subsubsection[{Type}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf hctype} Go\-S\-U\-M\-::\-C\-Hypercube\-::\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_go_s_u_m_1_1_c_hypercube_abc5b419f9502e45cb89812a08d8a41cc}
+
+
+Returns hypercube type. 
+
+\hypertarget{class_go_s_u_m_1_1_c_hypercube_a1ba153b23eaf17f51cd0b3e85f2cc59d}{\index{Go\-S\-U\-M\-::\-C\-Hypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}!Voronoi\-Options@{Voronoi\-Options}}
+\index{Voronoi\-Options@{Voronoi\-Options}!GoSUM::CHypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}}
+\subsubsection[{Voronoi\-Options}]{\setlength{\rightskip}{0pt plus 5cm}static void Go\-S\-U\-M\-::\-C\-Hypercube\-::\-Voronoi\-Options (
+\begin{DoxyParamCaption}
+\item[{int \&}]{\-\_\-maxiter, }
+\item[{int \&}]{\-\_\-q, }
+\item[{double \&}]{\-\_\-alpha2, }
+\item[{double \&}]{\-\_\-beta2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_go_s_u_m_1_1_c_hypercube_a1ba153b23eaf17f51cd0b3e85f2cc59d}
+
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-beta2} & Returns Voronoi options. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_hypercube_ac98d07dd8f7b70e16ccb9a01abf56b9c}{\index{Go\-S\-U\-M\-::\-C\-Hypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}!boost\-::serialization\-::access@{boost\-::serialization\-::access}}
+\index{boost\-::serialization\-::access@{boost\-::serialization\-::access}!GoSUM::CHypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}}
+\subsubsection[{boost\-::serialization\-::access}]{\setlength{\rightskip}{0pt plus 5cm}friend class boost\-::serialization\-::access\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_go_s_u_m_1_1_c_hypercube_ac98d07dd8f7b70e16ccb9a01abf56b9c}
+
+
+Boost serialization. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_hypercube_a88f945378fe038456780cdc88aeaadd0}{\index{Go\-S\-U\-M\-::\-C\-Hypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}!alpha2@{alpha2}}
+\index{alpha2@{alpha2}!GoSUM::CHypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}}
+\subsubsection[{alpha2}]{\setlength{\rightskip}{0pt plus 5cm}double Go\-S\-U\-M\-::\-C\-Hypercube\-::alpha2 = 0.\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_hypercube_a88f945378fe038456780cdc88aeaadd0}
+\hypertarget{class_go_s_u_m_1_1_c_hypercube_a674776d76c1fd0d53a25975b057198f9}{\index{Go\-S\-U\-M\-::\-C\-Hypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}!beta2@{beta2}}
+\index{beta2@{beta2}!GoSUM::CHypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}}
+\subsubsection[{beta2}]{\setlength{\rightskip}{0pt plus 5cm}double Go\-S\-U\-M\-::\-C\-Hypercube\-::beta2 = 1.\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_hypercube_a674776d76c1fd0d53a25975b057198f9}
+Holds C\-V\-T parameters. \hypertarget{class_go_s_u_m_1_1_c_hypercube_a8f9d864e2940c4982480ea394931fcf5}{\index{Go\-S\-U\-M\-::\-C\-Hypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}!etype@{etype}}
+\index{etype@{etype}!GoSUM::CHypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}}
+\subsubsection[{etype}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Go\-S\-U\-M\-::\-C\-Hypercube\-::hctype} Go\-S\-U\-M\-::\-C\-Hypercube\-::etype = {\bf Go\-S\-U\-M\-::\-C\-Hypercube\-::dsample}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_hypercube_a8f9d864e2940c4982480ea394931fcf5}
+
+
+Holds hypercube type. 
+
+\hypertarget{class_go_s_u_m_1_1_c_hypercube_aae23731c5d5e5faf5881fc7c28542656}{\index{Go\-S\-U\-M\-::\-C\-Hypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}!generating\-Progressed@{generating\-Progressed}}
+\index{generating\-Progressed@{generating\-Progressed}!GoSUM::CHypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}}
+\subsubsection[{generating\-Progressed}]{\setlength{\rightskip}{0pt plus 5cm}boost\-::signal$<$void()$>$ Go\-S\-U\-M\-::\-C\-Hypercube\-::generating\-Progressed}}\label{class_go_s_u_m_1_1_c_hypercube_aae23731c5d5e5faf5881fc7c28542656}
+
+
+Signal for centralize progress. 
+
+\hypertarget{class_go_s_u_m_1_1_c_hypercube_a0e3ec089584a2c55fbc8db58b1e543ac}{\index{Go\-S\-U\-M\-::\-C\-Hypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}!maxiter@{maxiter}}
+\index{maxiter@{maxiter}!GoSUM::CHypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}}
+\subsubsection[{maxiter}]{\setlength{\rightskip}{0pt plus 5cm}int Go\-S\-U\-M\-::\-C\-Hypercube\-::maxiter = 10000\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_hypercube_a0e3ec089584a2c55fbc8db58b1e543ac}
+\hypertarget{class_go_s_u_m_1_1_c_hypercube_aecbeeb5c680a49beeebbc613242055d4}{\index{Go\-S\-U\-M\-::\-C\-Hypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}!q@{q}}
+\index{q@{q}!GoSUM::CHypercube@{Go\-S\-U\-M\-::\-C\-Hypercube}}
+\subsubsection[{q}]{\setlength{\rightskip}{0pt plus 5cm}int Go\-S\-U\-M\-::\-C\-Hypercube\-::q = 1\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_hypercube_aecbeeb5c680a49beeebbc613242055d4}
+
+
+Holds C\-V\-T parameters. 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Development/core/\hyperlink{_hypercube_8h}{Hypercube.\-h}\item 
+C\-:/\-Development/core/\hyperlink{_hypercube_8cpp}{Hypercube.\-cpp}\end{DoxyCompactItemize}

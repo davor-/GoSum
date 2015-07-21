@@ -1,0 +1,79 @@
+\hypertarget{class_c_m_a_d_s_evaluator}{\section{C\-M\-A\-D\-S\-Evaluator Class Reference}
+\label{class_c_m_a_d_s_evaluator}\index{C\-M\-A\-D\-S\-Evaluator@{C\-M\-A\-D\-S\-Evaluator}}
+}
+
+
+Subclass of the N\-O\-M\-A\-D\-::\-Evaluator class.  
+
+
+
+
+{\ttfamily \#include $<$M\-A\-D\-S\-Optimization.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_m_a_d_s_evaluator_a3ae7243b3f23a630859dcf372178557a}{C\-M\-A\-D\-S\-Evaluator} (const N\-O\-M\-A\-D\-::\-Parameters \&p, \hyperlink{class_c_optimization_problem}{C\-Optimization\-Problem} $\ast$\-\_\-p\-O\-P)
+\item 
+virtual \hyperlink{class_c_m_a_d_s_evaluator_a75bab21cf6a5fc296e6eb4cfdfb66060}{$\sim$\-C\-M\-A\-D\-S\-Evaluator} ()
+\item 
+virtual bool \hyperlink{class_c_m_a_d_s_evaluator_a5584e20930e48738e6473a2775202b33}{eval\-\_\-x} (N\-O\-M\-A\-D\-::\-Eval\-\_\-\-Point \&x, const N\-O\-M\-A\-D\-::\-Double \&h\-\_\-max, bool \&count\-\_\-eval) const 
+\begin{DoxyCompactList}\small\item\em Overload of the N\-O\-M\-A\-D\-::\-Evaluator evaluation member function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_optimization_problem}{C\-Optimization\-Problem} $\ast$ \hyperlink{class_c_m_a_d_s_evaluator_a49023f451dbaf2b13610074139184e82}{p\-O\-P}
+\begin{DoxyCompactList}\small\item\em Points to the optimization problem. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Subclass of the N\-O\-M\-A\-D\-::\-Evaluator class. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_m_a_d_s_evaluator_a3ae7243b3f23a630859dcf372178557a}{\index{C\-M\-A\-D\-S\-Evaluator@{C\-M\-A\-D\-S\-Evaluator}!C\-M\-A\-D\-S\-Evaluator@{C\-M\-A\-D\-S\-Evaluator}}
+\index{C\-M\-A\-D\-S\-Evaluator@{C\-M\-A\-D\-S\-Evaluator}!CMADSEvaluator@{C\-M\-A\-D\-S\-Evaluator}}
+\subsubsection[{C\-M\-A\-D\-S\-Evaluator}]{\setlength{\rightskip}{0pt plus 5cm}C\-M\-A\-D\-S\-Evaluator\-::\-C\-M\-A\-D\-S\-Evaluator (
+\begin{DoxyParamCaption}
+\item[{const N\-O\-M\-A\-D\-::\-Parameters \&}]{p, }
+\item[{{\bf C\-Optimization\-Problem} $\ast$}]{\-\_\-p\-O\-P}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_m_a_d_s_evaluator_a3ae7243b3f23a630859dcf372178557a}
+\hypertarget{class_c_m_a_d_s_evaluator_a75bab21cf6a5fc296e6eb4cfdfb66060}{\index{C\-M\-A\-D\-S\-Evaluator@{C\-M\-A\-D\-S\-Evaluator}!$\sim$\-C\-M\-A\-D\-S\-Evaluator@{$\sim$\-C\-M\-A\-D\-S\-Evaluator}}
+\index{$\sim$\-C\-M\-A\-D\-S\-Evaluator@{$\sim$\-C\-M\-A\-D\-S\-Evaluator}!CMADSEvaluator@{C\-M\-A\-D\-S\-Evaluator}}
+\subsubsection[{$\sim$\-C\-M\-A\-D\-S\-Evaluator}]{\setlength{\rightskip}{0pt plus 5cm}virtual C\-M\-A\-D\-S\-Evaluator\-::$\sim$\-C\-M\-A\-D\-S\-Evaluator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_m_a_d_s_evaluator_a75bab21cf6a5fc296e6eb4cfdfb66060}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_m_a_d_s_evaluator_a5584e20930e48738e6473a2775202b33}{\index{C\-M\-A\-D\-S\-Evaluator@{C\-M\-A\-D\-S\-Evaluator}!eval\-\_\-x@{eval\-\_\-x}}
+\index{eval\-\_\-x@{eval\-\_\-x}!CMADSEvaluator@{C\-M\-A\-D\-S\-Evaluator}}
+\subsubsection[{eval\-\_\-x}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-M\-A\-D\-S\-Evaluator\-::eval\-\_\-x (
+\begin{DoxyParamCaption}
+\item[{N\-O\-M\-A\-D\-::\-Eval\-\_\-\-Point \&}]{x, }
+\item[{const N\-O\-M\-A\-D\-::\-Double \&}]{h\-\_\-max, }
+\item[{bool \&}]{count\-\_\-eval}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_m_a_d_s_evaluator_a5584e20930e48738e6473a2775202b33}
+
+
+Overload of the N\-O\-M\-A\-D\-::\-Evaluator evaluation member function. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_m_a_d_s_evaluator_a49023f451dbaf2b13610074139184e82}{\index{C\-M\-A\-D\-S\-Evaluator@{C\-M\-A\-D\-S\-Evaluator}!p\-O\-P@{p\-O\-P}}
+\index{p\-O\-P@{p\-O\-P}!CMADSEvaluator@{C\-M\-A\-D\-S\-Evaluator}}
+\subsubsection[{p\-O\-P}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Optimization\-Problem}$\ast$ C\-M\-A\-D\-S\-Evaluator\-::p\-O\-P\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_c_m_a_d_s_evaluator_a49023f451dbaf2b13610074139184e82}
+
+
+Points to the optimization problem. 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Development/core/\hyperlink{_m_a_d_s_optimization_8h}{M\-A\-D\-S\-Optimization.\-h}\item 
+C\-:/\-Development/core/\hyperlink{_m_a_d_s_optimization_8cpp}{M\-A\-D\-S\-Optimization.\-cpp}\end{DoxyCompactItemize}

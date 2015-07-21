@@ -1,0 +1,157 @@
+\hypertarget{class_go_s_u_m_1_1_c_exe_mat_evaluator}{\section{Go\-S\-U\-M\-:\-:C\-Exe\-Mat\-Evaluator Class Reference}
+\label{class_go_s_u_m_1_1_c_exe_mat_evaluator}\index{Go\-S\-U\-M\-::\-C\-Exe\-Mat\-Evaluator@{Go\-S\-U\-M\-::\-C\-Exe\-Mat\-Evaluator}}
+}
+
+
+Class for the evaluator with Matlab .mat i/o and .exe.  
+
+
+
+
+{\ttfamily \#include $<$Original\-Model.\-h$>$}
+
+Inheritance diagram for Go\-S\-U\-M\-:\-:C\-Exe\-Mat\-Evaluator\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{class_go_s_u_m_1_1_c_exe_mat_evaluator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_go_s_u_m_1_1_c_exe_mat_evaluator_a567f837642d6c8cfe6797b9af99d7a8a}{C\-Exe\-Mat\-Evaluator} ()
+\item 
+\hyperlink{class_go_s_u_m_1_1_c_exe_mat_evaluator_a0accdf2e03193da831c6a6f1366d42e2}{C\-Exe\-Mat\-Evaluator} (const \hyperlink{class_go_s_u_m_1_1_c_input_parameters}{C\-Input\-Parameters} $\ast$\-\_\-p\-I\-P, \hyperlink{class_go_s_u_m_1_1_c_output_states}{C\-Output\-States} $\ast$\-\_\-p\-O\-S, int \-\_\-trd\-I)
+\item 
+virtual \hyperlink{class_go_s_u_m_1_1_c_exe_mat_evaluator_a734c6e6f58c93948045d5ff53fef8dc1}{$\sim$\-C\-Exe\-Mat\-Evaluator} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \hyperlink{class_go_s_u_m_1_1_c_exe_mat_evaluator_a2e5121b751aaeb6f5c805cfe0312c20d}{serialize} (Archive \&ar, const unsigned int version)
+\item 
+virtual void \hyperlink{class_go_s_u_m_1_1_c_exe_mat_evaluator_abf90e8ece5e782c8a60cbd0021e3dfa1}{write\-To} (std\-::string \-\_\-fname, const Array\-Xd \&\-\_\-\-X, std\-::string \-\_\-\-Xname)
+\item 
+virtual void \hyperlink{class_go_s_u_m_1_1_c_exe_mat_evaluator_ac47387e84bc69c1e39fbe43b15465473}{read\-From} (std\-::string \-\_\-fname, Array\-Xd \&\-\_\-\-Y, std\-::string \-\_\-\-Yname)
+\item 
+virtual int \hyperlink{class_go_s_u_m_1_1_c_exe_mat_evaluator_a84e80ccc1d62a41f3d7881e125bee446}{read\-Size\-From} (std\-::string \-\_\-fname, std\-::string \-\_\-\-Yname)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_m_a_t_l_a_b}{C\-M\-A\-T\-L\-A\-B} \hyperlink{class_go_s_u_m_1_1_c_exe_mat_evaluator_a23d92a4142a9809c0acd60dfbb33b629}{matlab}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_go_s_u_m_1_1_c_exe_mat_evaluator_ac98d07dd8f7b70e16ccb9a01abf56b9c}{boost\-::serialization\-::access}
+\begin{DoxyCompactList}\small\item\em Boost serialization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class for the evaluator with Matlab .mat i/o and .exe. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_exe_mat_evaluator_a567f837642d6c8cfe6797b9af99d7a8a}{\index{Go\-S\-U\-M\-::\-C\-Exe\-Mat\-Evaluator@{Go\-S\-U\-M\-::\-C\-Exe\-Mat\-Evaluator}!C\-Exe\-Mat\-Evaluator@{C\-Exe\-Mat\-Evaluator}}
+\index{C\-Exe\-Mat\-Evaluator@{C\-Exe\-Mat\-Evaluator}!GoSUM::CExeMatEvaluator@{Go\-S\-U\-M\-::\-C\-Exe\-Mat\-Evaluator}}
+\subsubsection[{C\-Exe\-Mat\-Evaluator}]{\setlength{\rightskip}{0pt plus 5cm}Go\-S\-U\-M\-::\-C\-Exe\-Mat\-Evaluator\-::\-C\-Exe\-Mat\-Evaluator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_exe_mat_evaluator_a567f837642d6c8cfe6797b9af99d7a8a}
+\hypertarget{class_go_s_u_m_1_1_c_exe_mat_evaluator_a0accdf2e03193da831c6a6f1366d42e2}{\index{Go\-S\-U\-M\-::\-C\-Exe\-Mat\-Evaluator@{Go\-S\-U\-M\-::\-C\-Exe\-Mat\-Evaluator}!C\-Exe\-Mat\-Evaluator@{C\-Exe\-Mat\-Evaluator}}
+\index{C\-Exe\-Mat\-Evaluator@{C\-Exe\-Mat\-Evaluator}!GoSUM::CExeMatEvaluator@{Go\-S\-U\-M\-::\-C\-Exe\-Mat\-Evaluator}}
+\subsubsection[{C\-Exe\-Mat\-Evaluator}]{\setlength{\rightskip}{0pt plus 5cm}Go\-S\-U\-M\-::\-C\-Exe\-Mat\-Evaluator\-::\-C\-Exe\-Mat\-Evaluator (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Input\-Parameters} $\ast$}]{\-\_\-p\-I\-P, }
+\item[{{\bf C\-Output\-States} $\ast$}]{\-\_\-p\-O\-S, }
+\item[{int}]{\-\_\-trd\-I}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_exe_mat_evaluator_a0accdf2e03193da831c6a6f1366d42e2}
+\hypertarget{class_go_s_u_m_1_1_c_exe_mat_evaluator_a734c6e6f58c93948045d5ff53fef8dc1}{\index{Go\-S\-U\-M\-::\-C\-Exe\-Mat\-Evaluator@{Go\-S\-U\-M\-::\-C\-Exe\-Mat\-Evaluator}!$\sim$\-C\-Exe\-Mat\-Evaluator@{$\sim$\-C\-Exe\-Mat\-Evaluator}}
+\index{$\sim$\-C\-Exe\-Mat\-Evaluator@{$\sim$\-C\-Exe\-Mat\-Evaluator}!GoSUM::CExeMatEvaluator@{Go\-S\-U\-M\-::\-C\-Exe\-Mat\-Evaluator}}
+\subsubsection[{$\sim$\-C\-Exe\-Mat\-Evaluator}]{\setlength{\rightskip}{0pt plus 5cm}virtual Go\-S\-U\-M\-::\-C\-Exe\-Mat\-Evaluator\-::$\sim$\-C\-Exe\-Mat\-Evaluator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_exe_mat_evaluator_a734c6e6f58c93948045d5ff53fef8dc1}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_exe_mat_evaluator_ac47387e84bc69c1e39fbe43b15465473}{\index{Go\-S\-U\-M\-::\-C\-Exe\-Mat\-Evaluator@{Go\-S\-U\-M\-::\-C\-Exe\-Mat\-Evaluator}!read\-From@{read\-From}}
+\index{read\-From@{read\-From}!GoSUM::CExeMatEvaluator@{Go\-S\-U\-M\-::\-C\-Exe\-Mat\-Evaluator}}
+\subsubsection[{read\-From}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Exe\-Mat\-Evaluator\-::read\-From (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{\-\_\-fname, }
+\item[{Array\-Xd \&}]{\-\_\-\-Y, }
+\item[{std\-::string}]{\-\_\-\-Yname}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_exe_mat_evaluator_ac47387e84bc69c1e39fbe43b15465473}
+
+
+Implements \hyperlink{class_go_s_u_m_1_1_c_exe_evaluator_af453aa942a20e6494a4cd7685ace1948}{Go\-S\-U\-M\-::\-C\-Exe\-Evaluator}.
+
+\hypertarget{class_go_s_u_m_1_1_c_exe_mat_evaluator_a84e80ccc1d62a41f3d7881e125bee446}{\index{Go\-S\-U\-M\-::\-C\-Exe\-Mat\-Evaluator@{Go\-S\-U\-M\-::\-C\-Exe\-Mat\-Evaluator}!read\-Size\-From@{read\-Size\-From}}
+\index{read\-Size\-From@{read\-Size\-From}!GoSUM::CExeMatEvaluator@{Go\-S\-U\-M\-::\-C\-Exe\-Mat\-Evaluator}}
+\subsubsection[{read\-Size\-From}]{\setlength{\rightskip}{0pt plus 5cm}int Go\-S\-U\-M\-::\-C\-Exe\-Mat\-Evaluator\-::read\-Size\-From (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{\-\_\-fname, }
+\item[{std\-::string}]{\-\_\-\-Yname}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_exe_mat_evaluator_a84e80ccc1d62a41f3d7881e125bee446}
+
+
+Implements \hyperlink{class_go_s_u_m_1_1_c_exe_evaluator_a1f7820ae9bd4795547dca1611769a182}{Go\-S\-U\-M\-::\-C\-Exe\-Evaluator}.
+
+\hypertarget{class_go_s_u_m_1_1_c_exe_mat_evaluator_a2e5121b751aaeb6f5c805cfe0312c20d}{\index{Go\-S\-U\-M\-::\-C\-Exe\-Mat\-Evaluator@{Go\-S\-U\-M\-::\-C\-Exe\-Mat\-Evaluator}!serialize@{serialize}}
+\index{serialize@{serialize}!GoSUM::CExeMatEvaluator@{Go\-S\-U\-M\-::\-C\-Exe\-Mat\-Evaluator}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Archive $>$ void Go\-S\-U\-M\-::\-C\-Exe\-Mat\-Evaluator\-::serialize (
+\begin{DoxyParamCaption}
+\item[{Archive \&}]{ar, }
+\item[{const unsigned int}]{version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_exe_mat_evaluator_a2e5121b751aaeb6f5c805cfe0312c20d}
+
+
+Reimplemented from \hyperlink{class_go_s_u_m_1_1_c_exe_evaluator_adccb3c9acae9f916d8be1a9720d5bcc1}{Go\-S\-U\-M\-::\-C\-Exe\-Evaluator}.
+
+
+
+Reimplemented in \hyperlink{class_go_s_u_m_1_1_c_matlab_shell_evaluator_af84e659441da0694bff64c2d955831b9}{Go\-S\-U\-M\-::\-C\-Matlab\-Shell\-Evaluator}.
+
+\hypertarget{class_go_s_u_m_1_1_c_exe_mat_evaluator_abf90e8ece5e782c8a60cbd0021e3dfa1}{\index{Go\-S\-U\-M\-::\-C\-Exe\-Mat\-Evaluator@{Go\-S\-U\-M\-::\-C\-Exe\-Mat\-Evaluator}!write\-To@{write\-To}}
+\index{write\-To@{write\-To}!GoSUM::CExeMatEvaluator@{Go\-S\-U\-M\-::\-C\-Exe\-Mat\-Evaluator}}
+\subsubsection[{write\-To}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Exe\-Mat\-Evaluator\-::write\-To (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{\-\_\-fname, }
+\item[{const Array\-Xd \&}]{\-\_\-\-X, }
+\item[{std\-::string}]{\-\_\-\-Xname}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_exe_mat_evaluator_abf90e8ece5e782c8a60cbd0021e3dfa1}
+
+
+Implements \hyperlink{class_go_s_u_m_1_1_c_exe_evaluator_acb14cd0bed268c9f34a0fef4f9d8deb6}{Go\-S\-U\-M\-::\-C\-Exe\-Evaluator}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_exe_mat_evaluator_ac98d07dd8f7b70e16ccb9a01abf56b9c}{\index{Go\-S\-U\-M\-::\-C\-Exe\-Mat\-Evaluator@{Go\-S\-U\-M\-::\-C\-Exe\-Mat\-Evaluator}!boost\-::serialization\-::access@{boost\-::serialization\-::access}}
+\index{boost\-::serialization\-::access@{boost\-::serialization\-::access}!GoSUM::CExeMatEvaluator@{Go\-S\-U\-M\-::\-C\-Exe\-Mat\-Evaluator}}
+\subsubsection[{boost\-::serialization\-::access}]{\setlength{\rightskip}{0pt plus 5cm}friend class boost\-::serialization\-::access\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_go_s_u_m_1_1_c_exe_mat_evaluator_ac98d07dd8f7b70e16ccb9a01abf56b9c}
+
+
+Boost serialization. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_exe_mat_evaluator_a23d92a4142a9809c0acd60dfbb33b629}{\index{Go\-S\-U\-M\-::\-C\-Exe\-Mat\-Evaluator@{Go\-S\-U\-M\-::\-C\-Exe\-Mat\-Evaluator}!matlab@{matlab}}
+\index{matlab@{matlab}!GoSUM::CExeMatEvaluator@{Go\-S\-U\-M\-::\-C\-Exe\-Mat\-Evaluator}}
+\subsubsection[{matlab}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-M\-A\-T\-L\-A\-B} Go\-S\-U\-M\-::\-C\-Exe\-Mat\-Evaluator\-::matlab\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_exe_mat_evaluator_a23d92a4142a9809c0acd60dfbb33b629}
+Object for matlab library functions. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Development/core/\hyperlink{_original_model_8h}{Original\-Model.\-h}\item 
+C\-:/\-Development/core/\hyperlink{_original_model_8cpp}{Original\-Model.\-cpp}\end{DoxyCompactItemize}

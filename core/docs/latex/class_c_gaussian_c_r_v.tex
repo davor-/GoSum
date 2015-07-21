@@ -1,0 +1,362 @@
+\hypertarget{class_c_gaussian_c_r_v}{\section{C\-Gaussian\-C\-R\-V Class Reference}
+\label{class_c_gaussian_c_r_v}\index{C\-Gaussian\-C\-R\-V@{C\-Gaussian\-C\-R\-V}}
+}
+
+
+Class for Gaussian continuous random variables derived from continuous random variables.  
+
+
+
+
+{\ttfamily \#include $<$Random\-Variable.\-h$>$}
+
+Inheritance diagram for C\-Gaussian\-C\-R\-V\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_c_gaussian_c_r_v}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_gaussian_c_r_v_ad0467f60ab0086154121f023a37c4db2}{C\-Gaussian\-C\-R\-V} ()
+\item 
+virtual \hyperlink{class_c_gaussian_c_r_v_ad5bd8a3b2e6c4a811315652f0d98e9c7}{$\sim$\-C\-Gaussian\-C\-R\-V} ()
+\item 
+\hyperlink{class_c_gaussian_c_r_v_a888a11c81805e8fecad9887e4f75bca7}{C\-Gaussian\-C\-R\-V} (const \hyperlink{class_c_gaussian_c_r_v}{C\-Gaussian\-C\-R\-V} \&O)
+\item 
+virtual void \hyperlink{class_c_gaussian_c_r_v_a450fc3a79bfc1646ae43bf1ba6d23133}{set\-Distribution} (double \-\_\-mu, double \-\_\-sigma)
+\begin{DoxyCompactList}\small\item\em Set distribution parameters. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_gaussian_c_r_v_a48de04775bfdf8d0e2c5a2aa73eb500e}{set\-Distribution} (const \hyperlink{class_c_continuous_sample}{C\-Continuous\-Sample} \&\-\_\-a\-S)
+\begin{DoxyCompactList}\small\item\em Set distribution parameters from sample empirical parameters. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_c_gaussian_c_r_v_a14ac3654b0527aa3354d60d120abd1cb}{probability} (double \-\_\-x) const 
+\begin{DoxyCompactList}\small\item\em Function that returns P\-D\-F. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_c_gaussian_c_r_v_a226e37ee1c3a14d9f0dbf691267e27a1}{cumulative} (double \-\_\-x) const 
+\begin{DoxyCompactList}\small\item\em Function that returns C\-D\-F. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_c_gaussian_c_r_v_a89ab0f2b91ef9bb45f29bdf8f851003e}{min\-Value} () const 
+\begin{DoxyCompactList}\small\item\em Returns minimal value of the random variable. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_c_gaussian_c_r_v_a0b51f23a85bd3ab3e78556e7db197c49}{max\-Value} () const 
+\begin{DoxyCompactList}\small\item\em Returns maximal value of the random variable. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_c_gaussian_c_r_v_a20650fed2a45e12bfc72a98efb6c8e31}{expected\-Value} () const 
+\begin{DoxyCompactList}\small\item\em Returns expected value of the random variable. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_c_random_variable_a80d2a87c43847274138b51f7d713d7f1}{distributiontype} \hyperlink{class_c_gaussian_c_r_v_a0d0141959e157a70ddf385f352783880}{distribution\-Type} () const 
+\begin{DoxyCompactList}\small\item\em Returns enum type of the random variable distribution. \end{DoxyCompactList}\item 
+virtual std\-::string \hyperlink{class_c_gaussian_c_r_v_ab13ee0ed20d5cf3cbd2a78747478cb7a}{distribution\-Name} () const 
+\begin{DoxyCompactList}\small\item\em Returns name of the random variable distribution. \end{DoxyCompactList}\item 
+virtual Array\-Xd \hyperlink{class_c_gaussian_c_r_v_ad270874d334fca26179df8e1dfa9285b}{export\-Domain} () const 
+\begin{DoxyCompactList}\small\item\em Exports domain of the random variable. \end{DoxyCompactList}\item 
+double \hyperlink{class_c_gaussian_c_r_v_a69d0fb4ea3de3663d40790bad062f59b}{mean} () const 
+\begin{DoxyCompactList}\small\item\em Returns mean of Gaussian random variable. \end{DoxyCompactList}\item 
+double \hyperlink{class_c_gaussian_c_r_v_aed32c4b96a9f3d99474b6e7b7ab5a308}{standard\-Deviation} () const 
+\begin{DoxyCompactList}\small\item\em Returns standard deviation of Gaussian random variable. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_gaussian_c_r_v_a2c5c76ade927d008b0cd76529ecb2b13}{set\-Mean} (double \-\_\-mu)
+\begin{DoxyCompactList}\small\item\em Sets mean of Gaussian random variable. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_gaussian_c_r_v_a24eac186e80bae2c940d16759318944f}{set\-Standard\-Deviation} (double \-\_\-sigma)
+\begin{DoxyCompactList}\small\item\em Sets standard deviation of Gaussian random variable. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_c_gaussian_c_r_v_a33c7bb8ec0a32829781329d57afb7b0c}{variance} () const 
+\begin{DoxyCompactList}\small\item\em Returns variance of the random variable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual double \hyperlink{class_c_gaussian_c_r_v_a1916b8e698cb646671492e3dd6df35d8}{do\-Quantile} (double \-\_\-p) const 
+\begin{DoxyCompactList}\small\item\em Quantile, formula implementation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \hyperlink{class_c_gaussian_c_r_v_affecbdbf14e499a8c7777979181b2008}{serialize} (Archive \&ar, const unsigned int version)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{class_c_gaussian_c_r_v_a513c769a9aa18c47a07713f50d1a0fd8}{mu}
+\item 
+double \hyperlink{class_c_gaussian_c_r_v_a52b3c6dc416103587cfe07ffb7a914bd}{sigma}
+\item 
+double \hyperlink{class_c_gaussian_c_r_v_aa6e20834bdd6a1e47bdb5b39d8a2e23f}{sigma2}
+\item 
+double \hyperlink{class_c_gaussian_c_r_v_a8959054f1098f9254c75d736245bb60b}{sigmasqrt2}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_c_gaussian_c_r_v_ac98d07dd8f7b70e16ccb9a01abf56b9c}{boost\-::serialization\-::access}
+\begin{DoxyCompactList}\small\item\em Boost serialization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class for Gaussian continuous random variables derived from continuous random variables. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_gaussian_c_r_v_ad0467f60ab0086154121f023a37c4db2}{\index{C\-Gaussian\-C\-R\-V@{C\-Gaussian\-C\-R\-V}!C\-Gaussian\-C\-R\-V@{C\-Gaussian\-C\-R\-V}}
+\index{C\-Gaussian\-C\-R\-V@{C\-Gaussian\-C\-R\-V}!CGaussianCRV@{C\-Gaussian\-C\-R\-V}}
+\subsubsection[{C\-Gaussian\-C\-R\-V}]{\setlength{\rightskip}{0pt plus 5cm}C\-Gaussian\-C\-R\-V\-::\-C\-Gaussian\-C\-R\-V (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_gaussian_c_r_v_ad0467f60ab0086154121f023a37c4db2}
+\hypertarget{class_c_gaussian_c_r_v_ad5bd8a3b2e6c4a811315652f0d98e9c7}{\index{C\-Gaussian\-C\-R\-V@{C\-Gaussian\-C\-R\-V}!$\sim$\-C\-Gaussian\-C\-R\-V@{$\sim$\-C\-Gaussian\-C\-R\-V}}
+\index{$\sim$\-C\-Gaussian\-C\-R\-V@{$\sim$\-C\-Gaussian\-C\-R\-V}!CGaussianCRV@{C\-Gaussian\-C\-R\-V}}
+\subsubsection[{$\sim$\-C\-Gaussian\-C\-R\-V}]{\setlength{\rightskip}{0pt plus 5cm}virtual C\-Gaussian\-C\-R\-V\-::$\sim$\-C\-Gaussian\-C\-R\-V (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_gaussian_c_r_v_ad5bd8a3b2e6c4a811315652f0d98e9c7}
+\hypertarget{class_c_gaussian_c_r_v_a888a11c81805e8fecad9887e4f75bca7}{\index{C\-Gaussian\-C\-R\-V@{C\-Gaussian\-C\-R\-V}!C\-Gaussian\-C\-R\-V@{C\-Gaussian\-C\-R\-V}}
+\index{C\-Gaussian\-C\-R\-V@{C\-Gaussian\-C\-R\-V}!CGaussianCRV@{C\-Gaussian\-C\-R\-V}}
+\subsubsection[{C\-Gaussian\-C\-R\-V}]{\setlength{\rightskip}{0pt plus 5cm}C\-Gaussian\-C\-R\-V\-::\-C\-Gaussian\-C\-R\-V (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Gaussian\-C\-R\-V} \&}]{O}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_gaussian_c_r_v_a888a11c81805e8fecad9887e4f75bca7}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_gaussian_c_r_v_a226e37ee1c3a14d9f0dbf691267e27a1}{\index{C\-Gaussian\-C\-R\-V@{C\-Gaussian\-C\-R\-V}!cumulative@{cumulative}}
+\index{cumulative@{cumulative}!CGaussianCRV@{C\-Gaussian\-C\-R\-V}}
+\subsubsection[{cumulative}]{\setlength{\rightskip}{0pt plus 5cm}virtual double C\-Gaussian\-C\-R\-V\-::cumulative (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-x}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_gaussian_c_r_v_a226e37ee1c3a14d9f0dbf691267e27a1}
+
+
+Function that returns C\-D\-F. 
+
+\hypertarget{class_c_gaussian_c_r_v_ab13ee0ed20d5cf3cbd2a78747478cb7a}{\index{C\-Gaussian\-C\-R\-V@{C\-Gaussian\-C\-R\-V}!distribution\-Name@{distribution\-Name}}
+\index{distribution\-Name@{distribution\-Name}!CGaussianCRV@{C\-Gaussian\-C\-R\-V}}
+\subsubsection[{distribution\-Name}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\-::string C\-Gaussian\-C\-R\-V\-::distribution\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_gaussian_c_r_v_ab13ee0ed20d5cf3cbd2a78747478cb7a}
+
+
+Returns name of the random variable distribution. 
+
+
+
+Implements \hyperlink{class_c_random_variable_a4b33eef7c56f9f1a83af01fa8ef2502b}{C\-Random\-Variable}.
+
+\hypertarget{class_c_gaussian_c_r_v_a0d0141959e157a70ddf385f352783880}{\index{C\-Gaussian\-C\-R\-V@{C\-Gaussian\-C\-R\-V}!distribution\-Type@{distribution\-Type}}
+\index{distribution\-Type@{distribution\-Type}!CGaussianCRV@{C\-Gaussian\-C\-R\-V}}
+\subsubsection[{distribution\-Type}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf distributiontype} C\-Gaussian\-C\-R\-V\-::distribution\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_gaussian_c_r_v_a0d0141959e157a70ddf385f352783880}
+
+
+Returns enum type of the random variable distribution. 
+
+
+
+Implements \hyperlink{class_c_random_variable_a3b30589d41f4dd200bd40c8273cac2cd}{C\-Random\-Variable}.
+
+\hypertarget{class_c_gaussian_c_r_v_a1916b8e698cb646671492e3dd6df35d8}{\index{C\-Gaussian\-C\-R\-V@{C\-Gaussian\-C\-R\-V}!do\-Quantile@{do\-Quantile}}
+\index{do\-Quantile@{do\-Quantile}!CGaussianCRV@{C\-Gaussian\-C\-R\-V}}
+\subsubsection[{do\-Quantile}]{\setlength{\rightskip}{0pt plus 5cm}virtual double C\-Gaussian\-C\-R\-V\-::do\-Quantile (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-p}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_c_gaussian_c_r_v_a1916b8e698cb646671492e3dd6df35d8}
+
+
+Quantile, formula implementation. 
+
+
+
+Implements \hyperlink{class_c_random_variable_a552ab36c8144d7154cbe3cd363eee65b}{C\-Random\-Variable}.
+
+\hypertarget{class_c_gaussian_c_r_v_a20650fed2a45e12bfc72a98efb6c8e31}{\index{C\-Gaussian\-C\-R\-V@{C\-Gaussian\-C\-R\-V}!expected\-Value@{expected\-Value}}
+\index{expected\-Value@{expected\-Value}!CGaussianCRV@{C\-Gaussian\-C\-R\-V}}
+\subsubsection[{expected\-Value}]{\setlength{\rightskip}{0pt plus 5cm}virtual double C\-Gaussian\-C\-R\-V\-::expected\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_gaussian_c_r_v_a20650fed2a45e12bfc72a98efb6c8e31}
+
+
+Returns expected value of the random variable. 
+
+
+
+Implements \hyperlink{class_c_random_variable_a6e5490d17f2b6abcf9922c8b1bd6d4ed}{C\-Random\-Variable}.
+
+\hypertarget{class_c_gaussian_c_r_v_ad270874d334fca26179df8e1dfa9285b}{\index{C\-Gaussian\-C\-R\-V@{C\-Gaussian\-C\-R\-V}!export\-Domain@{export\-Domain}}
+\index{export\-Domain@{export\-Domain}!CGaussianCRV@{C\-Gaussian\-C\-R\-V}}
+\subsubsection[{export\-Domain}]{\setlength{\rightskip}{0pt plus 5cm}Array\-Xd C\-Gaussian\-C\-R\-V\-::export\-Domain (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_gaussian_c_r_v_ad270874d334fca26179df8e1dfa9285b}
+
+
+Exports domain of the random variable. 
+
+
+
+Implements \hyperlink{class_t_random_variable_a37fc52d5fa37493a353887242d279a27}{T\-Random\-Variable$<$ t, T $>$}.
+
+\hypertarget{class_c_gaussian_c_r_v_a0b51f23a85bd3ab3e78556e7db197c49}{\index{C\-Gaussian\-C\-R\-V@{C\-Gaussian\-C\-R\-V}!max\-Value@{max\-Value}}
+\index{max\-Value@{max\-Value}!CGaussianCRV@{C\-Gaussian\-C\-R\-V}}
+\subsubsection[{max\-Value}]{\setlength{\rightskip}{0pt plus 5cm}virtual double C\-Gaussian\-C\-R\-V\-::max\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_gaussian_c_r_v_a0b51f23a85bd3ab3e78556e7db197c49}
+
+
+Returns maximal value of the random variable. 
+
+
+
+Implements \hyperlink{class_c_random_variable_a48a5e98363d866f1f46568ed658479ad}{C\-Random\-Variable}.
+
+\hypertarget{class_c_gaussian_c_r_v_a69d0fb4ea3de3663d40790bad062f59b}{\index{C\-Gaussian\-C\-R\-V@{C\-Gaussian\-C\-R\-V}!mean@{mean}}
+\index{mean@{mean}!CGaussianCRV@{C\-Gaussian\-C\-R\-V}}
+\subsubsection[{mean}]{\setlength{\rightskip}{0pt plus 5cm}double C\-Gaussian\-C\-R\-V\-::mean (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_gaussian_c_r_v_a69d0fb4ea3de3663d40790bad062f59b}
+
+
+Returns mean of Gaussian random variable. 
+
+\hypertarget{class_c_gaussian_c_r_v_a89ab0f2b91ef9bb45f29bdf8f851003e}{\index{C\-Gaussian\-C\-R\-V@{C\-Gaussian\-C\-R\-V}!min\-Value@{min\-Value}}
+\index{min\-Value@{min\-Value}!CGaussianCRV@{C\-Gaussian\-C\-R\-V}}
+\subsubsection[{min\-Value}]{\setlength{\rightskip}{0pt plus 5cm}virtual double C\-Gaussian\-C\-R\-V\-::min\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_gaussian_c_r_v_a89ab0f2b91ef9bb45f29bdf8f851003e}
+
+
+Returns minimal value of the random variable. 
+
+
+
+Implements \hyperlink{class_c_random_variable_a233ddd2eedb51b09a04a8c330646f356}{C\-Random\-Variable}.
+
+\hypertarget{class_c_gaussian_c_r_v_a14ac3654b0527aa3354d60d120abd1cb}{\index{C\-Gaussian\-C\-R\-V@{C\-Gaussian\-C\-R\-V}!probability@{probability}}
+\index{probability@{probability}!CGaussianCRV@{C\-Gaussian\-C\-R\-V}}
+\subsubsection[{probability}]{\setlength{\rightskip}{0pt plus 5cm}virtual double C\-Gaussian\-C\-R\-V\-::probability (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-x}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_gaussian_c_r_v_a14ac3654b0527aa3354d60d120abd1cb}
+
+
+Function that returns P\-D\-F. 
+
+\hypertarget{class_c_gaussian_c_r_v_affecbdbf14e499a8c7777979181b2008}{\index{C\-Gaussian\-C\-R\-V@{C\-Gaussian\-C\-R\-V}!serialize@{serialize}}
+\index{serialize@{serialize}!CGaussianCRV@{C\-Gaussian\-C\-R\-V}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Archive $>$ void C\-Gaussian\-C\-R\-V\-::serialize (
+\begin{DoxyParamCaption}
+\item[{Archive \&}]{ar, }
+\item[{const unsigned int}]{version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_gaussian_c_r_v_affecbdbf14e499a8c7777979181b2008}
+\hypertarget{class_c_gaussian_c_r_v_a450fc3a79bfc1646ae43bf1ba6d23133}{\index{C\-Gaussian\-C\-R\-V@{C\-Gaussian\-C\-R\-V}!set\-Distribution@{set\-Distribution}}
+\index{set\-Distribution@{set\-Distribution}!CGaussianCRV@{C\-Gaussian\-C\-R\-V}}
+\subsubsection[{set\-Distribution}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Gaussian\-C\-R\-V\-::set\-Distribution (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-mu, }
+\item[{double}]{\-\_\-sigma}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_gaussian_c_r_v_a450fc3a79bfc1646ae43bf1ba6d23133}
+
+
+Set distribution parameters. 
+
+\hypertarget{class_c_gaussian_c_r_v_a48de04775bfdf8d0e2c5a2aa73eb500e}{\index{C\-Gaussian\-C\-R\-V@{C\-Gaussian\-C\-R\-V}!set\-Distribution@{set\-Distribution}}
+\index{set\-Distribution@{set\-Distribution}!CGaussianCRV@{C\-Gaussian\-C\-R\-V}}
+\subsubsection[{set\-Distribution}]{\setlength{\rightskip}{0pt plus 5cm}virtual void C\-Gaussian\-C\-R\-V\-::set\-Distribution (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Continuous\-Sample} \&}]{\-\_\-a\-S}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_gaussian_c_r_v_a48de04775bfdf8d0e2c5a2aa73eb500e}
+
+
+Set distribution parameters from sample empirical parameters. 
+
+\hypertarget{class_c_gaussian_c_r_v_a2c5c76ade927d008b0cd76529ecb2b13}{\index{C\-Gaussian\-C\-R\-V@{C\-Gaussian\-C\-R\-V}!set\-Mean@{set\-Mean}}
+\index{set\-Mean@{set\-Mean}!CGaussianCRV@{C\-Gaussian\-C\-R\-V}}
+\subsubsection[{set\-Mean}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Gaussian\-C\-R\-V\-::set\-Mean (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-mu}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_gaussian_c_r_v_a2c5c76ade927d008b0cd76529ecb2b13}
+
+
+Sets mean of Gaussian random variable. 
+
+\hypertarget{class_c_gaussian_c_r_v_a24eac186e80bae2c940d16759318944f}{\index{C\-Gaussian\-C\-R\-V@{C\-Gaussian\-C\-R\-V}!set\-Standard\-Deviation@{set\-Standard\-Deviation}}
+\index{set\-Standard\-Deviation@{set\-Standard\-Deviation}!CGaussianCRV@{C\-Gaussian\-C\-R\-V}}
+\subsubsection[{set\-Standard\-Deviation}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Gaussian\-C\-R\-V\-::set\-Standard\-Deviation (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-sigma}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_gaussian_c_r_v_a24eac186e80bae2c940d16759318944f}
+
+
+Sets standard deviation of Gaussian random variable. 
+
+\hypertarget{class_c_gaussian_c_r_v_aed32c4b96a9f3d99474b6e7b7ab5a308}{\index{C\-Gaussian\-C\-R\-V@{C\-Gaussian\-C\-R\-V}!standard\-Deviation@{standard\-Deviation}}
+\index{standard\-Deviation@{standard\-Deviation}!CGaussianCRV@{C\-Gaussian\-C\-R\-V}}
+\subsubsection[{standard\-Deviation}]{\setlength{\rightskip}{0pt plus 5cm}double C\-Gaussian\-C\-R\-V\-::standard\-Deviation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_gaussian_c_r_v_aed32c4b96a9f3d99474b6e7b7ab5a308}
+
+
+Returns standard deviation of Gaussian random variable. 
+
+\hypertarget{class_c_gaussian_c_r_v_a33c7bb8ec0a32829781329d57afb7b0c}{\index{C\-Gaussian\-C\-R\-V@{C\-Gaussian\-C\-R\-V}!variance@{variance}}
+\index{variance@{variance}!CGaussianCRV@{C\-Gaussian\-C\-R\-V}}
+\subsubsection[{variance}]{\setlength{\rightskip}{0pt plus 5cm}virtual double C\-Gaussian\-C\-R\-V\-::variance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_gaussian_c_r_v_a33c7bb8ec0a32829781329d57afb7b0c}
+
+
+Returns variance of the random variable. 
+
+
+
+Implements \hyperlink{class_c_random_variable_a3b0b87c4aab74c0406cd8321b8b96747}{C\-Random\-Variable}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_c_gaussian_c_r_v_ac98d07dd8f7b70e16ccb9a01abf56b9c}{\index{C\-Gaussian\-C\-R\-V@{C\-Gaussian\-C\-R\-V}!boost\-::serialization\-::access@{boost\-::serialization\-::access}}
+\index{boost\-::serialization\-::access@{boost\-::serialization\-::access}!CGaussianCRV@{C\-Gaussian\-C\-R\-V}}
+\subsubsection[{boost\-::serialization\-::access}]{\setlength{\rightskip}{0pt plus 5cm}friend class boost\-::serialization\-::access\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_c_gaussian_c_r_v_ac98d07dd8f7b70e16ccb9a01abf56b9c}
+
+
+Boost serialization. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_gaussian_c_r_v_a513c769a9aa18c47a07713f50d1a0fd8}{\index{C\-Gaussian\-C\-R\-V@{C\-Gaussian\-C\-R\-V}!mu@{mu}}
+\index{mu@{mu}!CGaussianCRV@{C\-Gaussian\-C\-R\-V}}
+\subsubsection[{mu}]{\setlength{\rightskip}{0pt plus 5cm}double C\-Gaussian\-C\-R\-V\-::mu\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_gaussian_c_r_v_a513c769a9aa18c47a07713f50d1a0fd8}
+\hypertarget{class_c_gaussian_c_r_v_a52b3c6dc416103587cfe07ffb7a914bd}{\index{C\-Gaussian\-C\-R\-V@{C\-Gaussian\-C\-R\-V}!sigma@{sigma}}
+\index{sigma@{sigma}!CGaussianCRV@{C\-Gaussian\-C\-R\-V}}
+\subsubsection[{sigma}]{\setlength{\rightskip}{0pt plus 5cm}double C\-Gaussian\-C\-R\-V\-::sigma\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_gaussian_c_r_v_a52b3c6dc416103587cfe07ffb7a914bd}
+\hypertarget{class_c_gaussian_c_r_v_aa6e20834bdd6a1e47bdb5b39d8a2e23f}{\index{C\-Gaussian\-C\-R\-V@{C\-Gaussian\-C\-R\-V}!sigma2@{sigma2}}
+\index{sigma2@{sigma2}!CGaussianCRV@{C\-Gaussian\-C\-R\-V}}
+\subsubsection[{sigma2}]{\setlength{\rightskip}{0pt plus 5cm}double C\-Gaussian\-C\-R\-V\-::sigma2\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_gaussian_c_r_v_aa6e20834bdd6a1e47bdb5b39d8a2e23f}
+\hypertarget{class_c_gaussian_c_r_v_a8959054f1098f9254c75d736245bb60b}{\index{C\-Gaussian\-C\-R\-V@{C\-Gaussian\-C\-R\-V}!sigmasqrt2@{sigmasqrt2}}
+\index{sigmasqrt2@{sigmasqrt2}!CGaussianCRV@{C\-Gaussian\-C\-R\-V}}
+\subsubsection[{sigmasqrt2}]{\setlength{\rightskip}{0pt plus 5cm}double C\-Gaussian\-C\-R\-V\-::sigmasqrt2\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_gaussian_c_r_v_a8959054f1098f9254c75d736245bb60b}
+Distribution parameters\-: mean (mu) and standard deviation (sigma). 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Development/core/\hyperlink{_random_variable_8h}{Random\-Variable.\-h}\item 
+C\-:/\-Development/core/\hyperlink{_random_variable_8cpp}{Random\-Variable.\-cpp}\end{DoxyCompactItemize}

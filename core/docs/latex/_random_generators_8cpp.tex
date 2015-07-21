@@ -1,0 +1,145 @@
+\hypertarget{_random_generators_8cpp}{\section{C\-:/\-Development/core/\-Random\-Generators.cpp File Reference}
+\label{_random_generators_8cpp}\index{C\-:/\-Development/core/\-Random\-Generators.\-cpp@{C\-:/\-Development/core/\-Random\-Generators.\-cpp}}
+}
+{\ttfamily \#include \char`\"{}Random\-Generators.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_random_generators_8cpp_ae4b0efde4fa4613b407716d265d19b0a}{I\-A}~16807\-L
+\item 
+\#define \hyperlink{_random_generators_8cpp_a51c0dfe766601d31e907fceae818a7ca}{I\-M}~2147483647\-L
+\item 
+\#define \hyperlink{_random_generators_8cpp_ad301e6a88b1c01108f4867f2ea6f683c}{A\-M}~(1.\-0/\hyperlink{_random_generators_8cpp_a51c0dfe766601d31e907fceae818a7ca}{I\-M})
+\item 
+\#define \hyperlink{_random_generators_8cpp_ab7c5f3342853af6bb48d0ca00b05efbe}{I\-Q}~127773\-L
+\item 
+\#define \hyperlink{_random_generators_8cpp_a68e22635ff207d8ca10459833856bd75}{I\-R}~2836\-L
+\item 
+\#define \hyperlink{_random_generators_8cpp_a0e93cfb2d62849853fd34957ba6e6fdc}{N\-T\-A\-B}~32
+\item 
+\#define \hyperlink{_random_generators_8cpp_a62339d74dd5d9d00480e1a288cf88fe8}{N\-D\-I\-V}~(1+(\hyperlink{_random_generators_8cpp_a51c0dfe766601d31e907fceae818a7ca}{I\-M}-\/1)/\hyperlink{_random_generators_8h_a0e93cfb2d62849853fd34957ba6e6fdc}{N\-T\-A\-B})
+\item 
+\#define \hyperlink{_random_generators_8cpp_a6ebf6899d6c1c8b7b9d09be872c05aae}{E\-P\-S}~1.\-2e-\/7
+\item 
+\#define \hyperlink{_random_generators_8cpp_aa7436c9270ffb06f8c1eae8d2e605cec}{R\-N\-M\-X}~(1.\-0-\/\hyperlink{_random_generators_8cpp_a6ebf6899d6c1c8b7b9d09be872c05aae}{E\-P\-S})
+\item 
+\#define \hyperlink{_random_generators_8cpp_a78325bdf48423acef7c012567628b391}{I\-M1}~2147483563\-L
+\item 
+\#define \hyperlink{_random_generators_8cpp_ad8c519de7e5de4ae35344ddcf21fd062}{I\-M2}~2147483399\-L
+\item 
+\#define \hyperlink{_random_generators_8cpp_ad301e6a88b1c01108f4867f2ea6f683c}{A\-M}~(1.\-0/\hyperlink{_random_generators_8cpp_a78325bdf48423acef7c012567628b391}{I\-M1})
+\item 
+\#define \hyperlink{_random_generators_8cpp_a87a6e0054f9d827c979c43aa0d5e621a}{I\-M\-M1}~(\hyperlink{_random_generators_8cpp_a78325bdf48423acef7c012567628b391}{I\-M1}-\/1)
+\item 
+\#define \hyperlink{_random_generators_8cpp_a6ef2749dca39c605c3d033f788afe6e3}{I\-A1}~40014\-L
+\item 
+\#define \hyperlink{_random_generators_8cpp_a372a58d7e9e25912fd79e7afaa06cc7a}{I\-A2}~40692\-L
+\item 
+\#define \hyperlink{_random_generators_8cpp_a9afa86ff22da69bda72fe271ae71ad46}{I\-Q1}~53668\-L
+\item 
+\#define \hyperlink{_random_generators_8cpp_abae040385946a6acdf5e10d2efd86f3d}{I\-Q2}~52774\-L
+\item 
+\#define \hyperlink{_random_generators_8cpp_a7b2b32709f9770a283701ffcf3723497}{I\-R1}~12211\-L
+\item 
+\#define \hyperlink{_random_generators_8cpp_a5a08e4f5cb3582e623cc14a6c92d48de}{I\-R2}~3791
+\item 
+\#define \hyperlink{_random_generators_8cpp_a0e93cfb2d62849853fd34957ba6e6fdc}{N\-T\-A\-B}~32
+\item 
+\#define \hyperlink{_random_generators_8cpp_a62339d74dd5d9d00480e1a288cf88fe8}{N\-D\-I\-V}~(1+\hyperlink{_random_generators_8cpp_a87a6e0054f9d827c979c43aa0d5e621a}{I\-M\-M1}/\hyperlink{_random_generators_8h_a0e93cfb2d62849853fd34957ba6e6fdc}{N\-T\-A\-B})
+\item 
+\#define \hyperlink{_random_generators_8cpp_a6ebf6899d6c1c8b7b9d09be872c05aae}{E\-P\-S}~1.\-2e-\/7
+\item 
+\#define \hyperlink{_random_generators_8cpp_aa7436c9270ffb06f8c1eae8d2e605cec}{R\-N\-M\-X}~(1.\-0-\/\hyperlink{_random_generators_8cpp_a6ebf6899d6c1c8b7b9d09be872c05aae}{E\-P\-S})
+\item 
+\#define \hyperlink{_random_generators_8cpp_a31be5e3096afa10fc67bd629dd9332e7}{M\-B\-I\-G}~1000000000
+\item 
+\#define \hyperlink{_random_generators_8cpp_aa0e8039431bb68581133ef4c1dbbe71d}{M\-S\-E\-E\-D}~161803398
+\item 
+\#define \hyperlink{_random_generators_8cpp_a8dbc2223b1260b0fb5ab3d57bec0f74d}{M\-Z}~0
+\item 
+\#define \hyperlink{_random_generators_8cpp_a8c3c7226e23b36189d1ec6b7d3504499}{F\-A\-C}~(1.\-0/\hyperlink{_random_generators_8cpp_a31be5e3096afa10fc67bd629dd9332e7}{M\-B\-I\-G})
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_random_generators_8cpp_ad301e6a88b1c01108f4867f2ea6f683c}{\index{Random\-Generators.\-cpp@{Random\-Generators.\-cpp}!A\-M@{A\-M}}
+\index{A\-M@{A\-M}!RandomGenerators.cpp@{Random\-Generators.\-cpp}}
+\subsubsection[{A\-M}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-M~(1.\-0/{\bf I\-M})}}\label{_random_generators_8cpp_ad301e6a88b1c01108f4867f2ea6f683c}
+\hypertarget{_random_generators_8cpp_ad301e6a88b1c01108f4867f2ea6f683c}{\index{Random\-Generators.\-cpp@{Random\-Generators.\-cpp}!A\-M@{A\-M}}
+\index{A\-M@{A\-M}!RandomGenerators.cpp@{Random\-Generators.\-cpp}}
+\subsubsection[{A\-M}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-M~(1.\-0/{\bf I\-M1})}}\label{_random_generators_8cpp_ad301e6a88b1c01108f4867f2ea6f683c}
+\hypertarget{_random_generators_8cpp_a6ebf6899d6c1c8b7b9d09be872c05aae}{\index{Random\-Generators.\-cpp@{Random\-Generators.\-cpp}!E\-P\-S@{E\-P\-S}}
+\index{E\-P\-S@{E\-P\-S}!RandomGenerators.cpp@{Random\-Generators.\-cpp}}
+\subsubsection[{E\-P\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\-P\-S~1.\-2e-\/7}}\label{_random_generators_8cpp_a6ebf6899d6c1c8b7b9d09be872c05aae}
+\hypertarget{_random_generators_8cpp_a6ebf6899d6c1c8b7b9d09be872c05aae}{\index{Random\-Generators.\-cpp@{Random\-Generators.\-cpp}!E\-P\-S@{E\-P\-S}}
+\index{E\-P\-S@{E\-P\-S}!RandomGenerators.cpp@{Random\-Generators.\-cpp}}
+\subsubsection[{E\-P\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\-P\-S~1.\-2e-\/7}}\label{_random_generators_8cpp_a6ebf6899d6c1c8b7b9d09be872c05aae}
+\hypertarget{_random_generators_8cpp_a8c3c7226e23b36189d1ec6b7d3504499}{\index{Random\-Generators.\-cpp@{Random\-Generators.\-cpp}!F\-A\-C@{F\-A\-C}}
+\index{F\-A\-C@{F\-A\-C}!RandomGenerators.cpp@{Random\-Generators.\-cpp}}
+\subsubsection[{F\-A\-C}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-A\-C~(1.\-0/{\bf M\-B\-I\-G})}}\label{_random_generators_8cpp_a8c3c7226e23b36189d1ec6b7d3504499}
+\hypertarget{_random_generators_8cpp_ae4b0efde4fa4613b407716d265d19b0a}{\index{Random\-Generators.\-cpp@{Random\-Generators.\-cpp}!I\-A@{I\-A}}
+\index{I\-A@{I\-A}!RandomGenerators.cpp@{Random\-Generators.\-cpp}}
+\subsubsection[{I\-A}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-A~16807\-L}}\label{_random_generators_8cpp_ae4b0efde4fa4613b407716d265d19b0a}
+\hypertarget{_random_generators_8cpp_a6ef2749dca39c605c3d033f788afe6e3}{\index{Random\-Generators.\-cpp@{Random\-Generators.\-cpp}!I\-A1@{I\-A1}}
+\index{I\-A1@{I\-A1}!RandomGenerators.cpp@{Random\-Generators.\-cpp}}
+\subsubsection[{I\-A1}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-A1~40014\-L}}\label{_random_generators_8cpp_a6ef2749dca39c605c3d033f788afe6e3}
+\hypertarget{_random_generators_8cpp_a372a58d7e9e25912fd79e7afaa06cc7a}{\index{Random\-Generators.\-cpp@{Random\-Generators.\-cpp}!I\-A2@{I\-A2}}
+\index{I\-A2@{I\-A2}!RandomGenerators.cpp@{Random\-Generators.\-cpp}}
+\subsubsection[{I\-A2}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-A2~40692\-L}}\label{_random_generators_8cpp_a372a58d7e9e25912fd79e7afaa06cc7a}
+\hypertarget{_random_generators_8cpp_a51c0dfe766601d31e907fceae818a7ca}{\index{Random\-Generators.\-cpp@{Random\-Generators.\-cpp}!I\-M@{I\-M}}
+\index{I\-M@{I\-M}!RandomGenerators.cpp@{Random\-Generators.\-cpp}}
+\subsubsection[{I\-M}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-M~2147483647\-L}}\label{_random_generators_8cpp_a51c0dfe766601d31e907fceae818a7ca}
+\hypertarget{_random_generators_8cpp_a78325bdf48423acef7c012567628b391}{\index{Random\-Generators.\-cpp@{Random\-Generators.\-cpp}!I\-M1@{I\-M1}}
+\index{I\-M1@{I\-M1}!RandomGenerators.cpp@{Random\-Generators.\-cpp}}
+\subsubsection[{I\-M1}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-M1~2147483563\-L}}\label{_random_generators_8cpp_a78325bdf48423acef7c012567628b391}
+\hypertarget{_random_generators_8cpp_ad8c519de7e5de4ae35344ddcf21fd062}{\index{Random\-Generators.\-cpp@{Random\-Generators.\-cpp}!I\-M2@{I\-M2}}
+\index{I\-M2@{I\-M2}!RandomGenerators.cpp@{Random\-Generators.\-cpp}}
+\subsubsection[{I\-M2}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-M2~2147483399\-L}}\label{_random_generators_8cpp_ad8c519de7e5de4ae35344ddcf21fd062}
+\hypertarget{_random_generators_8cpp_a87a6e0054f9d827c979c43aa0d5e621a}{\index{Random\-Generators.\-cpp@{Random\-Generators.\-cpp}!I\-M\-M1@{I\-M\-M1}}
+\index{I\-M\-M1@{I\-M\-M1}!RandomGenerators.cpp@{Random\-Generators.\-cpp}}
+\subsubsection[{I\-M\-M1}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-M\-M1~({\bf I\-M1}-\/1)}}\label{_random_generators_8cpp_a87a6e0054f9d827c979c43aa0d5e621a}
+\hypertarget{_random_generators_8cpp_ab7c5f3342853af6bb48d0ca00b05efbe}{\index{Random\-Generators.\-cpp@{Random\-Generators.\-cpp}!I\-Q@{I\-Q}}
+\index{I\-Q@{I\-Q}!RandomGenerators.cpp@{Random\-Generators.\-cpp}}
+\subsubsection[{I\-Q}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-Q~127773\-L}}\label{_random_generators_8cpp_ab7c5f3342853af6bb48d0ca00b05efbe}
+\hypertarget{_random_generators_8cpp_a9afa86ff22da69bda72fe271ae71ad46}{\index{Random\-Generators.\-cpp@{Random\-Generators.\-cpp}!I\-Q1@{I\-Q1}}
+\index{I\-Q1@{I\-Q1}!RandomGenerators.cpp@{Random\-Generators.\-cpp}}
+\subsubsection[{I\-Q1}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-Q1~53668\-L}}\label{_random_generators_8cpp_a9afa86ff22da69bda72fe271ae71ad46}
+\hypertarget{_random_generators_8cpp_abae040385946a6acdf5e10d2efd86f3d}{\index{Random\-Generators.\-cpp@{Random\-Generators.\-cpp}!I\-Q2@{I\-Q2}}
+\index{I\-Q2@{I\-Q2}!RandomGenerators.cpp@{Random\-Generators.\-cpp}}
+\subsubsection[{I\-Q2}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-Q2~52774\-L}}\label{_random_generators_8cpp_abae040385946a6acdf5e10d2efd86f3d}
+\hypertarget{_random_generators_8cpp_a68e22635ff207d8ca10459833856bd75}{\index{Random\-Generators.\-cpp@{Random\-Generators.\-cpp}!I\-R@{I\-R}}
+\index{I\-R@{I\-R}!RandomGenerators.cpp@{Random\-Generators.\-cpp}}
+\subsubsection[{I\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-R~2836\-L}}\label{_random_generators_8cpp_a68e22635ff207d8ca10459833856bd75}
+\hypertarget{_random_generators_8cpp_a7b2b32709f9770a283701ffcf3723497}{\index{Random\-Generators.\-cpp@{Random\-Generators.\-cpp}!I\-R1@{I\-R1}}
+\index{I\-R1@{I\-R1}!RandomGenerators.cpp@{Random\-Generators.\-cpp}}
+\subsubsection[{I\-R1}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-R1~12211\-L}}\label{_random_generators_8cpp_a7b2b32709f9770a283701ffcf3723497}
+\hypertarget{_random_generators_8cpp_a5a08e4f5cb3582e623cc14a6c92d48de}{\index{Random\-Generators.\-cpp@{Random\-Generators.\-cpp}!I\-R2@{I\-R2}}
+\index{I\-R2@{I\-R2}!RandomGenerators.cpp@{Random\-Generators.\-cpp}}
+\subsubsection[{I\-R2}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-R2~3791}}\label{_random_generators_8cpp_a5a08e4f5cb3582e623cc14a6c92d48de}
+\hypertarget{_random_generators_8cpp_a31be5e3096afa10fc67bd629dd9332e7}{\index{Random\-Generators.\-cpp@{Random\-Generators.\-cpp}!M\-B\-I\-G@{M\-B\-I\-G}}
+\index{M\-B\-I\-G@{M\-B\-I\-G}!RandomGenerators.cpp@{Random\-Generators.\-cpp}}
+\subsubsection[{M\-B\-I\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-B\-I\-G~1000000000}}\label{_random_generators_8cpp_a31be5e3096afa10fc67bd629dd9332e7}
+\hypertarget{_random_generators_8cpp_aa0e8039431bb68581133ef4c1dbbe71d}{\index{Random\-Generators.\-cpp@{Random\-Generators.\-cpp}!M\-S\-E\-E\-D@{M\-S\-E\-E\-D}}
+\index{M\-S\-E\-E\-D@{M\-S\-E\-E\-D}!RandomGenerators.cpp@{Random\-Generators.\-cpp}}
+\subsubsection[{M\-S\-E\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-S\-E\-E\-D~161803398}}\label{_random_generators_8cpp_aa0e8039431bb68581133ef4c1dbbe71d}
+\hypertarget{_random_generators_8cpp_a8dbc2223b1260b0fb5ab3d57bec0f74d}{\index{Random\-Generators.\-cpp@{Random\-Generators.\-cpp}!M\-Z@{M\-Z}}
+\index{M\-Z@{M\-Z}!RandomGenerators.cpp@{Random\-Generators.\-cpp}}
+\subsubsection[{M\-Z}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-Z~0}}\label{_random_generators_8cpp_a8dbc2223b1260b0fb5ab3d57bec0f74d}
+\hypertarget{_random_generators_8cpp_a62339d74dd5d9d00480e1a288cf88fe8}{\index{Random\-Generators.\-cpp@{Random\-Generators.\-cpp}!N\-D\-I\-V@{N\-D\-I\-V}}
+\index{N\-D\-I\-V@{N\-D\-I\-V}!RandomGenerators.cpp@{Random\-Generators.\-cpp}}
+\subsubsection[{N\-D\-I\-V}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\-D\-I\-V~(1+({\bf I\-M}-\/1)/{\bf N\-T\-A\-B})}}\label{_random_generators_8cpp_a62339d74dd5d9d00480e1a288cf88fe8}
+\hypertarget{_random_generators_8cpp_a62339d74dd5d9d00480e1a288cf88fe8}{\index{Random\-Generators.\-cpp@{Random\-Generators.\-cpp}!N\-D\-I\-V@{N\-D\-I\-V}}
+\index{N\-D\-I\-V@{N\-D\-I\-V}!RandomGenerators.cpp@{Random\-Generators.\-cpp}}
+\subsubsection[{N\-D\-I\-V}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\-D\-I\-V~(1+{\bf I\-M\-M1}/{\bf N\-T\-A\-B})}}\label{_random_generators_8cpp_a62339d74dd5d9d00480e1a288cf88fe8}
+\hypertarget{_random_generators_8cpp_a0e93cfb2d62849853fd34957ba6e6fdc}{\index{Random\-Generators.\-cpp@{Random\-Generators.\-cpp}!N\-T\-A\-B@{N\-T\-A\-B}}
+\index{N\-T\-A\-B@{N\-T\-A\-B}!RandomGenerators.cpp@{Random\-Generators.\-cpp}}
+\subsubsection[{N\-T\-A\-B}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\-T\-A\-B~32}}\label{_random_generators_8cpp_a0e93cfb2d62849853fd34957ba6e6fdc}
+\hypertarget{_random_generators_8cpp_a0e93cfb2d62849853fd34957ba6e6fdc}{\index{Random\-Generators.\-cpp@{Random\-Generators.\-cpp}!N\-T\-A\-B@{N\-T\-A\-B}}
+\index{N\-T\-A\-B@{N\-T\-A\-B}!RandomGenerators.cpp@{Random\-Generators.\-cpp}}
+\subsubsection[{N\-T\-A\-B}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\-T\-A\-B~32}}\label{_random_generators_8cpp_a0e93cfb2d62849853fd34957ba6e6fdc}
+\hypertarget{_random_generators_8cpp_aa7436c9270ffb06f8c1eae8d2e605cec}{\index{Random\-Generators.\-cpp@{Random\-Generators.\-cpp}!R\-N\-M\-X@{R\-N\-M\-X}}
+\index{R\-N\-M\-X@{R\-N\-M\-X}!RandomGenerators.cpp@{Random\-Generators.\-cpp}}
+\subsubsection[{R\-N\-M\-X}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\-N\-M\-X~(1.\-0-\/{\bf E\-P\-S})}}\label{_random_generators_8cpp_aa7436c9270ffb06f8c1eae8d2e605cec}
+\hypertarget{_random_generators_8cpp_aa7436c9270ffb06f8c1eae8d2e605cec}{\index{Random\-Generators.\-cpp@{Random\-Generators.\-cpp}!R\-N\-M\-X@{R\-N\-M\-X}}
+\index{R\-N\-M\-X@{R\-N\-M\-X}!RandomGenerators.cpp@{Random\-Generators.\-cpp}}
+\subsubsection[{R\-N\-M\-X}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\-N\-M\-X~(1.\-0-\/{\bf E\-P\-S})}}\label{_random_generators_8cpp_aa7436c9270ffb06f8c1eae8d2e605cec}

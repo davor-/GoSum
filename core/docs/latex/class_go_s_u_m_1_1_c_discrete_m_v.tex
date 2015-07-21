@@ -1,0 +1,166 @@
+\hypertarget{class_go_s_u_m_1_1_c_discrete_m_v}{\section{Go\-S\-U\-M\-:\-:C\-Discrete\-M\-V Class Reference}
+\label{class_go_s_u_m_1_1_c_discrete_m_v}\index{Go\-S\-U\-M\-::\-C\-Discrete\-M\-V@{Go\-S\-U\-M\-::\-C\-Discrete\-M\-V}}
+}
+
+
+{\ttfamily \#include $<$Model\-Variable.\-h$>$}
+
+Inheritance diagram for Go\-S\-U\-M\-:\-:C\-Discrete\-M\-V\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_go_s_u_m_1_1_c_discrete_m_v}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_go_s_u_m_1_1_c_discrete_m_v_aebbd9c3c4eae64d5ad99d8ea971d9c1e}{C\-Discrete\-M\-V} (const std\-::string \&\-\_\-uname, \hyperlink{class_c_random_variable_a80d2a87c43847274138b51f7d713d7f1}{C\-Random\-Variable\-::distributiontype} \-\_\-type)
+\begin{DoxyCompactList}\small\item\em Constructs new model variable by name and type. \end{DoxyCompactList}\item 
+\hyperlink{class_go_s_u_m_1_1_c_discrete_m_v_af7c40a5c6e0a54ae098e7c57e42ca64e}{C\-Discrete\-M\-V} (const \hyperlink{class_go_s_u_m_1_1_c_discrete_m_v}{C\-Discrete\-M\-V} \&O)
+\item 
+\hyperlink{class_go_s_u_m_1_1_c_discrete_m_v_a301a60a63864ffad50583b774e23b07b}{C\-Discrete\-M\-V} (const \hyperlink{class_go_s_u_m_1_1_c_continuous_m_v}{C\-Continuous\-M\-V} \&O)
+\item 
+virtual void \hyperlink{class_go_s_u_m_1_1_c_discrete_m_v_a1061fb0a466b852ffeb111238b702b39}{set\-Theoretical\-Distribution} ()
+\begin{DoxyCompactList}\small\item\em Detects constant sample and turns random variable to appropirate type. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_go_s_u_m_1_1_c_discrete_m_v_a7dd5ab7ac4922cdb2682012c942e1f10}{set\-Empirical\-Distribution} ()
+\begin{DoxyCompactList}\small\item\em Compute distribution of the actual random variable from empirical sample data. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_go_s_u_m_1_1_c_discrete_m_v_a6366f6f6fd00242942b733ef5715592e}{is\-Continuous} () const 
+\begin{DoxyCompactList}\small\item\em Returns true if model variable is continuous, false otherwise. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_go_s_u_m_1_1_c_discrete_m_v_ad9da78f518019e7133440189803f9cad}{is\-Discrete} () const 
+\begin{DoxyCompactList}\small\item\em Returns true if model variable is discrete, false otherwise. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \hyperlink{class_go_s_u_m_1_1_c_discrete_m_v_a951630f04eefaf3e1604d801a75c2cc5}{serialize} (Archive \&ar, const unsigned int version)
+\item 
+\hyperlink{class_go_s_u_m_1_1_c_discrete_m_v_a2e384c7bd6c78c1cb2e8d5f3edf89151}{C\-Discrete\-M\-V} ()
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_go_s_u_m_1_1_c_discrete_m_v_ac98d07dd8f7b70e16ccb9a01abf56b9c}{boost\-::serialization\-::access}
+\begin{DoxyCompactList}\small\item\em Boost serialization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_discrete_m_v_a2e384c7bd6c78c1cb2e8d5f3edf89151}{\index{Go\-S\-U\-M\-::\-C\-Discrete\-M\-V@{Go\-S\-U\-M\-::\-C\-Discrete\-M\-V}!C\-Discrete\-M\-V@{C\-Discrete\-M\-V}}
+\index{C\-Discrete\-M\-V@{C\-Discrete\-M\-V}!GoSUM::CDiscreteMV@{Go\-S\-U\-M\-::\-C\-Discrete\-M\-V}}
+\subsubsection[{C\-Discrete\-M\-V}]{\setlength{\rightskip}{0pt plus 5cm}Go\-S\-U\-M\-::\-C\-Discrete\-M\-V\-::\-C\-Discrete\-M\-V (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_discrete_m_v_a2e384c7bd6c78c1cb2e8d5f3edf89151}
+\hypertarget{class_go_s_u_m_1_1_c_discrete_m_v_aebbd9c3c4eae64d5ad99d8ea971d9c1e}{\index{Go\-S\-U\-M\-::\-C\-Discrete\-M\-V@{Go\-S\-U\-M\-::\-C\-Discrete\-M\-V}!C\-Discrete\-M\-V@{C\-Discrete\-M\-V}}
+\index{C\-Discrete\-M\-V@{C\-Discrete\-M\-V}!GoSUM::CDiscreteMV@{Go\-S\-U\-M\-::\-C\-Discrete\-M\-V}}
+\subsubsection[{C\-Discrete\-M\-V}]{\setlength{\rightskip}{0pt plus 5cm}Go\-S\-U\-M\-::\-C\-Discrete\-M\-V\-::\-C\-Discrete\-M\-V (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{\-\_\-uname, }
+\item[{{\bf C\-Random\-Variable\-::distributiontype}}]{\-\_\-type}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_discrete_m_v_aebbd9c3c4eae64d5ad99d8ea971d9c1e}
+
+
+Constructs new model variable by name and type. 
+
+\hypertarget{class_go_s_u_m_1_1_c_discrete_m_v_af7c40a5c6e0a54ae098e7c57e42ca64e}{\index{Go\-S\-U\-M\-::\-C\-Discrete\-M\-V@{Go\-S\-U\-M\-::\-C\-Discrete\-M\-V}!C\-Discrete\-M\-V@{C\-Discrete\-M\-V}}
+\index{C\-Discrete\-M\-V@{C\-Discrete\-M\-V}!GoSUM::CDiscreteMV@{Go\-S\-U\-M\-::\-C\-Discrete\-M\-V}}
+\subsubsection[{C\-Discrete\-M\-V}]{\setlength{\rightskip}{0pt plus 5cm}Go\-S\-U\-M\-::\-C\-Discrete\-M\-V\-::\-C\-Discrete\-M\-V (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Discrete\-M\-V} \&}]{O}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_discrete_m_v_af7c40a5c6e0a54ae098e7c57e42ca64e}
+\hypertarget{class_go_s_u_m_1_1_c_discrete_m_v_a301a60a63864ffad50583b774e23b07b}{\index{Go\-S\-U\-M\-::\-C\-Discrete\-M\-V@{Go\-S\-U\-M\-::\-C\-Discrete\-M\-V}!C\-Discrete\-M\-V@{C\-Discrete\-M\-V}}
+\index{C\-Discrete\-M\-V@{C\-Discrete\-M\-V}!GoSUM::CDiscreteMV@{Go\-S\-U\-M\-::\-C\-Discrete\-M\-V}}
+\subsubsection[{C\-Discrete\-M\-V}]{\setlength{\rightskip}{0pt plus 5cm}Go\-S\-U\-M\-::\-C\-Discrete\-M\-V\-::\-C\-Discrete\-M\-V (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Continuous\-M\-V} \&}]{O}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_discrete_m_v_a301a60a63864ffad50583b774e23b07b}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_discrete_m_v_a6366f6f6fd00242942b733ef5715592e}{\index{Go\-S\-U\-M\-::\-C\-Discrete\-M\-V@{Go\-S\-U\-M\-::\-C\-Discrete\-M\-V}!is\-Continuous@{is\-Continuous}}
+\index{is\-Continuous@{is\-Continuous}!GoSUM::CDiscreteMV@{Go\-S\-U\-M\-::\-C\-Discrete\-M\-V}}
+\subsubsection[{is\-Continuous}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Go\-S\-U\-M\-::\-C\-Discrete\-M\-V\-::is\-Continuous (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_discrete_m_v_a6366f6f6fd00242942b733ef5715592e}
+
+
+Returns true if model variable is continuous, false otherwise. 
+
+
+
+Implements \hyperlink{class_go_s_u_m_1_1_c_model_variable_a2ec4aee717249dcbad98fd6e6320a6b7}{Go\-S\-U\-M\-::\-C\-Model\-Variable}.
+
+\hypertarget{class_go_s_u_m_1_1_c_discrete_m_v_ad9da78f518019e7133440189803f9cad}{\index{Go\-S\-U\-M\-::\-C\-Discrete\-M\-V@{Go\-S\-U\-M\-::\-C\-Discrete\-M\-V}!is\-Discrete@{is\-Discrete}}
+\index{is\-Discrete@{is\-Discrete}!GoSUM::CDiscreteMV@{Go\-S\-U\-M\-::\-C\-Discrete\-M\-V}}
+\subsubsection[{is\-Discrete}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Go\-S\-U\-M\-::\-C\-Discrete\-M\-V\-::is\-Discrete (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_discrete_m_v_ad9da78f518019e7133440189803f9cad}
+
+
+Returns true if model variable is discrete, false otherwise. 
+
+
+
+Implements \hyperlink{class_go_s_u_m_1_1_c_model_variable_a9d0140b610b7a1c04a3b31e2d84f86da}{Go\-S\-U\-M\-::\-C\-Model\-Variable}.
+
+\hypertarget{class_go_s_u_m_1_1_c_discrete_m_v_a951630f04eefaf3e1604d801a75c2cc5}{\index{Go\-S\-U\-M\-::\-C\-Discrete\-M\-V@{Go\-S\-U\-M\-::\-C\-Discrete\-M\-V}!serialize@{serialize}}
+\index{serialize@{serialize}!GoSUM::CDiscreteMV@{Go\-S\-U\-M\-::\-C\-Discrete\-M\-V}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Archive $>$ void Go\-S\-U\-M\-::\-C\-Discrete\-M\-V\-::serialize (
+\begin{DoxyParamCaption}
+\item[{Archive \&}]{ar, }
+\item[{const unsigned int}]{version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_discrete_m_v_a951630f04eefaf3e1604d801a75c2cc5}
+\hypertarget{class_go_s_u_m_1_1_c_discrete_m_v_a7dd5ab7ac4922cdb2682012c942e1f10}{\index{Go\-S\-U\-M\-::\-C\-Discrete\-M\-V@{Go\-S\-U\-M\-::\-C\-Discrete\-M\-V}!set\-Empirical\-Distribution@{set\-Empirical\-Distribution}}
+\index{set\-Empirical\-Distribution@{set\-Empirical\-Distribution}!GoSUM::CDiscreteMV@{Go\-S\-U\-M\-::\-C\-Discrete\-M\-V}}
+\subsubsection[{set\-Empirical\-Distribution}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Go\-S\-U\-M\-::\-C\-Discrete\-M\-V\-::set\-Empirical\-Distribution (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_discrete_m_v_a7dd5ab7ac4922cdb2682012c942e1f10}
+
+
+Compute distribution of the actual random variable from empirical sample data. 
+
+
+
+Implements \hyperlink{class_go_s_u_m_1_1_t_model_variable_a3128d12e3ce0757714a7596de087314e}{Go\-S\-U\-M\-::\-T\-Model\-Variable$<$ R, S, t $>$}.
+
+\hypertarget{class_go_s_u_m_1_1_c_discrete_m_v_a1061fb0a466b852ffeb111238b702b39}{\index{Go\-S\-U\-M\-::\-C\-Discrete\-M\-V@{Go\-S\-U\-M\-::\-C\-Discrete\-M\-V}!set\-Theoretical\-Distribution@{set\-Theoretical\-Distribution}}
+\index{set\-Theoretical\-Distribution@{set\-Theoretical\-Distribution}!GoSUM::CDiscreteMV@{Go\-S\-U\-M\-::\-C\-Discrete\-M\-V}}
+\subsubsection[{set\-Theoretical\-Distribution}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Discrete\-M\-V\-::set\-Theoretical\-Distribution (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_discrete_m_v_a1061fb0a466b852ffeb111238b702b39}
+
+
+Detects constant sample and turns random variable to appropirate type. 
+
+
+
+Implements \hyperlink{class_go_s_u_m_1_1_t_model_variable_ad113f33f216796f775855dd3f8553f03}{Go\-S\-U\-M\-::\-T\-Model\-Variable$<$ R, S, t $>$}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_discrete_m_v_ac98d07dd8f7b70e16ccb9a01abf56b9c}{\index{Go\-S\-U\-M\-::\-C\-Discrete\-M\-V@{Go\-S\-U\-M\-::\-C\-Discrete\-M\-V}!boost\-::serialization\-::access@{boost\-::serialization\-::access}}
+\index{boost\-::serialization\-::access@{boost\-::serialization\-::access}!GoSUM::CDiscreteMV@{Go\-S\-U\-M\-::\-C\-Discrete\-M\-V}}
+\subsubsection[{boost\-::serialization\-::access}]{\setlength{\rightskip}{0pt plus 5cm}friend class boost\-::serialization\-::access\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_go_s_u_m_1_1_c_discrete_m_v_ac98d07dd8f7b70e16ccb9a01abf56b9c}
+
+
+Boost serialization. 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Development/core/\hyperlink{_model_variable_8h}{Model\-Variable.\-h}\item 
+C\-:/\-Development/core/\hyperlink{_model_variable_8cpp}{Model\-Variable.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,172 @@
+\hypertarget{class_go_s_u_m_1_1_c_output_states}{\section{Go\-S\-U\-M\-:\-:C\-Output\-States Class Reference}
+\label{class_go_s_u_m_1_1_c_output_states}\index{Go\-S\-U\-M\-::\-C\-Output\-States@{Go\-S\-U\-M\-::\-C\-Output\-States}}
+}
+
+
+Class for \hyperlink{struct_go_s_u_m}{Go\-S\-U\-M} output states.  
+
+
+
+
+{\ttfamily \#include $<$Model.\-h$>$}
+
+Inheritance diagram for Go\-S\-U\-M\-:\-:C\-Output\-States\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_go_s_u_m_1_1_c_output_states}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_go_s_u_m_1_1_c_output_states_a78ee554531ace49e677ac5f6aabb1793}{C\-Output\-States} ()
+\item 
+virtual \hyperlink{class_go_s_u_m_1_1_c_output_states_a7243b706e954618d47c90d69a28f5ecc}{$\sim$\-C\-Output\-States} ()
+\item 
+bool \hyperlink{class_go_s_u_m_1_1_c_output_states_ac90deb06c63df80bc34ee2c664562a43}{set\-Evaluator\-Compatible} (const \hyperlink{class_go_s_u_m_1_1_c_input_parameters}{C\-Input\-Parameters} \&inputs)
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_output_states_a8041e00b80f9027b5f949c6dd1dcee74}{evaluate} (const \hyperlink{class_go_s_u_m_1_1_c_input_parameters}{C\-Input\-Parameters} \&inputs)
+\begin{DoxyCompactList}\small\item\em Starts end joins multiple threads for model function evaluation. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_output_states_ad286b10860c762d05821da1f81c8b4de}{open\-Evaluation} (const \hyperlink{class_go_s_u_m_1_1_c_input_parameters}{C\-Input\-Parameters} \&inputs)
+\item 
+Array\-Xd \hyperlink{class_go_s_u_m_1_1_c_output_states_a7ba935ed20daaee5deabf1d99dbecc6e}{evaluate} (const Array\-Xd \&X)
+\begin{DoxyCompactList}\small\item\em Opens evaluation on single input parameter n-\/tuples. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_output_states_a281641905b4c5bcaa6b0beb1a5c880dc}{close\-Evaluation} ()
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_output_states_ac8f7c955c7e0b1257bb6323f9b23f565}{set\-Progress\-Slot} (boost\-::function$<$ void()$>$ \-\_\-progress\-Slot)
+\begin{DoxyCompactList}\small\item\em Sets external progress slot. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boost\-::function$<$ void()$>$ \hyperlink{class_go_s_u_m_1_1_c_output_states_af87022e02d37a1ed2c804776f15b30b7}{progress\-Slot}
+\begin{DoxyCompactList}\small\item\em Closes evaluation on single input parameter n-\/tuples. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \hyperlink{class_go_s_u_m_1_1_c_output_states_a02da6bf9a4d7d11010670ab6525d7ac4}{serialize} (Archive \&ar, const unsigned int version)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_go_s_u_m_1_1_c_model_evaluator}{Go\-S\-U\-M\-::\-C\-Model\-Evaluator} $\ast$ \hyperlink{class_go_s_u_m_1_1_c_output_states_ace5684dae11c9a0d432daddd623d8b62}{p\-E}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_go_s_u_m_1_1_c_output_states_ac98d07dd8f7b70e16ccb9a01abf56b9c}{boost\-::serialization\-::access}
+\begin{DoxyCompactList}\small\item\em boost serialization \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class for \hyperlink{struct_go_s_u_m}{Go\-S\-U\-M} output states. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_output_states_a78ee554531ace49e677ac5f6aabb1793}{\index{Go\-S\-U\-M\-::\-C\-Output\-States@{Go\-S\-U\-M\-::\-C\-Output\-States}!C\-Output\-States@{C\-Output\-States}}
+\index{C\-Output\-States@{C\-Output\-States}!GoSUM::COutputStates@{Go\-S\-U\-M\-::\-C\-Output\-States}}
+\subsubsection[{C\-Output\-States}]{\setlength{\rightskip}{0pt plus 5cm}Go\-S\-U\-M\-::\-C\-Output\-States\-::\-C\-Output\-States (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_output_states_a78ee554531ace49e677ac5f6aabb1793}
+\hypertarget{class_go_s_u_m_1_1_c_output_states_a7243b706e954618d47c90d69a28f5ecc}{\index{Go\-S\-U\-M\-::\-C\-Output\-States@{Go\-S\-U\-M\-::\-C\-Output\-States}!$\sim$\-C\-Output\-States@{$\sim$\-C\-Output\-States}}
+\index{$\sim$\-C\-Output\-States@{$\sim$\-C\-Output\-States}!GoSUM::COutputStates@{Go\-S\-U\-M\-::\-C\-Output\-States}}
+\subsubsection[{$\sim$\-C\-Output\-States}]{\setlength{\rightskip}{0pt plus 5cm}virtual Go\-S\-U\-M\-::\-C\-Output\-States\-::$\sim$\-C\-Output\-States (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_output_states_a7243b706e954618d47c90d69a28f5ecc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_output_states_a281641905b4c5bcaa6b0beb1a5c880dc}{\index{Go\-S\-U\-M\-::\-C\-Output\-States@{Go\-S\-U\-M\-::\-C\-Output\-States}!close\-Evaluation@{close\-Evaluation}}
+\index{close\-Evaluation@{close\-Evaluation}!GoSUM::COutputStates@{Go\-S\-U\-M\-::\-C\-Output\-States}}
+\subsubsection[{close\-Evaluation}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Output\-States\-::close\-Evaluation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_output_states_a281641905b4c5bcaa6b0beb1a5c880dc}
+\hypertarget{class_go_s_u_m_1_1_c_output_states_a8041e00b80f9027b5f949c6dd1dcee74}{\index{Go\-S\-U\-M\-::\-C\-Output\-States@{Go\-S\-U\-M\-::\-C\-Output\-States}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!GoSUM::COutputStates@{Go\-S\-U\-M\-::\-C\-Output\-States}}
+\subsubsection[{evaluate}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Output\-States\-::evaluate (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Input\-Parameters} \&}]{inputs}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_output_states_a8041e00b80f9027b5f949c6dd1dcee74}
+
+
+Starts end joins multiple threads for model function evaluation. 
+
+\hypertarget{class_go_s_u_m_1_1_c_output_states_a7ba935ed20daaee5deabf1d99dbecc6e}{\index{Go\-S\-U\-M\-::\-C\-Output\-States@{Go\-S\-U\-M\-::\-C\-Output\-States}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!GoSUM::COutputStates@{Go\-S\-U\-M\-::\-C\-Output\-States}}
+\subsubsection[{evaluate}]{\setlength{\rightskip}{0pt plus 5cm}Array\-Xd Go\-S\-U\-M\-::\-C\-Output\-States\-::evaluate (
+\begin{DoxyParamCaption}
+\item[{const Array\-Xd \&}]{X}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_output_states_a7ba935ed20daaee5deabf1d99dbecc6e}
+
+
+Opens evaluation on single input parameter n-\/tuples. 
+
+Evaluates output state on single input parameter n-\/tuple. \hypertarget{class_go_s_u_m_1_1_c_output_states_ad286b10860c762d05821da1f81c8b4de}{\index{Go\-S\-U\-M\-::\-C\-Output\-States@{Go\-S\-U\-M\-::\-C\-Output\-States}!open\-Evaluation@{open\-Evaluation}}
+\index{open\-Evaluation@{open\-Evaluation}!GoSUM::COutputStates@{Go\-S\-U\-M\-::\-C\-Output\-States}}
+\subsubsection[{open\-Evaluation}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Output\-States\-::open\-Evaluation (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Input\-Parameters} \&}]{inputs}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_output_states_ad286b10860c762d05821da1f81c8b4de}
+\hypertarget{class_go_s_u_m_1_1_c_output_states_a02da6bf9a4d7d11010670ab6525d7ac4}{\index{Go\-S\-U\-M\-::\-C\-Output\-States@{Go\-S\-U\-M\-::\-C\-Output\-States}!serialize@{serialize}}
+\index{serialize@{serialize}!GoSUM::COutputStates@{Go\-S\-U\-M\-::\-C\-Output\-States}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Archive $>$ void Go\-S\-U\-M\-::\-C\-Output\-States\-::serialize (
+\begin{DoxyParamCaption}
+\item[{Archive \&}]{ar, }
+\item[{const unsigned int}]{version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_output_states_a02da6bf9a4d7d11010670ab6525d7ac4}
+\hypertarget{class_go_s_u_m_1_1_c_output_states_ac90deb06c63df80bc34ee2c664562a43}{\index{Go\-S\-U\-M\-::\-C\-Output\-States@{Go\-S\-U\-M\-::\-C\-Output\-States}!set\-Evaluator\-Compatible@{set\-Evaluator\-Compatible}}
+\index{set\-Evaluator\-Compatible@{set\-Evaluator\-Compatible}!GoSUM::COutputStates@{Go\-S\-U\-M\-::\-C\-Output\-States}}
+\subsubsection[{set\-Evaluator\-Compatible}]{\setlength{\rightskip}{0pt plus 5cm}bool Go\-S\-U\-M\-::\-C\-Output\-States\-::set\-Evaluator\-Compatible (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Input\-Parameters} \&}]{inputs}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_output_states_ac90deb06c63df80bc34ee2c664562a43}
+\hypertarget{class_go_s_u_m_1_1_c_output_states_ac8f7c955c7e0b1257bb6323f9b23f565}{\index{Go\-S\-U\-M\-::\-C\-Output\-States@{Go\-S\-U\-M\-::\-C\-Output\-States}!set\-Progress\-Slot@{set\-Progress\-Slot}}
+\index{set\-Progress\-Slot@{set\-Progress\-Slot}!GoSUM::COutputStates@{Go\-S\-U\-M\-::\-C\-Output\-States}}
+\subsubsection[{set\-Progress\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Output\-States\-::set\-Progress\-Slot (
+\begin{DoxyParamCaption}
+\item[{boost\-::function$<$ void()$>$}]{\-\_\-progress\-Slot}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_output_states_ac8f7c955c7e0b1257bb6323f9b23f565}
+
+
+Sets external progress slot. 
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_output_states_ac98d07dd8f7b70e16ccb9a01abf56b9c}{\index{Go\-S\-U\-M\-::\-C\-Output\-States@{Go\-S\-U\-M\-::\-C\-Output\-States}!boost\-::serialization\-::access@{boost\-::serialization\-::access}}
+\index{boost\-::serialization\-::access@{boost\-::serialization\-::access}!GoSUM::COutputStates@{Go\-S\-U\-M\-::\-C\-Output\-States}}
+\subsubsection[{boost\-::serialization\-::access}]{\setlength{\rightskip}{0pt plus 5cm}friend class boost\-::serialization\-::access\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_go_s_u_m_1_1_c_output_states_ac98d07dd8f7b70e16ccb9a01abf56b9c}
+
+
+boost serialization 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_output_states_ace5684dae11c9a0d432daddd623d8b62}{\index{Go\-S\-U\-M\-::\-C\-Output\-States@{Go\-S\-U\-M\-::\-C\-Output\-States}!p\-E@{p\-E}}
+\index{p\-E@{p\-E}!GoSUM::COutputStates@{Go\-S\-U\-M\-::\-C\-Output\-States}}
+\subsubsection[{p\-E}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Go\-S\-U\-M\-::\-C\-Model\-Evaluator}$\ast$ Go\-S\-U\-M\-::\-C\-Output\-States\-::p\-E\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_output_states_ace5684dae11c9a0d432daddd623d8b62}
+Holds pointer to model evalautor used for single evaluations. \hypertarget{class_go_s_u_m_1_1_c_output_states_af87022e02d37a1ed2c804776f15b30b7}{\index{Go\-S\-U\-M\-::\-C\-Output\-States@{Go\-S\-U\-M\-::\-C\-Output\-States}!progress\-Slot@{progress\-Slot}}
+\index{progress\-Slot@{progress\-Slot}!GoSUM::COutputStates@{Go\-S\-U\-M\-::\-C\-Output\-States}}
+\subsubsection[{progress\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}boost\-::function$<$void()$>$ Go\-S\-U\-M\-::\-C\-Output\-States\-::progress\-Slot}}\label{class_go_s_u_m_1_1_c_output_states_af87022e02d37a1ed2c804776f15b30b7}
+
+
+Closes evaluation on single input parameter n-\/tuples. 
+
+External progress slot, later connected to signal for evalaution progress. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Development/core/\hyperlink{_model_8h}{Model.\-h}\item 
+C\-:/\-Development/core/\hyperlink{_model_8cpp}{Model.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,105 @@
+\hypertarget{class_c_continuous_r_v}{\section{C\-Continuous\-R\-V Class Reference}
+\label{class_c_continuous_r_v}\index{C\-Continuous\-R\-V@{C\-Continuous\-R\-V}}
+}
+
+
+{\ttfamily \#include $<$Random\-Variable.\-h$>$}
+
+Inheritance diagram for C\-Continuous\-R\-V\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.473684cm]{class_c_continuous_r_v}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_continuous_r_v_a3501c35710b9b8dea56976f2fb895a20}{C\-Continuous\-R\-V} ()
+\item 
+\hyperlink{class_c_continuous_r_v_a1b0b4cedcbfa308f76ebc71df0cc4429}{C\-Continuous\-R\-V} (const \hyperlink{class_c_continuous_r_v}{C\-Continuous\-R\-V} \&O)
+\item 
+double \hyperlink{class_c_continuous_r_v_a4cfd8083c22c2283e9246652a2f79686}{probability} (double \-\_\-x1, double \-\_\-x2) const 
+\begin{DoxyCompactList}\small\item\em Returns probablilty that random variable has value between \-\_\-x1 and \-\_\-x2. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_c_continuous_r_v_a14207c5f0664f1a5436acd44a21ce46f}{quantile} (double \-\_\-p) const 
+\begin{DoxyCompactList}\small\item\em Quantile, only argument checking. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \hyperlink{class_c_continuous_r_v_a6de70e5300ddf0f1d1ab71e568b971e0}{serialize} (Archive \&ar, const unsigned int version)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_c_continuous_r_v_ac98d07dd8f7b70e16ccb9a01abf56b9c}{boost\-::serialization\-::access}
+\begin{DoxyCompactList}\small\item\em Boost serialization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_continuous_r_v_a3501c35710b9b8dea56976f2fb895a20}{\index{C\-Continuous\-R\-V@{C\-Continuous\-R\-V}!C\-Continuous\-R\-V@{C\-Continuous\-R\-V}}
+\index{C\-Continuous\-R\-V@{C\-Continuous\-R\-V}!CContinuousRV@{C\-Continuous\-R\-V}}
+\subsubsection[{C\-Continuous\-R\-V}]{\setlength{\rightskip}{0pt plus 5cm}C\-Continuous\-R\-V\-::\-C\-Continuous\-R\-V (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_continuous_r_v_a3501c35710b9b8dea56976f2fb895a20}
+\hypertarget{class_c_continuous_r_v_a1b0b4cedcbfa308f76ebc71df0cc4429}{\index{C\-Continuous\-R\-V@{C\-Continuous\-R\-V}!C\-Continuous\-R\-V@{C\-Continuous\-R\-V}}
+\index{C\-Continuous\-R\-V@{C\-Continuous\-R\-V}!CContinuousRV@{C\-Continuous\-R\-V}}
+\subsubsection[{C\-Continuous\-R\-V}]{\setlength{\rightskip}{0pt plus 5cm}C\-Continuous\-R\-V\-::\-C\-Continuous\-R\-V (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Continuous\-R\-V} \&}]{O}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_continuous_r_v_a1b0b4cedcbfa308f76ebc71df0cc4429}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_continuous_r_v_a4cfd8083c22c2283e9246652a2f79686}{\index{C\-Continuous\-R\-V@{C\-Continuous\-R\-V}!probability@{probability}}
+\index{probability@{probability}!CContinuousRV@{C\-Continuous\-R\-V}}
+\subsubsection[{probability}]{\setlength{\rightskip}{0pt plus 5cm}double C\-Continuous\-R\-V\-::probability (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-x1, }
+\item[{double}]{\-\_\-x2}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_continuous_r_v_a4cfd8083c22c2283e9246652a2f79686}
+
+
+Returns probablilty that random variable has value between \-\_\-x1 and \-\_\-x2. 
+
+\hypertarget{class_c_continuous_r_v_a14207c5f0664f1a5436acd44a21ce46f}{\index{C\-Continuous\-R\-V@{C\-Continuous\-R\-V}!quantile@{quantile}}
+\index{quantile@{quantile}!CContinuousRV@{C\-Continuous\-R\-V}}
+\subsubsection[{quantile}]{\setlength{\rightskip}{0pt plus 5cm}virtual double C\-Continuous\-R\-V\-::quantile (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-p}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_continuous_r_v_a14207c5f0664f1a5436acd44a21ce46f}
+
+
+Quantile, only argument checking. 
+
+
+
+Implements \hyperlink{class_c_random_variable_aad8f00777fdad0e7e1ad29c9ea620ff2}{C\-Random\-Variable}.
+
+\hypertarget{class_c_continuous_r_v_a6de70e5300ddf0f1d1ab71e568b971e0}{\index{C\-Continuous\-R\-V@{C\-Continuous\-R\-V}!serialize@{serialize}}
+\index{serialize@{serialize}!CContinuousRV@{C\-Continuous\-R\-V}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Archive $>$ void C\-Continuous\-R\-V\-::serialize (
+\begin{DoxyParamCaption}
+\item[{Archive \&}]{ar, }
+\item[{const unsigned int}]{version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{class_c_continuous_r_v_a6de70e5300ddf0f1d1ab71e568b971e0}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_c_continuous_r_v_ac98d07dd8f7b70e16ccb9a01abf56b9c}{\index{C\-Continuous\-R\-V@{C\-Continuous\-R\-V}!boost\-::serialization\-::access@{boost\-::serialization\-::access}}
+\index{boost\-::serialization\-::access@{boost\-::serialization\-::access}!CContinuousRV@{C\-Continuous\-R\-V}}
+\subsubsection[{boost\-::serialization\-::access}]{\setlength{\rightskip}{0pt plus 5cm}friend class boost\-::serialization\-::access\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_c_continuous_r_v_ac98d07dd8f7b70e16ccb9a01abf56b9c}
+
+
+Boost serialization. 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Development/core/\hyperlink{_random_variable_8h}{Random\-Variable.\-h}\end{DoxyCompactItemize}

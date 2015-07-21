@@ -1,0 +1,215 @@
+\hypertarget{class_go_s_u_m_1_1_c_input_parameters}{\section{Go\-S\-U\-M\-:\-:C\-Input\-Parameters Class Reference}
+\label{class_go_s_u_m_1_1_c_input_parameters}\index{Go\-S\-U\-M\-::\-C\-Input\-Parameters@{Go\-S\-U\-M\-::\-C\-Input\-Parameters}}
+}
+
+
+Class for \hyperlink{struct_go_s_u_m}{Go\-S\-U\-M} input parameters.  
+
+
+
+
+{\ttfamily \#include $<$Model.\-h$>$}
+
+Inheritance diagram for Go\-S\-U\-M\-:\-:C\-Input\-Parameters\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_go_s_u_m_1_1_c_input_parameters}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_go_s_u_m_1_1_c_input_parameters_a1d2c088e6335ce2ff4b10ff5964cb9b9}{C\-Input\-Parameters} (\hyperlink{class_go_s_u_m_1_1_c_model_constraints}{C\-Model\-Constraints} $\ast$\-\_\-p\-I\-C)
+\item 
+virtual \hyperlink{class_go_s_u_m_1_1_c_input_parameters_ac9d5bfe8ecf12ccc78dc1327b4d4765d}{$\sim$\-C\-Input\-Parameters} ()
+\item 
+int \hyperlink{class_go_s_u_m_1_1_c_input_parameters_a7d9e6f3799e28997cc1b3d1071804eda}{resample\-Size} () const 
+\begin{DoxyCompactList}\small\item\em Returns resampling size. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_input_parameters_a7be5d110240bdd04b150cd7e511837fc}{set\-Resample\-Size} (int \-\_\-\-R\-Ssize)
+\begin{DoxyCompactList}\small\item\em Sets resampling size. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_input_parameters_a1bb1435964c789f0cfa311e78d165ed8}{generate\-Samples} (std\-::vector$<$ Array\-Xd $>$ \&\-\_\-samples)
+\begin{DoxyCompactList}\small\item\em Generates samples on external vector of samples. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_input_parameters_a63b7df5e450248ad37f9ac17adb0373b}{generate\-Samples} ()
+\begin{DoxyCompactList}\small\item\em Generates samples on internal model variable samples. \end{DoxyCompactList}\item 
+int \hyperlink{class_go_s_u_m_1_1_c_input_parameters_a3bd69f7c2974ffba079630fcc1502e38}{resample\-Steps\-Size} () const 
+\begin{DoxyCompactList}\small\item\em Returns resample steps size. \end{DoxyCompactList}\item 
+\hyperlink{class_go_s_u_m_1_1_c_model_constraints}{C\-Model\-Constraints} $\ast$ \hyperlink{class_go_s_u_m_1_1_c_input_parameters_af672bb23aae739eb3030bd25dcacc082}{constraints} () const 
+\begin{DoxyCompactList}\small\item\em Returns pointer to model constraints. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_input_parameters_a13ef77936322f7adce5f44ce2793fc42}{set\-Progress\-Slot} (boost\-::function$<$ void()$>$ \-\_\-progress\-Slot)
+\begin{DoxyCompactList}\small\item\em Sets external progress slot. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boost\-::function$<$ void()$>$ \hyperlink{class_go_s_u_m_1_1_c_input_parameters_a7b08f28eae560f682cacb13647cd75ac}{progress\-Slot}
+\begin{DoxyCompactList}\small\item\em External progress slot, later connected to signal for evalaution progress. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \hyperlink{class_go_s_u_m_1_1_c_input_parameters_aeb3b6421966bee3d7d38dc6df3a17ee3}{serialize} (Archive \&ar, const unsigned int version)
+\item 
+\hyperlink{class_go_s_u_m_1_1_c_input_parameters_a8708f612809710de0aa03dc062249c30}{C\-Input\-Parameters} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_go_s_u_m_1_1_c_model_constraints}{C\-Model\-Constraints} $\ast$ \hyperlink{class_go_s_u_m_1_1_c_input_parameters_a6ea7a2d7d1ceb033321890c5313a6595}{p\-I\-C}
+\begin{DoxyCompactList}\small\item\em Points to model constraints. \end{DoxyCompactList}\item 
+int \hyperlink{class_go_s_u_m_1_1_c_input_parameters_ad33f3fe5498287609093ca480c221458}{R\-Ssize}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_go_s_u_m_1_1_c_input_parameters_ac98d07dd8f7b70e16ccb9a01abf56b9c}{boost\-::serialization\-::access}
+\begin{DoxyCompactList}\small\item\em Boost serialization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class for \hyperlink{struct_go_s_u_m}{Go\-S\-U\-M} input parameters. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_input_parameters_a8708f612809710de0aa03dc062249c30}{\index{Go\-S\-U\-M\-::\-C\-Input\-Parameters@{Go\-S\-U\-M\-::\-C\-Input\-Parameters}!C\-Input\-Parameters@{C\-Input\-Parameters}}
+\index{C\-Input\-Parameters@{C\-Input\-Parameters}!GoSUM::CInputParameters@{Go\-S\-U\-M\-::\-C\-Input\-Parameters}}
+\subsubsection[{C\-Input\-Parameters}]{\setlength{\rightskip}{0pt plus 5cm}Go\-S\-U\-M\-::\-C\-Input\-Parameters\-::\-C\-Input\-Parameters (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_input_parameters_a8708f612809710de0aa03dc062249c30}
+\hypertarget{class_go_s_u_m_1_1_c_input_parameters_a1d2c088e6335ce2ff4b10ff5964cb9b9}{\index{Go\-S\-U\-M\-::\-C\-Input\-Parameters@{Go\-S\-U\-M\-::\-C\-Input\-Parameters}!C\-Input\-Parameters@{C\-Input\-Parameters}}
+\index{C\-Input\-Parameters@{C\-Input\-Parameters}!GoSUM::CInputParameters@{Go\-S\-U\-M\-::\-C\-Input\-Parameters}}
+\subsubsection[{C\-Input\-Parameters}]{\setlength{\rightskip}{0pt plus 5cm}Go\-S\-U\-M\-::\-C\-Input\-Parameters\-::\-C\-Input\-Parameters (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Model\-Constraints} $\ast$}]{\-\_\-p\-I\-C}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_input_parameters_a1d2c088e6335ce2ff4b10ff5964cb9b9}
+\hypertarget{class_go_s_u_m_1_1_c_input_parameters_ac9d5bfe8ecf12ccc78dc1327b4d4765d}{\index{Go\-S\-U\-M\-::\-C\-Input\-Parameters@{Go\-S\-U\-M\-::\-C\-Input\-Parameters}!$\sim$\-C\-Input\-Parameters@{$\sim$\-C\-Input\-Parameters}}
+\index{$\sim$\-C\-Input\-Parameters@{$\sim$\-C\-Input\-Parameters}!GoSUM::CInputParameters@{Go\-S\-U\-M\-::\-C\-Input\-Parameters}}
+\subsubsection[{$\sim$\-C\-Input\-Parameters}]{\setlength{\rightskip}{0pt plus 5cm}virtual Go\-S\-U\-M\-::\-C\-Input\-Parameters\-::$\sim$\-C\-Input\-Parameters (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_input_parameters_ac9d5bfe8ecf12ccc78dc1327b4d4765d}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_input_parameters_af672bb23aae739eb3030bd25dcacc082}{\index{Go\-S\-U\-M\-::\-C\-Input\-Parameters@{Go\-S\-U\-M\-::\-C\-Input\-Parameters}!constraints@{constraints}}
+\index{constraints@{constraints}!GoSUM::CInputParameters@{Go\-S\-U\-M\-::\-C\-Input\-Parameters}}
+\subsubsection[{constraints}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Model\-Constraints}$\ast$ Go\-S\-U\-M\-::\-C\-Input\-Parameters\-::constraints (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_input_parameters_af672bb23aae739eb3030bd25dcacc082}
+
+
+Returns pointer to model constraints. 
+
+\hypertarget{class_go_s_u_m_1_1_c_input_parameters_a1bb1435964c789f0cfa311e78d165ed8}{\index{Go\-S\-U\-M\-::\-C\-Input\-Parameters@{Go\-S\-U\-M\-::\-C\-Input\-Parameters}!generate\-Samples@{generate\-Samples}}
+\index{generate\-Samples@{generate\-Samples}!GoSUM::CInputParameters@{Go\-S\-U\-M\-::\-C\-Input\-Parameters}}
+\subsubsection[{generate\-Samples}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Input\-Parameters\-::generate\-Samples (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ Array\-Xd $>$ \&}]{\-\_\-samples}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_input_parameters_a1bb1435964c789f0cfa311e78d165ed8}
+
+
+Generates samples on external vector of samples. 
+
+\hypertarget{class_go_s_u_m_1_1_c_input_parameters_a63b7df5e450248ad37f9ac17adb0373b}{\index{Go\-S\-U\-M\-::\-C\-Input\-Parameters@{Go\-S\-U\-M\-::\-C\-Input\-Parameters}!generate\-Samples@{generate\-Samples}}
+\index{generate\-Samples@{generate\-Samples}!GoSUM::CInputParameters@{Go\-S\-U\-M\-::\-C\-Input\-Parameters}}
+\subsubsection[{generate\-Samples}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Input\-Parameters\-::generate\-Samples (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_input_parameters_a63b7df5e450248ad37f9ac17adb0373b}
+
+
+Generates samples on internal model variable samples. 
+
+\hypertarget{class_go_s_u_m_1_1_c_input_parameters_a7d9e6f3799e28997cc1b3d1071804eda}{\index{Go\-S\-U\-M\-::\-C\-Input\-Parameters@{Go\-S\-U\-M\-::\-C\-Input\-Parameters}!resample\-Size@{resample\-Size}}
+\index{resample\-Size@{resample\-Size}!GoSUM::CInputParameters@{Go\-S\-U\-M\-::\-C\-Input\-Parameters}}
+\subsubsection[{resample\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int Go\-S\-U\-M\-::\-C\-Input\-Parameters\-::resample\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_input_parameters_a7d9e6f3799e28997cc1b3d1071804eda}
+
+
+Returns resampling size. 
+
+\hypertarget{class_go_s_u_m_1_1_c_input_parameters_a3bd69f7c2974ffba079630fcc1502e38}{\index{Go\-S\-U\-M\-::\-C\-Input\-Parameters@{Go\-S\-U\-M\-::\-C\-Input\-Parameters}!resample\-Steps\-Size@{resample\-Steps\-Size}}
+\index{resample\-Steps\-Size@{resample\-Steps\-Size}!GoSUM::CInputParameters@{Go\-S\-U\-M\-::\-C\-Input\-Parameters}}
+\subsubsection[{resample\-Steps\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int Go\-S\-U\-M\-::\-C\-Input\-Parameters\-::resample\-Steps\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_go_s_u_m_1_1_c_input_parameters_a3bd69f7c2974ffba079630fcc1502e38}
+
+
+Returns resample steps size. 
+
+\hypertarget{class_go_s_u_m_1_1_c_input_parameters_aeb3b6421966bee3d7d38dc6df3a17ee3}{\index{Go\-S\-U\-M\-::\-C\-Input\-Parameters@{Go\-S\-U\-M\-::\-C\-Input\-Parameters}!serialize@{serialize}}
+\index{serialize@{serialize}!GoSUM::CInputParameters@{Go\-S\-U\-M\-::\-C\-Input\-Parameters}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Archive $>$ void Go\-S\-U\-M\-::\-C\-Input\-Parameters\-::serialize (
+\begin{DoxyParamCaption}
+\item[{Archive \&}]{ar, }
+\item[{const unsigned int}]{version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_input_parameters_aeb3b6421966bee3d7d38dc6df3a17ee3}
+\hypertarget{class_go_s_u_m_1_1_c_input_parameters_a13ef77936322f7adce5f44ce2793fc42}{\index{Go\-S\-U\-M\-::\-C\-Input\-Parameters@{Go\-S\-U\-M\-::\-C\-Input\-Parameters}!set\-Progress\-Slot@{set\-Progress\-Slot}}
+\index{set\-Progress\-Slot@{set\-Progress\-Slot}!GoSUM::CInputParameters@{Go\-S\-U\-M\-::\-C\-Input\-Parameters}}
+\subsubsection[{set\-Progress\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Input\-Parameters\-::set\-Progress\-Slot (
+\begin{DoxyParamCaption}
+\item[{boost\-::function$<$ void()$>$}]{\-\_\-progress\-Slot}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_input_parameters_a13ef77936322f7adce5f44ce2793fc42}
+
+
+Sets external progress slot. 
+
+\hypertarget{class_go_s_u_m_1_1_c_input_parameters_a7be5d110240bdd04b150cd7e511837fc}{\index{Go\-S\-U\-M\-::\-C\-Input\-Parameters@{Go\-S\-U\-M\-::\-C\-Input\-Parameters}!set\-Resample\-Size@{set\-Resample\-Size}}
+\index{set\-Resample\-Size@{set\-Resample\-Size}!GoSUM::CInputParameters@{Go\-S\-U\-M\-::\-C\-Input\-Parameters}}
+\subsubsection[{set\-Resample\-Size}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Input\-Parameters\-::set\-Resample\-Size (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-\-R\-Ssize}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_input_parameters_a7be5d110240bdd04b150cd7e511837fc}
+
+
+Sets resampling size. 
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_input_parameters_ac98d07dd8f7b70e16ccb9a01abf56b9c}{\index{Go\-S\-U\-M\-::\-C\-Input\-Parameters@{Go\-S\-U\-M\-::\-C\-Input\-Parameters}!boost\-::serialization\-::access@{boost\-::serialization\-::access}}
+\index{boost\-::serialization\-::access@{boost\-::serialization\-::access}!GoSUM::CInputParameters@{Go\-S\-U\-M\-::\-C\-Input\-Parameters}}
+\subsubsection[{boost\-::serialization\-::access}]{\setlength{\rightskip}{0pt plus 5cm}friend class boost\-::serialization\-::access\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_go_s_u_m_1_1_c_input_parameters_ac98d07dd8f7b70e16ccb9a01abf56b9c}
+
+
+Boost serialization. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_input_parameters_a6ea7a2d7d1ceb033321890c5313a6595}{\index{Go\-S\-U\-M\-::\-C\-Input\-Parameters@{Go\-S\-U\-M\-::\-C\-Input\-Parameters}!p\-I\-C@{p\-I\-C}}
+\index{p\-I\-C@{p\-I\-C}!GoSUM::CInputParameters@{Go\-S\-U\-M\-::\-C\-Input\-Parameters}}
+\subsubsection[{p\-I\-C}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Model\-Constraints}$\ast$ Go\-S\-U\-M\-::\-C\-Input\-Parameters\-::p\-I\-C\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_input_parameters_a6ea7a2d7d1ceb033321890c5313a6595}
+
+
+Points to model constraints. 
+
+\hypertarget{class_go_s_u_m_1_1_c_input_parameters_a7b08f28eae560f682cacb13647cd75ac}{\index{Go\-S\-U\-M\-::\-C\-Input\-Parameters@{Go\-S\-U\-M\-::\-C\-Input\-Parameters}!progress\-Slot@{progress\-Slot}}
+\index{progress\-Slot@{progress\-Slot}!GoSUM::CInputParameters@{Go\-S\-U\-M\-::\-C\-Input\-Parameters}}
+\subsubsection[{progress\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}boost\-::function$<$void()$>$ Go\-S\-U\-M\-::\-C\-Input\-Parameters\-::progress\-Slot}}\label{class_go_s_u_m_1_1_c_input_parameters_a7b08f28eae560f682cacb13647cd75ac}
+
+
+External progress slot, later connected to signal for evalaution progress. 
+
+\hypertarget{class_go_s_u_m_1_1_c_input_parameters_ad33f3fe5498287609093ca480c221458}{\index{Go\-S\-U\-M\-::\-C\-Input\-Parameters@{Go\-S\-U\-M\-::\-C\-Input\-Parameters}!R\-Ssize@{R\-Ssize}}
+\index{R\-Ssize@{R\-Ssize}!GoSUM::CInputParameters@{Go\-S\-U\-M\-::\-C\-Input\-Parameters}}
+\subsubsection[{R\-Ssize}]{\setlength{\rightskip}{0pt plus 5cm}int Go\-S\-U\-M\-::\-C\-Input\-Parameters\-::\-R\-Ssize\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_input_parameters_ad33f3fe5498287609093ca480c221458}
+Holds resample size. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Development/core/\hyperlink{_model_8h}{Model.\-h}\item 
+C\-:/\-Development/core/\hyperlink{_model_8cpp}{Model.\-cpp}\end{DoxyCompactItemize}

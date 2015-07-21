@@ -1,0 +1,114 @@
+\hypertarget{class_go_s_u_m_1_1_c_g_a_model_optimization}{\section{Go\-S\-U\-M\-:\-:C\-G\-A\-Model\-Optimization Class Reference}
+\label{class_go_s_u_m_1_1_c_g_a_model_optimization}\index{Go\-S\-U\-M\-::\-C\-G\-A\-Model\-Optimization@{Go\-S\-U\-M\-::\-C\-G\-A\-Model\-Optimization}}
+}
+
+
+class for the genetic algorithm, i.\-e. interface for G\-A\-L\-I\-B  
+
+
+
+
+{\ttfamily \#include $<$G\-A\-Optimization.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_go_s_u_m_1_1_c_g_a_model_optimization_a25077cac206e7a3600bed4b7b857e96f}{C\-G\-A\-Model\-Optimization} ()
+\item 
+virtual \hyperlink{class_go_s_u_m_1_1_c_g_a_model_optimization_a48088f93cfecaf58bcdf9e41dcb2556c}{$\sim$\-C\-G\-A\-Model\-Optimization} ()
+\item 
+Array\-Xd \hyperlink{class_go_s_u_m_1_1_c_g_a_model_optimization_a23a9dd1029397334b0bc34f5cf95a4f1}{optimize} (\hyperlink{class_go_s_u_m_1_1_c_optimization_problem}{C\-Optimization\-Problem} $\ast$\-\_\-p\-S\-O\-P)
+\begin{DoxyCompactList}\small\item\em solves the optimizations problem \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Array\-Xd \hyperlink{class_go_s_u_m_1_1_c_g_a_model_optimization_a75041b57bc2191d710089e16ad9ed188}{G\-A\-Genome2\-Model\-Point} (const G\-A\-Genome \&g)
+\begin{DoxyCompactList}\small\item\em converts G\-A\-Genome -\/$>$ hpyercube point -\/$>$ optimization point -\/$>$ model point \end{DoxyCompactList}\item 
+static float \hyperlink{class_go_s_u_m_1_1_c_g_a_model_optimization_ae1c26fbf22cfa62bc316f1761e7e304f}{Fitness} (G\-A\-Genome \&g)
+\begin{DoxyCompactList}\small\item\em evalutes fitness of an individual \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_go_s_u_m_1_1_c_optimization_problem}{C\-Optimization\-Problem} $\ast$ \hyperlink{class_go_s_u_m_1_1_c_g_a_model_optimization_aaa06d9ea4224cfce63846e80ef228c6b}{p\-O\-P} = N\-U\-L\-L
+\begin{DoxyCompactList}\small\item\em points to the optimization problem \end{DoxyCompactList}\item 
+static double \hyperlink{class_go_s_u_m_1_1_c_g_a_model_optimization_ab1be1deca11e58b9e80a6784b069aa43}{C} = 1.e+2
+\begin{DoxyCompactList}\small\item\em constant added to get positive fitness \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+class for the genetic algorithm, i.\-e. interface for G\-A\-L\-I\-B 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_g_a_model_optimization_a25077cac206e7a3600bed4b7b857e96f}{\index{Go\-S\-U\-M\-::\-C\-G\-A\-Model\-Optimization@{Go\-S\-U\-M\-::\-C\-G\-A\-Model\-Optimization}!C\-G\-A\-Model\-Optimization@{C\-G\-A\-Model\-Optimization}}
+\index{C\-G\-A\-Model\-Optimization@{C\-G\-A\-Model\-Optimization}!GoSUM::CGAModelOptimization@{Go\-S\-U\-M\-::\-C\-G\-A\-Model\-Optimization}}
+\subsubsection[{C\-G\-A\-Model\-Optimization}]{\setlength{\rightskip}{0pt plus 5cm}Go\-S\-U\-M\-::\-C\-G\-A\-Model\-Optimization\-::\-C\-G\-A\-Model\-Optimization (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_g_a_model_optimization_a25077cac206e7a3600bed4b7b857e96f}
+\hypertarget{class_go_s_u_m_1_1_c_g_a_model_optimization_a48088f93cfecaf58bcdf9e41dcb2556c}{\index{Go\-S\-U\-M\-::\-C\-G\-A\-Model\-Optimization@{Go\-S\-U\-M\-::\-C\-G\-A\-Model\-Optimization}!$\sim$\-C\-G\-A\-Model\-Optimization@{$\sim$\-C\-G\-A\-Model\-Optimization}}
+\index{$\sim$\-C\-G\-A\-Model\-Optimization@{$\sim$\-C\-G\-A\-Model\-Optimization}!GoSUM::CGAModelOptimization@{Go\-S\-U\-M\-::\-C\-G\-A\-Model\-Optimization}}
+\subsubsection[{$\sim$\-C\-G\-A\-Model\-Optimization}]{\setlength{\rightskip}{0pt plus 5cm}virtual Go\-S\-U\-M\-::\-C\-G\-A\-Model\-Optimization\-::$\sim$\-C\-G\-A\-Model\-Optimization (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_g_a_model_optimization_a48088f93cfecaf58bcdf9e41dcb2556c}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_g_a_model_optimization_ae1c26fbf22cfa62bc316f1761e7e304f}{\index{Go\-S\-U\-M\-::\-C\-G\-A\-Model\-Optimization@{Go\-S\-U\-M\-::\-C\-G\-A\-Model\-Optimization}!Fitness@{Fitness}}
+\index{Fitness@{Fitness}!GoSUM::CGAModelOptimization@{Go\-S\-U\-M\-::\-C\-G\-A\-Model\-Optimization}}
+\subsubsection[{Fitness}]{\setlength{\rightskip}{0pt plus 5cm}float Go\-S\-U\-M\-::\-C\-G\-A\-Model\-Optimization\-::\-Fitness (
+\begin{DoxyParamCaption}
+\item[{G\-A\-Genome \&}]{g}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_go_s_u_m_1_1_c_g_a_model_optimization_ae1c26fbf22cfa62bc316f1761e7e304f}
+
+
+evalutes fitness of an individual 
+
+\hypertarget{class_go_s_u_m_1_1_c_g_a_model_optimization_a75041b57bc2191d710089e16ad9ed188}{\index{Go\-S\-U\-M\-::\-C\-G\-A\-Model\-Optimization@{Go\-S\-U\-M\-::\-C\-G\-A\-Model\-Optimization}!G\-A\-Genome2\-Model\-Point@{G\-A\-Genome2\-Model\-Point}}
+\index{G\-A\-Genome2\-Model\-Point@{G\-A\-Genome2\-Model\-Point}!GoSUM::CGAModelOptimization@{Go\-S\-U\-M\-::\-C\-G\-A\-Model\-Optimization}}
+\subsubsection[{G\-A\-Genome2\-Model\-Point}]{\setlength{\rightskip}{0pt plus 5cm}Array\-Xd Go\-S\-U\-M\-::\-C\-G\-A\-Model\-Optimization\-::\-G\-A\-Genome2\-Model\-Point (
+\begin{DoxyParamCaption}
+\item[{const G\-A\-Genome \&}]{g}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_go_s_u_m_1_1_c_g_a_model_optimization_a75041b57bc2191d710089e16ad9ed188}
+
+
+converts G\-A\-Genome -\/$>$ hpyercube point -\/$>$ optimization point -\/$>$ model point 
+
+\hypertarget{class_go_s_u_m_1_1_c_g_a_model_optimization_a23a9dd1029397334b0bc34f5cf95a4f1}{\index{Go\-S\-U\-M\-::\-C\-G\-A\-Model\-Optimization@{Go\-S\-U\-M\-::\-C\-G\-A\-Model\-Optimization}!optimize@{optimize}}
+\index{optimize@{optimize}!GoSUM::CGAModelOptimization@{Go\-S\-U\-M\-::\-C\-G\-A\-Model\-Optimization}}
+\subsubsection[{optimize}]{\setlength{\rightskip}{0pt plus 5cm}Array\-Xd Go\-S\-U\-M\-::\-C\-G\-A\-Model\-Optimization\-::optimize (
+\begin{DoxyParamCaption}
+\item[{{\bf Go\-S\-U\-M\-::\-C\-Optimization\-Problem} $\ast$}]{\-\_\-p\-O\-P}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_g_a_model_optimization_a23a9dd1029397334b0bc34f5cf95a4f1}
+
+
+solves the optimizations problem 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_g_a_model_optimization_ab1be1deca11e58b9e80a6784b069aa43}{\index{Go\-S\-U\-M\-::\-C\-G\-A\-Model\-Optimization@{Go\-S\-U\-M\-::\-C\-G\-A\-Model\-Optimization}!C@{C}}
+\index{C@{C}!GoSUM::CGAModelOptimization@{Go\-S\-U\-M\-::\-C\-G\-A\-Model\-Optimization}}
+\subsubsection[{C}]{\setlength{\rightskip}{0pt plus 5cm}double Go\-S\-U\-M\-::\-C\-G\-A\-Model\-Optimization\-::\-C = 1.e+2\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_g_a_model_optimization_ab1be1deca11e58b9e80a6784b069aa43}
+
+
+constant added to get positive fitness 
+
+\hypertarget{class_go_s_u_m_1_1_c_g_a_model_optimization_aaa06d9ea4224cfce63846e80ef228c6b}{\index{Go\-S\-U\-M\-::\-C\-G\-A\-Model\-Optimization@{Go\-S\-U\-M\-::\-C\-G\-A\-Model\-Optimization}!p\-O\-P@{p\-O\-P}}
+\index{p\-O\-P@{p\-O\-P}!GoSUM::CGAModelOptimization@{Go\-S\-U\-M\-::\-C\-G\-A\-Model\-Optimization}}
+\subsubsection[{p\-O\-P}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Go\-S\-U\-M\-::\-C\-Optimization\-Problem} $\ast$ Go\-S\-U\-M\-::\-C\-G\-A\-Model\-Optimization\-::p\-O\-P = N\-U\-L\-L\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_g_a_model_optimization_aaa06d9ea4224cfce63846e80ef228c6b}
+
+
+points to the optimization problem 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Development/core/\hyperlink{_g_a_optimization_8h}{G\-A\-Optimization.\-h}\item 
+C\-:/\-Development/core/\hyperlink{_g_a_optimization_8cpp}{G\-A\-Optimization.\-cpp}\end{DoxyCompactItemize}

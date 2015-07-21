@@ -1,0 +1,512 @@
+\hypertarget{class_go_s_u_m_1_1_c_single_a_m}{\section{Go\-S\-U\-M\-:\-:C\-Single\-A\-M Class Reference}
+\label{class_go_s_u_m_1_1_c_single_a_m}\index{Go\-S\-U\-M\-::\-C\-Single\-A\-M@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}}
+}
+
+
+Base class for the analyitical model for single output state, interface between analytical model and S\-V\-M.  
+
+
+
+
+{\ttfamily \#include $<$Analytical\-Model.\-h$>$}
+
+Inheritance diagram for Go\-S\-U\-M\-:\-:C\-Single\-A\-M\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.086957cm]{class_go_s_u_m_1_1_c_single_a_m}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_go_s_u_m_1_1_c_single_a_m_accbb7ba32186ee30058bdccb3afe6bb9}{C\-Single\-A\-M} ()
+\item 
+virtual \hyperlink{class_go_s_u_m_1_1_c_single_a_m_a8395a9eb190fe512a57a3bff53337fd1}{$\sim$\-C\-Single\-A\-M} ()
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_single_a_m_a65782671f1530d2f88fc810b28163f86}{learn} (int \-\_\-osi, \hyperlink{class_c_m_a_d_s}{C\-M\-A\-D\-S} \&\-\_\-mads, std\-::ostream \&\-\_\-out=std\-::cout)
+\begin{DoxyCompactList}\small\item\em Learns S\-V\-M models for all output states. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_go_s_u_m_1_1_c_single_a_m_a77486d18726fc335328dd02bc676f74e}{constraints\-Size} () const 
+\begin{DoxyCompactList}\small\item\em Returns size of the constraints. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_go_s_u_m_1_1_c_single_a_m_ab45bdd4b3d7b5cab88e05ed6cd98e7e6}{constraint} (const Array\-Xd \&mv, int \-\_\-at)
+\begin{DoxyCompactList}\small\item\em Evaluates particular constraint value from model variables values. \end{DoxyCompactList}\item 
+virtual Array\-Xd \hyperlink{class_go_s_u_m_1_1_c_single_a_m_a47f92af4be18d3ae094abd65eb4a7105}{model\-Variables} (const Array\-Xd \&x) const 
+\begin{DoxyCompactList}\small\item\em Returns model variables values from optimization variables values. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_go_s_u_m_1_1_c_single_a_m_a1a4a43ffb8faf177242320a686acf799}{objective} (const Array\-Xd \&ov)
+\begin{DoxyCompactList}\small\item\em Evaluates objective function value from optimization variables values. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_go_s_u_m_1_1_c_single_a_m_acdaa489065049af967092e904004f299}{open\-Optimization} ()
+\begin{DoxyCompactList}\small\item\em Opens optmization. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_go_s_u_m_1_1_c_single_a_m_a28c4026a43409c73e27acbdabfff35ee}{optimization\-Point2\-S\-V\-M\-Param} (const Array\-Xd \&ov)
+\begin{DoxyCompactList}\small\item\em Converts optimization point to S\-V\-M parameters. \end{DoxyCompactList}\item 
+double \hyperlink{class_go_s_u_m_1_1_c_single_a_m_ad70a6e1783983436345ad3a03a409406}{f} (const Array\-Xd \&x) const 
+\begin{DoxyCompactList}\small\item\em Returns value of the output state according to the single output state analytical model. \end{DoxyCompactList}\item 
+Array\-Xd \hyperlink{class_go_s_u_m_1_1_c_single_a_m_ac24528e4f4356ad0a6921416c4cec866}{df} (const Array\-Xd \&x) const 
+\begin{DoxyCompactList}\small\item\em Returns gradient of the output state according to the single output state the analytical model. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_go_s_u_m_1_1_c_single_a_m}{Go\-S\-U\-M\-::\-C\-Single\-A\-M} $\ast$ \hyperlink{class_go_s_u_m_1_1_c_single_a_m_a41a4282c86821ec89b1213e0c6f13b13}{New} (const \hyperlink{class_go_s_u_m_1_1_c_analytical_model}{C\-Analytical\-Model} $\ast$\-\_\-p\-A\-M)
+\begin{DoxyCompactList}\small\item\em Returns new Single\-A\-M of type defined in \-\_\-p\-A\-M. \end{DoxyCompactList}\item 
+static void \hyperlink{class_go_s_u_m_1_1_c_single_a_m_aa7d0ce37e8f5e41a4879a234c6c2f91a}{Open\-S\-V\-M} (\hyperlink{class_go_s_u_m_1_1_c_input_parameters}{C\-Input\-Parameters} $\ast$\-\_\-p\-I\-P, \hyperlink{class_go_s_u_m_1_1_c_output_states}{C\-Output\-States} $\ast$\-\_\-p\-O\-S)
+\begin{DoxyCompactList}\small\item\em Opens S\-V\-M learning (sets prob and xspace). \end{DoxyCompactList}\item 
+static void \hyperlink{class_go_s_u_m_1_1_c_single_a_m_a67f8dbc5d1f4a6ad214a9a0e639c0158}{Close\-S\-V\-M} ()
+\begin{DoxyCompactList}\small\item\em Closes S\-V\-M learning. \end{DoxyCompactList}\item 
+static void \hyperlink{class_go_s_u_m_1_1_c_single_a_m_aaf59d09d77621bbdba02ca88400adcd5}{Set\-Maximal\-Learning\-Size} (int \-\_\-maxlearnsize)
+\begin{DoxyCompactList}\small\item\em Sets maximal (sample) size used in learning. \end{DoxyCompactList}\item 
+static int \hyperlink{class_go_s_u_m_1_1_c_single_a_m_acd3ea9f80324d9580f750cbc8f3d9338}{Maximal\-Learning\-Size} ()
+\begin{DoxyCompactList}\small\item\em Returns maximal (sample) size used in learning. \end{DoxyCompactList}\item 
+static void \hyperlink{class_go_s_u_m_1_1_c_single_a_m_ae15b71d7a55ae43a9543610bb2f060b7}{Set\-Learning\-Fraction} (int \-\_\-learnfrac)
+\begin{DoxyCompactList}\small\item\em Sets (sample) fraction used in learning. \end{DoxyCompactList}\item 
+static int \hyperlink{class_go_s_u_m_1_1_c_single_a_m_a63ac2d01d9dc387ff0dc2fa57528544b}{Learning\-Fraction} ()
+\begin{DoxyCompactList}\small\item\em Returns (sample) fraction used in learning. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boost\-::signal$<$ void()$>$ \hyperlink{class_go_s_u_m_1_1_c_single_a_m_aeb0dea2fcd2ba48e5853c56f1a5b3fe6}{learning\-Progressed}
+\begin{DoxyCompactList}\small\item\em Signal for learning progress, emitted on every objective evaluation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \hyperlink{class_go_s_u_m_1_1_c_single_a_m_a761e514fefeb7324e5509571f1be3848}{serialize} (Archive \&ar, const unsigned int version)
+\item 
+double \hyperlink{class_go_s_u_m_1_1_c_single_a_m_a1dec1e621ca86dfb37ae91d9b07490f2}{rbf\-Kernel} (const Array\-Xd \&x, int j) const 
+\begin{DoxyCompactList}\small\item\em Returns R\-B\-F kernel for jth support vector. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+struct svm\-\_\-parameter \hyperlink{class_go_s_u_m_1_1_c_single_a_m_a3ef521484ddcef46a6a1da104fb0bf87}{param}
+\begin{DoxyCompactList}\small\item\em S\-V\-M format specific. \end{DoxyCompactList}\item 
+struct svm\-\_\-model $\ast$ \hyperlink{class_go_s_u_m_1_1_c_single_a_m_a512f4020c768225334ba3bcab462be10}{model}
+\begin{DoxyCompactList}\small\item\em S\-V\-M format specific. \end{DoxyCompactList}\item 
+int \hyperlink{class_go_s_u_m_1_1_c_single_a_m_a55a31b8751445b942790f395f89a00ea}{osi}
+\begin{DoxyCompactList}\small\item\em Index of the related output state. \end{DoxyCompactList}\item 
+double \hyperlink{class_go_s_u_m_1_1_c_single_a_m_a78163361ed0edb048f97cd382b9014e5}{gamma}
+\item 
+double \hyperlink{class_go_s_u_m_1_1_c_single_a_m_aaa0eba4efdd26680f66cbc04e6a9633a}{C}
+\item 
+double \hyperlink{class_go_s_u_m_1_1_c_single_a_m_a2151ace8d1a5b99355bbf1ee8db0278c}{p}
+\item 
+double \hyperlink{class_go_s_u_m_1_1_c_single_a_m_a6af8bb4fec805a9f936bcfee61049238}{nu}
+\begin{DoxyCompactList}\small\item\em S\-V\-M exponent constant in the R\-B\-F kernel case. \end{DoxyCompactList}\item 
+double \hyperlink{class_go_s_u_m_1_1_c_single_a_m_af741aaa733aec6ac97d405d39d60f3ab}{coef0}
+\begin{DoxyCompactList}\small\item\em S\-V\-M free coeficient in the polynomial kernel case. \end{DoxyCompactList}\item 
+int \hyperlink{class_go_s_u_m_1_1_c_single_a_m_a1b4eabb824c41f19f9679472e29c2602}{degree}
+\begin{DoxyCompactList}\small\item\em S\-V\-M degree in the polynomial kernel case. \end{DoxyCompactList}\item 
+int \hyperlink{class_go_s_u_m_1_1_c_single_a_m_ab2258ece370c0d08b80c3031c67f559e}{Nsvm}
+\begin{DoxyCompactList}\small\item\em S\-V\-M number of support vectors. \end{DoxyCompactList}\item 
+Array\-Xd \hyperlink{class_go_s_u_m_1_1_c_single_a_m_a9000684635e196782000bb3f6cfb7d29}{coeff}
+\begin{DoxyCompactList}\small\item\em S\-V\-M coefficients. \end{DoxyCompactList}\item 
+std\-::vector$<$ Array\-Xd $>$ \hyperlink{class_go_s_u_m_1_1_c_single_a_m_ad000e314359f2cdfef4b671d93afedbe}{Xsv}
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_go_s_u_m_1_1_c_input_parameters}{C\-Input\-Parameters} $\ast$ \hyperlink{class_go_s_u_m_1_1_c_single_a_m_a0816476bc95532d1ba3e1f9198ac9d09}{p\-I\-P} = \hyperlink{struct_go_s_u_m_a3e6605d298c4dcd991f606a654a6cae4}{N\-U\-L\-L}
+\begin{DoxyCompactList}\small\item\em Points to input parameters. \end{DoxyCompactList}\item 
+static \hyperlink{class_go_s_u_m_1_1_c_output_states}{C\-Output\-States} $\ast$ \hyperlink{class_go_s_u_m_1_1_c_single_a_m_adb33dda815cdb845accba4ea8c7a0d61}{p\-O\-S} = \hyperlink{struct_go_s_u_m_a3e6605d298c4dcd991f606a654a6cae4}{N\-U\-L\-L}
+\begin{DoxyCompactList}\small\item\em Points to output states. \end{DoxyCompactList}\item 
+static Array\-Xi \hyperlink{class_go_s_u_m_1_1_c_single_a_m_a920cc0a3474605d576acde4639e37487}{perm}
+\begin{DoxyCompactList}\small\item\em Permutation of sample indices. \end{DoxyCompactList}\item 
+static struct svm\-\_\-problem \hyperlink{class_go_s_u_m_1_1_c_single_a_m_a85d854a5ad2d7c574f8f2ab689de6418}{prob}
+\begin{DoxyCompactList}\small\item\em S\-V\-M format specific. \end{DoxyCompactList}\item 
+static std\-::vector$<$ struct \\*
+svm\-\_\-node $>$ \hyperlink{class_go_s_u_m_1_1_c_single_a_m_a1f9346a510fdb3908c9f7f5947a75410}{xspace}
+\begin{DoxyCompactList}\small\item\em S\-V\-M format specific. \end{DoxyCompactList}\item 
+static int \hyperlink{class_go_s_u_m_1_1_c_single_a_m_acf4f5351e6f159a04d1af48304934fc8}{maxlearnsize} = 1000
+\item 
+static double \hyperlink{class_go_s_u_m_1_1_c_single_a_m_a10aa46c970ec92e30099d2db7cabd645}{learnfrac} = 0.\-05
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_go_s_u_m_1_1_c_single_a_m_ac98d07dd8f7b70e16ccb9a01abf56b9c}{boost\-::serialization\-::access}
+\begin{DoxyCompactList}\small\item\em Boost serialization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class for the analyitical model for single output state, interface between analytical model and S\-V\-M. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_single_a_m_accbb7ba32186ee30058bdccb3afe6bb9}{\index{Go\-S\-U\-M\-::\-C\-Single\-A\-M@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}!C\-Single\-A\-M@{C\-Single\-A\-M}}
+\index{C\-Single\-A\-M@{C\-Single\-A\-M}!GoSUM::CSingleAM@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}}
+\subsubsection[{C\-Single\-A\-M}]{\setlength{\rightskip}{0pt plus 5cm}Go\-S\-U\-M\-::\-C\-Single\-A\-M\-::\-C\-Single\-A\-M (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_single_a_m_accbb7ba32186ee30058bdccb3afe6bb9}
+\hypertarget{class_go_s_u_m_1_1_c_single_a_m_a8395a9eb190fe512a57a3bff53337fd1}{\index{Go\-S\-U\-M\-::\-C\-Single\-A\-M@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}!$\sim$\-C\-Single\-A\-M@{$\sim$\-C\-Single\-A\-M}}
+\index{$\sim$\-C\-Single\-A\-M@{$\sim$\-C\-Single\-A\-M}!GoSUM::CSingleAM@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}}
+\subsubsection[{$\sim$\-C\-Single\-A\-M}]{\setlength{\rightskip}{0pt plus 5cm}virtual Go\-S\-U\-M\-::\-C\-Single\-A\-M\-::$\sim$\-C\-Single\-A\-M (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_single_a_m_a8395a9eb190fe512a57a3bff53337fd1}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_single_a_m_a67f8dbc5d1f4a6ad214a9a0e639c0158}{\index{Go\-S\-U\-M\-::\-C\-Single\-A\-M@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}!Close\-S\-V\-M@{Close\-S\-V\-M}}
+\index{Close\-S\-V\-M@{Close\-S\-V\-M}!GoSUM::CSingleAM@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}}
+\subsubsection[{Close\-S\-V\-M}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Single\-A\-M\-::\-Close\-S\-V\-M (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_go_s_u_m_1_1_c_single_a_m_a67f8dbc5d1f4a6ad214a9a0e639c0158}
+
+
+Closes S\-V\-M learning. 
+
+\hypertarget{class_go_s_u_m_1_1_c_single_a_m_ab45bdd4b3d7b5cab88e05ed6cd98e7e6}{\index{Go\-S\-U\-M\-::\-C\-Single\-A\-M@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}!constraint@{constraint}}
+\index{constraint@{constraint}!GoSUM::CSingleAM@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}}
+\subsubsection[{constraint}]{\setlength{\rightskip}{0pt plus 5cm}virtual double Go\-S\-U\-M\-::\-C\-Single\-A\-M\-::constraint (
+\begin{DoxyParamCaption}
+\item[{const Array\-Xd \&}]{mv, }
+\item[{int}]{\-\_\-at}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_single_a_m_ab45bdd4b3d7b5cab88e05ed6cd98e7e6}
+
+
+Evaluates particular constraint value from model variables values. 
+
+
+
+Implements \hyperlink{class_c_optimization_problem_ac37dd6a981b9049943189b3fea343f64}{C\-Optimization\-Problem}.
+
+\hypertarget{class_go_s_u_m_1_1_c_single_a_m_a77486d18726fc335328dd02bc676f74e}{\index{Go\-S\-U\-M\-::\-C\-Single\-A\-M@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}!constraints\-Size@{constraints\-Size}}
+\index{constraints\-Size@{constraints\-Size}!GoSUM::CSingleAM@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}}
+\subsubsection[{constraints\-Size}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Go\-S\-U\-M\-::\-C\-Single\-A\-M\-::constraints\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_single_a_m_a77486d18726fc335328dd02bc676f74e}
+
+
+Returns size of the constraints. 
+
+
+
+Implements \hyperlink{class_c_optimization_problem_aa4c04d9a7d3885450e9c528f5446c241}{C\-Optimization\-Problem}.
+
+\hypertarget{class_go_s_u_m_1_1_c_single_a_m_ac24528e4f4356ad0a6921416c4cec866}{\index{Go\-S\-U\-M\-::\-C\-Single\-A\-M@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}!df@{df}}
+\index{df@{df}!GoSUM::CSingleAM@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}}
+\subsubsection[{df}]{\setlength{\rightskip}{0pt plus 5cm}Array\-Xd Go\-S\-U\-M\-::\-C\-Single\-A\-M\-::df (
+\begin{DoxyParamCaption}
+\item[{const Array\-Xd \&}]{x}
+\end{DoxyParamCaption}
+) const}}\label{class_go_s_u_m_1_1_c_single_a_m_ac24528e4f4356ad0a6921416c4cec866}
+
+
+Returns gradient of the output state according to the single output state the analytical model. 
+
+\hypertarget{class_go_s_u_m_1_1_c_single_a_m_ad70a6e1783983436345ad3a03a409406}{\index{Go\-S\-U\-M\-::\-C\-Single\-A\-M@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}!f@{f}}
+\index{f@{f}!GoSUM::CSingleAM@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}}
+\subsubsection[{f}]{\setlength{\rightskip}{0pt plus 5cm}double Go\-S\-U\-M\-::\-C\-Single\-A\-M\-::f (
+\begin{DoxyParamCaption}
+\item[{const Array\-Xd \&}]{x}
+\end{DoxyParamCaption}
+) const}}\label{class_go_s_u_m_1_1_c_single_a_m_ad70a6e1783983436345ad3a03a409406}
+
+
+Returns value of the output state according to the single output state analytical model. 
+
+\hypertarget{class_go_s_u_m_1_1_c_single_a_m_a65782671f1530d2f88fc810b28163f86}{\index{Go\-S\-U\-M\-::\-C\-Single\-A\-M@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}!learn@{learn}}
+\index{learn@{learn}!GoSUM::CSingleAM@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}}
+\subsubsection[{learn}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Single\-A\-M\-::learn (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-osi, }
+\item[{{\bf C\-M\-A\-D\-S} \&}]{\-\_\-mads, }
+\item[{std\-::ostream \&}]{\-\_\-out = {\ttfamily std\-:\-:cout}}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_single_a_m_a65782671f1530d2f88fc810b28163f86}
+
+
+Learns S\-V\-M models for all output states. 
+
+\hypertarget{class_go_s_u_m_1_1_c_single_a_m_a63ac2d01d9dc387ff0dc2fa57528544b}{\index{Go\-S\-U\-M\-::\-C\-Single\-A\-M@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}!Learning\-Fraction@{Learning\-Fraction}}
+\index{Learning\-Fraction@{Learning\-Fraction}!GoSUM::CSingleAM@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}}
+\subsubsection[{Learning\-Fraction}]{\setlength{\rightskip}{0pt plus 5cm}static int Go\-S\-U\-M\-::\-C\-Single\-A\-M\-::\-Learning\-Fraction (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_go_s_u_m_1_1_c_single_a_m_a63ac2d01d9dc387ff0dc2fa57528544b}
+
+
+Returns (sample) fraction used in learning. 
+
+\hypertarget{class_go_s_u_m_1_1_c_single_a_m_acd3ea9f80324d9580f750cbc8f3d9338}{\index{Go\-S\-U\-M\-::\-C\-Single\-A\-M@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}!Maximal\-Learning\-Size@{Maximal\-Learning\-Size}}
+\index{Maximal\-Learning\-Size@{Maximal\-Learning\-Size}!GoSUM::CSingleAM@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}}
+\subsubsection[{Maximal\-Learning\-Size}]{\setlength{\rightskip}{0pt plus 5cm}static int Go\-S\-U\-M\-::\-C\-Single\-A\-M\-::\-Maximal\-Learning\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_go_s_u_m_1_1_c_single_a_m_acd3ea9f80324d9580f750cbc8f3d9338}
+
+
+Returns maximal (sample) size used in learning. 
+
+\hypertarget{class_go_s_u_m_1_1_c_single_a_m_a47f92af4be18d3ae094abd65eb4a7105}{\index{Go\-S\-U\-M\-::\-C\-Single\-A\-M@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}!model\-Variables@{model\-Variables}}
+\index{model\-Variables@{model\-Variables}!GoSUM::CSingleAM@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}}
+\subsubsection[{model\-Variables}]{\setlength{\rightskip}{0pt plus 5cm}virtual Array\-Xd Go\-S\-U\-M\-::\-C\-Single\-A\-M\-::model\-Variables (
+\begin{DoxyParamCaption}
+\item[{const Array\-Xd \&}]{x}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_single_a_m_a47f92af4be18d3ae094abd65eb4a7105}
+
+
+Returns model variables values from optimization variables values. 
+
+\hypertarget{class_go_s_u_m_1_1_c_single_a_m_a41a4282c86821ec89b1213e0c6f13b13}{\index{Go\-S\-U\-M\-::\-C\-Single\-A\-M@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}!New@{New}}
+\index{New@{New}!GoSUM::CSingleAM@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}}
+\subsubsection[{New}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Go\-S\-U\-M\-::\-C\-Single\-A\-M} $\ast$ Go\-S\-U\-M\-::\-C\-Single\-A\-M\-::\-New (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Analytical\-Model} $\ast$}]{\-\_\-p\-A\-M}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_go_s_u_m_1_1_c_single_a_m_a41a4282c86821ec89b1213e0c6f13b13}
+
+
+Returns new Single\-A\-M of type defined in \-\_\-p\-A\-M. 
+
+\hypertarget{class_go_s_u_m_1_1_c_single_a_m_a1a4a43ffb8faf177242320a686acf799}{\index{Go\-S\-U\-M\-::\-C\-Single\-A\-M@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}!objective@{objective}}
+\index{objective@{objective}!GoSUM::CSingleAM@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}}
+\subsubsection[{objective}]{\setlength{\rightskip}{0pt plus 5cm}double Go\-S\-U\-M\-::\-C\-Single\-A\-M\-::objective (
+\begin{DoxyParamCaption}
+\item[{const Array\-Xd \&}]{ov}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_single_a_m_a1a4a43ffb8faf177242320a686acf799}
+
+
+Evaluates objective function value from optimization variables values. 
+
+
+
+Implements \hyperlink{class_c_optimization_problem_a3e0cc82f344895bd593d1960c4fbadf9}{C\-Optimization\-Problem}.
+
+\hypertarget{class_go_s_u_m_1_1_c_single_a_m_acdaa489065049af967092e904004f299}{\index{Go\-S\-U\-M\-::\-C\-Single\-A\-M@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}!open\-Optimization@{open\-Optimization}}
+\index{open\-Optimization@{open\-Optimization}!GoSUM::CSingleAM@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}}
+\subsubsection[{open\-Optimization}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Single\-A\-M\-::open\-Optimization (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_single_a_m_acdaa489065049af967092e904004f299}
+
+
+Opens optmization. 
+
+
+
+Reimplemented from \hyperlink{class_c_optimization_problem_af06324e65035961b500de11edcdab889}{C\-Optimization\-Problem}.
+
+
+
+Reimplemented in \hyperlink{class_go_s_u_m_1_1_c_nu_svr_s_a_m_a86f64a2aa6813481b3383eb0088efbbb}{Go\-S\-U\-M\-::\-C\-Nu\-Svr\-S\-A\-M}, and \hyperlink{class_go_s_u_m_1_1_c_eps_svr_s_a_m_a4ffdcbae7411ad49822e35957bbe2f44}{Go\-S\-U\-M\-::\-C\-Eps\-Svr\-S\-A\-M}.
+
+\hypertarget{class_go_s_u_m_1_1_c_single_a_m_aa7d0ce37e8f5e41a4879a234c6c2f91a}{\index{Go\-S\-U\-M\-::\-C\-Single\-A\-M@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}!Open\-S\-V\-M@{Open\-S\-V\-M}}
+\index{Open\-S\-V\-M@{Open\-S\-V\-M}!GoSUM::CSingleAM@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}}
+\subsubsection[{Open\-S\-V\-M}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Single\-A\-M\-::\-Open\-S\-V\-M (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Input\-Parameters} $\ast$}]{\-\_\-p\-I\-P, }
+\item[{{\bf C\-Output\-States} $\ast$}]{\-\_\-p\-O\-S}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_go_s_u_m_1_1_c_single_a_m_aa7d0ce37e8f5e41a4879a234c6c2f91a}
+
+
+Opens S\-V\-M learning (sets prob and xspace). 
+
+\hypertarget{class_go_s_u_m_1_1_c_single_a_m_a28c4026a43409c73e27acbdabfff35ee}{\index{Go\-S\-U\-M\-::\-C\-Single\-A\-M@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}!optimization\-Point2\-S\-V\-M\-Param@{optimization\-Point2\-S\-V\-M\-Param}}
+\index{optimization\-Point2\-S\-V\-M\-Param@{optimization\-Point2\-S\-V\-M\-Param}!GoSUM::CSingleAM@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}}
+\subsubsection[{optimization\-Point2\-S\-V\-M\-Param}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Go\-S\-U\-M\-::\-C\-Single\-A\-M\-::optimization\-Point2\-S\-V\-M\-Param (
+\begin{DoxyParamCaption}
+\item[{const Array\-Xd \&}]{ov}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_single_a_m_a28c4026a43409c73e27acbdabfff35ee}
+
+
+Converts optimization point to S\-V\-M parameters. 
+
+
+
+Reimplemented in \hyperlink{class_go_s_u_m_1_1_c_nu_svr_s_a_m_aaa361789765b9862fb1ba2b04f0c24ac}{Go\-S\-U\-M\-::\-C\-Nu\-Svr\-S\-A\-M}, and \hyperlink{class_go_s_u_m_1_1_c_eps_svr_s_a_m_a44286934f7dad34f93aeefecda8bad18}{Go\-S\-U\-M\-::\-C\-Eps\-Svr\-S\-A\-M}.
+
+\hypertarget{class_go_s_u_m_1_1_c_single_a_m_a1dec1e621ca86dfb37ae91d9b07490f2}{\index{Go\-S\-U\-M\-::\-C\-Single\-A\-M@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}!rbf\-Kernel@{rbf\-Kernel}}
+\index{rbf\-Kernel@{rbf\-Kernel}!GoSUM::CSingleAM@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}}
+\subsubsection[{rbf\-Kernel}]{\setlength{\rightskip}{0pt plus 5cm}double Go\-S\-U\-M\-::\-C\-Single\-A\-M\-::rbf\-Kernel (
+\begin{DoxyParamCaption}
+\item[{const Array\-Xd \&}]{x, }
+\item[{int}]{j}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_single_a_m_a1dec1e621ca86dfb37ae91d9b07490f2}
+
+
+Returns R\-B\-F kernel for jth support vector. 
+
+\hypertarget{class_go_s_u_m_1_1_c_single_a_m_a761e514fefeb7324e5509571f1be3848}{\index{Go\-S\-U\-M\-::\-C\-Single\-A\-M@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}!serialize@{serialize}}
+\index{serialize@{serialize}!GoSUM::CSingleAM@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Archive $>$ void Go\-S\-U\-M\-::\-C\-Single\-A\-M\-::serialize (
+\begin{DoxyParamCaption}
+\item[{Archive \&}]{ar, }
+\item[{const unsigned int}]{version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_single_a_m_a761e514fefeb7324e5509571f1be3848}
+
+
+Reimplemented from \hyperlink{class_c_optimization_problem_ad5b8db9e394c4eedeb28686acb4dce43}{C\-Optimization\-Problem}.
+
+
+
+Reimplemented in \hyperlink{class_go_s_u_m_1_1_c_nu_svr_s_a_m_a5c67d2f1e31fc34fa5609f8d337afc6e}{Go\-S\-U\-M\-::\-C\-Nu\-Svr\-S\-A\-M}, \hyperlink{class_go_s_u_m_1_1_c_eps_svr_s_a_m_aa981fefdc8dc0376e7fc5175cb81f66e}{Go\-S\-U\-M\-::\-C\-Eps\-Svr\-S\-A\-M}, \hyperlink{class_go_s_u_m_1_1_c_one_class_s_a_m_a68ab0232a5c0b2d978b356d05ad4b933}{Go\-S\-U\-M\-::\-C\-One\-Class\-S\-A\-M}, \hyperlink{class_go_s_u_m_1_1_c_nu_svc_s_a_m_ac2dab3b5e58ec30ac474f1614bf20873}{Go\-S\-U\-M\-::\-C\-Nu\-Svc\-S\-A\-M}, and \hyperlink{class_go_s_u_m_1_1_c_c_svc_s_a_m_ab6aa9113e26905e5606e86d5d23c1b03}{Go\-S\-U\-M\-::\-C\-C\-Svc\-S\-A\-M}.
+
+\hypertarget{class_go_s_u_m_1_1_c_single_a_m_ae15b71d7a55ae43a9543610bb2f060b7}{\index{Go\-S\-U\-M\-::\-C\-Single\-A\-M@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}!Set\-Learning\-Fraction@{Set\-Learning\-Fraction}}
+\index{Set\-Learning\-Fraction@{Set\-Learning\-Fraction}!GoSUM::CSingleAM@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}}
+\subsubsection[{Set\-Learning\-Fraction}]{\setlength{\rightskip}{0pt plus 5cm}static void Go\-S\-U\-M\-::\-C\-Single\-A\-M\-::\-Set\-Learning\-Fraction (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-learnfrac}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_go_s_u_m_1_1_c_single_a_m_ae15b71d7a55ae43a9543610bb2f060b7}
+
+
+Sets (sample) fraction used in learning. 
+
+\hypertarget{class_go_s_u_m_1_1_c_single_a_m_aaf59d09d77621bbdba02ca88400adcd5}{\index{Go\-S\-U\-M\-::\-C\-Single\-A\-M@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}!Set\-Maximal\-Learning\-Size@{Set\-Maximal\-Learning\-Size}}
+\index{Set\-Maximal\-Learning\-Size@{Set\-Maximal\-Learning\-Size}!GoSUM::CSingleAM@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}}
+\subsubsection[{Set\-Maximal\-Learning\-Size}]{\setlength{\rightskip}{0pt plus 5cm}static void Go\-S\-U\-M\-::\-C\-Single\-A\-M\-::\-Set\-Maximal\-Learning\-Size (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-maxlearnsize}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_go_s_u_m_1_1_c_single_a_m_aaf59d09d77621bbdba02ca88400adcd5}
+
+
+Sets maximal (sample) size used in learning. 
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_single_a_m_ac98d07dd8f7b70e16ccb9a01abf56b9c}{\index{Go\-S\-U\-M\-::\-C\-Single\-A\-M@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}!boost\-::serialization\-::access@{boost\-::serialization\-::access}}
+\index{boost\-::serialization\-::access@{boost\-::serialization\-::access}!GoSUM::CSingleAM@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}}
+\subsubsection[{boost\-::serialization\-::access}]{\setlength{\rightskip}{0pt plus 5cm}friend class boost\-::serialization\-::access\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_go_s_u_m_1_1_c_single_a_m_ac98d07dd8f7b70e16ccb9a01abf56b9c}
+
+
+Boost serialization. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_single_a_m_aaa0eba4efdd26680f66cbc04e6a9633a}{\index{Go\-S\-U\-M\-::\-C\-Single\-A\-M@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}!C@{C}}
+\index{C@{C}!GoSUM::CSingleAM@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}}
+\subsubsection[{C}]{\setlength{\rightskip}{0pt plus 5cm}double Go\-S\-U\-M\-::\-C\-Single\-A\-M\-::\-C\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_single_a_m_aaa0eba4efdd26680f66cbc04e6a9633a}
+\hypertarget{class_go_s_u_m_1_1_c_single_a_m_af741aaa733aec6ac97d405d39d60f3ab}{\index{Go\-S\-U\-M\-::\-C\-Single\-A\-M@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}!coef0@{coef0}}
+\index{coef0@{coef0}!GoSUM::CSingleAM@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}}
+\subsubsection[{coef0}]{\setlength{\rightskip}{0pt plus 5cm}double Go\-S\-U\-M\-::\-C\-Single\-A\-M\-::coef0\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_single_a_m_af741aaa733aec6ac97d405d39d60f3ab}
+
+
+S\-V\-M free coeficient in the polynomial kernel case. 
+
+\hypertarget{class_go_s_u_m_1_1_c_single_a_m_a9000684635e196782000bb3f6cfb7d29}{\index{Go\-S\-U\-M\-::\-C\-Single\-A\-M@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}!coeff@{coeff}}
+\index{coeff@{coeff}!GoSUM::CSingleAM@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}}
+\subsubsection[{coeff}]{\setlength{\rightskip}{0pt plus 5cm}Array\-Xd Go\-S\-U\-M\-::\-C\-Single\-A\-M\-::coeff\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_single_a_m_a9000684635e196782000bb3f6cfb7d29}
+
+
+S\-V\-M coefficients. 
+
+\hypertarget{class_go_s_u_m_1_1_c_single_a_m_a1b4eabb824c41f19f9679472e29c2602}{\index{Go\-S\-U\-M\-::\-C\-Single\-A\-M@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}!degree@{degree}}
+\index{degree@{degree}!GoSUM::CSingleAM@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}}
+\subsubsection[{degree}]{\setlength{\rightskip}{0pt plus 5cm}int Go\-S\-U\-M\-::\-C\-Single\-A\-M\-::degree\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_single_a_m_a1b4eabb824c41f19f9679472e29c2602}
+
+
+S\-V\-M degree in the polynomial kernel case. 
+
+\hypertarget{class_go_s_u_m_1_1_c_single_a_m_a78163361ed0edb048f97cd382b9014e5}{\index{Go\-S\-U\-M\-::\-C\-Single\-A\-M@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}!gamma@{gamma}}
+\index{gamma@{gamma}!GoSUM::CSingleAM@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}}
+\subsubsection[{gamma}]{\setlength{\rightskip}{0pt plus 5cm}double Go\-S\-U\-M\-::\-C\-Single\-A\-M\-::gamma\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_single_a_m_a78163361ed0edb048f97cd382b9014e5}
+\hypertarget{class_go_s_u_m_1_1_c_single_a_m_a10aa46c970ec92e30099d2db7cabd645}{\index{Go\-S\-U\-M\-::\-C\-Single\-A\-M@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}!learnfrac@{learnfrac}}
+\index{learnfrac@{learnfrac}!GoSUM::CSingleAM@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}}
+\subsubsection[{learnfrac}]{\setlength{\rightskip}{0pt plus 5cm}double Go\-S\-U\-M\-::\-C\-Single\-A\-M\-::learnfrac = 0.\-05\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_single_a_m_a10aa46c970ec92e30099d2db7cabd645}
+\hypertarget{class_go_s_u_m_1_1_c_single_a_m_aeb0dea2fcd2ba48e5853c56f1a5b3fe6}{\index{Go\-S\-U\-M\-::\-C\-Single\-A\-M@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}!learning\-Progressed@{learning\-Progressed}}
+\index{learning\-Progressed@{learning\-Progressed}!GoSUM::CSingleAM@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}}
+\subsubsection[{learning\-Progressed}]{\setlength{\rightskip}{0pt plus 5cm}boost\-::signal$<$void()$>$ Go\-S\-U\-M\-::\-C\-Single\-A\-M\-::learning\-Progressed}}\label{class_go_s_u_m_1_1_c_single_a_m_aeb0dea2fcd2ba48e5853c56f1a5b3fe6}
+
+
+Signal for learning progress, emitted on every objective evaluation. 
+
+\hypertarget{class_go_s_u_m_1_1_c_single_a_m_acf4f5351e6f159a04d1af48304934fc8}{\index{Go\-S\-U\-M\-::\-C\-Single\-A\-M@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}!maxlearnsize@{maxlearnsize}}
+\index{maxlearnsize@{maxlearnsize}!GoSUM::CSingleAM@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}}
+\subsubsection[{maxlearnsize}]{\setlength{\rightskip}{0pt plus 5cm}int Go\-S\-U\-M\-::\-C\-Single\-A\-M\-::maxlearnsize = 1000\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_single_a_m_acf4f5351e6f159a04d1af48304934fc8}
+\hypertarget{class_go_s_u_m_1_1_c_single_a_m_a512f4020c768225334ba3bcab462be10}{\index{Go\-S\-U\-M\-::\-C\-Single\-A\-M@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}!model@{model}}
+\index{model@{model}!GoSUM::CSingleAM@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}}
+\subsubsection[{model}]{\setlength{\rightskip}{0pt plus 5cm}struct svm\-\_\-model$\ast$ Go\-S\-U\-M\-::\-C\-Single\-A\-M\-::model\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_single_a_m_a512f4020c768225334ba3bcab462be10}
+
+
+S\-V\-M format specific. 
+
+\hypertarget{class_go_s_u_m_1_1_c_single_a_m_ab2258ece370c0d08b80c3031c67f559e}{\index{Go\-S\-U\-M\-::\-C\-Single\-A\-M@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}!Nsvm@{Nsvm}}
+\index{Nsvm@{Nsvm}!GoSUM::CSingleAM@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}}
+\subsubsection[{Nsvm}]{\setlength{\rightskip}{0pt plus 5cm}int Go\-S\-U\-M\-::\-C\-Single\-A\-M\-::\-Nsvm\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_single_a_m_ab2258ece370c0d08b80c3031c67f559e}
+
+
+S\-V\-M number of support vectors. 
+
+\hypertarget{class_go_s_u_m_1_1_c_single_a_m_a6af8bb4fec805a9f936bcfee61049238}{\index{Go\-S\-U\-M\-::\-C\-Single\-A\-M@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}!nu@{nu}}
+\index{nu@{nu}!GoSUM::CSingleAM@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}}
+\subsubsection[{nu}]{\setlength{\rightskip}{0pt plus 5cm}double Go\-S\-U\-M\-::\-C\-Single\-A\-M\-::nu\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_single_a_m_a6af8bb4fec805a9f936bcfee61049238}
+
+
+S\-V\-M exponent constant in the R\-B\-F kernel case. 
+
+\hypertarget{class_go_s_u_m_1_1_c_single_a_m_a55a31b8751445b942790f395f89a00ea}{\index{Go\-S\-U\-M\-::\-C\-Single\-A\-M@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}!osi@{osi}}
+\index{osi@{osi}!GoSUM::CSingleAM@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}}
+\subsubsection[{osi}]{\setlength{\rightskip}{0pt plus 5cm}int Go\-S\-U\-M\-::\-C\-Single\-A\-M\-::osi\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_single_a_m_a55a31b8751445b942790f395f89a00ea}
+
+
+Index of the related output state. 
+
+\hypertarget{class_go_s_u_m_1_1_c_single_a_m_a2151ace8d1a5b99355bbf1ee8db0278c}{\index{Go\-S\-U\-M\-::\-C\-Single\-A\-M@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}!p@{p}}
+\index{p@{p}!GoSUM::CSingleAM@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}}
+\subsubsection[{p}]{\setlength{\rightskip}{0pt plus 5cm}double Go\-S\-U\-M\-::\-C\-Single\-A\-M\-::p\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_single_a_m_a2151ace8d1a5b99355bbf1ee8db0278c}
+\hypertarget{class_go_s_u_m_1_1_c_single_a_m_a3ef521484ddcef46a6a1da104fb0bf87}{\index{Go\-S\-U\-M\-::\-C\-Single\-A\-M@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}!param@{param}}
+\index{param@{param}!GoSUM::CSingleAM@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}}
+\subsubsection[{param}]{\setlength{\rightskip}{0pt plus 5cm}struct svm\-\_\-parameter Go\-S\-U\-M\-::\-C\-Single\-A\-M\-::param\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_single_a_m_a3ef521484ddcef46a6a1da104fb0bf87}
+
+
+S\-V\-M format specific. 
+
+\hypertarget{class_go_s_u_m_1_1_c_single_a_m_a920cc0a3474605d576acde4639e37487}{\index{Go\-S\-U\-M\-::\-C\-Single\-A\-M@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}!perm@{perm}}
+\index{perm@{perm}!GoSUM::CSingleAM@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}}
+\subsubsection[{perm}]{\setlength{\rightskip}{0pt plus 5cm}Array\-Xi Go\-S\-U\-M\-::\-C\-Single\-A\-M\-::perm\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_single_a_m_a920cc0a3474605d576acde4639e37487}
+
+
+Permutation of sample indices. 
+
+\hypertarget{class_go_s_u_m_1_1_c_single_a_m_a0816476bc95532d1ba3e1f9198ac9d09}{\index{Go\-S\-U\-M\-::\-C\-Single\-A\-M@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}!p\-I\-P@{p\-I\-P}}
+\index{p\-I\-P@{p\-I\-P}!GoSUM::CSingleAM@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}}
+\subsubsection[{p\-I\-P}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Go\-S\-U\-M\-::\-C\-Input\-Parameters} $\ast$ Go\-S\-U\-M\-::\-C\-Single\-A\-M\-::p\-I\-P = {\bf N\-U\-L\-L}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_single_a_m_a0816476bc95532d1ba3e1f9198ac9d09}
+
+
+Points to input parameters. 
+
+\hypertarget{class_go_s_u_m_1_1_c_single_a_m_adb33dda815cdb845accba4ea8c7a0d61}{\index{Go\-S\-U\-M\-::\-C\-Single\-A\-M@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}!p\-O\-S@{p\-O\-S}}
+\index{p\-O\-S@{p\-O\-S}!GoSUM::CSingleAM@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}}
+\subsubsection[{p\-O\-S}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Go\-S\-U\-M\-::\-C\-Output\-States} $\ast$ Go\-S\-U\-M\-::\-C\-Single\-A\-M\-::p\-O\-S = {\bf N\-U\-L\-L}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_single_a_m_adb33dda815cdb845accba4ea8c7a0d61}
+
+
+Points to output states. 
+
+\hypertarget{class_go_s_u_m_1_1_c_single_a_m_a85d854a5ad2d7c574f8f2ab689de6418}{\index{Go\-S\-U\-M\-::\-C\-Single\-A\-M@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}!prob@{prob}}
+\index{prob@{prob}!GoSUM::CSingleAM@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}}
+\subsubsection[{prob}]{\setlength{\rightskip}{0pt plus 5cm}struct svm\-\_\-problem Go\-S\-U\-M\-::\-C\-Single\-A\-M\-::prob\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_single_a_m_a85d854a5ad2d7c574f8f2ab689de6418}
+
+
+S\-V\-M format specific. 
+
+\hypertarget{class_go_s_u_m_1_1_c_single_a_m_a1f9346a510fdb3908c9f7f5947a75410}{\index{Go\-S\-U\-M\-::\-C\-Single\-A\-M@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}!xspace@{xspace}}
+\index{xspace@{xspace}!GoSUM::CSingleAM@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}}
+\subsubsection[{xspace}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ struct svm\-\_\-node $>$ Go\-S\-U\-M\-::\-C\-Single\-A\-M\-::xspace\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_single_a_m_a1f9346a510fdb3908c9f7f5947a75410}
+
+
+S\-V\-M format specific. 
+
+\hypertarget{class_go_s_u_m_1_1_c_single_a_m_ad000e314359f2cdfef4b671d93afedbe}{\index{Go\-S\-U\-M\-::\-C\-Single\-A\-M@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}!Xsv@{Xsv}}
+\index{Xsv@{Xsv}!GoSUM::CSingleAM@{Go\-S\-U\-M\-::\-C\-Single\-A\-M}}
+\subsubsection[{Xsv}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$Array\-Xd$>$ Go\-S\-U\-M\-::\-C\-Single\-A\-M\-::\-Xsv\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_go_s_u_m_1_1_c_single_a_m_ad000e314359f2cdfef4b671d93afedbe}
+S\-V\-M support vectors. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Development/core/\hyperlink{_analytical_model_8h}{Analytical\-Model.\-h}\item 
+C\-:/\-Development/core/\hyperlink{_analytical_model_8cpp}{Analytical\-Model.\-cpp}\end{DoxyCompactItemize}

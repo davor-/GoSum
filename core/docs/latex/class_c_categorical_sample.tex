@@ -1,0 +1,207 @@
+\hypertarget{class_c_categorical_sample}{\section{C\-Categorical\-Sample Class Reference}
+\label{class_c_categorical_sample}\index{C\-Categorical\-Sample@{C\-Categorical\-Sample}}
+}
+
+
+Abstract class for categorical discrete samples.  
+
+
+
+
+{\ttfamily \#include $<$Sample.\-h$>$}
+
+Inheritance diagram for C\-Categorical\-Sample\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_c_categorical_sample}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_categorical_sample_aab6ec20d09a316f730afc171537a7713}{C\-Categorical\-Sample} ()
+\item 
+\hyperlink{class_c_categorical_sample_ab66a69b33d8ca70fe3bb13c65d502054}{C\-Categorical\-Sample} (const \hyperlink{class_c_categorical_sample}{C\-Categorical\-Sample} \&O)
+\item 
+virtual \hyperlink{class_c_categorical_sample_a65c4e0faf826db2641f2d18e04a1fb4c}{$\sim$\-C\-Categorical\-Sample} ()
+\item 
+virtual void \hyperlink{class_c_categorical_sample_af1adebf697521884fdc51653ee5f4b97}{read\-Sample\-Value} (std\-::ifstream \&\-\_\-ifs, int \-\_\-at)
+\begin{DoxyCompactList}\small\item\em Reads particular sample data from input file stream. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_categorical_sample_ab20e228cf0a5b43de4981e1cc95da129}{write\-Sample\-Value} (std\-::ofstream \&\-\_\-ofs, int \-\_\-at) const 
+\begin{DoxyCompactList}\small\item\em $<$ Writes particular sample data to output file stream. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_categorical_sample_a7326fb12831014e2ee7504eb010f6356}{set\-Sample\-Size} (int \-\_\-n)
+\begin{DoxyCompactList}\small\item\em Sets particular sample data value. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_categorical_sample_a4c14022735a64792701f670a6d6d38e6}{min\-Value} () const 
+\begin{DoxyCompactList}\small\item\em Returns minimal sample data value. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_categorical_sample_a26021cff1304912e26023cddc399b67e}{max\-Value} () const 
+\begin{DoxyCompactList}\small\item\em Returns maximal sample data value. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_c_categorical_sample_a5408236fafb24d5a246823b97cc7427a}{variance} () const 
+\begin{DoxyCompactList}\small\item\em Returns sample variance (i.\-e.\-empirical). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \hyperlink{class_c_categorical_sample_a7f4ae293dfb2f77bd6d9b525f1e9cbf1}{serialize} (Archive \&ar, const unsigned int version)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::vector$<$ std\-::string $>$ \hyperlink{class_c_categorical_sample_ae713b59c14aba1434e1754d837a4eeb0}{categories}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_c_categorical_sample_ac98d07dd8f7b70e16ccb9a01abf56b9c}{boost\-::serialization\-::access}
+\begin{DoxyCompactList}\small\item\em Boost serialization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Abstract class for categorical discrete samples. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_categorical_sample_aab6ec20d09a316f730afc171537a7713}{\index{C\-Categorical\-Sample@{C\-Categorical\-Sample}!C\-Categorical\-Sample@{C\-Categorical\-Sample}}
+\index{C\-Categorical\-Sample@{C\-Categorical\-Sample}!CCategoricalSample@{C\-Categorical\-Sample}}
+\subsubsection[{C\-Categorical\-Sample}]{\setlength{\rightskip}{0pt plus 5cm}C\-Categorical\-Sample\-::\-C\-Categorical\-Sample (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_categorical_sample_aab6ec20d09a316f730afc171537a7713}
+\hypertarget{class_c_categorical_sample_ab66a69b33d8ca70fe3bb13c65d502054}{\index{C\-Categorical\-Sample@{C\-Categorical\-Sample}!C\-Categorical\-Sample@{C\-Categorical\-Sample}}
+\index{C\-Categorical\-Sample@{C\-Categorical\-Sample}!CCategoricalSample@{C\-Categorical\-Sample}}
+\subsubsection[{C\-Categorical\-Sample}]{\setlength{\rightskip}{0pt plus 5cm}C\-Categorical\-Sample\-::\-C\-Categorical\-Sample (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Categorical\-Sample} \&}]{O}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_categorical_sample_ab66a69b33d8ca70fe3bb13c65d502054}
+\hypertarget{class_c_categorical_sample_a65c4e0faf826db2641f2d18e04a1fb4c}{\index{C\-Categorical\-Sample@{C\-Categorical\-Sample}!$\sim$\-C\-Categorical\-Sample@{$\sim$\-C\-Categorical\-Sample}}
+\index{$\sim$\-C\-Categorical\-Sample@{$\sim$\-C\-Categorical\-Sample}!CCategoricalSample@{C\-Categorical\-Sample}}
+\subsubsection[{$\sim$\-C\-Categorical\-Sample}]{\setlength{\rightskip}{0pt plus 5cm}virtual C\-Categorical\-Sample\-::$\sim$\-C\-Categorical\-Sample (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_categorical_sample_a65c4e0faf826db2641f2d18e04a1fb4c}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_categorical_sample_a26021cff1304912e26023cddc399b67e}{\index{C\-Categorical\-Sample@{C\-Categorical\-Sample}!max\-Value@{max\-Value}}
+\index{max\-Value@{max\-Value}!CCategoricalSample@{C\-Categorical\-Sample}}
+\subsubsection[{max\-Value}]{\setlength{\rightskip}{0pt plus 5cm}int C\-Categorical\-Sample\-::max\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_categorical_sample_a26021cff1304912e26023cddc399b67e}
+
+
+Returns maximal sample data value. 
+
+
+
+Reimplemented from \hyperlink{class_t_sample_aac5e27142c09df0a3213a702a5db2a46}{T\-Sample$<$ t $>$}.
+
+\hypertarget{class_c_categorical_sample_a4c14022735a64792701f670a6d6d38e6}{\index{C\-Categorical\-Sample@{C\-Categorical\-Sample}!min\-Value@{min\-Value}}
+\index{min\-Value@{min\-Value}!CCategoricalSample@{C\-Categorical\-Sample}}
+\subsubsection[{min\-Value}]{\setlength{\rightskip}{0pt plus 5cm}int C\-Categorical\-Sample\-::min\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_categorical_sample_a4c14022735a64792701f670a6d6d38e6}
+
+
+Returns minimal sample data value. 
+
+
+
+Reimplemented from \hyperlink{class_t_sample_a8390ad552199323ae9cc6ab9b17486c6}{T\-Sample$<$ t $>$}.
+
+\hypertarget{class_c_categorical_sample_af1adebf697521884fdc51653ee5f4b97}{\index{C\-Categorical\-Sample@{C\-Categorical\-Sample}!read\-Sample\-Value@{read\-Sample\-Value}}
+\index{read\-Sample\-Value@{read\-Sample\-Value}!CCategoricalSample@{C\-Categorical\-Sample}}
+\subsubsection[{read\-Sample\-Value}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Categorical\-Sample\-::read\-Sample\-Value (
+\begin{DoxyParamCaption}
+\item[{std\-::ifstream \&}]{\-\_\-ifs, }
+\item[{int}]{\-\_\-at}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_categorical_sample_af1adebf697521884fdc51653ee5f4b97}
+
+
+Reads particular sample data from input file stream. 
+
+
+
+Reimplemented from \hyperlink{class_t_sample_a7a13ccc3ca57276ad789bafd9ceec1d8}{T\-Sample$<$ t $>$}.
+
+\hypertarget{class_c_categorical_sample_a7f4ae293dfb2f77bd6d9b525f1e9cbf1}{\index{C\-Categorical\-Sample@{C\-Categorical\-Sample}!serialize@{serialize}}
+\index{serialize@{serialize}!CCategoricalSample@{C\-Categorical\-Sample}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Archive $>$ void C\-Categorical\-Sample\-::serialize (
+\begin{DoxyParamCaption}
+\item[{Archive \&}]{ar, }
+\item[{const unsigned int}]{version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_categorical_sample_a7f4ae293dfb2f77bd6d9b525f1e9cbf1}
+\hypertarget{class_c_categorical_sample_a7326fb12831014e2ee7504eb010f6356}{\index{C\-Categorical\-Sample@{C\-Categorical\-Sample}!set\-Sample\-Size@{set\-Sample\-Size}}
+\index{set\-Sample\-Size@{set\-Sample\-Size}!CCategoricalSample@{C\-Categorical\-Sample}}
+\subsubsection[{set\-Sample\-Size}]{\setlength{\rightskip}{0pt plus 5cm}virtual void C\-Categorical\-Sample\-::set\-Sample\-Size (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_categorical_sample_a7326fb12831014e2ee7504eb010f6356}
+
+
+Sets particular sample data value. 
+
+
+
+Reimplemented from \hyperlink{class_t_sample_a3b92f468f11169b27a564fd801144fee}{T\-Sample$<$ t $>$}.
+
+\hypertarget{class_c_categorical_sample_a5408236fafb24d5a246823b97cc7427a}{\index{C\-Categorical\-Sample@{C\-Categorical\-Sample}!variance@{variance}}
+\index{variance@{variance}!CCategoricalSample@{C\-Categorical\-Sample}}
+\subsubsection[{variance}]{\setlength{\rightskip}{0pt plus 5cm}virtual double C\-Categorical\-Sample\-::variance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_categorical_sample_a5408236fafb24d5a246823b97cc7427a}
+
+
+Returns sample variance (i.\-e.\-empirical). 
+
+
+
+Reimplemented from \hyperlink{class_c_discrete_sample_a3e2d5a72842be01a167f890960a34bef}{C\-Discrete\-Sample}.
+
+\hypertarget{class_c_categorical_sample_ab20e228cf0a5b43de4981e1cc95da129}{\index{C\-Categorical\-Sample@{C\-Categorical\-Sample}!write\-Sample\-Value@{write\-Sample\-Value}}
+\index{write\-Sample\-Value@{write\-Sample\-Value}!CCategoricalSample@{C\-Categorical\-Sample}}
+\subsubsection[{write\-Sample\-Value}]{\setlength{\rightskip}{0pt plus 5cm}virtual void C\-Categorical\-Sample\-::write\-Sample\-Value (
+\begin{DoxyParamCaption}
+\item[{std\-::ofstream \&}]{\-\_\-ofs, }
+\item[{int}]{\-\_\-at}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_categorical_sample_ab20e228cf0a5b43de4981e1cc95da129}
+
+
+$<$ Writes particular sample data to output file stream. 
+
+
+
+Reimplemented from \hyperlink{class_t_sample_abb2feebe92f8fdb290046d6ef0573507}{T\-Sample$<$ t $>$}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_c_categorical_sample_ac98d07dd8f7b70e16ccb9a01abf56b9c}{\index{C\-Categorical\-Sample@{C\-Categorical\-Sample}!boost\-::serialization\-::access@{boost\-::serialization\-::access}}
+\index{boost\-::serialization\-::access@{boost\-::serialization\-::access}!CCategoricalSample@{C\-Categorical\-Sample}}
+\subsubsection[{boost\-::serialization\-::access}]{\setlength{\rightskip}{0pt plus 5cm}friend class boost\-::serialization\-::access\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_c_categorical_sample_ac98d07dd8f7b70e16ccb9a01abf56b9c}
+
+
+Boost serialization. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_categorical_sample_ae713b59c14aba1434e1754d837a4eeb0}{\index{C\-Categorical\-Sample@{C\-Categorical\-Sample}!categories@{categories}}
+\index{categories@{categories}!CCategoricalSample@{C\-Categorical\-Sample}}
+\subsubsection[{categories}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$std\-::string$>$ C\-Categorical\-Sample\-::categories\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_categorical_sample_ae713b59c14aba1434e1754d837a4eeb0}
+Holds all category values. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Development/core/\hyperlink{_sample_8h}{Sample.\-h}\item 
+C\-:/\-Development/core/\hyperlink{_sample_8cpp}{Sample.\-cpp}\end{DoxyCompactItemize}

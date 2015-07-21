@@ -1,0 +1,97 @@
+\hypertarget{class_c_base_r_n_g}{\section{C\-Base\-R\-N\-G Class Reference}
+\label{class_c_base_r_n_g}\index{C\-Base\-R\-N\-G@{C\-Base\-R\-N\-G}}
+}
+
+
+Abstract base class for all uniform random number generators (R\-N\-G).  
+
+
+
+
+{\ttfamily \#include $<$Random\-Generators.\-h$>$}
+
+Inheritance diagram for C\-Base\-R\-N\-G\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.296296cm]{class_c_base_r_n_g}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_c_base_r_n_g_a56fbf75ca07b73954596ee04820e0b07}{set\-Seed} (unsigned int s)=0
+\begin{DoxyCompactList}\small\item\em Sets seed of the R\-N\-G. \end{DoxyCompactList}\item 
+virtual unsigned int \hyperlink{class_c_base_r_n_g_a2db96fbf06a2f11b3613d422043fb7b8}{rndi} ()=0
+\begin{DoxyCompactList}\small\item\em Returns randomly generated unsigned int. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_c_base_r_n_g_abbd60a5ecdc9502dd646434224ab5d6b}{rnd} ()=0
+\begin{DoxyCompactList}\small\item\em Returns randomly generated double between 0 and 1. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_c_base_r_n_g_a5712044a0cd9fab6e60b914da7f35fc6}{rnd} (double a, double b)
+\begin{DoxyCompactList}\small\item\em Returns randomly generated double between a and b. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract base class for all uniform random number generators (R\-N\-G). 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_base_r_n_g_abbd60a5ecdc9502dd646434224ab5d6b}{\index{C\-Base\-R\-N\-G@{C\-Base\-R\-N\-G}!rnd@{rnd}}
+\index{rnd@{rnd}!CBaseRNG@{C\-Base\-R\-N\-G}}
+\subsubsection[{rnd}]{\setlength{\rightskip}{0pt plus 5cm}virtual double C\-Base\-R\-N\-G\-::rnd (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_c_base_r_n_g_abbd60a5ecdc9502dd646434224ab5d6b}
+
+
+Returns randomly generated double between 0 and 1. 
+
+
+
+Implemented in \hyperlink{class_c_nomad_r_n_g_a80ec634087f50ef6753f1c5fe24c7ad4}{C\-Nomad\-R\-N\-G}, \hyperlink{class_c_n_l_c_r_n_g_a5f4f420ffb9147d9edb25b4d49ac05a5}{C\-N\-L\-C\-R\-N\-G}, \hyperlink{class_c_medium_period_r_n_g_a56a6e5751b8563b56c30f5c1d0351eec}{C\-Medium\-Period\-R\-N\-G}, \hyperlink{class_c_small_period_r_n_g_af82a1d5b0232cd7dc4b73114e632057c}{C\-Small\-Period\-R\-N\-G}, \hyperlink{class_c_dynamic_system_r_n_g_af22e28ce058d489e0b73b08033db87b8}{C\-Dynamic\-System\-R\-N\-G}, and \hyperlink{class_c_large_period_r_n_g_a3666cfacb7c24934e7f578ed2b786eb2}{C\-Large\-Period\-R\-N\-G}.
+
+\hypertarget{class_c_base_r_n_g_a5712044a0cd9fab6e60b914da7f35fc6}{\index{C\-Base\-R\-N\-G@{C\-Base\-R\-N\-G}!rnd@{rnd}}
+\index{rnd@{rnd}!CBaseRNG@{C\-Base\-R\-N\-G}}
+\subsubsection[{rnd}]{\setlength{\rightskip}{0pt plus 5cm}virtual double C\-Base\-R\-N\-G\-::rnd (
+\begin{DoxyParamCaption}
+\item[{double}]{a, }
+\item[{double}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_base_r_n_g_a5712044a0cd9fab6e60b914da7f35fc6}
+
+
+Returns randomly generated double between a and b. 
+
+\hypertarget{class_c_base_r_n_g_a2db96fbf06a2f11b3613d422043fb7b8}{\index{C\-Base\-R\-N\-G@{C\-Base\-R\-N\-G}!rndi@{rndi}}
+\index{rndi@{rndi}!CBaseRNG@{C\-Base\-R\-N\-G}}
+\subsubsection[{rndi}]{\setlength{\rightskip}{0pt plus 5cm}virtual unsigned int C\-Base\-R\-N\-G\-::rndi (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_c_base_r_n_g_a2db96fbf06a2f11b3613d422043fb7b8}
+
+
+Returns randomly generated unsigned int. 
+
+
+
+Implemented in \hyperlink{class_c_nomad_r_n_g_ad41c27377065df6efdadc2d1b30ca315}{C\-Nomad\-R\-N\-G}, \hyperlink{class_c_n_l_c_r_n_g_a531b9ca98fc7934c90759c1733618298}{C\-N\-L\-C\-R\-N\-G}, \hyperlink{class_c_medium_period_r_n_g_a12611a6c74a312860cccfbdb2bdbf89e}{C\-Medium\-Period\-R\-N\-G}, \hyperlink{class_c_small_period_r_n_g_a60061ed8dc92ede13ad2a4579023e792}{C\-Small\-Period\-R\-N\-G}, \hyperlink{class_c_dynamic_system_r_n_g_a703c33a722eb6808771245955e19b3e1}{C\-Dynamic\-System\-R\-N\-G}, and \hyperlink{class_c_large_period_r_n_g_aadcf1849be317a7a4dc10500f168d8cd}{C\-Large\-Period\-R\-N\-G}.
+
+\hypertarget{class_c_base_r_n_g_a56fbf75ca07b73954596ee04820e0b07}{\index{C\-Base\-R\-N\-G@{C\-Base\-R\-N\-G}!set\-Seed@{set\-Seed}}
+\index{set\-Seed@{set\-Seed}!CBaseRNG@{C\-Base\-R\-N\-G}}
+\subsubsection[{set\-Seed}]{\setlength{\rightskip}{0pt plus 5cm}virtual void C\-Base\-R\-N\-G\-::set\-Seed (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_c_base_r_n_g_a56fbf75ca07b73954596ee04820e0b07}
+
+
+Sets seed of the R\-N\-G. 
+
+
+
+Implemented in \hyperlink{class_c_nomad_r_n_g_a6cedb9431179cee4677d415c8e7611c3}{C\-Nomad\-R\-N\-G}, \hyperlink{class_c_n_l_c_r_n_g_a9f6321c4d53774b0c017c6e18124d495}{C\-N\-L\-C\-R\-N\-G}, \hyperlink{class_c_medium_period_r_n_g_a8f0a3aebcea30b879719d9af1ac548e1}{C\-Medium\-Period\-R\-N\-G}, \hyperlink{class_c_small_period_r_n_g_a7a799121f858fd32c8300970ab46a26a}{C\-Small\-Period\-R\-N\-G}, \hyperlink{class_c_dynamic_system_r_n_g_a2ed468a45094e3c0591e0029b1359df1}{C\-Dynamic\-System\-R\-N\-G}, and \hyperlink{class_c_large_period_r_n_g_a59d03465a293ce805a34339f409054d7}{C\-Large\-Period\-R\-N\-G}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Development/core/\hyperlink{_random_generators_8h}{Random\-Generators.\-h}\end{DoxyCompactItemize}

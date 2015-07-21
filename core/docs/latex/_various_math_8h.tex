@@ -1,0 +1,142 @@
+\hypertarget{_various_math_8h}{\section{C\-:/\-Development/core/\-Various\-Math.h File Reference}
+\label{_various_math_8h}\index{C\-:/\-Development/core/\-Various\-Math.\-h@{C\-:/\-Development/core/\-Various\-Math.\-h}}
+}
+{\ttfamily \#include \char`\"{}Utilities.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}ran.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Ds.\-h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_cx___zeta_gammax}{Cx\-\_\-\-Zeta\-Gammax}
+\begin{DoxyCompactList}\small\item\em Class for the function f(x)=x-\/zeta$\ast$gamma$^\wedge$\mbox{[}7\mbox{]}(x). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_various_math_8h_acf1c38f71f39386356edb151a131ad11}{T\-I\-N\-Y}~100$\ast$(std\-::numeric\-\_\-limits$<$double$>$\-::epsilon())
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T $>$ }\\double \hyperlink{_various_math_8h_a3f3590675256fe6cb6ef76d0feabfd3c}{find\-Root} (const T \&fnc, double a, double b)
+\begin{DoxyCompactList}\small\item\em Finds \-\_\-x in the interval (a,b) such that f(\-\_\-x)=0. \end{DoxyCompactList}\item 
+Array\-Xi \hyperlink{_various_math_8h_a9bfffcfe4549c6d8a265995c120ba697}{permutation} (int N)
+\begin{DoxyCompactList}\small\item\em Generates one random permutation of (1,...,N). \end{DoxyCompactList}\item 
+Array\-X\-Xi \hyperlink{_various_math_8h_a995201de14fce01a6b0506183ba9ff63}{permutations} (int n, int N)
+\begin{DoxyCompactList}\small\item\em Generates n random permutations of (1,...,N). \end{DoxyCompactList}\item 
+double \hyperlink{_various_math_8h_a2ebb17fd94c2376542a7528612f90c49}{variance} (Array\-Xd \&a)
+\begin{DoxyCompactList}\small\item\em Returns variance of elements of the array. \end{DoxyCompactList}\item 
+double \hyperlink{_various_math_8h_a26bd0d156fe968a390f2e8a3136980be}{linear\-Interpolation} (const Array\-Xd \&X, const Array\-Xd \&Y, double x)
+\begin{DoxyCompactList}\small\item\em Linear interpolation Y(x)=Yl+((Yr-\/\-Yl)/(Xr-\/\-Xl))$\ast$(x-\/\-Xl). \end{DoxyCompactList}\item 
+void \hyperlink{_various_math_8h_af78db2c3acabadf98616d6a4379b9127}{cumulative\-Sum} (Array\-Xd \&a)
+\begin{DoxyCompactList}\small\item\em Returns cummulative sum of elements of the array. \end{DoxyCompactList}\item 
+double \hyperlink{_various_math_8h_aa7e421f63455cf480b9a7e0d5523392d}{square\-Distance} (const Array\-Xd \&a, const Array\-Xd \&b)
+\begin{DoxyCompactList}\small\item\em Returns squared distance between a and b as points. \end{DoxyCompactList}\item 
+int \hyperlink{_various_math_8h_a0b43b73ca34431538339ce5ae7d99ab3}{find\-Nearest} (const std\-::vector$<$ Array\-Xd $>$ \&v, const Array\-Xd \&y)
+\begin{DoxyCompactList}\small\item\em Returns index of the point beetween points v nearest to the point y. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_various_math_8h_acf1c38f71f39386356edb151a131ad11}{\index{Various\-Math.\-h@{Various\-Math.\-h}!T\-I\-N\-Y@{T\-I\-N\-Y}}
+\index{T\-I\-N\-Y@{T\-I\-N\-Y}!VariousMath.h@{Various\-Math.\-h}}
+\subsubsection[{T\-I\-N\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-I\-N\-Y~100$\ast$(std\-::numeric\-\_\-limits$<$double$>$\-::epsilon())}}\label{_various_math_8h_acf1c38f71f39386356edb151a131ad11}
+
+
+\subsection{Function Documentation}
+\hypertarget{_various_math_8h_af78db2c3acabadf98616d6a4379b9127}{\index{Various\-Math.\-h@{Various\-Math.\-h}!cumulative\-Sum@{cumulative\-Sum}}
+\index{cumulative\-Sum@{cumulative\-Sum}!VariousMath.h@{Various\-Math.\-h}}
+\subsubsection[{cumulative\-Sum}]{\setlength{\rightskip}{0pt plus 5cm}void cumulative\-Sum (
+\begin{DoxyParamCaption}
+\item[{Array\-Xd \&}]{a}
+\end{DoxyParamCaption}
+)}}\label{_various_math_8h_af78db2c3acabadf98616d6a4379b9127}
+
+
+Returns cummulative sum of elements of the array. 
+
+\hypertarget{_various_math_8h_a0b43b73ca34431538339ce5ae7d99ab3}{\index{Various\-Math.\-h@{Various\-Math.\-h}!find\-Nearest@{find\-Nearest}}
+\index{find\-Nearest@{find\-Nearest}!VariousMath.h@{Various\-Math.\-h}}
+\subsubsection[{find\-Nearest}]{\setlength{\rightskip}{0pt plus 5cm}int find\-Nearest (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ Array\-Xd $>$ \&}]{v, }
+\item[{const Array\-Xd \&}]{y}
+\end{DoxyParamCaption}
+)}}\label{_various_math_8h_a0b43b73ca34431538339ce5ae7d99ab3}
+
+
+Returns index of the point beetween points v nearest to the point y. 
+
+\hypertarget{_various_math_8h_a3f3590675256fe6cb6ef76d0feabfd3c}{\index{Various\-Math.\-h@{Various\-Math.\-h}!find\-Root@{find\-Root}}
+\index{find\-Root@{find\-Root}!VariousMath.h@{Various\-Math.\-h}}
+\subsubsection[{find\-Root}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ double find\-Root (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{fnc, }
+\item[{double}]{a, }
+\item[{double}]{b}
+\end{DoxyParamCaption}
+)}}\label{_various_math_8h_a3f3590675256fe6cb6ef76d0feabfd3c}
+
+
+Finds \-\_\-x in the interval (a,b) such that f(\-\_\-x)=0. 
+
+\begin{DoxyReturn}{Returns}
+True if root is found, false otherwise. 
+\end{DoxyReturn}
+\hypertarget{_various_math_8h_a26bd0d156fe968a390f2e8a3136980be}{\index{Various\-Math.\-h@{Various\-Math.\-h}!linear\-Interpolation@{linear\-Interpolation}}
+\index{linear\-Interpolation@{linear\-Interpolation}!VariousMath.h@{Various\-Math.\-h}}
+\subsubsection[{linear\-Interpolation}]{\setlength{\rightskip}{0pt plus 5cm}double linear\-Interpolation (
+\begin{DoxyParamCaption}
+\item[{const Array\-Xd \&}]{X, }
+\item[{const Array\-Xd \&}]{Y, }
+\item[{double}]{x}
+\end{DoxyParamCaption}
+)}}\label{_various_math_8h_a26bd0d156fe968a390f2e8a3136980be}
+
+
+Linear interpolation Y(x)=Yl+((Yr-\/\-Yl)/(Xr-\/\-Xl))$\ast$(x-\/\-Xl). 
+
+\hypertarget{_various_math_8h_a9bfffcfe4549c6d8a265995c120ba697}{\index{Various\-Math.\-h@{Various\-Math.\-h}!permutation@{permutation}}
+\index{permutation@{permutation}!VariousMath.h@{Various\-Math.\-h}}
+\subsubsection[{permutation}]{\setlength{\rightskip}{0pt plus 5cm}Array\-Xi permutation (
+\begin{DoxyParamCaption}
+\item[{int}]{N}
+\end{DoxyParamCaption}
+)}}\label{_various_math_8h_a9bfffcfe4549c6d8a265995c120ba697}
+
+
+Generates one random permutation of (1,...,N). 
+
+\hypertarget{_various_math_8h_a995201de14fce01a6b0506183ba9ff63}{\index{Various\-Math.\-h@{Various\-Math.\-h}!permutations@{permutations}}
+\index{permutations@{permutations}!VariousMath.h@{Various\-Math.\-h}}
+\subsubsection[{permutations}]{\setlength{\rightskip}{0pt plus 5cm}Array\-X\-Xi permutations (
+\begin{DoxyParamCaption}
+\item[{int}]{n, }
+\item[{int}]{N}
+\end{DoxyParamCaption}
+)}}\label{_various_math_8h_a995201de14fce01a6b0506183ba9ff63}
+
+
+Generates n random permutations of (1,...,N). 
+
+\hypertarget{_various_math_8h_aa7e421f63455cf480b9a7e0d5523392d}{\index{Various\-Math.\-h@{Various\-Math.\-h}!square\-Distance@{square\-Distance}}
+\index{square\-Distance@{square\-Distance}!VariousMath.h@{Various\-Math.\-h}}
+\subsubsection[{square\-Distance}]{\setlength{\rightskip}{0pt plus 5cm}double square\-Distance (
+\begin{DoxyParamCaption}
+\item[{const Array\-Xd \&}]{a, }
+\item[{const Array\-Xd \&}]{b}
+\end{DoxyParamCaption}
+)}}\label{_various_math_8h_aa7e421f63455cf480b9a7e0d5523392d}
+
+
+Returns squared distance between a and b as points. 
+
+\hypertarget{_various_math_8h_a2ebb17fd94c2376542a7528612f90c49}{\index{Various\-Math.\-h@{Various\-Math.\-h}!variance@{variance}}
+\index{variance@{variance}!VariousMath.h@{Various\-Math.\-h}}
+\subsubsection[{variance}]{\setlength{\rightskip}{0pt plus 5cm}double variance (
+\begin{DoxyParamCaption}
+\item[{Array\-Xd \&}]{a}
+\end{DoxyParamCaption}
+)}}\label{_various_math_8h_a2ebb17fd94c2376542a7528612f90c49}
+
+
+Returns variance of elements of the array. 
+

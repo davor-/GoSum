@@ -1,0 +1,144 @@
+\hypertarget{class_go_s_u_m_1_1_c_analytic_parameters_o_p}{\section{Go\-S\-U\-M\-:\-:C\-Analytic\-Parameters\-O\-P Class Reference}
+\label{class_go_s_u_m_1_1_c_analytic_parameters_o_p}\index{Go\-S\-U\-M\-::\-C\-Analytic\-Parameters\-O\-P@{Go\-S\-U\-M\-::\-C\-Analytic\-Parameters\-O\-P}}
+}
+
+
+Class for the optimization of analytical parameters.  
+
+
+
+
+{\ttfamily \#include $<$Analytical\-Model.\-h$>$}
+
+Inheritance diagram for Go\-S\-U\-M\-:\-:C\-Analytic\-Parameters\-O\-P\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_go_s_u_m_1_1_c_analytic_parameters_o_p}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_go_s_u_m_1_1_c_analytic_parameters_o_p_ad270573ddaf4ab73765fcb7504bc9c55}{C\-Analytic\-Parameters\-O\-P} ()
+\item 
+virtual \hyperlink{class_go_s_u_m_1_1_c_analytic_parameters_o_p_aebb38b9095286a66faad9c6236a083a0}{$\sim$\-C\-Analytic\-Parameters\-O\-P} ()
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_analytic_parameters_o_p_ae2f594844357a550fa54ccc196476ccd}{set} (\hyperlink{class_go_s_u_m_1_1_c_analytical_model}{C\-Analytical\-Model} $\ast$\-\_\-p\-A\-M)
+\item 
+virtual int \hyperlink{class_go_s_u_m_1_1_c_analytic_parameters_o_p_a002dbbbcaa4d96be44e2d7013ba0969c}{constraints\-Size} () const 
+\begin{DoxyCompactList}\small\item\em Returns size of the constraints. \end{DoxyCompactList}\item 
+virtual Array\-Xd \hyperlink{class_go_s_u_m_1_1_c_analytic_parameters_o_p_a161714b73d17a92593e379f96111d5bc}{model\-Variables} (const Array\-Xd \&x) const 
+\begin{DoxyCompactList}\small\item\em Returns model variables values from optimization variables values. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_go_s_u_m_1_1_c_analytic_parameters_o_p_a6323299ee9312bcabd43e25e78479201}{objective} (const Array\-Xd \&mv)
+\begin{DoxyCompactList}\small\item\em Evaluates objective function value from model variables values. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_go_s_u_m_1_1_c_analytic_parameters_o_p_a98e176ce9296644e0a9a98bbd22811e8}{constraint} (const Array\-Xd \&mv, int \-\_\-at)
+\begin{DoxyCompactList}\small\item\em Evalautes particular constraint value from model variables values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_go_s_u_m_1_1_c_analytical_model}{C\-Analytical\-Model} $\ast$ \hyperlink{class_go_s_u_m_1_1_c_analytic_parameters_o_p_a6e816818e9632ee073ca158f4242259e}{p\-A\-M}
+\begin{DoxyCompactList}\small\item\em Holds pointer to the analytical model. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class for the optimization of analytical parameters. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_analytic_parameters_o_p_ad270573ddaf4ab73765fcb7504bc9c55}{\index{Go\-S\-U\-M\-::\-C\-Analytic\-Parameters\-O\-P@{Go\-S\-U\-M\-::\-C\-Analytic\-Parameters\-O\-P}!C\-Analytic\-Parameters\-O\-P@{C\-Analytic\-Parameters\-O\-P}}
+\index{C\-Analytic\-Parameters\-O\-P@{C\-Analytic\-Parameters\-O\-P}!GoSUM::CAnalyticParametersOP@{Go\-S\-U\-M\-::\-C\-Analytic\-Parameters\-O\-P}}
+\subsubsection[{C\-Analytic\-Parameters\-O\-P}]{\setlength{\rightskip}{0pt plus 5cm}Go\-S\-U\-M\-::\-C\-Analytic\-Parameters\-O\-P\-::\-C\-Analytic\-Parameters\-O\-P (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_analytic_parameters_o_p_ad270573ddaf4ab73765fcb7504bc9c55}
+\hypertarget{class_go_s_u_m_1_1_c_analytic_parameters_o_p_aebb38b9095286a66faad9c6236a083a0}{\index{Go\-S\-U\-M\-::\-C\-Analytic\-Parameters\-O\-P@{Go\-S\-U\-M\-::\-C\-Analytic\-Parameters\-O\-P}!$\sim$\-C\-Analytic\-Parameters\-O\-P@{$\sim$\-C\-Analytic\-Parameters\-O\-P}}
+\index{$\sim$\-C\-Analytic\-Parameters\-O\-P@{$\sim$\-C\-Analytic\-Parameters\-O\-P}!GoSUM::CAnalyticParametersOP@{Go\-S\-U\-M\-::\-C\-Analytic\-Parameters\-O\-P}}
+\subsubsection[{$\sim$\-C\-Analytic\-Parameters\-O\-P}]{\setlength{\rightskip}{0pt plus 5cm}virtual Go\-S\-U\-M\-::\-C\-Analytic\-Parameters\-O\-P\-::$\sim$\-C\-Analytic\-Parameters\-O\-P (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_analytic_parameters_o_p_aebb38b9095286a66faad9c6236a083a0}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_analytic_parameters_o_p_a98e176ce9296644e0a9a98bbd22811e8}{\index{Go\-S\-U\-M\-::\-C\-Analytic\-Parameters\-O\-P@{Go\-S\-U\-M\-::\-C\-Analytic\-Parameters\-O\-P}!constraint@{constraint}}
+\index{constraint@{constraint}!GoSUM::CAnalyticParametersOP@{Go\-S\-U\-M\-::\-C\-Analytic\-Parameters\-O\-P}}
+\subsubsection[{constraint}]{\setlength{\rightskip}{0pt plus 5cm}virtual double Go\-S\-U\-M\-::\-C\-Analytic\-Parameters\-O\-P\-::constraint (
+\begin{DoxyParamCaption}
+\item[{const Array\-Xd \&}]{mv, }
+\item[{int}]{\-\_\-at}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_analytic_parameters_o_p_a98e176ce9296644e0a9a98bbd22811e8}
+
+
+Evalautes particular constraint value from model variables values. 
+
+
+
+Implements \hyperlink{class_c_optimization_problem_a07121eafd59515b1cb740cbe01e33eb1}{C\-Optimization\-Problem}.
+
+\hypertarget{class_go_s_u_m_1_1_c_analytic_parameters_o_p_a002dbbbcaa4d96be44e2d7013ba0969c}{\index{Go\-S\-U\-M\-::\-C\-Analytic\-Parameters\-O\-P@{Go\-S\-U\-M\-::\-C\-Analytic\-Parameters\-O\-P}!constraints\-Size@{constraints\-Size}}
+\index{constraints\-Size@{constraints\-Size}!GoSUM::CAnalyticParametersOP@{Go\-S\-U\-M\-::\-C\-Analytic\-Parameters\-O\-P}}
+\subsubsection[{constraints\-Size}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Go\-S\-U\-M\-::\-C\-Analytic\-Parameters\-O\-P\-::constraints\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_analytic_parameters_o_p_a002dbbbcaa4d96be44e2d7013ba0969c}
+
+
+Returns size of the constraints. 
+
+
+
+Implements \hyperlink{class_c_optimization_problem_aa4c04d9a7d3885450e9c528f5446c241}{C\-Optimization\-Problem}.
+
+\hypertarget{class_go_s_u_m_1_1_c_analytic_parameters_o_p_a161714b73d17a92593e379f96111d5bc}{\index{Go\-S\-U\-M\-::\-C\-Analytic\-Parameters\-O\-P@{Go\-S\-U\-M\-::\-C\-Analytic\-Parameters\-O\-P}!model\-Variables@{model\-Variables}}
+\index{model\-Variables@{model\-Variables}!GoSUM::CAnalyticParametersOP@{Go\-S\-U\-M\-::\-C\-Analytic\-Parameters\-O\-P}}
+\subsubsection[{model\-Variables}]{\setlength{\rightskip}{0pt plus 5cm}virtual Array\-Xd Go\-S\-U\-M\-::\-C\-Analytic\-Parameters\-O\-P\-::model\-Variables (
+\begin{DoxyParamCaption}
+\item[{const Array\-Xd \&}]{x}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_analytic_parameters_o_p_a161714b73d17a92593e379f96111d5bc}
+
+
+Returns model variables values from optimization variables values. 
+
+\hypertarget{class_go_s_u_m_1_1_c_analytic_parameters_o_p_a6323299ee9312bcabd43e25e78479201}{\index{Go\-S\-U\-M\-::\-C\-Analytic\-Parameters\-O\-P@{Go\-S\-U\-M\-::\-C\-Analytic\-Parameters\-O\-P}!objective@{objective}}
+\index{objective@{objective}!GoSUM::CAnalyticParametersOP@{Go\-S\-U\-M\-::\-C\-Analytic\-Parameters\-O\-P}}
+\subsubsection[{objective}]{\setlength{\rightskip}{0pt plus 5cm}double Go\-S\-U\-M\-::\-C\-Analytic\-Parameters\-O\-P\-::objective (
+\begin{DoxyParamCaption}
+\item[{const Array\-Xd \&}]{mv}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_analytic_parameters_o_p_a6323299ee9312bcabd43e25e78479201}
+
+
+Evaluates objective function value from model variables values. 
+
+
+
+Implements \hyperlink{class_c_optimization_problem_a5ebde1e6abd04b777f29ca383d2b0556}{C\-Optimization\-Problem}.
+
+\hypertarget{class_go_s_u_m_1_1_c_analytic_parameters_o_p_ae2f594844357a550fa54ccc196476ccd}{\index{Go\-S\-U\-M\-::\-C\-Analytic\-Parameters\-O\-P@{Go\-S\-U\-M\-::\-C\-Analytic\-Parameters\-O\-P}!set@{set}}
+\index{set@{set}!GoSUM::CAnalyticParametersOP@{Go\-S\-U\-M\-::\-C\-Analytic\-Parameters\-O\-P}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Analytic\-Parameters\-O\-P\-::set (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Analytical\-Model} $\ast$}]{\-\_\-p\-A\-M}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_analytic_parameters_o_p_ae2f594844357a550fa54ccc196476ccd}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_analytic_parameters_o_p_a6e816818e9632ee073ca158f4242259e}{\index{Go\-S\-U\-M\-::\-C\-Analytic\-Parameters\-O\-P@{Go\-S\-U\-M\-::\-C\-Analytic\-Parameters\-O\-P}!p\-A\-M@{p\-A\-M}}
+\index{p\-A\-M@{p\-A\-M}!GoSUM::CAnalyticParametersOP@{Go\-S\-U\-M\-::\-C\-Analytic\-Parameters\-O\-P}}
+\subsubsection[{p\-A\-M}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Analytical\-Model}$\ast$ Go\-S\-U\-M\-::\-C\-Analytic\-Parameters\-O\-P\-::p\-A\-M\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_analytic_parameters_o_p_a6e816818e9632ee073ca158f4242259e}
+
+
+Holds pointer to the analytical model. 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Development/core/\hyperlink{_analytical_model_8h}{Analytical\-Model.\-h}\item 
+C\-:/\-Development/core/\hyperlink{_analytical_model_8cpp}{Analytical\-Model.\-cpp}\end{DoxyCompactItemize}

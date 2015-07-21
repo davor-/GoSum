@@ -1,0 +1,87 @@
+\hypertarget{_random_variable_8h}{\section{C\-:/\-Development/core/\-Random\-Variable.h File Reference}
+\label{_random_variable_8h}\index{C\-:/\-Development/core/\-Random\-Variable.\-h@{C\-:/\-Development/core/\-Random\-Variable.\-h}}
+}
+{\ttfamily \#include \char`\"{}Sample.\-h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_c_random_variable}{C\-Random\-Variable}
+\begin{DoxyCompactList}\small\item\em Abstract base class for all random variables. \end{DoxyCompactList}\item 
+class \hyperlink{class_t_random_variable}{T\-Random\-Variable$<$ t, T $>$}
+\begin{DoxyCompactList}\small\item\em Template of an abstract class -\/ covers two types of random variables\-: discrete (t=int,T=\hyperlink{class_c_discrete_sample}{C\-Discrete\-Sample}) or continuous (t=double,T=\hyperlink{class_c_continuous_sample}{C\-Continuous\-Sample}). \end{DoxyCompactList}\item 
+class \hyperlink{class_c_discrete_r_v}{C\-Discrete\-R\-V}
+\item 
+class \hyperlink{class_c_continuous_r_v}{C\-Continuous\-R\-V}
+\item 
+class \hyperlink{class_c_constant_d_r_v}{C\-Constant\-D\-R\-V}
+\begin{DoxyCompactList}\small\item\em Class for constant discrete random variables derived from discrete random variables. \end{DoxyCompactList}\item 
+class \hyperlink{class_c_uniform_d_r_v}{C\-Uniform\-D\-R\-V}
+\begin{DoxyCompactList}\small\item\em Class for uniform discrete random variables derived from discrete random variables. \end{DoxyCompactList}\item 
+class \hyperlink{class_c_empirical_d_r_v}{C\-Empirical\-D\-R\-V}
+\begin{DoxyCompactList}\small\item\em Class for categorical discrete random variables derived from discrete random variables. \end{DoxyCompactList}\item 
+class \hyperlink{class_c_categorical_d_r_v}{C\-Categorical\-D\-R\-V}
+\begin{DoxyCompactList}\small\item\em Class for categorical discrete random variables derived from discrete random variables. \end{DoxyCompactList}\item 
+class \hyperlink{class_c_constant_c_r_v}{C\-Constant\-C\-R\-V}
+\begin{DoxyCompactList}\small\item\em Class for constant continuous random variables derived from continuous random variables. \end{DoxyCompactList}\item 
+class \hyperlink{class_c_uniform_c_r_v}{C\-Uniform\-C\-R\-V}
+\begin{DoxyCompactList}\small\item\em Class for uniform continuous random variables derived from continuous random variables. \end{DoxyCompactList}\item 
+class \hyperlink{class_c_gaussian_c_r_v}{C\-Gaussian\-C\-R\-V}
+\begin{DoxyCompactList}\small\item\em Class for Gaussian continuous random variables derived from continuous random variables. \end{DoxyCompactList}\item 
+class \hyperlink{class_c_exponential_c_r_v}{C\-Exponential\-C\-R\-V}
+\begin{DoxyCompactList}\small\item\em Class for exponential continuous random variables derived from continuous random variables. \end{DoxyCompactList}\item 
+class \hyperlink{class_c_empirical_c_r_v}{C\-Empirical\-C\-R\-V}
+\begin{DoxyCompactList}\small\item\em Class for empirical continuous random variables derived from continuous random variables. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_random_variable_8h_aa6126670a3a7233e950738c854c62083}{rv\-Export\-Macro}(F, f, arg)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{class_t_random_variable}{T\-Random\-Variable}$<$ int, \\*
+\hyperlink{class_c_discrete_sample}{C\-Discrete\-Sample} $>$ \hyperlink{_random_variable_8h_a7540f03eb484a5cbe489d72569151cca}{C\-T\-Discrete\-R\-V}
+\begin{DoxyCompactList}\small\item\em Abstract class for all discrete random variables derived as specialization for t=int, T=T\-Discrete\-Sample. \end{DoxyCompactList}\item 
+typedef \hyperlink{class_t_random_variable}{T\-Random\-Variable}\\*
+$<$ double, \hyperlink{class_c_continuous_sample}{C\-Continuous\-Sample} $>$ \hyperlink{_random_variable_8h_aa2658fdf200868d226d35c53471eadf3}{C\-T\-Continuous\-R\-V}
+\begin{DoxyCompactList}\small\item\em Abstract class for all continuous random variables derived as specialization with t=double, T=\hyperlink{class_c_continuous_sample}{C\-Continuous\-Sample}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_random_variable_8h_aa6126670a3a7233e950738c854c62083}{\index{Random\-Variable.\-h@{Random\-Variable.\-h}!rv\-Export\-Macro@{rv\-Export\-Macro}}
+\index{rv\-Export\-Macro@{rv\-Export\-Macro}!RandomVariable.h@{Random\-Variable.\-h}}
+\subsubsection[{rv\-Export\-Macro}]{\setlength{\rightskip}{0pt plus 5cm}\#define rv\-Export\-Macro(
+\begin{DoxyParamCaption}
+\item[{}]{F, }
+\item[{}]{f, }
+\item[{}]{arg}
+\end{DoxyParamCaption}
+)}}\label{_random_variable_8h_aa6126670a3a7233e950738c854c62083}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keyword}{public}: \(\backslash\)
+ArrayXd export##F(\textcolor{keyword}{const} Array<arg,Dynamic,1> &\_x) \textcolor{keyword}{const} \(\backslash\)
+\{   \(\backslash\)
+    int i,n=\_x.size(); \(\backslash\)
+    ArrayXd \_f(n); \(\backslash\)
+    for ( i=0; i<n; i++ ) \_f(i)=f(\_x(i)); \(\backslash\)
+    return \_f;  \(\backslash\)
+\}
+\end{DoxyCode}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{_random_variable_8h_aa2658fdf200868d226d35c53471eadf3}{\index{Random\-Variable.\-h@{Random\-Variable.\-h}!C\-T\-Continuous\-R\-V@{C\-T\-Continuous\-R\-V}}
+\index{C\-T\-Continuous\-R\-V@{C\-T\-Continuous\-R\-V}!RandomVariable.h@{Random\-Variable.\-h}}
+\subsubsection[{C\-T\-Continuous\-R\-V}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf T\-Random\-Variable}$<$double,{\bf C\-Continuous\-Sample}$>$ {\bf C\-T\-Continuous\-R\-V}}}\label{_random_variable_8h_aa2658fdf200868d226d35c53471eadf3}
+
+
+Abstract class for all continuous random variables derived as specialization with t=double, T=\hyperlink{class_c_continuous_sample}{C\-Continuous\-Sample}. 
+
+\hypertarget{_random_variable_8h_a7540f03eb484a5cbe489d72569151cca}{\index{Random\-Variable.\-h@{Random\-Variable.\-h}!C\-T\-Discrete\-R\-V@{C\-T\-Discrete\-R\-V}}
+\index{C\-T\-Discrete\-R\-V@{C\-T\-Discrete\-R\-V}!RandomVariable.h@{Random\-Variable.\-h}}
+\subsubsection[{C\-T\-Discrete\-R\-V}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf T\-Random\-Variable}$<$int,{\bf C\-Discrete\-Sample}$>$ {\bf C\-T\-Discrete\-R\-V}}}\label{_random_variable_8h_a7540f03eb484a5cbe489d72569151cca}
+
+
+Abstract class for all discrete random variables derived as specialization for t=int, T=T\-Discrete\-Sample. 
+

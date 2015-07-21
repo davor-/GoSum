@@ -1,0 +1,205 @@
+\hypertarget{class_t_random_variable}{\section{T\-Random\-Variable$<$ t, T $>$ Class Template Reference}
+\label{class_t_random_variable}\index{T\-Random\-Variable$<$ t, T $>$@{T\-Random\-Variable$<$ t, T $>$}}
+}
+
+
+Template of an abstract class -\/ covers two types of random variables\-: discrete (t=int,T=\hyperlink{class_c_discrete_sample}{C\-Discrete\-Sample}) or continuous (t=double,T=\hyperlink{class_c_continuous_sample}{C\-Continuous\-Sample}).  
+
+
+
+
+{\ttfamily \#include $<$Random\-Variable.\-h$>$}
+
+Inheritance diagram for T\-Random\-Variable$<$ t, T $>$\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.871166cm]{class_t_random_variable}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_t_random_variable_a74687a0af21045e76e3f5c6aa7ac9667}{T\-Random\-Variable} ()
+\item 
+virtual \hyperlink{class_t_random_variable_a4d3cf386991ad9bcf16e534af1160e97}{$\sim$\-T\-Random\-Variable} ()
+\item 
+\hyperlink{class_t_random_variable_aab9e5162a100662d832403f6d2347272}{T\-Random\-Variable} (const \hyperlink{class_t_random_variable}{T\-Random\-Variable} \&O)
+\item 
+virtual void \hyperlink{class_t_random_variable_a4b92146e4616cd65c98fed3070644404}{set\-Distribution} (t \-\_\-dp1, t \-\_\-dp2=0)
+\begin{DoxyCompactList}\small\item\em Sets distribution parameters of the random variable. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_t_random_variable_a8b793c2e215575a270004146bb8bc491}{set\-Distribution} (const T \&\-\_\-a\-S)
+\begin{DoxyCompactList}\small\item\em Sets distribution of the random variable from sample. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_t_random_variable_aec8f8c21abba012d70f00c48679ff6c8}{probability} (t \-\_\-x) const =0
+\begin{DoxyCompactList}\small\item\em Returns probability mass function (P\-M\-F) or probability density function (P\-D\-F) for the random variable value \-\_\-x. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_t_random_variable_a465dbc0834d2ad7dc731632729873640}{cumulative} (t \-\_\-x) const =0
+\begin{DoxyCompactList}\small\item\em Returns cumulative distribution function (C\-D\-F) for the random variable value \-\_\-x. \end{DoxyCompactList}\item 
+\hyperlink{class_t_random_variable_af64e0bddf1c48739b0f69c5a30931ac4}{rv\-Export\-Macro} (Probability, \hyperlink{class_t_random_variable_aec8f8c21abba012d70f00c48679ff6c8}{probability}, t) rv\-Export\-Macro(Cumulative
+\item 
+t \hyperlink{class_t_random_variable_a1aaeb4946cfe03b02b5cd97b8bd0a4a3}{rv\-Export\-Macro} (Quantile, \hyperlink{class_c_random_variable_aad8f00777fdad0e7e1ad29c9ea620ff2}{quantile}, double) virtual Array$<$t
+\begin{DoxyCompactList}\small\item\em $<$ Exports cumulative for an array of x values. \end{DoxyCompactList}\item 
+t \hyperlink{class_t_random_variable_a37fc52d5fa37493a353887242d279a27}{export\-Domain} () const =0
+\begin{DoxyCompactList}\small\item\em Exports domain of the random variable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_t_random_variable_a85c929f5f072f475c65849859bfa1e5e}{cumulative}
+\item 
+t \hyperlink{class_t_random_variable_ad33d760f0f0d75be0de72fc811d7e130}{Dynamic}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \hyperlink{class_t_random_variable_a66ab9533e23478aca1460391f8ab7b7a}{serialize} (Archive \&ar, const unsigned int version)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_t_random_variable_ac98d07dd8f7b70e16ccb9a01abf56b9c}{boost\-::serialization\-::access}
+\begin{DoxyCompactList}\small\item\em Boost serialization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename t, class T$>$class T\-Random\-Variable$<$ t, T $>$}
+
+Template of an abstract class -\/ covers two types of random variables\-: discrete (t=int,T=\hyperlink{class_c_discrete_sample}{C\-Discrete\-Sample}) or continuous (t=double,T=\hyperlink{class_c_continuous_sample}{C\-Continuous\-Sample}). 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_t_random_variable_a74687a0af21045e76e3f5c6aa7ac9667}{\index{T\-Random\-Variable@{T\-Random\-Variable}!T\-Random\-Variable@{T\-Random\-Variable}}
+\index{T\-Random\-Variable@{T\-Random\-Variable}!TRandomVariable@{T\-Random\-Variable}}
+\subsubsection[{T\-Random\-Variable}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename t , class T $>$ {\bf T\-Random\-Variable}$<$ t, T $>$\-::{\bf T\-Random\-Variable} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_t_random_variable_a74687a0af21045e76e3f5c6aa7ac9667}
+\hypertarget{class_t_random_variable_a4d3cf386991ad9bcf16e534af1160e97}{\index{T\-Random\-Variable@{T\-Random\-Variable}!$\sim$\-T\-Random\-Variable@{$\sim$\-T\-Random\-Variable}}
+\index{$\sim$\-T\-Random\-Variable@{$\sim$\-T\-Random\-Variable}!TRandomVariable@{T\-Random\-Variable}}
+\subsubsection[{$\sim$\-T\-Random\-Variable}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename t , class T $>$ virtual {\bf T\-Random\-Variable}$<$ t, T $>$\-::$\sim${\bf T\-Random\-Variable} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_t_random_variable_a4d3cf386991ad9bcf16e534af1160e97}
+\hypertarget{class_t_random_variable_aab9e5162a100662d832403f6d2347272}{\index{T\-Random\-Variable@{T\-Random\-Variable}!T\-Random\-Variable@{T\-Random\-Variable}}
+\index{T\-Random\-Variable@{T\-Random\-Variable}!TRandomVariable@{T\-Random\-Variable}}
+\subsubsection[{T\-Random\-Variable}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename t , class T $>$ {\bf T\-Random\-Variable}$<$ t, T $>$\-::{\bf T\-Random\-Variable} (
+\begin{DoxyParamCaption}
+\item[{const {\bf T\-Random\-Variable}$<$ t, T $>$ \&}]{O}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_t_random_variable_aab9e5162a100662d832403f6d2347272}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_t_random_variable_a465dbc0834d2ad7dc731632729873640}{\index{T\-Random\-Variable@{T\-Random\-Variable}!cumulative@{cumulative}}
+\index{cumulative@{cumulative}!TRandomVariable@{T\-Random\-Variable}}
+\subsubsection[{cumulative}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename t , class T $>$ virtual double {\bf T\-Random\-Variable}$<$ t, T $>$\-::cumulative (
+\begin{DoxyParamCaption}
+\item[{t}]{\-\_\-x}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_t_random_variable_a465dbc0834d2ad7dc731632729873640}
+
+
+Returns cumulative distribution function (C\-D\-F) for the random variable value \-\_\-x. 
+
+\hypertarget{class_t_random_variable_a37fc52d5fa37493a353887242d279a27}{\index{T\-Random\-Variable@{T\-Random\-Variable}!export\-Domain@{export\-Domain}}
+\index{export\-Domain@{export\-Domain}!TRandomVariable@{T\-Random\-Variable}}
+\subsubsection[{export\-Domain}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename t , class T $>$ t {\bf T\-Random\-Variable}$<$ t, T $>$\-::export\-Domain (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_t_random_variable_a37fc52d5fa37493a353887242d279a27}
+
+
+Exports domain of the random variable. 
+
+
+
+Implemented in \hyperlink{class_c_empirical_c_r_v_ae79ea609e95ae1cef28f7f6ec6e2cd73}{C\-Empirical\-C\-R\-V}, \hyperlink{class_c_exponential_c_r_v_ad346c5b30597b2a2a5ae3315ba8e35a4}{C\-Exponential\-C\-R\-V}, \hyperlink{class_c_gaussian_c_r_v_ad270874d334fca26179df8e1dfa9285b}{C\-Gaussian\-C\-R\-V}, \hyperlink{class_c_uniform_c_r_v_aa0a19d1aeb632dc1db794bafbf3dfa2c}{C\-Uniform\-C\-R\-V}, \hyperlink{class_c_constant_c_r_v_a19ccacd82627d70423d98f3cd81fb7b8}{C\-Constant\-C\-R\-V}, \hyperlink{class_c_categorical_d_r_v_a67bb1a1664827e7221af1178b78c7850}{C\-Categorical\-D\-R\-V}, \hyperlink{class_c_empirical_d_r_v_a896eab1e119e990165bca4ffcb5dc7b6}{C\-Empirical\-D\-R\-V}, \hyperlink{class_c_uniform_d_r_v_ac8e01c8b8e6f9403855259da5511fa89}{C\-Uniform\-D\-R\-V}, and \hyperlink{class_c_constant_d_r_v_a66b319e508f2a174bf572884183aeee8}{C\-Constant\-D\-R\-V}.
+
+\hypertarget{class_t_random_variable_aec8f8c21abba012d70f00c48679ff6c8}{\index{T\-Random\-Variable@{T\-Random\-Variable}!probability@{probability}}
+\index{probability@{probability}!TRandomVariable@{T\-Random\-Variable}}
+\subsubsection[{probability}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename t , class T $>$ virtual double {\bf T\-Random\-Variable}$<$ t, T $>$\-::probability (
+\begin{DoxyParamCaption}
+\item[{t}]{\-\_\-x}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_t_random_variable_aec8f8c21abba012d70f00c48679ff6c8}
+
+
+Returns probability mass function (P\-M\-F) or probability density function (P\-D\-F) for the random variable value \-\_\-x. 
+
+\hypertarget{class_t_random_variable_af64e0bddf1c48739b0f69c5a30931ac4}{\index{T\-Random\-Variable@{T\-Random\-Variable}!rv\-Export\-Macro@{rv\-Export\-Macro}}
+\index{rv\-Export\-Macro@{rv\-Export\-Macro}!TRandomVariable@{T\-Random\-Variable}}
+\subsubsection[{rv\-Export\-Macro}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename t , class T $>$ {\bf T\-Random\-Variable}$<$ t, T $>$\-::rv\-Export\-Macro (
+\begin{DoxyParamCaption}
+\item[{Probability}]{, }
+\item[{{\bf probability}}]{, }
+\item[{t}]{}
+\end{DoxyParamCaption}
+)}}\label{class_t_random_variable_af64e0bddf1c48739b0f69c5a30931ac4}
+\hypertarget{class_t_random_variable_a1aaeb4946cfe03b02b5cd97b8bd0a4a3}{\index{T\-Random\-Variable@{T\-Random\-Variable}!rv\-Export\-Macro@{rv\-Export\-Macro}}
+\index{rv\-Export\-Macro@{rv\-Export\-Macro}!TRandomVariable@{T\-Random\-Variable}}
+\subsubsection[{rv\-Export\-Macro}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename t , class T $>$ t {\bf T\-Random\-Variable}$<$ t, T $>$\-::rv\-Export\-Macro (
+\begin{DoxyParamCaption}
+\item[{Quantile}]{, }
+\item[{{\bf quantile}}]{, }
+\item[{double}]{}
+\end{DoxyParamCaption}
+)}}\label{class_t_random_variable_a1aaeb4946cfe03b02b5cd97b8bd0a4a3}
+
+
+$<$ Exports cumulative for an array of x values. 
+
+\hypertarget{class_t_random_variable_a66ab9533e23478aca1460391f8ab7b7a}{\index{T\-Random\-Variable@{T\-Random\-Variable}!serialize@{serialize}}
+\index{serialize@{serialize}!TRandomVariable@{T\-Random\-Variable}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename t , class T $>$ template$<$class Archive $>$ void {\bf T\-Random\-Variable}$<$ t, T $>$\-::serialize (
+\begin{DoxyParamCaption}
+\item[{Archive \&}]{ar, }
+\item[{const unsigned int}]{version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{class_t_random_variable_a66ab9533e23478aca1460391f8ab7b7a}
+\hypertarget{class_t_random_variable_a4b92146e4616cd65c98fed3070644404}{\index{T\-Random\-Variable@{T\-Random\-Variable}!set\-Distribution@{set\-Distribution}}
+\index{set\-Distribution@{set\-Distribution}!TRandomVariable@{T\-Random\-Variable}}
+\subsubsection[{set\-Distribution}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename t , class T $>$ virtual void {\bf T\-Random\-Variable}$<$ t, T $>$\-::set\-Distribution (
+\begin{DoxyParamCaption}
+\item[{t}]{\-\_\-dp1, }
+\item[{t}]{\-\_\-dp2 = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_t_random_variable_a4b92146e4616cd65c98fed3070644404}
+
+
+Sets distribution parameters of the random variable. 
+
+\hypertarget{class_t_random_variable_a8b793c2e215575a270004146bb8bc491}{\index{T\-Random\-Variable@{T\-Random\-Variable}!set\-Distribution@{set\-Distribution}}
+\index{set\-Distribution@{set\-Distribution}!TRandomVariable@{T\-Random\-Variable}}
+\subsubsection[{set\-Distribution}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename t , class T $>$ virtual void {\bf T\-Random\-Variable}$<$ t, T $>$\-::set\-Distribution (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{\-\_\-a\-S}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_t_random_variable_a8b793c2e215575a270004146bb8bc491}
+
+
+Sets distribution of the random variable from sample. 
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_t_random_variable_ac98d07dd8f7b70e16ccb9a01abf56b9c}{\index{T\-Random\-Variable@{T\-Random\-Variable}!boost\-::serialization\-::access@{boost\-::serialization\-::access}}
+\index{boost\-::serialization\-::access@{boost\-::serialization\-::access}!TRandomVariable@{T\-Random\-Variable}}
+\subsubsection[{boost\-::serialization\-::access}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename t , class T $>$ friend class boost\-::serialization\-::access\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_t_random_variable_ac98d07dd8f7b70e16ccb9a01abf56b9c}
+
+
+Boost serialization. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_t_random_variable_a85c929f5f072f475c65849859bfa1e5e}{\index{T\-Random\-Variable@{T\-Random\-Variable}!cumulative@{cumulative}}
+\index{cumulative@{cumulative}!TRandomVariable@{T\-Random\-Variable}}
+\subsubsection[{cumulative}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename t , class T $>$ {\bf T\-Random\-Variable}$<$ t, T $>$\-::cumulative}}\label{class_t_random_variable_a85c929f5f072f475c65849859bfa1e5e}
+\hypertarget{class_t_random_variable_ad33d760f0f0d75be0de72fc811d7e130}{\index{T\-Random\-Variable@{T\-Random\-Variable}!Dynamic@{Dynamic}}
+\index{Dynamic@{Dynamic}!TRandomVariable@{T\-Random\-Variable}}
+\subsubsection[{Dynamic}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename t , class T $>$ t {\bf T\-Random\-Variable}$<$ t, T $>$\-::Dynamic}}\label{class_t_random_variable_ad33d760f0f0d75be0de72fc811d7e130}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Development/core/\hyperlink{_random_variable_8h}{Random\-Variable.\-h}\end{DoxyCompactItemize}

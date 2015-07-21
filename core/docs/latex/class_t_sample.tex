@@ -1,0 +1,469 @@
+\hypertarget{class_t_sample}{\section{T\-Sample$<$ t $>$ Class Template Reference}
+\label{class_t_sample}\index{T\-Sample$<$ t $>$@{T\-Sample$<$ t $>$}}
+}
+
+
+Template of an abstract class -\/ covers two types of samples\-: discrete (t=int) or continuous (t=double).  
+
+
+
+
+{\ttfamily \#include $<$Sample.\-h$>$}
+
+Inheritance diagram for T\-Sample$<$ t $>$\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_t_sample}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_t_sample_ac6b6c37f8145c952122d7145b0174f68}{T\-Sample} ()
+\item 
+virtual \hyperlink{class_t_sample_a1268ee236a7a68a3ee88642e92c6e26b}{$\sim$\-T\-Sample} ()
+\item 
+\hyperlink{class_t_sample_a3461a51e2f69b6e6b7e9f857c0ae67ea}{T\-Sample} (const \hyperlink{class_t_sample}{T\-Sample} \&O)
+\item 
+void \hyperlink{class_t_sample_ad4b1d357361c0f4543a91d929a2b51fa}{clear} ()
+\begin{DoxyCompactList}\small\item\em Clears object. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_t_sample_a3b92f468f11169b27a564fd801144fee}{set\-Sample\-Size} (int \-\_\-n)
+\begin{DoxyCompactList}\small\item\em (Re)sizes the sample, all previous data is lost. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_t_sample_a188e42364f5afe3ca9cd086130e5ea90}{sample\-Size} () const 
+\begin{DoxyCompactList}\small\item\em Returns sample size (number of data in the sample). \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_t_sample_a08b273f6f0c4f4229be0b6a1267c98d1}{set\-Sample\-Value} (double \-\_\-val, int \-\_\-at)
+\begin{DoxyCompactList}\small\item\em Sets particular sample data value. \end{DoxyCompactList}\item 
+t \hyperlink{class_t_sample_ae16d62ea9ba46d853825f325bd53c53a}{sample\-Value} (int \-\_\-at) const 
+\begin{DoxyCompactList}\small\item\em Returns particular sample data value. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_t_sample_a7a13ccc3ca57276ad789bafd9ceec1d8}{read\-Sample\-Value} (std\-::ifstream \&\-\_\-ifs, int \-\_\-at)
+\begin{DoxyCompactList}\small\item\em Reads particular sample data from input file stream. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_t_sample_abb2feebe92f8fdb290046d6ef0573507}{write\-Sample\-Value} (std\-::ofstream \&\-\_\-ofs, int \-\_\-at) const 
+\begin{DoxyCompactList}\small\item\em $<$ Writes particular sample data to output file stream. \end{DoxyCompactList}\item 
+bool \hyperlink{class_t_sample_a947fe85c93d77a82e6d975656490b4f4}{is\-Constant} () const 
+\begin{DoxyCompactList}\small\item\em Returns true if it is a constant sample, false otherwise. \end{DoxyCompactList}\item 
+t \hyperlink{class_t_sample_a8390ad552199323ae9cc6ab9b17486c6}{min\-Value} () const 
+\begin{DoxyCompactList}\small\item\em Returns minimal sample data value. \end{DoxyCompactList}\item 
+t \hyperlink{class_t_sample_aac5e27142c09df0a3213a702a5db2a46}{max\-Value} () const 
+\begin{DoxyCompactList}\small\item\em Returns maximal sample data value. \end{DoxyCompactList}\item 
+t \hyperlink{class_t_sample_afe235e9274b04a9b62d329edf9525bb3}{normalized\-Histogram} (Array$<$ t, Dynamic, 1 $>$ \&\-\_\-x, Array\-Xd \&\-\_\-\-H) const 
+\begin{DoxyCompactList}\small\item\em Returns normalized histogram (x,H). \end{DoxyCompactList}\item 
+void \hyperlink{class_t_sample_a6190e19f26c7135cc03b31f3aa23d154}{cummulative\-Histogram} (Array$<$ t, Dynamic, 1 $>$ \&\-\_\-x, Array\-Xd \&\-\_\-c\-H) const 
+\begin{DoxyCompactList}\small\item\em Returns cummulative histogram (x,c\-H). \end{DoxyCompactList}\item 
+virtual t \hyperlink{class_t_sample_a263276b81ccd853821d85915853e5264}{export\-Histogram} (Array$<$ t, Dynamic, 1 $>$ \&\-\_\-x, Array\-Xd \&\-\_\-\-H) const =0
+\begin{DoxyCompactList}\small\item\em Returns histogram (x,H). \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_t_sample_a1ce3bdd77627f5783edbec6f607c3ea9}{export\-Sub\-Histogram} (Array\-Xd \&\-\_\-sub\-H, const std\-::vector$<$ int $>$ \&subset) const =0
+\begin{DoxyCompactList}\small\item\em Exports histogram relative to a subset of sample data. \end{DoxyCompactList}\item 
+Array$<$ t, Dynamic, 1 $>$ \hyperlink{class_t_sample_a0316f93893c1c01ed69c0f2784eeaed9}{export\-Sample} () const 
+\begin{DoxyCompactList}\small\item\em Exports sample. \end{DoxyCompactList}\item 
+virtual std\-::vector$<$ int $>$ \hyperlink{class_t_sample_ad774e7731052f913cba023dcfd619e7d}{select} (double \-\_\-left, double \-\_\-right) const 
+\begin{DoxyCompactList}\small\item\em $<$ Returns indices of those sample values that are between \-\_\-left and \-\_\-right. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_t_sample_a97502ddc915cc2f198fbce9ae82622ad}{erase\-Selected} (const std\-::vector$<$ int $>$ \&sel)
+\begin{DoxyCompactList}\small\item\em Erases sample values on positions defiend by sel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \hyperlink{class_t_sample_a0f53b1db72dd3e83c50ab28dd31929a5}{serialize} (Archive \&ar, const unsigned int version)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Array$<$ t, Dynamic, 1 $>$ \hyperlink{class_t_sample_a86a1507fc39a77dd81c298a420d47d27}{sample}
+\begin{DoxyCompactList}\small\item\em Array that holds sample data. \end{DoxyCompactList}\item 
+Array$<$ t, Dynamic, 1 $>$ \hyperlink{class_t_sample_ab6b31fdfd8547fb15df70eac7f6b84e3}{x}
+\begin{DoxyCompactList}\small\item\em Array that holds x-\/coordinate of the normalized histogram. \end{DoxyCompactList}\item 
+Array\-Xd \hyperlink{class_t_sample_a95cd9ef96fc962a75c1bd1a54e7ed792}{H}
+\item 
+Array\-Xd \hyperlink{class_t_sample_aedda743fb903732544bf50bdc57ffcee}{c\-H}
+\begin{DoxyCompactList}\small\item\em Array that holds normalized histogram. \end{DoxyCompactList}\item 
+t \hyperlink{class_t_sample_ae92afde393f607aa4bb3db700be0d741}{range}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_t_sample_aa77e238967d85f6c6a66e74a52a600b8}{compute\-Normalized\-Histogram} (int \-\_\-n)=0
+\begin{DoxyCompactList}\small\item\em Computes normalized histogram from sample data. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_t_sample_af2d1a245bc880db839de38acbb7f2f84}{compute\-Normalized\-Sub\-Histogram} (Array\-Xd \&\-\_\-sub\-H, const std\-::vector$<$ int $>$ \&subset) const =0
+\begin{DoxyCompactList}\small\item\em Computes normalized histogram from a subset of sample data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_t_sample_ac98d07dd8f7b70e16ccb9a01abf56b9c}{boost\-::serialization\-::access}
+\begin{DoxyCompactList}\small\item\em Boost serialization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename t$>$class T\-Sample$<$ t $>$}
+
+Template of an abstract class -\/ covers two types of samples\-: discrete (t=int) or continuous (t=double). 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_t_sample_ac6b6c37f8145c952122d7145b0174f68}{\index{T\-Sample@{T\-Sample}!T\-Sample@{T\-Sample}}
+\index{T\-Sample@{T\-Sample}!TSample@{T\-Sample}}
+\subsubsection[{T\-Sample}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename t$>$ {\bf T\-Sample}$<$ t $>$\-::{\bf T\-Sample} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_t_sample_ac6b6c37f8145c952122d7145b0174f68}
+\hypertarget{class_t_sample_a1268ee236a7a68a3ee88642e92c6e26b}{\index{T\-Sample@{T\-Sample}!$\sim$\-T\-Sample@{$\sim$\-T\-Sample}}
+\index{$\sim$\-T\-Sample@{$\sim$\-T\-Sample}!TSample@{T\-Sample}}
+\subsubsection[{$\sim$\-T\-Sample}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename t$>$ virtual {\bf T\-Sample}$<$ t $>$\-::$\sim${\bf T\-Sample} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_t_sample_a1268ee236a7a68a3ee88642e92c6e26b}
+\hypertarget{class_t_sample_a3461a51e2f69b6e6b7e9f857c0ae67ea}{\index{T\-Sample@{T\-Sample}!T\-Sample@{T\-Sample}}
+\index{T\-Sample@{T\-Sample}!TSample@{T\-Sample}}
+\subsubsection[{T\-Sample}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename t$>$ {\bf T\-Sample}$<$ t $>$\-::{\bf T\-Sample} (
+\begin{DoxyParamCaption}
+\item[{const {\bf T\-Sample}$<$ t $>$ \&}]{O}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_t_sample_a3461a51e2f69b6e6b7e9f857c0ae67ea}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_t_sample_ad4b1d357361c0f4543a91d929a2b51fa}{\index{T\-Sample@{T\-Sample}!clear@{clear}}
+\index{clear@{clear}!TSample@{T\-Sample}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename t$>$ void {\bf T\-Sample}$<$ t $>$\-::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_t_sample_ad4b1d357361c0f4543a91d929a2b51fa}
+
+
+Clears object. 
+
+
+
+Implements \hyperlink{class_c_sample_ad7418ef7bc065cdf14213c0f393720fe}{C\-Sample}.
+
+\hypertarget{class_t_sample_aa77e238967d85f6c6a66e74a52a600b8}{\index{T\-Sample@{T\-Sample}!compute\-Normalized\-Histogram@{compute\-Normalized\-Histogram}}
+\index{compute\-Normalized\-Histogram@{compute\-Normalized\-Histogram}!TSample@{T\-Sample}}
+\subsubsection[{compute\-Normalized\-Histogram}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename t$>$ virtual void {\bf T\-Sample}$<$ t $>$\-::compute\-Normalized\-Histogram (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [pure virtual]}}}\label{class_t_sample_aa77e238967d85f6c6a66e74a52a600b8}
+
+
+Computes normalized histogram from sample data. 
+
+\hypertarget{class_t_sample_af2d1a245bc880db839de38acbb7f2f84}{\index{T\-Sample@{T\-Sample}!compute\-Normalized\-Sub\-Histogram@{compute\-Normalized\-Sub\-Histogram}}
+\index{compute\-Normalized\-Sub\-Histogram@{compute\-Normalized\-Sub\-Histogram}!TSample@{T\-Sample}}
+\subsubsection[{compute\-Normalized\-Sub\-Histogram}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename t$>$ virtual void {\bf T\-Sample}$<$ t $>$\-::compute\-Normalized\-Sub\-Histogram (
+\begin{DoxyParamCaption}
+\item[{Array\-Xd \&}]{\-\_\-sub\-H, }
+\item[{const std\-::vector$<$ int $>$ \&}]{subset}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [pure virtual]}}}\label{class_t_sample_af2d1a245bc880db839de38acbb7f2f84}
+
+
+Computes normalized histogram from a subset of sample data. 
+
+\hypertarget{class_t_sample_a6190e19f26c7135cc03b31f3aa23d154}{\index{T\-Sample@{T\-Sample}!cummulative\-Histogram@{cummulative\-Histogram}}
+\index{cummulative\-Histogram@{cummulative\-Histogram}!TSample@{T\-Sample}}
+\subsubsection[{cummulative\-Histogram}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename t$>$ void {\bf T\-Sample}$<$ t $>$\-::cummulative\-Histogram (
+\begin{DoxyParamCaption}
+\item[{Array$<$ t, Dynamic, 1 $>$ \&}]{\-\_\-x, }
+\item[{Array\-Xd \&}]{\-\_\-c\-H}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_t_sample_a6190e19f26c7135cc03b31f3aa23d154}
+
+
+Returns cummulative histogram (x,c\-H). 
+
+\hypertarget{class_t_sample_a97502ddc915cc2f198fbce9ae82622ad}{\index{T\-Sample@{T\-Sample}!erase\-Selected@{erase\-Selected}}
+\index{erase\-Selected@{erase\-Selected}!TSample@{T\-Sample}}
+\subsubsection[{erase\-Selected}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename t$>$ virtual void {\bf T\-Sample}$<$ t $>$\-::erase\-Selected (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ int $>$ \&}]{sel}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_t_sample_a97502ddc915cc2f198fbce9ae82622ad}
+
+
+Erases sample values on positions defiend by sel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sel} & Erases sample values on positions defiend by sel. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_c_sample_a85d084b0fdf82081e265ad8ca39876f3}{C\-Sample}.
+
+\hypertarget{class_t_sample_a263276b81ccd853821d85915853e5264}{\index{T\-Sample@{T\-Sample}!export\-Histogram@{export\-Histogram}}
+\index{export\-Histogram@{export\-Histogram}!TSample@{T\-Sample}}
+\subsubsection[{export\-Histogram}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename t$>$ virtual t {\bf T\-Sample}$<$ t $>$\-::export\-Histogram (
+\begin{DoxyParamCaption}
+\item[{Array$<$ t, Dynamic, 1 $>$ \&}]{\-\_\-x, }
+\item[{Array\-Xd \&}]{\-\_\-\-H}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_t_sample_a263276b81ccd853821d85915853e5264}
+
+
+Returns histogram (x,H). 
+
+\hypertarget{class_t_sample_a0316f93893c1c01ed69c0f2784eeaed9}{\index{T\-Sample@{T\-Sample}!export\-Sample@{export\-Sample}}
+\index{export\-Sample@{export\-Sample}!TSample@{T\-Sample}}
+\subsubsection[{export\-Sample}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename t$>$ Array$<$t,Dynamic,1$>$ {\bf T\-Sample}$<$ t $>$\-::export\-Sample (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_t_sample_a0316f93893c1c01ed69c0f2784eeaed9}
+
+
+Exports sample. 
+
+\hypertarget{class_t_sample_a1ce3bdd77627f5783edbec6f607c3ea9}{\index{T\-Sample@{T\-Sample}!export\-Sub\-Histogram@{export\-Sub\-Histogram}}
+\index{export\-Sub\-Histogram@{export\-Sub\-Histogram}!TSample@{T\-Sample}}
+\subsubsection[{export\-Sub\-Histogram}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename t$>$ virtual void {\bf T\-Sample}$<$ t $>$\-::export\-Sub\-Histogram (
+\begin{DoxyParamCaption}
+\item[{Array\-Xd \&}]{\-\_\-sub\-H, }
+\item[{const std\-::vector$<$ int $>$ \&}]{subset}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_t_sample_a1ce3bdd77627f5783edbec6f607c3ea9}
+
+
+Exports histogram relative to a subset of sample data. 
+
+
+
+Implemented in \hyperlink{class_c_continuous_sample_aa3ea500b67bc9fdb767c7c324975a2eb}{C\-Continuous\-Sample}, and \hyperlink{class_c_discrete_sample_a59a5822c0311f42f7fe3538ea729fd70}{C\-Discrete\-Sample}.
+
+\hypertarget{class_t_sample_a947fe85c93d77a82e6d975656490b4f4}{\index{T\-Sample@{T\-Sample}!is\-Constant@{is\-Constant}}
+\index{is\-Constant@{is\-Constant}!TSample@{T\-Sample}}
+\subsubsection[{is\-Constant}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename t$>$ bool {\bf T\-Sample}$<$ t $>$\-::is\-Constant (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_t_sample_a947fe85c93d77a82e6d975656490b4f4}
+
+
+Returns true if it is a constant sample, false otherwise. 
+
+\hypertarget{class_t_sample_aac5e27142c09df0a3213a702a5db2a46}{\index{T\-Sample@{T\-Sample}!max\-Value@{max\-Value}}
+\index{max\-Value@{max\-Value}!TSample@{T\-Sample}}
+\subsubsection[{max\-Value}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename t$>$ t {\bf T\-Sample}$<$ t $>$\-::max\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_t_sample_aac5e27142c09df0a3213a702a5db2a46}
+
+
+Returns maximal sample data value. 
+
+
+
+Reimplemented in \hyperlink{class_c_categorical_sample_a26021cff1304912e26023cddc399b67e}{C\-Categorical\-Sample}, and \hyperlink{class_c_numerical_sample_ad207c9baed07803c1fb2ac5e285bd896}{C\-Numerical\-Sample}.
+
+\hypertarget{class_t_sample_a8390ad552199323ae9cc6ab9b17486c6}{\index{T\-Sample@{T\-Sample}!min\-Value@{min\-Value}}
+\index{min\-Value@{min\-Value}!TSample@{T\-Sample}}
+\subsubsection[{min\-Value}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename t$>$ t {\bf T\-Sample}$<$ t $>$\-::min\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_t_sample_a8390ad552199323ae9cc6ab9b17486c6}
+
+
+Returns minimal sample data value. 
+
+
+
+Reimplemented in \hyperlink{class_c_categorical_sample_a4c14022735a64792701f670a6d6d38e6}{C\-Categorical\-Sample}, and \hyperlink{class_c_numerical_sample_a23b6f5afff20a9bd788c49a557702d8c}{C\-Numerical\-Sample}.
+
+\hypertarget{class_t_sample_afe235e9274b04a9b62d329edf9525bb3}{\index{T\-Sample@{T\-Sample}!normalized\-Histogram@{normalized\-Histogram}}
+\index{normalized\-Histogram@{normalized\-Histogram}!TSample@{T\-Sample}}
+\subsubsection[{normalized\-Histogram}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename t$>$ t {\bf T\-Sample}$<$ t $>$\-::normalized\-Histogram (
+\begin{DoxyParamCaption}
+\item[{Array$<$ t, Dynamic, 1 $>$ \&}]{\-\_\-x, }
+\item[{Array\-Xd \&}]{\-\_\-\-H}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_t_sample_afe235e9274b04a9b62d329edf9525bb3}
+
+
+Returns normalized histogram (x,H). 
+
+\hypertarget{class_t_sample_a7a13ccc3ca57276ad789bafd9ceec1d8}{\index{T\-Sample@{T\-Sample}!read\-Sample\-Value@{read\-Sample\-Value}}
+\index{read\-Sample\-Value@{read\-Sample\-Value}!TSample@{T\-Sample}}
+\subsubsection[{read\-Sample\-Value}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename t$>$ virtual void {\bf T\-Sample}$<$ t $>$\-::read\-Sample\-Value (
+\begin{DoxyParamCaption}
+\item[{std\-::ifstream \&}]{\-\_\-ifs, }
+\item[{int}]{\-\_\-at}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_t_sample_a7a13ccc3ca57276ad789bafd9ceec1d8}
+
+
+Reads particular sample data from input file stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-at} & Reads particular sample data from input file stream. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_c_sample_a3f2e73517f1818861a7b5114e5412e7d}{C\-Sample}.
+
+
+
+Reimplemented in \hyperlink{class_c_categorical_sample_af1adebf697521884fdc51653ee5f4b97}{C\-Categorical\-Sample}, and \hyperlink{class_c_numerical_sample_a929eddefbbb32c7079e2e60ca95535da}{C\-Numerical\-Sample}.
+
+\hypertarget{class_t_sample_a188e42364f5afe3ca9cd086130e5ea90}{\index{T\-Sample@{T\-Sample}!sample\-Size@{sample\-Size}}
+\index{sample\-Size@{sample\-Size}!TSample@{T\-Sample}}
+\subsubsection[{sample\-Size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename t$>$ virtual int {\bf T\-Sample}$<$ t $>$\-::sample\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_t_sample_a188e42364f5afe3ca9cd086130e5ea90}
+
+
+Returns sample size (number of data in the sample). 
+
+
+
+Implements \hyperlink{class_c_sample_a7e732f11d879108d632170cdf3fe065a}{C\-Sample}.
+
+\hypertarget{class_t_sample_ae16d62ea9ba46d853825f325bd53c53a}{\index{T\-Sample@{T\-Sample}!sample\-Value@{sample\-Value}}
+\index{sample\-Value@{sample\-Value}!TSample@{T\-Sample}}
+\subsubsection[{sample\-Value}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename t$>$ t {\bf T\-Sample}$<$ t $>$\-::sample\-Value (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-at}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_t_sample_ae16d62ea9ba46d853825f325bd53c53a}
+
+
+Returns particular sample data value. 
+
+\hypertarget{class_t_sample_ad774e7731052f913cba023dcfd619e7d}{\index{T\-Sample@{T\-Sample}!select@{select}}
+\index{select@{select}!TSample@{T\-Sample}}
+\subsubsection[{select}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename t$>$ virtual std\-::vector$<$int$>$ {\bf T\-Sample}$<$ t $>$\-::select (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-left, }
+\item[{double}]{\-\_\-right}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_t_sample_ad774e7731052f913cba023dcfd619e7d}
+
+
+$<$ Returns indices of those sample values that are between \-\_\-left and \-\_\-right. 
+
+
+
+Implements \hyperlink{class_c_sample_acd41cc9c1219ea843abd59131ffaa458}{C\-Sample}.
+
+\hypertarget{class_t_sample_a0f53b1db72dd3e83c50ab28dd31929a5}{\index{T\-Sample@{T\-Sample}!serialize@{serialize}}
+\index{serialize@{serialize}!TSample@{T\-Sample}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename t$>$ template$<$class Archive $>$ void {\bf T\-Sample}$<$ t $>$\-::serialize (
+\begin{DoxyParamCaption}
+\item[{Archive \&}]{ar, }
+\item[{const unsigned int}]{version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{class_t_sample_a0f53b1db72dd3e83c50ab28dd31929a5}
+
+
+Reimplemented from \hyperlink{class_c_sample_a56f06010d5e070739b5983e12bc7751a}{C\-Sample}.
+
+
+
+Reimplemented in \hyperlink{class_c_continuous_sample_ab5508a93778215d7408fde456f9e8faf}{C\-Continuous\-Sample}, and \hyperlink{class_c_discrete_sample_aa3e70fbd99f76fc47705c08d6230b726}{C\-Discrete\-Sample}.
+
+\hypertarget{class_t_sample_a3b92f468f11169b27a564fd801144fee}{\index{T\-Sample@{T\-Sample}!set\-Sample\-Size@{set\-Sample\-Size}}
+\index{set\-Sample\-Size@{set\-Sample\-Size}!TSample@{T\-Sample}}
+\subsubsection[{set\-Sample\-Size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename t$>$ virtual void {\bf T\-Sample}$<$ t $>$\-::set\-Sample\-Size (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_t_sample_a3b92f468f11169b27a564fd801144fee}
+
+
+(Re)sizes the sample, all previous data is lost. 
+
+
+
+Implements \hyperlink{class_c_sample_ae227fc339ddebd8c2744eb6c605b4544}{C\-Sample}.
+
+
+
+Reimplemented in \hyperlink{class_c_categorical_sample_a7326fb12831014e2ee7504eb010f6356}{C\-Categorical\-Sample}, and \hyperlink{class_c_numerical_sample_a2a558ba5736bf8893121dd9174110140}{C\-Numerical\-Sample}.
+
+\hypertarget{class_t_sample_a08b273f6f0c4f4229be0b6a1267c98d1}{\index{T\-Sample@{T\-Sample}!set\-Sample\-Value@{set\-Sample\-Value}}
+\index{set\-Sample\-Value@{set\-Sample\-Value}!TSample@{T\-Sample}}
+\subsubsection[{set\-Sample\-Value}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename t$>$ virtual void {\bf T\-Sample}$<$ t $>$\-::set\-Sample\-Value (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-val, }
+\item[{int}]{\-\_\-at}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_t_sample_a08b273f6f0c4f4229be0b6a1267c98d1}
+
+
+Sets particular sample data value. 
+
+
+
+Implements \hyperlink{class_c_sample_a6817250e12af0b84730ddbbee7832ce7}{C\-Sample}.
+
+\hypertarget{class_t_sample_abb2feebe92f8fdb290046d6ef0573507}{\index{T\-Sample@{T\-Sample}!write\-Sample\-Value@{write\-Sample\-Value}}
+\index{write\-Sample\-Value@{write\-Sample\-Value}!TSample@{T\-Sample}}
+\subsubsection[{write\-Sample\-Value}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename t$>$ virtual void {\bf T\-Sample}$<$ t $>$\-::write\-Sample\-Value (
+\begin{DoxyParamCaption}
+\item[{std\-::ofstream \&}]{\-\_\-ofs, }
+\item[{int}]{\-\_\-at}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_t_sample_abb2feebe92f8fdb290046d6ef0573507}
+
+
+$<$ Writes particular sample data to output file stream. 
+
+
+
+Implements \hyperlink{class_c_sample_ae259be8e58656626e12cedba8c99bacc}{C\-Sample}.
+
+
+
+Reimplemented in \hyperlink{class_c_categorical_sample_ab20e228cf0a5b43de4981e1cc95da129}{C\-Categorical\-Sample}, and \hyperlink{class_c_numerical_sample_ae1ed83416fc77ab40019c2577047a788}{C\-Numerical\-Sample}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_t_sample_ac98d07dd8f7b70e16ccb9a01abf56b9c}{\index{T\-Sample@{T\-Sample}!boost\-::serialization\-::access@{boost\-::serialization\-::access}}
+\index{boost\-::serialization\-::access@{boost\-::serialization\-::access}!TSample@{T\-Sample}}
+\subsubsection[{boost\-::serialization\-::access}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename t$>$ friend class boost\-::serialization\-::access\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_t_sample_ac98d07dd8f7b70e16ccb9a01abf56b9c}
+
+
+Boost serialization. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_t_sample_aedda743fb903732544bf50bdc57ffcee}{\index{T\-Sample@{T\-Sample}!c\-H@{c\-H}}
+\index{c\-H@{c\-H}!TSample@{T\-Sample}}
+\subsubsection[{c\-H}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename t$>$ Array\-Xd {\bf T\-Sample}$<$ t $>$\-::c\-H\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_t_sample_aedda743fb903732544bf50bdc57ffcee}
+
+
+Array that holds normalized histogram. 
+
+\hypertarget{class_t_sample_a95cd9ef96fc962a75c1bd1a54e7ed792}{\index{T\-Sample@{T\-Sample}!H@{H}}
+\index{H@{H}!TSample@{T\-Sample}}
+\subsubsection[{H}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename t$>$ Array\-Xd {\bf T\-Sample}$<$ t $>$\-::H\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_t_sample_a95cd9ef96fc962a75c1bd1a54e7ed792}
+\hypertarget{class_t_sample_ae92afde393f607aa4bb3db700be0d741}{\index{T\-Sample@{T\-Sample}!range@{range}}
+\index{range@{range}!TSample@{T\-Sample}}
+\subsubsection[{range}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename t$>$ t {\bf T\-Sample}$<$ t $>$\-::range\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_t_sample_ae92afde393f607aa4bb3db700be0d741}
+Range of the sample data. \hypertarget{class_t_sample_a86a1507fc39a77dd81c298a420d47d27}{\index{T\-Sample@{T\-Sample}!sample@{sample}}
+\index{sample@{sample}!TSample@{T\-Sample}}
+\subsubsection[{sample}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename t$>$ Array$<$t,Dynamic,1$>$ {\bf T\-Sample}$<$ t $>$\-::sample\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_t_sample_a86a1507fc39a77dd81c298a420d47d27}
+
+
+Array that holds sample data. 
+
+\hypertarget{class_t_sample_ab6b31fdfd8547fb15df70eac7f6b84e3}{\index{T\-Sample@{T\-Sample}!x@{x}}
+\index{x@{x}!TSample@{T\-Sample}}
+\subsubsection[{x}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename t$>$ Array$<$t,Dynamic,1$>$ {\bf T\-Sample}$<$ t $>$\-::x\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_t_sample_ab6b31fdfd8547fb15df70eac7f6b84e3}
+
+
+Array that holds x-\/coordinate of the normalized histogram. 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Development/core/\hyperlink{_sample_8h}{Sample.\-h}\end{DoxyCompactItemize}

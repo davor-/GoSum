@@ -1,0 +1,533 @@
+\hypertarget{class_go_s_u_m_1_1_c_reduction}{\section{Go\-S\-U\-M\-:\-:C\-Reduction Class Reference}
+\label{class_go_s_u_m_1_1_c_reduction}\index{Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}}
+}
+
+
+Class for sensitivity analyis of the model.  
+
+
+
+
+{\ttfamily \#include $<$Reduction.\-h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_go_s_u_m_1_1_c_reduction_a191434138cff8df283fa2c2e2a8e653a}{reductiontype} \{ \\*
+\hyperlink{class_go_s_u_m_1_1_c_reduction_a191434138cff8df283fa2c2e2a8e653aa952f6fb0a6d95a1676b4d6066f52270e}{derivative}, 
+\hyperlink{class_go_s_u_m_1_1_c_reduction_a191434138cff8df283fa2c2e2a8e653aaa3432d27df8cf02f515b1e454c8c7924}{averagederivative}, 
+\hyperlink{class_go_s_u_m_1_1_c_reduction_a191434138cff8df283fa2c2e2a8e653aa721664e8924d9da413e3b6bb590eebf2}{absoluteaveragederivative}, 
+\hyperlink{class_go_s_u_m_1_1_c_reduction_a191434138cff8df283fa2c2e2a8e653aa2a375ae8e1798313779934ce63f48269}{variance}, 
+\\*
+\hyperlink{class_go_s_u_m_1_1_c_reduction_a191434138cff8df283fa2c2e2a8e653aabfaf94cdc880e3a32c6e26225e2a093f}{anova}
+ \}
+\item 
+enum \hyperlink{class_go_s_u_m_1_1_c_reduction_aa520ced4c505a26533dd1787c8055f7b}{cutofftype} \{ \hyperlink{class_go_s_u_m_1_1_c_reduction_aa520ced4c505a26533dd1787c8055f7bac403bda7019ba0d07c05cbd3cf2599db}{cutoffvalue}, 
+\hyperlink{class_go_s_u_m_1_1_c_reduction_aa520ced4c505a26533dd1787c8055f7ba6b9e36f006d84d1f1017d22915de09b0}{cutoffsize}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_go_s_u_m_1_1_c_reduction_ac5471e43eb888c8d5208eab8f6f796c6}{C\-Reduction} (\hyperlink{class_go_s_u_m_1_1_c_input_parameters}{C\-Input\-Parameters} $\ast$\-\_\-p\-I\-P, \hyperlink{class_go_s_u_m_1_1_c_output_states}{C\-Output\-States} $\ast$\-\_\-p\-O\-S, \hyperlink{class_go_s_u_m_1_1_c_analytical_model}{C\-Analytical\-Model} $\ast$\-\_\-p\-A\-M, \hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis}{C\-Sensitivity\-Analysis} $\ast$\-\_\-p\-S\-A)
+\item 
+virtual \hyperlink{class_go_s_u_m_1_1_c_reduction_a66434864be45cecb311c066943b2f303}{$\sim$\-C\-Reduction} ()
+\item 
+void \hyperlink{class_go_s_u_m_1_1_c_reduction_a8ff18c5673de6fee90a48bc205f0b1b0}{clear} ()
+\begin{DoxyCompactList}\small\item\em Clears data. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_reduction_a72575687b04e3ee89d677551f1ded8c0}{initialize} ()
+\begin{DoxyCompactList}\small\item\em Initializes reducing. \end{DoxyCompactList}\item 
+const Array\-X\-Xd \& \hyperlink{class_go_s_u_m_1_1_c_reduction_af73a94c49520b7e4227c2d281cea8660}{sensitivity\-Index} ()
+\begin{DoxyCompactList}\small\item\em Returns actual sensitivitiy index. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_reduction_a1983f9e7efe12472ec9ca99cc79c3349}{set\-Reduction\-Type} (enum \hyperlink{class_go_s_u_m_1_1_c_reduction_a191434138cff8df283fa2c2e2a8e653a}{reductiontype} \-\_\-redtype)
+\begin{DoxyCompactList}\small\item\em Sets reduction type. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_reduction_af929c1f6cc529a5a8c50dde580b275cd}{evaluate\-Maximal\-Sensitivities} ()
+\begin{DoxyCompactList}\small\item\em Evaluates maximal indices for all input parameters relative to selected output states. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_reduction_a3b18d46962dec7a11f96ad1773a15c74}{select\-Input\-Parameters} ()
+\begin{DoxyCompactList}\small\item\em Cuts by actual cutoff criteria. \end{DoxyCompactList}\item 
+int \hyperlink{class_go_s_u_m_1_1_c_reduction_a68f48c7ff8bf72d334ea84d301f7dd27}{cutoff\-Size} () const 
+\begin{DoxyCompactList}\small\item\em Returns cutoff size. \end{DoxyCompactList}\item 
+double \hyperlink{class_go_s_u_m_1_1_c_reduction_a70da6e0602c08427806b963cae4ce4ff}{cutoff\-Value} () const 
+\begin{DoxyCompactList}\small\item\em return cutoff value. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_reduction_a6ea081adb0a8d6b5ec9113cb0ef74c7f}{set\-Cutoff\-Size} (int \-\_\-cutip)
+\begin{DoxyCompactList}\small\item\em Sets cutoff size. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_reduction_a60254f1638b7d41cb79f2982ad5a5787}{set\-Cutoff\-Value} (double \-\_\-cutval)
+\begin{DoxyCompactList}\small\item\em Sets cutoff value. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_reduction_aa6b3d38e05164df345f58bc72ab3a2fa}{select\-Output\-State} (int \-\_\-o)
+\begin{DoxyCompactList}\small\item\em Selects output state for reduction criteria. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_reduction_a63ac006f4aeca32dcad4e3dff8912aa3}{select\-Outputs} (const std\-::vector$<$ std\-::string $>$ \&\-\_\-sel\-O\-S)
+\begin{DoxyCompactList}\small\item\em Selects output states named in the \-\_\-sel\-O\-S. \end{DoxyCompactList}\item 
+bool \hyperlink{class_go_s_u_m_1_1_c_reduction_a7829e3f9ccd7ebaba29f872aef3072fa}{is\-Selected\-Output\-State} (int \-\_\-o) const 
+\begin{DoxyCompactList}\small\item\em Returns true if particular output state is selected, false otherwise. \end{DoxyCompactList}\item 
+bool \hyperlink{class_go_s_u_m_1_1_c_reduction_ae930cb202b2a6bda3fceba0b676b9389}{is\-Selected\-Input\-Parameter} (int \-\_\-i) const 
+\begin{DoxyCompactList}\small\item\em Returns true if particular input parameter is selected, false otherwise. \end{DoxyCompactList}\item 
+double \hyperlink{class_go_s_u_m_1_1_c_reduction_ad510f8a29bce3c9600300926387b6234}{maximal\-Sensitivity} (int \-\_\-i)
+\begin{DoxyCompactList}\small\item\em Returns maximal (relative to selected output states) sensitivity index for particular input parameter. \end{DoxyCompactList}\item 
+double \hyperlink{class_go_s_u_m_1_1_c_reduction_a04d2abb0f66c0f3a55ae6062e5ada190}{maximal\-Sensitivity} ()
+\begin{DoxyCompactList}\small\item\em Returns maximal (relative to selected output states) sensitivity index. \end{DoxyCompactList}\item 
+void \hyperlink{class_go_s_u_m_1_1_c_reduction_a02dbd164e53597bdb92706ac54e781cb}{erase\-Non\-Selected\-Variables} ()
+\begin{DoxyCompactList}\small\item\em Reduces the model, i.\-e. deletes all input paramters and output states that are not selected. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_go_s_u_m_1_1_c_reduction_a191434138cff8df283fa2c2e2a8e653a}{reductiontype} \hyperlink{class_go_s_u_m_1_1_c_reduction_a1f24ffaa672f459158df058ba4ec1f5f}{Reduction\-Type} (const std\-::string \&\-\_\-stype)
+\begin{DoxyCompactList}\small\item\em Converts reduction type name (string) to reductiontype enumerator. \end{DoxyCompactList}\item 
+static \hyperlink{class_go_s_u_m_1_1_c_reduction_a191434138cff8df283fa2c2e2a8e653a}{reductiontype} \hyperlink{class_go_s_u_m_1_1_c_reduction_acbbbd845185c42a0738409f98f2bd9ef}{Reduction\-Type} ()
+\begin{DoxyCompactList}\small\item\em Returns actual reduction type. \end{DoxyCompactList}\item 
+static \hyperlink{class_go_s_u_m_1_1_c_reduction_aa520ced4c505a26533dd1787c8055f7b}{cutofftype} \hyperlink{class_go_s_u_m_1_1_c_reduction_af88b4b41fb89ee64c1184950a3fd7c4a}{Cutoff\-Type} ()
+\begin{DoxyCompactList}\small\item\em Returns actual criteria type. \end{DoxyCompactList}\item 
+static void \hyperlink{class_go_s_u_m_1_1_c_reduction_a8102874859f6d79a6232b7a7e4d5f949}{Set\-Reduction\-Type} (enum \hyperlink{class_go_s_u_m_1_1_c_reduction_a191434138cff8df283fa2c2e2a8e653a}{reductiontype} \-\_\-redtype)
+\begin{DoxyCompactList}\small\item\em Sets reduction type. \end{DoxyCompactList}\item 
+static void \hyperlink{class_go_s_u_m_1_1_c_reduction_a760a89a20279eb4133c7de3514309fe0}{Set\-Cutoff\-Type} (enum \hyperlink{class_go_s_u_m_1_1_c_reduction_aa520ced4c505a26533dd1787c8055f7b}{cutofftype} \-\_\-cuttype)
+\begin{DoxyCompactList}\small\item\em Sets reduction type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static enum \hyperlink{class_go_s_u_m_1_1_c_reduction_a191434138cff8df283fa2c2e2a8e653a}{reductiontype} \hyperlink{class_go_s_u_m_1_1_c_reduction_aeaebab0853ed76b3fdc41cde083c63d9}{redtype}
+\begin{DoxyCompactList}\small\item\em Holds actual reduction type. \end{DoxyCompactList}\item 
+static enum \hyperlink{class_go_s_u_m_1_1_c_reduction_aa520ced4c505a26533dd1787c8055f7b}{cutofftype} \hyperlink{class_go_s_u_m_1_1_c_reduction_a46df397401c425c8eec903742e2ec6c6}{cuttype}
+\begin{DoxyCompactList}\small\item\em Holds actual criteria type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \hyperlink{class_go_s_u_m_1_1_c_reduction_a6527af01c2b8eafbba43dfdd4b14fdc0}{serialize} (Archive \&ar, const unsigned int version)
+\item 
+\hyperlink{class_go_s_u_m_1_1_c_reduction_abdffdc08140fc0f405a0750fc9a1fe0a}{C\-Reduction} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_go_s_u_m_1_1_c_input_parameters}{C\-Input\-Parameters} $\ast$ \hyperlink{class_go_s_u_m_1_1_c_reduction_a14167cf018ab466dbaa108c7fcf2c0f0}{p\-I\-P}
+\begin{DoxyCompactList}\small\item\em Points to input parameters. \end{DoxyCompactList}\item 
+\hyperlink{class_go_s_u_m_1_1_c_output_states}{C\-Output\-States} $\ast$ \hyperlink{class_go_s_u_m_1_1_c_reduction_a4cd38c6a79d17411f3345147ac6aa1da}{p\-O\-S}
+\begin{DoxyCompactList}\small\item\em Points to output states. \end{DoxyCompactList}\item 
+\hyperlink{class_go_s_u_m_1_1_c_analytical_model}{C\-Analytical\-Model} $\ast$ \hyperlink{class_go_s_u_m_1_1_c_reduction_a5efc18783ec4b8ca049009edbc1f5895}{p\-A\-M}
+\begin{DoxyCompactList}\small\item\em Points to the analytical model. \end{DoxyCompactList}\item 
+\hyperlink{class_go_s_u_m_1_1_c_sensitivity_analysis}{C\-Sensitivity\-Analysis} $\ast$ \hyperlink{class_go_s_u_m_1_1_c_reduction_a073798ed0b4c0323a2626e93556917e8}{p\-S\-A}
+\begin{DoxyCompactList}\small\item\em Points to the sensitivity analysis. \end{DoxyCompactList}\item 
+std\-::vector$<$ std\-::pair$<$ double, \\*
+bool $>$ $>$ \hyperlink{class_go_s_u_m_1_1_c_reduction_a819c0514f93b8384b5aea14d75669ddf}{rank\-I\-P}
+\begin{DoxyCompactList}\small\item\em Holds pairs of input parameter appropriate maximal sensitivity indices (relative to selected output states), it sorted in descending order and appropraite selection status. \end{DoxyCompactList}\item 
+std\-::vector$<$ bool $>$ \hyperlink{class_go_s_u_m_1_1_c_reduction_a2e15526f1046a79bf00404521806d36d}{rank\-O\-S}
+\begin{DoxyCompactList}\small\item\em Holds pairs of output state names and appropriate selection status. \end{DoxyCompactList}\item 
+double \hyperlink{class_go_s_u_m_1_1_c_reduction_a62e583dd897673d455630507380066df}{cutval}
+\begin{DoxyCompactList}\small\item\em Holds cutoff value. \end{DoxyCompactList}\item 
+int \hyperlink{class_go_s_u_m_1_1_c_reduction_a39c3a8d17c0bd32d092554277554adce}{cutip}
+\begin{DoxyCompactList}\small\item\em Holds size of the selected inputs. \end{DoxyCompactList}\item 
+int \hyperlink{class_go_s_u_m_1_1_c_reduction_a5b4753c603e0e498087f9d0f217bad9d}{cutos}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_go_s_u_m_1_1_c_reduction_ac98d07dd8f7b70e16ccb9a01abf56b9c}{boost\-::serialization\-::access}
+\begin{DoxyCompactList}\small\item\em Boost serialization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for sensitivity analyis of the model. 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_reduction_aa520ced4c505a26533dd1787c8055f7b}{\index{Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}!cutofftype@{cutofftype}}
+\index{cutofftype@{cutofftype}!GoSUM::CReduction@{Go\-S\-U\-M\-::\-C\-Reduction}}
+\subsubsection[{cutofftype}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Go\-S\-U\-M\-::\-C\-Reduction\-::cutofftype}}}\label{class_go_s_u_m_1_1_c_reduction_aa520ced4c505a26533dd1787c8055f7b}
+\begin{Desc}
+\item[Enumerator\-: ]\par
+\begin{description}
+\index{cutoffvalue@{cutoffvalue}!Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}}\index{Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}!cutoffvalue@{cutoffvalue}}\item[{\em 
+\hypertarget{class_go_s_u_m_1_1_c_reduction_aa520ced4c505a26533dd1787c8055f7bac403bda7019ba0d07c05cbd3cf2599db}{cutoffvalue}\label{class_go_s_u_m_1_1_c_reduction_aa520ced4c505a26533dd1787c8055f7bac403bda7019ba0d07c05cbd3cf2599db}
+}]\index{cutoffsize@{cutoffsize}!Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}}\index{Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}!cutoffsize@{cutoffsize}}\item[{\em 
+\hypertarget{class_go_s_u_m_1_1_c_reduction_aa520ced4c505a26533dd1787c8055f7ba6b9e36f006d84d1f1017d22915de09b0}{cutoffsize}\label{class_go_s_u_m_1_1_c_reduction_aa520ced4c505a26533dd1787c8055f7ba6b9e36f006d84d1f1017d22915de09b0}
+}]\end{description}
+\end{Desc}
+
+\hypertarget{class_go_s_u_m_1_1_c_reduction_a191434138cff8df283fa2c2e2a8e653a}{\index{Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}!reductiontype@{reductiontype}}
+\index{reductiontype@{reductiontype}!GoSUM::CReduction@{Go\-S\-U\-M\-::\-C\-Reduction}}
+\subsubsection[{reductiontype}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Go\-S\-U\-M\-::\-C\-Reduction\-::reductiontype}}}\label{class_go_s_u_m_1_1_c_reduction_a191434138cff8df283fa2c2e2a8e653a}
+\begin{Desc}
+\item[Enumerator\-: ]\par
+\begin{description}
+\index{derivative@{derivative}!Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}}\index{Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}!derivative@{derivative}}\item[{\em 
+\hypertarget{class_go_s_u_m_1_1_c_reduction_a191434138cff8df283fa2c2e2a8e653aa952f6fb0a6d95a1676b4d6066f52270e}{derivative}\label{class_go_s_u_m_1_1_c_reduction_a191434138cff8df283fa2c2e2a8e653aa952f6fb0a6d95a1676b4d6066f52270e}
+}]\index{averagederivative@{averagederivative}!Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}}\index{Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}!averagederivative@{averagederivative}}\item[{\em 
+\hypertarget{class_go_s_u_m_1_1_c_reduction_a191434138cff8df283fa2c2e2a8e653aaa3432d27df8cf02f515b1e454c8c7924}{averagederivative}\label{class_go_s_u_m_1_1_c_reduction_a191434138cff8df283fa2c2e2a8e653aaa3432d27df8cf02f515b1e454c8c7924}
+}]\index{absoluteaveragederivative@{absoluteaveragederivative}!Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}}\index{Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}!absoluteaveragederivative@{absoluteaveragederivative}}\item[{\em 
+\hypertarget{class_go_s_u_m_1_1_c_reduction_a191434138cff8df283fa2c2e2a8e653aa721664e8924d9da413e3b6bb590eebf2}{absoluteaveragederivative}\label{class_go_s_u_m_1_1_c_reduction_a191434138cff8df283fa2c2e2a8e653aa721664e8924d9da413e3b6bb590eebf2}
+}]\index{variance@{variance}!Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}}\index{Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}!variance@{variance}}\item[{\em 
+\hypertarget{class_go_s_u_m_1_1_c_reduction_a191434138cff8df283fa2c2e2a8e653aa2a375ae8e1798313779934ce63f48269}{variance}\label{class_go_s_u_m_1_1_c_reduction_a191434138cff8df283fa2c2e2a8e653aa2a375ae8e1798313779934ce63f48269}
+}]\index{anova@{anova}!Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}}\index{Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}!anova@{anova}}\item[{\em 
+\hypertarget{class_go_s_u_m_1_1_c_reduction_a191434138cff8df283fa2c2e2a8e653aabfaf94cdc880e3a32c6e26225e2a093f}{anova}\label{class_go_s_u_m_1_1_c_reduction_a191434138cff8df283fa2c2e2a8e653aabfaf94cdc880e3a32c6e26225e2a093f}
+}]\end{description}
+\end{Desc}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_reduction_abdffdc08140fc0f405a0750fc9a1fe0a}{\index{Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}!C\-Reduction@{C\-Reduction}}
+\index{C\-Reduction@{C\-Reduction}!GoSUM::CReduction@{Go\-S\-U\-M\-::\-C\-Reduction}}
+\subsubsection[{C\-Reduction}]{\setlength{\rightskip}{0pt plus 5cm}Go\-S\-U\-M\-::\-C\-Reduction\-::\-C\-Reduction (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_reduction_abdffdc08140fc0f405a0750fc9a1fe0a}
+\hypertarget{class_go_s_u_m_1_1_c_reduction_ac5471e43eb888c8d5208eab8f6f796c6}{\index{Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}!C\-Reduction@{C\-Reduction}}
+\index{C\-Reduction@{C\-Reduction}!GoSUM::CReduction@{Go\-S\-U\-M\-::\-C\-Reduction}}
+\subsubsection[{C\-Reduction}]{\setlength{\rightskip}{0pt plus 5cm}Go\-S\-U\-M\-::\-C\-Reduction\-::\-C\-Reduction (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Input\-Parameters} $\ast$}]{\-\_\-p\-I\-P, }
+\item[{{\bf C\-Output\-States} $\ast$}]{\-\_\-p\-O\-S, }
+\item[{{\bf C\-Analytical\-Model} $\ast$}]{\-\_\-p\-A\-M, }
+\item[{{\bf C\-Sensitivity\-Analysis} $\ast$}]{\-\_\-p\-S\-A}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_reduction_ac5471e43eb888c8d5208eab8f6f796c6}
+\hypertarget{class_go_s_u_m_1_1_c_reduction_a66434864be45cecb311c066943b2f303}{\index{Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}!$\sim$\-C\-Reduction@{$\sim$\-C\-Reduction}}
+\index{$\sim$\-C\-Reduction@{$\sim$\-C\-Reduction}!GoSUM::CReduction@{Go\-S\-U\-M\-::\-C\-Reduction}}
+\subsubsection[{$\sim$\-C\-Reduction}]{\setlength{\rightskip}{0pt plus 5cm}virtual Go\-S\-U\-M\-::\-C\-Reduction\-::$\sim$\-C\-Reduction (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_go_s_u_m_1_1_c_reduction_a66434864be45cecb311c066943b2f303}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_reduction_a8ff18c5673de6fee90a48bc205f0b1b0}{\index{Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}!clear@{clear}}
+\index{clear@{clear}!GoSUM::CReduction@{Go\-S\-U\-M\-::\-C\-Reduction}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Reduction\-::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_reduction_a8ff18c5673de6fee90a48bc205f0b1b0}
+
+
+Clears data. 
+
+\hypertarget{class_go_s_u_m_1_1_c_reduction_a68f48c7ff8bf72d334ea84d301f7dd27}{\index{Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}!cutoff\-Size@{cutoff\-Size}}
+\index{cutoff\-Size@{cutoff\-Size}!GoSUM::CReduction@{Go\-S\-U\-M\-::\-C\-Reduction}}
+\subsubsection[{cutoff\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int Go\-S\-U\-M\-::\-C\-Reduction\-::cutoff\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_reduction_a68f48c7ff8bf72d334ea84d301f7dd27}
+
+
+Returns cutoff size. 
+
+\hypertarget{class_go_s_u_m_1_1_c_reduction_af88b4b41fb89ee64c1184950a3fd7c4a}{\index{Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}!Cutoff\-Type@{Cutoff\-Type}}
+\index{Cutoff\-Type@{Cutoff\-Type}!GoSUM::CReduction@{Go\-S\-U\-M\-::\-C\-Reduction}}
+\subsubsection[{Cutoff\-Type}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf cutofftype} Go\-S\-U\-M\-::\-C\-Reduction\-::\-Cutoff\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_go_s_u_m_1_1_c_reduction_af88b4b41fb89ee64c1184950a3fd7c4a}
+
+
+Returns actual criteria type. 
+
+\hypertarget{class_go_s_u_m_1_1_c_reduction_a70da6e0602c08427806b963cae4ce4ff}{\index{Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}!cutoff\-Value@{cutoff\-Value}}
+\index{cutoff\-Value@{cutoff\-Value}!GoSUM::CReduction@{Go\-S\-U\-M\-::\-C\-Reduction}}
+\subsubsection[{cutoff\-Value}]{\setlength{\rightskip}{0pt plus 5cm}double Go\-S\-U\-M\-::\-C\-Reduction\-::cutoff\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_go_s_u_m_1_1_c_reduction_a70da6e0602c08427806b963cae4ce4ff}
+
+
+return cutoff value. 
+
+\hypertarget{class_go_s_u_m_1_1_c_reduction_a02dbd164e53597bdb92706ac54e781cb}{\index{Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}!erase\-Non\-Selected\-Variables@{erase\-Non\-Selected\-Variables}}
+\index{erase\-Non\-Selected\-Variables@{erase\-Non\-Selected\-Variables}!GoSUM::CReduction@{Go\-S\-U\-M\-::\-C\-Reduction}}
+\subsubsection[{erase\-Non\-Selected\-Variables}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Reduction\-::erase\-Non\-Selected\-Variables (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_reduction_a02dbd164e53597bdb92706ac54e781cb}
+
+
+Reduces the model, i.\-e. deletes all input paramters and output states that are not selected. 
+
+\hypertarget{class_go_s_u_m_1_1_c_reduction_af929c1f6cc529a5a8c50dde580b275cd}{\index{Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}!evaluate\-Maximal\-Sensitivities@{evaluate\-Maximal\-Sensitivities}}
+\index{evaluate\-Maximal\-Sensitivities@{evaluate\-Maximal\-Sensitivities}!GoSUM::CReduction@{Go\-S\-U\-M\-::\-C\-Reduction}}
+\subsubsection[{evaluate\-Maximal\-Sensitivities}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Reduction\-::evaluate\-Maximal\-Sensitivities (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_reduction_af929c1f6cc529a5a8c50dde580b275cd}
+
+
+Evaluates maximal indices for all input parameters relative to selected output states. 
+
+\hypertarget{class_go_s_u_m_1_1_c_reduction_a72575687b04e3ee89d677551f1ded8c0}{\index{Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}!initialize@{initialize}}
+\index{initialize@{initialize}!GoSUM::CReduction@{Go\-S\-U\-M\-::\-C\-Reduction}}
+\subsubsection[{initialize}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Reduction\-::initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_reduction_a72575687b04e3ee89d677551f1ded8c0}
+
+
+Initializes reducing. 
+
+\hypertarget{class_go_s_u_m_1_1_c_reduction_ae930cb202b2a6bda3fceba0b676b9389}{\index{Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}!is\-Selected\-Input\-Parameter@{is\-Selected\-Input\-Parameter}}
+\index{is\-Selected\-Input\-Parameter@{is\-Selected\-Input\-Parameter}!GoSUM::CReduction@{Go\-S\-U\-M\-::\-C\-Reduction}}
+\subsubsection[{is\-Selected\-Input\-Parameter}]{\setlength{\rightskip}{0pt plus 5cm}bool Go\-S\-U\-M\-::\-C\-Reduction\-::is\-Selected\-Input\-Parameter (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-i}
+\end{DoxyParamCaption}
+) const}}\label{class_go_s_u_m_1_1_c_reduction_ae930cb202b2a6bda3fceba0b676b9389}
+
+
+Returns true if particular input parameter is selected, false otherwise. 
+
+\hypertarget{class_go_s_u_m_1_1_c_reduction_a7829e3f9ccd7ebaba29f872aef3072fa}{\index{Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}!is\-Selected\-Output\-State@{is\-Selected\-Output\-State}}
+\index{is\-Selected\-Output\-State@{is\-Selected\-Output\-State}!GoSUM::CReduction@{Go\-S\-U\-M\-::\-C\-Reduction}}
+\subsubsection[{is\-Selected\-Output\-State}]{\setlength{\rightskip}{0pt plus 5cm}bool Go\-S\-U\-M\-::\-C\-Reduction\-::is\-Selected\-Output\-State (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-o}
+\end{DoxyParamCaption}
+) const}}\label{class_go_s_u_m_1_1_c_reduction_a7829e3f9ccd7ebaba29f872aef3072fa}
+
+
+Returns true if particular output state is selected, false otherwise. 
+
+\hypertarget{class_go_s_u_m_1_1_c_reduction_ad510f8a29bce3c9600300926387b6234}{\index{Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}!maximal\-Sensitivity@{maximal\-Sensitivity}}
+\index{maximal\-Sensitivity@{maximal\-Sensitivity}!GoSUM::CReduction@{Go\-S\-U\-M\-::\-C\-Reduction}}
+\subsubsection[{maximal\-Sensitivity}]{\setlength{\rightskip}{0pt plus 5cm}double Go\-S\-U\-M\-::\-C\-Reduction\-::maximal\-Sensitivity (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-i}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_reduction_ad510f8a29bce3c9600300926387b6234}
+
+
+Returns maximal (relative to selected output states) sensitivity index for particular input parameter. 
+
+\hypertarget{class_go_s_u_m_1_1_c_reduction_a04d2abb0f66c0f3a55ae6062e5ada190}{\index{Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}!maximal\-Sensitivity@{maximal\-Sensitivity}}
+\index{maximal\-Sensitivity@{maximal\-Sensitivity}!GoSUM::CReduction@{Go\-S\-U\-M\-::\-C\-Reduction}}
+\subsubsection[{maximal\-Sensitivity}]{\setlength{\rightskip}{0pt plus 5cm}double Go\-S\-U\-M\-::\-C\-Reduction\-::maximal\-Sensitivity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_reduction_a04d2abb0f66c0f3a55ae6062e5ada190}
+
+
+Returns maximal (relative to selected output states) sensitivity index. 
+
+\hypertarget{class_go_s_u_m_1_1_c_reduction_a1f24ffaa672f459158df058ba4ec1f5f}{\index{Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}!Reduction\-Type@{Reduction\-Type}}
+\index{Reduction\-Type@{Reduction\-Type}!GoSUM::CReduction@{Go\-S\-U\-M\-::\-C\-Reduction}}
+\subsubsection[{Reduction\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Go\-S\-U\-M\-::\-C\-Reduction\-::reductiontype} Go\-S\-U\-M\-::\-C\-Reduction\-::\-Reduction\-Type (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{\-\_\-stype}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_go_s_u_m_1_1_c_reduction_a1f24ffaa672f459158df058ba4ec1f5f}
+
+
+Converts reduction type name (string) to reductiontype enumerator. 
+
+\hypertarget{class_go_s_u_m_1_1_c_reduction_acbbbd845185c42a0738409f98f2bd9ef}{\index{Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}!Reduction\-Type@{Reduction\-Type}}
+\index{Reduction\-Type@{Reduction\-Type}!GoSUM::CReduction@{Go\-S\-U\-M\-::\-C\-Reduction}}
+\subsubsection[{Reduction\-Type}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf reductiontype} Go\-S\-U\-M\-::\-C\-Reduction\-::\-Reduction\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_go_s_u_m_1_1_c_reduction_acbbbd845185c42a0738409f98f2bd9ef}
+
+
+Returns actual reduction type. 
+
+\hypertarget{class_go_s_u_m_1_1_c_reduction_a3b18d46962dec7a11f96ad1773a15c74}{\index{Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}!select\-Input\-Parameters@{select\-Input\-Parameters}}
+\index{select\-Input\-Parameters@{select\-Input\-Parameters}!GoSUM::CReduction@{Go\-S\-U\-M\-::\-C\-Reduction}}
+\subsubsection[{select\-Input\-Parameters}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Reduction\-::select\-Input\-Parameters (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_reduction_a3b18d46962dec7a11f96ad1773a15c74}
+
+
+Cuts by actual cutoff criteria. 
+
+\hypertarget{class_go_s_u_m_1_1_c_reduction_a63ac006f4aeca32dcad4e3dff8912aa3}{\index{Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}!select\-Outputs@{select\-Outputs}}
+\index{select\-Outputs@{select\-Outputs}!GoSUM::CReduction@{Go\-S\-U\-M\-::\-C\-Reduction}}
+\subsubsection[{select\-Outputs}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Reduction\-::select\-Outputs (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ std\-::string $>$ \&}]{\-\_\-sel\-O\-S}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_reduction_a63ac006f4aeca32dcad4e3dff8912aa3}
+
+
+Selects output states named in the \-\_\-sel\-O\-S. 
+
+\hypertarget{class_go_s_u_m_1_1_c_reduction_aa6b3d38e05164df345f58bc72ab3a2fa}{\index{Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}!select\-Output\-State@{select\-Output\-State}}
+\index{select\-Output\-State@{select\-Output\-State}!GoSUM::CReduction@{Go\-S\-U\-M\-::\-C\-Reduction}}
+\subsubsection[{select\-Output\-State}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Reduction\-::select\-Output\-State (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-o}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_reduction_aa6b3d38e05164df345f58bc72ab3a2fa}
+
+
+Selects output state for reduction criteria. 
+
+\hypertarget{class_go_s_u_m_1_1_c_reduction_af73a94c49520b7e4227c2d281cea8660}{\index{Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}!sensitivity\-Index@{sensitivity\-Index}}
+\index{sensitivity\-Index@{sensitivity\-Index}!GoSUM::CReduction@{Go\-S\-U\-M\-::\-C\-Reduction}}
+\subsubsection[{sensitivity\-Index}]{\setlength{\rightskip}{0pt plus 5cm}const Array\-X\-Xd \& Go\-S\-U\-M\-::\-C\-Reduction\-::sensitivity\-Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_reduction_af73a94c49520b7e4227c2d281cea8660}
+
+
+Returns actual sensitivitiy index. 
+
+\hypertarget{class_go_s_u_m_1_1_c_reduction_a6527af01c2b8eafbba43dfdd4b14fdc0}{\index{Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}!serialize@{serialize}}
+\index{serialize@{serialize}!GoSUM::CReduction@{Go\-S\-U\-M\-::\-C\-Reduction}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Archive $>$ void Go\-S\-U\-M\-::\-C\-Reduction\-::serialize (
+\begin{DoxyParamCaption}
+\item[{Archive \&}]{ar, }
+\item[{const unsigned int}]{version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_reduction_a6527af01c2b8eafbba43dfdd4b14fdc0}
+\hypertarget{class_go_s_u_m_1_1_c_reduction_a6ea081adb0a8d6b5ec9113cb0ef74c7f}{\index{Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}!set\-Cutoff\-Size@{set\-Cutoff\-Size}}
+\index{set\-Cutoff\-Size@{set\-Cutoff\-Size}!GoSUM::CReduction@{Go\-S\-U\-M\-::\-C\-Reduction}}
+\subsubsection[{set\-Cutoff\-Size}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Reduction\-::set\-Cutoff\-Size (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-cutip}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_reduction_a6ea081adb0a8d6b5ec9113cb0ef74c7f}
+
+
+Sets cutoff size. 
+
+\hypertarget{class_go_s_u_m_1_1_c_reduction_a760a89a20279eb4133c7de3514309fe0}{\index{Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}!Set\-Cutoff\-Type@{Set\-Cutoff\-Type}}
+\index{Set\-Cutoff\-Type@{Set\-Cutoff\-Type}!GoSUM::CReduction@{Go\-S\-U\-M\-::\-C\-Reduction}}
+\subsubsection[{Set\-Cutoff\-Type}]{\setlength{\rightskip}{0pt plus 5cm}static void Go\-S\-U\-M\-::\-C\-Reduction\-::\-Set\-Cutoff\-Type (
+\begin{DoxyParamCaption}
+\item[{enum {\bf cutofftype}}]{\-\_\-cuttype}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_go_s_u_m_1_1_c_reduction_a760a89a20279eb4133c7de3514309fe0}
+
+
+Sets reduction type. 
+
+\hypertarget{class_go_s_u_m_1_1_c_reduction_a60254f1638b7d41cb79f2982ad5a5787}{\index{Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}!set\-Cutoff\-Value@{set\-Cutoff\-Value}}
+\index{set\-Cutoff\-Value@{set\-Cutoff\-Value}!GoSUM::CReduction@{Go\-S\-U\-M\-::\-C\-Reduction}}
+\subsubsection[{set\-Cutoff\-Value}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Reduction\-::set\-Cutoff\-Value (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-cutval}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_reduction_a60254f1638b7d41cb79f2982ad5a5787}
+
+
+Sets cutoff value. 
+
+\hypertarget{class_go_s_u_m_1_1_c_reduction_a8102874859f6d79a6232b7a7e4d5f949}{\index{Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}!Set\-Reduction\-Type@{Set\-Reduction\-Type}}
+\index{Set\-Reduction\-Type@{Set\-Reduction\-Type}!GoSUM::CReduction@{Go\-S\-U\-M\-::\-C\-Reduction}}
+\subsubsection[{Set\-Reduction\-Type}]{\setlength{\rightskip}{0pt plus 5cm}static void Go\-S\-U\-M\-::\-C\-Reduction\-::\-Set\-Reduction\-Type (
+\begin{DoxyParamCaption}
+\item[{enum {\bf reductiontype}}]{\-\_\-redtype}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_go_s_u_m_1_1_c_reduction_a8102874859f6d79a6232b7a7e4d5f949}
+
+
+Sets reduction type. 
+
+\hypertarget{class_go_s_u_m_1_1_c_reduction_a1983f9e7efe12472ec9ca99cc79c3349}{\index{Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}!set\-Reduction\-Type@{set\-Reduction\-Type}}
+\index{set\-Reduction\-Type@{set\-Reduction\-Type}!GoSUM::CReduction@{Go\-S\-U\-M\-::\-C\-Reduction}}
+\subsubsection[{set\-Reduction\-Type}]{\setlength{\rightskip}{0pt plus 5cm}void Go\-S\-U\-M\-::\-C\-Reduction\-::set\-Reduction\-Type (
+\begin{DoxyParamCaption}
+\item[{enum {\bf reductiontype}}]{\-\_\-redtype}
+\end{DoxyParamCaption}
+)}}\label{class_go_s_u_m_1_1_c_reduction_a1983f9e7efe12472ec9ca99cc79c3349}
+
+
+Sets reduction type. 
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_reduction_ac98d07dd8f7b70e16ccb9a01abf56b9c}{\index{Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}!boost\-::serialization\-::access@{boost\-::serialization\-::access}}
+\index{boost\-::serialization\-::access@{boost\-::serialization\-::access}!GoSUM::CReduction@{Go\-S\-U\-M\-::\-C\-Reduction}}
+\subsubsection[{boost\-::serialization\-::access}]{\setlength{\rightskip}{0pt plus 5cm}friend class boost\-::serialization\-::access\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_go_s_u_m_1_1_c_reduction_ac98d07dd8f7b70e16ccb9a01abf56b9c}
+
+
+Boost serialization. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_go_s_u_m_1_1_c_reduction_a39c3a8d17c0bd32d092554277554adce}{\index{Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}!cutip@{cutip}}
+\index{cutip@{cutip}!GoSUM::CReduction@{Go\-S\-U\-M\-::\-C\-Reduction}}
+\subsubsection[{cutip}]{\setlength{\rightskip}{0pt plus 5cm}int Go\-S\-U\-M\-::\-C\-Reduction\-::cutip\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_reduction_a39c3a8d17c0bd32d092554277554adce}
+
+
+Holds size of the selected inputs. 
+
+\hypertarget{class_go_s_u_m_1_1_c_reduction_a5b4753c603e0e498087f9d0f217bad9d}{\index{Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}!cutos@{cutos}}
+\index{cutos@{cutos}!GoSUM::CReduction@{Go\-S\-U\-M\-::\-C\-Reduction}}
+\subsubsection[{cutos}]{\setlength{\rightskip}{0pt plus 5cm}int Go\-S\-U\-M\-::\-C\-Reduction\-::cutos\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_reduction_a5b4753c603e0e498087f9d0f217bad9d}
+Holds size of the selected outputs. \hypertarget{class_go_s_u_m_1_1_c_reduction_a46df397401c425c8eec903742e2ec6c6}{\index{Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}!cuttype@{cuttype}}
+\index{cuttype@{cuttype}!GoSUM::CReduction@{Go\-S\-U\-M\-::\-C\-Reduction}}
+\subsubsection[{cuttype}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf cutofftype} Go\-S\-U\-M\-::\-C\-Reduction\-::cuttype\hspace{0.3cm}{\ttfamily [static]}}}\label{class_go_s_u_m_1_1_c_reduction_a46df397401c425c8eec903742e2ec6c6}
+
+
+Holds actual criteria type. 
+
+\hypertarget{class_go_s_u_m_1_1_c_reduction_a62e583dd897673d455630507380066df}{\index{Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}!cutval@{cutval}}
+\index{cutval@{cutval}!GoSUM::CReduction@{Go\-S\-U\-M\-::\-C\-Reduction}}
+\subsubsection[{cutval}]{\setlength{\rightskip}{0pt plus 5cm}double Go\-S\-U\-M\-::\-C\-Reduction\-::cutval\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_reduction_a62e583dd897673d455630507380066df}
+
+
+Holds cutoff value. 
+
+\hypertarget{class_go_s_u_m_1_1_c_reduction_a5efc18783ec4b8ca049009edbc1f5895}{\index{Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}!p\-A\-M@{p\-A\-M}}
+\index{p\-A\-M@{p\-A\-M}!GoSUM::CReduction@{Go\-S\-U\-M\-::\-C\-Reduction}}
+\subsubsection[{p\-A\-M}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Analytical\-Model}$\ast$ Go\-S\-U\-M\-::\-C\-Reduction\-::p\-A\-M\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_reduction_a5efc18783ec4b8ca049009edbc1f5895}
+
+
+Points to the analytical model. 
+
+\hypertarget{class_go_s_u_m_1_1_c_reduction_a14167cf018ab466dbaa108c7fcf2c0f0}{\index{Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}!p\-I\-P@{p\-I\-P}}
+\index{p\-I\-P@{p\-I\-P}!GoSUM::CReduction@{Go\-S\-U\-M\-::\-C\-Reduction}}
+\subsubsection[{p\-I\-P}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Input\-Parameters}$\ast$ Go\-S\-U\-M\-::\-C\-Reduction\-::p\-I\-P\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_reduction_a14167cf018ab466dbaa108c7fcf2c0f0}
+
+
+Points to input parameters. 
+
+\hypertarget{class_go_s_u_m_1_1_c_reduction_a4cd38c6a79d17411f3345147ac6aa1da}{\index{Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}!p\-O\-S@{p\-O\-S}}
+\index{p\-O\-S@{p\-O\-S}!GoSUM::CReduction@{Go\-S\-U\-M\-::\-C\-Reduction}}
+\subsubsection[{p\-O\-S}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Output\-States}$\ast$ Go\-S\-U\-M\-::\-C\-Reduction\-::p\-O\-S\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_reduction_a4cd38c6a79d17411f3345147ac6aa1da}
+
+
+Points to output states. 
+
+\hypertarget{class_go_s_u_m_1_1_c_reduction_a073798ed0b4c0323a2626e93556917e8}{\index{Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}!p\-S\-A@{p\-S\-A}}
+\index{p\-S\-A@{p\-S\-A}!GoSUM::CReduction@{Go\-S\-U\-M\-::\-C\-Reduction}}
+\subsubsection[{p\-S\-A}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Sensitivity\-Analysis}$\ast$ Go\-S\-U\-M\-::\-C\-Reduction\-::p\-S\-A\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_reduction_a073798ed0b4c0323a2626e93556917e8}
+
+
+Points to the sensitivity analysis. 
+
+\hypertarget{class_go_s_u_m_1_1_c_reduction_a819c0514f93b8384b5aea14d75669ddf}{\index{Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}!rank\-I\-P@{rank\-I\-P}}
+\index{rank\-I\-P@{rank\-I\-P}!GoSUM::CReduction@{Go\-S\-U\-M\-::\-C\-Reduction}}
+\subsubsection[{rank\-I\-P}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ std\-::pair$<$double,bool$>$ $>$ Go\-S\-U\-M\-::\-C\-Reduction\-::rank\-I\-P\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_reduction_a819c0514f93b8384b5aea14d75669ddf}
+
+
+Holds pairs of input parameter appropriate maximal sensitivity indices (relative to selected output states), it sorted in descending order and appropraite selection status. 
+
+\hypertarget{class_go_s_u_m_1_1_c_reduction_a2e15526f1046a79bf00404521806d36d}{\index{Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}!rank\-O\-S@{rank\-O\-S}}
+\index{rank\-O\-S@{rank\-O\-S}!GoSUM::CReduction@{Go\-S\-U\-M\-::\-C\-Reduction}}
+\subsubsection[{rank\-O\-S}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$bool$>$ Go\-S\-U\-M\-::\-C\-Reduction\-::rank\-O\-S\hspace{0.3cm}{\ttfamily [private]}}}\label{class_go_s_u_m_1_1_c_reduction_a2e15526f1046a79bf00404521806d36d}
+
+
+Holds pairs of output state names and appropriate selection status. 
+
+\hypertarget{class_go_s_u_m_1_1_c_reduction_aeaebab0853ed76b3fdc41cde083c63d9}{\index{Go\-S\-U\-M\-::\-C\-Reduction@{Go\-S\-U\-M\-::\-C\-Reduction}!redtype@{redtype}}
+\index{redtype@{redtype}!GoSUM::CReduction@{Go\-S\-U\-M\-::\-C\-Reduction}}
+\subsubsection[{redtype}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf reductiontype} Go\-S\-U\-M\-::\-C\-Reduction\-::redtype\hspace{0.3cm}{\ttfamily [static]}}}\label{class_go_s_u_m_1_1_c_reduction_aeaebab0853ed76b3fdc41cde083c63d9}
+
+
+Holds actual reduction type. 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Development/core/\hyperlink{_reduction_8h}{Reduction.\-h}\item 
+C\-:/\-Development/core/\hyperlink{_reduction_8cpp}{Reduction.\-cpp}\end{DoxyCompactItemize}
